@@ -1,0 +1,11 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+.gitattributes
+
+# Other
+.spyproject/
+*.pyc
+.ipynb_checkpoints
+*.ipynb
+.DS_Store
