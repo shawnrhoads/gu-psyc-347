@@ -1,0 +1,51 @@
+- file: index
+- file: wk00-00_Syllabus
+- file: wk00-01_Reading-List
+- file: wk00-02_Getting-Started
+- file: wk00-03_Final-Projects
+  sections:
+    - file: wk00-04_Group-Work
+    - file: wk00-05_Final-Notebooks
+    - file: wk00-06_Final-Presentations
+- file: wk01-00_Models
+  sections:
+    - file: wk01-01_Intro-to-Python
+- file: wk02-00_Social-Behavior
+  sections:
+    - file: wk02-01_Modeling-Practice
+    - file: wk02-02_Describing-Data
+    - file: wk02-03_Model-Simulations
+    - file: wk02-04_Model-Fitting
+    - file: wk02-05_Model-Comparison
+- file: wk03-00_RLDM
+  sections:
+    - file: wk03-01_Two-Armed-Bandit
+- file: wk04-00_Vicarious-Learning
+  sections:
+    - file: wk04-01_Social-RLDM-0
+- file: wk05-00_Action-Imitation
+  sections:
+    - file: wk05-01_Social-RLDM-1
+- file: wk07-00_Social-Inference
+  sections:
+    - file: wk07-01_Bayes
+- file: wk08-00_Belief-Updating
+  sections:
+    - file: wk08-01_Social-Bayes-0
+- file: wk09-00_Impression-Updating
+  sections:
+    - file: wk09-01_Social-Bayes-1
+- file: wk10-00_Evidence-Accumulation
+  sections:
+    - file: wk10-01_DDM
+- file: wk11-00_Social-Influence
+  sections:
+    - file: wk11-01_Social-DDM
+- file: wk12-00_Interacting-Agents
+  sections:
+    - file: wk12-01_Cooperative-DM
+- file: wk13-00_Social-Norms
+  sections:
+    - file: wk13-01_Normative-DM
+- file: wk14-00_Individual-Differences
+- file: wk14-01_Future-Directions
