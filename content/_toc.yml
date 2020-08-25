@@ -13,10 +13,6 @@
 - file: wk02-00_Social-Behavior
   sections:
     - file: wk02-01_Modeling-Practice
-    - file: wk02-02_Describing-Data
-    - file: wk02-03_Model-Simulations
-    - file: wk02-04_Model-Fitting
-    - file: wk02-05_Model-Comparison
 - file: wk03-00_RLDM
   sections:
     - file: wk03-01_Two-Armed-Bandit
