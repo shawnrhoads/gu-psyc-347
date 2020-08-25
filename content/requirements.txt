@@ -1,5 +1,8 @@
 jupyter-book
-matplotlib
 numpy
+scipy
 pandas
+matplotlib
+mpl_toolkits
 seaborn
+ipywidgets

@@ -14,7 +14,7 @@
     - file: wk01-01_Intro-to-Python
 - file: wk02-00_Social-Behavior
   sections:
-    - file: wk02-01_Modeling-Practice
+    - file: wk02-01_Modeling-Intro
 - file: wk03-00_RLDM
   sections:
     - file: wk03-01_Two-Armed-Bandit
