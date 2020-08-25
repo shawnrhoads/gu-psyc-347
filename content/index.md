@@ -12,8 +12,8 @@
 **Instructor**: Shawn A Rhoads<br>
 **Pronouns**: he/him/his<br>
 **Email**: sr1209(at)georgetown(dot)edu<br>
-**Office hours**: TBD
+**Office hours**: TBD</br>
 
 ## License for this book
 
-All content in this book (i.e., any files and content in the content/ folder) is licensed.
+<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />Content in this book (i.e., any .md or .ipynb files in the content/ folder) is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
