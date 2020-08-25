@@ -1,1 +1,7 @@
-# Class 04 - Vicarious Reward Learning
+# Class 04 - Vicarious Learning
+
+## Reward Learning
+
+
+## Punishment Learning
+

@@ -1,12 +1,14 @@
 - file: index
 - file: wk00-00_Syllabus
-- file: wk00-01_Reading-List
-- file: wk00-02_Getting-Started
-- file: wk00-03_Final-Projects
+- file: wk00-01_Course-Schedule
+
+- file: wk00-02_Reading-List
+- file: wk00-03_Getting-Started
+- file: wk00-04_Final-Projects
   sections:
-    - file: wk00-04_Group-Work
-    - file: wk00-05_Final-Notebooks
-    - file: wk00-06_Final-Presentations
+    - file: wk00-05_Group-Work
+    - file: wk00-06_Final-Notebooks
+    - file: wk00-07_Final-Presentations
 - file: wk01-00_Models
   sections:
     - file: wk01-01_Intro-to-Python

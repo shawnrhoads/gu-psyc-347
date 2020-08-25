@@ -1,1 +1,1 @@
-# Class 03 - Learning and Decision-Making
+# Class 03 - Learning & Decision-Making
