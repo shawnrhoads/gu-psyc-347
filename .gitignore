@@ -8,5 +8,6 @@ __pycache__/
 *.pyc
 .ipynb_checkpoints
 .DS_Store
+.vscode
 content/_build/.doctrees
 content/_build/jupyter_execute
