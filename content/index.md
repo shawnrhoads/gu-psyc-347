@@ -7,7 +7,6 @@
 **Meetings**: Tuesday/Thursday from 10am-11:15pm</br>
 **Location**: White Gravenor 311B</br></br>
 
-
 ## Instructor Information
 **Instructor**: Shawn A Rhoads<br>
 **Pronouns**: he/him/his<br>
