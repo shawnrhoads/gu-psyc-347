@@ -1,0 +1,1612 @@
+
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>Modeling Practice &#8212; Computational Models of Human Social Behavior</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous">
+    <link href="_static/css/index.css" rel="stylesheet">
+    <link rel="stylesheet" href="_static/sphinx-book-theme.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/jupyter-sphinx.css" />
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/sphinx-book-theme.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/language_data.js"></script>
+    <script src="_static/togglebutton.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script src="_static/mystnb.js"></script>
+    <script src="_static/sphinx-book-theme.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.18.0/dist/embed-amd.js"></script>
+    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Learning &amp; Decision-Making" href="module-02-00_RLDM.html" />
+    <link rel="prev" title="Intro to Python Basics" href="module-01-01_Intro-to-Python.html" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="docsearch:language" content="en">
+
+
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+<a class="navbar-brand text-wrap" href="index.html">
+  
+  <img src="_static/logo.png" class="logo" alt="logo">
+  
+  
+  <h1 class="site-logo" id="site-title">Computational Models of Human Social Behavior</h1>
+  
+</a>
+</div>
+
+<form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form>
+
+<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+  <ul class="current nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="module-00-00_Syllabus.html">
+   Syllabus
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="module-00-01_Course-Schedule.html">
+   Course Schedule
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="module-00-02_Getting-Started.html">
+   Getting Started
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="reference internal" href="module-01-00_Models.html">
+   What are Models?
+  </a>
+  <ul class="current">
+   <li class="toctree-l2">
+    <a class="reference internal" href="module-01-01_Intro-to-Python.html">
+     Intro to Python Basics
+    </a>
+   </li>
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     Modeling Practice
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="module-02-00_RLDM.html">
+   Learning &amp; Decision-Making
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="module-03-00_Social-Behavior.html">
+   Overview of Social Behavior
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="module-04-00_Social-Learning.html">
+   Social Learning
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="module-05-00_Social-Inference.html">
+   Social Inference
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="module-06-00_Evidence-Accumulation.html">
+   Evidence Accumulation
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="module-07-00_Social-Influence.html">
+   Social Influence
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="module-08-00_Social-Norms.html">
+   Social Norms
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="module-09-00_Interacting-Agents.html">
+   Interacting Agents
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="module-10-00_Individual-Differences.html">
+   Individual Differences
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="module-11-00_Future-Directions.html">
+   Future Directions
+  </a>
+ </li>
+</ul>
+
+</nav>
+
+ <!-- To handle the deprecated key -->
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="row topbar fixed-top container-xl">
+    <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show">
+    </div>
+    <div class="col pl-2 topbar-main">
+        
+        <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+            data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+            aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+            title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-arrow-left"></i>
+            <i class="fas fa-arrow-up"></i>
+        </button>
+        
+        <div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="_sources/module-01-02_Modeling-Intro.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+    
+</div>
+        <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/shawnrhoads/gu-psyc-347"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://github.com/shawnrhoads/gu-psyc-347/issues/new?title=Issue%20on%20page%20%2Fmodule-01-02_Modeling-Intro.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        
+    </div>
+</div>
+
+
+        <!-- Full screen (wrap in <a> to have style consistency -->
+        <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+                data-placement="bottom" onclick="toggleFullScreen()" title="Fullscreen mode"><i
+                    class="fas fa-expand"></i></button></a>
+
+        <!-- Launch buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        
+        
+        <a class="colab-button" href="https://colab.research.google.com/github/shawnrhoads/gu-psyc-347/blob/master/module-01-02_Modeling-Intro.ipynb"><button type="button" class="btn btn-secondary topbarbtn"
+                title="Launch Colab" data-toggle="tooltip" data-placement="left"><img class="colab-button-logo"
+                    src="_static/images/logo_colab.png"
+                    alt="Interact on Colab">Colab</button></a>
+        
+        
+    </div>
+</div>
+
+    </div>
+
+    <!-- Table of contents -->
+    <div class="d-none d-md-block col-md-2 bd-toc show">
+        <div class="tocsection onthispage pt-5 pb-3">
+            <i class="fas fa-list"></i> Contents
+        </div>
+        <nav id="bd-toc-nav">
+            <ul class="nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#describing-data">
+   Describing Data
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#setup">
+     Setup
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#getting-to-know-your-data">
+     Getting to know your data
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#plotting-your-data">
+     Plotting your data
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#comparing-mean-and-median">
+     Comparing mean and median
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#model-simulations">
+   Model Simulations
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#model-fitting-least-squares-regression">
+   Model Fitting: Least-Squares Regression
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#computing-mse">
+     Computing MSE
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#interactive-demo">
+     Interactive Demo
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#least-squares-optimization">
+     Least-squares optimization
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#model-fitting-linear-regression-with-mle">
+   Model Fitting: Linear regression with MLE
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#finding-the-maximum-likelihood-estimator">
+     Finding the Maximum Likelihood Estimator
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#bootstrapping">
+   Bootstrapping
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#resample-dataset-with-replacement">
+     Resample Dataset with Replacement
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#bootstrap-estimates">
+     Bootstrap Estimates
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#confidence-intervals">
+     Confidence Intervals
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#multiple-linear-regression">
+   Multiple Linear Regression
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#polynomial-regression">
+   Polynomial Regression
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#design-matrix-for-polynomial-regression">
+     Design matrix for polynomial regression
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#fitting-polynomial-regression-models">
+     Fitting polynomial regression models
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#model-comparison-evaluating-fit-quality">
+   Model Comparison: Evaluating fit quality
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#akaike-s-information-criterion-aic">
+     Akaike’s Information Criterion (AIC)
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#appendix-least-squares-optimization-derivation">
+   Appendix: Least Squares Optimization Derivation
+  </a>
+ </li>
+</ul>
+
+        </nav>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="modeling-practice">
+<h1>Modeling Practice<a class="headerlink" href="#modeling-practice" title="Permalink to this headline">¶</a></h1>
+<p>This tutorial was adapted from <a class="reference external" href="https://github.com/NeuromatchAcademy/course-content">Neuromatch Academy</a> tutorials, which were created by Matt Laporte, Byron Galbraith, Konrad Kording, Pierre-Étienne Fiquet, Anqi Wu, Alex Hyafil with help from Byron Galbraith, and reviewed by Lina Teichmann, Saeed Salehi, Patrick Mineault, Ella Batty, Dalin Guo, Aishwarya Balwani, Madineh Sarvestani, Maryam Vaziri-Pashkam, Michael Waskom.</p>
+<div class="section" id="describing-data">
+<h2>Describing Data<a class="headerlink" href="#describing-data" title="Permalink to this headline">¶</a></h2>
+<p>In this first section, we will use Python to describe data. To understand what our data look like, we will visualize it in different ways.</p>
+<div class="section" id="setup">
+<h3>Setup<a class="headerlink" href="#setup" title="Permalink to this headline">¶</a></h3>
+<p>Python requires you to explictly “import” libraries before their functions are available to use. We will always specify our imports at the beginning of each notebook or script.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">scipy</span> <span class="kn">import</span> <span class="n">stats</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span><span class="o">,</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="o">%</span><span class="n">matplotlib</span> <span class="n">inline</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="getting-to-know-your-data">
+<h3>Getting to know your data<a class="headerlink" href="#getting-to-know-your-data" title="Permalink to this headline">¶</a></h3>
+<p>Here, we will load a dataset as a <code class="docutils literal notranslate"><span class="pre">pandas.DataFrame</span></code>, and investigate its attributes. We will see <code class="docutils literal notranslate"><span class="pre">N</span></code> rows for each subject, and <code class="docutils literal notranslate"><span class="pre">M</span></code> columns for each variable.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># data = pd.read_csv(&#39;_data/wk02-01.csv&#39;)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># type(data)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># print(data.values.shape) # N x M</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># data.head()</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="plotting-your-data">
+<h3>Plotting your data<a class="headerlink" href="#plotting-your-data" title="Permalink to this headline">¶</a></h3>
+<p>Now, we will plot the distribution of one variable in our dataset (reaction time).</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># plt.hist(data[&#39;reaction_times&#39;], bins=50)</span>
+<span class="c1"># plt.xlabel(&quot;Reactions Times&quot;)</span>
+<span class="c1"># plt.ylabel(&quot;Number of Subjects&quot;)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Let’s see what percentage of subjects have a below-average reaction time (RT):</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># mean_rt = np.mean(data[&#39;reaction_times&#39;])</span>
+<span class="c1"># frac_below_mean = (data[&#39;reaction_times&#39;] &lt; mean_rt).mean()</span>
+<span class="c1"># print(f&quot;{frac_below_mean:2.1%} of subjects are below the mean&quot;)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>We can also see this by adding the average RT to the histogram plot:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># plt.hist(data[&#39;reaction_times&#39;], bins=50)</span>
+<span class="c1"># plt.xlabel(&quot;Reactions Times&quot;)</span>
+<span class="c1"># plt.ylabel(&quot;Number of Subjects&quot;)</span>
+
+<span class="c1"># plt.axvline(mean_rt, color=&quot;orange&quot;, label=&quot;Mean RT&quot;)</span>
+<span class="c1"># plt.legend()</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="comparing-mean-and-median">
+<h3>Comparing mean and median<a class="headerlink" href="#comparing-mean-and-median" title="Permalink to this headline">¶</a></h3>
+<p>Would adding the median RT tell us more information?</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># To complete the exercise, fill in the missing parts (...) and uncomment the code</span>
+
+<span class="c1"># median_rt = ...  # Hint: Try the function np.median</span>
+
+<span class="c1"># plt.hist(..., bins=50)</span>
+<span class="c1"># plt.xlabel(&quot;Reactions Times&quot;)</span>
+<span class="c1"># plt.ylabel(&quot;Number of Subjects&quot;)</span>
+
+<span class="c1"># plt.axvline(..., color=&quot;limegreen&quot;, label=&quot;Median RT&quot;)</span>
+<span class="c1"># plt.axvline(mean_rt, color=&quot;orange&quot;, label=&quot;Mean RT&quot;)</span>
+<span class="c1"># plt.legend()</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="model-simulations">
+<h2>Model Simulations<a class="headerlink" href="#model-simulations" title="Permalink to this headline">¶</a></h2>
+<p>Simulations are great ways to test models. By creating a simple synthetic dataset, we will know the true underlying model which allows us to see how our estimation efforts compare in uncovering the real model.</p>
+<p>Below, we will simulate a linear relationship between two variables <code class="docutils literal notranslate"><span class="pre">x</span></code> and <code class="docutils literal notranslate"><span class="pre">y</span></code>, and then we will add some “noise” to those data.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># setting a fixed seed to our random number generator ensures we will always</span>
+<span class="c1"># get the same psuedorandom number sequence</span>
+<span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">seed</span><span class="p">(</span><span class="mi">2021</span><span class="p">)</span>
+
+<span class="c1"># Let&#39;s set some parameters</span>
+<span class="n">beta</span> <span class="o">=</span> <span class="mf">1.2</span>
+<span class="n">n_subjects</span> <span class="o">=</span> <span class="mi">100</span>
+
+<span class="c1"># Draw x and then calculate y</span>
+<span class="n">x</span> <span class="o">=</span> <span class="mi">10</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">rand</span><span class="p">(</span><span class="n">n_subjects</span><span class="p">)</span>  <span class="c1"># sample from a uniform distribution over [0,10)</span>
+<span class="n">noise</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">randn</span><span class="p">(</span><span class="n">n_subjects</span><span class="p">)</span>  <span class="c1"># sample from a standard normal distribution</span>
+<span class="n">y</span> <span class="o">=</span> <span class="n">beta</span> <span class="o">*</span> <span class="n">x</span> <span class="o">+</span> <span class="n">noise</span>
+
+<span class="c1"># Plot the results</span>
+<span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">()</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>  <span class="c1"># produces a scatter plot</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set</span><span class="p">(</span><span class="n">xlabel</span><span class="o">=</span><span class="s1">&#39;x&#39;</span><span class="p">,</span> <span class="n">ylabel</span><span class="o">=</span><span class="s1">&#39;y&#39;</span><span class="p">);</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/module-01-02_Modeling-Intro_18_0.png" src="_images/module-01-02_Modeling-Intro_18_0.png" />
+</div>
+</div>
+<p>Now that we have our noisy dataset, we can try to estimate the underlying model that produced it. We use MSE to evaluate how successful a particular slope estimate <span class="math notranslate nohighlight">\(\hat{\beta}\)</span> is for explaining the data, with the closer to 0 the MSE is, the better our estimate fits the data.</p>
+</div>
+<div class="section" id="model-fitting-least-squares-regression">
+<h2>Model Fitting: Least-Squares Regression<a class="headerlink" href="#model-fitting-least-squares-regression" title="Permalink to this headline">¶</a></h2>
+<p>Now, we will fit our simulated data to a simple linear regression, using least squares optimization and Maximum Likelihood Estimation. We will use bootstrapping to build confidence intervals around the inferred linear model parameters. We’ll finish our exploration of regression models by generalizing to multiple linear regression and polynomial regression.</p>
+<p>In this tutorial, we will learn how to fit simple linear models to data.</p>
+<ul class="simple">
+<li><p>Learn how to calculate the mean-squared error (MSE)</p></li>
+<li><p>Explore how model parameters (slope) influence the MSE</p></li>
+<li><p>Learn how to find the optimal model parameter using least-squares optimization</p></li>
+</ul>
+<p><strong>Linear least squares regression</strong> is a great optimization procedure that we are going to use for data fitting.</p>
+<p>Suppose you have a set of measurements, <span class="math notranslate nohighlight">\(y_{n}\)</span> (the “dependent” variable) obtained for different input values, <span class="math notranslate nohighlight">\(x_{n}\)</span> (the “independent” or “explanatory” variable). Suppose we believe the measurements are proportional to the input values, but are corrupted by some (random) measurement errors, <span class="math notranslate nohighlight">\(\epsilon_{n}\)</span>, that is:</p>
+<div class="math notranslate nohighlight">
+\[y_{n}= \beta x_{n}+\epsilon_{n}\]</div>
+<p>for some unknown slope parameter <span class="math notranslate nohighlight">\(\beta.\)</span> The least squares regression problem uses <strong>mean squared error (MSE)</strong> as its objective function, it aims to find the value of the parameter <span class="math notranslate nohighlight">\(\beta\)</span> by minimizing the average of squared errors:</p>
+<p>\begin{align}
+\min <em>{\beta} \frac{1}{N}\sum</em>{n=1}^{N}\left(y_{n}-\beta x_{n}\right)^{2}
+\end{align}</p>
+<p>We will now explore how MSE is used in fitting a linear regression model to data.</p>
+<p>First we will generate some noisy samples <span class="math notranslate nohighlight">\(x\)</span> from [0, 10) along the line <span class="math notranslate nohighlight">\(y = 1.2x\)</span> as our dataset we wish to fit a model to.</p>
+<div class="section" id="computing-mse">
+<h3>Computing MSE<a class="headerlink" href="#computing-mse" title="Permalink to this headline">¶</a></h3>
+<p>In this exercise you will implement a method to compute the mean squared error for a set of inputs <span class="math notranslate nohighlight">\(x\)</span>, measurements <span class="math notranslate nohighlight">\(y\)</span>, and slope estimate <span class="math notranslate nohighlight">\(\hat{\beta}\)</span>. We will then compute and print the mean squared error for 3 different choices of beta.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">mse</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">beta_hat</span><span class="p">):</span>
+  <span class="sd">&quot;&quot;&quot;Compute the mean squared error</span>
+
+<span class="sd">  Args:</span>
+<span class="sd">    x (ndarray): An array of shape (samples,) that contains the input values.</span>
+<span class="sd">    y (ndarray): An array of shape (samples,) that contains the corresponding</span>
+<span class="sd">      measurement values to the inputs.</span>
+<span class="sd">    beta_hat (float): An estimate of the slope parameter</span>
+
+<span class="sd">  Returns:</span>
+<span class="sd">    float: The mean squared error of the data with the estimated parameter.</span>
+<span class="sd">  &quot;&quot;&quot;</span>
+  
+  <span class="c1"># Compute the estimated y</span>
+  <span class="n">y_hat</span> <span class="o">=</span> <span class="n">beta_hat</span> <span class="o">*</span> <span class="n">x</span>
+
+  <span class="c1"># Compute mean squared error</span>
+  <span class="n">mse</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">y</span> <span class="o">-</span> <span class="n">y_hat</span><span class="p">)</span>
+
+  <span class="k">return</span> <span class="n">mse</span>
+
+<span class="c1"># Uncomment below to test your function</span>
+<span class="n">beta_hats</span> <span class="o">=</span> <span class="p">[</span><span class="mf">0.75</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">,</span> <span class="mf">1.5</span><span class="p">]</span>
+<span class="c1"># for beta_hat in beta_hats:</span>
+<span class="c1">#   print(f&quot;beta_hat of {beta_hat} has an MSE of {mse(x, y, beta_hat):.2f}&quot;)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>fig, axes = plt.subplots(ncols=3, figsize=(18, 4))
+for beta_hat, ax in zip(beta_hats, axes):
+
+  # True data
+  ax.scatter(x, y, label=&#39;Observed&#39;)  # our data scatter plot
+
+  # Compute and plot predictions
+  y_hat = beta_hat * x
+  ax.plot(x, y_hat, color=&#39;r&#39;, label=&#39;Fit&#39;)  # our estimated model
+
+  ax.set(
+      title= fr&#39;$\hat{{\beta}}$= {beta_hat}, MSE = {mse(x, y, beta_hat):.2f}&#39;,
+      xlabel=&#39;x&#39;,
+      ylabel=&#39;y&#39;)
+
+axes[0].legend()
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-none notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0x21a4e45cc48&gt;
+</pre></div>
+</div>
+<img alt="_images/module-01-02_Modeling-Intro_24_1.png" src="_images/module-01-02_Modeling-Intro_24_1.png" />
+</div>
+</div>
+</div>
+<div class="section" id="interactive-demo">
+<h3>Interactive Demo<a class="headerlink" href="#interactive-demo" title="Permalink to this headline">¶</a></h3>
+<p>Using an interactive widget, we can easily see how changing our slope estimate changes our model fit. We display the <strong>residuals</strong>, the differences between observed and predicted data, as line segments between the data point (observed response) and the corresponding predicted response on the model fit line.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>def plot_observed_vs_predicted(x, y, y_hat, beta_hat):
+  &quot;&quot;&quot; Plot observed vs predicted data
+
+  Args:
+      x (ndarray): observed x values
+  y (ndarray): observed y values
+  y_hat (ndarray): predicted y values
+
+  &quot;&quot;&quot;
+  fig, ax = plt.subplots()
+  ax.scatter(x, y, label=&#39;Observed&#39;)  # our data scatter plot
+  ax.plot(x, y_hat, color=&#39;r&#39;, label=&#39;Fit&#39;)  # our estimated model
+  # plot residuals
+  ymin = np.minimum(y, y_hat)
+  ymax = np.maximum(y, y_hat)
+  ax.vlines(x, ymin, ymax, &#39;g&#39;, alpha=0.5, label=&#39;Residuals&#39;)
+  ax.set(
+      title=fr&quot;$\hat{{\beta}}$ = {beta_hat:0.2f}, MSE = {mse(x, y, beta_hat):.2f}&quot;,
+      xlabel=&#39;x&#39;,
+      ylabel=&#39;y&#39;
+  )
+  ax.legend()
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># import ipywidgets as widgets       # interactive display</span>
+<span class="c1"># %config InlineBackend.figure_format = &#39;retina&#39;</span>
+<span class="c1"># plt.style.use(&quot;https://raw.githubusercontent.com/NeuromatchAcademy/course-content/master/nma.mplstyle&quot;)</span>
+
+<span class="c1"># @widgets.interact(beta_hat=widgets.FloatSlider(1.2, min=0.0, max=2.0))</span>
+<span class="c1"># def plot_data_estimate(beta_hat):</span>
+<span class="c1">#   y_hat = beta_hat * x</span>
+<span class="c1">#   plot_observed_vs_predicted(x, y, y_hat, beta_hat)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="least-squares-optimization">
+<h3>Least-squares optimization<a class="headerlink" href="#least-squares-optimization" title="Permalink to this headline">¶</a></h3>
+<p>While the approach detailed above (computing MSE at various values of <span class="math notranslate nohighlight">\(\hat\beta\)</span>) quickly got us to a good estimate, it still relied on evaluating the MSE value across a grid of hand-specified values. If we didn’t pick a good range to begin with, or with enough granularity, we might miss the best possible estimator. Let’s go one step further, and instead of finding the minimum MSE from a set of candidate estimates, let’s solve for it analytically.</p>
+<p>We can do this by minimizing the cost function. Mean squared error is a convex objective function, therefore we can compute its minimum using calculus. Please see video or appendix for this derivation! After computing the minimum, we find that:</p>
+<p>\begin{align}
+\hat\beta = \frac{\vec{x}^\top \vec{y}}{\vec{x}^\top \vec{x}}
+\end{align}</p>
+<p>This is known as solving the normal equations. For different ways of obtaining the solution, see the notes on <a class="reference external" href="https://www.cns.nyu.edu/~eero/NOTES/leastSquares.pdf">Least Squares Optimization</a> by Eero Simoncelli.</p>
+<p>Next, we will write a function that find the optimal <span class="math notranslate nohighlight">\(\hat{\beta}\)</span> value using the least squares optimization approach (the equation above) to solve MSE minimization. It shoud take arguments <span class="math notranslate nohighlight">\(x\)</span> and <span class="math notranslate nohighlight">\(y\)</span> and return the solution <span class="math notranslate nohighlight">\(\hat{\beta}\)</span>.</p>
+<p>We will then use your function to compute <span class="math notranslate nohighlight">\(\hat{\beta}\)</span> and plot the resulting prediction on top of the data.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">solve_normal_eqn</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">):</span>
+  <span class="sd">&quot;&quot;&quot;Solve the normal equations to produce the value of beta_hat that minimizes</span>
+<span class="sd">    MSE.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">    x (ndarray): An array of shape (samples,) that contains the input values.</span>
+<span class="sd">    y (ndarray): An array of shape (samples,) that contains the corresponding</span>
+<span class="sd">      measurement values to the inputs.</span>
+
+<span class="sd">  Returns:</span>
+<span class="sd">    float: the value for beta_hat arrived from minimizing MSE</span>
+<span class="sd">  &quot;&quot;&quot;</span>
+
+  <span class="c1"># Compute beta_hat analytically</span>
+  <span class="n">beta_hat</span> <span class="o">=</span> <span class="p">(</span><span class="n">x</span><span class="o">.</span><span class="n">T</span> <span class="o">@</span> <span class="n">y</span><span class="p">)</span> <span class="o">/</span> <span class="p">(</span><span class="n">x</span><span class="o">.</span><span class="n">T</span> <span class="o">@</span> <span class="n">x</span><span class="p">)</span>
+
+  <span class="k">return</span> <span class="n">beta_hat</span>
+
+<span class="c1"># Uncomment below to test your function</span>
+<span class="n">beta_hat</span> <span class="o">=</span> <span class="n">solve_normal_eqn</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
+<span class="n">y_hat</span> <span class="o">=</span> <span class="n">beta_hat</span> <span class="o">*</span> <span class="n">x</span>
+<span class="n">plot_observed_vs_predicted</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">y_hat</span><span class="p">,</span> <span class="n">beta_hat</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/module-01-02_Modeling-Intro_30_0.png" src="_images/module-01-02_Modeling-Intro_30_0.png" />
+</div>
+</div>
+<ul class="simple">
+<li><p>Linear least squares regression is an optimization procedure that can be used for data fitting:</p>
+<ul>
+<li><p>Task: predict a value for <span class="math notranslate nohighlight">\(y\)</span> given <span class="math notranslate nohighlight">\(x\)</span></p></li>
+<li><p>Performance measure: <span class="math notranslate nohighlight">\(\textrm{MSE}\)</span></p></li>
+<li><p>Procedure: minimize <span class="math notranslate nohighlight">\(\textrm{MSE}\)</span> by solving the normal equations</p></li>
+</ul>
+</li>
+<li><p><strong>Key point</strong>: We fit the model by defining an <em>objective function</em> and minimizing it.</p></li>
+<li><p><strong>Note</strong>: In this case, there is an <em>analytical</em> solution to the minimization problem and in practice, this solution can be computed using <em>linear algebra</em>. This is <em>extremely</em> powerful and forms the basis for much of numerical computation throughout the sciences.</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="model-fitting-linear-regression-with-mle">
+<h2>Model Fitting: Linear regression with MLE<a class="headerlink" href="#model-fitting-linear-regression-with-mle" title="Permalink to this headline">¶</a></h2>
+<p>In the previous tutorial we made the assumption that the data was drawn from a linear relationship with noise added, and found an effective approach for estimating model parameters based on minimizing the mean squared error.</p>
+<p>In that case we treated the noise as simply a nuisance, but what if we factored it directly into our model?</p>
+<p>Recall our linear model:</p>
+<p>\begin{align}
+y = \beta x + \epsilon.
+\end{align}</p>
+<p>The noise component <span class="math notranslate nohighlight">\(\epsilon\)</span> is often modeled as a random variable drawn from a Gaussian distribution (also called the normal distribution).</p>
+<p>The Gaussian distribution is described by its <a class="reference external" href="https://en.wikipedia.org/wiki/Probability_density_function">probability density function</a> (pdf)
+\begin{align}
+\mathcal{N}(x; \mu, \sigma^2) = \frac{1}{\sqrt{2\pi\sigma^2}}e^{-\frac{1}{2\sigma^2}(x-\mu)^2}
+\end{align}</p>
+<p>and is dependent on two parameters: the mean <span class="math notranslate nohighlight">\(\mu\)</span> and the variance <span class="math notranslate nohighlight">\(\sigma^2\)</span>. We often consider the noise signal to be Gaussian “white noise”, with zero mean and unit variance:</p>
+<p>\begin{align}
+\epsilon \sim \mathcal{N}(0, 1).
+\end{align}</p>
+<p>We can plot the density of <span class="math notranslate nohighlight">\(p(y|x,\theta=1.2)\)</span> and see how <span class="math notranslate nohighlight">\(p(y)\)</span> changes for different values of <span class="math notranslate nohighlight">\(x\)</span>.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">plot_density_image</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">beta</span><span class="p">,</span> <span class="n">sigma</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">ax</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+  <span class="sd">&quot;&quot;&quot; Plots probability distribution of y given x, beta, and sigma</span>
+
+<span class="sd">  Args:</span>
+
+<span class="sd">    x (ndarray): An array of shape (samples,) that contains the input values.</span>
+<span class="sd">    y (ndarray): An array of shape (samples,) that contains the corresponding</span>
+<span class="sd">      measurement values to the inputs.</span>
+<span class="sd">    theta (float): Slope parameter</span>
+<span class="sd">    sigma (float): standard deviation of Gaussian noise</span>
+
+<span class="sd">  &quot;&quot;&quot;</span>
+
+  <span class="c1"># plot the probability density of p(y|x,theta)</span>
+  <span class="k">if</span> <span class="n">ax</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+    <span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">()</span>
+
+  <span class="n">xmin</span><span class="p">,</span> <span class="n">xmax</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">floor</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">min</span><span class="p">(</span><span class="n">x</span><span class="p">)),</span> <span class="n">np</span><span class="o">.</span><span class="n">ceil</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">max</span><span class="p">(</span><span class="n">x</span><span class="p">))</span>
+  <span class="n">ymin</span><span class="p">,</span> <span class="n">ymax</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">floor</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">min</span><span class="p">(</span><span class="n">y</span><span class="p">)),</span> <span class="n">np</span><span class="o">.</span><span class="n">ceil</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">max</span><span class="p">(</span><span class="n">y</span><span class="p">))</span>
+  <span class="n">xx</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="n">xmin</span><span class="p">,</span> <span class="n">xmax</span><span class="p">,</span> <span class="mi">50</span><span class="p">)</span>
+  <span class="n">yy</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="n">ymin</span><span class="p">,</span> <span class="n">ymax</span><span class="p">,</span> <span class="mi">50</span><span class="p">)</span>
+
+  <span class="n">surface</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="nb">len</span><span class="p">(</span><span class="n">yy</span><span class="p">),</span> <span class="nb">len</span><span class="p">(</span><span class="n">xx</span><span class="p">)))</span>
+  <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">x_i</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">xx</span><span class="p">):</span>
+    <span class="n">surface</span><span class="p">[:,</span> <span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">stats</span><span class="o">.</span><span class="n">norm</span><span class="p">(</span><span class="n">beta</span> <span class="o">*</span> <span class="n">x_i</span><span class="p">,</span> <span class="n">sigma</span><span class="p">)</span><span class="o">.</span><span class="n">pdf</span><span class="p">(</span><span class="n">yy</span><span class="p">)</span>
+
+  <span class="n">ax</span><span class="o">.</span><span class="n">set</span><span class="p">(</span><span class="n">xlabel</span><span class="o">=</span><span class="s1">&#39;x&#39;</span><span class="p">,</span> <span class="n">ylabel</span><span class="o">=</span><span class="s1">&#39;y&#39;</span><span class="p">)</span>
+
+  <span class="k">return</span> <span class="n">ax</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">surface</span><span class="p">,</span> <span class="n">origin</span><span class="o">=</span><span class="s1">&#39;lower&#39;</span><span class="p">,</span> <span class="n">aspect</span><span class="o">=</span><span class="s1">&#39;auto&#39;</span><span class="p">,</span> <span class="n">vmin</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">vmax</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+            <span class="n">cmap</span><span class="o">=</span><span class="n">plt</span><span class="o">.</span><span class="n">get_cmap</span><span class="p">(</span><span class="s1">&#39;Wistia&#39;</span><span class="p">),</span>
+            <span class="n">extent</span><span class="o">=</span><span class="p">[</span><span class="n">xmin</span><span class="p">,</span> <span class="n">xmax</span><span class="p">,</span> <span class="n">ymin</span><span class="p">,</span> <span class="n">ymax</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">fig</span><span class="p">,</span> <span class="p">(</span><span class="n">ax1</span><span class="p">,</span> <span class="n">ax2</span><span class="p">)</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">ncols</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">4</span><span class="p">))</span>
+
+<span class="c1"># Invokes helper function to generate density image plots from data and parameters</span>
+<span class="n">im</span> <span class="o">=</span> <span class="n">plot_density_image</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="mf">1.2</span><span class="p">,</span> <span class="n">ax</span><span class="o">=</span><span class="n">ax1</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">colorbar</span><span class="p">(</span><span class="n">im</span><span class="p">,</span> <span class="n">ax</span><span class="o">=</span><span class="n">ax1</span><span class="p">)</span>
+<span class="n">ax1</span><span class="o">.</span><span class="n">axvline</span><span class="p">(</span><span class="mi">8</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;k&#39;</span><span class="p">)</span>
+<span class="n">ax1</span><span class="o">.</span><span class="n">set</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="sa">r</span><span class="s1">&#39;p(y | x, $\theta$=1.2)&#39;</span><span class="p">)</span>
+
+<span class="c1"># Plot pdf for given x</span>
+<span class="n">ylim</span> <span class="o">=</span> <span class="n">ax1</span><span class="o">.</span><span class="n">get_ylim</span><span class="p">()</span>
+<span class="n">yy</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="n">ylim</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">ylim</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="mi">50</span><span class="p">)</span>
+<span class="n">ax2</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">yy</span><span class="p">,</span> <span class="n">stats</span><span class="o">.</span><span class="n">norm</span><span class="p">(</span><span class="n">beta</span> <span class="o">*</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span><span class="o">.</span><span class="n">pdf</span><span class="p">(</span><span class="n">yy</span><span class="p">),</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;orange&#39;</span><span class="p">,</span> <span class="n">linewidth</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">ax2</span><span class="o">.</span><span class="n">set</span><span class="p">(</span>
+    <span class="n">title</span><span class="o">=</span><span class="sa">r</span><span class="s1">&#39;p(y|x=8, $\beta$=1.2)&#39;</span><span class="p">,</span>
+    <span class="n">xlabel</span><span class="o">=</span><span class="s1">&#39;y&#39;</span><span class="p">,</span>
+    <span class="n">ylabel</span><span class="o">=</span><span class="s1">&#39;probability density&#39;</span><span class="p">);</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/module-01-02_Modeling-Intro_35_0.png" src="_images/module-01-02_Modeling-Intro_35_0.png" />
+</div>
+</div>
+<p>In this exercise you will implement the likelihood function <span class="math notranslate nohighlight">\(\mathcal{L}(\beta|x,y)\)</span> for our linear model where <span class="math notranslate nohighlight">\(\sigma = 1\)</span>.</p>
+<p>After implementing this function, we can produce probabilities that our estimate <span class="math notranslate nohighlight">\(\hat{\beta}\)</span> generated the provided observations. We will try with one of the samples from our dataset.</p>
+<p>TIP: Use <code class="docutils literal notranslate"><span class="pre">np.exp</span></code> and <code class="docutils literal notranslate"><span class="pre">np.sqrt</span></code> for the exponential and square root functions, respectively.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">likelihood</span><span class="p">(</span><span class="n">theta_hat</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">):</span>
+  <span class="sd">&quot;&quot;&quot;The likelihood function for a linear model with noise sampled from a</span>
+<span class="sd">    Gaussian distribution with zero mean and unit variance.</span>
+
+<span class="sd">  Args:</span>
+<span class="sd">    theta_hat (float): An estimate of the slope parameter.</span>
+<span class="sd">    x (ndarray): An array of shape (samples,) that contains the input values.</span>
+<span class="sd">    y (ndarray): An array of shape (samples,) that contains the corresponding</span>
+<span class="sd">      measurement values to the inputs.</span>
+
+<span class="sd">  Returns:</span>
+<span class="sd">    ndarray: the likelihood values for the theta_hat estimate</span>
+<span class="sd">  &quot;&quot;&quot;</span>
+  <span class="n">sigma</span> <span class="o">=</span> <span class="mi">1</span>
+  
+  <span class="c1"># Compute Gaussian likelihood</span>
+  <span class="n">pdf</span> <span class="o">=</span> <span class="mi">1</span> <span class="o">/</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="mi">2</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">pi</span> <span class="o">*</span> <span class="n">sigma</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="o">-</span><span class="p">(</span><span class="n">y</span> <span class="o">-</span> <span class="n">theta_hat</span> <span class="o">*</span> <span class="n">x</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span> <span class="o">/</span> <span class="p">(</span><span class="mi">2</span> <span class="o">*</span> <span class="n">sigma</span><span class="o">**</span><span class="mi">2</span><span class="p">))</span>
+
+  <span class="k">return</span> <span class="n">pdf</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">likelihood</span><span class="p">(</span><span class="mf">1.0</span><span class="p">,</span> <span class="n">x</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">y</span><span class="p">[</span><span class="mi">1</span><span class="p">]))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-none notranslate"><div class="highlight"><pre><span></span>0.1623808325143324
+</pre></div>
+</div>
+</div>
+</div>
+<p>When dealing with a set of data points, as we are with our dataset, we are concerned with their joint probability – the likelihood that all data points are explained by our parameterization. Since we have assumed that the noise affects each output independently, we can factorize the likelihood, and write:</p>
+<p>\begin{align}
+\mathcal{L}(\beta|X,Y) = \prod_{i=1}^N \mathcal{L}(\beta|x_i,y_i),
+\end{align}</p>
+<p>where we have <span class="math notranslate nohighlight">\(N\)</span> data points <span class="math notranslate nohighlight">\(X = \{x_1,...,x_N\}\)</span> and <span class="math notranslate nohighlight">\(Y = \{y_1,...,y_N\}\)</span>.</p>
+<p>In practice, such a product can be numerically unstable. Indeed multiplying small values together can lead to <a class="reference external" href="https://en.wikipedia.org/wiki/Arithmetic_underflow">underflow</a>, the situation in which the digital representation of floating point number reaches its limit. This problem can be circumvented by taking the logarithm of the likelihood because the logarithm transforms products into sums:</p>
+<p>\begin{align}
+\operatorname{log}\mathcal{L}(\beta|X,Y) = \sum_{i=1}^N \operatorname{log}\mathcal{L}(\beta|x_i,y_i)
+\end{align}</p>
+<p>We can take the sum of the log of the output of our <code class="docutils literal notranslate"><span class="pre">likelihood</span></code> method applied to the full dataset to get a better idea of how different <span class="math notranslate nohighlight">\(\hat\beta\)</span> compare. We can also plot the different distribution densities over our dataset and see how they line up qualitatively.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>beta_hats = [0.4, 1.2, 2.0]
+fig, axes = plt.subplots(ncols=3, figsize=(16, 4))
+for beta_hat, ax in zip(beta_hats, axes):
+  ll = np.sum(np.log(likelihood(beta_hat, x, y)))  # log likelihood
+  im = plot_density_image(x, y, beta_hat, ax=ax)
+  ax.scatter(x, y)
+  ax.set(title=fr&#39;$\hat{{\beta}}$ = {beta_hat}, log likelihood: {ll:.2f}&#39;)
+plt.colorbar(im, ax=ax);
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/module-01-02_Modeling-Intro_39_0.png" src="_images/module-01-02_Modeling-Intro_39_0.png" />
+</div>
+</div>
+<div class="section" id="finding-the-maximum-likelihood-estimator">
+<h3>Finding the Maximum Likelihood Estimator<a class="headerlink" href="#finding-the-maximum-likelihood-estimator" title="Permalink to this headline">¶</a></h3>
+<p>We want to find the parameter value <span class="math notranslate nohighlight">\(\hat\beta\)</span> that makes our data set most likely:</p>
+<p>\begin{align}
+\hat{\beta}_{\textrm{MLE}} = \underset{\beta}{\operatorname{argmax}} \mathcal{L}(\beta|X,Y)
+\end{align}</p>
+<p>We discussed how taking the logarithm of the likelihood helps with numerical stability, the good thing is that it does so without changing the parameter value that maximizes the likelihood. Indeed, the <span class="math notranslate nohighlight">\(\textrm{log}()\)</span> function is <em>monotonically increasing</em>, which means that it preserves the order of its inputs. So we have:</p>
+<p>\begin{align}
+\hat{\beta}<em>{\textrm{MLE}} = \underset{\beta}{\operatorname{argmax}} \sum</em>{i=1}^m \textrm{log} \mathcal{L}(\beta|x_i,y_i)
+\end{align}</p>
+<p>Now substituting our specific likelihood function and taking its logarithm, we get:
+\begin{align}
+\hat{\beta}<em>{\textrm{MLE}} = \underset{\beta}{\operatorname{argmax}} [-\frac{N}{2} \operatorname{log} 2\pi\sigma^2 - \frac{1}{2\sigma^2}\sum</em>{i=1}^N (y_i-\beta x_i)^2].
+\end{align}</p>
+<p>Note that maximizing the log likelihood is the same as minimizing the negative log likelihood (in practice optimization routines are developed to solve minimization not maximization problems). Because of the convexity of this objective function, we can take the derivative of our negative log likelihhood, set it to 0, and solve - just like our solution to minimizing MSE.</p>
+<p>\begin{align}
+\frac{\partial\operatorname{log}\mathcal{L}(\beta|x,y)}{\partial\beta}=\frac{1}{\sigma^2}\sum_{i=1}^N(y_i-\beta x_i)x_i = 0
+\end{align}</p>
+<p>This looks remarkably like the equation we had to solve for the optimal MSE estimator, and, in fact, we arrive to the exact same solution!</p>
+<p>\begin{align}
+\hat{\beta}<em>{\textrm{MLE}} = \hat{\beta}</em>{\textrm{MSE}} = \frac{\sum_{i=1}^N x_i y_i}{\sum_{i=1}^N x_i^2}
+\end{align}</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># Compute beta_hat_MLE</span>
+<span class="n">beta_hat_mle</span> <span class="o">=</span> <span class="p">(</span><span class="n">x</span> <span class="o">@</span> <span class="n">y</span><span class="p">)</span> <span class="o">/</span> <span class="p">(</span><span class="n">x</span> <span class="o">@</span> <span class="n">x</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span># Plot the resulting distribution density
+fig, ax = plt.subplots()
+ll = np.sum(np.log(likelihood(beta_hat_mle, x, y))) # log likelihood
+im = plot_density_image(x, y, beta_hat_mle, ax=ax)
+plt.colorbar(im, ax=ax);
+ax.scatter(x, y)
+ax.set(title=fr&#39;$\hat{{\beta}}$ = {beta_hat_mle:.2f}, log likelihood: {ll:.2f}&#39;);
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/module-01-02_Modeling-Intro_42_0.png" src="_images/module-01-02_Modeling-Intro_42_0.png" />
+</div>
+</div>
+<ul class="simple">
+<li><p>Likelihood vs probability</p>
+<ul>
+<li><p><span class="math notranslate nohighlight">\(\mathcal{L}(\beta|x, y) = p(y|\beta, x)\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(p(y|\theta, x)\)</span> -&gt; “probability of observing the response <span class="math notranslate nohighlight">\(y\)</span> given parameter <span class="math notranslate nohighlight">\(\beta\)</span> and input <span class="math notranslate nohighlight">\(x\)</span>”</p></li>
+<li><p><span class="math notranslate nohighlight">\(\mathcal{L}(\theta|x, y)\)</span> -&gt; “likelihood model that parameters <span class="math notranslate nohighlight">\(\theta\)</span> produced response <span class="math notranslate nohighlight">\(y\)</span> from input <span class="math notranslate nohighlight">\(x\)</span>”</p></li>
+</ul>
+</li>
+<li><p>Log-likelihood maximization</p>
+<ul>
+<li><p>We take the <span class="math notranslate nohighlight">\(\textrm{log}\)</span> of the likelihood function for computational convenience</p></li>
+<li><p>The parameters <span class="math notranslate nohighlight">\(\beta\)</span> that maximize <span class="math notranslate nohighlight">\(\textrm{log}\mathcal{L}(\beta|x, y)\)</span> are the model parameters that maximize the probability of observing the data.</p></li>
+</ul>
+</li>
+<li><p><strong>Key point</strong>:</p>
+<ul>
+<li><p>the log-likelihood is a flexible cost function, and is often used to find model parameters that best fit the data.</p></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="bootstrapping">
+<h2>Bootstrapping<a class="headerlink" href="#bootstrapping" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference external" href="https://en.wikipedia.org/wiki/Bootstrapping_(statistics)">Bootstrapping</a> is a widely applicable method to assess confidence/uncertainty about estimated parameters, it was originally <a class="reference external" href="https://projecteuclid.org/euclid.aos/1176344552">proposed</a> by <a class="reference external" href="https://en.wikipedia.org/wiki/Bradley_Efron">Bradley Efron</a>. The idea is to generate many new synthetic datasets from the initial true dataset by randomly sampling from it, then finding estimators for each one of these new datasets, and finally looking at the distribution of all these estimators to quantify our confidence.</p>
+<p>Note that each new resampled datasets will be the same size as our original one, with the new data points sampled with replacement i.e. we can repeat the same data point multiple times. Also note that in practice we need a lot of resampled datasets, here we use 2000.</p>
+<p>To explore this idea, we will start again with our noisy samples along the line <span class="math notranslate nohighlight">\(y_n = 1.2x_n + \epsilon_n\)</span>, but this time only use half the data points as last time (15 instead of 30).</p>
+<div class="section" id="resample-dataset-with-replacement">
+<h3>Resample Dataset with Replacement<a class="headerlink" href="#resample-dataset-with-replacement" title="Permalink to this headline">¶</a></h3>
+<p>In this exercise you will implement a method to resample a dataset with replacement. The method accepts <span class="math notranslate nohighlight">\(x\)</span> and <span class="math notranslate nohighlight">\(y\)</span> arrays. It should return a new set of <span class="math notranslate nohighlight">\(x'\)</span> and <span class="math notranslate nohighlight">\(y'\)</span> arrays that are created by randomly sampling from the originals.</p>
+<p>We will then compare the original dataset to a resampled dataset.</p>
+<p>TIP: The <a class="reference external" href="https://numpy.org/doc/stable/reference/random/generated/numpy.random.choice.html">numpy.random.choice</a> method would be useful here.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">resample_with_replacement</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">):</span>
+  <span class="sd">&quot;&quot;&quot;Resample data points with replacement from the dataset of `x` inputs and</span>
+<span class="sd">  `y` measurements.</span>
+
+<span class="sd">  Args:</span>
+<span class="sd">    x (ndarray): An array of shape (samples,) that contains the input values.</span>
+<span class="sd">    y (ndarray): An array of shape (samples,) that contains the corresponding</span>
+<span class="sd">      measurement values to the inputs.</span>
+
+<span class="sd">  Returns:</span>
+<span class="sd">    ndarray, ndarray: The newly resampled `x` and `y` data points.</span>
+<span class="sd">  &quot;&quot;&quot;</span>
+  <span class="c1"># Get array of indices for resampled points</span>
+  <span class="n">sample_idx</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">x</span><span class="p">),</span> <span class="n">size</span><span class="o">=</span><span class="nb">len</span><span class="p">(</span><span class="n">x</span><span class="p">),</span> <span class="n">replace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+  <span class="c1"># Sample from x and y according to sample_idx</span>
+  <span class="n">x_</span> <span class="o">=</span> <span class="n">x</span><span class="p">[</span><span class="n">sample_idx</span><span class="p">]</span>
+  <span class="n">y_</span> <span class="o">=</span> <span class="n">y</span><span class="p">[</span><span class="n">sample_idx</span><span class="p">]</span>
+
+  <span class="k">return</span> <span class="n">x_</span><span class="p">,</span> <span class="n">y_</span>
+
+<span class="n">fig</span><span class="p">,</span> <span class="p">(</span><span class="n">ax1</span><span class="p">,</span> <span class="n">ax2</span><span class="p">)</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">ncols</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span> <span class="mi">5</span><span class="p">))</span>
+<span class="n">ax1</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
+<span class="n">ax1</span><span class="o">.</span><span class="n">set</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="s1">&#39;Original&#39;</span><span class="p">,</span> <span class="n">xlabel</span><span class="o">=</span><span class="s1">&#39;x&#39;</span><span class="p">,</span> <span class="n">ylabel</span><span class="o">=</span><span class="s1">&#39;y&#39;</span><span class="p">)</span>
+
+<span class="c1"># Uncomment below to test your function</span>
+<span class="n">x_</span><span class="p">,</span> <span class="n">y_</span> <span class="o">=</span> <span class="n">resample_with_replacement</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
+<span class="n">ax2</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">x_</span><span class="p">,</span> <span class="n">y_</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;c&#39;</span><span class="p">)</span>
+
+<span class="n">ax2</span><span class="o">.</span><span class="n">set</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="s1">&#39;Resampled&#39;</span><span class="p">,</span> <span class="n">xlabel</span><span class="o">=</span><span class="s1">&#39;x&#39;</span><span class="p">,</span> <span class="n">ylabel</span><span class="o">=</span><span class="s1">&#39;y&#39;</span><span class="p">,</span>
+        <span class="n">xlim</span><span class="o">=</span><span class="n">ax1</span><span class="o">.</span><span class="n">get_xlim</span><span class="p">(),</span> <span class="n">ylim</span><span class="o">=</span><span class="n">ax1</span><span class="o">.</span><span class="n">get_ylim</span><span class="p">());</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/module-01-02_Modeling-Intro_46_0.png" src="_images/module-01-02_Modeling-Intro_46_0.png" />
+</div>
+</div>
+<p>In the resampled plot on the right, the actual number of points is the same, but some have been repeated so they only display once.</p>
+<p>Now that we have a way to resample the data, we can use that in the full bootstrapping process.</p>
+</div>
+<div class="section" id="bootstrap-estimates">
+<h3>Bootstrap Estimates<a class="headerlink" href="#bootstrap-estimates" title="Permalink to this headline">¶</a></h3>
+<p>In this exercise you will implement a method to run the bootstrap process of generating a set of <span class="math notranslate nohighlight">\(\hat\beta\)</span> values from a dataset of <span class="math notranslate nohighlight">\(x\)</span> inputs and <span class="math notranslate nohighlight">\(y\)</span> measurements. You should use <code class="docutils literal notranslate"><span class="pre">resample_with_replacement</span></code> here, and you may also invoke helper function <code class="docutils literal notranslate"><span class="pre">solve_normal_eqn</span></code> to produce the MSE-based estimator.</p>
+<p>We will then use this function to look at the <code class="docutils literal notranslate"><span class="pre">beta_hat</span></code> from different samples.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">bootstrap_estimates</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">n</span><span class="o">=</span><span class="mi">500</span><span class="p">):</span>
+  <span class="sd">&quot;&quot;&quot;Generate a set of theta_hat estimates using the bootstrap method.</span>
+
+<span class="sd">  Args:</span>
+<span class="sd">    x (ndarray): An array of shape (samples,) that contains the input values.</span>
+<span class="sd">    y (ndarray): An array of shape (samples,) that contains the corresponding</span>
+<span class="sd">      measurement values to the inputs.</span>
+<span class="sd">    n (int): The number of estimates to compute</span>
+
+<span class="sd">  Returns:</span>
+<span class="sd">    ndarray: An array of estimated parameters with size (n,)</span>
+<span class="sd">  &quot;&quot;&quot;</span>
+  <span class="n">beta_hats</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="n">n</span><span class="p">)</span>
+
+  <span class="c1"># Loop over number of estimates</span>
+  <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+
+    <span class="c1"># Resample x and y</span>
+    <span class="n">x_</span><span class="p">,</span> <span class="n">y_</span> <span class="o">=</span> <span class="n">resample_with_replacement</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
+
+    <span class="c1"># Compute theta_hat for this sample</span>
+    <span class="n">beta_hats</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">solve_normal_eqn</span><span class="p">(</span><span class="n">x_</span><span class="p">,</span> <span class="n">y_</span><span class="p">)</span>
+
+  <span class="k">return</span> <span class="n">beta_hats</span>
+
+<span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">seed</span><span class="p">(</span><span class="mi">2021</span><span class="p">)</span>  <span class="c1"># set random seed for checking solutions</span>
+
+<span class="c1"># Uncomment below to test function</span>
+<span class="n">beta_hats</span> <span class="o">=</span> <span class="n">bootstrap_estimates</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">n</span><span class="o">=</span><span class="mi">2000</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">beta_hats</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">5</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-none notranslate"><div class="highlight"><pre><span></span>[1.20454558 1.22652693 1.21429211 1.22514734 1.2125787 ]
+</pre></div>
+</div>
+</div>
+</div>
+<p>Now that we have our bootstrap estimates, we can visualize all the potential models (models computed with different resampling) together to see how distributed they are.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">()</span>
+
+<span class="c1"># For each theta_hat, plot model</span>
+<span class="n">beta_hats</span> <span class="o">=</span> <span class="n">bootstrap_estimates</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">n</span><span class="o">=</span><span class="mi">500</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">beta_hat</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">beta_hats</span><span class="p">):</span>
+  <span class="n">y_hat</span> <span class="o">=</span> <span class="n">beta_hat</span> <span class="o">*</span> <span class="n">x</span>
+  <span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y_hat</span><span class="p">,</span> <span class="n">c</span><span class="o">=</span><span class="s1">&#39;r&#39;</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.01</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Resampled Fits&#39;</span> <span class="k">if</span> <span class="n">i</span><span class="o">==</span><span class="mi">0</span> <span class="k">else</span> <span class="s1">&#39;&#39;</span><span class="p">)</span>
+
+<span class="c1"># Plot observed data</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Observed&#39;</span><span class="p">)</span>
+
+<span class="c1"># Plot true fit data</span>
+<span class="n">y_true</span> <span class="o">=</span> <span class="n">beta</span> <span class="o">*</span> <span class="n">x</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y_true</span><span class="p">,</span> <span class="s1">&#39;black&#39;</span><span class="p">,</span> <span class="n">linewidth</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;True Model&#39;</span><span class="p">)</span>
+
+<span class="n">ax</span><span class="o">.</span><span class="n">set</span><span class="p">(</span>
+  <span class="n">title</span><span class="o">=</span><span class="s1">&#39;Bootstrapped Slope Estimation&#39;</span><span class="p">,</span>
+  <span class="n">xlabel</span><span class="o">=</span><span class="s1">&#39;x&#39;</span><span class="p">,</span>
+  <span class="n">ylabel</span><span class="o">=</span><span class="s1">&#39;y&#39;</span>
+<span class="p">)</span>
+
+<span class="c1"># Change legend line alpha property</span>
+<span class="n">handles</span><span class="p">,</span> <span class="n">labels</span> <span class="o">=</span> <span class="n">ax</span><span class="o">.</span><span class="n">get_legend_handles_labels</span><span class="p">()</span>
+<span class="n">handles</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">set_alpha</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+
+<span class="n">ax</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-none notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0x21a4e661448&gt;
+</pre></div>
+</div>
+<img alt="_images/module-01-02_Modeling-Intro_51_1.png" src="_images/module-01-02_Modeling-Intro_51_1.png" />
+</div>
+</div>
+</div>
+<div class="section" id="confidence-intervals">
+<h3>Confidence Intervals<a class="headerlink" href="#confidence-intervals" title="Permalink to this headline">¶</a></h3>
+<p>Let us now quantify how uncertain our estimated slope is. We do so by computing <a class="reference external" href="https://en.wikipedia.org/wiki/Confidence_interval">confidence intervals</a> (CIs) from our bootstrapped estimates. The most direct approach is to compute percentiles from the empirical distribution of bootstrapped estimates. Note that this is widely applicable as we are not assuming that this empirical distribution is Gaussian.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">beta_hats</span> <span class="o">=</span> <span class="n">bootstrap_estimates</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">n</span><span class="o">=</span><span class="mi">500</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;mean = </span><span class="si">{</span><span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">beta_hats</span><span class="p">)</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">, std = </span><span class="si">{</span><span class="n">np</span><span class="o">.</span><span class="n">std</span><span class="p">(</span><span class="n">beta_hats</span><span class="p">)</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+<span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">()</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">beta_hats</span><span class="p">,</span> <span class="n">bins</span><span class="o">=</span><span class="mi">20</span><span class="p">,</span> <span class="n">facecolor</span><span class="o">=</span><span class="s1">&#39;C1&#39;</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.75</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">axvline</span><span class="p">(</span><span class="n">beta</span><span class="p">,</span> <span class="n">c</span><span class="o">=</span><span class="s1">&#39;g&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="sa">r</span><span class="s1">&#39;True $\beta$&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">axvline</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">percentile</span><span class="p">(</span><span class="n">beta_hats</span><span class="p">,</span> <span class="mi">50</span><span class="p">),</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;r&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Median&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">axvline</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">percentile</span><span class="p">(</span><span class="n">beta_hats</span><span class="p">,</span> <span class="mf">2.5</span><span class="p">),</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;b&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;95% CI&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">axvline</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">percentile</span><span class="p">(</span><span class="n">beta_hats</span><span class="p">,</span> <span class="mf">97.5</span><span class="p">),</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;b&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+
+<span class="n">ax</span><span class="o">.</span><span class="n">set</span><span class="p">(</span>
+    <span class="n">title</span><span class="o">=</span><span class="s1">&#39;Bootstrapped Confidence Interval&#39;</span><span class="p">,</span>
+    <span class="n">xlabel</span><span class="o">=</span><span class="sa">r</span><span class="s1">&#39;$\hat{{\beta}}$&#39;</span><span class="p">,</span>
+    <span class="n">ylabel</span><span class="o">=</span><span class="s1">&#39;count&#39;</span><span class="p">,</span>
+    <span class="n">xlim</span><span class="o">=</span><span class="p">[</span><span class="mf">1.0</span><span class="p">,</span> <span class="mf">1.5</span><span class="p">]</span>
+<span class="p">);</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-none notranslate"><div class="highlight"><pre><span></span>mean = 1.21, std = 0.02
+</pre></div>
+</div>
+<img alt="_images/module-01-02_Modeling-Intro_53_1.png" src="_images/module-01-02_Modeling-Intro_53_1.png" />
+</div>
+</div>
+<p>Looking at the distribution of bootstrapped <span class="math notranslate nohighlight">\(\hat{\beta}\)</span> values, we see that the true <span class="math notranslate nohighlight">\(\beta\)</span> falls well within the 95% confidence interval, which is reassuring. We also see that the value <span class="math notranslate nohighlight">\(\beta = 1\)</span> does not fall within the confidence interval. From this, we would reject the hypothesis that the slope was 1.</p>
+</div>
+</div>
+<div class="section" id="multiple-linear-regression">
+<h2>Multiple Linear Regression<a class="headerlink" href="#multiple-linear-regression" title="Permalink to this headline">¶</a></h2>
+<p>Now that we have considered the univariate case and how to produce confidence intervals for our estimator, we turn to the general linear regression case, where we can have more than one regressor, or feature, in our input.</p>
+<p>Recall that our original univariate linear model was given as</p>
+<p>\begin{align}
+y = \beta x + \epsilon
+\end{align}</p>
+<p>where <span class="math notranslate nohighlight">\(\beta\)</span> is the slope and <span class="math notranslate nohighlight">\(\epsilon\)</span> some noise. We can easily extend this to the multivariate scenario by adding another parameter for each additional feature</p>
+<p>\begin{align}
+y = \beta_0 + \beta_1 x_1 + \beta_2 x_2 + … +\beta_d x_d + \epsilon
+\end{align}</p>
+<p>where <span class="math notranslate nohighlight">\(\beta_0\)</span> is the intercept and <span class="math notranslate nohighlight">\(d\)</span> is the number of features (it is also the dimensionality of our input).</p>
+<p>We can condense this succinctly using vector notation for a single data point</p>
+<p>\begin{align}
+y_i = \boldsymbol{\beta}^{\top}\mathbf{x}_i + \epsilon
+\end{align}</p>
+<p>and fully in matrix form</p>
+<p>\begin{align}
+\mathbf{y} = \mathbf{X}\boldsymbol{\beta} + \mathbf{\epsilon}
+\end{align}</p>
+<p>where <span class="math notranslate nohighlight">\(\mathbf{y}\)</span> is a vector of measurements, <span class="math notranslate nohighlight">\(\mathbf{X}\)</span> is a matrix containing the feature values (columns) for each input sample (rows), and <span class="math notranslate nohighlight">\(\boldsymbol{\theta}\)</span> is our parameter vector.</p>
+<p>This matrix <span class="math notranslate nohighlight">\(\mathbf{X}\)</span> is often referred to as the “<a class="reference external" href="https://en.wikipedia.org/wiki/Design_matrix">design matrix</a>”.</p>
+<p>For now, we will focus on the two-dimensional case (<span class="math notranslate nohighlight">\(d=2\)</span>), which allows us to easily visualize our results.</p>
+<p>In this case our model can be writen as:</p>
+<p>\begin{align}
+y = \beta_0 + \beta_1 x_1 + \beta_2 x_2 + \epsilon
+\end{align}</p>
+<p>or in matrix form where</p>
+<p>\begin{align}
+\mathbf{X} =
+\begin{bmatrix}
+1 &amp; x_{1,1} &amp; x_{1,2} \
+1 &amp; x_{2,1} &amp; x_{2,2} \
+\vdots &amp; \vdots &amp; \vdots \
+1 &amp; x_{n,1} &amp; x_{n,2}
+\end{bmatrix},
+\boldsymbol{\beta} =
+\begin{bmatrix}
+\beta_0 \
+\beta_1 \
+\beta_2 \
+\end{bmatrix}
+\end{align}</p>
+<p>For our actual exploration dataset we shall set <span class="math notranslate nohighlight">\(\boldsymbol{\beta}=[0, -2, -3]\)</span> and draw <span class="math notranslate nohighlight">\(N=40\)</span> noisy samples from <span class="math notranslate nohighlight">\(x \in [-2,2)\)</span>. Note that setting the value of <span class="math notranslate nohighlight">\(\beta_0 = 0\)</span> effectively ignores the offset term.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># Set random seed for reproducibility</span>
+<span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">seed</span><span class="p">(</span><span class="mi">2021</span><span class="p">)</span>
+
+<span class="c1"># Set parameters</span>
+<span class="n">beta</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="o">-</span><span class="mi">2</span><span class="p">,</span> <span class="o">-</span><span class="mi">3</span><span class="p">]</span>
+<span class="n">n_samples</span> <span class="o">=</span> <span class="mi">40</span>
+
+<span class="c1"># Draw x and calculate y</span>
+<span class="n">n_regressors</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">beta</span><span class="p">)</span>
+<span class="n">x0</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">ones</span><span class="p">((</span><span class="n">n_subjects</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span>
+<span class="n">x1</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">uniform</span><span class="p">(</span><span class="o">-</span><span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="p">(</span><span class="n">n_subjects</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span>
+<span class="n">x2</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">uniform</span><span class="p">(</span><span class="o">-</span><span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="p">(</span><span class="n">n_subjects</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span>
+<span class="n">X</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">hstack</span><span class="p">((</span><span class="n">x0</span><span class="p">,</span> <span class="n">x1</span><span class="p">,</span> <span class="n">x2</span><span class="p">))</span>
+<span class="n">noise</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">randn</span><span class="p">(</span><span class="n">n_subjects</span><span class="p">)</span>
+<span class="n">y</span> <span class="o">=</span> <span class="n">X</span> <span class="o">@</span> <span class="n">beta</span> <span class="o">+</span> <span class="n">noise</span>
+
+<span class="kn">from</span> <span class="nn">mpl_toolkits.mplot3d</span> <span class="kn">import</span> <span class="n">axes3d</span><span class="p">,</span> <span class="n">Axes3D</span>
+<span class="n">fig</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">()</span>
+<span class="n">ax</span> <span class="o">=</span> <span class="n">Axes3D</span><span class="p">(</span><span class="n">fig</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">X</span><span class="p">[:,</span><span class="mi">1</span><span class="p">],</span> <span class="n">X</span><span class="p">[:,</span><span class="mi">2</span><span class="p">],</span> <span class="n">y</span><span class="p">,</span> <span class="s1">&#39;.&#39;</span><span class="p">)</span>
+
+<span class="n">ax</span><span class="o">.</span><span class="n">set</span><span class="p">(</span>
+    <span class="n">xlabel</span><span class="o">=</span><span class="s1">&#39;$x_1$&#39;</span><span class="p">,</span>
+    <span class="n">ylabel</span><span class="o">=</span><span class="s1">&#39;$x_2$&#39;</span><span class="p">,</span>
+    <span class="n">zlabel</span><span class="o">=</span><span class="s1">&#39;y&#39;</span>
+<span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="stderr docutils container">
+<pre class="stderr literal-block">c:\users\shawn\.conda\envs\gu-psyc-347-env\lib\site-packages\ipykernel_launcher.py:27: UserWarning: This figure includes Axes that are not compatible with tight_layout, so results might be incorrect.
+</pre>
+</div>
+<img alt="_images/module-01-02_Modeling-Intro_57_1.png" src="_images/module-01-02_Modeling-Intro_57_1.png" />
+</div>
+</div>
+<p>Now that we have our dataset, we want to find an optimal vector of paramters <span class="math notranslate nohighlight">\(\boldsymbol{\hat\beta}\)</span>. Recall our analytic solution to minimizing MSE for a single regressor:</p>
+<p>\begin{align}
+\hat\beta = \frac{\sum_{i=1}^N x_i y_i}{\sum_{i=1}^N x_i^2}.
+\end{align}</p>
+<p>The same holds true for the multiple regressor case, only now expressed in matrix form</p>
+<p>\begin{align}
+\boldsymbol{\hat\beta} = (\mathbf{X}^\top\mathbf{X})^{-1}\mathbf{X}^\top\mathbf{y}.
+\end{align}</p>
+<p>This is called the <a class="reference external" href="https://en.wikipedia.org/wiki/Ordinary_least_squares">ordinary least squares</a> (OLS) estimator.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">ordinary_least_squares</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">):</span>
+  <span class="sd">&quot;&quot;&quot;Ordinary least squares estimator for linear regression.</span>
+
+<span class="sd">  Args:</span>
+<span class="sd">    X (ndarray): design matrix of shape (n_samples, n_regressors)</span>
+<span class="sd">    y (ndarray): vector of measurements of shape (n_samples)</span>
+
+<span class="sd">  Returns:</span>
+<span class="sd">    ndarray: estimated parameter values of shape (n_regressors)</span>
+<span class="sd">  &quot;&quot;&quot;</span>
+
+  <span class="c1"># Compute theta_hat using OLS</span>
+  <span class="n">beta_hat</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">inv</span><span class="p">(</span><span class="n">X</span><span class="o">.</span><span class="n">T</span> <span class="o">@</span> <span class="n">X</span><span class="p">)</span> <span class="o">@</span> <span class="n">X</span><span class="o">.</span><span class="n">T</span> <span class="o">@</span> <span class="n">y</span>
+
+  <span class="k">return</span> <span class="n">beta_hat</span>
+
+<span class="c1"># Compute beta_hat</span>
+<span class="n">beta_hat</span> <span class="o">=</span> <span class="n">ordinary_least_squares</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;beta_hat = </span><span class="si">{</span><span class="n">beta_hat</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+<span class="c1"># Compute MSE</span>
+<span class="n">y_hat</span> <span class="o">=</span> <span class="n">X</span> <span class="o">@</span> <span class="n">beta_hat</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;MSE = </span><span class="si">{</span><span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">((</span><span class="n">y</span> <span class="o">-</span> <span class="n">y_hat</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-none notranslate"><div class="highlight"><pre><span></span>beta_hat = [ 0.02531807 -1.9575428  -3.14347711]
+MSE = 0.94
+</pre></div>
+</div>
+</div>
+</div>
+<p>Finally, the following code will plot a geometric visualization of the data points (blue) and fitted plane.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">beta_hat</span> <span class="o">=</span> <span class="n">ordinary_least_squares</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
+<span class="n">xx</span><span class="p">,</span> <span class="n">yy</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">mgrid</span><span class="p">[</span><span class="o">-</span><span class="mi">2</span><span class="p">:</span><span class="mi">2</span><span class="p">:</span><span class="mi">50</span><span class="n">j</span><span class="p">,</span> <span class="o">-</span><span class="mi">2</span><span class="p">:</span><span class="mi">2</span><span class="p">:</span><span class="mi">50</span><span class="n">j</span><span class="p">]</span>
+<span class="n">y_hat_grid</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="n">xx</span><span class="o">.</span><span class="n">flatten</span><span class="p">(),</span> <span class="n">yy</span><span class="o">.</span><span class="n">flatten</span><span class="p">()])</span><span class="o">.</span><span class="n">T</span> <span class="o">@</span> <span class="n">beta_hat</span><span class="p">[</span><span class="mi">1</span><span class="p">:]</span>
+<span class="n">y_hat_grid</span> <span class="o">=</span> <span class="n">y_hat_grid</span><span class="o">.</span><span class="n">reshape</span><span class="p">((</span><span class="mi">50</span><span class="p">,</span> <span class="mi">50</span><span class="p">))</span>
+
+<span class="n">fig</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">()</span>
+<span class="n">ax</span> <span class="o">=</span> <span class="n">Axes3D</span><span class="p">(</span><span class="n">fig</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">X</span><span class="p">[:,</span> <span class="mi">1</span><span class="p">],</span> <span class="n">X</span><span class="p">[:,</span> <span class="mi">2</span><span class="p">],</span> <span class="n">y</span><span class="p">,</span> <span class="s1">&#39;.&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">plot_surface</span><span class="p">(</span><span class="n">xx</span><span class="p">,</span> <span class="n">yy</span><span class="p">,</span> <span class="n">y_hat_grid</span><span class="p">,</span> <span class="n">linewidth</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.5</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;C1&#39;</span><span class="p">,</span>
+                <span class="n">cmap</span><span class="o">=</span><span class="n">plt</span><span class="o">.</span><span class="n">get_cmap</span><span class="p">(</span><span class="s1">&#39;coolwarm&#39;</span><span class="p">))</span>
+
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">X</span><span class="p">)):</span>
+  <span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">((</span><span class="n">X</span><span class="p">[</span><span class="n">i</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span> <span class="n">X</span><span class="p">[</span><span class="n">i</span><span class="p">,</span> <span class="mi">1</span><span class="p">]),</span>
+          <span class="p">(</span><span class="n">X</span><span class="p">[</span><span class="n">i</span><span class="p">,</span> <span class="mi">2</span><span class="p">],</span> <span class="n">X</span><span class="p">[</span><span class="n">i</span><span class="p">,</span> <span class="mi">2</span><span class="p">]),</span>
+          <span class="p">(</span><span class="n">y</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">y_hat</span><span class="p">[</span><span class="n">i</span><span class="p">]),</span>
+          <span class="s1">&#39;g-&#39;</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=.</span><span class="mi">5</span><span class="p">)</span>
+
+<span class="n">ax</span><span class="o">.</span><span class="n">set</span><span class="p">(</span>
+    <span class="n">xlabel</span><span class="o">=</span><span class="s1">&#39;$x_1$&#39;</span><span class="p">,</span>
+    <span class="n">ylabel</span><span class="o">=</span><span class="s1">&#39;$x_2$&#39;</span><span class="p">,</span>
+    <span class="n">zlabel</span><span class="o">=</span><span class="s1">&#39;y&#39;</span>
+<span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="stderr docutils container">
+<pre class="stderr literal-block">c:\users\shawn\.conda\envs\gu-psyc-347-env\lib\site-packages\ipykernel_launcher.py:23: UserWarning: This figure includes Axes that are not compatible with tight_layout, so results might be incorrect.
+</pre>
+</div>
+<img alt="_images/module-01-02_Modeling-Intro_61_1.png" src="_images/module-01-02_Modeling-Intro_61_1.png" />
+</div>
+</div>
+</div>
+<div class="section" id="polynomial-regression">
+<h2>Polynomial Regression<a class="headerlink" href="#polynomial-regression" title="Permalink to this headline">¶</a></h2>
+<p>So far today, you learned how to predict outputs from inputs by fitting a linear regression model. We can now model all sort of relationships!</p>
+<p>One potential problem with this approach is the simplicity of the model. Linear regression, as the name implies, can only capture a linear relationship between the inputs and outputs. Put another way, the predicted outputs are only a weighted sum of the inputs. What if there are more complicated computations happening? Luckily, many more complex models exist. One model that is still very simple to fit and understand, but captures more complex relationships, is <strong>polynomial regression</strong>, an extension of linear regression.</p>
+<p>Since polynomial regression is an extension of linear regression, everything you learned so far will come in handy now! The goal is the same: we want to predict the dependent variable <span class="math notranslate nohighlight">\(y_{n}\)</span> given the input values <span class="math notranslate nohighlight">\(x_{n}\)</span>. The key change is the type of relationship between inputs and outputs that the model can capture.</p>
+<p>Linear regression models predict the outputs as a weighted sum of the inputs:</p>
+<div class="math notranslate nohighlight">
+\[y_{n}= \beta_0 + \beta x_{n} + \epsilon_{n}\]</div>
+<p>With polynomial regression, we model the outputs as a polynomial equation based on the inputs. For example, we can model the outputs as:</p>
+<div class="math notranslate nohighlight">
+\[y_{n}= \beta_0 + \beta_1 x_{n} + \beta_2 x_{n}^2 + \beta_3 x_{n}^3 + \epsilon_{n}\]</div>
+<p>We can change how complex a polynomial is fit by changing the order of the polynomial. The order of a polynomial refers to the highest power in the polynomial. The equation above is a third order polynomial because the highest value x is raised to is 3. We could add another term (<span class="math notranslate nohighlight">\(+ \beta_4 x_{n}^4\)</span>) to model an order 4 polynomial and so on.</p>
+<p>First, we will simulate some data to practice fitting polynomial regression models. We will generate random inputs <span class="math notranslate nohighlight">\(x\)</span> and then compute y according to $y = x^2 - x - 2 $, with some extra noise both in the input and the output to make the model fitting exercise closer to a real life situation.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># setting a fixed seed to our random number generator ensures we will always</span>
+<span class="c1"># get the same psuedorandom number sequence</span>
+<span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">seed</span><span class="p">(</span><span class="mi">2021</span><span class="p">)</span>
+<span class="n">n_subjects</span> <span class="o">=</span> <span class="mi">100</span>
+<span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">uniform</span><span class="p">(</span><span class="o">-</span><span class="mi">2</span><span class="p">,</span> <span class="mf">2.5</span><span class="p">,</span> <span class="n">n_subjects</span><span class="p">)</span>  <span class="c1"># inputs uniformly sampled from [-2, 2.5)</span>
+
+<span class="n">y</span> <span class="o">=</span>  <span class="n">x</span><span class="o">**</span><span class="mi">2</span> <span class="o">-</span> <span class="n">x</span> <span class="o">-</span> <span class="mi">2</span>   <span class="c1"># computing the outputs</span>
+
+<span class="n">output_noise</span> <span class="o">=</span> <span class="mi">1</span><span class="o">/</span><span class="mi">8</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">randn</span><span class="p">(</span><span class="n">n_subjects</span><span class="p">)</span>
+<span class="n">y</span> <span class="o">+=</span> <span class="n">output_noise</span>  <span class="c1"># adding some output noise</span>
+
+<span class="n">input_noise</span> <span class="o">=</span> <span class="mi">1</span><span class="o">/</span><span class="mi">2</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">randn</span><span class="p">(</span><span class="n">n_subjects</span><span class="p">)</span>
+<span class="n">x</span> <span class="o">+=</span> <span class="n">input_noise</span>  <span class="c1"># adding some input noise</span>
+
+<span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">()</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>  <span class="c1"># produces a scatter plot</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set</span><span class="p">(</span><span class="n">xlabel</span><span class="o">=</span><span class="s1">&#39;x&#39;</span><span class="p">,</span> <span class="n">ylabel</span><span class="o">=</span><span class="s1">&#39;y&#39;</span><span class="p">);</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/module-01-02_Modeling-Intro_64_0.png" src="_images/module-01-02_Modeling-Intro_64_0.png" />
+</div>
+</div>
+<div class="section" id="design-matrix-for-polynomial-regression">
+<h3>Design matrix for polynomial regression<a class="headerlink" href="#design-matrix-for-polynomial-regression" title="Permalink to this headline">¶</a></h3>
+<p>Now we have the basic idea of polynomial regression and some noisy data, let’s begin! The key difference between fitting a linear regression model and a polynomial regression model lies in how we structure the input variables.</p>
+<p>For linear regression, we used <span class="math notranslate nohighlight">\(X = x\)</span> as the input data. To add a constant bias (a y-intercept in a 2-D plot), we use <span class="math notranslate nohighlight">\(X = \big[ \boldsymbol 1, x \big]\)</span>, where <span class="math notranslate nohighlight">\(\boldsymbol 1\)</span> is a column of ones.  When fitting, we learn a weight for each column of this matrix. So we learn a weight that multiples with column 1 - in this case that column is all ones so we gain the bias parameter (<span class="math notranslate nohighlight">\(+ \theta_0\)</span>). We also learn a weight for every column, or every feature of x, as we learned in Section 1.</p>
+<p>This matrix <span class="math notranslate nohighlight">\(X\)</span> that we use for our inputs is known as a <strong>design matrix</strong>. We want to create our design matrix so we learn weights for <span class="math notranslate nohighlight">\(x^2, x^3,\)</span> etc. Thus, we want to build our design matrix <span class="math notranslate nohighlight">\(X\)</span> for polynomial regression of order <span class="math notranslate nohighlight">\(k\)</span> as:</p>
+<div class="math notranslate nohighlight">
+\[X = \big[ \boldsymbol 1 , x^1, x^2 , \ldots , x^k \big],\]</div>
+<p>where <span class="math notranslate nohighlight">\(\boldsymbol{1}\)</span> is the vector the same length as <span class="math notranslate nohighlight">\(x\)</span> consisting of of all ones, and <span class="math notranslate nohighlight">\(x^p\)</span> is the vector or matrix <span class="math notranslate nohighlight">\(x\)</span> with all elements raised to the power <span class="math notranslate nohighlight">\(p\)</span>. Note that <span class="math notranslate nohighlight">\(\boldsymbol{1} = x^0\)</span> and <span class="math notranslate nohighlight">\(x^1 = x\)</span></p>
+<p>Create a function (<code class="docutils literal notranslate"><span class="pre">make_design_matrix</span></code>) that structures the design matrix given the input data and the order of the polynomial you wish to fit. We will print part of this design matrix for our data and order 5.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># to_remove solution</span>
+<span class="k">def</span> <span class="nf">make_design_matrix</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">order</span><span class="p">):</span>
+  <span class="sd">&quot;&quot;&quot;Create the design matrix of inputs for use in polynomial regression</span>
+
+<span class="sd">  Args:</span>
+<span class="sd">    x (ndarray): input vector of shape (samples,)</span>
+<span class="sd">    order (scalar): polynomial regression order</span>
+
+<span class="sd">  Returns:</span>
+<span class="sd">    ndarray: design matrix for polynomial regression of shape (samples, order+1)</span>
+<span class="sd">  &quot;&quot;&quot;</span>
+
+  <span class="c1"># Broadcast to shape (n x 1) so dimensions work</span>
+  <span class="k">if</span> <span class="n">x</span><span class="o">.</span><span class="n">ndim</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
+    <span class="n">x</span> <span class="o">=</span> <span class="n">x</span><span class="p">[:,</span> <span class="kc">None</span><span class="p">]</span>
+
+  <span class="c1">#if x has more than one feature, we don&#39;t want multiple columns of ones so we assign</span>
+  <span class="c1"># x^0 here</span>
+  <span class="n">design_matrix</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">ones</span><span class="p">((</span><span class="n">x</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="mi">1</span><span class="p">))</span>
+
+  <span class="c1"># Loop through rest of degrees and stack columns (hint: np.hstack)</span>
+  <span class="k">for</span> <span class="n">degree</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">order</span> <span class="o">+</span> <span class="mi">1</span><span class="p">):</span>
+      <span class="n">design_matrix</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">hstack</span><span class="p">((</span><span class="n">design_matrix</span><span class="p">,</span> <span class="n">x</span><span class="o">**</span><span class="n">degree</span><span class="p">))</span>
+
+  <span class="k">return</span> <span class="n">design_matrix</span>
+
+<span class="n">order</span> <span class="o">=</span> <span class="mi">5</span>
+<span class="n">X_design</span> <span class="o">=</span> <span class="n">make_design_matrix</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">order</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">X_design</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">2</span><span class="p">,</span> <span class="mi">0</span><span class="p">:</span><span class="mi">2</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-none notranslate"><div class="highlight"><pre><span></span>[[ 1.         -0.03194526]
+ [ 1.          0.78116292]]
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="fitting-polynomial-regression-models">
+<h3>Fitting polynomial regression models<a class="headerlink" href="#fitting-polynomial-regression-models" title="Permalink to this headline">¶</a></h3>
+<p>Now that we have the inputs structured correctly in our design matrix, fitting a polynomial regression is the same as fitting a linear regression model! All of the polynomial structure we need to learn is contained in how the inputs are structured in the design matrix. We can use the same least squares solution we computed in previous exercises.</p>
+<p>Here, we will fit polynomial regression models to find the regression coefficients (<span class="math notranslate nohighlight">\(\beta_0, \beta_1, \beta_2,\)</span> …) by solving the least squares problem. Create a function <code class="docutils literal notranslate"><span class="pre">solve_poly_reg</span></code> that loops over different order polynomials (up to <code class="docutils literal notranslate"><span class="pre">max_order</span></code>), fits that model, and saves out the weights for each. You may invoke the <code class="docutils literal notranslate"><span class="pre">ordinary_least_squares</span></code> function.</p>
+<p>We will then qualitatively inspect the quality of our fits for each order by plotting the fitted polynomials on top of the data. In order to see smooth curves, we evaluate the fitted polynomials on a grid of <span class="math notranslate nohighlight">\(x\)</span> values (ranging between the largest and smallest of the inputs present in the dataset).</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">solve_poly_reg</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">max_order</span><span class="p">):</span>
+  <span class="sd">&quot;&quot;&quot;Fit a polynomial regression model for each order 0 through max_order.</span>
+
+<span class="sd">  Args:</span>
+<span class="sd">    x (ndarray): input vector of shape (n_samples)</span>
+<span class="sd">    y (ndarray): vector of measurements of shape (n_samples)</span>
+<span class="sd">    max_order (scalar): max order for polynomial fits</span>
+
+<span class="sd">  Returns:</span>
+<span class="sd">    dict: fitted weights for each polynomial model (dict key is order)</span>
+<span class="sd">  &quot;&quot;&quot;</span>
+
+  <span class="c1"># Create a dictionary with polynomial order as keys,</span>
+  <span class="c1"># and np array of theta_hat (weights) as the values</span>
+  <span class="n">beta_hats</span> <span class="o">=</span> <span class="p">{}</span>
+
+  <span class="c1"># Loop over polynomial orders from 0 through max_order</span>
+  <span class="k">for</span> <span class="n">order</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">max_order</span> <span class="o">+</span> <span class="mi">1</span><span class="p">):</span>
+
+    <span class="c1"># Create design matrix</span>
+    <span class="n">X_design</span> <span class="o">=</span> <span class="n">make_design_matrix</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">order</span><span class="p">)</span>
+
+    <span class="c1"># Fit polynomial model</span>
+    <span class="n">this_beta</span> <span class="o">=</span> <span class="n">ordinary_least_squares</span><span class="p">(</span><span class="n">X_design</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
+
+    <span class="n">beta_hats</span><span class="p">[</span><span class="n">order</span><span class="p">]</span> <span class="o">=</span> <span class="n">this_beta</span>
+
+  <span class="k">return</span> <span class="n">beta_hats</span>
+
+
+<span class="n">max_order</span> <span class="o">=</span> <span class="mi">5</span>
+<span class="n">beta_hats</span> <span class="o">=</span> <span class="n">solve_poly_reg</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">max_order</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">plot_fitted_polynomials</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">beta_hat</span><span class="p">):</span>
+  <span class="sd">&quot;&quot;&quot; Plot polynomials of different orders</span>
+
+<span class="sd">  Args:</span>
+<span class="sd">    x (ndarray): input vector of shape (n_samples)</span>
+<span class="sd">    y (ndarray): vector of measurements of shape (n_samples)</span>
+<span class="sd">    theta_hat (dict): polynomial regression weights for different orders</span>
+<span class="sd">  &quot;&quot;&quot;</span>
+
+  <span class="n">x_grid</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="n">x</span><span class="o">.</span><span class="n">min</span><span class="p">()</span> <span class="o">-</span> <span class="o">.</span><span class="mi">5</span><span class="p">,</span> <span class="n">x</span><span class="o">.</span><span class="n">max</span><span class="p">()</span> <span class="o">+</span> <span class="o">.</span><span class="mi">5</span><span class="p">)</span>
+
+  <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">()</span>
+
+  <span class="k">for</span> <span class="n">order</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">max_order</span> <span class="o">+</span> <span class="mi">1</span><span class="p">):</span>
+    <span class="n">X_design</span> <span class="o">=</span> <span class="n">make_design_matrix</span><span class="p">(</span><span class="n">x_grid</span><span class="p">,</span> <span class="n">order</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x_grid</span><span class="p">,</span> <span class="n">X_design</span> <span class="o">@</span> <span class="n">beta_hat</span><span class="p">[</span><span class="n">order</span><span class="p">]);</span>
+
+  <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;y&#39;</span><span class="p">)</span>
+  <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;x&#39;</span><span class="p">)</span>
+  <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="s1">&#39;C0.&#39;</span><span class="p">);</span>
+  <span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">([</span><span class="sa">f</span><span class="s1">&#39;order </span><span class="si">{</span><span class="n">o</span><span class="si">}</span><span class="s1">&#39;</span> <span class="k">for</span> <span class="n">o</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">max_order</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)],</span> <span class="n">loc</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+  <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;polynomial fits&#39;</span><span class="p">)</span>
+  <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+
+<span class="n">plot_fitted_polynomials</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">beta_hats</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/module-01-02_Modeling-Intro_70_0.png" src="_images/module-01-02_Modeling-Intro_70_0.png" />
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="model-comparison-evaluating-fit-quality">
+<h2>Model Comparison: Evaluating fit quality<a class="headerlink" href="#model-comparison-evaluating-fit-quality" title="Permalink to this headline">¶</a></h2>
+<p>We end by learning how to choose between these various models.</p>
+<p>As with linear regression, we can compute mean squared error (MSE) to get a sense of how well the model fits the data.</p>
+<p>We compute MSE as:</p>
+<div class="math notranslate nohighlight">
+\[ MSE = \frac 1 N ||y - \hat y||^2 = \sum_{i=1}^N (y_i - \hat y_i)^2 \]</div>
+<p>where the predicted values for each model are given by $ \hat y = X \hat \beta$.</p>
+<p><em>Which model (i.e. which polynomial order) do you think will have the best MSE?</em></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">mse_list</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="n">order_list</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="n">max_order</span> <span class="o">+</span> <span class="mi">1</span><span class="p">))</span>
+
+<span class="k">for</span> <span class="n">order</span> <span class="ow">in</span> <span class="n">order_list</span><span class="p">:</span>
+
+  <span class="n">X_design</span> <span class="o">=</span> <span class="n">make_design_matrix</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">order</span><span class="p">)</span>
+
+  <span class="c1"># Get prediction for the polynomial regression model of this order</span>
+  <span class="n">y_hat</span> <span class="o">=</span> <span class="n">X_design</span> <span class="o">@</span> <span class="n">beta_hats</span><span class="p">[</span><span class="n">order</span><span class="p">]</span>
+
+  <span class="c1"># Compute the residuals</span>
+  <span class="n">residuals</span> <span class="o">=</span> <span class="n">y</span> <span class="o">-</span> <span class="n">y_hat</span>
+
+  <span class="c1"># Compute the MSE</span>
+  <span class="n">mse</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">residuals</span> <span class="o">**</span> <span class="mi">2</span><span class="p">)</span>
+
+  <span class="n">mse_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">mse</span><span class="p">)</span>
+
+<span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">()</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">bar</span><span class="p">(</span><span class="n">order_list</span><span class="p">,</span> <span class="n">mse_list</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="s1">&#39;Comparing Polynomial Fits&#39;</span><span class="p">,</span> <span class="n">xlabel</span><span class="o">=</span><span class="s1">&#39;Polynomial order&#39;</span><span class="p">,</span> <span class="n">ylabel</span><span class="o">=</span><span class="s1">&#39;MSE&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-none notranslate"><div class="highlight"><pre><span></span>[Text(0.5, 1.0, &#39;Comparing Polynomial Fits&#39;),
+ Text(0.5, 0, &#39;Polynomial order&#39;),
+ Text(0, 0.5, &#39;MSE&#39;)]
+</pre></div>
+</div>
+<img alt="_images/module-01-02_Modeling-Intro_72_1.png" src="_images/module-01-02_Modeling-Intro_72_1.png" />
+</div>
+</div>
+<div class="section" id="akaike-s-information-criterion-aic">
+<h3>Akaike’s Information Criterion (AIC)<a class="headerlink" href="#akaike-s-information-criterion-aic" title="Permalink to this headline">¶</a></h3>
+<p>In order to choose the best model for a given problem, we can ask how likely the data is under a given model. We want to choose a model that assigns high probability to the data. A commonly used method for model selection that uses this approach is <strong>Akaike’s Information Criterion (AIC)</strong>.</p>
+<p>Essentially, AIC estimates how much information would be lost if the model predictions were used instead of the true data (the relative information value of the model). We compute the AIC for each model and choose the model with the lowest AIC. Note that AIC only tells us relative qualities, not absolute - we do not know from AIC how good our model is independent of others.</p>
+<p>AIC strives for a good tradeoff between overfitting and underfitting by taking into account the complexity of the model and the information lost. AIC is calculated as:</p>
+<div class="math notranslate nohighlight">
+\[ AIC = 2K - 2 log(L)\]</div>
+<p>where K is the number of parameters in your model and L is the likelihood that the model could have produced the output data.</p>
+<p>Now we know what AIC is, we want to use it to pick between our polynomial regression models. We haven’t been thinking in terms of likelihoods though - so how will we calculate L?</p>
+<p>There is a link between mean squared error and the likelihood estimates for linear regression models that we can take advantage of.</p>
+<p><em>Derivation time!</em></p>
+<p>We start with our formula for AIC from above:</p>
+<div class="math notranslate nohighlight">
+\[ AIC = 2k - 2 log L \]</div>
+<p>For a model with normal errors, we can use the log likelihood of the normal distribution:</p>
+<div class="math notranslate nohighlight">
+\[ \log L = -\frac{n}{2} \log(2 \pi) -\frac{n}{2}log(\sigma^2) - \sum_i^n \frac{1}{2 \sigma^2} (y_i - \tilde y_i)^2\]</div>
+<p>We can drop the first and last terms as both are constants and we’re only assessing relative information with AIC. Once we drop those terms and incorporate into the AIC formula we get:</p>
+<div class="math notranslate nohighlight">
+\[AIC = 2k + nlog(\sigma^2)\]</div>
+<p>We can replace <span class="math notranslate nohighlight">\(\sigma^2\)</span> with the computation for variance (the sum of squared errors divided by number of samples). Thus, we end up with the following formula for AIC for linear and polynomial regression:</p>
+<div class="math notranslate nohighlight">
+\[ AIC = 2K + n log(\frac{SSE}{n})\]</div>
+<p>where k is the number of parameters, n is the number of samples, and SSE is the summed squared error.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">AIC_list</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="n">order_list</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="n">max_order</span> <span class="o">+</span> <span class="mi">1</span><span class="p">))</span>
+
+<span class="k">for</span> <span class="n">order</span> <span class="ow">in</span> <span class="n">order_list</span><span class="p">:</span>
+
+  <span class="c1"># Compute predictions for this model</span>
+  <span class="n">X_design</span> <span class="o">=</span> <span class="n">make_design_matrix</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">order</span><span class="p">)</span>
+  <span class="n">y_hat</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">X_design</span><span class="p">,</span> <span class="n">beta_hats</span><span class="p">[</span><span class="n">order</span><span class="p">])</span>
+
+  <span class="c1"># Compute SSE</span>
+  <span class="n">residuals</span> <span class="o">=</span> <span class="n">y</span> <span class="o">-</span> <span class="n">y_hat</span>
+  <span class="n">sse</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">residuals</span> <span class="o">**</span> <span class="mi">2</span><span class="p">)</span>
+
+  <span class="c1"># Get K</span>
+  <span class="n">K</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">beta_hats</span><span class="p">[</span><span class="n">order</span><span class="p">])</span>
+
+  <span class="c1"># Compute AIC</span>
+  <span class="n">AIC</span> <span class="o">=</span> <span class="mi">2</span> <span class="o">*</span> <span class="n">K</span> <span class="o">+</span> <span class="n">n_subjects</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="n">sse</span> <span class="o">/</span> <span class="n">n_subjects</span><span class="p">)</span>
+
+  <span class="n">AIC_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">AIC</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">bar</span><span class="p">(</span><span class="n">order_list</span><span class="p">,</span> <span class="n">AIC_list</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;AIC&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;polynomial order&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;comparing polynomial fits&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/module-01-02_Modeling-Intro_74_0.png" src="_images/module-01-02_Modeling-Intro_74_0.png" />
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="appendix-least-squares-optimization-derivation">
+<h2>Appendix: Least Squares Optimization Derivation<a class="headerlink" href="#appendix-least-squares-optimization-derivation" title="Permalink to this headline">¶</a></h2>
+<p>We will outline here the derivation of the least squares solution.</p>
+<p>We first set the derivative of the error expression with respect to <span class="math notranslate nohighlight">\(\theta\)</span> equal to zero,</p>
+<p>\begin{align}
+\frac{d}{d\beta}\frac{1}{N}\sum_{i=1}^N(y_i - \beta x_i)^2 = 0 \
+\frac{1}{N}\sum_{i=1}^N-2x_i(y_i - \beta x_i) = 0
+\end{align}</p>
+<p>where we used the chain rule. Now solving for <span class="math notranslate nohighlight">\(\theta\)</span>, we obtain an optimal value of:</p>
+<p>\begin{align}
+\hat\beta = \frac{\sum_{i=1}^N x_i y_i}{\sum_{i=1}^N x_i^2}
+\end{align}</p>
+<p>Which we can write in vector notation as:</p>
+<p>\begin{align}
+\hat\beta = \frac{\vec{x}^\top \vec{y}}{\vec{x}^\top \vec{x}}
+\end{align}</p>
+<p>This is known as solving the <em>normal equations</em>. For different ways of obtaining the solution, see the notes on <a class="reference external" href="https://www.cns.nyu.edu/~eero/NOTES/leastSquares.pdf">Least Squares Optimization</a> by Eero Simoncelli.</p>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        </div>
+    </div>
+    
+    
+    <div class='prev-next-bottom'>
+        
+    <a class='left-prev' id="prev-link" href="module-01-01_Intro-to-Python.html" title="previous page">Intro to Python Basics</a>
+    <a class='right-next' id="next-link" href="module-02-00_RLDM.html" title="next page">Learning &amp; Decision-Making</a>
+
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By Shawn A. Rhoads<br/>
+        
+            &copy; Copyright 2020.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+
+    <script src="_static/js/index.js"></script>
+    
+  </body>
+</html>
