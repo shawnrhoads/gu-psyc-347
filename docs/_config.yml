@@ -10,6 +10,7 @@ footer_text: Created by <a href="http://shawnrhoads.github.io/">Shawn A Rhoads</
 repository:
   url: https://github.com/shawnrhoads/gu-psyc-347
   path_to-book: "docs"
+  branch: "jupyter-book-spring-2021"
 
 html:
   use_repository_button: true
