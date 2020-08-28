@@ -6,7 +6,7 @@ logo: '_images/logo.png'
 
 repository:
   url: https://github.com/shawnrhoads/gu-psyc-347
-  path_to-book: "content"
+  path_to-book: "docs"
 
 html:
   use_repository_button: true
