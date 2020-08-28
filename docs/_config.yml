@@ -4,6 +4,9 @@ author: Shawn A. Rhoads
 copyright: '2020'
 logo: '_images/logo.png'
 
+# Main page settings
+footer_text: Created by <a href="http://shawnrhoads.github.io/">Shawn A Rhoads</a> using <a href="https://jupyterbook.org/">Jupyter Book</a>.
+
 repository:
   url: https://github.com/shawnrhoads/gu-psyc-347
   path_to-book: "docs"

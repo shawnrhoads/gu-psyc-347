@@ -1,4 +1,0 @@
-# Bayesian Modeling
-
-COMING SOON!
-

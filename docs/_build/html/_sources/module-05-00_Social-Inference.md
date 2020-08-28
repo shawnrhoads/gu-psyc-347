@@ -1,3 +1,0 @@
-# Social Inference
-
-[COMING SOON!]

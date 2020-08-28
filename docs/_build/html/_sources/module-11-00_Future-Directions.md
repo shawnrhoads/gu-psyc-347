@@ -1,3 +1,0 @@
-# Future Directions
-
-[COMING SOON!]

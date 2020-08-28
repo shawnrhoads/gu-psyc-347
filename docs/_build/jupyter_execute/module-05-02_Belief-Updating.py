@@ -1,4 +1,0 @@
-# Belief Updating
-
-COMING SOON!
-
