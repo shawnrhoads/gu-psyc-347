@@ -1,36 +1,60 @@
 - file: index
-- file: module-00-00_Syllabus
-- file: module-00-01_Course-Schedule
-- file: module-00-02_Getting-Started
-# - file: module-00-03_Reading-List
-# - file: module-00-04_Final-Projects
-  # sections:
-  #   - file: module-00-05_Group-Work
-  #   - file: module-00-06_Final-Notebooks
-  #   - file: module-00-07_Final-Presentations
-- file: module-01-00_Models
-  sections:
-    - file: module-01-01_Intro-to-Python
-    - file: module-01-02_Modeling-Intro
-- file: module-02-00_RLDM
-  # sections:
-  #   - file: module-03-01_Two-Armed-Bandit
-- file: module-03-00_Social-Behavior
-- file: module-04-00_Social-Learning
-#   sections:
-#     - file: module-04-01_Social-RLDM
-- file: module-05-00_Social-Inference
-#   sections:
-#     - file: module-05-01_Bayes
-#     - file: module-05-02_Belief-Updating
-#     - file: module-05-03_Impression-Updating
-- file: module-06-00_Evidence-Accumulation
-  # sections:
-  #   - file: module-06-01_Drift-Diffusion
-- file: module-07-00_Social-Influence
-  # sections:
-  #   - file: module-07-01_Social-Drift-Diffusion
-- file: module-08-00_Social-Norms
-- file: module-09-00_Interacting-Agents
-- file: module-10-00_Individual-Differences
-- file: module-11-00_Future-Directions
+- part: Module 00
+  chapters:
+    - file: module-00-00_Syllabus
+    - file: module-00-01_Course-Schedule
+    - file: module-00-02_Getting-Started
+    # - file: module-00-03_Reading-List
+    # - file: module-00-04_Final-Projects
+    #   sections:
+    #     - file: module-00-05_Group-Work
+    #     - file: module-00-06_Final-Notebooks
+    #     - file: module-00-07_Final-Presentations
+- part: Module 01
+  chapters:
+    - file: module-01-00_Models
+      sections:
+        - file: module-01-01_Intro-to-Python
+        - file: module-01-02_Modeling-Intro
+- part: Module 02
+  chapters:
+    - file: module-02-00_RLDM
+      # sections:
+      #   - file: module-03-01_Two-Armed-Bandit
+- part: Module 03
+  chapters:
+    - file: module-03-00_Social-Behavior
+- part: Module 04
+  chapters:
+    - file: module-04-00_Social-Learning
+    #   sections:
+    #     - file: module-04-01_Social-RLDM
+- part: Module 05
+  chapters:
+    - file: module-05-00_Social-Inference
+    #   sections:
+    #     - file: module-05-01_Bayes
+    #     - file: module-05-02_Belief-Updating
+    #     - file: module-05-03_Impression-Updating
+- part: Module 06
+  chapters:
+    - file: module-06-00_Evidence-Accumulation
+      # sections:
+      #   - file: module-06-01_Drift-Diffusion
+- part: Module 07
+  chapters:
+    - file: module-07-00_Social-Influence
+      # sections:
+      #   - file: module-07-01_Social-Drift-Diffusion
+- part: Module 08
+  chapters:
+    - file: module-08-00_Social-Norms
+- part: Module 09
+  chapters:
+    - file: module-09-00_Interacting-Agents
+- part: Module 10
+  chapters:
+    - file: module-10-00_Individual-Differences
+- part: Module 11
+  chapters:
+    - file: module-11-00_Future-Directions

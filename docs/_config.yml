@@ -2,6 +2,8 @@
 title: Computational Models of Human Social Behavior
 author: Shawn A. Rhoads
 copyright: '2020'
+execute:
+  execute_notebooks: cache
 logo: '_images/logo.png'
 
 # Main page settings
@@ -10,10 +12,10 @@ footer_text: Created by <a href="http://shawnrhoads.github.io/">Shawn A Rhoads</
 repository:
   url: https://github.com/shawnrhoads/gu-psyc-347
   branch: "jupyter-book-spring-2021"
-  path_to-book: "docs"
-
+  path_to-book: "docs/"
 
 html:
+  home_page_in_navbar: false
   use_repository_button: true
   use_issues_button: true
   google_analytics_id: ""
