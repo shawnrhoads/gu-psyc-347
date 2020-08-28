@@ -9,6 +9,5 @@ __pycache__/
 .ipynb_checkpoints
 .DS_Store
 .vscode
-content/_build/.doctrees
-content/_build/jupyter_execute
-content/_work
+docs/_build/
+docs/_work
