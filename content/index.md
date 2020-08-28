@@ -1,4 +1,6 @@
 # Computational Models of Human Social Behavior
+*Last updated: August 2020*</br>
+*CONTENT IS NOT FINAL*
 
 ## Course information
 **Section**: PSYC 347-XX<br />

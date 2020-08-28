@@ -1,49 +1,36 @@
 - file: index
-- file: wk00-00_Syllabus
-- file: wk00-01_Course-Schedule
-
-- file: wk00-02_Reading-List
-- file: wk00-03_Getting-Started
-- file: wk00-04_Final-Projects
+- file: module-00-00_Syllabus
+- file: module-00-01_Course-Schedule
+- file: module-00-02_Getting-Started
+# - file: module-00-03_Reading-List
+# - file: module-00-04_Final-Projects
+  # sections:
+  #   - file: module-00-05_Group-Work
+  #   - file: module-00-06_Final-Notebooks
+  #   - file: module-00-07_Final-Presentations
+- file: module-01-00_Models
   sections:
-    - file: wk00-05_Group-Work
-    - file: wk00-06_Final-Notebooks
-    - file: wk00-07_Final-Presentations
-- file: wk01-00_Models
-  sections:
-    - file: wk01-01_Intro-to-Python
-- file: wk02-00_Social-Behavior
-  sections:
-    - file: wk02-01_Modeling-Intro
-- file: wk03-00_RLDM
-  sections:
-    - file: wk03-01_Two-Armed-Bandit
-- file: wk04-00_Vicarious-Learning
-  sections:
-    - file: wk04-01_Social-RLDM-0
-- file: wk05-00_Action-Imitation
-  sections:
-    - file: wk05-01_Social-RLDM-1
-- file: wk07-00_Social-Inference
-  sections:
-    - file: wk07-01_Bayes
-- file: wk08-00_Belief-Updating
-  sections:
-    - file: wk08-01_Social-Bayes-0
-- file: wk09-00_Impression-Updating
-  sections:
-    - file: wk09-01_Social-Bayes-1
-- file: wk10-00_Evidence-Accumulation
-  sections:
-    - file: wk10-01_DDM
-- file: wk11-00_Social-Influence
-  sections:
-    - file: wk11-01_Social-DDM
-- file: wk12-00_Interacting-Agents
-  sections:
-    - file: wk12-01_Cooperative-DM
-- file: wk13-00_Social-Norms
-  sections:
-    - file: wk13-01_Normative-DM
-- file: wk14-00_Individual-Differences
-- file: wk14-01_Future-Directions
+    - file: module-01-01_Intro-to-Python
+    - file: module-01-02_Modeling-Intro
+- file: module-02-00_RLDM
+  # sections:
+  #   - file: module-03-01_Two-Armed-Bandit
+- file: module-03-00_Social-Behavior
+- file: module-04-00_Social-Learning
+#   sections:
+#     - file: module-04-01_Social-RLDM
+- file: module-05-00_Social-Inference
+#   sections:
+#     - file: module-05-01_Bayes
+#     - file: module-05-02_Belief-Updating
+#     - file: module-05-03_Impression-Updating
+- file: module-06-00_Evidence-Accumulation
+  # sections:
+  #   - file: module-06-01_Drift-Diffusion
+- file: module-07-00_Social-Influence
+  # sections:
+  #   - file: module-07-01_Social-Drift-Diffusion
+- file: module-08-00_Social-Norms
+- file: module-09-00_Interacting-Agents
+- file: module-10-00_Individual-Differences
+- file: module-11-00_Future-Directions

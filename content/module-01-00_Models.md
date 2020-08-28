@@ -1,7 +1,6 @@
-# Class 01 - What are Models?
+# What are Models?
 
-
-
+[COMING SOON!]
 
 ## Marr's Three Levels of Analysis
 

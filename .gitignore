@@ -11,3 +11,4 @@ __pycache__/
 .vscode
 content/_build/.doctrees
 content/_build/jupyter_execute
+content/_work

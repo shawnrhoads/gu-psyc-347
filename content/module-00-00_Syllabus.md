@@ -17,7 +17,9 @@
 
 ## Course Overview
 
-The goal of <u>computational modeling</u> in behavioral and psychological science is using precise mathematical models to make better sense of behavioral data {cite}`Wilson2019`. This practice has revolutionized psychological science and neuroscience by allowing researchers to test specific theories and hypotheses or explain unobservable aspects of complex social cognitive processes and behaviors. 
+The goal of <u>computational modeling</u> in behavioral and psychological science is using precise mathematical models to make better sense of behavioral data {cite}`Wilson2019`. Over the past decade, this practice has revolutionized social psychological science and neuroscience by allowing researchers to test specific theories and hypotheses and/or explain unobservable aspects of complex social cognitive processes and behaviors. 
+
+This course will comprise a combination of lecture-based, discussion-based, and lab-based instruction. Most classes will "hands-ons." We will work with real data using the Python programming language as we survey some selected areas of research at the intersection of computational modeling and social behavior. These topics will span a broad set of social psychological abilities including observational learning, social inference and impression updating, cooperative decision-making, and social influence. 
 
 This course is ideal for advanced students in psychological science, cognitive neuroscience, or computer science with some background in psychology, research methods, and programming, but welcomes students with all levels of experience.
 
@@ -30,11 +32,13 @@ This course is ideal for advanced students in psychological science, cognitive n
 </div>
 
 ## Course Goals
-1. Learn about the goals and concepts underlying computational modeling 
-2. Survey selected topics through discussions, readings, and hands-on tutorials (these topics will span a broad set of social psychological abilities including observational learning, social inference and impression updating, cooperative decision-making, and social influence)
-3. Gain experience working with real data using the Python programming language
-4. Work collaboratively to fit/evaluate models
-5. Finish the semester with a richer understanding of how computational modeling advances psychological science
+1. Understand the following: *what* are computational models, *why* use computational models, *when* to use computational models, and *how* data are fit to models.
+2. Survey and synthesize various computational models across selected topics through lectures, readings, discussions, and hands-on tutorials
+3. Learn how to code using Jupyter Notebooks and the Python programming language
+4. Gain experience working with real data 
+5. Work collaboratively to "fit" data to models and evaluate their performance
+6. Interpet the results of a social psychological experiment
+7. Finish the semester with a richer understanding of how computational modeling advances psychological science
 
 ## Course Policies
 
