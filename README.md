@@ -3,7 +3,7 @@ Instructor: Shawn Rhoads</br>
 Georgetown University
 
 Last updated: November 2020*</br>
-~CONTENT IS NOT FINAL~
+**CONTENT IS NOT FINAL**
 
 ## Course information
 **Section**: PSYC 347-01</br>
@@ -12,7 +12,7 @@ Last updated: November 2020*</br>
 **Dates**: January 28 - May 6, 2021</br>
 **Meetings**: Tuesdays/Thursdays from 11am-12:15pm</br>
 **Location**: Online</br>
-**Syllabus**: [Found here](https://shawnrhoads.github.io/gu-psyc-347/module-00-00_Syllabus.html)
+**Syllabus**: [Found here](https://shawnrhoads.github.io/gu-psyc-347/module-00-00_Syllabus.html)</br>
 **Schedule**: [Found here](https://shawnrhoads.github.io/gu-psyc-347/module-00-01_Course-Schedule.html)
 
 ## Instructor information
