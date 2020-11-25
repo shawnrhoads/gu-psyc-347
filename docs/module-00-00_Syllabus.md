@@ -106,7 +106,7 @@ If you experience sexual violence, identity-based harm, or any other personal cr
 I am committed to supporting survivors of sexual misconduct, including relationship violence and sexual assault. Due to federal law, I must report any disclosures of sexual misconduct to the Title IX Office. I want to be able to protect you as best as I can, and in this case, it would be to report the survivor’s story to the appropriate authorities.
 
 <div class="alert alert-info">
-<b>Did you know that Georgetown University has its own food pantry?</b> They have non-perishable food and personal hygiene products. During the period of online instructions, they relocated to McShain Kitchen, adjacent to McShain Large. You just need your GoCard to access. If you encounter any problems getting in, contact GUPD at 202-687-4343.
+<b>Did you know that Georgetown University has its own food pantry?</b> They have non-perishable food and personal hygiene products. During the period of online instructions, they relocated to McShain Kitchen, adjacent to McShain Large. You just need your GoCard to access. If you encounter any problems getting in, contact GUPD at 202-687-4343.</br>
 </div>
 
 ## References
