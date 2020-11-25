@@ -4,12 +4,12 @@
     - file: module-00-00_Syllabus
     - file: module-00-01_Course-Schedule
     - file: module-00-02_Getting-Started
-    # - file: module-00-03_Reading-List
+    - file: module-00-03_Reading-List
     # - file: module-00-04_Final-Projects
-    #   sections:
-    #     - file: module-00-05_Group-Work
-    #     - file: module-00-06_Final-Notebooks
-    #     - file: module-00-07_Final-Presentations
+      # sections:
+      #   - file: module-00-05_Group-Work
+      #   - file: module-00-06_Final-Notebooks
+      #   - file: module-00-07_Final-Presentations
 - part: Module 01
   chapters:
     - file: module-01-00_Models

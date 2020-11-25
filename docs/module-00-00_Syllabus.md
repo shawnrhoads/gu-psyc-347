@@ -36,9 +36,9 @@ This course is designed to expand the skillset for students interested in conduc
 
 <u>Social inference</u>: understanding information about another person's attributes, actions, and/or mental states
 
-<u>Impression updating</u>: updating beliefs about another person's attributes based on new information
-
 <u>Belief updating</u>: updating beliefs about another person's beliefs, goals, or intentions based on new information
+
+<u>Impression updating</u>: updating beliefs about another person's attributes based on new information
 
 <u>Cooperative decision-making</u>: decisions made among two or more individuals with the goal of producing rewarding outcomes for all involved
 </div>
