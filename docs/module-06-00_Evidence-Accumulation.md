@@ -1,3 +1,0 @@
-# Evidence Accumulation
-
-[COMING SOON!]

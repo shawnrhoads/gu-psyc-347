@@ -1,3 +1,0 @@
-# Social Norms
-
-[COMING SOON!]
