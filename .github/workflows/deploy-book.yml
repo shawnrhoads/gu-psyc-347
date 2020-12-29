@@ -31,12 +31,14 @@ jobs:
         activate-environment: gu-psyc-347-jb
         environment-file: environment.yml
         python-version: 3.7
+        channels: conda-forge,eoas_ubc
         auto-activate-base: false
         miniconda-version: 'latest'
 
     - name: Build Book
       run: |
         conda info
+        conda list
         conda activate gu-psyc-347-jb
         runjb docs
 
