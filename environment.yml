@@ -10,11 +10,8 @@ dependencies:
   - runjb
   - git
   - pandas
-  - matplotlib
-  - seaborn
   - scipy
   - numpy
-  - scikit-learn
-  - ghp-import
+  - matplotlib
   - pip:
     - jupyter-book>=0.7.0b

@@ -23,22 +23,21 @@ jobs:
         persist-credentials: false
     
     - name: Setup Miniconda
-      uses: goanpeca/setup-miniconda@v1
+      uses: conda-incubator/setup-miniconda@v2
       with:
-        auto-update-conda: true
+        activate-environment: gu-psyc-347-jb
+        environment-file: environment.yml
+        python-version: 3.7
         auto-activate-base: false
         miniconda-version: 'latest'
-        python-version: 3.7
-        environment-file: environment.yml
-        activate-environment: gu-psyc-347-jb
-
+        
     # - name: Install jupyter_book
     #     shell: bash -l {0}
-    #     run:  pip install jupyter-book --pre
+    #     run:  pip install jupyter-book
 
-    - name: Build Jupyter Book
-      shell: bash -l {0}
-      run: runjb docs
+    # - name: Build Jupyter Book
+    #   shell: bash -l {0}
+    #   run: runjb docs
 
     # # Install dependencies
     # - name: Set up Python 3.7
@@ -50,10 +49,10 @@ jobs:
     #   run: |
     #     pip install -r requirements.txt
 
-    # # Build the page
-    # - name: Build the book
-    #   run: |
-    #     jupyter-book build docs/
+    # Build the page
+    - name: Build the book
+      run: |
+        jupyter-book build ./docs
 
     # Push the book's HTML to github-pages
     - name: GitHub Pages action
