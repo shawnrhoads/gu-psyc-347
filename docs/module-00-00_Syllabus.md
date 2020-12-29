@@ -10,11 +10,12 @@ Last updated: November 2020</br>
 **Dates**: January 28 - May 6, 2021</br>
 **Meetings**: Tuesdays/Thursdays from 11am-12:15pm</br>
 **Location**: Online</br>
-**Schedule**: [On the next page](module-00-01_Course-Schedule.html)
+**Schedule**: [On the next page](https://shawnrhoads.github.io/gu-psyc-347/module-00-01_Course-Schedule.html)
 
 **Instructor**: Shawn A Rhoads<br>
 **Pronouns**: he/him/his<br>
 **Email**: sr1209(at)georgetown(dot)edu<br>
+**Website**: [shawnrhoads.github.io](https://shawnrhoads.github.io)</br>
 **Office hours**: Mondays from 2:30-4pm
 
 ## Course Overview
@@ -24,6 +25,14 @@ The goal of <u>computational modeling</u> in behavioral and psychological scienc
 **PSYC 347 (Computational Models of Human Social Behavior)** comprises lecture-based, discussion-based, and lab-based instruction. Most classes will "hands-ons." We will discuss relevant book chapters and journal articles, and work with simulated and real data using the <a href="https://www.python.org/">Python programming language</a> (no prior programming experience necessary) as we survey some selected areas of research at the intersection of computational modeling and social behavior. These topics will span a broad set of social psychological abilities including observational and prosocial learning, social preference learning, social inference and impression updating, and cooperative decision-making.
 
 This course is designed to expand the skillset for students interested in conducting research in psychological science, cognitive science, neuroscience, or data science. Although some background in psychology, research methods, and/or programming will be helpful, students with all levels of experience are welcome to enroll. 
+
+## Course Goals
+1. Understand the following: *what* are computational models, *why* use computational models, *when* to use computational models, and *how* data are fit to models.
+2. Survey selected selected topics on social behavior through lectures, readings, discussions, and hands-on tutorials
+3. Learn how to write code for data science using the <a href="https://www.python.org/">Python programming language</a> and <a href="https://jupyter.org/">Jupyter Notebooks</a>
+4. Work collaboratively to "fit" data to models and evaluate their performance
+5. Interpet the results of a social behavioral experiment
+6. Gain a richer understanding of how computational modeling advances psychological science
 
 <div class="alert alert-info">
 <b>Some definitions</b>
@@ -43,13 +52,18 @@ This course is designed to expand the skillset for students interested in conduc
 <u>Cooperative decision-making</u>: decisions made among two or more individuals with the goal of producing rewarding outcomes for all involved
 </div>
 
-## Course Goals
-1. Understand the following: *what* are computational models, *why* use computational models, *when* to use computational models, and *how* data are fit to models.
-2. Survey selected selected topics on social behavior through lectures, readings, discussions, and hands-on tutorials
-3. Learn how to write code for data science using the <a href="https://www.python.org/">Python programming language</a> and <a href="https://jupyter.org/">Jupyter Notebooks</a>
-4. Work collaboratively to "fit" data to models and evaluate their performance
-5. Interpet the results of a social behavioral experiment
-6. Gain a richer understanding of how computational modeling advances psychological science
+## Course Grading
+
+- Attendence (1%)
+- Class Contributions/Participation (14%)
+- Article Presentation (10%)
+- 5 Jupyter Notebook Exercises (5% each, 25% total)
+- Project Proposal - Round 1 (5%)
+- Annotated Bibliography (10%)
+- Project Proposal - Round 2 (15%)
+- Project Presentation (20%)
+
+See the [Course Assignments page](https://shawnrhoads.github.io/gu-psyc-347/module-00-02_Course-Assignments.html) for more detailed information.
 
 ## Course Policies
 
@@ -70,18 +84,7 @@ Please be nice and respectful to everyone in class. Don't cheat or plagiarize. W
 For assignments that are submitted late, the maximum obtainable grade will be reduced by 10% for each day it is late. For instance, if an assignment that is three days late receives 9/10 points, the student will receive 6.3/10 points instead. 
 
 ### Extra Credit
-You may earn extra credit up to 3% to your total grade. There are two ways to obtain extra credit: (1) Research Participation through the [Georgetown Research Volunteer Program](https://georgetown.sona-systems.com/all_exp.aspx) and/or (2) submitting a one-page reflection from the optional reading list. Completing each earns one extra credit point. For example, you may obtain 2 research participation credits and complete 1 article reflection for a total of 3 extra credit points. You may also obtain a total of 3 research participation credits.
-
-## Course Grading
-
-- Attendence (1%)
-- Class Contributions/Participation (14%)
-- Jupyter Notebook Exercises (20%)
-- Initial project Proposal (3%)
-- Annotated Bibliography (7%)
-- Final Project Proposal (25%)
-- Final Project Presentation (10%)
-- Final Project Submission (20%)
+You may earn extra credit up to 3% to your total grade. There are three ways to obtain extra credit: (1) participate in a research study through the [Georgetown Research Volunteer Program](https://georgetown.sona-systems.com/all_exp.aspx), (2) refer someone to participate in a research study through the [Georgetown Research Volunteer Program](https://georgetown.sona-systems.com/all_exp.aspx) and submit a one-page reflection after interviewing them about their experience, and/or (3) submit a one-page reflection from the [optional reading list](module-00-03_Reading-List.html). Completing each earns one extra credit point. For example, you may obtain 2 research participation credits and complete 1 article reflection for a total of 3 extra credit points. You may also obtain a total of 3 research participation credits.
 
 ## Resources
 

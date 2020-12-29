@@ -1,3 +1,0 @@
-# Social Influence
-
-[COMING SOON!]

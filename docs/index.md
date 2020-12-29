@@ -1,6 +1,6 @@
-# Computational Models of Human Social Behavior
-*Last updated: August 2020*</br>
-*CONTENT IS NOT FINAL*
+# Course Homepage
+**Last updated: November 2020**</br>
+**CONTENT IS NOT FINAL**
 
 ## Course information
 **Section**: PSYC 347-01</br>
@@ -9,12 +9,13 @@
 **Dates**: January 28 - May 6, 2021</br>
 **Meetings**: Tuesdays/Thursdays from 11am-12:15pm</br>
 **Location**: Online</br>
-**Schedule**: [Found here](module-00-01_Course-Schedule.html)
+**Schedule**: [Found here](https://shawnrhoads.github.io/gu-psyc-347/module-00-01_Course-Schedule.html)
 
 ## Instructor information
 **Instructor**: Shawn A Rhoads<br>
 **Pronouns**: he/him/his<br>
 **Email**: sr1209(at)georgetown(dot)edu<br>
+**Website**: [shawnrhoads.github.io](https://shawnrhoads.github.io)</br>
 **Office hours**: Mondays from 2:30-4pm
 
 ## License for this book

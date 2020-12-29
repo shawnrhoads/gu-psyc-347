@@ -1,7 +1,9 @@
 # Getting Started
 
+We will walk through setting up the course software on the first day of class.
+
 ## Download Anaconda 3
-Anaconda is an open-source distribution of the Python and R programming languages for scientific computing. We will be using it throughout the course.
+[Anaconda](https://www.anaconda.com/products/individual#Downloads) is an open-source distribution of the Python and R programming languages for scientific computing. We will be using it throughout the course.
 
 ## Clone repository
 In your terminal, use command: `git clone https://github.com/shawnrhoads/gu-psyc-347`
