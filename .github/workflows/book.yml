@@ -32,13 +32,13 @@ jobs:
           environment-file: environment.yml
           activate-environment: gu-psyc-347-jb
 
-    - name: Install jupyter_book
-        shell: bash -l {0}
-        run:  pip install jupyter-book --pre
+    # - name: Install jupyter_book
+    #     shell: bash -l {0}
+    #     run:  pip install jupyter-book --pre
 
     - name: Build Jupyter Book
         shell: bash -l {0}
-        run: jb build docs
+        run: runjb docs
 
     # # Install dependencies
     # - name: Set up Python 3.7
