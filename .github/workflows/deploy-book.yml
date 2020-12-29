@@ -40,7 +40,7 @@ jobs:
         conda info
         conda list
         conda activate gu-psyc-347-jb
-        runjb docs
+        jupyter-book build docs
 
     # - name: Install jupyter_book
     #     shell: bash -l {0}
