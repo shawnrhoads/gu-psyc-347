@@ -22,7 +22,7 @@ jobs:
       with:
         persist-credentials: false
     
-    - name: Setup Miniconda
+    - name: Setup Miniconda and Build Book
       uses: conda-incubator/setup-miniconda@v2
       with:
         activate-environment: gu-psyc-347-jb
@@ -30,14 +30,14 @@ jobs:
         python-version: 3.7
         auto-activate-base: false
         miniconda-version: 'latest'
-        
+      run: |
+        conda info
+        conda activate gu-psyc-347-jb
+        runjb docs
+
     # - name: Install jupyter_book
     #     shell: bash -l {0}
     #     run:  pip install jupyter-book
-
-    - name: Build Jupyter Book
-      shell: bash -l {0}
-      run: runjb docs
 
     # # Install dependencies
     # - name: Set up Python 3.7
