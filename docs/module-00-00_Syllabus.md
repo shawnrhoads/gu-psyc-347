@@ -34,23 +34,22 @@ This course is designed to expand the skillset for students interested in conduc
 5. Interpet the results of a social behavioral experiment
 6. Gain a richer understanding of how computational modeling advances psychological science
 
-<div class="alert alert-info">
-<b>Some definitions</b>
+```{definitions} Some definitions
 
-<u>Behavior</u>: choices, reaction times, eye movements, or other easily observable behaviors
+*Behavior*: choices, reaction times, eye movements, or other easily observable behaviors
 
-<u>Models</u>: mathematical equations that link the experimentally observable variables (e.g. stimuli, outcomes, past experiences) to behavior in the immediate future
+*Models*: mathematical equations that link the experimentally observable variables (e.g. stimuli, outcomes, past experiences) to behavior in the immediate future
 
-<u>Observational learning</u>: learning that occurs through observing the <i>actions</i> or <i>outcomes</i> of other people, typically through <a href="https://en.wikipedia.org/wiki/Reinforcement_learning">reinforcement</a>
+*Observational learning*: learning that occurs through observing the _actions_ or _outcomes_ of other people, typically through [reinforcement](https://en.wikipedia.org/wiki/Reinforcement_learning)
 
-<u>Social inference</u>: understanding information about another person's attributes, actions, and/or mental states
+*Social inference*: understanding information about another person's attributes, actions, and/or mental states
 
-<u>Belief updating</u>: updating beliefs about another person's beliefs, goals, or intentions based on new information
+*Belief updating*: updating beliefs about another person's beliefs, goals, or intentions based on new information
 
-<u>Impression updating</u>: updating beliefs about another person's attributes based on new information
+*Impression updating*: updating beliefs about another person's attributes based on new information
 
-<u>Cooperative decision-making</u>: decisions made among two or more individuals with the goal of producing rewarding outcomes for all involved
-</div>
+*Cooperative decision-making*: decisions made among two or more individuals with the goal of producing rewarding outcomes for all involved
+```
 
 ## Course Grading
 
