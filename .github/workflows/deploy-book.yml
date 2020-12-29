@@ -16,6 +16,9 @@ on:
 jobs:
   deploy-book:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        shell: bash -l {0}
     steps:
     - name: Checkout
       uses: actions/checkout@v2
@@ -34,7 +37,6 @@ jobs:
     - name: Build Book
       run: |
         conda info
-        conda init bash
         conda activate gu-psyc-347-jb
         runjb docs
 
