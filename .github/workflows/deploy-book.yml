@@ -34,6 +34,7 @@ jobs:
     - name: Build Book
       run: |
         conda info
+        conda init bash
         conda activate gu-psyc-347-jb
         runjb docs
 
