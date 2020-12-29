@@ -1,4 +1,4 @@
-name: gu-psyc-347-env
+name: gu-psyc-347-jb
 channels:
   - default
   - conda-forge
@@ -10,9 +10,11 @@ dependencies:
   - runjb
   - git
   - pandas
+  - matplotlib
+  - seaborn
   - scipy
   - numpy
-  - matplotlib
+  - scikit-learn
   - ghp-import
   - pip:
     - jupyter-book>=0.7.0b
