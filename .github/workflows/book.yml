@@ -14,10 +14,9 @@ on:
 
 # This job installs dependencies, build the book, and pushes it to `gh-pages`
 jobs:
-  deploy-book:
+  build-and-deploy:
     runs-on: ubuntu-latest
     steps:
-    - name: Checkout
     - uses: actions/checkout@v2
     - with:
         persist-credentials: false
