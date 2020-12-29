@@ -1,0 +1,8 @@
+jupyter-book
+numpy
+scipy
+pandas
+matplotlib
+mpl_toolkits
+seaborn
+ipywidgets
