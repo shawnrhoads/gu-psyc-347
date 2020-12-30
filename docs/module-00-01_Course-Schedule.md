@@ -1,35 +1,232 @@
 # Course Schedule
 <!-- https://thisdavej.com/copy-table-in-excel-and-paste-as-a-markdown-table/ -->
+<!-- https://tableizer.journalistopia.com/tableizer.php -->
+<!-- https://jsfiddle.net/7h89y55r/ -->
 
-| Long Date                   | Type                                                                                                 | Topic                                                           | Description                                                                                                                                                                                                                                       | Assignment                                                                                                        |
-|-----------------------------|------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------|
-| Thursday, January 28, 2021  | Lecture                                                                                              | Course overview; installing software                            | Overview, expectations, grading policies, assignments, labs                                                                                                                                                                                       | Read syllabus                                                                                                     |
-| Tuesday, February 2, 2021   | Lecture                                                                                              | What are models? Why use models?                                | Introduction to Marr's three levels (Computation, Algorithm, and Implementation)                                                                                                                                                                  | N/A                                                                                                               |
-| Thursday, February 4, 2021  | Lab                                                                                                  | Introduction to Python                                          | Setting up your Python environment; Introduction to Jupyter Notebooks and Python                                                                                                                                                                  | Set up Anaconda Enviroment                                                                                        |
-| Tuesday, February 9, 2021   | Lab                                                                                                  | Best practices in modeling 1                                    | Model simulations, fitting, comparison with regression                                                                                                                                                                                            | N/A                                                                                                               |
-| Thursday, February 11, 2021 | Lab                                                                                                  | Best practices in modeling 2                                    | Model simulations, fitting, comparison with regression                                                                                                                                                                                            | **Submit Jupyter Notebook exercises**                                                                                 |
-| Tuesday, February 16, 2021  | -                                                                                                    | No class                                                        | Monday schedule                                                                                                                                                                                                                                   | N/A                                                                                                               |
-| Thursday, February 18, 2021 | Lecture                                                                                              | Learning and decision-making                                    | Introduction to the RLDM framework                                                                                                                                                                                                                | Read [1] Sutton & Barto (2020) pages 1-13                                                                         |
-| Tuesday, February 23, 2021  | Discussion on Sutton & Barto (2020), Lab                                                             | Reinforcement learning (non-social)                             | Students will complete a two-armed-bandit task                                                                                                                                                                                                    | Complete task                                                                                                     |
-| Thursday, February 25, 2021 | Lab                                                                                                  | Reinforcement learning (non-social)                             | Students will complete a two-armed-bandit task; and fit their behavior to a RL model                                                                                                                                                              | Continue working on Jupyter Notebook exercises                                                                    |
-| Tuesday, March 2, 2021      | Lecture                                                                                              | Applications to social behavior; Group Projects                 | Social behavior through the lens of Marr; Students will brainstorm final group project ideas and break into groups of three                                                                                                                       | **Submit Jupyter Notebook exercises**                                                                                 |
-| Thursday, March 4, 2021     | Lecture, Discussion of Lockwood et al. (2020)                                                        | Social learning - Learning from others' actions and outcomes    | Introduction to vicarious reinforcement learning, where individuals learn from observing how self actions affect another person's outcomes                                                                                                        | Read [2] Lockwood, et al. (2020)                                                                                  |
-| Tuesday, March 9, 2021      | Discussion of Charpentier & O’Doherty, (2018), Zhang et al. (2020), and Lindström et al. (2020), Lab | Social reinforcement learning                                   | Students will complete a prosocial learning task                                                                                                                                                                                                  | Read [3] Charpentier & O’Doherty, (2018), [4] Zhang et al. (2020), and [5] Lindström et al. (2020), Complete task |
-| Thursday, March 11, 2021    | Lab                                                                                                  | Social reinforcement learning                                   | Students will complete a prosocial learning task; and fit their behavior to a RL model                                                                                                                                                            | **Submit Jupyter Notebook exercises**                                                                                 |
-| Tuesday, March 16, 2021     | Lecture, Discussion of Camerer et al. (2003)                                                         | Theory of mind                                                  | Introduction to social inference, theory of mind, and hidden mental states                                                                                                                                                                        | Read [6] Camerer et al. (2003), Begin setting up meetings with instructor regarding project proposal              |
-| Thursday, March 18, 2021    | Discussion of Baker et al. (2017)                                                                    | Social inference                                                | Introduction to social inference, theory of mind, and hidden mental states                                                                                                                                                                        | Read [7] Baker et al. (2017)                                                                                      |
-| Tuesday, March 23, 2021     | Lecture                                                                                              | Social inference - Learning about others' beliefs/intentions    | Introduction to model-based learning and social Bayesian updating                                                                                                                                                                                 | N/A                                                                                                               |
-| Thursday, March 25, 2021    | Lecture, Discussion of Kim et al. (2020) and Anzellotti  & Yong (2019)                               | Social inference - Learning about others' attitudes/preferences | Introduction to impression formation and social preference learning                                                                                                                                                                               | Read [8] Kim et al. (2020) and [9] Anzellotti  & Yong (2019), **Submit Project Proposal (Round 1)**                   |
-| Tuesday, March 30, 2021     | -                                                                                                    | No class                                                        | Spring break                                                                                                                                                                                                                                      | N/A                                                                                                               |
-| Thursday, April 1, 2021     | -                                                                                                    | No class                                                        | Spring break                                                                                                                                                                                                                                      | N/A                                                                                                               |
-| Tuesday, April 6, 2021      | Discussion of Chang et al. (2010) and Siegel et al. (2018), Lab                                      | Inverse reinforcement learning and Bayesian modeling            | Students will complete a task that requires the updating of beliefs about others' goals by combining prior beliefs with new evidence from others' actions and outcomes (e.g., inferring the reward distribution from observing anothers' actions) | Read [10] Chang et al. (2010) and [11] Siegel et al. (2018)                                                       |
-| Thursday, April 8, 2021     | Lab                                                                                                  | Inverse reinforcement learning and Bayesian modeling            | Students will complete an impression updating task; and fit their behavior to a model                                                                                                                                                             | Continue working on Jupyter Notebook exercises                                                                    |
-| Tuesday, April 13, 2021     | Lab                                                                                                  | Inverse reinforcement learning and Bayesian modeling            | Students will continute to work on notebooks                                                                                                                                                                                                      | **Submit Jupyter Notebook exercises**                                                                                 |
-| Thursday, April 15, 2021    | Lecture                                                                                              | Interactions between individuals                                | Introduction to decision-making among two or more agents                                                                                                                                                                                          | Read [12] Fareri et al. (2015)                                                                                    |
-| Tuesday, April 20, 2021     | Lab                                                                                                  | Interactions between individuals                                | Studens will complete a Prisoner's Dilemma task; and fit cooperative behavior to a model                                                                                                                                                          | **Submit Annotated Bibliography**                                                                                     |
-| Thursday, April 22, 2021    | Lab                                                                                                  | Interactions between individuals                                | Studens will complete a Prisoner's Dilemma task; and fit cooperative behavior to a model                                                                                                                                                          | Continue working on Jupyter Notebook exercises                                                                    |
-| Tuesday, April 27, 2021     | Lecture, Discussion of Tump et al. (2020)                                                            | Social influence                                                | Observing social behavior of others as evidence accumulation                                                                                                                                                                                      | **Submit Jupyter Notebook exercises**, Read [13] Tump, et al. (2020)                                                  |
-| Thursday, April 29, 2021    | -                                                                                                    | No class                                                        | Shawn at conference                                                                                                                                                                                                                               | Work on project proposal                                                                                          |
-| Tuesday, May 4, 2021        | Lecture, Discussion with guest on article TBD                                                        | Social influence                                                | Potential guest lecture on learning social norms and their influence on decision-making                                                                                                                                                           | TBD                                                                                                               |
-| Thursday, May 6, 2021       | Lecture, Discussion of Patzelt, et al. (2018)                                                        | Individual differences and future directions                    | Brief primer on other topics not covered in course, and future directions of work                                                                                                                                                                 | Read [14] Patzelt, et al. (2018), **Submit Project Proposal (Round 2)**                                                         |
-| TBD                         | Final                                                                                                | -                                                               | -                                                                                                                                                                                                                                                 | Submit Final Presentations by end of day                                                                          |
+<style type="text/css">
+    table.tableizer-table {
+        font-size: 12px;
+        border: 1px solid #CCC;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .tableizer-table td {
+        padding: 4px;
+        margin: 3px;
+    }
+
+    .tableizer-table th {
+        text-align: center;
+        color: #FFF;
+        font-weight: bold;
+    }
+
+    .tableizer-table tr {
+        text-align: center;
+    }
+</style>
+<table class="tableizer-table">
+    <thead>
+        <tr class="tableizer-firstrow">
+            <th>Week</th>
+            <th>Date</th>
+            <th>Type</th>
+            <th>Assignment</th>
+            <th>Topic</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td rowspan=2>1</td>
+            <td>1/26</td>
+            <td>Lecture</td>
+            <td>Read syllabus</td>
+            <td>Course overview; installing software</td>
+        </tr>
+        <tr>
+            <td>1/28</td>
+            <td>Lecture, Discussion on Guest & Martin (2020) and Jolly & Chang (2017)</td>
+            <td>Read Guest & Martin (2020) and Jolly & Chang (2017), and <b>submit response</b></td>
+            <td>What are models? Why use models?</td>
+        </tr>
+        <tr>
+            <td rowspan=2>2</td>
+            <td>2/2</td>
+            <td>Lab</td>
+            <td>Set up Anaconda Environment</td>
+            <td>Introduction to Python</td>
+        </tr>
+        <tr>
+            <td>2/4</td>
+            <td>Discussion on Wilson & Collins (2018)</td>
+            <td>Read Wilson & Collins (2018), and <b>submit response</b></td>
+            <td rowspan=3>Best practices in modeling </td>
+        </tr>
+        <tr>
+            <td rowspan=2>3</td>
+            <td>2/9</td>
+            <td>Lab</td>
+            <td>N/A</td>
+        </tr>
+        <tr>
+            <td>2/11</td>
+            <td>Lab</td>
+            <td>N/A</td>
+        </tr>
+        <tr>
+            <td rowspan=2>4</td>
+            <td>2/16</td>
+            <td>Lecture, Discussion on Sutton & Barto (2018)</td>
+            <td><b>Submit Jupyter Notebook exercise 1</b>; Read Sutton & Barto (2018) pages 1-13 and <b>submit response</b></td>
+            <td>Learning and decision-making</td>
+        </tr>
+        <tr>
+            <td>2/18</td>
+            <td>Lab</td>
+            <td>Complete task</td>
+            <td rowspan=3>Reinforcement learning (non-social)</td>
+        </tr>
+        <tr>
+            <td rowspan=2>5</td>
+            <td>2/23</td>
+            <td>Lab</td>
+            <td>N/A</td>
+        </tr>
+        <tr>
+            <td>2/25</td>
+            <td>Lab</td>
+            <td>N/A</td>
+        </tr>
+        <tr>
+            <td rowspan=2>6</td>
+            <td>3/2</td>
+            <td>Lecture, Discussion of Heyes (2012) and Lockwood et al. (2020); Final Project Discussion</td>
+            <td><b>Submit Jupyter Notebook exercise 2</b>; Read Heyes (2012) and Lockwood, et al. (2020), and <b>submit response</b>
+            </td>
+            <td>Applications to social behavior</td>
+        </tr>
+        <tr>
+            <td>3/4</td>
+            <td>Lecture, Discussion of Charpentier & O'Doherty, (2018) and Zhang, Lengersdorff, et al. (2020)</td>
+            <td>Read Charpentier & O'Doherty (2018) and Zhang, Lengersdorff, et al. (2020) and <b>submit response</b></td>
+            <td>Learning from and for others</td>
+        </tr>
+        <tr>
+            <td rowspan=2>7</td>
+            <td>3/9</td>
+            <td>Discussion of Lindström et al. (2019)</td>
+            <td>Read, and Lindström et al. (2020) and <b>submit response</b> </td>
+            <td>Social learning example - Threat</td>
+        </tr>
+        <tr>
+            <td>3/11</td>
+            <td>Discussion of Lockwood et al. (2016)</td>
+            <td>Read Lockwood et al., (2016) and <b>submit response</b>; </td>
+            <td rowspan=3>Social learning example - Prosociality</td>
+        </tr>
+        <tr>
+            <td rowspan=2>8</td>
+            <td>3/16</td>
+            <td>Lab</td>
+            <td>Complete task</td>
+        </tr>
+        <tr>
+            <td>3/18</td>
+            <td>Lab</td>
+            <td>N/A</td>
+        </tr>
+        <tr>
+            <td rowspan=2>9</td>
+            <td>3/23</td>
+            <td>Lecture, Discussion of Anzellotti & Young (2019) and Kim et al. (2020)</td>
+            <td><b>Submit Jupyter Notebook exercise 3</b>; Read Anzellotti & Young (2019) and Kim et al. (2020) and <b>submit response</b>; Begin setting up meetings with instructor regarding project proposal</td>
+            <td>Social inference - Learning and updating beliefs about others</td>
+        </tr>
+        <tr>
+            <td>3/25</td>
+            <td>Discussion of Chang et al. (2010) and Fareri et al. (2015)</td>
+            <td>Read Chang et al. (2010) and Fareri et al. (2015) and <b>submit response</b></td>
+            <td>Social inference example -Trustworthiness</td>
+        </tr>
+        <tr>
+            <td rowspan=2>10</td>
+            <td>3/30</td>
+            <td rowspan=2>No class</td>
+            <td><b>Submit Project Proposal (Round 1)</b></td>
+            <td rowspan=2>Spring break</td>
+        </tr>
+        <tr>
+            <td>4/1</td>
+            <td>N/A</td>
+        </tr>
+        <tr>
+            <td rowspan=2>11</td>
+            <td>4/6</td>
+            <td>Lecture, Discussion of Camerer et al. (2003) and Devaine et al. (2014)</td>
+            <td>Read Camerer et al. (2003) and Devaine et al. (2014), and <b>submit response</b></td>
+            <td>Social inference example - Theory of Mind</td>
+        </tr>
+        <tr>
+            <td>4/8</td>
+            <td>Discussion of Siegel et al. (2018)</td>
+            <td>Read Siegel et al. (2018), and <b>submit response</b></td>
+            <td rowspan=3>Social inference example - Morality</td>
+        </tr>
+        <tr>
+            <td rowspan=2>12</td>
+            <td>4/13</td>
+            <td>Lab</td>
+            <td>Complete task</td>
+        </tr>
+        <tr>
+            <td>4/15</td>
+            <td>Lab</td>
+            <td><b>Submit Project Proposal (Round 2)</b></td>
+        </tr>
+        <tr>
+            <td rowspan=2>13</td>
+            <td>4/20</td>
+            <td>Lecture</td>
+            <td><b>Submit Jupyter Notebook exercise 4</b></td>
+            <td>Social influence</td>
+        </tr>
+        <tr>
+            <td>4/22</td>
+            <td>Discussion of Geert-Jan et al. (2017)</td>
+            <td>Read Geert-Jan et al. (2017) and <b>submit response</b></td>
+            <td>Social influence example - self-esteem</td>
+        </tr>
+        <tr>
+            <td rowspan=2>14</td>
+            <td>4/27</td>
+            <td>Discussion of Tump et al. (2020)</td>
+            <td>Read Tump, et al. (2020) and <b>submit response</b></td>
+            <td>Social influence example - integrating personal and social information</td>
+        </tr>
+        <tr>
+            <td>4/29</td>
+            <td>No class</td>
+            <td><b>Submit Annotated Bibliography</b></td>
+            <td>Shawn at conference</td>
+        </tr>
+        <tr>
+            <td rowspan=2>15</td>
+            <td>5/4</td>
+            <td>Lecture, Discussion with guest on article TBD</td>
+            <td>N/A</td>
+            <td rowspan=2>Individual differences and future directions</td>
+        </tr>
+        <tr>
+            <td>5/6</td>
+            <td>Lecture, Discussion of Patzelt, et al. (2018)</td>
+            <td>Read Patzelt, et al. (2018) and <b>submit response</b></td>
+        </tr>
+        <tr>
+            <td>-</td>
+            <td>TBD</td>
+            <td>Final</td>
+            <td>Submit Final Presentations by end of day</td>
+            <td>-</td>
+        </tr>
+    </tbody>
+</table>
