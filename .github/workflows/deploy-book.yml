@@ -31,7 +31,7 @@ jobs:
         activate-environment: gu-psyc-347-jb
         environment-file: environment.yml
         python-version: 3.7
-        channels: conda-forge,eoas_ubc
+        channels: conda-forge
         auto-activate-base: false
         miniconda-version: 'latest'
 
