@@ -33,7 +33,7 @@ html:
   home_page_in_navbar: False  # Whether to include your home page in the left Navigation Bar
   baseurl: "https://shawnrhoads.github.io/gu-psyc-347"  # The base URL where your book will be hosted. Used for creating image previews and social links. e.g.: https://mypage.com/mybook/
   comments:
-    hypothesis: True
+    hypothesis: False
 
 footer_text: Created by <a href="http://shawnrhoads.github.io/">Shawn A Rhoads</a> using <a href="https://jupyterbook.org/">Jupyter Book</a>.
 #######################################################################################
@@ -58,5 +58,4 @@ sphinx:
   config:   # key-value pairs to directly over-ride the Sphinx configuration
 
 latex:
-  latex_documents:
-    targetname: book.tex
+  latex_engine: pdflatex  # one of 'pdflatex', 'xelatex' (recommended for unicode), 'luatex', 'platex', 'uplatex'
