@@ -38,7 +38,7 @@ html:
 repository:
   url: https://github.com/shawnrhoads/gu-psyc-347 # The URL to your book's repository
   branch: master  # Which branch of the repository should be used when creating links
-  path_to-book: docs # A path to your book's folder, relative to the repository root.
+  path_to-book: "" # A path to your book's folder, relative to the repository root.
 
 footer_text: Created by <a href="http://shawnrhoads.github.io/">Shawn A Rhoads</a> using <a href="https://jupyterbook.org/">Jupyter Book</a>.
 #######################################################################################
