@@ -171,14 +171,12 @@ grades for students who worked hard and did their own work.
 
 Academic dishonesty, including plagiarism, in any form is a serious offense, and students found in violation are subject to academic penalties that include, but are not limited to, failure of the course, termination from the program, and revocation of degrees already conferred. All students are expected to fully adhere to the policies and procedures of Georgetown’s Honor System and to take the Honor Code Pledge:
 
-
 <blockquote>
 In pursuit of the high ideals and rigorous standards of academic life I commit myself to respect and to uphold the Georgetown University honor system:
 • To be honest in every academic endeavor, and
 • To conduct myself honorably, as a responsible member of the Georgetown
 community as we live and work together.
 </blockquote>
-</br>
 
 Over and above the honor code, in this course we will seek to create an engaged and passionate learning environment, characterized by respect and courtesy in both our discourse and our ways of paying attention to one another.
 
@@ -195,7 +193,7 @@ It is best to get in the habit of having academic integrity, because the consequ
 
 All submissions must be your original work. Any submission suspected of plagiarism will be immediately referred to the Honor Council for investigation and possible adjudication. All students are expected to follow Georgetown’s honor code unconditionally. If you have not done so, please read the honor code material located online at the [Honor Council website](https://honorcouncil.georgetown.edu/).
 
-Resources
+## Resources
 
 If you experience sexual violence, identity-based harm, or any other personal crisis at any point during the course, please do not hesitate to reach out to (1) help you catch up with course material or (2) put you in contact with the appropriate resources and services. Here are some resources that you can also refer to:
 - [The Academic Resource Center](https://academicsupport.georgetown.edu/)
@@ -231,7 +229,7 @@ Thank you to Dr. Deborah Sterns, Joscelin Rocha-Hidalgo, and the Georgetown Cent
 *Cooperative decision-making*: decisions made among two or more individuals with the goal of producing rewarding outcomes for all involved
 ``` -->
 
-## References
+<!-- ## References
 ```{bibliography} references.bib
 :style: unsrt
-```
+``` -->
