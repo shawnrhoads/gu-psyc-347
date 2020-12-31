@@ -5,9 +5,9 @@
 
 <style type="text/css">
     table.tableizer-table {
-        font-size: 12px;
-        border: 1px solid black;
-        font-family: Arial, Helvetica, sans-serif;
+        /* font-size: 12px; */
+        /* border: 1px solid black; */
+        /* font-family: Arial, Helvetica, sans-serif; */
     }
 
     .tableizer-table td {
@@ -20,6 +20,7 @@
         text-align: center;
         font-weight: bold;
         border-bottom: 1px solid black;
+        border-top: 1px solid black;
     }
 
     .tableizer-table tr {
@@ -30,7 +31,7 @@
 <table class="tableizer-table">
     <thead>
         <tr class="tableizer-firstrow">
-            <th>Week</th>
+            <th>&nbsp;Week&nbsp;</th>
             <th>Date</th>
             <th>Type</th>
             <th>Assignment</th>
@@ -183,7 +184,7 @@
         <tr>
             <td>4/15</td>
             <td>Lab</td>
-            <td><b>Submit Project Proposal (Round 2)</b></td>
+            <td>N/A</td>
         </tr>
         <tr>
             <td rowspan=2>13</td>
@@ -194,16 +195,17 @@
         </tr>
         <tr>
             <td>4/22</td>
-            <td>Discussion of Geert-Jan et al. (2017)</td>
-            <td>Read Geert-Jan et al. (2017) and <b>submit response</b></td>
-            <td>Social influence example (self-esteem)</td>
+            <td>Discussion of Tump et al. (2020)</td>
+            <td>Read Tump, et al. (2020) and <b>submit response</b></td>
+            <td>Social influence example (Integrating Personal and Social Information)
         </tr>
         <tr>
             <td rowspan=2>14</td>
             <td>4/27</td>
-            <td>Discussion of Tump et al. (2020)</td>
-            <td>Read Tump, et al. (2020) and <b>submit response</b></td>
-            <td>Social influence example (integrating personal and social information)</td>
+            <td>Discussion of Geert-Jan et al. (2017)</td>
+            <td>Read Geert-Jan et al. (2017) and <b>submit response</b></td>
+            <td>Social influence example (Self-Esteem)</td>
+            </td>
         </tr>
         <tr>
             <td>4/29</td>
@@ -221,7 +223,7 @@
         <tr>
             <td>5/6</td>
             <td>Lecture; Discussion of Patzelt, et al. (2018)</td>
-            <td>Read Patzelt, et al. (2018) and <b>submit response</b></td>
+            <td><b>Submit Project Proposal (Round 2)</b>; Read Patzelt, et al. (2018) and <b>submit response</b></td>
         </tr>
         <tr>
             <td>-</td>
