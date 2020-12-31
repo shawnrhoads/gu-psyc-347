@@ -6,23 +6,25 @@
 <style type="text/css">
     table.tableizer-table {
         font-size: 12px;
-        border: 1px solid #CCC;
+        border: 1px solid black;
         font-family: Arial, Helvetica, sans-serif;
     }
 
     .tableizer-table td {
         padding: 4px;
         margin: 3px;
+        border-bottom: 1px solid black;
     }
 
     .tableizer-table th {
         text-align: center;
-        color: #FFF;
         font-weight: bold;
+        border-bottom: 1px solid black;
     }
 
     .tableizer-table tr {
         text-align: center;
+        border-bottom: 1px solid black;
     }
 </style>
 <table class="tableizer-table">
@@ -45,7 +47,7 @@
         </tr>
         <tr>
             <td>1/28</td>
-            <td>Lecture, Discussion on Guest & Martin (2020) and Jolly & Chang (2017)</td>
+            <td>Lecture; Discussion on Guest & Martin (2020) and Jolly & Chang (2017)</td>
             <td>Read Guest & Martin (2020) and Jolly & Chang (2017), and <b>submit response</b></td>
             <td>What are models? Why use models?</td>
         </tr>
@@ -76,7 +78,7 @@
         <tr>
             <td rowspan=2>4</td>
             <td>2/16</td>
-            <td>Lecture, Discussion on Sutton & Barto (2018)</td>
+            <td>Lecture; Discussion on Sutton & Barto (2018)</td>
             <td><b>Submit Jupyter Notebook exercise 1</b>; Read Sutton & Barto (2018) pages 1-13 and <b>submit response</b></td>
             <td>Learning and decision-making</td>
         </tr>
@@ -100,14 +102,14 @@
         <tr>
             <td rowspan=2>6</td>
             <td>3/2</td>
-            <td>Lecture, Discussion of Heyes (2012) and Lockwood et al. (2020); Final Project Discussion</td>
+            <td>Lecture; Discussion of Heyes (2012) and Lockwood et al. (2020); Final Project Discussion</td>
             <td><b>Submit Jupyter Notebook exercise 2</b>; Read Heyes (2012) and Lockwood, et al. (2020), and <b>submit response</b>
             </td>
             <td>Applications to social behavior</td>
         </tr>
         <tr>
             <td>3/4</td>
-            <td>Lecture, Discussion of Charpentier & O'Doherty, (2018) and Zhang, Lengersdorff, et al. (2020)</td>
+            <td>Lecture; Discussion of Charpentier & O'Doherty, (2018) and Zhang, Lengersdorff, et al. (2020)</td>
             <td>Read Charpentier & O'Doherty (2018) and Zhang, Lengersdorff, et al. (2020) and <b>submit response</b></td>
             <td>Learning from and for others</td>
         </tr>
@@ -116,13 +118,13 @@
             <td>3/9</td>
             <td>Discussion of Lindström et al. (2019)</td>
             <td>Read, and Lindström et al. (2020) and <b>submit response</b> </td>
-            <td>Social learning example - Threat</td>
+            <td>Social learning example (Threat)</td>
         </tr>
         <tr>
             <td>3/11</td>
             <td>Discussion of Lockwood et al. (2016)</td>
             <td>Read Lockwood et al., (2016) and <b>submit response</b>; </td>
-            <td rowspan=3>Social learning example - Prosociality</td>
+            <td rowspan=3>Social learning example (Prosociality)</td>
         </tr>
         <tr>
             <td rowspan=2>8</td>
@@ -138,7 +140,7 @@
         <tr>
             <td rowspan=2>9</td>
             <td>3/23</td>
-            <td>Lecture, Discussion of Anzellotti & Young (2019) and Kim et al. (2020)</td>
+            <td>Lecture; Discussion of Anzellotti & Young (2019) and Kim et al. (2020)</td>
             <td><b>Submit Jupyter Notebook exercise 3</b>; Read Anzellotti & Young (2019) and Kim et al. (2020) and <b>submit response</b>; Begin setting up meetings with instructor regarding project proposal</td>
             <td>Social inference - Learning and updating beliefs about others</td>
         </tr>
@@ -146,7 +148,7 @@
             <td>3/25</td>
             <td>Discussion of Chang et al. (2010) and Fareri et al. (2015)</td>
             <td>Read Chang et al. (2010) and Fareri et al. (2015) and <b>submit response</b></td>
-            <td>Social inference example -Trustworthiness</td>
+            <td>Social inference example (Trustworthiness)</td>
         </tr>
         <tr>
             <td rowspan=2>10</td>
@@ -162,15 +164,15 @@
         <tr>
             <td rowspan=2>11</td>
             <td>4/6</td>
-            <td>Lecture, Discussion of Camerer et al. (2003) and Devaine et al. (2014)</td>
+            <td>Lecture; Discussion of Camerer et al. (2003) and Devaine et al. (2014)</td>
             <td>Read Camerer et al. (2003) and Devaine et al. (2014), and <b>submit response</b></td>
-            <td>Social inference example - Theory of Mind</td>
+            <td>Social inference example (Theory of Mind)</td>
         </tr>
         <tr>
             <td>4/8</td>
             <td>Discussion of Siegel et al. (2018)</td>
             <td>Read Siegel et al. (2018), and <b>submit response</b></td>
-            <td rowspan=3>Social inference example - Morality</td>
+            <td rowspan=3>Social inference example (Morality)</td>
         </tr>
         <tr>
             <td rowspan=2>12</td>
@@ -194,14 +196,14 @@
             <td>4/22</td>
             <td>Discussion of Geert-Jan et al. (2017)</td>
             <td>Read Geert-Jan et al. (2017) and <b>submit response</b></td>
-            <td>Social influence example - self-esteem</td>
+            <td>Social influence example (self-esteem)</td>
         </tr>
         <tr>
             <td rowspan=2>14</td>
             <td>4/27</td>
             <td>Discussion of Tump et al. (2020)</td>
             <td>Read Tump, et al. (2020) and <b>submit response</b></td>
-            <td>Social influence example - integrating personal and social information</td>
+            <td>Social influence example (integrating personal and social information)</td>
         </tr>
         <tr>
             <td>4/29</td>
@@ -212,13 +214,13 @@
         <tr>
             <td rowspan=2>15</td>
             <td>5/4</td>
-            <td>Lecture, Discussion with guest on article TBD</td>
+            <td>Lecture; Discussion with guest on article TBD</td>
             <td>N/A</td>
             <td rowspan=2>Individual differences and future directions</td>
         </tr>
         <tr>
             <td>5/6</td>
-            <td>Lecture, Discussion of Patzelt, et al. (2018)</td>
+            <td>Lecture; Discussion of Patzelt, et al. (2018)</td>
             <td>Read Patzelt, et al. (2018) and <b>submit response</b></td>
         </tr>
         <tr>
