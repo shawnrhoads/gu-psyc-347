@@ -110,8 +110,8 @@
         </tr>
         <tr>
             <td>3/4</td>
-            <td>Lecture; Discussion of Charpentier & O'Doherty, (2018) and Zhang, Lengersdorff, et al. (2020)</td>
-            <td>Read Charpentier & O'Doherty (2018) and Zhang, Lengersdorff, et al. (2020) and <b>submit response</b></td>
+            <td>Lecture; Discussion of Suzuki & O'Doherty, (2020) and Zhang, Lengersdorff, et al. (2020)</td>
+            <td>Read Charpentier & O'Doherty (2020) and Zhang, Lengersdorff, et al. (2020) and <b>submit response</b></td>
             <td>Learning from and for others</td>
         </tr>
         <tr>
@@ -165,8 +165,8 @@
         <tr>
             <td rowspan=2>11</td>
             <td>4/6</td>
-            <td>Lecture; Discussion of Camerer et al. (2003) and Devaine et al. (2014)</td>
-            <td>Read Camerer et al. (2003) and Devaine et al. (2014), and <b>submit response</b></td>
+            <td>Lecture; Discussion of Camerer et al. (2003) and Rusch et al. (2020)</td>
+            <td>Read Camerer et al. (2003) and Rusch et al. (2020), and <b>submit response</b></td>
             <td>Social inference example (Theory of Mind)</td>
         </tr>
         <tr>

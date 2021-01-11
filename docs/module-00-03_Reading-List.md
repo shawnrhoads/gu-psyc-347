@@ -20,11 +20,13 @@ Cushman, F., & Gershman, S. (2019). Editors’ Introduction: Computational Appro
 ### Modeling Social Behavior
 - Heyes, C. (2012). What’s social about social learning? Journal of Comparative Psychology, 126(2), 193–202.
 - Lockwood, P. L., Apps, M. A. J., & Chang, S. W. C. (2020). Is There a “Social” Brain? Implementations and Algorithms. Trends in Cognitive Sciences, 1–12.
-- Charpentier, C. J., & O’Doherty, J. P. (2018). The application of computational models to social neuroscience: promises and pitfalls. Social Neuroscience, 13(6), 637-647. 
+- Suzuki, S., & O’Doherty, J. P. (2020). Breaking human social decision making into multiple components and then putting them together again. Cortex, 127, 221–230.
 - Zhang, L., Lengersdorff, L., Mikus, N., Gläscher, J., & Lamm, C. (2020). Using reinforcement learning models in social neuroscience: frameworks, pitfalls and suggestions of best practices. Social Cognitive and Affective Neuroscience, 15(6), 695-707.
 
 #### Bonus
 - Lockwood, P. L., & Klein-Flügge, M. (2020). Computational modelling of social cognition and behaviour—a reinforcement learning primer. Social Cognitive and Affective Neuroscience, 1–11.
+- Charpentier, C. J., & O’Doherty, J. P. (2018). The application of computational models to social neuroscience: promises and pitfalls. Social Neuroscience, 13(6), 637-647. 
+
 
 ### Learning from and for others
 #### Threat Learning (Example)
@@ -43,7 +45,7 @@ Cushman, F., & Gershman, S. (2019). Editors’ Introduction: Computational Appro
 
 #### Theory of Mind (Example)
 - Camerer, C., Ho, T., & Chong, K. (2003). Models of thinking, learning, and teaching in games. American Economic Review, 93(2), 192-195.
-- Devaine, M., Hollard, G., & Daunizeau, J. (2014). The Social Bayesian Brain: Does Mentalizing Make a Difference When We Learn? PLoS Computational Biology, 10(12).
+- Rusch, T., Steixner-Kumar, S., Doshi, P., Spezio, M., & Gläscher, J. (2020). Theory of mind and decision science: Towards a typology of tasks and computational models. Neuropsychologia, 146(April), 107488.
 
 #### Morality (Example)
 - Siegel, J. Z., Mathys, C., Rutledge, R. B., & Crockett, M. J. (2018). Beliefs about bad people are volatile. Nature Human Behaviour, 2(10), 750–756.
@@ -51,6 +53,7 @@ Cushman, F., & Gershman, S. (2019). Editors’ Introduction: Computational Appro
 #### Bonus
 - Baker, C. L., Jara-Ettinger, J., Saxe, R., & Tenenbaum, J. B. (2017). Rational quantitative attribution of beliefs, desires and percepts in human mentalizing. Nature Human Behaviour, 1(4), 1–10.
 - Boorman, E. D., O’Doherty, J. P., Adolphs, R., & Rangel, A. (2013). The behavioral and neural mechanisms underlying the tracking of expertise. Neuron, 80(6), 1558–1571.
+- Devaine, M., Hollard, G., & Daunizeau, J. (2014). The Social Bayesian Brain: Does Mentalizing Make a Difference When We Learn? PLoS Computational Biology, 10(12).
 - Hackel, L. M., Doll, B. B., & Amodio, D. M. (2015). Instrumental learning of traits versus rewards: Dissociable neural correlates and effects on choice. Nature Neuroscience, 18(9), 1233–1235.
 - Lockwood, P. L., Wittmann, M. K., Apps, M. A. J., Klein-Flügge, M. C., Crockett, M. J., Humphreys, G. W., & Rushworth, M. F. S. (2018). Neural mechanisms for learning self and other ownership. Nature Communications, 9(1), 4747.
 - Todorov, A. (2018). Flexible updating of beliefs in order to forgive. Nature Human Behaviour, 2(10), 722–723.
