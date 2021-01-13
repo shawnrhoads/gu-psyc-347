@@ -27,6 +27,7 @@ Cushman, F., & Gershman, S. (2019). Editors’ Introduction: Computational Appro
 #### Bonus
 - Charpentier, C. J., & O’Doherty, J. P. (2018). The application of computational models to social neuroscience: promises and pitfalls. Social Neuroscience, 13(6), 637-647. 
 - Heyes, C. (2012). What’s social about social learning? Journal of Comparative Psychology, 126(2), 193–202.
+- Joiner, J., Piva, M., Turrin, C., & Chang, S. W. C. (2017). Social learning through prediction error in the brain. Science of Learning, 2(1), 8. https://doi.org/10.1038/s41539-017-0009-2
 - Lockwood, P. L., & Klein-Flügge, M. (2020). Computational modelling of social cognition and behaviour—a reinforcement learning primer. Social Cognitive and Affective Neuroscience, 1–11.
 
 
