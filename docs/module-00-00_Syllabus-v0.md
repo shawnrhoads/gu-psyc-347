@@ -1,4 +1,4 @@
-# Syllabus
+# Syllabus (Old Version)
 Last updated: November 2020</br>
 ~CONTENT IS NOT FINAL~
 
