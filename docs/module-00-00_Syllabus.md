@@ -2,7 +2,7 @@
 Last updated: January 2021</br>
 ~CONTENT IS NOT FINAL~
 
-## PSYC 347: Computational Models of Human Social Behavior
+## PSYC 347: Computational Models of Human Social Behavior (and Neuroscience)
 TR: 11:00am-12:15pm, Online/Remote
 
 The goal of <u>computational modeling</u> in behavioral and psychological science is using precise mathematical models to make better sense of behavioral (or neural) data. Over the past decade, this practice has revolutionized social psychological science (and neuroscience) by allowing researchers to test specific theories and hypotheses and/or explain unobservable aspects of complex social cognitive processes and behaviors.
