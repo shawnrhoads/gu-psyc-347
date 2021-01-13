@@ -127,8 +127,8 @@
         <tr>
             <td rowspan=2>8</td>
             <td>3/16</td>
-            <td>Lockwood, et al. (2020) and Zhang, Lengersdorff, et al. (2020); Final Project Discussion</td>
-            <td>Lockwood, et al. (2020) and Zhang, Lengersdorff, et al. (2020), and <b>submit response</b></td>
+            <td>Discussion of Lockwood, et al. (2020) and Zhang, Lengersdorff, et al. (2020); Final Project Discussion</td>
+            <td>Read Lockwood, et al. (2020) and Zhang, Lengersdorff, et al. (2020), and <b>submit response</b></td>
         </tr>
         <tr>
             <td>3/18</td>
