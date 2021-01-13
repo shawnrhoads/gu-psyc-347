@@ -1,5 +1,5 @@
 # Syllabus
-Last updated: December 2020</br>
+Last updated: January 2021</br>
 ~CONTENT IS NOT FINAL~
 
 ## PSYC 347: Computational Models of Human Social Behavior
@@ -107,6 +107,7 @@ I value our diverse student body and am committed to fostering an equitable clas
 I will assess your learning primarily through written assignments and class participation. Your written work should of course be logical, well-written, thoughtful, and free from mechanical spelling and grammatical errors (I strongly recommend that you proofread and spell-check your assignments!). Grades will be based on meeting the criteria of the assignment, quality of ideas, originality, accuracy, and quality of writing.
 
 You will earn points based on your assignments. Final grades will be assigned according to the following scale:
+
 |                           |    |
 |---------------------------|----|
 | 466 – 500 total points    | A  |
@@ -137,7 +138,7 @@ Please visit the [Assignments page](module-00-02_Course-Assignments.html) for th
 
 **Class Contributions (Participation) [70 points]**: Students can contribute to class sessions by: asking questions, answering questions, adding comments, thoughts, or opinions to the discussion, helping classmates, offering ideas or suggestions, etc.
 
-**Reading Responses [70 points]**: For each reading assignment, students will submit a brief response (1 page, single-spaced). This is not an article summary; you have to explore your own idea(s) about the readings. These must be submitted by 5:00pm on the day before class on Canvas. To receive full credit, these must show close reading and thoughtful engagement with the assigned reading for that day. It is not sufficient to merely summarize the reading. In other words, this is not an article summary; you have to explore your own idea(s) about the readings. A high-quality Reading Response provides in-depth, thoughtful exploration of one or more ideas, clearly relates these ideas to the readings in a way that indicates close and careful reading, and is well-written (strong paragraph structure, clear and cogent use of language, free from spelling and grammar errors). Your response must make specific reference to the assigned reading for that day; it is not sufficient to just expound on your own ideas related to the topic. Some ideas for reading responses: 
+**Reading Responses [65 points]**: For each reading assignment, students will submit a brief response (1 page, single-spaced). This is not an article summary; you have to explore your own idea(s) about the readings. These must be submitted by 5:00pm on the day before class on Canvas. To receive full credit, these must show close reading and thoughtful engagement with the assigned reading for that day. It is not sufficient to merely summarize the reading. In other words, this is not an article summary; you have to explore your own idea(s) about the readings. A high-quality Reading Response provides in-depth, thoughtful exploration of one or more ideas, clearly relates these ideas to the readings in a way that indicates close and careful reading, and is well-written (strong paragraph structure, clear and cogent use of language, free from spelling and grammar errors). Your response must make specific reference to the assigned reading for that day; it is not sufficient to just expound on your own ideas related to the topic. Some ideas for reading responses: 
 -	Identify aspects of the reading with which you disagree and discuss why they are problematic. 
 -	Discuss what most surprised you about the material in the reading and why you found it surprising. 
 -	Discuss potential applications of the material in the reading – ways in which it applies to your own life or ideas for how to use the material in the reading to improve the quality of life more broadly. 
@@ -148,17 +149,13 @@ Please visit the [Assignments page](module-00-02_Course-Assignments.html) for th
 
 **Article Presentations [50 points]**: Students will sign up to present one research article and lead the class discussion. More regarding this on 1/28.
 
-**Jupyter Notebook Execises [100 points, 25 points each]**: Students will complete four coding exercises based on selected course topics throughout the semester
+**Jupyter Notebook Execises [105 points, 25 points for #1-3, 30 points for #4]**: Students will complete four coding exercises based on selected course topics throughout the semester
 
 **Project Proposal - Round 1 [25 points]**: Students will submit a 250-300 word abstract describing their research question and study idea. They should set up a meeting with the instructor (during office hours) to determine a final project. Upon completion of this assignment, students will receive feedback and suggestions on how to improve their study and should incorporate this feedback into their proposal (round 2).
 
 **Annotated Bibliography [25 points]**: Students will choose 7-10 research articles and summarize the research questions, methods, and results of each paper (behavior only). Students should also include a 2-3 sentences on each paper’s relevance to their final project.
 
-**Project Proposal - Round 2 [75 points]**: Students will expand their 250-300 word abstract based on feedback from the instructor. Their project proposal should be 2-3 pages (in NSF GRFP format) on a hypothetical research study. This should include:
--	Introduction with research question and hypothesis/hypotheses
--	Methods
--	Expected results
-Student will receive feedback on their proposals and should incorporate it before their final project presentation.
+**Project Proposal - Round 2 [75 points]**: Students will expand their 250-300 word abstract based on feedback from the instructor. Their project proposal should be 2-3 pages (in NSF GRFP format) on a hypothetical research study. Student will receive feedback on their proposals and should incorporate it before their final project presentation.
 
 **Project Presentation [80 points]**: This presentation will be the “final exam” of this course. Students will present their project proposal to the class (10 minutes each) and determine 2-3 questions for a quick class discussion (5-10 minutes).
 
@@ -172,10 +169,7 @@ grades for students who worked hard and did their own work.
 Academic dishonesty, including plagiarism, in any form is a serious offense, and students found in violation are subject to academic penalties that include, but are not limited to, failure of the course, termination from the program, and revocation of degrees already conferred. All students are expected to fully adhere to the policies and procedures of Georgetown’s Honor System and to take the Honor Code Pledge:
 
 <blockquote>
-In pursuit of the high ideals and rigorous standards of academic life I commit myself to respect and to uphold the Georgetown University honor system:
-• To be honest in every academic endeavor, and
-• To conduct myself honorably, as a responsible member of the Georgetown
-community as we live and work together.
+In pursuit of the high ideals and rigorous standards of academic life I commit myself to respect and to uphold the Georgetown University honor system: To be honest in every academic endeavor, and to conduct myself honorably, as a responsible member of the Georgetown community as we live and work together.
 </blockquote>
 
 Over and above the honor code, in this course we will seek to create an engaged and passionate learning environment, characterized by respect and courtesy in both our discourse and our ways of paying attention to one another.
