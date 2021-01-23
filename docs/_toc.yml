@@ -8,34 +8,34 @@
     - file: module-00-04_Getting-Started
     - file: module-00-05_Final-Projects
 - part: Module 01
-  - file: module-01-00_Scientific-Computing
   chapters:
+    - file: module-01-00_Scientific-Computing
     - file: module-01-01_Jupyter-Notebooks
     - file: module-01-02_Intro-to-Python
 # - part: Module 02
-#   - file: module-02-00_Intro-to-Modeling
 #   chapters:
+#     - file: module-02-00_Intro-to-Modeling
 #     - file: module-02-01_Linear-Modeling
 #     - file: module-02-02_Nonlinear-Modeling
 
 # - part: Module 03
-#     - file: module-03-00_RLDM
 #     chapters:
+#       - file: module-03-00_RLDM
 #       - file: module-03-01_Two-Armed-Bandit
 
 # - part: Module 04
-#   - file: module-04-00_Social-Learning
 #   chapters:
+#     - file: module-04-00_Social-Learning
 #     - file: module-04-01_Threat-Learning
 #     - file: module-04-02_Prosocial-Learning
 
 # - part: Module 05
 #   chapters:
 #     - file: module-05-00_Social-Inference
-#     chapters:
-#       - file: module-05-01_ToM
-#       - file: module-05-02_Trust
-#       - file: module-05-03_Morality
+#     - file: module-05-01_ToM
+#     - file: module-05-02_Trust
+#     - file: module-05-03_Morality
 
 # - part: Module 06
-#   - file: module-06-00_Current-Future-Directions
+#   chapters:
+#     - file: module-06-00_Current-Future-Directions
