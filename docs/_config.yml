@@ -4,7 +4,7 @@
 # This is also the "master list" of all allowed keys and values.
 
 #######################################################################################
-title: Computational Models of Human Social Behavior # The title of the book. Will be placed in the left navbar.
+title: Computational Models of Human Social Behavior (and Neuroscience) # The title of the book. Will be placed in the left navbar.
 author: Shawn A. Rhoads # The author of the book
 copyright: '2021' # Copyright year to be placed in the footer
 logo: 'static/images/logo.png' # A path to the book logo
@@ -38,18 +38,18 @@ html:
 repository:
   url: https://github.com/shawnrhoads/gu-psyc-347 # The URL to your book's repository
   branch: master  # Which branch of the repository should be used when creating links
-  path_to-book: docs # A path to your book's folder, relative to the repository root.
+  path_to-book: docs/ # A path to your book's folder, relative to the repository root.
 
 footer_text: Created by <a href="http://shawnrhoads.github.io/">Shawn A Rhoads</a> using <a href="https://jupyterbook.org/">Jupyter Book</a>.
 #######################################################################################
 
 #######################################################################################
 # Launch button settings
-launch_buttons:
-  notebook_interface: "classic"  # The interface interactive links will activate ["classic", "jupyterlab"]
-  colab_url: https://colab.research.google.com
-  binderhub_url: ""
-  thebe: False  # Add a thebe button to pages (requires the repository to run on Binder)
+# launch_buttons:
+#   notebook_interface: "classic"  # The interface interactive links will activate ["classic", "jupyterlab"]
+#   colab_url: https://colab.research.google.com
+#   binderhub_url: ""
+#   thebe: False  # Add a thebe button to pages (requires the repository to run on Binder)
 
 #######################################################################################
 
