@@ -1,9 +1,6 @@
 # PSYC 347 - Computational Models of Human Social Behavior
-Instructor: Shawn Rhoads</br>
-Georgetown University
-
-Last updated: November 2020*</br>
-**CONTENT IS NOT FINAL**
+Last updated: January 2021</br>
+The content in this Jupyter Book is subject to change.
 
 ## Course information
 **Section**: PSYC 347-01</br>
@@ -19,6 +16,7 @@ Last updated: November 2020*</br>
 **Instructor**: Shawn A Rhoads<br>
 **Pronouns**: he/him/his<br>
 **Email**: sr1209(at)georgetown(dot)edu<br>
+**Website**: [shawnrhoads.github.io](https://shawnrhoads.github.io)</br>
 **Office hours**: Mondays from 2:30-4pm
 
 ## License for this book
