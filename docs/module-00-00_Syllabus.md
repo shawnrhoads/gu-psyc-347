@@ -107,17 +107,17 @@ You will earn points based on your assignments. Final grades will be assigned ac
 
 |                           |    |
 |---------------------------|----|
-| 466 – 500 total points    | A  |
-| 450 - 465 total points    | A- |
-| 435 - 449 total points    | B+ |
-| 415 - 434 total points    | B  |
-| 400 - 414 total points    | B- |
-| 385 - 399 total points    | C+ |
-| 365 - 384 total points    | C  |
-| 350 - 364 total points    | C- |
-| 335 - 349 total points    | D+ |
-| 300 - 334 total points    | D  |
-| 299 or fewer total points | F  |
+| 450 – 500 total points    | A  |
+| 435 - 449 total points    | A- |
+| 415 - 434 total points    | B+ |
+| 400 - 414 total points    | B  |
+| 385 - 399 total points    | B- |
+| 365 - 384 total points    | C+ |
+| 350 - 364 total points    | C  |
+| 335 - 349 total points    | C- |
+| 300 - 334 total points    | D+ |
+| 250 - 299 total points    | D  |
+| 249 or fewer total points | F  |
 
 ## Late Submissions
 
