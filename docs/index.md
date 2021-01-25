@@ -1,6 +1,6 @@
 # Course Homepage
-**Last updated: November 2020**</br>
-**CONTENT IS NOT FINAL**
+Last updated: January 2021</br>
+The content in this Jupyter Book is subject to change.
 
 ## Course information
 **Section**: PSYC 347-01</br>

@@ -1,6 +1,6 @@
 # Syllabus
 Last updated: January 2021</br>
-~CONTENT IS NOT FINAL~
+The content in this Jupyter Book is subject to change.
 
 ## PSYC 347: Computational Models of Human Social Behavior (and Neuroscience)
 TR: 11:00am-12:15pm, Online/Remote
