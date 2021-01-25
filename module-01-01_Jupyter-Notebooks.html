@@ -1,0 +1,663 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>Jupyter Notebooks &#8212; Computational Models of Human Social Behavior (and Neuroscience)</title>
+    
+  <link rel="stylesheet" href="_static/css/index.f658d18f9b420779cfdf24aa0a7e2d77.css">
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+  <link rel="stylesheet"
+    href="_static/vendor/open-sans_all/1.44.1/index.css">
+  <link rel="stylesheet"
+    href="_static/vendor/lato_latin-ext/1.44.1/index.css">
+
+    
+    <link rel="stylesheet" href="_static/sphinx-book-theme.40e2e510f6b7d1648584402491bb10fe.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="_static/js/index.d3f166471bb80abb5163.js">
+
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/language_data.js"></script>
+    <script src="_static/togglebutton.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="_static/sphinx-book-theme.d31b09fe5c1d09cb49b26a786de4a05d.js"></script>
+    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <link rel="canonical" href="https://shawnrhoads.github.io/gu-psyc-347/module-01-01_Jupyter-Notebooks.html" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Intro to Python Basics" href="module-01-02_Intro-to-Python.html" />
+    <link rel="prev" title="Scientific Computing" href="module-01-00_Scientific-Computing.html" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+
+
+<!-- Opengraph tags -->
+<meta property="og:url"         content="https://shawnrhoads.github.io/gu-psyc-347/module-01-01_Jupyter-Notebooks.html" />
+<meta property="og:type"        content="article" />
+<meta property="og:title"       content="Jupyter Notebooks" />
+<meta property="og:description" content="Jupyter Notebooks  Throughout the semester, we will work on five exercises using the Python programming langugage and Jupyter Notebooks.  What are Jupyter Noteb" />
+<meta property="og:image"       content="https://shawnrhoads.github.io/gu-psyc-347/_static/logo.png" />
+
+<meta name="twitter:card" content="summary" />
+
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+<a class="navbar-brand text-wrap" href="index.html">
+  
+  <img src="_static/logo.png" class="logo" alt="logo">
+  
+  
+  <h1 class="site-logo" id="site-title">Computational Models of Human Social Behavior (and Neuroscience)</h1>
+  
+</a>
+</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form>
+<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+    <p class="caption collapsible-parent">
+ <span class="caption-text">
+  Module 00
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="module-00-00_Syllabus.html">
+   Syllabus
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="module-00-01_Course-Schedule.html">
+   Course Schedule
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="module-00-02_Course-Assignments.html">
+   Course Assignments
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="module-00-03_Reading-List.html">
+   Reading List
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="module-00-04_Getting-Started.html">
+   Getting Started
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="module-00-05_Final-Projects.html">
+   Final Project Guidelines
+  </a>
+ </li>
+</ul>
+<p class="caption collapsible-parent">
+ <span class="caption-text">
+  Module 01
+ </span>
+</p>
+<ul class="current nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="module-01-00_Scientific-Computing.html">
+   Scientific Computing
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Jupyter Notebooks
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="module-01-02_Intro-to-Python.html">
+   Intro to Python Basics
+  </a>
+ </li>
+</ul>
+
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="row topbar fixed-top container-xl">
+    <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show">
+    </div>
+    <div class="col pl-2 topbar-main">
+        
+        <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+            data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+            aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+            title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-arrow-left"></i>
+            <i class="fas fa-arrow-up"></i>
+        </button>
+        
+        
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="_sources/module-01-01_Jupyter-Notebooks.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+        <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/shawnrhoads/gu-psyc-347"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://github.com/shawnrhoads/gu-psyc-347/issues/new?title=Issue%20on%20page%20%2Fmodule-01-01_Jupyter-Notebooks.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        <a class="edit-button" href="https://github.com/shawnrhoads/gu-psyc-347/edit/master/module-01-01_Jupyter-Notebooks.ipynb"><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Edit this page"><i class="fas fa-pencil-alt"></i>suggest edit</button></a>
+    </div>
+</div>
+
+
+        <!-- Full screen (wrap in <a> to have style consistency -->
+        <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+                data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+                title="Fullscreen mode"><i
+                    class="fas fa-expand"></i></button></a>
+
+        <!-- Launch buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        <a class="binder-button" href="https://mybinder.org/v2/gh/shawnrhoads/gu-psyc-347/master?urlpath=tree/module-01-01_Jupyter-Notebooks.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
+                data-placement="left"><img class="binder-button-logo"
+                    src="_static/images/logo_binder.svg"
+                    alt="Interact on binder">Binder</button></a>
+        
+        
+        
+        
+    </div>
+</div>
+
+    </div>
+
+    <!-- Table of contents -->
+    <div class="d-none d-md-block col-md-2 bd-toc show">
+        
+        <div class="tocsection onthispage pt-5 pb-3">
+            <i class="fas fa-list"></i> Contents
+        </div>
+        <nav id="bd-toc-nav">
+            <ul class="nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#what-are-jupyter-notebooks">
+   What are Jupyter Notebooks?
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#starting-a-jupyter-notebook-server">
+   Starting a Jupyter Notebook server
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#interactive-coding">
+   Interactive Coding!!
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#notebooks-of-the-future">
+   Notebooks of the Future
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#markdown">
+     Markdown
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#emphasis">
+       Emphasis
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#links">
+       Links
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#tables">
+       Tables
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#html-css-integration">
+     HTML/CSS Integration:
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#latex-integration">
+     LaTeX Integration:
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#inserting-images-from-web">
+     Inserting images from web
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#multilingual">
+     Multilingual!
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#save-notebooks-in-other-formats-and-put-them-online">
+     Save notebooks in other formats and put them online
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#customize-your-notebook-experience-with-extensions">
+     Customize your notebook experience with extensions
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#for-more">
+     For more…
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+        </nav>
+        
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="jupyter-notebooks">
+<h1>Jupyter Notebooks<a class="headerlink" href="#jupyter-notebooks" title="Permalink to this headline">¶</a></h1>
+<p>Throughout the semester, we will work on five exercises using the Python programming langugage and Jupyter Notebooks.</p>
+<div class="section" id="what-are-jupyter-notebooks">
+<h2>What are Jupyter Notebooks?<a class="headerlink" href="#what-are-jupyter-notebooks" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<b>From <u><a href="https://realpython.com/jupyter-notebook-introduction/#creating-a-notebook">Jupyer Notebook: An Introduction</a></u></b>
+<p>The Jupyter Notebook is an open source web application that you can use to create and share documents that contain live code, equations, visualizations, and text. Jupyter Notebook is maintained by the people at <a href="http://jupyter.org/">Project Jupyter</a>.</p>
+<p>Jupyter Notebooks are a spin-off project from the IPython project, which used to have an IPython Notebook project itself. The name, Jupyter, comes from the core supported programming languages that it supports: Julia, Python, and R. Jupyter ships with the IPython kernel, which allows you to write your programs in Python, but there are currently over 100 other kernels that you can also use.</p>
+</blockquote>
+<p><a class="reference external" href="http://jupyter.org/">Anaconda</a> (which we’ve just downloaded) comes with many scientific libraries preinstalled, including the Jupyter Notebook!</p>
+</div>
+<div class="section" id="starting-a-jupyter-notebook-server">
+<h2>Starting a Jupyter Notebook server<a class="headerlink" href="#starting-a-jupyter-notebook-server" title="Permalink to this headline">¶</a></h2>
+<ol class="simple">
+<li><p>Open your terminal application (<strong>Terminal</strong> on MacOS, <strong>Anaconda Prompt</strong> on Windows)</p></li>
+<li><p>Change your current directory to a location on your computer where you would like to save your notebook (for example: <code class="docutils literal notranslate"><span class="pre">cd</span> <span class="pre">/Users/home/notebooks</span></code>)</p></li>
+<li><p>Run the command <code class="docutils literal notranslate"><span class="pre">jupyter</span> <span class="pre">notebook</span></code> which will start your default browser (or open a new tab) to the following URL: http://localhost:8888/tree</p></li>
+</ol>
+<p>Your browser should look something like this:</p>
+</div>
+<div class="section" id="interactive-coding">
+<h2>Interactive Coding!!<a class="headerlink" href="#interactive-coding" title="Permalink to this headline">¶</a></h2>
+<p>We will use Jupyter Notebooks to interface with Python. Rather than keeping code scripts code and execution separate, jupyter integrates both together using the concept of cells. Two main types of cells are <strong>code cells</strong> and <strong>markdown cells</strong>. Cells pair “snippets” of code with the output obtained from running them and can contain plots/figure inline alongside code required to generate them</p>
+<p><strong>Code cells</strong> contain actual code that you want to run. You can specify a cell as a code cell using the pulldown menu in the toolbar in your Jupyter notebook. Otherwise, you can can hit esc and then y (denoted “esc, y”) while a cell is selected to specify that it is a code cell. Note that you will have to hit enter after doing this to start editing it. If you want to execute the code in a code cell, hit “shift + enter.” Note that code cells are executed in the order you execute them. That is to say, the ordering of the cells for which you hit “shift + enter” is the order in which the code is executed. If you did not explicitly execute a cell early in the document, its results are now known to the Python interpreter.</p>
+<p><strong>Markdown cells</strong> contain text. The text is written in markdown, a lightweight markup language. You can read about its syntax <a class="reference external" href="https://daringfireball.net/projects/markdown/syntax">here</a>. Note that you can also insert HTML into markdown cells, and this will be rendered properly. As you are typing the contents of these cells, the results appear as text. Hitting “shift + enter” renders the text in the formatting you specify. You can specify a cell as being a markdown cell in the Jupyter toolbar, or by hitting “esc, m” in the cell. Again, you have to hit enter after using the quick keys to bring the cell into edit mode.</p>
+<p>In general, when you want to add a new cell, you can use the “Insert” pulldown menu from the Jupyter toolbar. The shortcut to insert a cell below is “esc, b” and to insert a cell above is “esc, a.” Alternatively, you can execute a cell and automatically add a new one below it by hitting “alt + enter.”</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># This is a code cell</span>
+<span class="c1">#Put some code here and get some output below!</span>
+<span class="n">x</span> <span class="o">=</span> <span class="mi">10</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>10
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="notebooks-of-the-future">
+<h2>Notebooks of the Future<a class="headerlink" href="#notebooks-of-the-future" title="Permalink to this headline">¶</a></h2>
+<p>Not just for code:</p>
+<ul class="simple">
+<li><p>Markdown, HTML, LateX integration</p></li>
+<li><p>Slide shows</p></li>
+<li><p>Keep your notes alongside your analysis routines</p></li>
+<li><p>Embed images, videos, anything (it’s all just HTML + javascript)</p></li>
+</ul>
+<div class="section" id="markdown">
+<h3>Markdown<a class="headerlink" href="#markdown" title="Permalink to this headline">¶</a></h3>
+<p>See this <a class="reference external" href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet">comprehensive guide to Markdown</a>. Here are some examples:</p>
+<div class="section" id="emphasis">
+<h4>Emphasis<a class="headerlink" href="#emphasis" title="Permalink to this headline">¶</a></h4>
+<p>Emphasis, aka italics, with <em>asterisks</em> or <em>underscores</em>.</p>
+<p>Strong emphasis, aka bold, with <strong>asterisks</strong> or <strong>underscores</strong>.</p>
+<p>Combined emphasis with <strong>asterisks and <em>underscores</em></strong>.</p>
+<p>Strikethrough uses two tildes. ~~Scratch this.~~</p>
+<p>The text above looks like this behind the scenes:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Emphasis</span><span class="p">,</span> <span class="n">aka</span> <span class="n">italics</span><span class="p">,</span> <span class="k">with</span> <span class="o">*</span><span class="n">asterisks</span><span class="o">*</span> <span class="ow">or</span> <span class="n">_underscores_</span><span class="o">.</span>
+
+<span class="n">Strong</span> <span class="n">emphasis</span><span class="p">,</span> <span class="n">aka</span> <span class="n">bold</span><span class="p">,</span> <span class="k">with</span> <span class="o">**</span><span class="n">asterisks</span><span class="o">**</span> <span class="ow">or</span> <span class="n">__underscores__</span><span class="o">.</span>
+
+<span class="n">Combined</span> <span class="n">emphasis</span> <span class="k">with</span> <span class="o">**</span><span class="n">asterisks</span> <span class="ow">and</span> <span class="n">_underscores_</span><span class="o">**.</span>
+
+<span class="n">Strikethrough</span> <span class="n">uses</span> <span class="n">two</span> <span class="n">tildes</span><span class="o">.</span> <span class="o">~~</span><span class="n">Scratch</span> <span class="n">this</span><span class="o">.~~</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="links">
+<h4>Links<a class="headerlink" href="#links" title="Permalink to this headline">¶</a></h4>
+<p><a class="reference external" href="https://www.google.com">I’m an inline-style link</a></p>
+<p><a class="reference external" href="https://www.mozilla.org">I’m a reference-style link</a></p>
+<p><a class="reference external" href="http://slashdot.org">You can use numbers for reference-style link definitions</a></p>
+<p>Or leave it empty and use the <a class="reference external" href="http://www.reddit.com">link text itself</a></p>
+<p>URLs and URLs in angle brackets will automatically get turned into links.
+http://www.example.com or <a class="reference external" href="http://www.example.com">http://www.example.com</a> and sometimes
+example.com (but not on Github, for example).</p>
+<p>Some text to show that the reference links can follow later.</p>
+<p>The text above looks like this behind the scenes:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">[</span><span class="n">I</span><span class="s1">&#39;m an inline-style link](https://www.google.com)</span>
+
+<span class="p">[</span><span class="n">I</span><span class="s1">&#39;m a reference-style link][Arbitrary case-insensitive reference text]</span>
+
+<span class="p">[</span><span class="n">You</span> <span class="n">can</span> <span class="n">use</span> <span class="n">numbers</span> <span class="k">for</span> <span class="n">reference</span><span class="o">-</span><span class="n">style</span> <span class="n">link</span> <span class="n">definitions</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span>
+
+<span class="n">Or</span> <span class="n">leave</span> <span class="n">it</span> <span class="n">empty</span> <span class="ow">and</span> <span class="n">use</span> <span class="n">the</span> <span class="p">[</span><span class="n">link</span> <span class="n">text</span> <span class="n">itself</span><span class="p">]</span>
+
+<span class="n">URLs</span> <span class="ow">and</span> <span class="n">URLs</span> <span class="ow">in</span> <span class="n">angle</span> <span class="n">brackets</span> <span class="n">will</span> <span class="n">automatically</span> <span class="n">get</span> <span class="n">turned</span> <span class="n">into</span> <span class="n">links</span><span class="o">.</span> 
+<span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="o">.</span><span class="n">example</span><span class="o">.</span><span class="n">com</span> <span class="ow">or</span> <span class="o">&lt;</span><span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="o">.</span><span class="n">example</span><span class="o">.</span><span class="n">com</span><span class="o">&gt;</span> <span class="ow">and</span> <span class="n">sometimes</span> 
+<span class="n">example</span><span class="o">.</span><span class="n">com</span> <span class="p">(</span><span class="n">but</span> <span class="ow">not</span> <span class="n">on</span> <span class="n">Github</span><span class="p">,</span> <span class="k">for</span> <span class="n">example</span><span class="p">)</span><span class="o">.</span>
+
+<span class="n">Some</span> <span class="n">text</span> <span class="n">to</span> <span class="n">show</span> <span class="n">that</span> <span class="n">the</span> <span class="n">reference</span> <span class="n">links</span> <span class="n">can</span> <span class="n">follow</span> <span class="n">later</span><span class="o">.</span>
+
+<span class="p">[</span><span class="n">arbitrary</span> <span class="n">case</span><span class="o">-</span><span class="n">insensitive</span> <span class="n">reference</span> <span class="n">text</span><span class="p">]:</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="o">.</span><span class="n">mozilla</span><span class="o">.</span><span class="n">org</span>
+<span class="p">[</span><span class="mi">1</span><span class="p">]:</span> <span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">slashdot</span><span class="o">.</span><span class="n">org</span>
+<span class="p">[</span><span class="n">link</span> <span class="n">text</span> <span class="n">itself</span><span class="p">]:</span> <span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">www</span><span class="o">.</span><span class="n">reddit</span><span class="o">.</span><span class="n">com</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="tables">
+<h4>Tables<a class="headerlink" href="#tables" title="Permalink to this headline">¶</a></h4>
+<p>Colons can be used to align columns.</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:left head"><p>Tables</p></th>
+<th class="text-align:center head"><p>Are</p></th>
+<th class="text-align:right head"><p>Cool</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:left"><p>col 1 is</p></td>
+<td class="text-align:center"><p>left-aligned</p></td>
+<td class="text-align:right"><p>A</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p>col 3 is</p></td>
+<td class="text-align:center"><p>right-aligned</p></td>
+<td class="text-align:right"><p>B</p></td>
+</tr>
+<tr class="row-even"><td class="text-align:left"><p>col 2 is</p></td>
+<td class="text-align:center"><p>centered</p></td>
+<td class="text-align:right"><p>C</p></td>
+</tr>
+</tbody>
+</table>
+<p>The outer pipes (|) are optional, and you don’t need to make the raw Markdown pretty. You can also use inline Markdown.</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Markdown</p></th>
+<th class="head"><p>Less</p></th>
+<th class="head"><p>Pretty</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><em>Still</em></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">renders</span></code></p></td>
+<td><p><strong>nicely</strong></p></td>
+</tr>
+<tr class="row-odd"><td><p>1</p></td>
+<td><p>2</p></td>
+<td><p>3</p></td>
+</tr>
+</tbody>
+</table>
+<p>The text above looks like this behind the scenes:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>Colons can be used to align columns.
+
+| Tables        | Are           | Cool  |
+| :------------ |:-------------:| -----:|
+| col 1 is      | left-aligned  |     A |
+| col 3 is      | right-aligned |     B |
+| col 2 is      | centered      |     C |
+
+The outer pipes (|) are optional, and you don&#39;t need to make the raw Markdown pretty. You can also use inline Markdown.
+
+Markdown | Less | Pretty
+--- | --- | ---
+*Still* | `renders` | **nicely**
+1 | 2 | 3
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="html-css-integration">
+<h3>HTML/CSS Integration:<a class="headerlink" href="#html-css-integration" title="Permalink to this headline">¶</a></h3>
+<p><font color=red>This is a</font> <em>markdown</em> <strong>cell</strong>!</p>
+<p>The text above looks like this behind the scenes:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>&lt;font color=red&gt;This is a&lt;/font&gt; *markdown* **cell**!
+</pre></div>
+</div>
+</div>
+<div class="section" id="latex-integration">
+<h3>LaTeX Integration:<a class="headerlink" href="#latex-integration" title="Permalink to this headline">¶</a></h3>
+<div class="math notranslate nohighlight">
+\[\sum_{n=1}^{5}n\]</div>
+<p>The equation above looks like this behind the scenes:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$$\sum_{n=1}^{5}n$$
+</pre></div>
+</div>
+</div>
+<div class="section" id="inserting-images-from-web">
+<h3>Inserting images from web<a class="headerlink" href="#inserting-images-from-web" title="Permalink to this headline">¶</a></h3>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">display</span><span class="p">,</span> <span class="n">Image</span>
+<span class="kn">from</span> <span class="nn">IPython.core.display</span> <span class="kn">import</span> <span class="n">HTML</span> 
+
+<span class="n">display</span><span class="p">(</span><span class="n">Image</span><span class="p">(</span><span class="s1">&#39;https://raw.githubusercontent.com/Summer-MIND/mind_2018/master/tutorials/jupyter/demo.gif&#39;</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;IPython.core.display.Image object&gt;
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="multilingual">
+<h3>Multilingual!<a class="headerlink" href="#multilingual" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Julia</p></li>
+<li><p>Python (multiple versions together)</p></li>
+<li><p>R</p></li>
+<li><p>Javascript</p></li>
+<li><p>etc (https://github.com/jupyter/jupyter/wiki/Jupyter-kernels)</p></li>
+</ul>
+</div>
+<div class="section" id="save-notebooks-in-other-formats-and-put-them-online">
+<h3>Save notebooks in other formats and put them online<a class="headerlink" href="#save-notebooks-in-other-formats-and-put-them-online" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Github automatically renders jupyter notebooks</p></li>
+<li><p><a class="reference external" href="http://nbviewer.jupyter.org/">Online notebook viewer</a></p></li>
+<li><p>Output to PDF, HTML (including javascript)</p></li>
+<li><p><a class="reference external" href="https://github.com/jupyterhub/jupyterhub">Jupyterhub</a>: code with friends!</p></li>
+</ul>
+</div>
+<div class="section" id="customize-your-notebook-experience-with-extensions">
+<h3>Customize your notebook experience with extensions<a class="headerlink" href="#customize-your-notebook-experience-with-extensions" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Table of Contents</p></li>
+<li><p>Execution time/Profiling</p></li>
+<li><p>Scratch Space</p></li>
+<li><p>Code/Section folding</p></li>
+<li><p>Look and feel (CSS+Javascript)</p></li>
+<li><p>Other notebook extensions</p></li>
+</ul>
+</div>
+<div class="section" id="for-more">
+<h3>For more…<a class="headerlink" href="#for-more" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/Summer-MIND/mind_2018/tree/master/tutorials/jupyter">Eshin Jolly - Intro to Jupyter Notebooks</a></p></li>
+<li><p><a class="reference external" href="https://github.com/jakevdp/PythonDataScienceHandbook">Jake Vanderplas - Data Science Handbook</a></p></li>
+<li><p><a class="reference external" href="https://github.com/tyarkoni/SSI2016">Tal Yarkoni - Intro to Data Science w/ Python</a></p></li>
+<li><p><a class="reference external" href="https://github.com/dartmouth-pbs/psyc161">Yaroslav Halchenko - Intro to Programming for Psych/Neuro</a></p></li>
+<li><p><a class="reference external" href="https://github.com/jupyter/jupyter/wiki/A-gallery-of-interesting-Jupyter-Notebooks">Awesome notebooks</a></p></li>
+<li><p><a class="reference external" href="https://github.com/datacarpentry/python-neuroimaging-lesson">Neuroimaging in Python</a></p></li>
+<li><p><a class="reference external" href="https://colab.research.google.com/notebooks/welcome.ipynb#recent=true">Google Colaboratory</a></p></li>
+</ul>
+</div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        </div>
+    </div>
+    
+    
+    <div class='prev-next-bottom'>
+        
+    <a class='left-prev' id="prev-link" href="module-01-00_Scientific-Computing.html" title="previous page">Scientific Computing</a>
+    <a class='right-next' id="next-link" href="module-01-02_Intro-to-Python.html" title="next page">Intro to Python Basics</a>
+
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By Shawn A. Rhoads<br/>
+        
+            &copy; Copyright 2021.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+
+    
+  <script src="_static/js/index.d3f166471bb80abb5163.js"></script>
+
+
+    
+    <!-- Google Analytics -->
+    <script>
+      window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+      ga('create', 'G-KG3N20S55G', 'auto');
+      ga('set', 'anonymizeIp', true);
+      ga('send', 'pageview');
+    </script>
+    <script async src='https://www.google-analytics.com/analytics.js'></script>
+    <!-- End Google Analytics -->
+    
+  </body>
+</html>
