@@ -1,4 +1,4 @@
-# PSYC 347 - Computational Models of Human Social Behavior
+# PSYC 347 - Computational Models of Human Social Behavior (and Neuroscience)
 Last updated: January 2021</br>
 The content in this Jupyter Book is subject to change.
 
