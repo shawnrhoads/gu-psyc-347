@@ -1,14 +1,15 @@
 # Reading List
-\*Note that some articles contain studies using neuroimaging. You are welcome to read these portions for fun, but we will only focus on the psychological/behavioral aspects of these studies. 
+\*Note that some articles contain studies using neuroimaging. You are welcome to read these portions for fun, but we will mostly focus on the psychological/behavioral aspects of these studies. 
 
 ### Course
 - [Syllabus](module-00-00_Syllabus.html)
 - [Schedule](module-00-01_Course-Schedule.html)
 - [Assignments](module-00-02_Course-Assignments.html)
-- [Final Projects](module-00-06_Final-Projects.html)
+- [Final projects](module-00-06_Final-Projects.html)
+- [All reading material can be downloaded on Canvas](https://georgetown.instructure.com/courses/126538/files/folder/readings)
 
 ### Introduction to Modeling
-- Guest, O., & Martin, A. E. (2020). How computational modeling can force theory building in psychological science. PsyArXiv, 1–13.
+- Guest, O., & Martin, A. E. (2021). How Computational Modeling Can Force Theory Building in Psychological Science. Perspectives on Psychological Science, 1–14.
 - Jolly, E., & Chang, L. J. (2017). The flatland fallacy: Moving beyond low dimensional thinking. Topics in Cognitive Science, 1–30.
 - Wilson, R. C., & Collins, A. G. (2019). Ten simple rules for the computational modeling of behavioral data. eLife.
 - Jones, B. A., & Rachlin, H. (2006). Social discounting. Psychological Science, 17(4), 283–286.
