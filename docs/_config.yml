@@ -47,7 +47,7 @@ footer_text: Created by <a href="http://shawnrhoads.github.io/">Shawn A Rhoads</
 # Launch button settings
 launch_buttons:
   notebook_interface: "classic"  # The interface interactive links will activate ["classic", "jupyterlab"]
-  colab_url: "https://colab.research.google.com/github/shawnrhoads/gu-psyc-347/blob/master/docs/"
+  colab_url: "https://colab.research.google.com/"
   binderhub_url: ""
   thebe: false  # Add a thebe button to pages (requires the repository to run on Binder)
 
