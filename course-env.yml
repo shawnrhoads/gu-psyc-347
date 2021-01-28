@@ -1,0 +1,13 @@
+name: gu-psyc-347
+channels:
+  - default
+  - conda-forge
+dependencies:
+  - python=3.7.*
+  - pip
+  - git
+  - pandas
+  - numpy
+  - scipy
+  - matplotlib
+  - seaborn
