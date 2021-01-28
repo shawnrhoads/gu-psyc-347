@@ -9,9 +9,8 @@
     - file: module-00-05_Final-Projects
 - part: Module 01
   chapters:
-    - file: module-01-00_Scientific-Computing
-    - file: module-01-01_Jupyter-Notebooks
-    - file: module-01-02_Intro-to-Python
+    - file: module-01-00_Jupyter-Notebooks
+    - file: module-01-01_Intro-to-Python
     # - file: module-01-03_Working-with-Data
 # - part: Module 02
 #   chapters:
