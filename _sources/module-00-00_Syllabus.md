@@ -45,7 +45,7 @@ Here is a good tutorial on how to email your professor: http://www.wikihow.com/E
 ## Course goals
 
 1.	Understand the following: what are computational models, why use computational models, when to use computational models, and how data are fit to models.
-2.	Survey selected selected topics on social behavior through lectures, readings, discussions, and hands-on tutorials
+2.	Survey selected topics on social behavior through lectures, readings, discussions, and hands-on tutorials
 3.	Learn how to write code for data science using the [Python programming language](https://www.python.org/) and [Jupyter Notebooks](https://jupyter.org/)
 4.	Work collaboratively to “fit” data to models and evaluate their performance
 5.	Interpret the results of a social behavioral experiment

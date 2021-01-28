@@ -13,10 +13,10 @@ In your terminal, use command: `git clone https://github.com/shawnrhoads/gu-psyc
 Once the download completes, change your directory to 'gu-psyc-347' (for example, using the command `cd gu-psyc-347`)
 
 **Using the file explorer / finder**</br>
-Alternatively, you can create a directory somewhere on your computer called `gu-psyc-347` and just [download this .yml file](data/environment.yml) to that directory. Then, open your terminal and change your directory (for example, using the command `cd gu-psyc-347`)
+Alternatively, you can create a directory somewhere on your computer called `gu-psyc-347` and just [download this .yml file](https://raw.githubusercontent.com/shawnrhoads/gu-psyc-347/master/course-env.yml) to that directory. Then, open your terminal and change your directory (for example, using the command `cd gu-psyc-347`)
 
 ## Create Anaconda environment
-Create a new Anaconda environment using the command: `conda env create -f environment.yml`
+Create a new Anaconda environment using the command: `conda env create -f course-env.yml`
 
 ## Activate your Anaconda environment
 Activate your environment, using the command: `conda activate gu-psyc-347`
