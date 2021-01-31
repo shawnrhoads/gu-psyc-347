@@ -13,5 +13,6 @@ dependencies:
   - scipy
   - numpy
   - matplotlib
+  - ipywidgets
   - pip:
     - jupyter-book>=0.7.0b
