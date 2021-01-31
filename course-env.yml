@@ -12,6 +12,7 @@ dependencies:
   - matplotlib
   - seaborn
   - notebook
+  - ipywidgets
   - psychopy
   - pip:
     - psychtoolbox
