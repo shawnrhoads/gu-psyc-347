@@ -275,6 +275,7 @@
 <div class="section" id="download-anaconda-3">
 <h2>Download Anaconda 3<a class="headerlink" href="#download-anaconda-3" title="Permalink to this headline">¶</a></h2>
 <p><a class="reference external" href="https://www.anaconda.com/products/individual#Downloads">Anaconda</a> is an open-source distribution of the Python and R programming languages for scientific computing. We will be using it throughout the course.</p>
+<p>You can follow <a class="reference external" href="https://docs.anaconda.com/anaconda/install/">these instructions</a> to install Anaconda for your operating system.</p>
 </div>
 <div class="section" id="clone-repository-or-download-yaml-file">
 <h2>Clone repository or Download YAML file<a class="headerlink" href="#clone-repository-or-download-yaml-file" title="Permalink to this headline">¶</a></h2>
@@ -282,15 +283,21 @@
 In your terminal, use command: <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">clone</span> <span class="pre">https://github.com/shawnrhoads/gu-psyc-347</span></code></p>
 <p>Once the download completes, change your directory to ‘gu-psyc-347’ (for example, using the command <code class="docutils literal notranslate"><span class="pre">cd</span> <span class="pre">gu-psyc-347</span></code>)</p>
 <p><strong>Using the file explorer / finder</strong></br>
-Alternatively, you can create a directory somewhere on your computer called <code class="docutils literal notranslate"><span class="pre">gu-psyc-347</span></code> and just <a class="reference external" href="https://raw.githubusercontent.com/shawnrhoads/gu-psyc-347/master/course-env.yml">download this .yml file</a> to that directory. Then, open your terminal and change your directory (for example, using the command <code class="docutils literal notranslate"><span class="pre">cd</span> <span class="pre">gu-psyc-347</span></code>)</p>
+Alternatively, you can download this <a class="reference external" href="https://github.com/shawnrhoads/gu-psyc-347/archive/master.zip">.zip file</a> and unzip it in a directory somewhere on your computer. Then, open “Anaconda Prompt” (Windows) or Terminal (MacOS) and change your directory. For example:</p>
+<ul class="simple">
+<li><p>MacOS: cd ~/Desktop/gu-psyc-347-master</p></li>
+<li><p>Windows: cd “C:\Users\USERNAME\Desktop\gu-psyc-347-master”</p></li>
+</ul>
 </div>
 <div class="section" id="create-anaconda-environment">
 <h2>Create Anaconda environment<a class="headerlink" href="#create-anaconda-environment" title="Permalink to this headline">¶</a></h2>
-<p>Create a new Anaconda environment using the command: <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">env</span> <span class="pre">create</span> <span class="pre">-f</span> <span class="pre">course-env.yml</span></code></p>
+<p>If you previously created an environment called <code class="docutils literal notranslate"><span class="pre">gu-psyc-347</span></code>, then let’s remove first using this command: <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">remove</span> <span class="pre">--name</span> <span class="pre">gu-psyc-347</span> <span class="pre">--all</span></code></p>
+<p>Create the course environment using this command: <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">env</span> <span class="pre">create</span> <span class="pre">-f</span> <span class="pre">course-env.yml</span></code></p>
+<p>This will install the packages listed in the <a class="reference external" href="https://raw.githubusercontent.com/shawnrhoads/gu-psyc-347/master/course-env.yml">course-env.yml</a> file.</p>
 </div>
 <div class="section" id="activate-your-anaconda-environment">
 <h2>Activate your Anaconda environment<a class="headerlink" href="#activate-your-anaconda-environment" title="Permalink to this headline">¶</a></h2>
-<p>Activate your environment, using the command: <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">activate</span> <span class="pre">gu-psyc-347</span></code></p>
+<p>Activate the course environment using this command: <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">activate</span> <span class="pre">gu-psyc-347</span></code></p>
 </div>
 </div>
 
