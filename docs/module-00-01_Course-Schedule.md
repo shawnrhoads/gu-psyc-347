@@ -98,7 +98,7 @@
         <tr>
             <td>2/25</td>
             <td>Discussion on Sutton & Barto (2018)</td>
-            <td>Read Sutton & Barto (2018) pages 1-13 and <b>submit response</b></td>
+            <td>Read Sutton & Barto (2018) Chapter 1 (pages 1-13) and Chapter 14 (341-349, 349-361), and <b>submit response</b></td>
         </tr>
         <tr>
             <td rowspan=2>6</td>
@@ -145,8 +145,8 @@
         </tr>
         <tr>
             <td>3/25</td>
-            <td>Discussion of Lockwood et al. (2016)</td>
-            <td>Read Lockwood et al., (2016) and <b>submit response</b></td>
+            <td>Discussion of Lockwood et al. (2016) and Lengersdorff, et al (2020)</td>
+            <td>Read Lockwood et al., (2016)  and Lengersdorff, et al (2020), and <b>submit response</b></td>
             <td rowspan=6>Social learning example (Prosociality)</td>
         </tr>
         <tr>
@@ -192,7 +192,7 @@
         <tr>
             <td>4/22</td>
             <td>Discussion of Chang et al. (2010) and Fareri et al. (2015)</td>
-            <td>Read Chang et al. (2010) and Fareri et al. (2015) and <b>submit response</b></td>
+            <td>Read Chang et al. (2010) and Fareri et al. (2015), and <b>submit response</b></td>
             <td>Social inference example (Trustworthiness)</td>
         </tr>
         <tr>
