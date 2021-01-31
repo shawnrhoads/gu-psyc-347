@@ -49,19 +49,19 @@
         </tr>
         <tr>
             <td>1/28</td>
-            <td>Lab; Lecture</td>
+            <td>Lab (Jupyter Notebooks); Lecture</td>
             <td>Set up Anaconda Environment</td>
             <td rowspan=2>What are models? Why use models?</td>
         </tr>
         <tr>
             <td rowspan=2>2</td>
             <td>2/2</td>
-            <td>Discussion on Guest & Martin (2021) and Jolly & Chang (2017); Lab</td>
+            <td>Discussion on Guest & Martin (2021) and Jolly & Chang (2017)</td>
             <td>Read Guest & Martin (2021) and Jolly & Chang (2017), and <b>submit response</b></td>
         </tr>
         <tr>
             <td>2/4</td>
-            <td>Lab</td>
+            <td>Lab (Python)</td>
             <td>-</td>
             <td>Introduction to Python</td>
         </tr>
@@ -70,22 +70,22 @@
             <td>2/9</td>
             <td>Discussion on Wilson & Collins (2018)</td>
             <td><b>Submit Jupyter Notebook exercise 1</b>; Read Wilson & Collins (2018), and <b>submit response</b></td>
-            <td rowspan=4>Best practices in modeling (linear models, hyperbolic models)</td>
+            <td rowspan=4>Best practices in modeling (linear models, nonlinear models)</td>
         </tr>
         <tr>
             <td>2/11</td>
-            <td>Lab</td>
+            <td>Lab (Linear models)</td>
             <td>-</td>
         </tr>
         <tr>
             <td rowspan=2>4</td>
             <td>2/16</td>
-            <td>Discussion of Jones & Rachlin (2006); Lab</td>
+            <td>Discussion of Jones & Rachlin (2006)</td>
             <td>Read Jones & Rachlin (2006), and <b>submit response</b></td>
         </tr>
         <tr>
             <td>2/18</td>
-            <td>Lab</td>
+            <td>Lab (Nonlinear models)</td>
             <td>-</td>
         </tr>
         <tr>
@@ -121,18 +121,18 @@
         <tr>
             <td>3/11</td>
             <td>Lecture</td>
-            <td><b>Submit Jupyter Notebook exercise 3</b></td>
+            <td><b>Submit Jupyter Notebook exercise 3</b>; Read Lockwood, et al. (2020)</td>
             <td rowspan=2>Applications to social behavior</td>
         </tr>
         <tr>
             <td rowspan=2>8</td>
             <td>3/16</td>
-            <td>Discussion of Lockwood, et al. (2020) and Zhang, Lengersdorff, et al. (2020); Final Project Discussion</td>
-            <td>Read Lockwood, et al. (2020) and Zhang, Lengersdorff, et al. (2020), and <b>submit response</b></td>
+            <td>Discussion of Zhang, Lengersdorff, et al. (2020); Final Project Discussion</td>
+            <td>Read Zhang, Lengersdorff, et al. (2020), and <b>submit response</b></td>
         </tr>
         <tr>
             <td>3/18</td>
-            <td>Discussion of Suzuki & O'Doherty, (2020)</td>
+            <td>(Break) Canvas Discussion of Suzuki & O'Doherty, (2020)</td>
             <td>Read Suzuki & O'Doherty (2020), and <b>submit response</b></td>
             <td>Learning from and for others</td>
         </tr>
@@ -198,7 +198,7 @@
         <tr>
             <td rowspan=2>14</td>
             <td>4/27</td>
-            <td>Discussion of Siegel et al. (2018)</td>
+            <td>(Break) Canvas Discussion of Siegel et al. (2018)</td>
             <td>Read Siegel et al. (2018), and <b>submit response</b></td>
             <td>Social inference example (Morality)</td>
         </tr>
