@@ -11,8 +11,8 @@
   chapters:
     - file: module-01-00_Jupyter-Notebooks
     - file: module-01-01_Intro-to-Python
+    - file: module-01-02_Working-with-Data
     - file: module-01-03_Python-Exercises
-    # - file: module-01-02_Working-with-Data
 # - part: Module 02
 #   chapters:
 #     - file: module-02-00_Intro-to-Modeling
