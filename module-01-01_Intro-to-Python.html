@@ -57,7 +57,7 @@
     <link rel="canonical" href="https://shawnrhoads.github.io/gu-psyc-347/module-01-01_Intro-to-Python.html" />
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Python Exercises" href="module-01-03_Python-Exercises.html" />
+    <link rel="next" title="Working with Data" href="module-01-02_Working-with-Data.html" />
     <link rel="prev" title="Jupyter Notebooks" href="module-01-00_Jupyter-Notebooks.html" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -148,6 +148,11 @@
  <li class="toctree-l1 current active">
   <a class="current reference internal" href="#">
    Intro to Python Basics
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="module-01-02_Working-with-Data.html">
+   Working with Data
   </a>
  </li>
  <li class="toctree-l1">
@@ -1014,9 +1019,7 @@ PSYC 347 - COMPUTATIONAL MODELS OF HUMAN SOCIAL BEHAVIOR AND NEUROSCIENCE
 1
 2
 3
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>4
+4
 5
 </pre></div>
 </div>
@@ -1068,12 +1071,11 @@ PSYC 347 - COMPUTATIONAL MODELS OF HUMAN SOCIAL BEHAVIOR AND NEUROSCIENCE
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0 P
 1 S
-2 Y
-3 C
-4 H
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2 Y
+3 C
+4 H
 </pre></div>
 </div>
 </div>
@@ -1156,10 +1158,10 @@ r
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>M
 O
-D
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>E
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>D
+E
 L
 S
 </pre></div>
@@ -1489,7 +1491,7 @@ Fat Cat says Meow! Meow!
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&#39;./module-01-00_Jupyter-Notebooks.ipynb&#39;, &#39;./module-01-03_Python-Exercises.ipynb&#39;, &#39;./module-01-01_Intro-to-Python.ipynb&#39;]
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&#39;./module-01-00_Jupyter-Notebooks.ipynb&#39;, &#39;./module-01-03_Python-Exercises.ipynb&#39;, &#39;./module-01-01_Intro-to-Python.ipynb&#39;, &#39;./module-01-02_Working-with-Data.ipynb&#39;]
 </pre></div>
 </div>
 </div>
@@ -1506,7 +1508,7 @@ Fat Cat says Meow! Meow!
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&#39;module-01-00_Jupyter-Notebooks.ipynb&#39;, &#39;module-01-03_Python-Exercises.ipynb&#39;, &#39;module-01-01_Intro-to-Python.ipynb&#39;]
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&#39;module-01-00_Jupyter-Notebooks.ipynb&#39;, &#39;module-01-03_Python-Exercises.ipynb&#39;, &#39;module-01-01_Intro-to-Python.ipynb&#39;, &#39;module-01-02_Working-with-Data.ipynb&#39;]
 </pre></div>
 </div>
 </div>
@@ -1521,7 +1523,8 @@ Fat Cat says Meow! Meow!
 <div class="cell_output docutils container">
 <div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&#39;module-01-00_Jupyter-Notebooks.ipynb&#39;,
  &#39;module-01-03_Python-Exercises.ipynb&#39;,
- &#39;module-01-01_Intro-to-Python.ipynb&#39;]
+ &#39;module-01-01_Intro-to-Python.ipynb&#39;,
+ &#39;module-01-02_Working-with-Data.ipynb&#39;]
 </pre></div>
 </div>
 </div>
@@ -1757,9 +1760,9 @@ Fat Cat says Meow! Meow!
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([[0.87191269, 0.60223175],
-       [0.76165283, 0.66964809],
-       [0.40184601, 0.15880964]])
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([[0.03495513, 0.90680842],
+       [0.9576496 , 0.40396488],
+       [0.51261467, 0.48695153]])
 </pre></div>
 </div>
 </div>
@@ -1771,8 +1774,8 @@ Fat Cat says Meow! Meow!
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([[0.87191269, 0.60223175, 0.76165283],
-       [0.66964809, 0.40184601, 0.15880964]])
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([[0.03495513, 0.90680842, 0.9576496 ],
+       [0.40396488, 0.51261467, 0.48695153]])
 </pre></div>
 </div>
 </div>
@@ -1807,10 +1810,10 @@ Fat Cat says Meow! Meow!
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[[0.0955949  0.42533712 0.11083011 0.23111087]
- [0.25660738 0.43437688 0.57353405 0.97700676]
- [0.02967903 0.82488139 0.44896541 0.47782657]
- [0.81199048 0.27569749 0.15088752 0.54164333]]
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[[0.37318613 0.32946432 0.77237092 0.41368392]
+ [0.6260914  0.02802477 0.30103662 0.67058863]
+ [0.17193897 0.11587236 0.9365969  0.08132178]
+ [0.05282828 0.60859778 0.6696896  0.4214197 ]]
 </pre></div>
 </div>
 </div>
@@ -1822,10 +1825,10 @@ Fat Cat says Meow! Meow!
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([[0.95594897, 4.25337117, 1.1083011 , 2.31110873],
-       [2.56607379, 4.34376875, 5.73534048, 9.77006763],
-       [0.29679033, 8.24881385, 4.48965414, 4.77826575],
-       [8.11990483, 2.75697493, 1.50887515, 5.41643328]])
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([[3.73186131, 3.29464319, 7.72370922, 4.13683915],
+       [6.26091402, 0.28024767, 3.01036622, 6.70588625],
+       [1.7193897 , 1.1587236 , 9.36596904, 0.81321776],
+       [0.52828277, 6.08597781, 6.69689598, 4.21419702]])
 </pre></div>
 </div>
 </div>
@@ -1838,9 +1841,9 @@ Fat Cat says Meow! Meow!
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[0.0955949  0.42533712 0.11083011 0.23111087 0.25660738 0.43437688
- 0.57353405 0.97700676 0.02967903 0.82488139 0.44896541 0.47782657
- 0.81199048 0.27569749 0.15088752 0.54164333]
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[0.37318613 0.32946432 0.77237092 0.41368392 0.6260914  0.02802477
+ 0.30103662 0.67058863 0.17193897 0.11587236 0.9365969  0.08132178
+ 0.05282828 0.60859778 0.6696896  0.4214197 ]
 </pre></div>
 </div>
 </div>
@@ -1852,10 +1855,10 @@ Fat Cat says Meow! Meow!
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([[0.0955949 , 0.42533712, 0.11083011, 0.23111087, 0.25660738,
-        0.43437688, 0.57353405, 0.97700676],
-       [0.02967903, 0.82488139, 0.44896541, 0.47782657, 0.81199048,
-        0.27569749, 0.15088752, 0.54164333]])
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([[0.37318613, 0.32946432, 0.77237092, 0.41368392, 0.6260914 ,
+        0.02802477, 0.30103662, 0.67058863],
+       [0.17193897, 0.11587236, 0.9365969 , 0.08132178, 0.05282828,
+        0.60859778, 0.6696896 , 0.4214197 ]])
 </pre></div>
 </div>
 </div>
@@ -1867,10 +1870,10 @@ Fat Cat says Meow! Meow!
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([[0.0955949 , 0.42533712, 0.11083011, 0.23111087],
-       [0.25660738, 0.43437688, 0.57353405, 0.97700676],
-       [0.02967903, 0.82488139, 0.44896541, 0.47782657],
-       [0.81199048, 0.27569749, 0.15088752, 0.54164333]])
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([[0.37318613, 0.32946432, 0.77237092, 0.41368392],
+       [0.6260914 , 0.02802477, 0.30103662, 0.67058863],
+       [0.17193897, 0.11587236, 0.9365969 , 0.08132178],
+       [0.05282828, 0.60859778, 0.6696896 , 0.4214197 ]])
 </pre></div>
 </div>
 </div>
@@ -1883,13 +1886,13 @@ Fat Cat says Meow! Meow!
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[[[0.06357284 0.6909163  0.99726237 0.95889932 0.74521876 0.79452421]
-  [0.69678384 0.00713544 0.79111945 0.13882802 0.00886203 0.30435322]
-  [0.09643327 0.48317327 0.47715864 0.51029576 0.6663334  0.92603268]]
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[[[0.3298858  0.70250769 0.60162738 0.23518792 0.76840599 0.25944996]
+  [0.42185461 0.10974119 0.76680586 0.40116199 0.06203538 0.84236401]
+  [0.49423671 0.96731819 0.30990405 0.18547873 0.38179447 0.14788254]]
 
- [[0.19596639 0.31013443 0.05811405 0.86489021 0.12681085 0.67419757]
-  [0.34360981 0.07022879 0.27752945 0.98715031 0.63969169 0.76854476]
-  [0.86414929 0.12348979 0.06366988 0.94300369 0.47087188 0.23690545]]]
+ [[0.96249424 0.40818173 0.69550684 0.63167841 0.13871074 0.01952531]
+  [0.07190736 0.26230268 0.99920624 0.79585342 0.52333297 0.862153  ]
+  [0.26494668 0.2096739  0.87561176 0.20760984 0.53332268 0.70116172]]]
 </pre></div>
 </div>
 </div>
@@ -1901,12 +1904,12 @@ Fat Cat says Meow! Meow!
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[0.06357284 0.6909163  0.99726237 0.95889932 0.74521876 0.79452421
- 0.69678384 0.00713544 0.79111945 0.13882802 0.00886203 0.30435322
- 0.09643327 0.48317327 0.47715864 0.51029576 0.6663334  0.92603268
- 0.19596639 0.31013443 0.05811405 0.86489021 0.12681085 0.67419757
- 0.34360981 0.07022879 0.27752945 0.98715031 0.63969169 0.76854476
- 0.86414929 0.12348979 0.06366988 0.94300369 0.47087188 0.23690545]
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[0.3298858  0.70250769 0.60162738 0.23518792 0.76840599 0.25944996
+ 0.42185461 0.10974119 0.76680586 0.40116199 0.06203538 0.84236401
+ 0.49423671 0.96731819 0.30990405 0.18547873 0.38179447 0.14788254
+ 0.96249424 0.40818173 0.69550684 0.63167841 0.13871074 0.01952531
+ 0.07190736 0.26230268 0.99920624 0.79585342 0.52333297 0.862153
+ 0.26494668 0.2096739  0.87561176 0.20760984 0.53332268 0.70116172]
 </pre></div>
 </div>
 </div>
@@ -1918,10 +1921,10 @@ Fat Cat says Meow! Meow!
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[[0.0955949  0.25660738 0.02967903 0.81199048]
- [0.42533712 0.43437688 0.82488139 0.27569749]
- [0.11083011 0.57353405 0.44896541 0.15088752]
- [0.23111087 0.97700676 0.47782657 0.54164333]]
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[[0.37318613 0.6260914  0.17193897 0.05282828]
+ [0.32946432 0.02802477 0.11587236 0.60859778]
+ [0.77237092 0.30103662 0.9365969  0.6696896 ]
+ [0.41368392 0.67058863 0.08132178 0.4214197 ]]
 </pre></div>
 </div>
 </div>
@@ -1997,7 +2000,7 @@ Namespaces are one honking great idea -- let&#39;s do more of those!
     <div class='prev-next-bottom'>
         
     <a class='left-prev' id="prev-link" href="module-01-00_Jupyter-Notebooks.html" title="previous page">Jupyter Notebooks</a>
-    <a class='right-next' id="next-link" href="module-01-03_Python-Exercises.html" title="next page">Python Exercises</a>
+    <a class='right-next' id="next-link" href="module-01-02_Working-with-Data.html" title="next page">Working with Data</a>
 
     </div>
     <footer class="footer mt-5 mt-md-0">
