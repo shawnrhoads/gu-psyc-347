@@ -67,6 +67,7 @@ Cushman, F., & Gershman, S. (2019). Editors’ Introduction: Computational Appro
 - Anzellotti, S., & Young, L. L. (2019). The Acquisition of Person Knowledge Annual Review of Psychology. Annual Review of Psychology, 1–32.
 - Baker, C. L., Jara-Ettinger, J., Saxe, R., & Tenenbaum, J. B. (2017). Rational quantitative attribution of beliefs, desires and percepts in human mentalizing. Nature Human Behaviour, 1(4), 1–10.
 - Boorman, E. D., O’Doherty, J. P., Adolphs, R., & Rangel, A. (2013). The behavioral and neural mechanisms underlying the tracking of expertise. Neuron, 80(6), 1558–1571.
+Crockett, M. J. (2016). How Formal Models Can Illuminate Mechanisms of Moral Judgment and Decision Making. Current Directions in Psychological Science, 25(2), 85–90.
 - Devaine, M., Hollard, G., & Daunizeau, J. (2014). The Social Bayesian Brain: Does Mentalizing Make a Difference When We Learn? PLoS Computational Biology, 10(12).
 - Devaine, M., & Daunizeau, J. (2017). Learning about and from others’ prudence, impatience or laziness: The computational bases of attitude alignment. PLoS Computational Biology, 13(3), 1–28.
 - Hackel, L. M., Doll, B. B., & Amodio, D. M. (2015). Instrumental learning of traits versus rewards: Dissociable neural correlates and effects on choice. Nature Neuroscience, 18(9), 1233–1235.
