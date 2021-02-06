@@ -320,14 +320,15 @@
 <span class="c1"># [INSERT CODE BELOW]</span>
 <span class="k">raise</span> <span class="ne">NotImplementedError</span><span class="p">(</span><span class="s2">&quot;Student exercise: import pandas and numpy, then delete this line&quot;</span><span class="p">)</span>
 
-<span class="kn">import</span> <span class="nn">...</span>
-<span class="kn">import</span> <span class="nn">...</span>
+<span class="kn">import</span> <span class="nn">requests</span>
+<span class="kn">import</span> <span class="nn">...</span> <span class="k">as</span> <span class="nn">...</span>
+<span class="kn">import</span> <span class="nn">...</span> <span class="k">as</span> <span class="nn">...</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">  File</span><span class="nn"> &quot;&lt;ipython-input-1-e328717388a4&gt;&quot;</span><span class="gt">, line </span><span class="mi">8</span>
-    <span class="kn">import</span> <span class="nn">...</span>
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">  File</span><span class="nn"> &quot;&lt;ipython-input-1-9159ec5af80e&gt;&quot;</span><span class="gt">, line </span><span class="mi">9</span>
+    <span class="kn">import</span> <span class="nn">...</span> <span class="k">as</span> <span class="nn">...</span>
              <span class="o">^</span>
 <span class="ne">SyntaxError</span>: invalid syntax
 </pre></div>
@@ -338,27 +339,25 @@
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Now, we will load in our dataframe into a variable called `df` and view the first few rows:</span>
 
+<span class="c1"># here, we are just going to download data from the web (no need to edit these lines, but try to figure out what they are doing)</span>
+<span class="n">url</span> <span class="o">=</span> <span class="s1">&#39;https://raw.githubusercontent.com/shawnrhoads/gu-psyc-347/master/docs/static/data/OConnell_COVID_MTurk_noPII_post_peerreview.csv&#39;</span>
+<span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">allow_redirects</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 <span class="n">filename</span> <span class="o">=</span> <span class="s1">&#39;static/data/OConnell_COVID_MTurk_noPII_post_peerreview.csv&#39;</span>
+<span class="nb">open</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="s1">&#39;wb&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">r</span><span class="o">.</span><span class="n">content</span><span class="p">)</span>
 
 <span class="c1"># [INSERT CODE BELOW]</span>
-<span class="k">raise</span> <span class="ne">NotImplementedError</span><span class="p">(</span><span class="s2">&quot;Student exercise: load data from csv into Pandas dataframe&quot;</span><span class="p">)</span>
+<span class="k">raise</span> <span class="ne">NotImplementedError</span><span class="p">(</span><span class="s2">&quot;Student exercise: load data from csv into Pandas dataframe, then delete this line&quot;</span><span class="p">)</span>
 
 <span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="o">...</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="o">...</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="o">..</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
-<span class="ne">NotImplementedError</span><span class="g g-Whitespace">                       </span>Traceback (most recent call last)
-<span class="o">&lt;</span><span class="n">ipython</span><span class="o">-</span><span class="nb">input</span><span class="o">-</span><span class="mi">2</span><span class="o">-</span><span class="n">acd2e2abfd02</span><span class="o">&gt;</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
-<span class="g g-Whitespace">      </span><span class="mi">4</span> 
-<span class="g g-Whitespace">      </span><span class="mi">5</span> <span class="c1"># [INSERT CODE BELOW]</span>
-<span class="ne">----&gt; </span><span class="mi">6</span> <span class="k">raise</span> <span class="ne">NotImplementedError</span><span class="p">(</span><span class="s2">&quot;Student exercise: load data from csv into Pandas dataframe&quot;</span><span class="p">)</span>
-<span class="g g-Whitespace">      </span><span class="mi">7</span> 
-<span class="g g-Whitespace">      </span><span class="mi">8</span> <span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="o">...</span><span class="p">)</span>
-
-<span class="ne">NotImplementedError</span>: Student exercise: load data from csv into Pandas dataframe
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">  File</span><span class="nn"> &quot;&lt;ipython-input-2-909d589dab9e&gt;&quot;</span><span class="gt">, line </span><span class="mi">13</span>
+    <span class="nb">print</span><span class="p">(</span><span class="o">..</span><span class="p">)</span>
+          <span class="o">^</span>
+<span class="ne">SyntaxError</span>: invalid syntax
 </pre></div>
 </div>
 </div>
@@ -422,7 +421,7 @@
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Let&#39;s also explore the data a bit more. Remember, both of these lists should contain the same number of observations. Let&#39;s store number of elements of each list and print them out. </span>
 
 <span class="c1"># [INSERT CODE BELOW]</span>
-<span class="k">raise</span> <span class="ne">NotImplementedError</span><span class="p">(</span><span class="s2">&quot;Student exercise: store number of elements of each list&quot;</span><span class="p">)</span>
+<span class="k">raise</span> <span class="ne">NotImplementedError</span><span class="p">(</span><span class="s2">&quot;Student exercise: store number of elements of each list, then delete this line&quot;</span><span class="p">)</span>
 
 <span class="n">length_of_dist_data</span> <span class="o">=</span> <span class="o">...</span>
 <span class="n">length_of_stab_data</span> <span class="o">=</span> <span class="o">...</span>
@@ -435,14 +434,14 @@
 <div class="cell_output docutils container">
 <div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
 <span class="ne">NotImplementedError</span><span class="g g-Whitespace">                       </span>Traceback (most recent call last)
-<span class="o">&lt;</span><span class="n">ipython</span><span class="o">-</span><span class="nb">input</span><span class="o">-</span><span class="mi">5</span><span class="o">-</span><span class="n">a172b1115e25</span><span class="o">&gt;</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="o">&lt;</span><span class="n">ipython</span><span class="o">-</span><span class="nb">input</span><span class="o">-</span><span class="mi">5</span><span class="o">-</span><span class="mi">874</span><span class="n">ea39bbb70</span><span class="o">&gt;</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
 <span class="g g-Whitespace">      </span><span class="mi">2</span> 
 <span class="g g-Whitespace">      </span><span class="mi">3</span> <span class="c1"># [INSERT CODE BELOW]</span>
-<span class="ne">----&gt; </span><span class="mi">4</span> <span class="k">raise</span> <span class="ne">NotImplementedError</span><span class="p">(</span><span class="s2">&quot;Student exercise: store number of elements of each list&quot;</span><span class="p">)</span>
+<span class="ne">----&gt; </span><span class="mi">4</span> <span class="k">raise</span> <span class="ne">NotImplementedError</span><span class="p">(</span><span class="s2">&quot;Student exercise: store number of elements of each list, then delete this line&quot;</span><span class="p">)</span>
 <span class="g g-Whitespace">      </span><span class="mi">5</span> 
 <span class="g g-Whitespace">      </span><span class="mi">6</span> <span class="n">length_of_dist_data</span> <span class="o">=</span> <span class="o">...</span>
 
-<span class="ne">NotImplementedError</span>: Student exercise: store number of elements of each list
+<span class="ne">NotImplementedError</span>: Student exercise: store number of elements of each list, then delete this line
 </pre></div>
 </div>
 </div>
@@ -455,7 +454,7 @@
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Rather than printing out the lengths of each list above and qualitatively assessing whether they contain the same number of observations, we could have just used an if-statement. Let&#39;s do that now. If they are the same length, then print one line with the number of observations; if they are not, then print two lines with the number of observations for each list.</span>
 
 <span class="c1"># [INSERT CODE BELOW]</span>
-<span class="k">raise</span> <span class="ne">NotImplementedError</span><span class="p">(</span><span class="s2">&quot;Student exercise: use if-statement to check if lists contain the same number of elements&quot;</span><span class="p">)</span>
+<span class="k">raise</span> <span class="ne">NotImplementedError</span><span class="p">(</span><span class="s2">&quot;Student exercise: use if-statement to check if lists contain the same number of elements, then delete this line&quot;</span><span class="p">)</span>
 
 <span class="n">length_of_dist_data</span> <span class="o">=</span> <span class="o">...</span>
 <span class="n">length_of_stab_data</span> <span class="o">=</span> <span class="o">...</span>
@@ -469,7 +468,7 @@
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">  File</span><span class="nn"> &quot;&lt;ipython-input-6-4495f0855d2f&gt;&quot;</span><span class="gt">, line </span><span class="mi">9</span>
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">  File</span><span class="nn"> &quot;&lt;ipython-input-6-e3921571c368&gt;&quot;</span><span class="gt">, line </span><span class="mi">9</span>
     <span class="k">if</span> <span class="o">...</span>
           <span class="o">^</span>
 <span class="ne">SyntaxError</span>: invalid syntax
@@ -484,7 +483,7 @@
 <span class="c1"># Hint: this will require you to put an if-statement within the for-loop</span>
 
 <span class="c1"># [INSERT CODE BELOW]</span>
-<span class="k">raise</span> <span class="ne">NotImplementedError</span><span class="p">(</span><span class="s2">&quot;Student exercise: loop through elements in list and check if any are nans&quot;</span><span class="p">)</span>
+<span class="k">raise</span> <span class="ne">NotImplementedError</span><span class="p">(</span><span class="s2">&quot;Student exercise: loop through elements in list and check if any are nans, then delete this line&quot;</span><span class="p">)</span>
 
 <span class="k">for</span> <span class="n">index</span><span class="p">,</span> <span class="o">...</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="o">...</span><span class="p">):</span>
     <span class="k">if</span> <span class="o">...</span>
@@ -493,7 +492,7 @@
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">  File</span><span class="nn"> &quot;&lt;ipython-input-7-a3cbc7b099d6&gt;&quot;</span><span class="gt">, line </span><span class="mi">9</span>
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">  File</span><span class="nn"> &quot;&lt;ipython-input-7-b1d9ba2a3fb6&gt;&quot;</span><span class="gt">, line </span><span class="mi">9</span>
     <span class="k">if</span> <span class="o">...</span>
           <span class="o">^</span>
 <span class="ne">SyntaxError</span>: invalid syntax
@@ -506,7 +505,7 @@
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Okay (spoiler alert), `distance` contains nans. Let&#39;s take the same for-loop code from above and add a &quot;counter&quot; to count how many nans we actually have</span>
 
 <span class="c1"># [INSERT CODE BELOW]</span>
-<span class="k">raise</span> <span class="ne">NotImplementedError</span><span class="p">(</span><span class="s2">&quot;Student exercise: loop through elements in list, check if any are nans, and update counter for each nan&quot;</span><span class="p">)</span>
+<span class="k">raise</span> <span class="ne">NotImplementedError</span><span class="p">(</span><span class="s2">&quot;Student exercise: loop through elements in list, check if any are nans, and update counter for each nan, then delete this line&quot;</span><span class="p">)</span>
 
 <span class="n">counter</span> <span class="o">=</span> <span class="mi">0</span> <span class="c1">#initialize counter with 0</span>
 <span class="k">for</span> <span class="n">index</span><span class="p">,</span> <span class="o">...</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="o">...</span><span class="p">):</span>
@@ -520,7 +519,7 @@
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">  File</span><span class="nn"> &quot;&lt;ipython-input-8-5f02b2f26806&gt;&quot;</span><span class="gt">, line </span><span class="mi">8</span>
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">  File</span><span class="nn"> &quot;&lt;ipython-input-8-4c30807b288d&gt;&quot;</span><span class="gt">, line </span><span class="mi">8</span>
     <span class="k">if</span> <span class="o">...</span>
           <span class="o">^</span>
 <span class="ne">SyntaxError</span>: invalid syntax
@@ -553,7 +552,7 @@
 
     <span class="c1">################################################################################</span>
     <span class="c1"># [INSERT CODE BELOW]</span>
-    <span class="k">raise</span> <span class="ne">NotImplementedError</span><span class="p">(</span><span class="s2">&quot;Student exercise: check if any inputted list contains nans&quot;</span><span class="p">)</span>
+    <span class="k">raise</span> <span class="ne">NotImplementedError</span><span class="p">(</span><span class="s2">&quot;Student exercise: check if any inputted list contains nans, then delete this line&quot;</span><span class="p">)</span>
     <span class="c1">################################################################################</span>
 
     <span class="c1"># loop through elements/observations in list</span>
@@ -576,7 +575,7 @@
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">  File</span><span class="nn"> &quot;&lt;ipython-input-9-31510271348a&gt;&quot;</span><span class="gt">, line </span><span class="mi">27</span>
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">  File</span><span class="nn"> &quot;&lt;ipython-input-9-fe881f302c10&gt;&quot;</span><span class="gt">, line </span><span class="mi">27</span>
     <span class="k">if</span> <span class="o">...</span>
           <span class="o">^</span>
 <span class="ne">SyntaxError</span>: invalid syntax

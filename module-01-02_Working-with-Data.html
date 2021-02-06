@@ -307,6 +307,7 @@
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Remember: Python requires you to explictly &quot;import&quot; libraries before their functions are available to use. We will always specify our imports at the beginning of each notebook.</span>
 <span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span><span class="o">,</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">requests</span> <span class="c1"># to download data from web</span>
 </pre></div>
 </div>
 </div>
@@ -316,8 +317,12 @@
 <h3>Loading data<a class="headerlink" href="#loading-data" title="Permalink to this headline">¶</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># string with location of file</span>
-<span class="n">filename</span> <span class="o">=</span> <span class="s1">&#39;static/data/OConnell_COVID_MTurk_noPII_post_peerreview.csv&#39;</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># here, we are just going to download data from the web</span>
+<span class="n">url</span> <span class="o">=</span> <span class="s1">&#39;https://raw.githubusercontent.com/shawnrhoads/gu-psyc-347/master/docs/static/data/OConnell_COVID_MTurk_noPII_post_peerreview.csv&#39;</span>
+<span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">allow_redirects</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">filename</span> <span class="o">=</span> <span class="s1">&#39;static/data/OConnell_COVID_MTurk_noPII_post_peerreview.csv&#39;</span> <span class="c1"># string with location of file</span>
+
+<span class="nb">open</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="s1">&#39;wb&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">r</span><span class="o">.</span><span class="n">content</span><span class="p">)</span>
 
 <span class="c1"># load data specified in `filename` into dataframe `df`</span>
 <span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">filename</span><span class="p">)</span>
@@ -420,26 +425,26 @@
 </div>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>    column A  column B  column C
-0  -0.372974  0.069623 -0.674980
-1   0.650547 -1.081954 -0.527905
-2  -1.964699  0.048453 -0.714010
-3  -0.911240 -0.682636  1.783248
-4  -0.739964 -0.487347 -0.217661
-5   0.555749  0.092076  0.102179
-6   0.943511  1.027147 -0.049235
-7   0.025839 -0.695668  0.013052
-8   1.109254 -0.353998  0.405520
-9   0.436559  0.327006  0.719946
-10  1.898612 -0.626366 -1.370537
-11  0.181133 -0.620727  0.292507
-12 -1.636607  0.393535 -1.614219
-13 -0.539466 -1.072899 -0.100764
-14  0.339618  0.637275 -0.140734
-15  0.131094 -0.696635  1.468470
-16 -0.186318  0.122130  1.273536
-17 -1.888866  0.299865 -0.418510
-18  0.998312 -0.073608 -0.209242
-19 -0.723186  0.299854 -0.983140
+0   1.129458  1.640122 -0.430424
+1   0.697012 -0.016746 -0.398366
+2  -1.095601 -0.671309 -0.439772
+3  -0.648263 -1.223017  0.039058
+4  -0.307756  1.558594  0.822112
+5  -0.589990  0.753305  0.631454
+6   0.570066  0.935396 -1.211866
+7  -0.056138  1.387443 -0.887300
+8   0.105233  0.108969 -0.287492
+9  -2.133856 -0.778166  0.718022
+10  0.314058  0.134895  0.692240
+11  0.012194 -0.348365  1.291205
+12 -0.590302  0.811331 -0.223676
+13 -0.274721 -0.535906  0.148555
+14  0.331197 -0.290061 -0.999746
+15  0.259408 -0.381990 -0.899231
+16  0.549673  0.382290 -1.306032
+17 -0.022311  1.018463 -0.357541
+18  0.914858  0.061006 -0.245390
+19  1.115000 -0.279547 -0.885751
 </pre></div>
 </div>
 </div>
@@ -455,11 +460,11 @@
 </div>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>   COLUMN A  COLUMN B  COLUMN C
-0 -0.372974  0.069623 -0.674980
-1  0.650547 -1.081954 -0.527905
-2 -1.964699  0.048453 -0.714010
-3 -0.911240 -0.682636  1.783248
-4 -0.739964 -0.487347 -0.217661
+0  1.129458  1.640122 -0.430424
+1  0.697012 -0.016746 -0.398366
+2 -1.095601 -0.671309 -0.439772
+3 -0.648263 -1.223017  0.039058
+4 -0.307756  1.558594  0.822112
 </pre></div>
 </div>
 </div>
@@ -474,11 +479,11 @@
 </div>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>           A         B         C
-15  0.131094 -0.696635  1.468470
-16 -0.186318  0.122130  1.273536
-17 -1.888866  0.299865 -0.418510
-18  0.998312 -0.073608 -0.209242
-19 -0.723186  0.299854 -0.983140
+15  0.259408 -0.381990 -0.899231
+16  0.549673  0.382290 -1.306032
+17 -0.022311  1.018463 -0.357541
+18  0.914858  0.061006 -0.245390
+19  1.115000 -0.279547 -0.885751
 </pre></div>
 </div>
 </div>
@@ -538,26 +543,26 @@
 </div>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>           A         B         C
-0  -0.372974  0.069623 -0.674980
-1   0.650547 -1.081954 -0.527905
-2  -1.964699  0.048453 -0.714010
-3  -0.911240 -0.682636  1.783248
-4  -0.739964 -0.487347 -0.217661
-5   0.555749  0.092076  0.102179
-6   0.943511  1.027147 -0.049235
-7   0.025839 -0.695668  0.013052
-8   1.109254 -0.353998  0.405520
-9   0.436559  0.327006  0.719946
-10  1.898612 -0.626366 -1.370537
-11  0.181133 -0.620727  0.292507
-12 -1.636607  0.393535 -1.614219
-13 -0.539466 -1.072899 -0.100764
-14  0.339618  0.637275 -0.140734
-15  0.131094 -0.696635  1.468470
-16 -0.186318  0.122130  1.273536
-17 -1.888866  0.299865 -0.418510
-18  0.998312 -0.073608 -0.209242
-19 -0.723186  0.299854 -0.983140
+0   1.129458  1.640122 -0.430424
+1   0.697012 -0.016746 -0.398366
+2  -1.095601 -0.671309 -0.439772
+3  -0.648263 -1.223017  0.039058
+4  -0.307756  1.558594  0.822112
+5  -0.589990  0.753305  0.631454
+6   0.570066  0.935396 -1.211866
+7  -0.056138  1.387443 -0.887300
+8   0.105233  0.108969 -0.287492
+9  -2.133856 -0.778166  0.718022
+10  0.314058  0.134895  0.692240
+11  0.012194 -0.348365  1.291205
+12 -0.590302  0.811331 -0.223676
+13 -0.274721 -0.535906  0.148555
+14  0.331197 -0.290061 -0.999746
+15  0.259408 -0.381990 -0.899231
+16  0.549673  0.382290 -1.306032
+17 -0.022311  1.018463 -0.357541
+18  0.914858  0.061006 -0.245390
+19  1.115000 -0.279547 -0.885751
 20  0.000000  0.000000  0.000000
 21  0.000000  0.000000  0.000000
 22  0.000000  0.000000  0.000000
@@ -1339,7 +1344,7 @@ dtype: float64
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0x7f97742be690&gt;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0x7fd60bf69350&gt;
 </pre></div>
 </div>
 <img alt="_images/module-01-02_Working-with-Data_66_1.png" src="_images/module-01-02_Working-with-Data_66_1.png" />
@@ -1362,7 +1367,7 @@ dtype: float64
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0x7f97742d78d0&gt;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0x7fd60bf2d7d0&gt;
 </pre></div>
 </div>
 <img alt="_images/module-01-02_Working-with-Data_68_1.png" src="_images/module-01-02_Working-with-Data_68_1.png" />
