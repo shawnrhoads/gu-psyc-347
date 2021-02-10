@@ -58,6 +58,7 @@ launch_buttons:
 sphinx:
   extra_extensions:   # A list of extra extensions to load by Sphinx.
   config:   # key-value pairs to directly over-ride the Sphinx configuration
+    mathjax_path: https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
 
 latex:
   latex_engine: pdflatex  # one of 'pdflatex', 'xelatex' (recommended for unicode), 'luatex', 'platex', 'uplatex'
