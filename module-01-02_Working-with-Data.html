@@ -47,6 +47,8 @@
     <script src="_static/sphinx-book-theme.d31b09fe5c1d09cb49b26a786de4a05d.js"></script>
     <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.20.0/dist/embed-amd.js"></script>
     <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
     <script >
         const thebe_selector = ".thebe"
@@ -425,26 +427,26 @@
 </div>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>    column A  column B  column C
-0  -0.231415 -0.729599 -0.684729
-1   2.805841 -0.358752  0.433006
-2  -0.929356 -0.762025  1.519280
-3  -0.921638 -0.191169  1.325763
-4   0.204657  0.925538 -1.292883
-5  -0.140783 -0.686335  0.307458
-6   0.126195  0.708951 -0.434407
-7   1.078757 -0.597190  1.046647
-8   0.672755  0.975901  0.112891
-9  -2.066044 -0.479248 -0.848667
-10  0.411437  1.428217 -0.429754
-11 -0.643880 -0.651183 -1.355218
-12  1.575336  0.597287  1.281889
-13  0.473471  0.101329 -0.271276
-14  0.519022 -1.448622  0.313537
-15  1.562314  0.413953  0.055671
-16  1.178418  1.802319  0.993125
-17 -1.837233 -0.341219  0.606903
-18 -1.087374 -0.463066 -1.578075
-19 -0.580044 -0.076753 -0.766270
+0  -0.715544 -1.978189  0.478700
+1   0.920723  0.049968  0.959130
+2  -1.101751  1.285698 -0.405440
+3  -2.045756 -0.930364 -0.021240
+4  -1.016251  1.560796  0.865957
+5  -1.154077  0.165900 -0.210091
+6  -1.264219  0.066668 -0.062759
+7   1.949208 -1.383717  0.782500
+8  -1.242576  0.392156  0.572725
+9  -0.866279 -0.691030 -0.883956
+10  0.583024 -0.567212  0.981918
+11  0.769688  0.590856  0.506530
+12 -0.416921  0.518268  0.125341
+13 -0.667414  0.089548 -1.412610
+14 -0.272044 -1.120179  1.494066
+15 -0.881988 -1.796963  0.359985
+16 -1.411058  0.755860  0.952783
+17 -0.155141 -0.469481 -1.606175
+18 -0.465985 -1.656042  0.819207
+19  0.674186  0.222365 -0.361583
 </pre></div>
 </div>
 </div>
@@ -460,11 +462,11 @@
 </div>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>   COLUMN A  COLUMN B  COLUMN C
-0 -0.231415 -0.729599 -0.684729
-1  2.805841 -0.358752  0.433006
-2 -0.929356 -0.762025  1.519280
-3 -0.921638 -0.191169  1.325763
-4  0.204657  0.925538 -1.292883
+0 -0.715544 -1.978189  0.478700
+1  0.920723  0.049968  0.959130
+2 -1.101751  1.285698 -0.405440
+3 -2.045756 -0.930364 -0.021240
+4 -1.016251  1.560796  0.865957
 </pre></div>
 </div>
 </div>
@@ -479,11 +481,11 @@
 </div>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>           A         B         C
-15  1.562314  0.413953  0.055671
-16  1.178418  1.802319  0.993125
-17 -1.837233 -0.341219  0.606903
-18 -1.087374 -0.463066 -1.578075
-19 -0.580044 -0.076753 -0.766270
+15 -0.881988 -1.796963  0.359985
+16 -1.411058  0.755860  0.952783
+17 -0.155141 -0.469481 -1.606175
+18 -0.465985 -1.656042  0.819207
+19  0.674186  0.222365 -0.361583
 </pre></div>
 </div>
 </div>
@@ -543,26 +545,26 @@
 </div>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>           A         B         C
-0  -0.231415 -0.729599 -0.684729
-1   2.805841 -0.358752  0.433006
-2  -0.929356 -0.762025  1.519280
-3  -0.921638 -0.191169  1.325763
-4   0.204657  0.925538 -1.292883
-5  -0.140783 -0.686335  0.307458
-6   0.126195  0.708951 -0.434407
-7   1.078757 -0.597190  1.046647
-8   0.672755  0.975901  0.112891
-9  -2.066044 -0.479248 -0.848667
-10  0.411437  1.428217 -0.429754
-11 -0.643880 -0.651183 -1.355218
-12  1.575336  0.597287  1.281889
-13  0.473471  0.101329 -0.271276
-14  0.519022 -1.448622  0.313537
-15  1.562314  0.413953  0.055671
-16  1.178418  1.802319  0.993125
-17 -1.837233 -0.341219  0.606903
-18 -1.087374 -0.463066 -1.578075
-19 -0.580044 -0.076753 -0.766270
+0  -0.715544 -1.978189  0.478700
+1   0.920723  0.049968  0.959130
+2  -1.101751  1.285698 -0.405440
+3  -2.045756 -0.930364 -0.021240
+4  -1.016251  1.560796  0.865957
+5  -1.154077  0.165900 -0.210091
+6  -1.264219  0.066668 -0.062759
+7   1.949208 -1.383717  0.782500
+8  -1.242576  0.392156  0.572725
+9  -0.866279 -0.691030 -0.883956
+10  0.583024 -0.567212  0.981918
+11  0.769688  0.590856  0.506530
+12 -0.416921  0.518268  0.125341
+13 -0.667414  0.089548 -1.412610
+14 -0.272044 -1.120179  1.494066
+15 -0.881988 -1.796963  0.359985
+16 -1.411058  0.755860  0.952783
+17 -0.155141 -0.469481 -1.606175
+18 -0.465985 -1.656042  0.819207
+19  0.674186  0.222365 -0.361583
 20  0.000000  0.000000  0.000000
 21  0.000000  0.000000  0.000000
 22  0.000000  0.000000  0.000000
@@ -1344,7 +1346,7 @@ dtype: float64
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0x7fbbe9e22650&gt;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0x7f7773924650&gt;
 </pre></div>
 </div>
 <img alt="_images/module-01-02_Working-with-Data_66_1.png" src="_images/module-01-02_Working-with-Data_66_1.png" />
@@ -1367,7 +1369,7 @@ dtype: float64
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0x7fbbe9d766d0&gt;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0x7f776b6aaa90&gt;
 </pre></div>
 </div>
 <img alt="_images/module-01-02_Working-with-Data_68_1.png" src="_images/module-01-02_Working-with-Data_68_1.png" />
