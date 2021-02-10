@@ -40,6 +40,7 @@ jobs:
         conda info
         conda list
         conda activate gu-psyc-347-jb
+        jupyter nbextension enable --py widgetsnbextension
         jupyter-book build docs
 
     # Push the book's HTML to github-pages
