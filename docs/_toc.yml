@@ -13,10 +13,9 @@
     - file: module-01-01_Intro-to-Python
     - file: module-01-02_Working-with-Data
     - file: module-01-03_Python-Exercises
-# - part: Module 02
-#   chapters:
-#     - file: module-02-00_Intro-to-Modeling
-#     - file: module-02-01_Linear-Modeling
+- part: Module 02
+  chapters:
+    - file: module-02-00_Linear-Modeling
 #     - file: module-02-02_Nonlinear-Modeling
 
 # - part: Module 03
