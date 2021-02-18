@@ -92,7 +92,7 @@
             <td rowspan=2>5</td>
             <td>2/23</td>
             <td>Lecture</td>
-            <td><b>Submit Jupyter Notebook exercise 2</b></td>
+            <td>-</td>
             <td rowspan=2>Learning and decision-making</td>
         </tr>
         <tr>
@@ -104,7 +104,7 @@
             <td rowspan=2>6</td>
             <td>3/2</td>
             <td>Lab</td>
-            <td>Complete task</td>
+            <td><b>Submit Jupyter Notebook exercise 2</b>; Complete task</td>
             <td rowspan=3>Reinforcement learning (non-social)</td>
         </tr>
         <tr>
