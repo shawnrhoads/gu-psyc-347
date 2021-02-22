@@ -70,7 +70,7 @@
 <meta property="og:url"         content="https://shawnrhoads.github.io/gu-psyc-347/module-00-04_Getting-Started.html" />
 <meta property="og:type"        content="article" />
 <meta property="og:title"       content="Getting Started" />
-<meta property="og:description" content="Getting Started  We will walk through setting up the course software on the first day of class.  Download Anaconda 3  Anaconda is an open-source distribution of" />
+<meta property="og:description" content="Getting Started  1. Downloading Anaconda 3  Anaconda is an open-source distribution of the Python and R programming languages for scientific computing. We will " />
 <meta property="og:image"       content="https://shawnrhoads.github.io/gu-psyc-347/_static/logo.png" />
 
 <meta name="twitter:card" content="summary" />
@@ -268,23 +268,45 @@
         <nav id="bd-toc-nav">
             <ul class="nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#download-anaconda-3">
-   Download Anaconda 3
+  <a class="reference internal nav-link" href="#downloading-anaconda-3">
+   1. Downloading Anaconda 3
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#clone-repository-or-download-yaml-file">
-   Clone repository or Download YAML file
+  <a class="reference internal nav-link" href="#creating-the-anaconda-environment">
+   2. Creating the Anaconda environment
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#downloading-yaml-file-option-a">
+     Downloading YAML file (Option A)
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#cloning-github-repository-option-b">
+     Cloning GitHub repository (Option B)
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#creating-the-gu-psyc-347-environment">
+     Creating the gu-psyc-347 environment
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#activating-your-anaconda-environment">
+   3. Activating your Anaconda environment
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#create-anaconda-environment">
-   Create Anaconda environment
+  <a class="reference internal nav-link" href="#opening-jupyter-notebook">
+   Opening Jupyter Notebook
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#activate-your-anaconda-environment">
-   Activate your Anaconda environment
+  <a class="reference internal nav-link" href="#troubleshooting">
+   Troubleshooting
   </a>
  </li>
 </ul>
@@ -300,14 +322,23 @@
                 
   <div class="section" id="getting-started">
 <h1>Getting Started<a class="headerlink" href="#getting-started" title="Permalink to this headline">¶</a></h1>
-<p>We will walk through setting up the course software on the first day of class.</p>
-<div class="section" id="download-anaconda-3">
-<h2>Download Anaconda 3<a class="headerlink" href="#download-anaconda-3" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="downloading-anaconda-3">
+<h2>1. Downloading Anaconda 3<a class="headerlink" href="#downloading-anaconda-3" title="Permalink to this headline">¶</a></h2>
 <p><a class="reference external" href="https://www.anaconda.com/products/individual#Downloads">Anaconda</a> is an open-source distribution of the Python and R programming languages for scientific computing. We will be using it throughout the course.</p>
 <p>You can follow <a class="reference external" href="https://docs.anaconda.com/anaconda/install/">these instructions</a> to install Anaconda for your operating system.</p>
 </div>
-<div class="section" id="clone-repository-or-download-yaml-file">
-<h2>Clone repository or Download YAML file<a class="headerlink" href="#clone-repository-or-download-yaml-file" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="creating-the-anaconda-environment">
+<h2>2. Creating the Anaconda environment<a class="headerlink" href="#creating-the-anaconda-environment" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="downloading-yaml-file-option-a">
+<h3>Downloading YAML file (Option A)<a class="headerlink" href="#downloading-yaml-file-option-a" title="Permalink to this headline">¶</a></h3>
+<p>If you would like to download files in a piecewise fashion (i.e., one at a time), then follow these instructions. If you would like to download the entire GitHub repository with all of the files, then follow the instructions for Option B.</p>
+<p><strong>Using the course-env.yml file</strong></br>
+Download this <a class="reference external" href="https://raw.githubusercontent.com/shawnrhoads/gu-psyc-347/master/course-env.yml">course-env.yml</a> file into any directory on your local computer (i.e., ~/Desktop/gu-psyc-347/course-env.yml).</p>
+<p>Once the download completes, change your directory to ‘gu-psyc-347’ (for example, using the command <code class="docutils literal notranslate"><span class="pre">cd</span> <span class="pre">gu-psyc-347</span></code>)</p>
+</div>
+<div class="section" id="cloning-github-repository-option-b">
+<h3>Cloning GitHub repository (Option B)<a class="headerlink" href="#cloning-github-repository-option-b" title="Permalink to this headline">¶</a></h3>
+<p>If you would like to download the entire GitHub repository with all of the files, then follow these instructions. If you would like to download files in a piecewise fashion (i.e., one at a time), then follow the instructions for Option A.</p>
 <p><strong>Using Git</strong></br>
 In your terminal, use command: <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">clone</span> <span class="pre">https://github.com/shawnrhoads/gu-psyc-347</span></code></p>
 <p>Once the download completes, change your directory to ‘gu-psyc-347’ (for example, using the command <code class="docutils literal notranslate"><span class="pre">cd</span> <span class="pre">gu-psyc-347</span></code>)</p>
@@ -318,15 +349,26 @@ Alternatively, you can download this <a class="reference external" href="https:/
 <li><p>Windows: cd “C:\Users\USERNAME\Desktop\gu-psyc-347-master”</p></li>
 </ul>
 </div>
-<div class="section" id="create-anaconda-environment">
-<h2>Create Anaconda environment<a class="headerlink" href="#create-anaconda-environment" title="Permalink to this headline">¶</a></h2>
-<p>If you previously created an environment called <code class="docutils literal notranslate"><span class="pre">gu-psyc-347</span></code>, then let’s remove first using this command: <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">remove</span> <span class="pre">--name</span> <span class="pre">gu-psyc-347</span> <span class="pre">--all</span></code></p>
-<p>Create the course environment using this command: <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">env</span> <span class="pre">create</span> <span class="pre">-f</span> <span class="pre">course-env.yml</span></code></p>
-<p>This will install the packages listed in the <a class="reference external" href="https://raw.githubusercontent.com/shawnrhoads/gu-psyc-347/master/course-env.yml">course-env.yml</a> file.</p>
+<div class="section" id="creating-the-gu-psyc-347-environment">
+<h3>Creating the gu-psyc-347 environment<a class="headerlink" href="#creating-the-gu-psyc-347-environment" title="Permalink to this headline">¶</a></h3>
+<p>If you previously created an environment called <code class="docutils literal notranslate"><span class="pre">gu-psyc-347</span></code>, then let’s remove first using this command: <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">remove</span> <span class="pre">--name</span> <span class="pre">gu-psyc-347</span> <span class="pre">--all</span></code>.</p>
+<p>Alternatively, you can just update the environment using the command: <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">env</span> <span class="pre">update</span> <span class="pre">--file</span> <span class="pre">course-env.yml</span></code>.</p>
+<p>Create the course environment using this command: <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">env</span> <span class="pre">create</span> <span class="pre">-f</span> <span class="pre">course-env.yml</span></code>.</p>
+<p>This will install the packages listed in the <a class="reference external" href="https://raw.githubusercontent.com/shawnrhoads/gu-psyc-347/master/course-env.yml">course-env.yml</a> file (please check that you have the most up-to-date version).</p>
 </div>
-<div class="section" id="activate-your-anaconda-environment">
-<h2>Activate your Anaconda environment<a class="headerlink" href="#activate-your-anaconda-environment" title="Permalink to this headline">¶</a></h2>
-<p>Activate the course environment using this command: <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">activate</span> <span class="pre">gu-psyc-347</span></code></p>
+</div>
+<div class="section" id="activating-your-anaconda-environment">
+<h2>3. Activating your Anaconda environment<a class="headerlink" href="#activating-your-anaconda-environment" title="Permalink to this headline">¶</a></h2>
+<p><strong>Before running any notebooks related to this course</strong>, activate the course environment using the command: <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">activate</span> <span class="pre">gu-psyc-347</span></code>.</p>
+</div>
+<div class="section" id="opening-jupyter-notebook">
+<h2>Opening Jupyter Notebook<a class="headerlink" href="#opening-jupyter-notebook" title="Permalink to this headline">¶</a></h2>
+<p>Once you’ve completed all of the steps above, you should be able to run Jupyter Notebook with all of the required packages for the course using the command: <code class="docutils literal notranslate"><span class="pre">jupyter</span> <span class="pre">notebook</span></code>.</p>
+</div>
+<div class="section" id="troubleshooting">
+<h2>Troubleshooting<a class="headerlink" href="#troubleshooting" title="Permalink to this headline">¶</a></h2>
+<p>If you followed all of the steps above, but are experiencing issues, then you might have to update the Anaconda environment that we use for the course. To do this, download the most up-to-date version of the <a class="reference external" href="https://raw.githubusercontent.com/shawnrhoads/gu-psyc-347/master/course-env.yml">course-env.yml</a> file, navigate to the directory that you downloaded this file to, and run the command: <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">env</span> <span class="pre">update</span> <span class="pre">--file</span> <span class="pre">course-env.yml</span></code></p>
+<p>If you are still experiencing issues, check that you’ve first run the command  <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">activate</span> <span class="pre">gu-psyc-347</span></code> before opening Jupyter Notebook using the command <code class="docutils literal notranslate"><span class="pre">jupyter</span> <span class="pre">notebook</span></code>.</p>
 </div>
 </div>
 

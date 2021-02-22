@@ -1,0 +1,806 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>Modeling Exercises &#8212; Computational Models of Human Social Behavior (and Neuroscience)</title>
+    
+  <link rel="stylesheet" href="_static/css/index.f658d18f9b420779cfdf24aa0a7e2d77.css">
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+  <link rel="stylesheet"
+    href="_static/vendor/open-sans_all/1.44.1/index.css">
+  <link rel="stylesheet"
+    href="_static/vendor/lato_latin-ext/1.44.1/index.css">
+
+    
+    <link rel="stylesheet" href="_static/sphinx-book-theme.40e2e510f6b7d1648584402491bb10fe.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="_static/js/index.d3f166471bb80abb5163.js">
+
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/language_data.js"></script>
+    <script src="_static/togglebutton.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="_static/sphinx-book-theme.d31b09fe5c1d09cb49b26a786de4a05d.js"></script>
+    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.20.0/dist/embed-amd.js"></script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <link rel="canonical" href="https://shawnrhoads.github.io/gu-psyc-347/module-02-02-Modeling-Exercises.html" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+
+
+<!-- Opengraph tags -->
+<meta property="og:url"         content="https://shawnrhoads.github.io/gu-psyc-347/module-02-02-Modeling-Exercises.html" />
+<meta property="og:type"        content="article" />
+<meta property="og:title"       content="Modeling Exercises" />
+<meta property="og:description" content="Modeling Exercises  These exercises were inspired by and adapted from Neuromatch Academy (CC BY 4.0) and DartBrains (CC BY-SA 4.0 License).  We will continue to" />
+<meta property="og:image"       content="https://shawnrhoads.github.io/gu-psyc-347/_static/logo.png" />
+
+<meta name="twitter:card" content="summary" />
+
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+<a class="navbar-brand text-wrap" href="index.html">
+  
+  <img src="_static/logo.png" class="logo" alt="logo">
+  
+  
+  <h1 class="site-logo" id="site-title">Computational Models of Human Social Behavior (and Neuroscience)</h1>
+  
+</a>
+</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form>
+<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+    <p class="caption collapsible-parent">
+ <span class="caption-text">
+  Module 00
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="module-00-00_Syllabus.html">
+   Syllabus
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="module-00-01_Course-Schedule.html">
+   Course Schedule
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="module-00-02_Course-Assignments.html">
+   Course Assignments
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="module-00-03_Reading-List.html">
+   Reading List
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="module-00-04_Getting-Started.html">
+   Getting Started
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="module-00-05_Final-Projects.html">
+   Final Project Guidelines
+  </a>
+ </li>
+</ul>
+<p class="caption collapsible-parent">
+ <span class="caption-text">
+  Module 01
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="module-01-00_Jupyter-Notebooks.html">
+   Jupyter Notebooks
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="module-01-01_Intro-to-Python.html">
+   Intro to Python Basics
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="module-01-02_Working-with-Data.html">
+   Working with Data
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="module-01-03_Python-Exercises.html">
+   Python Exercises
+  </a>
+ </li>
+</ul>
+<p class="caption collapsible-parent">
+ <span class="caption-text">
+  Module 02
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="module-02-00_Linear-Modeling.html">
+   Linear Modeling
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="module-02-01_Nonlinear-Modeling.html">
+   Nonlinear Modeling
+  </a>
+ </li>
+</ul>
+
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="row topbar fixed-top container-xl">
+    <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show">
+    </div>
+    <div class="col pl-2 topbar-main">
+        
+        <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+            data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+            aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+            title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-arrow-left"></i>
+            <i class="fas fa-arrow-up"></i>
+        </button>
+        
+        
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="_sources/module-02-02-Modeling-Exercises.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+        <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/shawnrhoads/gu-psyc-347"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://github.com/shawnrhoads/gu-psyc-347/issues/new?title=Issue%20on%20page%20%2Fmodule-02-02-Modeling-Exercises.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        <a class="edit-button" href="https://github.com/shawnrhoads/gu-psyc-347/edit/master/module-02-02-Modeling-Exercises.ipynb"><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Edit this page"><i class="fas fa-pencil-alt"></i>suggest edit</button></a>
+    </div>
+</div>
+
+
+        <!-- Full screen (wrap in <a> to have style consistency -->
+        <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+                data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+                title="Fullscreen mode"><i
+                    class="fas fa-expand"></i></button></a>
+
+        <!-- Launch buttons -->
+
+    </div>
+
+    <!-- Table of contents -->
+    <div class="d-none d-md-block col-md-2 bd-toc show">
+        
+        <div class="tocsection onthispage pt-5 pb-3">
+            <i class="fas fa-list"></i> Contents
+        </div>
+        <nav id="bd-toc-nav">
+            <ul class="nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#table-of-contents">
+   Table of Contents
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#key">
+     Key
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#exploring-the-data">
+   Exploring the Data
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#ordinary-least-squares">
+   Ordinary Least Squares
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#maximum-likelihood-estimation">
+   Maximum Likelihood Estimation
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#finding-the-maximum-likelihood-estimator">
+     Finding the Maximum Likelihood Estimator
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#bonus-explained-variance">
+   Bonus: Explained Variance
+  </a>
+ </li>
+</ul>
+
+        </nav>
+        
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># If you are using Anconda, please re-download this file to current directory:</span>
+<span class="c1"># https://raw.githubusercontent.com/shawnrhoads/gu-psyc-347/master/course-env.yml</span>
+<span class="c1"># Then, run this cell</span>
+<span class="c1"># !conda env update --file course-env.yml</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p><a class="reference external" href="https://colab.research.google.com/github/shawnrhoads/gu-psyc-347/blob/master/docs/module-02-02_Modeling-Exercises.ipynb"><img alt="Open In Colab" src="https://colab.research.google.com/assets/colab-badge.svg" /></a></p>
+<div class="section" id="modeling-exercises">
+<h1>Modeling Exercises<a class="headerlink" href="#modeling-exercises" title="Permalink to this headline">¶</a></h1>
+<p>These exercises were inspired by and adapted from <a class="reference external" href="https://github.com/NeuromatchAcademy/course-content">Neuromatch Academy</a> (<a class="reference external" href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>) and <a class="reference external" href="https://dartbrains.org">DartBrains</a> (<a class="reference external" href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 License</a>).</p>
+<p>We will continue to use data from <a class="reference external" href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0244974">O’Connell, K., Berluti, K., Rhoads, S. A., &amp; Marsh, A. A. (2021). Reduced social distancing during the COVID-19 pandemic is associated with antisocial behaviors in an online United States sample. PLoS ONE.</a></p>
+<p>This study <u>used a linear model</u> to assess whether social distancing behaviors (early in the COVID-19 pandemic) was associated with self-reported antisocial behavior. To measure one index of social distancing behavior, participants were presented with an image of an adult silhouette surrounded by a rectangular border. They were asked to click a point in the image that represents how far away they typically stood from other individuals.</p>
+<p>Here is a heatmap showing how far participants reported standing from other individuals in the past week, with dark maroon indicating a higher density of responses obtained from a kernel density estimation. The mean response coordinate, +, represents a distance of approximately 98 inches (8.2 feet; 2.5 m).
+<img alt="Figure 1" src="https://journals.plos.org/plosone/article/figure/image?download&amp;size=medium&amp;id=info:doi/10.1371/journal.pone.0244974.g001" /></p>
+<p>For this exercise, we will reproduce the results from O’Connell et al. (2021) that distance kept from others in the past week can be expressed as a function of antisocial behavior, controlling for age, sex, education, household income, high-risk status, and PPE use frequency.</p>
+<p>We will reproduce the beta coefficients from <strong>Table 3</strong> in the paper.</p>
+<div class="section" id="table-of-contents">
+<h2>Table of Contents<a class="headerlink" href="#table-of-contents" title="Permalink to this headline">¶</a></h2>
+<ol class="simple">
+<li><p><a class="reference external" href="#Exploring-the-Data">Exploring the Data</a></p></li>
+<li><p><a class="reference external" href="#Ordinary-Least-Squares">Ordinary Least Squares</a></p></li>
+<li><p><a class="reference external" href="#Maximum-Likelihood-Estimation">Maximum Likelihood Estimation</a></p></li>
+</ol>
+<div class="section" id="key">
+<h3>Key<a class="headerlink" href="#key" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">#</span> <span class="pre">[INSERT</span> <span class="pre">CODE</span> <span class="pre">BELOW]</span></code> : indicates where you should insert your own code, feel free to replace with a comment of your own</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">...</span></code>: indicates a location where you should insert your own code</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">raise</span> <span class="pre">NotImplementedError(&quot;Student</span> <span class="pre">exercise:</span> <span class="pre">*&quot;)</span></code> : delete this line once you have added your code</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="exploring-the-data">
+<h2>Exploring the Data<a class="headerlink" href="#exploring-the-data" title="Permalink to this headline">¶</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># here we will import all of our packages for the exercise</span>
+
+<span class="kn">from</span> <span class="nn">scipy.optimize</span> <span class="kn">import</span> <span class="n">minimize</span> <span class="c1"># finding optimal params in models</span>
+<span class="kn">from</span> <span class="nn">scipy</span> <span class="kn">import</span> <span class="n">stats</span>             <span class="c1"># statistical tools</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>                  <span class="c1"># matrix/array functions</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>                 <span class="c1"># loading and manipulating data</span>
+<span class="kn">import</span> <span class="nn">requests</span>                     <span class="c1"># downloading data from the internet</span>
+<span class="kn">import</span> <span class="nn">ipywidgets</span> <span class="k">as</span> <span class="nn">widgets</span>        <span class="c1"># interactive display</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>     <span class="c1"># plotting</span>
+<span class="o">%</span><span class="k">matplotlib</span> inline
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># please load in the data into a pandas DataFrame, </span>
+<span class="c1"># then print the first five rows to check that everything loaded correctly</span>
+<span class="c1"># hint: we&#39;ve done this in previous exercises</span>
+
+<span class="c1"># [INSERT CODE BELOW]</span>
+<span class="k">raise</span> <span class="ne">NotImplementedError</span><span class="p">(</span><span class="s2">&quot;Student exercise: load OConnell_COVID_MTurk_noPII_post_peerreview.csv file as pandas dataframe, then delete this line&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">NotImplementedError</span><span class="g g-Whitespace">                       </span>Traceback (most recent call last)
+<span class="o">&lt;</span><span class="n">ipython</span><span class="o">-</span><span class="nb">input</span><span class="o">-</span><span class="mi">3</span><span class="o">-</span><span class="n">cd20a1775d3f</span><span class="o">&gt;</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="g g-Whitespace">      </span><span class="mi">4</span> 
+<span class="g g-Whitespace">      </span><span class="mi">5</span> <span class="c1"># [INSERT CODE BELOW]</span>
+<span class="ne">----&gt; </span><span class="mi">6</span> <span class="k">raise</span> <span class="ne">NotImplementedError</span><span class="p">(</span><span class="s2">&quot;Student exercise: load OConnell_COVID_MTurk_noPII_post_peerreview.csv file as pandas dataframe, then delete this line&quot;</span><span class="p">)</span>
+
+<span class="ne">NotImplementedError</span>: Student exercise: load OConnell_COVID_MTurk_noPII_post_peerreview.csv file as pandas dataframe, then delete this line
+</pre></div>
+</div>
+</div>
+</div>
+<p>Oh no! Our data contain NaNs (participants either did not answer the question, or did not meet inclusion criteria for certain variables). Let’s get rid of them using the code below:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">var_names</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;age_centered&#39;</span><span class="p">,</span>
+             <span class="s1">&#39;sex_1f&#39;</span><span class="p">,</span>
+             <span class="s1">&#39;education_4yr&#39;</span><span class="p">,</span>
+             <span class="s1">&#39;household_income_coded_centered&#39;</span><span class="p">,</span>
+             <span class="s1">&#39;highrisk_self_or_livewith&#39;</span><span class="p">,</span>
+             <span class="s1">&#39;ppe_freq_coded_2&#39;</span><span class="p">,</span>
+             <span class="s1">&#39;STAB_total_centered&#39;</span><span class="p">,</span>
+             <span class="s1">&#39;silhouette_dist_X_min81&#39;</span><span class="p">]</span>
+
+<span class="n">df</span><span class="o">.</span><span class="n">dropna</span><span class="p">(</span><span class="n">subset</span><span class="o">=</span><span class="n">var_names</span><span class="p">,</span>
+          <span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="ordinary-least-squares">
+<h2>Ordinary Least Squares<a class="headerlink" href="#ordinary-least-squares" title="Permalink to this headline">¶</a></h2>
+<p>Now that we’ve loaded in our data, let’s explore their underlying distributions and then fit these data to a linear model by minimizing the mean squared error (MSE)–this is also known as ordinary least squares.</p>
+<p>This model can be expressed mathematically as:
+$<span class="math notranslate nohighlight">\(
+Distancing = \beta_0 + \beta_1 \cdot age + \beta_2 \cdot sex + \beta_3 \cdot edu + \beta_4 \cdot income + \beta_5 \cdot risk + \beta_6 \cdot PPE + \beta_7 \cdot antisociality
+\)</span>$</p>
+<p>Our goal is to estimate the <span class="math notranslate nohighlight">\(\beta\)</span> parameters that explain the relationships in our model.</p>
+<p>To accomplish this, we need to do the following:</p>
+<ol class="simple">
+<li><p>Convert the dependent variable column (1) in the pandas DataFrameto a numpy array <code class="docutils literal notranslate"><span class="pre">y</span></code> with size <code class="docutils literal notranslate"><span class="pre">(n_subjects,</span> <span class="pre">1)</span></code>.</p></li>
+<li><p>Convert the independent variable columns (7) in the pandas DataFrame to a numpy array <code class="docutils literal notranslate"><span class="pre">X</span></code> with size <code class="docutils literal notranslate"><span class="pre">(n_subjects,</span> <span class="pre">8)</span></code>, the first column should represent an intercept and contain ones.</p></li>
+<li><p>Define a function <code class="docutils literal notranslate"><span class="pre">ols()</span></code> that takes inputs <code class="docutils literal notranslate"><span class="pre">X</span></code> (numpy array) and <code class="docutils literal notranslate"><span class="pre">y</span></code> (numpy array), and outputs <code class="docutils literal notranslate"><span class="pre">params</span></code> (list or numpy array).</p></li>
+<li><p>Run the function and find the optimal parameter estimates that fit the model.</p></li>
+</ol>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># get number of subjects and create X and y</span>
+
+<span class="c1"># [INSERT CODE BELOW]</span>
+<span class="k">raise</span> <span class="ne">NotImplementedError</span><span class="p">(</span><span class="s2">&quot;Student exercise: initialize n_subjects, X and y, then delete this line&quot;</span><span class="p">)</span>
+
+<span class="n">n_subjects</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="o">...</span><span class="p">)</span>
+
+<span class="c1"># store columns of interest in a single numpy array </span>
+    <span class="c1"># age_centered - age (continuous; 18-65)</span>
+    <span class="c1"># sex_1f - sex (0: male; 1: female)</span>
+    <span class="c1"># education_4yr - education (0: &lt; 4-year degree; 1: &gt;= 4-year degree)</span>
+    <span class="c1"># household_income_coded_centered - household income (continuous)</span>
+    <span class="c1"># highrisk_self_or_livewith - high-risk for serious illness for self or someone the participant lives with (0: no; 1: yes)</span>
+    <span class="c1"># ppe_freq_coded_2 - PPE use frequency (continuous; 1: Never, 5: Always)</span>
+    <span class="c1"># stab_total_centered - antisocial behavior (continuous)</span>
+    <span class="c1"># silhouette_dist_x_min81 - distance kept from others in past week (continuous)</span>
+
+<span class="n">x0</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">ones</span><span class="p">((</span><span class="n">n_subjects</span><span class="p">,))</span>
+<span class="n">x1</span> <span class="o">=</span> <span class="o">...</span> <span class="c1"># age</span>
+<span class="n">x2</span> <span class="o">=</span> <span class="o">...</span> <span class="c1"># sex</span>
+<span class="n">x3</span> <span class="o">=</span> <span class="o">...</span> <span class="c1"># edu</span>
+<span class="n">x4</span> <span class="o">=</span> <span class="o">...</span> <span class="c1"># income</span>
+<span class="n">x5</span> <span class="o">=</span> <span class="o">...</span> <span class="c1"># high-risk</span>
+<span class="n">x6</span> <span class="o">=</span> <span class="o">...</span> <span class="c1"># ppe</span>
+<span class="n">x7</span> <span class="o">=</span> <span class="o">...</span> <span class="c1"># antisociality (stab)</span>
+
+<span class="n">X</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">stack</span><span class="p">((</span><span class="o">...</span><span class="p">),</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">y</span> <span class="o">=</span> <span class="o">...</span> <span class="c1"># distance from others</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># using a for loop, please print the means and standard deviations of these variables</span>
+
+<span class="c1"># [INSERT CODE BELOW]</span>
+<span class="k">raise</span> <span class="ne">NotImplementedError</span><span class="p">(</span><span class="s2">&quot;Student exercise: plot histograms of the variables, then delete this line&quot;</span><span class="p">)</span>
+
+<span class="k">for</span> <span class="n">name</span><span class="p">,</span> <span class="n">data</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">var_names</span><span class="p">,</span> <span class="o">...</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="n">name</span><span class="si">}</span><span class="s1">: mean=</span><span class="si">{</span><span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">data</span><span class="p">)</span><span class="si">:</span><span class="s1">.2f</span><span class="si">}</span><span class="s1">, sd=</span><span class="si">{</span><span class="n">np</span><span class="o">.</span><span class="n">std</span><span class="p">(</span><span class="n">data</span><span class="p">)</span><span class="si">:</span><span class="s1">.2f</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># define a function called ols() that computes betas for the model</span>
+<span class="c1"># no need to edit anything here</span>
+<span class="c1"># see module-02-00_Linear-Modeling for derivation</span>
+
+<span class="k">def</span> <span class="nf">ols</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">):</span>
+    <span class="n">beta_hat</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">inv</span><span class="p">(</span><span class="n">X</span><span class="o">.</span><span class="n">T</span> <span class="o">@</span> <span class="n">X</span><span class="p">)</span> <span class="o">@</span> <span class="n">X</span><span class="o">.</span><span class="n">T</span> <span class="o">@</span> <span class="n">y</span>
+    <span class="k">return</span> <span class="n">beta_hat</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># compute the betas</span>
+<span class="c1"># [INSERT CODE BELOW]</span>
+<span class="k">raise</span> <span class="ne">NotImplementedError</span><span class="p">(</span><span class="s2">&quot;Student exercise: compute beta_hats using the function we just defined, then delete this line&quot;</span><span class="p">)</span>
+    
+<span class="n">beta_hats</span> <span class="o">=</span> <span class="n">ols</span><span class="p">(</span><span class="o">...</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Now, that we have our fitted parameters, please print our 8 coefficients corresponding to our variables in a for loop below.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># print the names of each variable</span>
+<span class="n">x_vars</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;intercept&#39;</span><span class="p">,</span> <span class="s1">&#39;age&#39;</span><span class="p">,</span><span class="s1">&#39;sex&#39;</span><span class="p">,</span><span class="s1">&#39;edu&#39;</span><span class="p">,</span><span class="s1">&#39;income&#39;</span><span class="p">,</span><span class="s1">&#39;high-risk&#39;</span><span class="p">,</span><span class="s1">&#39;ppe&#39;</span><span class="p">,</span><span class="s1">&#39;antisociality&#39;</span><span class="p">]</span>
+
+<span class="k">for</span> <span class="n">variable</span><span class="p">,</span> <span class="n">beta_value</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">x_vars</span><span class="p">,</span> <span class="o">...</span><span class="p">):</span>
+    <span class="c1"># [INSERT CODE BELOW]</span>
+    <span class="k">raise</span> <span class="ne">NotImplementedError</span><span class="p">(</span><span class="s2">&quot;Student exercise: complete the string below, then delete this line&quot;</span><span class="p">)</span>
+    
+    <span class="nb">print</span><span class="p">(</span><span class="sa">fr</span><span class="s1">&#39;coefficient for </span><span class="si">{</span><span class="o">...</span><span class="si">}</span><span class="s1"> = </span><span class="si">{</span><span class="o">...</span><span class="si">:</span><span class="s1">.2f</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Awesome! We were able to recover the beta coefficients from the model in O’Connell et al. (2021) using least-squares minimization (which has an analytic solution).</p>
+<hr></div>
+<div class="section" id="maximum-likelihood-estimation">
+<h2>Maximum Likelihood Estimation<a class="headerlink" href="#maximum-likelihood-estimation" title="Permalink to this headline">¶</a></h2>
+<p>Above, we made the assumption that the data were drawn from a linear relationship with noise added, and found an effective approach for estimating model parameters based on minimizing the mean squared error.</p>
+<p>We treated the noise as simply a nuisance, but what if we factored it directly into our model?</p>
+<p>Recall our linear model:</p>
+<div class="math notranslate nohighlight">
+\[
+y = \beta \cdot x + \epsilon.
+\]</div>
+<p>The noise component <span class="math notranslate nohighlight">\(\epsilon\)</span> is often modeled as a random variable drawn from a Gaussian distribution (also called the normal distribution).</p>
+<p>The Gaussian distribution is described by its <a class="reference external" href="https://en.wikipedia.org/wiki/Probability_density_function">probability density function</a> (pdf):</p>
+<div class="math notranslate nohighlight">
+\[
+\mathcal{N}(x; \mu, \sigma^2) = \frac{1}{\sqrt{2\pi\sigma^2}}e^{-\frac{1}{2\sigma^2}(x-\mu)^2}
+\]</div>
+<p>and is dependent on two parameters: the mean <span class="math notranslate nohighlight">\(\mu\)</span> and the variance <span class="math notranslate nohighlight">\(\sigma^2\)</span>. We often consider the noise signal to be Gaussian “white noise”, with zero mean and unit variance:</p>
+<div class="math notranslate nohighlight">
+\[
+\epsilon \sim \mathcal{N}(0, 1).
+\]</div>
+<p>Before we begin, use the widget below to see how varying the <span class="math notranslate nohighlight">\(\mu\)</span> and <span class="math notranslate nohighlight">\(\sigma\)</span> parameters change the location and shape of samples.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%</span><span class="k">config</span> InlineBackend.figure_format = &#39;retina&#39;
+
+<span class="nd">@widgets</span><span class="o">.</span><span class="n">interact</span><span class="p">(</span><span class="n">mu</span><span class="o">=</span><span class="n">widgets</span><span class="o">.</span><span class="n">FloatSlider</span><span class="p">(</span><span class="mf">0.0</span><span class="p">,</span> <span class="nb">min</span><span class="o">=-</span><span class="mf">2.0</span><span class="p">,</span> <span class="nb">max</span><span class="o">=</span><span class="mf">2.0</span><span class="p">),</span>
+                  <span class="n">sigma</span><span class="o">=</span><span class="n">widgets</span><span class="o">.</span><span class="n">FloatSlider</span><span class="p">(</span><span class="mf">1.0</span><span class="p">,</span> <span class="nb">min</span><span class="o">=</span><span class="mf">0.5</span><span class="p">,</span> <span class="nb">max</span><span class="o">=</span><span class="mf">2.0</span><span class="p">))</span>
+
+<span class="k">def</span> <span class="nf">plot_normal_dist</span><span class="p">(</span><span class="n">mu</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">sigma</span><span class="o">=</span><span class="mi">1</span><span class="p">):</span>
+
+  <span class="c1"># Generate pdf &amp; samples from normal distribution with mu/sigma</span>
+  <span class="n">rv</span> <span class="o">=</span> <span class="n">stats</span><span class="o">.</span><span class="n">norm</span><span class="p">(</span><span class="n">mu</span><span class="p">,</span> <span class="n">sigma</span><span class="p">)</span>
+  <span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="o">-</span><span class="mi">5</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">100</span><span class="p">)</span>
+  <span class="n">y</span> <span class="o">=</span> <span class="n">rv</span><span class="o">.</span><span class="n">pdf</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+  <span class="n">samples</span> <span class="o">=</span> <span class="n">rv</span><span class="o">.</span><span class="n">rvs</span><span class="p">(</span><span class="mi">1000</span><span class="p">)</span>
+
+  <span class="c1"># Plot</span>
+  <span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">()</span>
+  <span class="n">ax</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">samples</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="n">density</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;g&#39;</span><span class="p">,</span> <span class="n">histtype</span><span class="o">=</span><span class="s1">&#39;stepfilled&#39;</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.8</span><span class="p">,</span>
+          <span class="n">label</span><span class="o">=</span><span class="s1">&#39;histogram&#39;</span><span class="p">)</span>
+  <span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;orange&#39;</span><span class="p">,</span> <span class="n">linewidth</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;pdf&#39;</span><span class="p">)</span>
+  <span class="n">ax</span><span class="o">.</span><span class="n">vlines</span><span class="p">(</span><span class="n">mu</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">rv</span><span class="o">.</span><span class="n">pdf</span><span class="p">(</span><span class="n">mu</span><span class="p">),</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;y&#39;</span><span class="p">,</span> <span class="n">linewidth</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;$\mu$&#39;</span><span class="p">)</span>
+  <span class="n">ax</span><span class="o">.</span><span class="n">vlines</span><span class="p">([</span><span class="n">mu</span><span class="o">-</span><span class="n">sigma</span><span class="p">,</span> <span class="n">mu</span><span class="o">+</span><span class="n">sigma</span><span class="p">],</span> <span class="mi">0</span><span class="p">,</span> <span class="n">rv</span><span class="o">.</span><span class="n">pdf</span><span class="p">([</span><span class="n">mu</span><span class="o">-</span><span class="n">sigma</span><span class="p">,</span> <span class="n">mu</span><span class="o">+</span><span class="n">sigma</span><span class="p">]),</span> <span class="n">colors</span><span class="o">=</span><span class="s1">&#39;red&#39;</span><span class="p">,</span>
+            <span class="n">color</span><span class="o">=</span><span class="s1">&#39;b&#39;</span><span class="p">,</span> <span class="n">linewidth</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;$\sigma$&#39;</span><span class="p">)</span>
+  <span class="n">ax</span><span class="o">.</span><span class="n">set</span><span class="p">(</span><span class="n">xlabel</span><span class="o">=</span><span class="s1">&#39;x&#39;</span><span class="p">,</span> <span class="n">ylabel</span><span class="o">=</span><span class="s1">&#39;probability density&#39;</span><span class="p">,</span> <span class="n">xlim</span><span class="o">=</span><span class="p">[</span><span class="o">-</span><span class="mi">5</span><span class="p">,</span> <span class="mi">5</span><span class="p">],</span> <span class="n">ylim</span><span class="o">=</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mf">1.0</span><span class="p">])</span>
+  <span class="n">ax</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Now that we have a model of our noise component <span class="math notranslate nohighlight">\(\epsilon\)</span> as random variable, how do we incorporate this back into our original linear model from before? Consider again our simplified model <span class="math notranslate nohighlight">\(y = \beta \cdot x + \epsilon\)</span> where the noise has zero mean and unit variance <span class="math notranslate nohighlight">\(\epsilon \sim \mathcal{N}(0, 1)\)</span>. We can now also treat <span class="math notranslate nohighlight">\(y\)</span> as a random variable drawn from a Gaussian distribution where <span class="math notranslate nohighlight">\(\mu = \beta \cdot x\)</span> and <span class="math notranslate nohighlight">\(\sigma^2 = 1\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[
+y \sim \mathcal{N}(\beta \cdot x, 1)
+\]</div>
+<p>which is to say that the probability of observing <span class="math notranslate nohighlight">\(y\)</span> given <span class="math notranslate nohighlight">\(x\)</span> and parameter <span class="math notranslate nohighlight">\(\beta\)</span> is</p>
+<div class="math notranslate nohighlight">
+\[
+p(y|x,\beta) = \frac{1}{\sqrt{2\pi}}e^{-\frac{1}{2}(y-\beta \cdot x)^2}
+\]</div>
+<p>Now that we have our probabilistic model, we turn back to our original challenge of finding a good estimate for <span class="math notranslate nohighlight">\(\beta\)</span> that fits our data. Given the inherent uncertainty when dealing in probabilities, we talk about the <a class="reference external" href="https://en.wikipedia.org/wiki/Likelihood_function">likelihood</a> that some estimate <span class="math notranslate nohighlight">\(\hat \beta\)</span> fits our data. The likelihood function <span class="math notranslate nohighlight">\(\mathcal{L(\beta)}\)</span> is equal to the probability density function parameterized by that <span class="math notranslate nohighlight">\(\theta\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[
+\mathcal{L}(\beta|x,y) = p(y|x,\beta) = \frac{1}{\sqrt{2\pi}}e^{-\frac{1}{2}(y-\beta \cdot x)^2}
+\]</div>
+<p>Let’s implement the likelihood function <span class="math notranslate nohighlight">\(\mathcal{L}(\beta|x,y)\)</span> for our linear model where <span class="math notranslate nohighlight">\(\sigma = 1\)</span>.</p>
+<p>After implementing this function, we can produce probabilities that our estimate <span class="math notranslate nohighlight">\(\hat{\beta}\)</span> generated the provided observations.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">loglikelihood</span><span class="p">(</span><span class="n">beta_hat</span><span class="p">,</span> <span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;The likelihood function for a linear model with noise sampled from a Gaussian distribution with zero mean and unit variance.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">    beta_hat (float): Estimates of the slope parameters.</span>
+<span class="sd">    x (ndarray): An array of shape (samples,) that contains the input values.</span>
+<span class="sd">    y (ndarray): An array of shape (samples,) that contains the corresponding measurement values to the inputs.</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">    ndarray: the likelihood values for the beta_hat estimates</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    
+    <span class="c1"># compute the predicted y based on inputted beta_hats</span>
+    <span class="c1"># here, dot product is equivalent to the weighted sum of values </span>
+    <span class="c1"># (i.e., b0 + b1*x1 + b2*x2 + .. bd*xd)</span>
+    <span class="n">predicted_y</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">beta_hat</span><span class="p">)</span> 
+
+    <span class="c1"># Compute Gaussian likelihood</span>
+    <span class="n">pdf</span> <span class="o">=</span> <span class="n">stats</span><span class="o">.</span><span class="n">norm</span><span class="o">.</span><span class="n">logpdf</span><span class="p">(</span><span class="n">y</span><span class="p">,</span> <span class="n">loc</span><span class="o">=</span><span class="n">predicted_y</span><span class="p">)</span>
+    
+    <span class="k">return</span> <span class="n">pdf</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="finding-the-maximum-likelihood-estimator">
+<h3>Finding the Maximum Likelihood Estimator<a class="headerlink" href="#finding-the-maximum-likelihood-estimator" title="Permalink to this headline">¶</a></h3>
+<p>We want to find the parameter value <span class="math notranslate nohighlight">\(\hat\beta\)</span> that makes our data set most likely:</p>
+<div class="math notranslate nohighlight">
+\[
+\hat{\beta}_{\textrm{MLE}} = \underset{\beta}{\operatorname{argmax}} \mathcal{L}(\beta|X,Y) 
+\]</div>
+<p>We discussed how taking the logarithm of the likelihood helps with numerical stability, the good thing is that it does so without changing the parameter value that maximizes the likelihood. Indeed, the <span class="math notranslate nohighlight">\(\textrm{log}()\)</span> function is <em>monotonically increasing</em>, which means that it preserves the order of its inputs. So we have:</p>
+<div class="math notranslate nohighlight">
+\[
+\hat{\beta}_{\textrm{MLE}} = \underset{\beta}{\operatorname{argmax}} \sum_{i=1}^m \textrm{log} \mathcal{L}(\beta|x_i,y_i) 
+\]</div>
+<p>Now substituting our specific likelihood function and taking its logarithm, we get:
+$<span class="math notranslate nohighlight">\(
+\hat{\beta}_{\textrm{MLE}} = \underset{\beta}{\operatorname{argmax}} [-\frac{N}{2} \operatorname{log} 2\pi\sigma^2 - \frac{1}{2\sigma^2}\sum_{i=1}^N (y_i-\beta \cdot x_i)^2].
+\)</span>$</p>
+<p>Note that maximizing the log likelihood is the same as <strong>minimizing the negative log likelihood</strong> (in practice optimization routines are developed to solve minimization not maximization problems). Because of the convexity of this objective function, we can take the derivative of our negative log likelihhood, set it to 0, and solve - just like our solution to minimizing MSE.</p>
+<div class="math notranslate nohighlight">
+\[
+\frac{\partial\operatorname{log}\mathcal{L}(\beta|x,y)}{\partial\beta}=\frac{1}{\sigma^2}\sum_{i=1}^N(y_i-\beta \cdot x_i)x_i = 0
+\]</div>
+<p>Note that this looks remarkably like the equation we had to solve for the optimal MSE estimator, and, in fact, we arrive to the exact same solution!</p>
+<div class="math notranslate nohighlight">
+\[
+\hat{\beta}_{\textrm{MLE}} = \hat{\beta}_{\textrm{MSE}} = \frac{\sum_{i=1}^N x_i y_i}{\sum_{i=1}^N x_i^2}
+\]</div>
+<p>or</p>
+<div class="math notranslate nohighlight">
+\[
+\hat\beta = \frac{\vec{x}^\top \vec{y}}{\vec{x}^\top \vec{x}}
+\]</div>
+<p>Even though we already know the analytic solution to solve for our <span class="math notranslate nohighlight">\(\hat{\beta}\)</span> coefficients, let’s continue on to solve for them bu minimizing the negative loglikelihood.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># please compute the negative loglikelihood in this new function</span>
+<span class="c1"># note: this function calls the likelihood() function we defined earlier</span>
+<span class="c1"># hint: use the function: np.sum()</span>
+<span class="k">def</span> <span class="nf">minimize_negll</span><span class="p">(</span><span class="n">params</span><span class="p">,</span> <span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;The likelihood function for a model with noise sampled from a</span>
+<span class="sd">    Gaussian distribution with zero mean and unit variance.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">    params (list)</span>
+<span class="sd">    X (ndarray): An array of shape (samples,) that contains the input values.</span>
+<span class="sd">    y (ndarray): An array of shape (samples,) that contains the corresponding</span>
+<span class="sd">      measurement values to the inputs.</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">    scalar: the neg sum of the loglikelihoods for the beta_hat estimate</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    
+    <span class="c1"># Compute Gaussian loglikelihood</span>
+    <span class="n">loglik</span> <span class="o">=</span> <span class="n">loglikelihood</span><span class="p">(</span><span class="n">params</span><span class="p">,</span> <span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
+    
+    <span class="c1"># [INSERT CODE BELOW]</span>
+    <span class="k">raise</span> <span class="ne">NotImplementedError</span><span class="p">(</span><span class="s2">&quot;Student exercise: compute the negative sum of the loglikelihoods computed above, then delete this line&quot;</span><span class="p">)</span>
+    
+    <span class="n">negLL</span> <span class="o">=</span> <span class="o">...</span> 
+    
+    <span class="k">return</span> <span class="n">negLL</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># specify starting points</span>
+<span class="n">init_x</span> <span class="o">=</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span> <span class="c1"># can be anything</span>
+
+<span class="c1"># [INSERT CODE BELOW]</span>
+<span class="k">raise</span> <span class="ne">NotImplementedError</span><span class="p">(</span><span class="s2">&quot;Student exercise: complete the code below to find the optimal params, then delete this line&quot;</span><span class="p">)</span>
+
+<span class="c1"># minimize MSE for linear function using scipy.optimize.minimize</span>
+<span class="n">mle_results</span> <span class="o">=</span> <span class="n">minimize</span><span class="p">(</span><span class="o">...</span><span class="p">,</span> <span class="c1"># objective function</span>
+                       <span class="n">init_x</span><span class="p">,</span> <span class="c1"># estimated starting points</span>
+                       <span class="n">args</span><span class="o">=</span><span class="p">(</span><span class="o">...</span><span class="p">,</span> <span class="o">...</span><span class="p">))</span> <span class="c1"># arguments</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Now, that we have our fitted parameters (now using MLE), please print our 8 coefficients corresponding to our variables in a for loop below.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># print the names of each variable</span>
+<span class="n">x_vars</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;intercept&#39;</span><span class="p">,</span> <span class="s1">&#39;age&#39;</span><span class="p">,</span> <span class="s1">&#39;sex&#39;</span><span class="p">,</span> <span class="s1">&#39;edu&#39;</span><span class="p">,</span> <span class="s1">&#39;income&#39;</span><span class="p">,</span> <span class="s1">&#39;high-risk&#39;</span><span class="p">,</span> <span class="s1">&#39;ppe&#39;</span><span class="p">,</span> <span class="s1">&#39;antisociality&#39;</span><span class="p">]</span>
+
+<span class="c1"># [INSERT CODE BELOW]</span>
+<span class="k">raise</span> <span class="ne">NotImplementedError</span><span class="p">(</span><span class="s2">&quot;Student exercise: complete the code below, then delete this line&quot;</span><span class="p">)</span>
+
+<span class="c1"># think about where you stored the results of the minimization</span>
+<span class="n">mle_betas</span> <span class="o">=</span> <span class="o">...</span>
+
+<span class="k">for</span> <span class="n">variable</span><span class="p">,</span> <span class="n">beta_value</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">x_vars</span><span class="p">,</span> <span class="n">mle_betas</span><span class="p">):</span>
+    
+    <span class="nb">print</span><span class="p">(</span><span class="sa">fr</span><span class="s1">&#39;coefficient for </span><span class="si">{</span><span class="o">...</span><span class="si">}</span><span class="s1"> = </span><span class="si">{</span><span class="o">...</span><span class="si">:</span><span class="s1">.2f</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Wow, how cool is that?! We can recover the same parameters by minimizing the loglikelihood (as we did earlier using least squares minimization).</p>
+<hr></div>
+</div>
+<div class="section" id="bonus-explained-variance">
+<h2>Bonus: Explained Variance<a class="headerlink" href="#bonus-explained-variance" title="Permalink to this headline">¶</a></h2>
+<p>Sometimes we want a single metric to quantify overall how well our model was able to explain variance in the data. There are many metrics that can provide a quantitative measure of <em>goodness of fit</em>.</p>
+<p>Here we will calculate <span class="math notranslate nohighlight">\(R^2\)</span> using the following formula:</p>
+<div class="math notranslate nohighlight">
+\[R^2 = 1 - \frac{\displaystyle \sum_i^n(\hat y_i - y_i)^2}{\displaystyle \sum_i^n(y_i - \bar y)^2}\]</div>
+<p>where <span class="math notranslate nohighlight">\(y_i\)</span> is the measured value of the voxel at timepoint <span class="math notranslate nohighlight">\(i\)</span>, <span class="math notranslate nohighlight">\(\hat y_i\)</span> is the predicted value for time point <span class="math notranslate nohighlight">\(i\)</span>, and <span class="math notranslate nohighlight">\(\bar y\)</span> is the mean of the measured voxel timeseries.</p>
+<p><span class="math notranslate nohighlight">\(R^2\)</span> will lie on the interval between <span class="math notranslate nohighlight">\([0,1]\)</span> and can be interpreted as percentage of the total variance in <span class="math notranslate nohighlight">\(Y\)</span> explained by the model, <span class="math notranslate nohighlight">\(X\)</span>, where 1 is 100% and 0 is none.</p>
+<p><span class="math notranslate nohighlight">\(R^2\)</span> is also used to compare model fits, similar to how we <span class="math notranslate nohighlight">\(BIC\)</span> used in the nonlinear modeling tutorial (see Table 3 in paper, which assessed the difference in <span class="math notranslate nohighlight">\(R^2\)</span> across models to select the best-fitting model).</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">r_squared</span><span class="p">(</span><span class="n">y</span><span class="p">,</span> <span class="n">predicted_y</span><span class="p">):</span>
+    <span class="n">SS_residual</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">((</span><span class="n">y</span> <span class="o">-</span> <span class="n">predicted_y</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>
+    <span class="n">SS_total</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">((</span><span class="n">y</span> <span class="o">-</span> <span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">y</span><span class="p">))</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>
+    <span class="k">return</span> <span class="mi">1</span><span class="o">-</span><span class="p">(</span><span class="n">SS_residual</span><span class="o">/</span><span class="n">SS_total</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">predicted_y</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">mle_results</span><span class="o">.</span><span class="n">x</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;R^2: </span><span class="si">{</span><span class="n">r_squared</span><span class="p">(</span><span class="n">y</span><span class="p">,</span> <span class="n">predicted_y</span><span class="p">)</span><span class="si">:</span><span class="s2">.3f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        </div>
+    </div>
+    
+    
+    <div class='prev-next-bottom'>
+        
+
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By Shawn A. Rhoads<br/>
+        
+            &copy; Copyright 2021.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+
+    
+  <script src="_static/js/index.d3f166471bb80abb5163.js"></script>
+
+
+    
+    <!-- Google Analytics -->
+    <script>
+      window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+      ga('create', 'G-KG3N20S55G', 'auto');
+      ga('set', 'anonymizeIp', true);
+      ga('send', 'pageview');
+    </script>
+    <script async src='https://www.google-analytics.com/analytics.js'></script>
+    <!-- End Google Analytics -->
+    
+  </body>
+</html>
