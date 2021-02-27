@@ -1,9 +1,8 @@
 # Getting Started
 
-
+We will be using [Anaconda](https://www.anaconda.com/products/individual#Downloads) (an open-source distribution of the Python and R programming languages for scientific computing) throughout the course. Anaconda allows us to create an "environment" of packages that will be consistent across computers. This way, everyone should be able to run the code from our exercises and reproduce the same results. This is a practice that is increasing being adapted in the fields of psychological and neuroscience to foster a culture of open, reproducible science!
 
 ## 1. Downloading Anaconda 3
-[Anaconda](https://www.anaconda.com/products/individual#Downloads) is an open-source distribution of the Python and R programming languages for scientific computing. We will be using it throughout the course.
 
 You can follow [these instructions](https://docs.anaconda.com/anaconda/install/) to install Anaconda for your operating system.
 
