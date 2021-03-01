@@ -1,0 +1,431 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>Prosocial Learning task &#8212; Computational Models of Human Social Behavior (and Neuroscience)</title>
+    
+  <link rel="stylesheet" href="../../_static/css/index.f658d18f9b420779cfdf24aa0a7e2d77.css">
+
+    
+  <link rel="stylesheet"
+    href="../../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+  <link rel="stylesheet"
+    href="../../_static/vendor/open-sans_all/1.44.1/index.css">
+  <link rel="stylesheet"
+    href="../../_static/vendor/lato_latin-ext/1.44.1/index.css">
+
+    
+    <link rel="stylesheet" href="../../_static/sphinx-book-theme.37f24b989f4638ff9c27c22dc7559d4f.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../../_static/js/index.d3f166471bb80abb5163.js">
+
+    <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/language_data.js"></script>
+    <script src="../../_static/togglebutton.js"></script>
+    <script src="../../_static/clipboard.min.js"></script>
+    <script src="../../_static/copybutton.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../../_static/sphinx-book-theme.7d483ff0a819d6edff12ce0b1ead3928.js"></script>
+    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.20.0/dist/embed-amd.js"></script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <link rel="canonical" href="https://shawnrhoads.github.io/gu-psyc-347/tasks/prosocial-learning/README.html" />
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+
+
+<!-- Opengraph tags -->
+<meta property="og:url"         content="https://shawnrhoads.github.io/gu-psyc-347/tasks/prosocial-learning/README.html" />
+<meta property="og:type"        content="article" />
+<meta property="og:title"       content="Prosocial Learning task" />
+<meta property="og:description" content="Prosocial Learning task  created by Shawn A Rhoads in PsychoPy v2020.2.4post1; adapted from Harrison et al. (2016); and inspired by Lockwood et al. (2016)  4 co" />
+<meta property="og:image"       content="https://shawnrhoads.github.io/gu-psyc-347/_static/logo.png" />
+
+<meta name="twitter:card" content="summary" />
+
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+<a class="navbar-brand text-wrap" href="../../index.html">
+  
+  <img src="../../_static/logo.png" class="logo" alt="logo">
+  
+  
+  <h1 class="site-logo" id="site-title">Computational Models of Human Social Behavior (and Neuroscience)</h1>
+  
+</a>
+</div><form class="bd-search d-flex align-items-center" action="../../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form>
+<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+    <p class="caption collapsible-parent">
+ <span class="caption-text">
+  Module 00
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../module-00-00_Syllabus.html">
+   Syllabus
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../module-00-01_Course-Schedule.html">
+   Course Schedule
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../module-00-02_Course-Assignments.html">
+   Course Assignments
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../module-00-03_Reading-List.html">
+   Reading List
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../module-00-04_Getting-Started.html">
+   Getting Started
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../module-00-05_Final-Projects.html">
+   Final Project Guidelines
+  </a>
+ </li>
+</ul>
+<p class="caption collapsible-parent">
+ <span class="caption-text">
+  Module 01
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../module-01-00_Jupyter-Notebooks.html">
+   Jupyter Notebooks
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../module-01-01_Intro-to-Python.html">
+   Intro to Python Basics
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../module-01-02_Working-with-Data.html">
+   Working with Data
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../module-01-03_Python-Exercises.html">
+   Python Exercises
+  </a>
+ </li>
+</ul>
+<p class="caption collapsible-parent">
+ <span class="caption-text">
+  Module 02
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../module-02-00_Linear-Modeling.html">
+   Linear Modeling
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../module-02-01_Nonlinear-Modeling.html">
+   Nonlinear Modeling
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../module-02-02_Modeling-Exercises.html">
+   Modeling Exercises
+  </a>
+ </li>
+</ul>
+
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../../_sources/tasks/prosocial-learning/README.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/shawnrhoads/gu-psyc-347"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://github.com/shawnrhoads/gu-psyc-347/issues/new?title=Issue%20on%20page%20%2Ftasks/prosocial-learning/README.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        <a class="edit-button" href="https://github.com/shawnrhoads/gu-psyc-347/edit/master/tasks/prosocial-learning/README.md"><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Edit this page"><i class="fas fa-pencil-alt"></i>suggest edit</button></a>
+    </div>
+</div>
+
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+            <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+                    data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+                    title="Fullscreen mode"><i
+                        class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+        <div class="tocsection onthispage pt-5 pb-3">
+            <i class="fas fa-list"></i> Contents
+        </div>
+        <nav id="bd-toc-nav">
+            <ul class="nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#conditions-blocks">
+   4 conditions/blocks
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#each-block-contains-24-trials">
+   Each block contains 24 trials
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#data-output-key">
+     Data output key
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#data-input-key">
+     Data input key
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+        </nav>
+        
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="prosocial-learning-task">
+<h1>Prosocial Learning task<a class="headerlink" href="#prosocial-learning-task" title="Permalink to this headline">¶</a></h1>
+<p>created by <a class="reference external" href="https://github.com/shawnrhoads">Shawn A Rhoads</a> in PsychoPy v2020.2.4post1; adapted from <a class="reference external" href="https://www.biologicalpsychiatryjournal.com/article/S0006-3223(15)00637-X/fulltext">Harrison et al. (2016)</a>; and inspired by <a class="reference external" href="https://www.pnas.org/content/113/35/9763">Lockwood et al. (2016)</a></p>
+<div class="section" id="conditions-blocks">
+<h2>4 conditions/blocks<a class="headerlink" href="#conditions-blocks" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>self, win</p></li>
+<li><p>self, avoid loss</p></li>
+<li><p>social, win</p></li>
+<li><p>social, avoid loss</p></li>
+</ul>
+</div>
+<div class="section" id="each-block-contains-24-trials">
+<h2>Each block contains 24 trials<a class="headerlink" href="#each-block-contains-24-trials" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>2 stimuli per trial (counterbalanced wrt side)</p></li>
+<li><p>outcomes associated with each stimulus is probabilistic (75%, 25%)</p></li>
+</ul>
+<div class="section" id="data-output-key">
+<h3>Data output key<a class="headerlink" href="#data-output-key" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">key_resp.keys</span></code>: selected key response (left or right)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">key_resp.corr</span></code>: 1 if (+1 during win trials) or (0 during avoidloss trials); 0 if (0 during win trials) or (-1 during avoidloss trials)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">key_resp.rt</span></code>: reaction time in seconds</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">chosen_stim_name</span></code>: selected stimulus file, blank if missed</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">chosen_stim_0</span></code>: 1 if selected <code class="docutils literal notranslate"><span class="pre">stim_0</span></code>; 0 if selected <code class="docutils literal notranslate"><span class="pre">stim_1</span></code>; blank if missed</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">chosen_stim_1</span></code>: 1 if selected <code class="docutils literal notranslate"><span class="pre">stim_1</span></code>; 0 if selected <code class="docutils literal notranslate"><span class="pre">stim_0</span></code>; blank if missed</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">true_accuracy</span></code>: 1 if selected stimulus with highest probability of winning or avoid losing</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">outcome</span></code>: outcome for trial (<code class="docutils literal notranslate"><span class="pre">+1</span></code>, <code class="docutils literal notranslate"><span class="pre">0</span></code>, <code class="docutils literal notranslate"><span class="pre">-1</span></code>); blank if missed</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">outcomeDescr</span></code>: text description of outcome (practice, social win, social avoid win, social loss, social avoidloss, self win, self avoid win, self loss, self avoidloss)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">cumulativePts_self</span></code>: running total of points for self</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">cumulativePts_social</span></code>: running total of points for social</p></li>
+</ul>
+</div>
+<div class="section" id="data-input-key">
+<h3>Data input key<a class="headerlink" href="#data-input-key" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">index</span></code>: order in which trials are displayed throughout entire experiment (100-115 for practice trials; 0-95 for experimental trials)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">condition</span></code>: (play for self); (play for next participant)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">goal</span></code>: (win) or (avoid loss)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">block</span></code>: self/win, self/avoidloss, social/win, social/avoidloss</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">block_num</span></code>: 0, 1, 2, 3 (corresponding to <code class="docutils literal notranslate"><span class="pre">block</span></code>)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">block_instr_text</span></code>: block instructions</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">trial_num</span></code>: order in which trials are displayed within a block (0-23)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">stim_0</span></code>: stimulus number that yields +1 (win condition) or -1 (avoidloss condition) 75% of trials within block; or +0 25% of the time</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">stim_0_value</span></code>: stimulus filename that yields +1 (win condition) or -1 (avoidloss condition) 75% of trials within block; or +0 25% of the time</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">stim_1</span></code>: stimulus number that yields +1 (win condition) or -1 (avoidloss condition) 25% of trials within block; or +0 25% of the time</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">stim_1_value</span></code>: stimulus filename that yields +1 (win condition) or -1 (avoidloss condition) 75% of trials within block; or +0 25% of the time</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">position_changed</span></code>: 1 if position of <code class="docutils literal notranslate"><span class="pre">stim_0</span></code> changed to right side (0 if default on left side)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">stim_left</span></code>: stimulus number displayed on left side for each trial</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">stim_right</span></code>: stimulus number displayed on right side for each trial</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">stim_left_name</span></code>: stimulus filename displayed on left side for each trial</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">stim_right_name</span></code>: stimulus filename displayed on right side for each trial</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">optimal_stim</span></code>: stimulus that will yield optimal outcome (+1 for win condition; 0 for avoidloss condition)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">optimal_choice</span></code>: key response (<code class="docutils literal notranslate"><span class="pre">key_resp.keys</span></code>) that will yield optimal outcome (+1 for win condition; 0 for avoidloss condition)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">participant</span></code>: ID number</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">date</span></code>: YYYY-MM-DD_TIME</p></li>
+</ul>
+</div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./tasks/prosocial-learning"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        
+        <div class='prev-next-bottom'>
+            
+
+        </div>
+        
+        </div>
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By Shawn A. Rhoads<br/>
+        
+            &copy; Copyright 2021.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+
+    
+  <script src="../../_static/js/index.d3f166471bb80abb5163.js"></script>
+
+
+    
+    <!-- Google Analytics -->
+    <script>
+      window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+      ga('create', 'G-KG3N20S55G', 'auto');
+      ga('set', 'anonymizeIp', true);
+      ga('send', 'pageview');
+    </script>
+    <script async src='https://www.google-analytics.com/analytics.js'></script>
+    <!-- End Google Analytics -->
+    
+  </body>
+</html>
