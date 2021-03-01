@@ -1,0 +1,289 @@
+﻿index,subject,order_num,session,condition,goal,block,block_num,block_instr_text,trial_num,stim_0,stim_0_value,stim_1,stim_1_value,position_changed,stim_left,stim_right,stim_left_name,stim_right_name,optimal_stim,optimal_choice,practice_round.thisRepN,practice_round.thisTrialN,practice_round.thisN,practice_round.thisIndex,trials.thisRepN,trials.thisTrialN,trials.thisN,trials.thisIndex,BlockInstr_disp.started,BlockInstr_disp.stopped,iti.started,iti.stopped,left.started,left.stopped,right.started,right.stopped,key_resp.keys,key_resp.corr,key_resp.rt,key_resp.started,key_resp.stopped,chosen_stim_name,chosen_stim_0,chosen_stim_1,true_accuracy,left_feedback.started,left_feedback.stopped,right_feedback.started,right_feedback.stopped,circle.started,circle.stopped,cumulativePts_social,cumulativePts_self,outcomeDescr,outcome,feedback_text.started,feedback_text.stopped,participant,date,expName,psychopyVersion,frameRate,
+0,0,3,0,social,avoidloss,social_avoidloss,3,"Play to AVOID LOSING points
+
+for the NEXT PARTICIPANT",0,stimuli/tunga_08.bmp,-1,stimuli/tunga_11.bmp,0,0,8,11,stimuli/tunga_08.bmp,stimuli/tunga_11.bmp,stimuli/tunga_11.bmp,right,,,,,0,0,0,0,22.28640009999981,None,28.627365199999986,None,27.798744100000476,None,27.798744100000476,None,right,1,0.26867089999996097,27.798744100000476,None,stimuli/tunga_11.bmp,0,1,1,28.12809340000058,None,28.12809340000058,None,28.12809340000058,None,1000,1000,social avoid loss,0,29.138852000000043,None,00,2021_Feb_28_1419,prosocial-learning,2020.2.4,60.08218040633399,
+1,0,3,0,social,avoidloss,social_avoidloss,3,"Play to AVOID LOSING points
+
+for the NEXT PARTICIPANT",1,stimuli/tunga_08.bmp,-1,stimuli/tunga_11.bmp,0,1,11,8,stimuli/tunga_11.bmp,stimuli/tunga_08.bmp,stimuli/tunga_11.bmp,left,,,,,0,1,1,1,30.641866909999955,None,32.05682119999983,None,31.141702500000065,None,31.141702500000065,None,left,1,0.38513789999979053,31.141702500000065,None,stimuli/tunga_11.bmp,0,1,1,31.55875449999985,None,31.55875449999985,None,31.55875449999985,None,1000,1000,social avoid loss,0,32.556102000000465,None,00,2021_Feb_28_1419,prosocial-learning,2020.2.4,60.08218040633399,
+2,0,3,0,social,avoidloss,social_avoidloss,3,"Play to AVOID LOSING points
+
+for the NEXT PARTICIPANT",2,stimuli/tunga_08.bmp,0,stimuli/tunga_11.bmp,-1,0,8,11,stimuli/tunga_08.bmp,stimuli/tunga_11.bmp,stimuli/tunga_08.bmp,left,,,,,0,2,2,2,34.07133981000025,None,35.45279860000028,None,34.57101370000055,None,34.57101370000055,None,right,0,0.3471964000000298,34.57101370000055,None,stimuli/tunga_11.bmp,0,1,1,34.939863100000366,None,34.939863100000366,None,34.939863100000366,None,900,1000,social lose,-1,35.97213879999981,None,00,2021_Feb_28_1419,prosocial-learning,2020.2.4,60.08218040633399,
+3,0,3,0,social,avoidloss,social_avoidloss,3,"Play to AVOID LOSING points
+
+for the NEXT PARTICIPANT",3,stimuli/tunga_08.bmp,-1,stimuli/tunga_11.bmp,0,1,11,8,stimuli/tunga_11.bmp,stimuli/tunga_08.bmp,stimuli/tunga_11.bmp,left,,,,,0,3,3,3,37.484209610000654,None,39.04874840000048,None,38.00044070000058,None,38.00044070000058,None,left,1,0.5060432000000219,38.00044070000058,None,stimuli/tunga_11.bmp,0,1,1,38.53582069999993,None,38.53582069999993,None,38.53582069999993,None,900,1000,social avoid loss,0,39.54933940000046,None,00,2021_Feb_28_1419,prosocial-learning,2020.2.4,60.08218040633399,
+4,0,3,0,social,avoidloss,social_avoidloss,3,"Play to AVOID LOSING points
+
+for the NEXT PARTICIPANT",4,stimuli/tunga_08.bmp,-1,stimuli/tunga_11.bmp,0,0,8,11,stimuli/tunga_08.bmp,stimuli/tunga_11.bmp,stimuli/tunga_11.bmp,right,,,,,0,4,4,4,41.06318840999993,None,42.47788690000016,None,41.5631856,None,41.5631856,None,right,1,0.38587529999949766,41.5631856,None,stimuli/tunga_11.bmp,0,1,1,41.98014300000068,None,41.98014300000068,None,41.98014300000068,None,900,1000,social avoid loss,0,42.97760400000061,None,00,2021_Feb_28_1419,prosocial-learning,2020.2.4,60.08218040633399,
+5,0,3,0,social,avoidloss,social_avoidloss,3,"Play to AVOID LOSING points
+
+for the NEXT PARTICIPANT",5,stimuli/tunga_08.bmp,-1,stimuli/tunga_11.bmp,0,1,11,8,stimuli/tunga_11.bmp,stimuli/tunga_08.bmp,stimuli/tunga_11.bmp,left,,,,,0,5,5,5,44.49245401000062,None,45.97415309999997,None,44.99255230000017,None,44.99255230000017,None,left,1,0.44627239999954327,44.99255230000017,None,stimuli/tunga_11.bmp,0,1,1,45.4617159999998,None,45.4617159999998,None,45.4617159999998,None,900,1000,social avoid loss,0,46.47374850000051,None,00,2021_Feb_28_1419,prosocial-learning,2020.2.4,60.08218040633399,
+6,0,3,0,social,avoidloss,social_avoidloss,3,"Play to AVOID LOSING points
+
+for the NEXT PARTICIPANT",6,stimuli/tunga_08.bmp,-1,stimuli/tunga_11.bmp,0,0,8,11,stimuli/tunga_08.bmp,stimuli/tunga_11.bmp,stimuli/tunga_11.bmp,right,,,,,0,6,6,6,47.98873021000018,None,49.37012390000018,None,48.48845970000002,None,48.48845970000002,None,right,1,0.3483118000003742,48.48845970000002,None,stimuli/tunga_11.bmp,0,1,1,48.85573010000007,None,48.85573010000007,None,48.85573010000007,None,900,1000,social avoid loss,0,49.869728900000155,None,00,2021_Feb_28_1419,prosocial-learning,2020.2.4,60.08218040633399,
+7,0,3,0,social,avoidloss,social_avoidloss,3,"Play to AVOID LOSING points
+
+for the NEXT PARTICIPANT",7,stimuli/tunga_08.bmp,-1,stimuli/tunga_11.bmp,0,0,8,11,stimuli/tunga_08.bmp,stimuli/tunga_11.bmp,stimuli/tunga_11.bmp,right,,,,,0,7,7,7,51.38459151000061,None,52.849279600000045,None,51.88447200000064,None,51.88447200000064,None,right,1,0.42464639999980136,51.88447200000064,None,stimuli/tunga_11.bmp,0,1,1,52.33620680000058,None,52.33620680000058,None,52.33620680000058,None,900,1000,social avoid loss,0,53.34909020000032,None,00,2021_Feb_28_1419,prosocial-learning,2020.2.4,60.08218040633399,
+8,0,3,0,social,avoidloss,social_avoidloss,3,"Play to AVOID LOSING points
+
+for the NEXT PARTICIPANT",8,stimuli/tunga_08.bmp,-1,stimuli/tunga_11.bmp,0,0,8,11,stimuli/tunga_08.bmp,stimuli/tunga_11.bmp,stimuli/tunga_11.bmp,right,,,,,0,8,8,8,54.86387811000041,None,56.37887110000065,None,55.36372350000056,None,55.36372350000056,None,right,1,0.468349799999487,55.36372350000056,None,stimuli/tunga_11.bmp,0,1,1,55.86567550000018,None,55.86567550000018,None,55.86567550000018,None,900,1000,social avoid loss,0,56.8784768000005,None,00,2021_Feb_28_1419,prosocial-learning,2020.2.4,60.08218040633399,
+9,0,3,0,social,avoidloss,social_avoidloss,3,"Play to AVOID LOSING points
+
+for the NEXT PARTICIPANT",9,stimuli/tunga_08.bmp,0,stimuli/tunga_11.bmp,-1,1,11,8,stimuli/tunga_11.bmp,stimuli/tunga_08.bmp,stimuli/tunga_08.bmp,right,,,,,0,9,9,9,58.39314541000076,None,60.157627200000206,None,58.89303410000048,None,58.89303410000048,None,left,0,0.7459930999993958,58.89303410000048,None,stimuli/tunga_11.bmp,0,1,1,59.65959879999991,None,59.65959879999991,None,59.65959879999991,None,800,1000,social lose,-1,60.65705210000033,None,00,2021_Feb_28_1419,prosocial-learning,2020.2.4,60.08218040633399,
+10,0,3,0,social,avoidloss,social_avoidloss,3,"Play to AVOID LOSING points
+
+for the NEXT PARTICIPANT",10,stimuli/tunga_08.bmp,-1,stimuli/tunga_11.bmp,0,1,11,8,stimuli/tunga_11.bmp,stimuli/tunga_08.bmp,stimuli/tunga_11.bmp,left,,,,,0,10,10,10,62.172204810000586,None,63.58717549999983,None,62.6720178000005,None,62.6720178000005,None,right,0,0.38180519999968965,62.6720178000005,None,stimuli/tunga_08.bmp,1,0,0,63.07478919999994,None,63.07478919999994,None,63.07478919999994,None,700,1000,social lose,-1,64.08672040000056,None,00,2021_Feb_28_1419,prosocial-learning,2020.2.4,60.08218040633399,
+11,0,3,0,social,avoidloss,social_avoidloss,3,"Play to AVOID LOSING points
+
+for the NEXT PARTICIPANT",11,stimuli/tunga_08.bmp,-1,stimuli/tunga_11.bmp,0,0,8,11,stimuli/tunga_08.bmp,stimuli/tunga_11.bmp,stimuli/tunga_11.bmp,right,,,,,0,11,11,11,65.60153201000011,None,67.19962450000003,None,66.10124050000013,None,66.10124050000013,None,right,1,0.5688809000002948,66.10124050000013,None,stimuli/tunga_11.bmp,0,1,1,66.7013766,None,66.7013766,None,66.7013766,None,700,1000,social avoid loss,0,67.70088579999992,None,00,2021_Feb_28_1419,prosocial-learning,2020.2.4,60.08218040633399,
+12,0,3,0,social,avoidloss,social_avoidloss,3,"Play to AVOID LOSING points
+
+for the NEXT PARTICIPANT",12,stimuli/tunga_08.bmp,0,stimuli/tunga_11.bmp,-1,1,11,8,stimuli/tunga_11.bmp,stimuli/tunga_08.bmp,stimuli/tunga_08.bmp,right,,,,,0,12,12,12,69.21402541000006,None,70.74530099999993,None,69.71386830000029,None,69.71386830000029,None,left,0,0.49910330000057,69.71386830000029,None,stimuli/tunga_11.bmp,0,1,1,70.23277750000034,None,70.23277750000034,None,70.23277750000034,None,600,1000,social lose,-1,71.24739820000013,None,00,2021_Feb_28_1419,prosocial-learning,2020.2.4,60.08218040633399,
+13,0,3,0,social,avoidloss,social_avoidloss,3,"Play to AVOID LOSING points
+
+for the NEXT PARTICIPANT",13,stimuli/tunga_08.bmp,-1,stimuli/tunga_11.bmp,0,0,8,11,stimuli/tunga_08.bmp,stimuli/tunga_11.bmp,stimuli/tunga_11.bmp,right,,,,,0,13,13,13,72.76004711000004,None,74.12462770000002,None,73.25985010000022,None,73.25985010000022,None,right,1,0.3407808000001751,73.25985010000022,None,stimuli/tunga_11.bmp,0,1,1,73.62665040000047,None,73.62665040000047,None,73.62665040000047,None,600,1000,social avoid loss,0,74.62466550000045,None,00,2021_Feb_28_1419,prosocial-learning,2020.2.4,60.08218040633399,
+14,0,3,0,social,avoidloss,social_avoidloss,3,"Play to AVOID LOSING points
+
+for the NEXT PARTICIPANT",14,stimuli/tunga_08.bmp,-1,stimuli/tunga_11.bmp,0,1,11,8,stimuli/tunga_11.bmp,stimuli/tunga_08.bmp,stimuli/tunga_11.bmp,left,,,,,0,14,14,14,76.13918350999992,None,77.60398270000042,None,76.63917860000038,None,76.63917860000038,None,left,1,0.42575699999997596,76.63917860000038,None,stimuli/tunga_11.bmp,0,1,1,77.09119610000016,None,77.09119610000016,None,77.09119610000016,None,600,1000,social avoid loss,0,78.10365770000044,None,00,2021_Feb_28_1419,prosocial-learning,2020.2.4,60.08218040633399,
+15,0,3,0,social,avoidloss,social_avoidloss,3,"Play to AVOID LOSING points
+
+for the NEXT PARTICIPANT",15,stimuli/tunga_08.bmp,0,stimuli/tunga_11.bmp,-1,0,8,11,stimuli/tunga_08.bmp,stimuli/tunga_11.bmp,stimuli/tunga_08.bmp,left,,,,,0,15,15,15,79.61860361000035,None,80.98351450000064,None,80.11858190000021,None,80.11858190000021,None,right,0,0.3491225999996459,80.11858190000021,None,stimuli/tunga_11.bmp,0,1,1,80.4854989000005,None,80.4854989000005,None,80.4854989000005,None,500,1000,social lose,-1,81.48704390000057,None,00,2021_Feb_28_1419,prosocial-learning,2020.2.4,60.08218040633399,
+16,0,3,0,social,avoidloss,social_avoidloss,3,"Play to AVOID LOSING points
+
+for the NEXT PARTICIPANT",16,stimuli/tunga_08.bmp,0,stimuli/tunga_11.bmp,-1,1,11,8,stimuli/tunga_11.bmp,stimuli/tunga_08.bmp,stimuli/tunga_08.bmp,right,,,,,0,16,16,16,82.99801711000018,None,84.49606700000004,None,83.49810109999999,None,83.49810109999999,None,left,0,0.4728096999997433,83.49810109999999,None,stimuli/tunga_11.bmp,0,1,1,83.99810080000043,None,83.99810080000043,None,83.99810080000043,None,400,1000,social lose,-1,84.99571230000038,None,00,2021_Feb_28_1419,prosocial-learning,2020.2.4,60.08218040633399,
+17,0,3,0,social,avoidloss,social_avoidloss,3,"Play to AVOID LOSING points
+
+for the NEXT PARTICIPANT",17,stimuli/tunga_08.bmp,-1,stimuli/tunga_11.bmp,0,1,11,8,stimuli/tunga_11.bmp,stimuli/tunga_08.bmp,stimuli/tunga_11.bmp,left,,,,,0,17,17,17,86.51084791000048,None,88.17508240000006,None,87.01289570000063,None,87.01289570000063,None,left,1,0.6343291000002864,87.01289570000063,None,stimuli/tunga_11.bmp,0,1,1,87.67731009999989,None,87.67731009999989,None,87.67731009999989,None,400,1000,social avoid loss,0,88.67574599999989,None,00,2021_Feb_28_1419,prosocial-learning,2020.2.4,60.08218040633399,
+18,0,3,0,social,avoidloss,social_avoidloss,3,"Play to AVOID LOSING points
+
+for the NEXT PARTICIPANT",18,stimuli/tunga_08.bmp,-1,stimuli/tunga_11.bmp,0,0,8,11,stimuli/tunga_08.bmp,stimuli/tunga_11.bmp,stimuli/tunga_11.bmp,right,,,,,0,18,18,18,90.18967020999989,None,91.75464290000036,None,90.68973199999982,None,90.68973199999982,None,right,1,0.5359372000002622,90.68973199999982,None,stimuli/tunga_11.bmp,0,1,1,91.25628830000005,None,91.25628830000005,None,91.25628830000005,None,400,1000,social avoid loss,0,92.25396580000051,None,00,2021_Feb_28_1419,prosocial-learning,2020.2.4,60.08218040633399,
+19,0,3,0,social,avoidloss,social_avoidloss,3,"Play to AVOID LOSING points
+
+for the NEXT PARTICIPANT",19,stimuli/tunga_08.bmp,-1,stimuli/tunga_11.bmp,0,1,11,8,stimuli/tunga_11.bmp,stimuli/tunga_08.bmp,stimuli/tunga_11.bmp,left,,,,,0,19,19,19,93.76912501000024,None,95.28368020000016,None,94.2689661000004,None,94.2689661000004,None,left,1,0.47981310000068333,94.2689661000004,None,stimuli/tunga_11.bmp,0,1,1,94.7722674000006,None,94.7722674000006,None,94.7722674000006,None,400,1000,social avoid loss,0,95.78350990000035,None,00,2021_Feb_28_1419,prosocial-learning,2020.2.4,60.08218040633399,
+20,0,3,0,social,avoidloss,social_avoidloss,3,"Play to AVOID LOSING points
+
+for the NEXT PARTICIPANT",20,stimuli/tunga_08.bmp,0,stimuli/tunga_11.bmp,-1,0,8,11,stimuli/tunga_08.bmp,stimuli/tunga_11.bmp,stimuli/tunga_08.bmp,left,,,,,0,20,20,20,97.29825421000041,None,98.81300490000012,None,97.79794980000042,None,97.79794980000042,None,right,0,0.4685503000000608,97.79794980000042,None,stimuli/tunga_11.bmp,0,1,1,98.2986791000003,None,98.2986791000003,None,98.2986791000003,None,300,1000,social lose,-1,99.3123411000006,None,00,2021_Feb_28_1419,prosocial-learning,2020.2.4,60.08218040633399,
+21,0,3,0,social,avoidloss,social_avoidloss,3,"Play to AVOID LOSING points
+
+for the NEXT PARTICIPANT",21,stimuli/tunga_08.bmp,-1,stimuli/tunga_11.bmp,0,0,8,11,stimuli/tunga_08.bmp,stimuli/tunga_11.bmp,stimuli/tunga_11.bmp,right,,,,,0,21,21,21,100.82764680999989,None,102.24227640000026,None,101.32723010000063,None,101.32723010000063,None,right,1,0.37732099999993807,101.32723010000063,None,stimuli/tunga_11.bmp,0,1,1,101.72890350000034,None,101.72890350000034,None,101.72890350000034,None,300,1000,social avoid loss,0,102.74490160000005,None,00,2021_Feb_28_1419,prosocial-learning,2020.2.4,60.08218040633399,
+22,0,3,0,social,avoidloss,social_avoidloss,3,"Play to AVOID LOSING points
+
+for the NEXT PARTICIPANT",22,stimuli/tunga_08.bmp,-1,stimuli/tunga_11.bmp,0,1,11,8,stimuli/tunga_11.bmp,stimuli/tunga_08.bmp,stimuli/tunga_11.bmp,left,,,,,0,22,22,22,104.25683211000032,None,105.78806239999994,None,104.75656530000015,None,104.75656530000015,None,left,1,0.4909239999997226,104.75656530000015,None,stimuli/tunga_11.bmp,0,1,1,105.27486409999983,None,105.27486409999983,None,105.27486409999983,None,300,1000,social avoid loss,0,106.28773910000018,None,00,2021_Feb_28_1419,prosocial-learning,2020.2.4,60.08218040633399,
+23,0,3,0,social,avoidloss,social_avoidloss,3,"Play to AVOID LOSING points
+
+for the NEXT PARTICIPANT",23,stimuli/tunga_08.bmp,-1,stimuli/tunga_11.bmp,0,1,11,8,stimuli/tunga_11.bmp,stimuli/tunga_08.bmp,stimuli/tunga_11.bmp,left,,,,,0,23,23,23,107.80265851000021,None,109.21770110000034,None,108.30233910000061,None,108.30233910000061,None,left,1,0.378475200000139,108.30233910000061,None,stimuli/tunga_11.bmp,0,1,1,108.70808130000023,None,108.70808130000023,None,108.70808130000023,None,300,1000,social avoid loss,0,109.7171343,None,00,2021_Feb_28_1419,prosocial-learning,2020.2.4,60.08218040633399,
+24,0,3,0,self,avoidloss,self_avoidloss,2,"Play to AVOID LOSING points
+
+for YOURSELF",0,stimuli/tunga_12.bmp,-1,stimuli/tunga_04.bmp,0,0,12,4,stimuli/tunga_12.bmp,stimuli/tunga_04.bmp,stimuli/tunga_04.bmp,right,,,,,0,24,24,24,111.24001670000052,None,117.80767730000025,None,116.74968360000003,None,116.74968360000003,None,left,0,0.5148178999997981,116.74968360000003,None,stimuli/tunga_12.bmp,1,0,0,117.29542089999995,None,117.29542089999995,None,117.29542089999995,None,300,900,self lose,-1,118.31408920000013,None,00,2021_Feb_28_1419,prosocial-learning,2020.2.4,60.08218040633399,
+25,0,3,0,self,avoidloss,self_avoidloss,2,"Play to AVOID LOSING points
+
+for YOURSELF",1,stimuli/tunga_12.bmp,-1,stimuli/tunga_04.bmp,0,0,12,4,stimuli/tunga_12.bmp,stimuli/tunga_04.bmp,stimuli/tunga_04.bmp,right,,,,,0,25,25,25,119.82191271000065,None,121.42006600000059,None,120.32199159999982,None,120.32199159999982,None,right,1,0.575878399999965,120.32199159999982,None,stimuli/tunga_04.bmp,0,1,1,120.9222520000003,None,120.9222520000003,None,120.9222520000003,None,300,900,self avoid loss,0,121.92369680000047,None,00,2021_Feb_28_1419,prosocial-learning,2020.2.4,60.08218040633399,
+26,0,3,0,self,avoidloss,self_avoidloss,2,"Play to AVOID LOSING points
+
+for YOURSELF",2,stimuli/tunga_12.bmp,-1,stimuli/tunga_04.bmp,0,1,4,12,stimuli/tunga_04.bmp,stimuli/tunga_12.bmp,stimuli/tunga_04.bmp,left,,,,,0,26,26,26,123.43463651000056,None,124.94942870000068,None,123.93437280000035,None,123.93437280000035,None,left,1,0.47496440000031726,123.93437280000035,None,stimuli/tunga_04.bmp,0,1,1,124.43624900000032,None,124.43624900000032,None,124.43624900000032,None,300,900,self avoid loss,0,125.44903419999991,None,00,2021_Feb_28_1419,prosocial-learning,2020.2.4,60.08218040633399,
+27,0,3,0,self,avoidloss,self_avoidloss,2,"Play to AVOID LOSING points
+
+for YOURSELF",3,stimuli/tunga_12.bmp,-1,stimuli/tunga_04.bmp,0,1,4,12,stimuli/tunga_04.bmp,stimuli/tunga_12.bmp,stimuli/tunga_04.bmp,left,,,,,0,27,27,27,126.96383431000012,None,128.47882850000042,None,127.4639227000007,None,127.4639227000007,None,left,1,0.46969779999926686,127.4639227000007,None,stimuli/tunga_04.bmp,0,1,1,127.96477279999999,None,127.96477279999999,None,127.96477279999999,None,300,900,self avoid loss,0,128.97826700000041,None,00,2021_Feb_28_1419,prosocial-learning,2020.2.4,60.08218040633399,
+28,0,3,0,self,avoidloss,self_avoidloss,2,"Play to AVOID LOSING points
+
+for YOURSELF",4,stimuli/tunga_12.bmp,0,stimuli/tunga_04.bmp,-1,0,12,4,stimuli/tunga_12.bmp,stimuli/tunga_04.bmp,stimuli/tunga_12.bmp,left,,,,,0,28,28,28,130.49297281000017,None,131.97443480000038,None,130.9931004,None,130.9931004,None,right,0,0.44570310000017344,130.9931004,None,stimuli/tunga_04.bmp,0,1,1,131.4616635000002,None,131.4616635000002,None,131.4616635000002,None,300,800,self lose,-1,132.47656170000027,None,00,2021_Feb_28_1419,prosocial-learning,2020.2.4,60.08218040633399,
+29,0,3,0,self,avoidloss,self_avoidloss,2,"Play to AVOID LOSING points
+
+for YOURSELF",5,stimuli/tunga_12.bmp,-1,stimuli/tunga_04.bmp,0,0,12,4,stimuli/tunga_12.bmp,stimuli/tunga_04.bmp,stimuli/tunga_04.bmp,right,,,,,0,29,29,29,133.98894910999988,None,135.4705082999999,None,134.48888260000058,None,134.48888260000058,None,right,1,0.44585210000059305,134.48888260000058,None,stimuli/tunga_04.bmp,0,1,1,134.95715960000052,None,134.95715960000052,None,134.95715960000052,None,300,800,self avoid loss,0,135.97162690000005,None,00,2021_Feb_28_1419,prosocial-learning,2020.2.4,60.08218040633399,
+30,0,3,0,self,avoidloss,self_avoidloss,2,"Play to AVOID LOSING points
+
+for YOURSELF",6,stimuli/tunga_12.bmp,-1,stimuli/tunga_04.bmp,0,0,12,4,stimuli/tunga_12.bmp,stimuli/tunga_04.bmp,stimuli/tunga_04.bmp,right,,,,,0,30,30,30,137.48486061000003,None,138.86661450000065,None,137.9849505000002,None,137.9849505000002,None,right,1,0.3375733000002583,137.9849505000002,None,stimuli/tunga_04.bmp,0,1,1,138.3547668000001,None,138.3547668000001,None,138.3547668000001,None,300,800,self avoid loss,0,139.36616270000013,None,00,2021_Feb_28_1419,prosocial-learning,2020.2.4,60.08218040633399,
+31,0,3,0,self,avoidloss,self_avoidloss,2,"Play to AVOID LOSING points
+
+for YOURSELF",7,stimuli/tunga_12.bmp,-1,stimuli/tunga_04.bmp,0,1,4,12,stimuli/tunga_04.bmp,stimuli/tunga_12.bmp,stimuli/tunga_04.bmp,left,,,,,0,31,31,31,140.8809302100004,None,142.24594680000064,None,141.38101310000002,None,141.38101310000002,None,left,1,0.33770390000063344,141.38101310000002,None,stimuli/tunga_04.bmp,0,1,1,141.74793380000028,None,141.74793380000028,None,141.74793380000028,None,300,800,self avoid loss,0,142.74555839999994,None,00,2021_Feb_28_1419,prosocial-learning,2020.2.4,60.08218040633399,
+32,0,3,0,self,avoidloss,self_avoidloss,2,"Play to AVOID LOSING points
+
+for YOURSELF",8,stimuli/tunga_12.bmp,-1,stimuli/tunga_04.bmp,0,1,4,12,stimuli/tunga_04.bmp,stimuli/tunga_12.bmp,stimuli/tunga_04.bmp,left,,,,,0,32,32,32,144.26062201000022,None,145.7919907000005,None,144.76036360000035,None,144.76036360000035,None,left,1,0.4964075000007142,144.76036360000035,None,stimuli/tunga_04.bmp,0,1,1,145.2801356,None,145.2801356,None,145.2801356,None,300,800,self avoid loss,0,146.2914410000003,None,00,2021_Feb_28_1419,prosocial-learning,2020.2.4,60.08218040633399,
+33,0,3,0,self,avoidloss,self_avoidloss,2,"Play to AVOID LOSING points
+
+for YOURSELF",9,stimuli/tunga_12.bmp,0,stimuli/tunga_04.bmp,-1,1,4,12,stimuli/tunga_04.bmp,stimuli/tunga_12.bmp,stimuli/tunga_12.bmp,right,,,,,0,33,33,33,147.80629671000005,None,149.1882166000005,None,148.30634199999986,None,148.30634199999986,None,left,0,0.3629001999997854,148.30634199999986,None,stimuli/tunga_04.bmp,0,1,1,148.68970220000028,None,148.68970220000028,None,148.68970220000028,None,300,700,self lose,-1,149.68749860000025,None,00,2021_Feb_28_1419,prosocial-learning,2020.2.4,60.08218040633399,
+34,0,3,0,self,avoidloss,self_avoidloss,2,"Play to AVOID LOSING points
+
+for YOURSELF",10,stimuli/tunga_12.bmp,-1,stimuli/tunga_04.bmp,0,1,4,12,stimuli/tunga_04.bmp,stimuli/tunga_12.bmp,stimuli/tunga_04.bmp,left,,,,,0,34,34,34,151.20237081000013,None,152.70053540000026,None,151.71895200000017,None,151.71895200000017,None,right,0,0.4437326999996003,151.71895200000017,None,stimuli/tunga_12.bmp,1,0,0,152.18801280000025,None,152.18801280000025,None,152.18801280000025,None,300,600,self lose,-1,153.20033870000043,None,00,2021_Feb_28_1419,prosocial-learning,2020.2.4,60.08218040633399,
+35,0,3,0,self,avoidloss,self_avoidloss,2,"Play to AVOID LOSING points
+
+for YOURSELF",11,stimuli/tunga_12.bmp,-1,stimuli/tunga_04.bmp,0,0,12,4,stimuli/tunga_12.bmp,stimuli/tunga_04.bmp,stimuli/tunga_04.bmp,right,,,,,0,35,35,35,154.71526731000048,None,156.27984640000068,None,155.2149272000006,None,155.2149272000006,None,right,1,0.5353988000006211,155.2149272000006,None,stimuli/tunga_04.bmp,0,1,1,155.7817485000005,None,155.7817485000005,None,155.7817485000005,None,300,600,self avoid loss,0,156.7790746999999,None,00,2021_Feb_28_1419,prosocial-learning,2020.2.4,60.08218040633399,
+36,0,3,0,self,avoidloss,self_avoidloss,2,"Play to AVOID LOSING points
+
+for YOURSELF",12,stimuli/tunga_12.bmp,-1,stimuli/tunga_04.bmp,0,0,12,4,stimuli/tunga_12.bmp,stimuli/tunga_04.bmp,stimuli/tunga_04.bmp,right,,,,,0,36,36,36,158.29434871000066,None,159.69249430000036,None,158.7942111000002,None,158.7942111000002,None,right,1,0.36062540000057197,158.7942111000002,None,stimuli/tunga_04.bmp,0,1,1,159.1782602000003,None,159.1782602000003,None,159.1782602000003,None,300,600,self avoid loss,0,160.19216349999988,None,00,2021_Feb_28_1419,prosocial-learning,2020.2.4,60.08218040633399,
+37,0,3,0,self,avoidloss,self_avoidloss,2,"Play to AVOID LOSING points
+
+for YOURSELF",13,stimuli/tunga_12.bmp,0,stimuli/tunga_04.bmp,-1,0,12,4,stimuli/tunga_12.bmp,stimuli/tunga_04.bmp,stimuli/tunga_12.bmp,left,,,,,0,37,37,37,161.70699291000037,None,163.15512279999984,None,162.20701430000008,None,162.20701430000008,None,right,0,0.41519530000005034,162.20701430000008,None,stimuli/tunga_04.bmp,0,1,1,162.64441979999992,None,162.64441979999992,None,162.64441979999992,None,300,500,self lose,-1,163.65909210000063,None,00,2021_Feb_28_1419,prosocial-learning,2020.2.4,60.08218040633399,
+38,0,3,0,self,avoidloss,self_avoidloss,2,"Play to AVOID LOSING points
+
+for YOURSELF",14,stimuli/tunga_12.bmp,0,stimuli/tunga_04.bmp,-1,1,4,12,stimuli/tunga_04.bmp,stimuli/tunga_12.bmp,stimuli/tunga_12.bmp,right,,,,,0,38,38,38,165.16962791000023,None,166.86763810000048,None,165.6698591000004,None,165.6698591000004,None,left,0,0.6651284999998097,165.6698591000004,None,stimuli/tunga_04.bmp,0,1,1,166.354378,None,166.354378,None,166.354378,None,300,400,self lose,-1,167.36701300000004,None,00,2021_Feb_28_1419,prosocial-learning,2020.2.4,60.08218040633399,
+39,0,3,0,self,avoidloss,self_avoidloss,2,"Play to AVOID LOSING points
+
+for YOURSELF",15,stimuli/tunga_12.bmp,0,stimuli/tunga_04.bmp,-1,1,4,12,stimuli/tunga_04.bmp,stimuli/tunga_12.bmp,stimuli/tunga_12.bmp,right,,,,,0,39,39,39,168.88205981000064,None,170.33018380000067,None,169.38190269999996,None,169.38190269999996,None,right,1,0.40896950000023935,169.38190269999996,None,stimuli/tunga_12.bmp,1,0,0,169.81711300000006,None,169.81711300000006,None,169.81711300000006,None,300,400,self avoid loss,0,170.82960950000052,None,00,2021_Feb_28_1419,prosocial-learning,2020.2.4,60.08218040633399,
+40,0,3,0,self,avoidloss,self_avoidloss,2,"Play to AVOID LOSING points
+
+for YOURSELF",16,stimuli/tunga_12.bmp,-1,stimuli/tunga_04.bmp,0,0,12,4,stimuli/tunga_12.bmp,stimuli/tunga_04.bmp,stimuli/tunga_04.bmp,right,,,,,0,40,40,40,172.34479791000066,None,173.8930293000003,None,172.86118979999992,None,172.86118979999992,None,left,0,0.5085681999998997,172.86118979999992,None,stimuli/tunga_12.bmp,1,0,0,173.3948463000006,None,173.3948463000006,None,173.3948463000006,None,300,300,self lose,-1,174.39896820000013,None,00,2021_Feb_28_1419,prosocial-learning,2020.2.4,60.08218040633399,
+41,0,3,0,self,avoidloss,self_avoidloss,2,"Play to AVOID LOSING points
+
+for YOURSELF",17,stimuli/tunga_12.bmp,-1,stimuli/tunga_04.bmp,0,0,12,4,stimuli/tunga_12.bmp,stimuli/tunga_04.bmp,stimuli/tunga_04.bmp,right,,,,,0,41,41,41,175.90718261000038,None,177.35538859999997,None,176.4071530000001,None,176.4071530000001,None,right,1,0.4122395000003962,176.4071530000001,None,stimuli/tunga_04.bmp,0,1,1,176.84286359999987,None,176.84286359999987,None,176.84286359999987,None,300,300,self avoid loss,0,177.85494199999994,None,00,2021_Feb_28_1419,prosocial-learning,2020.2.4,60.08218040633399,
+42,0,3,0,self,avoidloss,self_avoidloss,2,"Play to AVOID LOSING points
+
+for YOURSELF",18,stimuli/tunga_12.bmp,-1,stimuli/tunga_04.bmp,0,0,12,4,stimuli/tunga_12.bmp,stimuli/tunga_04.bmp,stimuli/tunga_04.bmp,right,,,,,0,42,42,42,179.37010011000038,None,180.8014490000005,None,179.8700189000001,None,179.8700189000001,None,right,1,0.3967894999996133,179.8700189000001,None,stimuli/tunga_04.bmp,0,1,1,180.2870511000001,None,180.2870511000001,None,180.2870511000001,None,300,300,self avoid loss,0,181.3009793000001,None,00,2021_Feb_28_1419,prosocial-learning,2020.2.4,60.08218040633399,
+43,0,3,0,self,avoidloss,self_avoidloss,2,"Play to AVOID LOSING points
+
+for YOURSELF",19,stimuli/tunga_12.bmp,-1,stimuli/tunga_04.bmp,0,1,4,12,stimuli/tunga_04.bmp,stimuli/tunga_12.bmp,stimuli/tunga_04.bmp,left,,,,,0,43,43,43,182.8160947100001,None,184.2974806000002,None,183.31584340000063,None,183.31584340000063,None,left,1,0.44288589999996475,183.31584340000063,None,stimuli/tunga_04.bmp,0,1,1,183.78363249999984,None,183.78363249999984,None,183.78363249999984,None,300,300,self avoid loss,0,184.7970333000003,None,00,2021_Feb_28_1419,prosocial-learning,2020.2.4,60.08218040633399,
+44,0,3,0,self,avoidloss,self_avoidloss,2,"Play to AVOID LOSING points
+
+for YOURSELF",20,stimuli/tunga_12.bmp,-1,stimuli/tunga_04.bmp,0,1,4,12,stimuli/tunga_04.bmp,stimuli/tunga_12.bmp,stimuli/tunga_04.bmp,left,,,,,0,44,44,44,186.31187261000068,None,187.79325550000067,None,186.81202800000028,None,186.81202800000028,None,left,1,0.4446429999998145,186.81202800000028,None,stimuli/tunga_04.bmp,0,1,1,187.27953310000066,None,187.27953310000066,None,187.27953310000066,None,300,300,self avoid loss,0,188.2930723999998,None,00,2021_Feb_28_1419,prosocial-learning,2020.2.4,60.08218040633399,
+45,0,3,0,self,avoidloss,self_avoidloss,2,"Play to AVOID LOSING points
+
+for YOURSELF",21,stimuli/tunga_12.bmp,-1,stimuli/tunga_04.bmp,0,1,4,12,stimuli/tunga_04.bmp,stimuli/tunga_12.bmp,stimuli/tunga_04.bmp,left,,,,,0,45,45,45,189.8078921100001,None,191.37282400000004,None,190.30783210000027,None,190.30783210000027,None,left,1,0.5176601000002847,190.30783210000027,None,stimuli/tunga_04.bmp,0,1,1,190.85969420000038,None,190.85969420000038,None,190.85969420000038,None,300,300,self avoid loss,0,191.87239110000064,None,00,2021_Feb_28_1419,prosocial-learning,2020.2.4,60.08218040633399,
+46,0,3,0,self,avoidloss,self_avoidloss,2,"Play to AVOID LOSING points
+
+for YOURSELF",22,stimuli/tunga_12.bmp,0,stimuli/tunga_04.bmp,-1,1,4,12,stimuli/tunga_04.bmp,stimuli/tunga_12.bmp,stimuli/tunga_12.bmp,right,,,,,0,46,46,46,193.38704810999988,None,194.8518100000001,None,193.88694740000028,None,193.88694740000028,None,left,0,0.43002290000003995,193.88694740000028,None,stimuli/tunga_04.bmp,0,1,1,194.3392812000002,None,194.3392812000002,None,194.3392812000002,None,300,200,self lose,-1,195.35231470000053,None,00,2021_Feb_28_1419,prosocial-learning,2020.2.4,60.08218040633399,
+47,0,3,0,self,avoidloss,self_avoidloss,2,"Play to AVOID LOSING points
+
+for YOURSELF",23,stimuli/tunga_12.bmp,-1,stimuli/tunga_04.bmp,0,0,12,4,stimuli/tunga_12.bmp,stimuli/tunga_04.bmp,stimuli/tunga_04.bmp,right,,,,,0,47,47,47,196.86629950999995,None,198.4146384000005,None,197.3663690000003,None,197.3663690000003,None,left,0,0.5153056999997716,197.3663690000003,None,stimuli/tunga_12.bmp,1,0,0,197.90387330000067,None,197.90387330000067,None,197.90387330000067,None,300,100,self lose,-1,198.91388040000038,None,00,2021_Feb_28_1419,prosocial-learning,2020.2.4,60.08218040633399,
+48,0,3,0,social,win,social_win,1,"Play to WIN points
+
+for the NEXT PARTICIPANT",0,stimuli/tunga_10.bmp,1,stimuli/tunga_05.bmp,0,1,5,10,stimuli/tunga_05.bmp,stimuli/tunga_10.bmp,stimuli/tunga_10.bmp,right,,,,,0,48,48,48,200.43994310000016,None,206.78814880000027,None,205.96033890000035,None,205.96033890000035,None,left,0,0.29586600000038743,205.96033890000035,None,stimuli/tunga_05.bmp,0,1,0,206.27453030000015,None,206.27453030000015,None,206.27453030000015,None,300,100,social avoid win,0,207.28789229999984,None,00,2021_Feb_28_1419,prosocial-learning,2020.2.4,60.08218040633399,
+49,0,3,0,social,win,social_win,1,"Play to WIN points
+
+for the NEXT PARTICIPANT",1,stimuli/tunga_10.bmp,1,stimuli/tunga_05.bmp,0,0,10,5,stimuli/tunga_10.bmp,stimuli/tunga_05.bmp,stimuli/tunga_10.bmp,left,,,,,0,49,49,49,208.8025293100005,None,210.7336589000006,None,209.30258970000068,None,209.30258970000068,None,left,1,0.8913879000001543,209.30258970000068,None,stimuli/tunga_10.bmp,1,0,1,210.21922080000058,None,210.21922080000058,None,210.21922080000058,None,400,100,social win,1,211.23766800000067,None,00,2021_Feb_28_1419,prosocial-learning,2020.2.4,60.08218040633399,
+50,0,3,0,social,win,social_win,1,"Play to WIN points
+
+for the NEXT PARTICIPANT",2,stimuli/tunga_10.bmp,1,stimuli/tunga_05.bmp,0,1,5,10,stimuli/tunga_05.bmp,stimuli/tunga_10.bmp,stimuli/tunga_10.bmp,right,,,,,0,50,50,50,212.74824411000063,None,214.41287900000043,None,213.2479284000001,None,213.2479284000001,None,right,1,0.619402600000285,213.2479284000001,None,stimuli/tunga_10.bmp,1,0,1,213.89966520000053,None,213.89966520000053,None,213.89966520000053,None,500,100,social win,1,214.9122350000007,None,00,2021_Feb_28_1419,prosocial-learning,2020.2.4,60.08218040633399,
+51,0,3,0,social,win,social_win,1,"Play to WIN points
+
+for the NEXT PARTICIPANT",3,stimuli/tunga_10.bmp,1,stimuli/tunga_05.bmp,0,1,5,10,stimuli/tunga_05.bmp,stimuli/tunga_10.bmp,stimuli/tunga_10.bmp,right,,,,,0,51,51,51,216.4273639100007,None,218.1419906000001,None,216.92716530000052,None,216.92716530000052,None,right,1,0.6830453000002308,216.92716530000052,None,stimuli/tunga_10.bmp,1,0,1,217.6282670999999,None,217.6282670999999,None,217.6282670999999,None,600,100,social win,1,218.65803270000015,None,00,2021_Feb_28_1419,prosocial-learning,2020.2.4,60.08218040633399,
+52,0,3,0,social,win,social_win,1,"Play to WIN points
+
+for the NEXT PARTICIPANT",4,stimuli/tunga_10.bmp,0,stimuli/tunga_05.bmp,1,0,10,5,stimuli/tunga_10.bmp,stimuli/tunga_05.bmp,stimuli/tunga_05.bmp,right,,,,,0,52,52,52,220.17273861000066,None,221.95386080000026,None,220.67279039999994,None,220.67279039999994,None,left,0,0.7455605000004653,220.67279039999994,None,stimuli/tunga_10.bmp,1,0,1,221.44003630000043,None,221.44003630000043,None,221.44003630000043,None,600,100,social avoid win,0,222.4607885000005,None,00,2021_Feb_28_1419,prosocial-learning,2020.2.4,60.08218040633399,
+53,0,3,0,social,win,social_win,1,"Play to WIN points
+
+for the NEXT PARTICIPANT",5,stimuli/tunga_10.bmp,1,stimuli/tunga_05.bmp,0,1,5,10,stimuli/tunga_05.bmp,stimuli/tunga_10.bmp,stimuli/tunga_10.bmp,right,,,,,0,53,53,53,223.9683359100005,None,225.48327359999985,None,224.46841459999996,None,224.46841459999996,None,right,1,0.4926181999999244,224.46841459999996,None,stimuli/tunga_10.bmp,1,0,1,224.9850460000007,None,224.9850460000007,None,224.9850460000007,None,700,100,social win,1,225.9827847000006,None,00,2021_Feb_28_1419,prosocial-learning,2020.2.4,60.08218040633399,
+54,0,3,0,social,win,social_win,1,"Play to WIN points
+
+for the NEXT PARTICIPANT",6,stimuli/tunga_10.bmp,0,stimuli/tunga_05.bmp,1,1,5,10,stimuli/tunga_05.bmp,stimuli/tunga_10.bmp,stimuli/tunga_05.bmp,left,,,,,0,54,54,54,227.4977373100006,None,229.12899840000046,None,227.99757070000032,None,227.99757070000032,None,right,0,0.6018262000006871,227.99757070000032,None,stimuli/tunga_10.bmp,1,0,1,228.6308796000003,None,228.6308796000003,None,228.6308796000003,None,700,100,social avoid win,0,229.62932610000007,None,00,2021_Feb_28_1419,prosocial-learning,2020.2.4,60.08218040633399,
+55,0,3,0,social,win,social_win,1,"Play to WIN points
+
+for the NEXT PARTICIPANT",7,stimuli/tunga_10.bmp,1,stimuli/tunga_05.bmp,0,0,10,5,stimuli/tunga_10.bmp,stimuli/tunga_05.bmp,stimuli/tunga_10.bmp,left,,,,,0,55,55,55,231.1433825099999,None,232.89121119999982,None,231.64349390000007,None,231.64349390000007,None,left,1,0.7087692000004608,231.64349390000007,None,stimuli/tunga_10.bmp,1,0,1,232.38021459999982,None,232.38021459999982,None,232.38021459999982,None,800,100,social win,1,233.39422819999982,None,00,2021_Feb_28_1419,prosocial-learning,2020.2.4,60.08218040633399,
+56,0,3,0,social,win,social_win,1,"Play to WIN points
+
+for the NEXT PARTICIPANT",8,stimuli/tunga_10.bmp,0,stimuli/tunga_05.bmp,1,1,5,10,stimuli/tunga_05.bmp,stimuli/tunga_10.bmp,stimuli/tunga_05.bmp,left,,,,,0,56,56,56,234.90589021000014,None,236.43709130000025,None,235.4055659000005,None,235.4055659000005,None,right,0,0.48636590000023716,235.4055659000005,None,stimuli/tunga_10.bmp,1,0,1,235.92498130000058,None,235.92498130000058,None,235.92498130000058,None,800,100,social avoid win,0,236.94076829999995,None,00,2021_Feb_28_1419,prosocial-learning,2020.2.4,60.08218040633399,
+57,0,3,0,social,win,social_win,1,"Play to WIN points
+
+for the NEXT PARTICIPANT",9,stimuli/tunga_10.bmp,1,stimuli/tunga_05.bmp,0,0,10,5,stimuli/tunga_10.bmp,stimuli/tunga_05.bmp,stimuli/tunga_10.bmp,left,,,,,0,57,57,57,238.45154081000018,None,239.89960100000008,None,238.95141270000022,None,238.95141270000022,None,left,1,0.4015399999998408,238.95141270000022,None,stimuli/tunga_10.bmp,1,0,1,239.3862237000003,None,239.3862237000003,None,239.3862237000003,None,900,100,social win,1,240.39915250000013,None,00,2021_Feb_28_1419,prosocial-learning,2020.2.4,60.08218040633399,
+58,0,3,0,social,win,social_win,1,"Play to WIN points
+
+for the NEXT PARTICIPANT",10,stimuli/tunga_10.bmp,1,stimuli/tunga_05.bmp,0,0,10,5,stimuli/tunga_10.bmp,stimuli/tunga_05.bmp,stimuli/tunga_10.bmp,left,,,,,0,58,58,58,241.91438181000066,None,243.51240810000036,None,242.41460559999996,None,242.41460559999996,None,left,1,0.566640400000324,242.41460559999996,None,stimuli/tunga_10.bmp,1,0,1,243.01430680000067,None,243.01430680000067,None,243.01430680000067,None,1000,100,social win,1,244.01197120000052,None,00,2021_Feb_28_1419,prosocial-learning,2020.2.4,60.08218040633399,
+59,0,3,0,social,win,social_win,1,"Play to WIN points
+
+for the NEXT PARTICIPANT",11,stimuli/tunga_10.bmp,1,stimuli/tunga_05.bmp,0,1,5,10,stimuli/tunga_05.bmp,stimuli/tunga_10.bmp,stimuli/tunga_10.bmp,right,,,,,0,59,59,59,245.5267419100006,None,247.1579128000003,None,246.02658650000012,None,246.02658650000012,None,right,1,0.6138535000000047,246.02658650000012,None,stimuli/tunga_10.bmp,1,0,1,246.65997120000065,None,246.65997120000065,None,246.65997120000065,None,1100,100,social win,1,247.6576068000004,None,00,2021_Feb_28_1419,prosocial-learning,2020.2.4,60.08218040633399,
+60,0,3,0,social,win,social_win,1,"Play to WIN points
+
+for the NEXT PARTICIPANT",12,stimuli/tunga_10.bmp,1,stimuli/tunga_05.bmp,0,1,5,10,stimuli/tunga_05.bmp,stimuli/tunga_10.bmp,stimuli/tunga_10.bmp,right,,,,,0,60,60,60,249.17250361000023,None,250.75421520000054,None,249.6723017000004,None,249.6723017000004,None,right,1,0.5367556999999579,249.6723017000004,None,stimuli/tunga_10.bmp,1,0,1,250.24028670000007,None,250.24028670000007,None,250.24028670000007,None,1200,100,social win,1,251.25374869999996,None,00,2021_Feb_28_1419,prosocial-learning,2020.2.4,60.08218040633399,
+61,0,3,0,social,win,social_win,1,"Play to WIN points
+
+for the NEXT PARTICIPANT",13,stimuli/tunga_10.bmp,1,stimuli/tunga_05.bmp,0,0,10,5,stimuli/tunga_10.bmp,stimuli/tunga_05.bmp,stimuli/tunga_10.bmp,left,,,,,0,61,61,61,252.7685111100005,None,254.43305690000034,None,253.26845010000034,None,253.26845010000034,None,left,1,0.6323788999998214,253.26845010000034,None,stimuli/tunga_10.bmp,1,0,1,253.91849189999994,None,253.91849189999994,None,253.91849189999994,None,1300,100,social win,1,254.93270650000068,None,00,2021_Feb_28_1419,prosocial-learning,2020.2.4,60.08218040633399,
+62,0,3,0,social,win,social_win,1,"Play to WIN points
+
+for the NEXT PARTICIPANT",14,stimuli/tunga_10.bmp,1,stimuli/tunga_05.bmp,0,1,5,10,stimuli/tunga_05.bmp,stimuli/tunga_10.bmp,stimuli/tunga_10.bmp,right,,,,,0,62,62,62,256.44764841000017,None,258.01191090000066,None,256.9472702000003,None,256.9472702000003,None,right,1,0.523344499999439,256.9472702000003,None,stimuli/tunga_10.bmp,1,0,1,257.5006045,None,257.5006045,None,257.5006045,None,1400,100,social win,1,258.5120336,None,00,2021_Feb_28_1419,prosocial-learning,2020.2.4,60.08218040633399,
+63,0,3,0,social,win,social_win,1,"Play to WIN points
+
+for the NEXT PARTICIPANT",15,stimuli/tunga_10.bmp,0,stimuli/tunga_05.bmp,1,1,5,10,stimuli/tunga_05.bmp,stimuli/tunga_10.bmp,stimuli/tunga_05.bmp,left,,,,,0,63,63,63,260.0266211100003,None,261.5583488000002,None,260.5266251000003,None,260.5266251000003,None,right,0,0.49187849999998434,260.5266251000003,None,stimuli/tunga_10.bmp,1,0,1,261.04376500000035,None,261.04376500000035,None,261.04376500000035,None,1400,100,social avoid win,0,262.06137620000027,None,00,2021_Feb_28_1419,prosocial-learning,2020.2.4,60.08218040633399,
+64,0,3,0,social,win,social_win,1,"Play to WIN points
+
+for the NEXT PARTICIPANT",16,stimuli/tunga_10.bmp,0,stimuli/tunga_05.bmp,1,0,10,5,stimuli/tunga_10.bmp,stimuli/tunga_05.bmp,stimuli/tunga_05.bmp,right,,,,,0,64,64,64,263.57253060999994,None,265.1873741999998,None,264.07228980000036,None,264.07228980000036,None,left,0,0.5832921999999598,264.07228980000036,None,stimuli/tunga_10.bmp,1,0,1,264.67409920000046,None,264.67409920000046,None,264.67409920000046,None,1400,100,social avoid win,0,265.68687950000003,None,00,2021_Feb_28_1419,prosocial-learning,2020.2.4,60.08218040633399,
+65,0,3,0,social,win,social_win,1,"Play to WIN points
+
+for the NEXT PARTICIPANT",17,stimuli/tunga_10.bmp,1,stimuli/tunga_05.bmp,0,0,10,5,stimuli/tunga_10.bmp,stimuli/tunga_05.bmp,stimuli/tunga_10.bmp,left,,,,,0,65,65,65,267.20191711000064,None,268.76643140000033,None,267.70154470000034,None,267.70154470000034,None,left,1,0.532094700000016,267.70154470000034,None,stimuli/tunga_10.bmp,1,0,1,268.2534439000001,None,268.2534439000001,None,268.2534439000001,None,1500,100,social win,1,269.2699969000005,None,00,2021_Feb_28_1419,prosocial-learning,2020.2.4,60.08218040633399,
+66,0,3,0,social,win,social_win,1,"Play to WIN points
+
+for the NEXT PARTICIPANT",18,stimuli/tunga_10.bmp,0,stimuli/tunga_05.bmp,1,0,10,5,stimuli/tunga_10.bmp,stimuli/tunga_05.bmp,stimuli/tunga_05.bmp,right,,,,,0,66,66,66,270.7809312100004,None,272.2955786000002,None,271.28186749999986,None,271.28186749999986,None,left,0,0.4802360999992743,271.28186749999986,None,stimuli/tunga_10.bmp,1,0,1,271.78285920000053,None,271.78285920000053,None,271.78285920000053,None,1500,100,social avoid win,0,272.79500180000014,None,00,2021_Feb_28_1419,prosocial-learning,2020.2.4,60.08218040633399,
+67,0,3,0,social,win,social_win,1,"Play to WIN points
+
+for the NEXT PARTICIPANT",19,stimuli/tunga_10.bmp,1,stimuli/tunga_05.bmp,0,0,10,5,stimuli/tunga_10.bmp,stimuli/tunga_05.bmp,stimuli/tunga_10.bmp,left,,,,,0,67,67,67,274.31039931,None,276.2910208000003,None,274.8099863000007,None,274.8099863000007,None,right,0,0.9369209999995292,274.8099863000007,None,stimuli/tunga_05.bmp,0,1,0,275.7787930000004,None,275.7787930000004,None,275.7787930000004,None,1500,100,social avoid win,0,276.79086259999985,None,00,2021_Feb_28_1419,prosocial-learning,2020.2.4,60.08218040633399,
+68,0,3,0,social,win,social_win,1,"Play to WIN points
+
+for the NEXT PARTICIPANT",20,stimuli/tunga_10.bmp,1,stimuli/tunga_05.bmp,0,0,10,5,stimuli/tunga_10.bmp,stimuli/tunga_05.bmp,stimuli/tunga_10.bmp,left,,,,,0,68,68,68,278.3057855100002,None,279.88699050000014,None,278.80521790000057,None,278.80521790000057,None,left,1,0.53841360000024,278.80521790000057,None,stimuli/tunga_10.bmp,1,0,1,279.3743534000005,None,279.3743534000005,None,279.3743534000005,None,1600,100,social win,1,280.3914580999999,None,00,2021_Feb_28_1419,prosocial-learning,2020.2.4,60.08218040633399,
+69,0,3,0,social,win,social_win,1,"Play to WIN points
+
+for the NEXT PARTICIPANT",21,stimuli/tunga_10.bmp,1,stimuli/tunga_05.bmp,0,1,5,10,stimuli/tunga_05.bmp,stimuli/tunga_10.bmp,stimuli/tunga_10.bmp,right,,,,,0,69,69,69,281.90132460999996,None,283.46634730000005,None,282.40136990000065,None,282.40136990000065,None,right,1,0.5264543000002959,282.40136990000065,None,stimuli/tunga_10.bmp,1,0,1,282.9537684000006,None,282.9537684000006,None,282.9537684000006,None,1700,100,social win,1,283.9658235000006,None,00,2021_Feb_28_1419,prosocial-learning,2020.2.4,60.08218040633399,
+70,0,3,0,social,win,social_win,1,"Play to WIN points
+
+for the NEXT PARTICIPANT",22,stimuli/tunga_10.bmp,1,stimuli/tunga_05.bmp,0,0,10,5,stimuli/tunga_10.bmp,stimuli/tunga_05.bmp,stimuli/tunga_10.bmp,left,,,,,0,70,70,70,285.4806753100007,None,287.1451599000002,None,285.9804530000001,None,285.9804530000001,None,left,1,0.6340266000006523,285.9804530000001,None,stimuli/tunga_10.bmp,1,0,1,286.6309338000001,None,286.6309338000001,None,286.6309338000001,None,1800,100,social win,1,287.64479290000054,None,00,2021_Feb_28_1419,prosocial-learning,2020.2.4,60.08218040633399,
+71,0,3,0,social,win,social_win,1,"Play to WIN points
+
+for the NEXT PARTICIPANT",23,stimuli/tunga_10.bmp,1,stimuli/tunga_05.bmp,0,1,5,10,stimuli/tunga_05.bmp,stimuli/tunga_10.bmp,stimuli/tunga_10.bmp,right,,,,,0,71,71,71,289.1596856100001,None,290.9241167,None,289.65966840000056,None,289.65966840000056,None,right,1,0.7497271000002002,289.65966840000056,None,stimuli/tunga_10.bmp,1,0,1,290.42608850000033,None,290.42608850000033,None,290.42608850000033,None,1900,100,social win,1,291.42375210000046,None,00,2021_Feb_28_1419,prosocial-learning,2020.2.4,60.08218040633399,
+72,0,3,0,self,win,self_win,0,"Play to WIN points
+
+for YOURSELF",0,stimuli/tunga_14.bmp,1,stimuli/tunga_02.bmp,0,0,14,2,stimuli/tunga_14.bmp,stimuli/tunga_02.bmp,stimuli/tunga_14.bmp,left,,,,,0,72,72,72,292.94621480000023,None,299.6642995000002,None,298.47472689999995,None,298.47472689999995,None,right,0,0.6469810999997208,298.47472689999995,None,stimuli/tunga_02.bmp,0,1,0,299.1507472000003,None,299.1507472000003,None,299.1507472000003,None,1900,100,self avoid win,0,300.1645045000005,None,00,2021_Feb_28_1419,prosocial-learning,2020.2.4,60.08218040633399,
+73,0,3,0,self,win,self_win,0,"Play to WIN points
+
+for YOURSELF",1,stimuli/tunga_14.bmp,1,stimuli/tunga_02.bmp,0,1,2,14,stimuli/tunga_02.bmp,stimuli/tunga_14.bmp,stimuli/tunga_14.bmp,right,,,,,0,73,73,73,301.6784878100003,None,303.1100972000004,None,302.17861020000055,None,302.17861020000055,None,left,0,0.40582050000011805,302.17861020000055,None,stimuli/tunga_02.bmp,0,1,0,302.6118913,None,302.6118913,None,302.6118913,None,1900,100,self avoid win,0,303.6094737000003,None,00,2021_Feb_28_1419,prosocial-learning,2020.2.4,60.08218040633399,
+74,0,3,0,self,win,self_win,0,"Play to WIN points
+
+for YOURSELF",2,stimuli/tunga_14.bmp,1,stimuli/tunga_02.bmp,0,0,14,2,stimuli/tunga_14.bmp,stimuli/tunga_02.bmp,stimuli/tunga_14.bmp,left,,,,,0,74,74,74,305.1244018100002,None,306.5393098000004,None,305.62452699999994,None,305.62452699999994,None,left,1,0.39167410000027303,305.62452699999994,None,stimuli/tunga_14.bmp,1,0,1,306.0414698000004,None,306.0414698000004,None,306.0414698000004,None,1900,200,self win,1,307.0387728000005,None,00,2021_Feb_28_1419,prosocial-learning,2020.2.4,60.08218040633399,
+75,0,3,0,self,win,self_win,0,"Play to WIN points
+
+for YOURSELF",3,stimuli/tunga_14.bmp,1,stimuli/tunga_02.bmp,0,0,14,2,stimuli/tunga_14.bmp,stimuli/tunga_02.bmp,stimuli/tunga_14.bmp,left,,,,,0,75,75,75,308.5539036100005,None,310.03533570000036,None,309.0537767000005,None,309.0537767000005,None,left,1,0.43540220000068075,309.0537767000005,None,stimuli/tunga_14.bmp,1,0,1,309.52142189999995,None,309.52142189999995,None,309.52142189999995,None,1900,300,self win,1,310.5347348000005,None,00,2021_Feb_28_1419,prosocial-learning,2020.2.4,60.08218040633399,
+76,0,3,0,self,win,self_win,0,"Play to WIN points
+
+for YOURSELF",4,stimuli/tunga_14.bmp,1,stimuli/tunga_02.bmp,0,1,2,14,stimuli/tunga_02.bmp,stimuli/tunga_14.bmp,stimuli/tunga_14.bmp,right,,,,,0,76,76,76,312.0498661100006,None,313.5811665000001,None,312.54969210000036,None,312.54969210000036,None,right,1,0.5035527999998521,312.54969210000036,None,stimuli/tunga_14.bmp,1,0,1,313.08333159999984,None,313.08333159999984,None,313.08333159999984,None,1900,400,self win,1,314.0809396000004,None,00,2021_Feb_28_1419,prosocial-learning,2020.2.4,60.08218040633399,
+77,0,3,0,self,win,self_win,0,"Play to WIN points
+
+for YOURSELF",5,stimuli/tunga_14.bmp,0,stimuli/tunga_02.bmp,1,0,14,2,stimuli/tunga_14.bmp,stimuli/tunga_02.bmp,stimuli/tunga_02.bmp,right,,,,,0,77,77,77,315.59582291000027,None,317.2104629000005,None,316.0956294000007,None,316.0956294000007,None,left,0,0.5711918000006335,316.0956294000007,None,stimuli/tunga_14.bmp,1,0,1,316.69837430000007,None,316.69837430000007,None,316.69837430000007,None,1900,400,self avoid win,0,317.7141405000002,None,00,2021_Feb_28_1419,prosocial-learning,2020.2.4,60.08218040633399,
+78,0,3,0,self,win,self_win,0,"Play to WIN points
+
+for YOURSELF",6,stimuli/tunga_14.bmp,0,stimuli/tunga_02.bmp,1,0,14,2,stimuli/tunga_14.bmp,stimuli/tunga_02.bmp,stimuli/tunga_02.bmp,right,,,,,0,78,78,78,319.22492981000016,None,320.6896105000005,None,319.7247610000004,None,319.7247610000004,None,left,0,0.4396258000006128,319.7247610000004,None,stimuli/tunga_14.bmp,1,0,1,320.19169039999997,None,320.19169039999997,None,320.19169039999997,None,1900,400,self avoid win,0,321.18940720000046,None,00,2021_Feb_28_1419,prosocial-learning,2020.2.4,60.08218040633399,
+79,0,3,0,self,win,self_win,0,"Play to WIN points
+
+for YOURSELF",7,stimuli/tunga_14.bmp,1,stimuli/tunga_02.bmp,0,1,2,14,stimuli/tunga_02.bmp,stimuli/tunga_14.bmp,stimuli/tunga_14.bmp,right,,,,,0,79,79,79,322.7041234100003,None,324.1690329000003,None,323.2040642000002,None,323.2040642000002,None,right,1,0.4187966999998025,323.2040642000002,None,stimuli/tunga_14.bmp,1,0,1,323.6579818,None,323.6579818,None,323.6579818,None,1900,500,self win,1,324.67110240000056,None,00,2021_Feb_28_1419,prosocial-learning,2020.2.4,60.08218040633399,
+80,0,3,0,self,win,self_win,0,"Play to WIN points
+
+for YOURSELF",8,stimuli/tunga_14.bmp,1,stimuli/tunga_02.bmp,0,1,2,14,stimuli/tunga_02.bmp,stimuli/tunga_14.bmp,stimuli/tunga_14.bmp,right,,,,,0,80,80,80,326.1833203100001,None,327.8645295000006,None,326.70002600000043,None,326.70002600000043,None,right,1,0.6296333000000232,326.70002600000043,None,stimuli/tunga_14.bmp,1,0,1,327.3518528000004,None,327.3518528000004,None,327.3518528000004,None,1900,600,self win,1,328.3641582999999,None,00,2021_Feb_28_1419,prosocial-learning,2020.2.4,60.08218040633399,
+81,0,3,0,self,win,self_win,0,"Play to WIN points
+
+for YOURSELF",9,stimuli/tunga_14.bmp,1,stimuli/tunga_02.bmp,0,1,2,14,stimuli/tunga_02.bmp,stimuli/tunga_14.bmp,stimuli/tunga_14.bmp,right,,,,,0,81,81,81,329.8793386100002,None,331.5104216999998,None,330.3792217,None,330.3792217,None,right,1,0.5953302999996595,330.3792217,None,stimuli/tunga_14.bmp,1,0,1,330.9984748000006,None,330.9984748000006,None,330.9984748000006,None,1900,700,self win,1,332.0101530000002,None,00,2021_Feb_28_1419,prosocial-learning,2020.2.4,60.08218040633399,
+82,0,3,0,self,win,self_win,0,"Play to WIN points
+
+for YOURSELF",10,stimuli/tunga_14.bmp,1,stimuli/tunga_02.bmp,0,1,2,14,stimuli/tunga_02.bmp,stimuli/tunga_14.bmp,stimuli/tunga_14.bmp,right,,,,,0,82,82,82,333.5251749100004,None,335.12333600000056,None,334.0247739000006,None,334.0247739000006,None,right,1,0.5664561000003232,334.0247739000006,None,stimuli/tunga_14.bmp,1,0,1,334.6098759000006,None,334.6098759000006,None,334.6098759000006,None,1900,800,self win,1,335.6226440999999,None,00,2021_Feb_28_1419,prosocial-learning,2020.2.4,60.08218040633399,
+83,0,3,0,self,win,self_win,0,"Play to WIN points
+
+for YOURSELF",11,stimuli/tunga_14.bmp,1,stimuli/tunga_02.bmp,0,1,2,14,stimuli/tunga_02.bmp,stimuli/tunga_14.bmp,stimuli/tunga_14.bmp,right,,,,,0,83,83,83,337.13736501000005,None,338.6690832000004,None,337.63740020000023,None,337.63740020000023,None,right,1,0.49207599999954255,337.63740020000023,None,stimuli/tunga_14.bmp,1,0,1,338.15680470000007,None,338.15680470000007,None,338.15680470000007,None,1900,900,self win,1,339.1684128000006,None,00,2021_Feb_28_1419,prosocial-learning,2020.2.4,60.08218040633399,
+84,0,3,0,self,win,self_win,0,"Play to WIN points
+
+for YOURSELF",12,stimuli/tunga_14.bmp,1,stimuli/tunga_02.bmp,0,1,2,14,stimuli/tunga_02.bmp,stimuli/tunga_14.bmp,stimuli/tunga_14.bmp,right,,,,,0,84,84,84,340.68327871000076,None,342.09825530000035,None,341.18336069999987,None,341.18336069999987,None,right,1,0.3744251999996777,341.18336069999987,None,stimuli/tunga_14.bmp,1,0,1,341.58488560000023,None,341.58488560000023,None,341.58488560000023,None,1900,1000,self win,1,342.5979075000005,None,00,2021_Feb_28_1419,prosocial-learning,2020.2.4,60.08218040633399,
+85,0,3,0,self,win,self_win,0,"Play to WIN points
+
+for YOURSELF",13,stimuli/tunga_14.bmp,1,stimuli/tunga_02.bmp,0,1,2,14,stimuli/tunga_02.bmp,stimuli/tunga_14.bmp,stimuli/tunga_14.bmp,right,,,,,0,85,85,85,344.1128476099999,None,345.64408490000005,None,344.6128116,None,344.6128116,None,right,1,0.49321429999963584,344.6128116,None,stimuli/tunga_14.bmp,1,0,1,345.13107300000047,None,345.13107300000047,None,345.13107300000047,None,1900,1100,self win,1,346.14368319999994,None,00,2021_Feb_28_1419,prosocial-learning,2020.2.4,60.08218040633399,
+86,0,3,0,self,win,self_win,0,"Play to WIN points
+
+for YOURSELF",14,stimuli/tunga_14.bmp,1,stimuli/tunga_02.bmp,0,0,14,2,stimuli/tunga_14.bmp,stimuli/tunga_02.bmp,stimuli/tunga_14.bmp,left,,,,,0,86,86,86,347.65858941000045,None,349.2067158,None,348.15849049999997,None,348.15849049999997,None,left,1,0.5024371000008614,348.15849049999997,None,stimuli/tunga_14.bmp,1,0,1,348.6956230000005,None,348.6956230000005,None,348.6956230000005,None,1900,1200,self win,1,349.7062528000006,None,00,2021_Feb_28_1419,prosocial-learning,2020.2.4,60.08218040633399,
+87,0,3,0,self,win,self_win,0,"Play to WIN points
+
+for YOURSELF",15,stimuli/tunga_14.bmp,0,stimuli/tunga_02.bmp,1,1,2,14,stimuli/tunga_02.bmp,stimuli/tunga_14.bmp,stimuli/tunga_02.bmp,left,,,,,0,87,87,87,351.22109911000064,None,352.6028062000005,None,351.7212218000004,None,351.7212218000004,None,right,0,0.3481244999993578,351.7212218000004,None,stimuli/tunga_14.bmp,1,0,1,352.0894308000006,None,352.0894308000006,None,352.0894308000006,None,1900,1200,self avoid win,0,353.1021588000003,None,00,2021_Feb_28_1419,prosocial-learning,2020.2.4,60.08218040633399,
+88,0,3,0,self,win,self_win,0,"Play to WIN points
+
+for YOURSELF",16,stimuli/tunga_14.bmp,0,stimuli/tunga_02.bmp,1,0,14,2,stimuli/tunga_14.bmp,stimuli/tunga_02.bmp,stimuli/tunga_02.bmp,right,,,,,0,88,88,88,354.61748601000056,None,356.0155598000001,None,355.11719230000017,None,355.11719230000017,None,right,1,0.3636373999997886,355.11719230000017,None,stimuli/tunga_02.bmp,0,1,0,355.5027779000002,None,355.5027779000002,None,355.5027779000002,None,1900,1300,self win,1,356.51495650000015,None,00,2021_Feb_28_1419,prosocial-learning,2020.2.4,60.08218040633399,
+89,0,3,0,self,win,self_win,0,"Play to WIN points
+
+for YOURSELF",17,stimuli/tunga_14.bmp,1,stimuli/tunga_02.bmp,0,0,14,2,stimuli/tunga_14.bmp,stimuli/tunga_02.bmp,stimuli/tunga_14.bmp,left,,,,,0,89,89,89,358.02990611000007,None,359.46170359999996,None,358.5298491000003,None,358.5298491000003,None,left,1,0.4089712999993935,358.5298491000003,None,stimuli/tunga_14.bmp,1,0,1,358.96368170000005,None,358.96368170000005,None,358.96368170000005,None,1900,1400,self win,1,359.9612498000006,None,00,2021_Feb_28_1419,prosocial-learning,2020.2.4,60.08218040633399,
+90,0,3,0,self,win,self_win,0,"Play to WIN points
+
+for YOURSELF",18,stimuli/tunga_14.bmp,1,stimuli/tunga_02.bmp,0,1,2,14,stimuli/tunga_02.bmp,stimuli/tunga_14.bmp,stimuli/tunga_14.bmp,right,,,,,0,90,90,90,361.4759463100005,None,362.8741385000003,None,361.9758489000005,None,361.9758489000005,None,right,1,0.35115220000079717,361.9758489000005,None,stimuli/tunga_14.bmp,1,0,1,362.36325300000044,None,362.36325300000044,None,362.36325300000044,None,1900,1500,self win,1,363.37377600000036,None,00,2021_Feb_28_1419,prosocial-learning,2020.2.4,60.08218040633399,
+91,0,3,0,self,win,self_win,0,"Play to WIN points
+
+for YOURSELF",19,stimuli/tunga_14.bmp,0,stimuli/tunga_02.bmp,1,0,14,2,stimuli/tunga_14.bmp,stimuli/tunga_02.bmp,stimuli/tunga_02.bmp,right,,,,,0,91,91,91,364.8887836099999,None,366.4201982000004,None,365.3887540000005,None,365.3887540000005,None,left,0,0.4917176999997537,365.3887540000005,None,stimuli/tunga_14.bmp,1,0,1,365.90743310000016,None,365.90743310000016,None,365.90743310000016,None,1900,1500,self avoid win,0,366.9231043,None,00,2021_Feb_28_1419,prosocial-learning,2020.2.4,60.08218040633399,
+92,0,3,0,self,win,self_win,0,"Play to WIN points
+
+for YOURSELF",20,stimuli/tunga_14.bmp,0,stimuli/tunga_02.bmp,1,0,14,2,stimuli/tunga_14.bmp,stimuli/tunga_02.bmp,stimuli/tunga_02.bmp,right,,,,,0,92,92,92,368.43469251000045,None,369.8661589000003,None,368.9345142000002,None,368.9345142000002,None,left,0,0.39547749999928783,368.9345142000002,None,stimuli/tunga_14.bmp,1,0,1,369.3535010000005,None,369.3535010000005,None,369.3535010000005,None,1900,1500,self avoid win,0,370.3655060000001,None,00,2021_Feb_28_1419,prosocial-learning,2020.2.4,60.08218040633399,
+93,0,3,0,self,win,self_win,0,"Play to WIN points
+
+for YOURSELF",21,stimuli/tunga_14.bmp,1,stimuli/tunga_02.bmp,0,0,14,2,stimuli/tunga_14.bmp,stimuli/tunga_02.bmp,stimuli/tunga_14.bmp,left,,,,,0,93,93,93,371.8808173100002,None,373.1955981000001,None,372.3804619000002,None,372.3804619000002,None,right,0,0.27608950000012555,372.3804619000002,None,stimuli/tunga_02.bmp,0,1,0,372.68187300000045,None,372.68187300000045,None,372.68187300000045,None,1900,1500,self avoid win,0,373.6951071000003,None,00,2021_Feb_28_1419,prosocial-learning,2020.2.4,60.08218040633399,
+94,0,3,0,self,win,self_win,0,"Play to WIN points
+
+for YOURSELF",22,stimuli/tunga_14.bmp,1,stimuli/tunga_02.bmp,0,1,2,14,stimuli/tunga_02.bmp,stimuli/tunga_14.bmp,stimuli/tunga_14.bmp,right,,,,,0,94,94,94,375.20985901000006,None,376.7082960000007,None,375.7099371000004,None,375.7099371000004,None,left,0,0.4546848999998474,375.7099371000004,None,stimuli/tunga_02.bmp,0,1,0,376.1956670999998,None,376.1956670999998,None,376.1956670999998,None,1900,1500,self avoid win,0,377.2077565999998,None,00,2021_Feb_28_1419,prosocial-learning,2020.2.4,60.08218040633399,
+95,0,3,0,self,win,self_win,0,"Play to WIN points
+
+for YOURSELF",23,stimuli/tunga_14.bmp,1,stimuli/tunga_02.bmp,0,0,14,2,stimuli/tunga_14.bmp,stimuli/tunga_02.bmp,stimuli/tunga_14.bmp,left,,,,,0,95,95,95,378.7226127099999,None,380.0877369,None,379.2226470000005,None,379.2226470000005,None,left,1,0.35002410000015516,379.2226470000005,None,stimuli/tunga_14.bmp,1,0,1,379.5895825000007,None,379.5895825000007,None,379.5895825000007,None,1900,1600,self win,1,380.5887465000005,None,00,2021_Feb_28_1419,prosocial-learning,2020.2.4,60.08218040633399,

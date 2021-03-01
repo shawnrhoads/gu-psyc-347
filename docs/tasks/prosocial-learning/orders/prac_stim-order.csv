@@ -1,0 +1,17 @@
+index,condition,goal,block,block_num,block_instr_text,trial_num,stim_0,stim_0_value,stim_1,stim_1_value,position_changed,stim_left,stim_right,stim_left_name,stim_right_name,optimal_stim,optimal_choice
+100,practice,win,practice_win,1,Play to WIN points,0,stimuli/tunga_22.bmp,1,stimuli/tunga_21.bmp,0,1,21,22,stimuli/tunga_21.bmp,stimuli/tunga_22.bmp,stimuli/tunga_22.bmp,right
+101,practice,win,practice_win,1,Play to WIN points,1,stimuli/tunga_22.bmp,1,stimuli/tunga_21.bmp,0,1,21,22,stimuli/tunga_21.bmp,stimuli/tunga_22.bmp,stimuli/tunga_22.bmp,right
+102,practice,win,practice_win,1,Play to WIN points,2,stimuli/tunga_22.bmp,0,stimuli/tunga_21.bmp,1,0,22,21,stimuli/tunga_22.bmp,stimuli/tunga_21.bmp,stimuli/tunga_21.bmp,right
+103,practice,win,practice_win,1,Play to WIN points,3,stimuli/tunga_22.bmp,1,stimuli/tunga_21.bmp,0,0,22,21,stimuli/tunga_22.bmp,stimuli/tunga_21.bmp,stimuli/tunga_22.bmp,left
+104,practice,win,practice_win,1,Play to WIN points,4,stimuli/tunga_22.bmp,0,stimuli/tunga_21.bmp,1,1,21,22,stimuli/tunga_21.bmp,stimuli/tunga_22.bmp,stimuli/tunga_21.bmp,left
+105,practice,win,practice_win,1,Play to WIN points,5,stimuli/tunga_22.bmp,1,stimuli/tunga_21.bmp,0,0,22,21,stimuli/tunga_22.bmp,stimuli/tunga_21.bmp,stimuli/tunga_22.bmp,left
+106,practice,win,practice_win,1,Play to WIN points,6,stimuli/tunga_22.bmp,1,stimuli/tunga_21.bmp,0,1,21,22,stimuli/tunga_21.bmp,stimuli/tunga_22.bmp,stimuli/tunga_22.bmp,right
+107,practice,win,practice_win,1,Play to WIN points,7,stimuli/tunga_22.bmp,1,stimuli/tunga_21.bmp,0,0,22,21,stimuli/tunga_22.bmp,stimuli/tunga_21.bmp,stimuli/tunga_22.bmp,left
+108,practice,avoidloss,practice_avoidloss,3,Play to AVOID LOSING points,0,stimuli/tunga_23.bmp,0,stimuli/tunga_24.bmp,-1,0,23,24,stimuli/tunga_23.bmp,stimuli/tunga_24.bmp,stimuli/tunga_23.bmp,left
+109,practice,avoidloss,practice_avoidloss,3,Play to AVOID LOSING points,1,stimuli/tunga_23.bmp,-1,stimuli/tunga_24.bmp,0,0,23,24,stimuli/tunga_23.bmp,stimuli/tunga_24.bmp,stimuli/tunga_24.bmp,right
+110,practice,avoidloss,practice_avoidloss,3,Play to AVOID LOSING points,2,stimuli/tunga_23.bmp,-1,stimuli/tunga_24.bmp,0,1,24,23,stimuli/tunga_24.bmp,stimuli/tunga_23.bmp,stimuli/tunga_24.bmp,left
+111,practice,avoidloss,practice_avoidloss,3,Play to AVOID LOSING points,3,stimuli/tunga_23.bmp,0,stimuli/tunga_24.bmp,-1,1,24,23,stimuli/tunga_24.bmp,stimuli/tunga_23.bmp,stimuli/tunga_23.bmp,right
+112,practice,avoidloss,practice_avoidloss,3,Play to AVOID LOSING points,4,stimuli/tunga_23.bmp,-1,stimuli/tunga_24.bmp,0,0,23,24,stimuli/tunga_23.bmp,stimuli/tunga_24.bmp,stimuli/tunga_24.bmp,right
+113,practice,avoidloss,practice_avoidloss,3,Play to AVOID LOSING points,5,stimuli/tunga_23.bmp,-1,stimuli/tunga_24.bmp,0,0,23,24,stimuli/tunga_23.bmp,stimuli/tunga_24.bmp,stimuli/tunga_24.bmp,right
+114,practice,avoidloss,practice_avoidloss,3,Play to AVOID LOSING points,6,stimuli/tunga_23.bmp,-1,stimuli/tunga_24.bmp,0,1,24,23,stimuli/tunga_24.bmp,stimuli/tunga_23.bmp,stimuli/tunga_24.bmp,left
+115,practice,avoidloss,practice_avoidloss,3,Play to AVOID LOSING points,7,stimuli/tunga_23.bmp,-1,stimuli/tunga_24.bmp,0,1,24,23,stimuli/tunga_24.bmp,stimuli/tunga_23.bmp,stimuli/tunga_24.bmp,left
