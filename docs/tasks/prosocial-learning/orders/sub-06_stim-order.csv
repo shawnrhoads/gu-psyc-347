@@ -1,0 +1,289 @@
+index,subject,order_num,session,condition,goal,block,block_num,block_instr_text,trial_num,stim_0,stim_0_value,stim_1,stim_1_value,position_changed,stim_left,stim_right,stim_left_name,stim_right_name,optimal_stim,optimal_choice
+0,6,2,0,social,win,social_win,1,"Play to WIN points
+
+for the NEXT PARTICIPANT",0,stimuli/tunga_07.bmp,1,stimuli/tunga_09.bmp,0,0,7,9,stimuli/tunga_07.bmp,stimuli/tunga_09.bmp,stimuli/tunga_07.bmp,left
+1,6,2,0,social,win,social_win,1,"Play to WIN points
+
+for the NEXT PARTICIPANT",1,stimuli/tunga_07.bmp,1,stimuli/tunga_09.bmp,0,0,7,9,stimuli/tunga_07.bmp,stimuli/tunga_09.bmp,stimuli/tunga_07.bmp,left
+2,6,2,0,social,win,social_win,1,"Play to WIN points
+
+for the NEXT PARTICIPANT",2,stimuli/tunga_07.bmp,1,stimuli/tunga_09.bmp,0,0,7,9,stimuli/tunga_07.bmp,stimuli/tunga_09.bmp,stimuli/tunga_07.bmp,left
+3,6,2,0,social,win,social_win,1,"Play to WIN points
+
+for the NEXT PARTICIPANT",3,stimuli/tunga_07.bmp,1,stimuli/tunga_09.bmp,0,1,9,7,stimuli/tunga_09.bmp,stimuli/tunga_07.bmp,stimuli/tunga_07.bmp,right
+4,6,2,0,social,win,social_win,1,"Play to WIN points
+
+for the NEXT PARTICIPANT",4,stimuli/tunga_07.bmp,0,stimuli/tunga_09.bmp,1,0,7,9,stimuli/tunga_07.bmp,stimuli/tunga_09.bmp,stimuli/tunga_09.bmp,right
+5,6,2,0,social,win,social_win,1,"Play to WIN points
+
+for the NEXT PARTICIPANT",5,stimuli/tunga_07.bmp,1,stimuli/tunga_09.bmp,0,1,9,7,stimuli/tunga_09.bmp,stimuli/tunga_07.bmp,stimuli/tunga_07.bmp,right
+6,6,2,0,social,win,social_win,1,"Play to WIN points
+
+for the NEXT PARTICIPANT",6,stimuli/tunga_07.bmp,0,stimuli/tunga_09.bmp,1,0,7,9,stimuli/tunga_07.bmp,stimuli/tunga_09.bmp,stimuli/tunga_09.bmp,right
+7,6,2,0,social,win,social_win,1,"Play to WIN points
+
+for the NEXT PARTICIPANT",7,stimuli/tunga_07.bmp,1,stimuli/tunga_09.bmp,0,0,7,9,stimuli/tunga_07.bmp,stimuli/tunga_09.bmp,stimuli/tunga_07.bmp,left
+8,6,2,0,social,win,social_win,1,"Play to WIN points
+
+for the NEXT PARTICIPANT",8,stimuli/tunga_07.bmp,0,stimuli/tunga_09.bmp,1,1,9,7,stimuli/tunga_09.bmp,stimuli/tunga_07.bmp,stimuli/tunga_09.bmp,left
+9,6,2,0,social,win,social_win,1,"Play to WIN points
+
+for the NEXT PARTICIPANT",9,stimuli/tunga_07.bmp,1,stimuli/tunga_09.bmp,0,1,9,7,stimuli/tunga_09.bmp,stimuli/tunga_07.bmp,stimuli/tunga_07.bmp,right
+10,6,2,0,social,win,social_win,1,"Play to WIN points
+
+for the NEXT PARTICIPANT",10,stimuli/tunga_07.bmp,1,stimuli/tunga_09.bmp,0,0,7,9,stimuli/tunga_07.bmp,stimuli/tunga_09.bmp,stimuli/tunga_07.bmp,left
+11,6,2,0,social,win,social_win,1,"Play to WIN points
+
+for the NEXT PARTICIPANT",11,stimuli/tunga_07.bmp,1,stimuli/tunga_09.bmp,0,1,9,7,stimuli/tunga_09.bmp,stimuli/tunga_07.bmp,stimuli/tunga_07.bmp,right
+12,6,2,0,social,win,social_win,1,"Play to WIN points
+
+for the NEXT PARTICIPANT",12,stimuli/tunga_07.bmp,1,stimuli/tunga_09.bmp,0,0,7,9,stimuli/tunga_07.bmp,stimuli/tunga_09.bmp,stimuli/tunga_07.bmp,left
+13,6,2,0,social,win,social_win,1,"Play to WIN points
+
+for the NEXT PARTICIPANT",13,stimuli/tunga_07.bmp,1,stimuli/tunga_09.bmp,0,1,9,7,stimuli/tunga_09.bmp,stimuli/tunga_07.bmp,stimuli/tunga_07.bmp,right
+14,6,2,0,social,win,social_win,1,"Play to WIN points
+
+for the NEXT PARTICIPANT",14,stimuli/tunga_07.bmp,1,stimuli/tunga_09.bmp,0,1,9,7,stimuli/tunga_09.bmp,stimuli/tunga_07.bmp,stimuli/tunga_07.bmp,right
+15,6,2,0,social,win,social_win,1,"Play to WIN points
+
+for the NEXT PARTICIPANT",15,stimuli/tunga_07.bmp,0,stimuli/tunga_09.bmp,1,0,7,9,stimuli/tunga_07.bmp,stimuli/tunga_09.bmp,stimuli/tunga_09.bmp,right
+16,6,2,0,social,win,social_win,1,"Play to WIN points
+
+for the NEXT PARTICIPANT",16,stimuli/tunga_07.bmp,0,stimuli/tunga_09.bmp,1,0,7,9,stimuli/tunga_07.bmp,stimuli/tunga_09.bmp,stimuli/tunga_09.bmp,right
+17,6,2,0,social,win,social_win,1,"Play to WIN points
+
+for the NEXT PARTICIPANT",17,stimuli/tunga_07.bmp,1,stimuli/tunga_09.bmp,0,1,9,7,stimuli/tunga_09.bmp,stimuli/tunga_07.bmp,stimuli/tunga_07.bmp,right
+18,6,2,0,social,win,social_win,1,"Play to WIN points
+
+for the NEXT PARTICIPANT",18,stimuli/tunga_07.bmp,0,stimuli/tunga_09.bmp,1,1,9,7,stimuli/tunga_09.bmp,stimuli/tunga_07.bmp,stimuli/tunga_09.bmp,left
+19,6,2,0,social,win,social_win,1,"Play to WIN points
+
+for the NEXT PARTICIPANT",19,stimuli/tunga_07.bmp,1,stimuli/tunga_09.bmp,0,0,7,9,stimuli/tunga_07.bmp,stimuli/tunga_09.bmp,stimuli/tunga_07.bmp,left
+20,6,2,0,social,win,social_win,1,"Play to WIN points
+
+for the NEXT PARTICIPANT",20,stimuli/tunga_07.bmp,1,stimuli/tunga_09.bmp,0,1,9,7,stimuli/tunga_09.bmp,stimuli/tunga_07.bmp,stimuli/tunga_07.bmp,right
+21,6,2,0,social,win,social_win,1,"Play to WIN points
+
+for the NEXT PARTICIPANT",21,stimuli/tunga_07.bmp,1,stimuli/tunga_09.bmp,0,1,9,7,stimuli/tunga_09.bmp,stimuli/tunga_07.bmp,stimuli/tunga_07.bmp,right
+22,6,2,0,social,win,social_win,1,"Play to WIN points
+
+for the NEXT PARTICIPANT",22,stimuli/tunga_07.bmp,1,stimuli/tunga_09.bmp,0,0,7,9,stimuli/tunga_07.bmp,stimuli/tunga_09.bmp,stimuli/tunga_07.bmp,left
+23,6,2,0,social,win,social_win,1,"Play to WIN points
+
+for the NEXT PARTICIPANT",23,stimuli/tunga_07.bmp,1,stimuli/tunga_09.bmp,0,1,9,7,stimuli/tunga_09.bmp,stimuli/tunga_07.bmp,stimuli/tunga_07.bmp,right
+24,6,2,0,self,win,self_win,0,"Play to WIN points
+
+for YOURSELF",0,stimuli/tunga_05.bmp,1,stimuli/tunga_11.bmp,0,1,11,5,stimuli/tunga_11.bmp,stimuli/tunga_05.bmp,stimuli/tunga_05.bmp,right
+25,6,2,0,self,win,self_win,0,"Play to WIN points
+
+for YOURSELF",1,stimuli/tunga_05.bmp,1,stimuli/tunga_11.bmp,0,0,5,11,stimuli/tunga_05.bmp,stimuli/tunga_11.bmp,stimuli/tunga_05.bmp,left
+26,6,2,0,self,win,self_win,0,"Play to WIN points
+
+for YOURSELF",2,stimuli/tunga_05.bmp,1,stimuli/tunga_11.bmp,0,1,11,5,stimuli/tunga_11.bmp,stimuli/tunga_05.bmp,stimuli/tunga_05.bmp,right
+27,6,2,0,self,win,self_win,0,"Play to WIN points
+
+for YOURSELF",3,stimuli/tunga_05.bmp,1,stimuli/tunga_11.bmp,0,0,5,11,stimuli/tunga_05.bmp,stimuli/tunga_11.bmp,stimuli/tunga_05.bmp,left
+28,6,2,0,self,win,self_win,0,"Play to WIN points
+
+for YOURSELF",4,stimuli/tunga_05.bmp,1,stimuli/tunga_11.bmp,0,1,11,5,stimuli/tunga_11.bmp,stimuli/tunga_05.bmp,stimuli/tunga_05.bmp,right
+29,6,2,0,self,win,self_win,0,"Play to WIN points
+
+for YOURSELF",5,stimuli/tunga_05.bmp,0,stimuli/tunga_11.bmp,1,1,11,5,stimuli/tunga_11.bmp,stimuli/tunga_05.bmp,stimuli/tunga_11.bmp,left
+30,6,2,0,self,win,self_win,0,"Play to WIN points
+
+for YOURSELF",6,stimuli/tunga_05.bmp,0,stimuli/tunga_11.bmp,1,1,11,5,stimuli/tunga_11.bmp,stimuli/tunga_05.bmp,stimuli/tunga_11.bmp,left
+31,6,2,0,self,win,self_win,0,"Play to WIN points
+
+for YOURSELF",7,stimuli/tunga_05.bmp,1,stimuli/tunga_11.bmp,0,0,5,11,stimuli/tunga_05.bmp,stimuli/tunga_11.bmp,stimuli/tunga_05.bmp,left
+32,6,2,0,self,win,self_win,0,"Play to WIN points
+
+for YOURSELF",8,stimuli/tunga_05.bmp,1,stimuli/tunga_11.bmp,0,0,5,11,stimuli/tunga_05.bmp,stimuli/tunga_11.bmp,stimuli/tunga_05.bmp,left
+33,6,2,0,self,win,self_win,0,"Play to WIN points
+
+for YOURSELF",9,stimuli/tunga_05.bmp,1,stimuli/tunga_11.bmp,0,1,11,5,stimuli/tunga_11.bmp,stimuli/tunga_05.bmp,stimuli/tunga_05.bmp,right
+34,6,2,0,self,win,self_win,0,"Play to WIN points
+
+for YOURSELF",10,stimuli/tunga_05.bmp,1,stimuli/tunga_11.bmp,0,1,11,5,stimuli/tunga_11.bmp,stimuli/tunga_05.bmp,stimuli/tunga_05.bmp,right
+35,6,2,0,self,win,self_win,0,"Play to WIN points
+
+for YOURSELF",11,stimuli/tunga_05.bmp,1,stimuli/tunga_11.bmp,0,1,11,5,stimuli/tunga_11.bmp,stimuli/tunga_05.bmp,stimuli/tunga_05.bmp,right
+36,6,2,0,self,win,self_win,0,"Play to WIN points
+
+for YOURSELF",12,stimuli/tunga_05.bmp,1,stimuli/tunga_11.bmp,0,0,5,11,stimuli/tunga_05.bmp,stimuli/tunga_11.bmp,stimuli/tunga_05.bmp,left
+37,6,2,0,self,win,self_win,0,"Play to WIN points
+
+for YOURSELF",13,stimuli/tunga_05.bmp,1,stimuli/tunga_11.bmp,0,0,5,11,stimuli/tunga_05.bmp,stimuli/tunga_11.bmp,stimuli/tunga_05.bmp,left
+38,6,2,0,self,win,self_win,0,"Play to WIN points
+
+for YOURSELF",14,stimuli/tunga_05.bmp,1,stimuli/tunga_11.bmp,0,1,11,5,stimuli/tunga_11.bmp,stimuli/tunga_05.bmp,stimuli/tunga_05.bmp,right
+39,6,2,0,self,win,self_win,0,"Play to WIN points
+
+for YOURSELF",15,stimuli/tunga_05.bmp,0,stimuli/tunga_11.bmp,1,0,5,11,stimuli/tunga_05.bmp,stimuli/tunga_11.bmp,stimuli/tunga_11.bmp,right
+40,6,2,0,self,win,self_win,0,"Play to WIN points
+
+for YOURSELF",16,stimuli/tunga_05.bmp,0,stimuli/tunga_11.bmp,1,0,5,11,stimuli/tunga_05.bmp,stimuli/tunga_11.bmp,stimuli/tunga_11.bmp,right
+41,6,2,0,self,win,self_win,0,"Play to WIN points
+
+for YOURSELF",17,stimuli/tunga_05.bmp,1,stimuli/tunga_11.bmp,0,0,5,11,stimuli/tunga_05.bmp,stimuli/tunga_11.bmp,stimuli/tunga_05.bmp,left
+42,6,2,0,self,win,self_win,0,"Play to WIN points
+
+for YOURSELF",18,stimuli/tunga_05.bmp,1,stimuli/tunga_11.bmp,0,1,11,5,stimuli/tunga_11.bmp,stimuli/tunga_05.bmp,stimuli/tunga_05.bmp,right
+43,6,2,0,self,win,self_win,0,"Play to WIN points
+
+for YOURSELF",19,stimuli/tunga_05.bmp,0,stimuli/tunga_11.bmp,1,0,5,11,stimuli/tunga_05.bmp,stimuli/tunga_11.bmp,stimuli/tunga_11.bmp,right
+44,6,2,0,self,win,self_win,0,"Play to WIN points
+
+for YOURSELF",20,stimuli/tunga_05.bmp,0,stimuli/tunga_11.bmp,1,1,11,5,stimuli/tunga_11.bmp,stimuli/tunga_05.bmp,stimuli/tunga_11.bmp,left
+45,6,2,0,self,win,self_win,0,"Play to WIN points
+
+for YOURSELF",21,stimuli/tunga_05.bmp,1,stimuli/tunga_11.bmp,0,0,5,11,stimuli/tunga_05.bmp,stimuli/tunga_11.bmp,stimuli/tunga_05.bmp,left
+46,6,2,0,self,win,self_win,0,"Play to WIN points
+
+for YOURSELF",22,stimuli/tunga_05.bmp,1,stimuli/tunga_11.bmp,0,1,11,5,stimuli/tunga_11.bmp,stimuli/tunga_05.bmp,stimuli/tunga_05.bmp,right
+47,6,2,0,self,win,self_win,0,"Play to WIN points
+
+for YOURSELF",23,stimuli/tunga_05.bmp,1,stimuli/tunga_11.bmp,0,0,5,11,stimuli/tunga_05.bmp,stimuli/tunga_11.bmp,stimuli/tunga_05.bmp,left
+48,6,2,0,social,avoidloss,social_avoidloss,3,"Play to AVOID LOSING points
+
+for the NEXT PARTICIPANT",0,stimuli/tunga_13.bmp,-1,stimuli/tunga_02.bmp,0,0,13,2,stimuli/tunga_13.bmp,stimuli/tunga_02.bmp,stimuli/tunga_02.bmp,right
+49,6,2,0,social,avoidloss,social_avoidloss,3,"Play to AVOID LOSING points
+
+for the NEXT PARTICIPANT",1,stimuli/tunga_13.bmp,-1,stimuli/tunga_02.bmp,0,0,13,2,stimuli/tunga_13.bmp,stimuli/tunga_02.bmp,stimuli/tunga_02.bmp,right
+50,6,2,0,social,avoidloss,social_avoidloss,3,"Play to AVOID LOSING points
+
+for the NEXT PARTICIPANT",2,stimuli/tunga_13.bmp,0,stimuli/tunga_02.bmp,-1,0,13,2,stimuli/tunga_13.bmp,stimuli/tunga_02.bmp,stimuli/tunga_13.bmp,left
+51,6,2,0,social,avoidloss,social_avoidloss,3,"Play to AVOID LOSING points
+
+for the NEXT PARTICIPANT",3,stimuli/tunga_13.bmp,-1,stimuli/tunga_02.bmp,0,0,13,2,stimuli/tunga_13.bmp,stimuli/tunga_02.bmp,stimuli/tunga_02.bmp,right
+52,6,2,0,social,avoidloss,social_avoidloss,3,"Play to AVOID LOSING points
+
+for the NEXT PARTICIPANT",4,stimuli/tunga_13.bmp,-1,stimuli/tunga_02.bmp,0,0,13,2,stimuli/tunga_13.bmp,stimuli/tunga_02.bmp,stimuli/tunga_02.bmp,right
+53,6,2,0,social,avoidloss,social_avoidloss,3,"Play to AVOID LOSING points
+
+for the NEXT PARTICIPANT",5,stimuli/tunga_13.bmp,-1,stimuli/tunga_02.bmp,0,0,13,2,stimuli/tunga_13.bmp,stimuli/tunga_02.bmp,stimuli/tunga_02.bmp,right
+54,6,2,0,social,avoidloss,social_avoidloss,3,"Play to AVOID LOSING points
+
+for the NEXT PARTICIPANT",6,stimuli/tunga_13.bmp,-1,stimuli/tunga_02.bmp,0,1,2,13,stimuli/tunga_02.bmp,stimuli/tunga_13.bmp,stimuli/tunga_02.bmp,left
+55,6,2,0,social,avoidloss,social_avoidloss,3,"Play to AVOID LOSING points
+
+for the NEXT PARTICIPANT",7,stimuli/tunga_13.bmp,-1,stimuli/tunga_02.bmp,0,1,2,13,stimuli/tunga_02.bmp,stimuli/tunga_13.bmp,stimuli/tunga_02.bmp,left
+56,6,2,0,social,avoidloss,social_avoidloss,3,"Play to AVOID LOSING points
+
+for the NEXT PARTICIPANT",8,stimuli/tunga_13.bmp,-1,stimuli/tunga_02.bmp,0,0,13,2,stimuli/tunga_13.bmp,stimuli/tunga_02.bmp,stimuli/tunga_02.bmp,right
+57,6,2,0,social,avoidloss,social_avoidloss,3,"Play to AVOID LOSING points
+
+for the NEXT PARTICIPANT",9,stimuli/tunga_13.bmp,0,stimuli/tunga_02.bmp,-1,0,13,2,stimuli/tunga_13.bmp,stimuli/tunga_02.bmp,stimuli/tunga_13.bmp,left
+58,6,2,0,social,avoidloss,social_avoidloss,3,"Play to AVOID LOSING points
+
+for the NEXT PARTICIPANT",10,stimuli/tunga_13.bmp,-1,stimuli/tunga_02.bmp,0,0,13,2,stimuli/tunga_13.bmp,stimuli/tunga_02.bmp,stimuli/tunga_02.bmp,right
+59,6,2,0,social,avoidloss,social_avoidloss,3,"Play to AVOID LOSING points
+
+for the NEXT PARTICIPANT",11,stimuli/tunga_13.bmp,-1,stimuli/tunga_02.bmp,0,1,2,13,stimuli/tunga_02.bmp,stimuli/tunga_13.bmp,stimuli/tunga_02.bmp,left
+60,6,2,0,social,avoidloss,social_avoidloss,3,"Play to AVOID LOSING points
+
+for the NEXT PARTICIPANT",12,stimuli/tunga_13.bmp,0,stimuli/tunga_02.bmp,-1,1,2,13,stimuli/tunga_02.bmp,stimuli/tunga_13.bmp,stimuli/tunga_13.bmp,right
+61,6,2,0,social,avoidloss,social_avoidloss,3,"Play to AVOID LOSING points
+
+for the NEXT PARTICIPANT",13,stimuli/tunga_13.bmp,-1,stimuli/tunga_02.bmp,0,1,2,13,stimuli/tunga_02.bmp,stimuli/tunga_13.bmp,stimuli/tunga_02.bmp,left
+62,6,2,0,social,avoidloss,social_avoidloss,3,"Play to AVOID LOSING points
+
+for the NEXT PARTICIPANT",14,stimuli/tunga_13.bmp,-1,stimuli/tunga_02.bmp,0,1,2,13,stimuli/tunga_02.bmp,stimuli/tunga_13.bmp,stimuli/tunga_02.bmp,left
+63,6,2,0,social,avoidloss,social_avoidloss,3,"Play to AVOID LOSING points
+
+for the NEXT PARTICIPANT",15,stimuli/tunga_13.bmp,0,stimuli/tunga_02.bmp,-1,1,2,13,stimuli/tunga_02.bmp,stimuli/tunga_13.bmp,stimuli/tunga_13.bmp,right
+64,6,2,0,social,avoidloss,social_avoidloss,3,"Play to AVOID LOSING points
+
+for the NEXT PARTICIPANT",16,stimuli/tunga_13.bmp,0,stimuli/tunga_02.bmp,-1,1,2,13,stimuli/tunga_02.bmp,stimuli/tunga_13.bmp,stimuli/tunga_13.bmp,right
+65,6,2,0,social,avoidloss,social_avoidloss,3,"Play to AVOID LOSING points
+
+for the NEXT PARTICIPANT",17,stimuli/tunga_13.bmp,-1,stimuli/tunga_02.bmp,0,0,13,2,stimuli/tunga_13.bmp,stimuli/tunga_02.bmp,stimuli/tunga_02.bmp,right
+66,6,2,0,social,avoidloss,social_avoidloss,3,"Play to AVOID LOSING points
+
+for the NEXT PARTICIPANT",18,stimuli/tunga_13.bmp,-1,stimuli/tunga_02.bmp,0,0,13,2,stimuli/tunga_13.bmp,stimuli/tunga_02.bmp,stimuli/tunga_02.bmp,right
+67,6,2,0,social,avoidloss,social_avoidloss,3,"Play to AVOID LOSING points
+
+for the NEXT PARTICIPANT",19,stimuli/tunga_13.bmp,-1,stimuli/tunga_02.bmp,0,0,13,2,stimuli/tunga_13.bmp,stimuli/tunga_02.bmp,stimuli/tunga_02.bmp,right
+68,6,2,0,social,avoidloss,social_avoidloss,3,"Play to AVOID LOSING points
+
+for the NEXT PARTICIPANT",20,stimuli/tunga_13.bmp,0,stimuli/tunga_02.bmp,-1,1,2,13,stimuli/tunga_02.bmp,stimuli/tunga_13.bmp,stimuli/tunga_13.bmp,right
+69,6,2,0,social,avoidloss,social_avoidloss,3,"Play to AVOID LOSING points
+
+for the NEXT PARTICIPANT",21,stimuli/tunga_13.bmp,-1,stimuli/tunga_02.bmp,0,1,2,13,stimuli/tunga_02.bmp,stimuli/tunga_13.bmp,stimuli/tunga_02.bmp,left
+70,6,2,0,social,avoidloss,social_avoidloss,3,"Play to AVOID LOSING points
+
+for the NEXT PARTICIPANT",22,stimuli/tunga_13.bmp,-1,stimuli/tunga_02.bmp,0,1,2,13,stimuli/tunga_02.bmp,stimuli/tunga_13.bmp,stimuli/tunga_02.bmp,left
+71,6,2,0,social,avoidloss,social_avoidloss,3,"Play to AVOID LOSING points
+
+for the NEXT PARTICIPANT",23,stimuli/tunga_13.bmp,-1,stimuli/tunga_02.bmp,0,1,2,13,stimuli/tunga_02.bmp,stimuli/tunga_13.bmp,stimuli/tunga_02.bmp,left
+72,6,2,0,self,avoidloss,self_avoidloss,2,"Play to AVOID LOSING points
+
+for YOURSELF",0,stimuli/tunga_03.bmp,-1,stimuli/tunga_08.bmp,0,1,8,3,stimuli/tunga_08.bmp,stimuli/tunga_03.bmp,stimuli/tunga_08.bmp,left
+73,6,2,0,self,avoidloss,self_avoidloss,2,"Play to AVOID LOSING points
+
+for YOURSELF",1,stimuli/tunga_03.bmp,-1,stimuli/tunga_08.bmp,0,0,3,8,stimuli/tunga_03.bmp,stimuli/tunga_08.bmp,stimuli/tunga_08.bmp,right
+74,6,2,0,self,avoidloss,self_avoidloss,2,"Play to AVOID LOSING points
+
+for YOURSELF",2,stimuli/tunga_03.bmp,-1,stimuli/tunga_08.bmp,0,0,3,8,stimuli/tunga_03.bmp,stimuli/tunga_08.bmp,stimuli/tunga_08.bmp,right
+75,6,2,0,self,avoidloss,self_avoidloss,2,"Play to AVOID LOSING points
+
+for YOURSELF",3,stimuli/tunga_03.bmp,-1,stimuli/tunga_08.bmp,0,0,3,8,stimuli/tunga_03.bmp,stimuli/tunga_08.bmp,stimuli/tunga_08.bmp,right
+76,6,2,0,self,avoidloss,self_avoidloss,2,"Play to AVOID LOSING points
+
+for YOURSELF",4,stimuli/tunga_03.bmp,0,stimuli/tunga_08.bmp,-1,1,8,3,stimuli/tunga_08.bmp,stimuli/tunga_03.bmp,stimuli/tunga_03.bmp,right
+77,6,2,0,self,avoidloss,self_avoidloss,2,"Play to AVOID LOSING points
+
+for YOURSELF",5,stimuli/tunga_03.bmp,-1,stimuli/tunga_08.bmp,0,0,3,8,stimuli/tunga_03.bmp,stimuli/tunga_08.bmp,stimuli/tunga_08.bmp,right
+78,6,2,0,self,avoidloss,self_avoidloss,2,"Play to AVOID LOSING points
+
+for YOURSELF",6,stimuli/tunga_03.bmp,-1,stimuli/tunga_08.bmp,0,1,8,3,stimuli/tunga_08.bmp,stimuli/tunga_03.bmp,stimuli/tunga_08.bmp,left
+79,6,2,0,self,avoidloss,self_avoidloss,2,"Play to AVOID LOSING points
+
+for YOURSELF",7,stimuli/tunga_03.bmp,-1,stimuli/tunga_08.bmp,0,0,3,8,stimuli/tunga_03.bmp,stimuli/tunga_08.bmp,stimuli/tunga_08.bmp,right
+80,6,2,0,self,avoidloss,self_avoidloss,2,"Play to AVOID LOSING points
+
+for YOURSELF",8,stimuli/tunga_03.bmp,-1,stimuli/tunga_08.bmp,0,0,3,8,stimuli/tunga_03.bmp,stimuli/tunga_08.bmp,stimuli/tunga_08.bmp,right
+81,6,2,0,self,avoidloss,self_avoidloss,2,"Play to AVOID LOSING points
+
+for YOURSELF",9,stimuli/tunga_03.bmp,0,stimuli/tunga_08.bmp,-1,0,3,8,stimuli/tunga_03.bmp,stimuli/tunga_08.bmp,stimuli/tunga_03.bmp,left
+82,6,2,0,self,avoidloss,self_avoidloss,2,"Play to AVOID LOSING points
+
+for YOURSELF",10,stimuli/tunga_03.bmp,-1,stimuli/tunga_08.bmp,0,1,8,3,stimuli/tunga_08.bmp,stimuli/tunga_03.bmp,stimuli/tunga_08.bmp,left
+83,6,2,0,self,avoidloss,self_avoidloss,2,"Play to AVOID LOSING points
+
+for YOURSELF",11,stimuli/tunga_03.bmp,-1,stimuli/tunga_08.bmp,0,1,8,3,stimuli/tunga_08.bmp,stimuli/tunga_03.bmp,stimuli/tunga_08.bmp,left
+84,6,2,0,self,avoidloss,self_avoidloss,2,"Play to AVOID LOSING points
+
+for YOURSELF",12,stimuli/tunga_03.bmp,-1,stimuli/tunga_08.bmp,0,1,8,3,stimuli/tunga_08.bmp,stimuli/tunga_03.bmp,stimuli/tunga_08.bmp,left
+85,6,2,0,self,avoidloss,self_avoidloss,2,"Play to AVOID LOSING points
+
+for YOURSELF",13,stimuli/tunga_03.bmp,0,stimuli/tunga_08.bmp,-1,1,8,3,stimuli/tunga_08.bmp,stimuli/tunga_03.bmp,stimuli/tunga_03.bmp,right
+86,6,2,0,self,avoidloss,self_avoidloss,2,"Play to AVOID LOSING points
+
+for YOURSELF",14,stimuli/tunga_03.bmp,0,stimuli/tunga_08.bmp,-1,0,3,8,stimuli/tunga_03.bmp,stimuli/tunga_08.bmp,stimuli/tunga_03.bmp,left
+87,6,2,0,self,avoidloss,self_avoidloss,2,"Play to AVOID LOSING points
+
+for YOURSELF",15,stimuli/tunga_03.bmp,0,stimuli/tunga_08.bmp,-1,0,3,8,stimuli/tunga_03.bmp,stimuli/tunga_08.bmp,stimuli/tunga_03.bmp,left
+88,6,2,0,self,avoidloss,self_avoidloss,2,"Play to AVOID LOSING points
+
+for YOURSELF",16,stimuli/tunga_03.bmp,-1,stimuli/tunga_08.bmp,0,1,8,3,stimuli/tunga_08.bmp,stimuli/tunga_03.bmp,stimuli/tunga_08.bmp,left
+89,6,2,0,self,avoidloss,self_avoidloss,2,"Play to AVOID LOSING points
+
+for YOURSELF",17,stimuli/tunga_03.bmp,-1,stimuli/tunga_08.bmp,0,0,3,8,stimuli/tunga_03.bmp,stimuli/tunga_08.bmp,stimuli/tunga_08.bmp,right
+90,6,2,0,self,avoidloss,self_avoidloss,2,"Play to AVOID LOSING points
+
+for YOURSELF",18,stimuli/tunga_03.bmp,-1,stimuli/tunga_08.bmp,0,0,3,8,stimuli/tunga_03.bmp,stimuli/tunga_08.bmp,stimuli/tunga_08.bmp,right
+91,6,2,0,self,avoidloss,self_avoidloss,2,"Play to AVOID LOSING points
+
+for YOURSELF",19,stimuli/tunga_03.bmp,-1,stimuli/tunga_08.bmp,0,1,8,3,stimuli/tunga_08.bmp,stimuli/tunga_03.bmp,stimuli/tunga_08.bmp,left
+92,6,2,0,self,avoidloss,self_avoidloss,2,"Play to AVOID LOSING points
+
+for YOURSELF",20,stimuli/tunga_03.bmp,-1,stimuli/tunga_08.bmp,0,1,8,3,stimuli/tunga_08.bmp,stimuli/tunga_03.bmp,stimuli/tunga_08.bmp,left
+93,6,2,0,self,avoidloss,self_avoidloss,2,"Play to AVOID LOSING points
+
+for YOURSELF",21,stimuli/tunga_03.bmp,-1,stimuli/tunga_08.bmp,0,0,3,8,stimuli/tunga_03.bmp,stimuli/tunga_08.bmp,stimuli/tunga_08.bmp,right
+94,6,2,0,self,avoidloss,self_avoidloss,2,"Play to AVOID LOSING points
+
+for YOURSELF",22,stimuli/tunga_03.bmp,0,stimuli/tunga_08.bmp,-1,1,8,3,stimuli/tunga_08.bmp,stimuli/tunga_03.bmp,stimuli/tunga_03.bmp,right
+95,6,2,0,self,avoidloss,self_avoidloss,2,"Play to AVOID LOSING points
+
+for YOURSELF",23,stimuli/tunga_03.bmp,-1,stimuli/tunga_08.bmp,0,1,8,3,stimuli/tunga_08.bmp,stimuli/tunga_03.bmp,stimuli/tunga_08.bmp,left
