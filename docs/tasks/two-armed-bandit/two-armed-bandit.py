@@ -1,8 +1,8 @@
-﻿#!/usr/bin/env python
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 """
-This experiment was created using PsychoPy3 Experiment Builder (v2020.2.10),
-    on February 28, 2021, at 16:41
+This experiment was created using PsychoPy3 Experiment Builder (v2021.1.0),
+    on March 01, 2021, at 23:14
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -15,14 +15,14 @@ from __future__ import absolute_import, division
 
 from psychopy import locale_setup
 from psychopy import prefs
-from psychopy import sound, gui, visual, core, data, event, logging, clock
+from psychopy import sound, gui, visual, core, data, event, logging, clock, colors
 from psychopy.constants import (NOT_STARTED, STARTED, PLAYING, PAUSED,
                                 STOPPED, FINISHED, PRESSED, RELEASED, FOREVER)
 
 import numpy as np  # whole numpy lib is available, prepend 'np.'
 from numpy import (sin, cos, tan, log, log10, pi, average,
                    sqrt, std, deg2rad, rad2deg, linspace, asarray)
-from numpy.random import random, randint, normal, shuffle
+from numpy.random import random, randint, normal, shuffle, choice as randchoice
 import os  # handy system and path functions
 import sys  # to get file system encoding
 
@@ -35,7 +35,7 @@ _thisDir = os.path.dirname(os.path.abspath(__file__))
 os.chdir(_thisDir)
 
 # Store info about the experiment session
-psychopyVersion = '2020.2.10'
+psychopyVersion = '2021.1.0'
 expName = 'two-armed-bandit'  # from the Builder filename that created this script
 expInfo = {'participant': ''}
 dlg = gui.DlgFromDict(dictionary=expInfo, sortKeys=False, title=expName)
@@ -46,12 +46,12 @@ expInfo['expName'] = expName
 expInfo['psychopyVersion'] = psychopyVersion
 
 # Data file name stem = absolute path + name; later add .psyexp, .csv, .log, etc
-filename = _thisDir + os.sep + u'data/sub-%s_task-%s_%s' % (expInfo['participant'], expName, expInfo['date'])
+filename = _thisDir + os.sep + u'data/sub-%s_task-%s' % (expInfo['participant'], expName)
 
 # An ExperimentHandler isn't essential but helps with data saving
 thisExp = data.ExperimentHandler(name=expName, version='',
     extraInfo=expInfo, runtimeInfo=None,
-    originPath='C:\\Users\\12025\\Documents\\GitHub\\gu-psyc-347\\docs\\tasks\\two-armed-bandit\\two-armed-bandit.py',
+    originPath='C:\\Users\\Shawn\\Box Sync\\Georgetown University\\20211 - Course\\gu-psyc-347\\docs\\tasks\\two-armed-bandit\\two-armed-bandit.py',
     savePickle=True, saveWideText=True,
     dataFileName=filename)
 # save a log file for detail verbose info
@@ -65,7 +65,7 @@ frameTolerance = 0.001  # how close to onset before 'same' frame
 
 # Setup the Window
 win = visual.Window(
-    size=[1600, 900], fullscr=True, screen=0, 
+    size=[1920, 1080], fullscr=True, screen=0, 
     winType='pyglet', allowGUI=False, allowStencil=False,
     monitor='testMonitor', color='black', colorSpace='rgb',
     blendMode='avg', useFBO=True, 
@@ -163,8 +163,7 @@ iti = visual.ShapeStim(
     win=win, name='iti', vertices='cross',
     size=(0.05, 0.05),
     ori=0, pos=(0, 0),
-    lineWidth=1, lineColor=[1,1,1], lineColorSpace='rgb',
-    fillColor=[1,1,1], fillColorSpace='rgb',
+    lineWidth=1,     colorSpace='rgb',  lineColor=[1,1,1], fillColor=[1,1,1],
     opacity=1, depth=0.0, interpolate=True)
 
 # Initialize components for Routine "stimuli"
@@ -212,8 +211,7 @@ iti = visual.ShapeStim(
     win=win, name='iti', vertices='cross',
     size=(0.05, 0.05),
     ori=0, pos=(0, 0),
-    lineWidth=1, lineColor=[1,1,1], lineColorSpace='rgb',
-    fillColor=[1,1,1], fillColorSpace='rgb',
+    lineWidth=1,     colorSpace='rgb',  lineColor=[1,1,1], fillColor=[1,1,1],
     opacity=1, depth=0.0, interpolate=True)
 
 # Initialize components for Routine "feedback"
@@ -264,8 +262,7 @@ iti = visual.ShapeStim(
     win=win, name='iti', vertices='cross',
     size=(0.05, 0.05),
     ori=0, pos=(0, 0),
-    lineWidth=1, lineColor=[1,1,1], lineColorSpace='rgb',
-    fillColor=[1,1,1], fillColorSpace='rgb',
+    lineWidth=1,     colorSpace='rgb',  lineColor=[1,1,1], fillColor=[1,1,1],
     opacity=1, depth=0.0, interpolate=True)
 
 # Initialize components for Routine "stimuli"
@@ -313,8 +310,7 @@ iti = visual.ShapeStim(
     win=win, name='iti', vertices='cross',
     size=(0.05, 0.05),
     ori=0, pos=(0, 0),
-    lineWidth=1, lineColor=[1,1,1], lineColorSpace='rgb',
-    fillColor=[1,1,1], fillColorSpace='rgb',
+    lineWidth=1,     colorSpace='rgb',  lineColor=[1,1,1], fillColor=[1,1,1],
     opacity=1, depth=0.0, interpolate=True)
 
 # Initialize components for Routine "feedback"
