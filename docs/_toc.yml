@@ -18,9 +18,9 @@
     - file: module-02-00_Linear-Modeling
     - file: module-02-01_Nonlinear-Modeling
     - file: module-02-02_Modeling-Exercises
-# - part: Module 03
-#     chapters:
-#       - file: module-03-00_RLDM
+- part: Module 03
+    chapters:
+      - file: module-03-00_Introduction-to-RL
 #       - file: module-03-01_Two-Armed-Bandit
 # - part: Module 04
 #   chapters:
