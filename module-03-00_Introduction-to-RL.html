@@ -59,6 +59,7 @@
     <link rel="canonical" href="https://shawnrhoads.github.io/gu-psyc-347/module-03-00_Introduction-to-RL.html" />
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Modeling Exercises" href="module-02-02_Modeling-Exercises.html" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
@@ -180,6 +181,18 @@
  <li class="toctree-l1">
   <a class="reference internal" href="module-02-02_Modeling-Exercises.html">
    Modeling Exercises
+  </a>
+ </li>
+</ul>
+<p class="caption collapsible-parent">
+ <span class="caption-text">
+  Module 03
+ </span>
+</p>
+<ul class="current nav sidenav_l1">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Introduction to RL
   </a>
  </li>
 </ul>
@@ -337,7 +350,7 @@
 <p>This tutorial was inspired by and adapted from <a class="reference external" href="http://www.hannekedenouden.ruhosting.nl/RLtutorial/Instructions.html">Models of Learning</a> and the <a class="reference external" href="https://github.com/NeuromatchAcademy/course-content">Neuromatch Academy tutorials</a> [<a class="reference external" href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>].</p>
 <div class="section" id="two-armed-bandit-task">
 <h2>Two-Armed Bandit Task<a class="headerlink" href="#two-armed-bandit-task" title="Permalink to this headline">¶</a></h2>
-<p>In this tutorial, we will complete a learning task where your goal will be to maximize the amount of points you can earn by sampling the reward distibution from one of two slot machines. This is also known as two-armed bandit task.</p>
+<p>In this tutorial, we will complete a learning task where your goal will be to maximize the amount of points you can earn by sampling the reward distribution from one of two slot machines. This is also known as a two-armed bandit task.</p>
 <div class="section" id="getting-started">
 <h3>Getting started<a class="headerlink" href="#getting-started" title="Permalink to this headline">¶</a></h3>
 <p>To start off, we will (0) open Terminal (Mac/Linux) or Anaconda Prompt (Windows). We will then (1) activate our course environment, (2) change the directory to <code class="docutils literal notranslate"><span class="pre">gu-psyc-347-master</span></code> (or whatever you named your course directory that we downloaded at the beginning of the semester; you can also <a class="reference external" href="https://github.com/shawnrhoads/gu-psyc-347/archive/master.zip">download it here</a>), (3) update the directory contents using <code class="docutils literal notranslate"><span class="pre">git</span></code>, and finally (4) check that our course environment is up-to-date.</p>
@@ -388,7 +401,7 @@
 <li><p>What do you think the probablities of the slot machines were? (e.g., 50/50, 25/75, 60/40, 80/20). Do you think you and your partner(s) had the same slot machine reward probabilities? Why or why not?</p></li>
 <li><p>Why do you think the position of the machines were randomized on each trial? In other words, why wasn’t the orange slot machine always on the same side?</p></li>
 <li><p>How many trials did it take you to learn which slot machine was better (if at all)? If there were less trials (&lt;72 trials) or more trials (&gt;72 trials), do you think you would be better or worse at learning?</p></li>
-<li><p>Were there times when you expected to receive a rewarding outcome but didn’t?</p></li>
+<li><p>Were there times when you expected to receive a rewarding outcome but didn’t? How did that change your behavior on the next trial?</p></li>
 <li><p>When you didn’t get the outcome you expected, how often did you switch your choice on the next trial? What parameter in the Rescorla-Wagner model might correspond to this phenomenon?</p></li>
 <li><p>How “explorative” was your behavior when you were completing the task? In other words, even if you learned which slot machine had the greater payout probability, how often did you sample the other one just to see what would happen? Do you think we can model this as well?</p></li>
 </ul>
@@ -729,6 +742,7 @@
         
         <div class='prev-next-bottom'>
             
+    <a class='left-prev' id="prev-link" href="module-02-02_Modeling-Exercises.html" title="previous page">Modeling Exercises</a>
 
         </div>
         
