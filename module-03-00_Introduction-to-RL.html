@@ -4,7 +4,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta charset="utf-8" />
-    <title>&lt;no title&gt; &#8212; Computational Models of Human Social Behavior (and Neuroscience)</title>
+    <title>Introduction to RL &#8212; Computational Models of Human Social Behavior (and Neuroscience)</title>
     
   <link rel="stylesheet" href="_static/css/index.f658d18f9b420779cfdf24aa0a7e2d77.css">
 
@@ -67,8 +67,8 @@
 <!-- Opengraph tags -->
 <meta property="og:url"         content="https://shawnrhoads.github.io/gu-psyc-347/module-03-00_Introduction-to-RL.html" />
 <meta property="og:type"        content="article" />
-<meta property="og:title"       content="&lt;no title&gt;" />
-<meta property="og:description" content="" />
+<meta property="og:title"       content="Introduction to RL" />
+<meta property="og:description" content="Introduction to RL  This tutorial was inspired by and adapted from Models of Learning and the Neuromatch Academy tutorials [CC BY 4.0].  Two-Armed Bandit Task  " />
 <meta property="og:image"       content="https://shawnrhoads.github.io/gu-psyc-347/_static/logo.png" />
 
 <meta name="twitter:card" content="summary" />
@@ -269,7 +269,56 @@
             <i class="fas fa-list"></i> Contents
         </div>
         <nav id="bd-toc-nav">
-            <ul class="simple nav section-nav flex-column">
+            <ul class="nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#two-armed-bandit-task">
+   Two-Armed Bandit Task
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#getting-started">
+     Getting started
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#running-the-task">
+     Running the task
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#task-debrief">
+     Task Debrief
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#viewing-your-behavior">
+   Viewing your behavior
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#cumulative-points-over-trials">
+     Cumulative points over trials
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#choices-on-each-trial">
+     Choices on each trial
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#actual-values-of-the-machine-over-trials">
+     Actual values of the machine over trials
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#actual-outcomes-during-the-task">
+     Actual outcomes during the task
+    </a>
+   </li>
+  </ul>
+ </li>
 </ul>
 
         </nav>
@@ -282,7 +331,379 @@
         
               <div>
                 
-  
+  <p><a class="reference external" href="https://colab.research.google.com/github/shawnrhoads/gu-psyc-347/blob/master/docs/module-03-00_Introduction-to-RL.ipynb"><img alt="Open In Colab" src="https://colab.research.google.com/assets/colab-badge.svg" /></a></p>
+<div class="section" id="introduction-to-rl">
+<h1>Introduction to RL<a class="headerlink" href="#introduction-to-rl" title="Permalink to this headline">¶</a></h1>
+<p>This tutorial was inspired by and adapted from <a class="reference external" href="http://www.hannekedenouden.ruhosting.nl/RLtutorial/Instructions.html">Models of Learning</a> and the <a class="reference external" href="https://github.com/NeuromatchAcademy/course-content">Neuromatch Academy tutorials</a> [<a class="reference external" href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>].</p>
+<div class="section" id="two-armed-bandit-task">
+<h2>Two-Armed Bandit Task<a class="headerlink" href="#two-armed-bandit-task" title="Permalink to this headline">¶</a></h2>
+<p>In this tutorial, we will complete a learning task where your goal will be to maximize the amount of points you can earn by sampling the reward distibution from one of two slot machines. This is also known as two-armed bandit task.</p>
+<div class="section" id="getting-started">
+<h3>Getting started<a class="headerlink" href="#getting-started" title="Permalink to this headline">¶</a></h3>
+<p>To start off, we will (0) open Terminal (Mac/Linux) or Anaconda Prompt (Windows). We will then (1) activate our course environment, (2) change the directory to <code class="docutils literal notranslate"><span class="pre">gu-psyc-347-master</span></code> (or whatever you named your course directory that we downloaded at the beginning of the semester; you can also <a class="reference external" href="https://github.com/shawnrhoads/gu-psyc-347/archive/master.zip">download it here</a>), (3) update the directory contents using <code class="docutils literal notranslate"><span class="pre">git</span></code>, and finally (4) check that our course environment is up-to-date.</p>
+<p>Items 1-4 can be accomplished using the following four commands in the Terminal / Prompt:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">conda</span> <span class="n">activate</span> <span class="n">gu</span><span class="o">-</span><span class="n">psyc</span><span class="o">-</span><span class="mi">347</span>
+<span class="n">cd</span> <span class="n">gu</span><span class="o">-</span><span class="n">psyc</span><span class="o">-</span><span class="mi">347</span><span class="o">-</span><span class="n">master</span>
+<span class="n">git</span> <span class="n">pull</span> <span class="n">origin</span> <span class="n">master</span>
+<span class="n">conda</span> <span class="n">env</span> <span class="n">update</span> <span class="o">--</span><span class="n">file</span> <span class="n">course</span><span class="o">-</span><span class="n">env</span><span class="o">.</span><span class="n">yml</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="running-the-task">
+<h3>Running the task<a class="headerlink" href="#running-the-task" title="Permalink to this headline">¶</a></h3>
+<p>The task we will run was built using <a class="reference external" href="https://www.psychopy.org/">PsychoPy</a>, which is a “free cross-platform package allowing you to run a wide range of experiments in the behavioral sciences (neuroscience, psychology, psychophysics, linguistics).” PsychoPy is a great tool to use to create and run behavioral experiments because it is open-source and is backed by a huge community of developers and users!</p>
+<p>To run the course, check that you now have a directory called <code class="docutils literal notranslate"><span class="pre">two-armed-bandit</span></code> in your course directory. If your course directory is called <code class="docutils literal notranslate"><span class="pre">gu-psyc-347</span></code>, the directory structure should look something like this:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>gu-psyc-347
+├── course-env.yml
+├── LICENSE
+├── README.md
+├── requirements.txt
+├── docs
+│    ├── static
+│    ├── solutions
+│    ├── tasks
+│          └── two-armed-bandit
+│                    ├── two-armed-bandit.psyexp
+│                    ├── two-armed-bandit.py
+│                    ├── two-armed-bandit_lastrun.py
+│                    ├── data
+│                    ├── orders
+│                    ├── stimuli
+</pre></div>
+</div>
+<p>Once you are able to confirm that your directory looks like this, then we can start the experiment!</p>
+<p><strong>Before you run the experiment, your instructor will give you a number ranging from 0-13. This will be the participant ID number that you input at the beginning of the task. Please keep this number in mind.</strong></p>
+<p>You can run the experiment by using this command in Terminal (Mac/Linux) or Anaconda Prompt (Windows): <code class="docutils literal notranslate"><span class="pre">python</span> <span class="pre">two-armed-bandit.py</span></code></p>
+<p>The task will take roughly 8 minutes to complete.</p>
+</div>
+<div class="section" id="task-debrief">
+<h3>Task Debrief<a class="headerlink" href="#task-debrief" title="Permalink to this headline">¶</a></h3>
+<p>You just completed 72 trials! 2 slot machines were presented on every trial, each associated with a certain probability of reward.</p>
+<p>Did you learn which slot machine had the greater payout probability?</p>
+<p>You were not told this, but the payout probabilities for the blue and orange machines were coupled. There was always one ‘good’ option and one ‘bad’ option.</p>
+<p>In breakout rooms, discuss with a partner the following questions and report back to the group:</p>
+<ul class="simple">
+<li><p>What did you like about the task?</p></li>
+<li><p>What didn’t you like about the task?</p></li>
+<li><p>What do you think the probablities of the slot machines were? (e.g., 50/50, 25/75, 60/40, 80/20). Do you think you and your partner(s) had the same slot machine reward probabilities? Why or why not?</p></li>
+<li><p>Why do you think the position of the machines were randomized on each trial? In other words, why wasn’t the orange slot machine always on the same side?</p></li>
+<li><p>How many trials did it take you to learn which slot machine was better (if at all)? If there were less trials (&lt;72 trials) or more trials (&gt;72 trials), do you think you would be better or worse at learning?</p></li>
+<li><p>Were there times when you expected to receive a rewarding outcome but didn’t?</p></li>
+<li><p>When you didn’t get the outcome you expected, how often did you switch your choice on the next trial? What parameter in the Rescorla-Wagner model might correspond to this phenomenon?</p></li>
+<li><p>How “explorative” was your behavior when you were completing the task? In other words, even if you learned which slot machine had the greater payout probability, how often did you sample the other one just to see what would happen? Do you think we can model this as well?</p></li>
+</ul>
+<hr></div>
+</div>
+<div class="section" id="viewing-your-behavior">
+<h2>Viewing your behavior<a class="headerlink" href="#viewing-your-behavior" title="Permalink to this headline">¶</a></h2>
+<p>Let’s plot our behavior from the task to see how we did! In order to load your data into this Jupyter Notebook, recall your participant ID. The instructor’s ID was <code class="docutils literal notranslate"><span class="pre">00</span></code>, so that is what we will use in the examples. Replace the following <code class="docutils literal notranslate"><span class="pre">id_num='00'</span></code> with your ID below.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">id_num</span> <span class="o">=</span> <span class="s1">&#39;00&#39;</span> <span class="c1"># this is the only line of code you need to change</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>We will now load our usual packages into memory, so we can view, manipulate, and plot our behavioral data.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="o">%</span><span class="k">matplotlib</span> inline
+</pre></div>
+</div>
+</div>
+</div>
+<p>After completing the task, your data was saved to <code class="docutils literal notranslate"><span class="pre">tasks/two-armed-bandit/data/</span></code>. Let’s load our behavioral data in.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">datafile</span> <span class="o">=</span> <span class="sa">f</span><span class="s1">&#39;tasks/two-armed-bandit/data/sub-</span><span class="si">{</span><span class="n">id_num</span><span class="si">}</span><span class="s1">_task-two-armed-bandit.csv&#39;</span>
+
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">datafile</span><span class="p">)</span>
+<span class="n">display</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">())</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>subject</th>
+      <th>type</th>
+      <th>condition</th>
+      <th>goal</th>
+      <th>block</th>
+      <th>block_num</th>
+      <th>block_instr_text</th>
+      <th>trial_num</th>
+      <th>stim_0</th>
+      <th>stim_0_value</th>
+      <th>...</th>
+      <th>outcomeDescr</th>
+      <th>outcome</th>
+      <th>feedback_text.started</th>
+      <th>feedback_text.stopped</th>
+      <th>participant</th>
+      <th>date</th>
+      <th>expName</th>
+      <th>psychopyVersion</th>
+      <th>frameRate</th>
+      <th>Unnamed: 60</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>0</td>
+      <td>0</td>
+      <td>self</td>
+      <td>win</td>
+      <td>self_win</td>
+      <td>1</td>
+      <td>Play to WIN points</td>
+      <td>0</td>
+      <td>stimuli/slot1_up.jpg</td>
+      <td>1</td>
+      <td>...</td>
+      <td>self avoid win</td>
+      <td>0</td>
+      <td>105.138390</td>
+      <td>None</td>
+      <td>0</td>
+      <td>2021_Mar_01_2315</td>
+      <td>two-armed-bandit</td>
+      <td>2021.1.0</td>
+      <td>60.000312</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>0</td>
+      <td>0</td>
+      <td>self</td>
+      <td>win</td>
+      <td>self_win</td>
+      <td>1</td>
+      <td>Play to WIN points</td>
+      <td>1</td>
+      <td>stimuli/slot1_up.jpg</td>
+      <td>1</td>
+      <td>...</td>
+      <td>self win</td>
+      <td>1</td>
+      <td>108.754971</td>
+      <td>None</td>
+      <td>0</td>
+      <td>2021_Mar_01_2315</td>
+      <td>two-armed-bandit</td>
+      <td>2021.1.0</td>
+      <td>60.000312</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>0</td>
+      <td>0</td>
+      <td>self</td>
+      <td>win</td>
+      <td>self_win</td>
+      <td>1</td>
+      <td>Play to WIN points</td>
+      <td>2</td>
+      <td>stimuli/slot1_up.jpg</td>
+      <td>1</td>
+      <td>...</td>
+      <td>self win</td>
+      <td>1</td>
+      <td>112.338230</td>
+      <td>None</td>
+      <td>0</td>
+      <td>2021_Mar_01_2315</td>
+      <td>two-armed-bandit</td>
+      <td>2021.1.0</td>
+      <td>60.000312</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>0</td>
+      <td>0</td>
+      <td>self</td>
+      <td>win</td>
+      <td>self_win</td>
+      <td>1</td>
+      <td>Play to WIN points</td>
+      <td>3</td>
+      <td>stimuli/slot1_up.jpg</td>
+      <td>1</td>
+      <td>...</td>
+      <td>self win</td>
+      <td>1</td>
+      <td>115.921452</td>
+      <td>None</td>
+      <td>0</td>
+      <td>2021_Mar_01_2315</td>
+      <td>two-armed-bandit</td>
+      <td>2021.1.0</td>
+      <td>60.000312</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>0</td>
+      <td>0</td>
+      <td>self</td>
+      <td>win</td>
+      <td>self_win</td>
+      <td>1</td>
+      <td>Play to WIN points</td>
+      <td>4</td>
+      <td>stimuli/slot1_up.jpg</td>
+      <td>0</td>
+      <td>...</td>
+      <td>self avoid win</td>
+      <td>0</td>
+      <td>119.421379</td>
+      <td>None</td>
+      <td>0</td>
+      <td>2021_Mar_01_2315</td>
+      <td>two-armed-bandit</td>
+      <td>2021.1.0</td>
+      <td>60.000312</td>
+      <td>NaN</td>
+    </tr>
+  </tbody>
+</table>
+<p>5 rows × 61 columns</p>
+</div></div></div>
+</div>
+<div class="section" id="cumulative-points-over-trials">
+<h3>Cumulative points over trials<a class="headerlink" href="#cumulative-points-over-trials" title="Permalink to this headline">¶</a></h3>
+<p>First, let’s plot our culmulative points over trials!</p>
+<div class="cell tag_hide-output docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># points over trials</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;trial_num&#39;</span><span class="p">],</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;cumulativePts_self&#39;</span><span class="p">])</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;trials&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;cumulative points&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;Total points: </span><span class="si">{</span><span class="n">df</span><span class="o">.</span><span class="n">cumulativePts_self</span><span class="o">.</span><span class="n">values</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/module-03-00_Introduction-to-RL_13_0.png" src="_images/module-03-00_Introduction-to-RL_13_0.png" />
+</div>
+</div>
+<p>How did you do? When didn’t your points increase? Does this have any relationship with the machine you chose? Let’s overlay point accumulation with behavior.</p>
+</div>
+<div class="section" id="choices-on-each-trial">
+<h3>Choices on each trial<a class="headerlink" href="#choices-on-each-trial" title="Permalink to this headline">¶</a></h3>
+<p>We can also plot the choices we made on each trial. Let’s plot the choices for the slot machine with the highest probability.</p>
+<div class="cell tag_hide-output docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># compute which machine yielded rewards more frequently</span>
+<span class="k">if</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;stim_0_value&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span> <span class="o">&gt;</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;stim_1_value&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">():</span>
+    <span class="n">better_machine</span> <span class="o">=</span> <span class="s1">&#39;stim_0&#39;</span>
+    <span class="n">better_machine_val</span> <span class="o">=</span> <span class="s1">&#39;stim_0_value&#39;</span>
+    <span class="n">better_machine_choice</span> <span class="o">=</span> <span class="s1">&#39;chosen_stim_0&#39;</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="n">better_machine</span> <span class="o">=</span> <span class="s1">&#39;stim_1&#39;</span>
+    <span class="n">better_machine_val</span> <span class="o">=</span> <span class="s1">&#39;stim_1_value&#39;</span>
+    <span class="n">better_machine_choice</span> <span class="o">=</span> <span class="s1">&#39;chosen_stim_1&#39;</span>
+
+<span class="c1"># plot choices for this machine</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;trial_num&#39;</span><span class="p">],</span> <span class="n">df</span><span class="p">[</span><span class="n">better_machine_choice</span><span class="p">],</span> <span class="s1">&#39;+&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;trials&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;choice&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;Chose better machine </span><span class="si">{</span><span class="n">df</span><span class="p">[</span><span class="n">better_machine_choice</span><span class="p">]</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span><span class="si">}</span><span class="s1"> times out of </span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="n">better_machine_choice</span><span class="p">])</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/module-03-00_Introduction-to-RL_16_0.png" src="_images/module-03-00_Introduction-to-RL_16_0.png" />
+</div>
+</div>
+<p>Did you learn that this machine was better? How did your choices correspond with the actual outcome associated with the machine on a given trial? (Remember: the machine yielded rewards with a certain probability)</p>
+</div>
+<div class="section" id="actual-values-of-the-machine-over-trials">
+<h3>Actual values of the machine over trials<a class="headerlink" href="#actual-values-of-the-machine-over-trials" title="Permalink to this headline">¶</a></h3>
+<p>Let’s plot the actual values associated with the machine over trials. These aren’t the actual outcomes displayed to you during the task.</p>
+<div class="cell tag_hide-output docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># plot values for this machine</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;trial_num&#39;</span><span class="p">],</span> <span class="n">df</span><span class="p">[</span><span class="n">better_machine_val</span><span class="p">],</span> <span class="s1">&#39;--&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;trials&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;value&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;Values associated with better machine over trials&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/module-03-00_Introduction-to-RL_19_0.png" src="_images/module-03-00_Introduction-to-RL_19_0.png" />
+</div>
+</div>
+<p>As we can see, the machine was set up to produce varying outcomes over trials (even though this was the better machine). In other words, this machine only yielded rewards with a certain probability.</p>
+</div>
+<div class="section" id="actual-outcomes-during-the-task">
+<h3>Actual outcomes during the task<a class="headerlink" href="#actual-outcomes-during-the-task" title="Permalink to this headline">¶</a></h3>
+<p>We can also plot out the actual outcomes that we observed during the task. These were based on what choices we made on each trial. They might map onto the values over trials fairly well.</p>
+<div class="cell tag_hide-output docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;trial_num&#39;</span><span class="p">],</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;outcome&#39;</span><span class="p">],</span> <span class="s1">&#39;r--&#39;</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=.</span><span class="mi">8</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;trials&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;outcome&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;Actual outcomes over trials&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/module-03-00_Introduction-to-RL_22_0.png" src="_images/module-03-00_Introduction-to-RL_22_0.png" />
+</div>
+</div>
+<p>Finally, we can plot both our choices and outcomes over trials. Do our choices reflect the actual outcomes over time?</p>
+<div class="cell tag_hide-output docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;trial_num&#39;</span><span class="p">],</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;outcome&#39;</span><span class="p">],</span> <span class="s1">&#39;r--&#39;</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=.</span><span class="mi">8</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;trial_num&#39;</span><span class="p">],</span> <span class="n">df</span><span class="p">[</span><span class="n">better_machine_choice</span><span class="p">],</span> <span class="s1">&#39;+&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;choice&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;trials&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;outcome&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;Choices and outcomes over trials&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/module-03-00_Introduction-to-RL_24_0.png" src="_images/module-03-00_Introduction-to-RL_24_0.png" />
+</div>
+</div>
+<p>Great! Recall the ten simple rules for computational modeling of behavioral data (Wilson &amp; Collins, 2019). We will be going through these steps throughout this module.</p>
+<p>We finished our first step: Experimental Design. At this stage, we can continue to tweak our experiment, or continue onto building models. Before next class, think of a few models we can test using this task. Like we discussed during the lecture, it is unlikely that we are keeping a running average of all of our choices throughout the task. Thus, we might be computing the average in a more “online” way. For example, we could be assigning value and keeping track of this value for each of the slot machines.</p>
+<p>We will specify a few models, simulate some data, and then attempt to recover the parameters.</p>
+</div>
+</div>
+</div>
+
     <script type="text/x-thebe-config">
     {
         requestKernel: true,
