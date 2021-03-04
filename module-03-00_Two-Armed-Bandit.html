@@ -4,7 +4,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta charset="utf-8" />
-    <title>Introduction to RL &#8212; Computational Models of Human Social Behavior (and Neuroscience)</title>
+    <title>Two-Armed Bandit &#8212; Computational Models of Human Social Behavior (and Neuroscience)</title>
     
   <link rel="stylesheet" href="_static/css/index.f658d18f9b420779cfdf24aa0a7e2d77.css">
 
@@ -56,9 +56,10 @@
         const thebe_selector_output = ".output"
     </script>
     <script async="async" src="_static/sphinx-thebe.js"></script>
-    <link rel="canonical" href="https://shawnrhoads.github.io/gu-psyc-347/module-03-00_Introduction-to-RL.html" />
+    <link rel="canonical" href="https://shawnrhoads.github.io/gu-psyc-347/module-03-00_Two-Armed-Bandit.html" />
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Models of Learning" href="module-03-01_Models-of-Learning.html" />
     <link rel="prev" title="Modeling Exercises" href="module-02-02_Modeling-Exercises.html" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -66,10 +67,10 @@
 
 
 <!-- Opengraph tags -->
-<meta property="og:url"         content="https://shawnrhoads.github.io/gu-psyc-347/module-03-00_Introduction-to-RL.html" />
+<meta property="og:url"         content="https://shawnrhoads.github.io/gu-psyc-347/module-03-00_Two-Armed-Bandit.html" />
 <meta property="og:type"        content="article" />
-<meta property="og:title"       content="Introduction to RL" />
-<meta property="og:description" content="Introduction to RL  This tutorial was inspired by and adapted from Models of Learning and the Neuromatch Academy tutorials [CC BY 4.0].  Two-Armed Bandit Task  " />
+<meta property="og:title"       content="Two-Armed Bandit" />
+<meta property="og:description" content="Two-Armed Bandit  This tutorial was inspired by and adapted from Models of Learning and the Neuromatch Academy tutorials [CC BY 4.0].  In this tutorial, we will" />
 <meta property="og:image"       content="https://shawnrhoads.github.io/gu-psyc-347/_static/logo.png" />
 
 <meta name="twitter:card" content="summary" />
@@ -192,7 +193,12 @@
 <ul class="current nav sidenav_l1">
  <li class="toctree-l1 current active">
   <a class="current reference internal" href="#">
-   Introduction to RL
+   Two-Armed Bandit
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="module-03-01_Models-of-Learning.html">
+   Models of Learning
   </a>
  </li>
 </ul>
@@ -235,7 +241,7 @@
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="_sources/module-03-00_Introduction-to-RL.ipynb"><button type="button"
+        <a class="dropdown-buttons" href="_sources/module-03-00_Two-Armed-Bandit.ipynb"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
                 data-placement="left">.ipynb</button></a>
         <!-- Download PDF via print -->
@@ -255,10 +261,10 @@
                 data-toggle="tooltip" data-placement="left" title="Source repository"><i
                     class="fab fa-github"></i>repository</button></a>
         <a class="issues-button"
-            href="https://github.com/shawnrhoads/gu-psyc-347/issues/new?title=Issue%20on%20page%20%2Fmodule-03-00_Introduction-to-RL.html&body=Your%20issue%20content%20here."><button
+            href="https://github.com/shawnrhoads/gu-psyc-347/issues/new?title=Issue%20on%20page%20%2Fmodule-03-00_Two-Armed-Bandit.html&body=Your%20issue%20content%20here."><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
-        <a class="edit-button" href="https://github.com/shawnrhoads/gu-psyc-347/edit/master/module-03-00_Introduction-to-RL.ipynb"><button
+        <a class="edit-button" href="https://github.com/shawnrhoads/gu-psyc-347/edit/master/module-03-00_Two-Armed-Bandit.ipynb"><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Edit this page"><i class="fas fa-pencil-alt"></i>suggest edit</button></a>
     </div>
@@ -284,53 +290,44 @@
         <nav id="bd-toc-nav">
             <ul class="nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#two-armed-bandit-task">
-   Two-Armed Bandit Task
+  <a class="reference internal nav-link" href="#getting-started">
+   Getting started
   </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#getting-started">
-     Getting started
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#running-the-task">
-     Running the task
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#task-debrief">
-     Task Debrief
-    </a>
-   </li>
-  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#running-the-task">
+   Running the task
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#task-debrief">
+   Task Debrief
+  </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#viewing-your-behavior">
    Viewing your behavior
   </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#cumulative-points-over-trials">
-     Cumulative points over trials
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#choices-on-each-trial">
-     Choices on each trial
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#actual-values-of-the-machine-over-trials">
-     Actual values of the machine over trials
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#actual-outcomes-during-the-task">
-     Actual outcomes during the task
-    </a>
-   </li>
-  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#cumulative-points-over-trials">
+   Cumulative points over trials
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#choices-on-each-trial">
+   Choices on each trial
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#actual-values-of-the-machine-over-trials">
+   Actual values of the machine over trials
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#actual-outcomes-during-the-task">
+   Actual outcomes during the task
+  </a>
  </li>
 </ul>
 
@@ -344,15 +341,13 @@
         
               <div>
                 
-  <p><a class="reference external" href="https://colab.research.google.com/github/shawnrhoads/gu-psyc-347/blob/master/docs/module-03-00_Introduction-to-RL.ipynb"><img alt="Open In Colab" src="https://colab.research.google.com/assets/colab-badge.svg" /></a></p>
-<div class="section" id="introduction-to-rl">
-<h1>Introduction to RL<a class="headerlink" href="#introduction-to-rl" title="Permalink to this headline">¶</a></h1>
+  <p><a class="reference external" href="https://colab.research.google.com/github/shawnrhoads/gu-psyc-347/blob/master/docs/module-03-00_Two-Armed-Bandit.ipynb"><img alt="Open In Colab" src="https://colab.research.google.com/assets/colab-badge.svg" /></a></p>
+<div class="section" id="two-armed-bandit">
+<h1>Two-Armed Bandit<a class="headerlink" href="#two-armed-bandit" title="Permalink to this headline">¶</a></h1>
 <p>This tutorial was inspired by and adapted from <a class="reference external" href="http://www.hannekedenouden.ruhosting.nl/RLtutorial/Instructions.html">Models of Learning</a> and the <a class="reference external" href="https://github.com/NeuromatchAcademy/course-content">Neuromatch Academy tutorials</a> [<a class="reference external" href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>].</p>
-<div class="section" id="two-armed-bandit-task">
-<h2>Two-Armed Bandit Task<a class="headerlink" href="#two-armed-bandit-task" title="Permalink to this headline">¶</a></h2>
 <p>In this tutorial, we will complete a learning task where your goal will be to maximize the amount of points you can earn by sampling the reward distribution from one of two slot machines. This is also known as a two-armed bandit task.</p>
 <div class="section" id="getting-started">
-<h3>Getting started<a class="headerlink" href="#getting-started" title="Permalink to this headline">¶</a></h3>
+<h2>Getting started<a class="headerlink" href="#getting-started" title="Permalink to this headline">¶</a></h2>
 <p>To start off, we will (0) open Terminal (Mac/Linux) or Anaconda Prompt (Windows). We will then (1) activate our course environment, (2) change the directory to <code class="docutils literal notranslate"><span class="pre">gu-psyc-347-master</span></code> (or whatever you named your course directory that we downloaded at the beginning of the semester; you can also <a class="reference external" href="https://github.com/shawnrhoads/gu-psyc-347/archive/master.zip">download it here</a>), (3) update the directory contents using <code class="docutils literal notranslate"><span class="pre">git</span></code>, and finally (4) check that our course environment is up-to-date.</p>
 <p>Items 1-4 can be accomplished using the following four commands in the Terminal / Prompt:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">conda</span> <span class="n">activate</span> <span class="n">gu</span><span class="o">-</span><span class="n">psyc</span><span class="o">-</span><span class="mi">347</span>
@@ -363,7 +358,7 @@
 </div>
 </div>
 <div class="section" id="running-the-task">
-<h3>Running the task<a class="headerlink" href="#running-the-task" title="Permalink to this headline">¶</a></h3>
+<h2>Running the task<a class="headerlink" href="#running-the-task" title="Permalink to this headline">¶</a></h2>
 <p>The task we will run was built using <a class="reference external" href="https://www.psychopy.org/">PsychoPy</a>, which is a “free cross-platform package allowing you to run a wide range of experiments in the behavioral sciences (neuroscience, psychology, psychophysics, linguistics).” PsychoPy is a great tool to use to create and run behavioral experiments because it is open-source and is backed by a huge community of developers and users!</p>
 <p>To run the course, check that you now have a directory called <code class="docutils literal notranslate"><span class="pre">two-armed-bandit</span></code> in your course directory. If your course directory is called <code class="docutils literal notranslate"><span class="pre">gu-psyc-347</span></code>, the directory structure should look something like this:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>gu-psyc-347
@@ -390,7 +385,7 @@
 <p>The task will take roughly 8 minutes to complete.</p>
 </div>
 <div class="section" id="task-debrief">
-<h3>Task Debrief<a class="headerlink" href="#task-debrief" title="Permalink to this headline">¶</a></h3>
+<h2>Task Debrief<a class="headerlink" href="#task-debrief" title="Permalink to this headline">¶</a></h2>
 <p>You just completed 72 trials! 2 slot machines were presented on every trial, each associated with a certain probability of reward.</p>
 <p>Did you learn which slot machine had the greater payout probability?</p>
 <p>You were not told this, but the payout probabilities for the blue and orange machines were coupled. There was always one ‘good’ option and one ‘bad’ option.</p>
@@ -406,7 +401,6 @@
 <li><p>How “explorative” was your behavior when you were completing the task? In other words, even if you learned which slot machine had the greater payout probability, how often did you sample the other one just to see what would happen? Do you think we can model this as well?</p></li>
 </ul>
 <hr></div>
-</div>
 <div class="section" id="viewing-your-behavior">
 <h2>Viewing your behavior<a class="headerlink" href="#viewing-your-behavior" title="Permalink to this headline">¶</a></h2>
 <p>Let’s plot our behavior from the task to see how we did! In order to load your data into this Jupyter Notebook, recall your participant ID. The instructor’s ID was <code class="docutils literal notranslate"><span class="pre">00</span></code>, so that is what we will use in the examples. Replace the following <code class="docutils literal notranslate"><span class="pre">id_num='00'</span></code> with your ID below.</p>
@@ -606,8 +600,9 @@
 <p>5 rows × 61 columns</p>
 </div></div></div>
 </div>
+</div>
 <div class="section" id="cumulative-points-over-trials">
-<h3>Cumulative points over trials<a class="headerlink" href="#cumulative-points-over-trials" title="Permalink to this headline">¶</a></h3>
+<h2>Cumulative points over trials<a class="headerlink" href="#cumulative-points-over-trials" title="Permalink to this headline">¶</a></h2>
 <p>First, let’s plot our culmulative points over trials!</p>
 <div class="cell tag_hide-output docutils container">
 <div class="cell_input docutils container">
@@ -621,13 +616,13 @@
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/module-03-00_Introduction-to-RL_13_0.png" src="_images/module-03-00_Introduction-to-RL_13_0.png" />
+<img alt="_images/module-03-00_Two-Armed-Bandit_13_0.png" src="_images/module-03-00_Two-Armed-Bandit_13_0.png" />
 </div>
 </div>
 <p>How did you do? When didn’t your points increase? Does this have any relationship with the machine you chose? Let’s overlay point accumulation with behavior.</p>
 </div>
 <div class="section" id="choices-on-each-trial">
-<h3>Choices on each trial<a class="headerlink" href="#choices-on-each-trial" title="Permalink to this headline">¶</a></h3>
+<h2>Choices on each trial<a class="headerlink" href="#choices-on-each-trial" title="Permalink to this headline">¶</a></h2>
 <p>We can also plot the choices we made on each trial. Let’s plot the choices for the slot machine with the highest probability.</p>
 <div class="cell tag_hide-output docutils container">
 <div class="cell_input docutils container">
@@ -651,13 +646,13 @@
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/module-03-00_Introduction-to-RL_16_0.png" src="_images/module-03-00_Introduction-to-RL_16_0.png" />
+<img alt="_images/module-03-00_Two-Armed-Bandit_16_0.png" src="_images/module-03-00_Two-Armed-Bandit_16_0.png" />
 </div>
 </div>
 <p>Did you learn that this machine was better? How did your choices correspond with the actual outcome associated with the machine on a given trial? (Remember: the machine yielded rewards with a certain probability)</p>
 </div>
 <div class="section" id="actual-values-of-the-machine-over-trials">
-<h3>Actual values of the machine over trials<a class="headerlink" href="#actual-values-of-the-machine-over-trials" title="Permalink to this headline">¶</a></h3>
+<h2>Actual values of the machine over trials<a class="headerlink" href="#actual-values-of-the-machine-over-trials" title="Permalink to this headline">¶</a></h2>
 <p>Let’s plot the actual values associated with the machine over trials. These aren’t the actual outcomes displayed to you during the task.</p>
 <div class="cell tag_hide-output docutils container">
 <div class="cell_input docutils container">
@@ -671,13 +666,13 @@
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/module-03-00_Introduction-to-RL_19_0.png" src="_images/module-03-00_Introduction-to-RL_19_0.png" />
+<img alt="_images/module-03-00_Two-Armed-Bandit_19_0.png" src="_images/module-03-00_Two-Armed-Bandit_19_0.png" />
 </div>
 </div>
 <p>As we can see, the machine was set up to produce varying outcomes over trials (even though this was the better machine). In other words, this machine only yielded rewards with a certain probability.</p>
 </div>
 <div class="section" id="actual-outcomes-during-the-task">
-<h3>Actual outcomes during the task<a class="headerlink" href="#actual-outcomes-during-the-task" title="Permalink to this headline">¶</a></h3>
+<h2>Actual outcomes during the task<a class="headerlink" href="#actual-outcomes-during-the-task" title="Permalink to this headline">¶</a></h2>
 <p>We can also plot out the actual outcomes that we observed during the task. These were based on what choices we made on each trial. They might map onto the values over trials fairly well.</p>
 <div class="cell tag_hide-output docutils container">
 <div class="cell_input docutils container">
@@ -690,7 +685,7 @@
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/module-03-00_Introduction-to-RL_22_0.png" src="_images/module-03-00_Introduction-to-RL_22_0.png" />
+<img alt="_images/module-03-00_Two-Armed-Bandit_22_0.png" src="_images/module-03-00_Two-Armed-Bandit_22_0.png" />
 </div>
 </div>
 <p>Finally, we can plot both our choices and outcomes over trials. Do our choices reflect the actual outcomes over time?</p>
@@ -707,13 +702,12 @@
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/module-03-00_Introduction-to-RL_24_0.png" src="_images/module-03-00_Introduction-to-RL_24_0.png" />
+<img alt="_images/module-03-00_Two-Armed-Bandit_24_0.png" src="_images/module-03-00_Two-Armed-Bandit_24_0.png" />
 </div>
 </div>
 <p>Great! Recall the ten simple rules for computational modeling of behavioral data (Wilson &amp; Collins, 2019). We will be going through these steps throughout this module.</p>
 <p>We finished our first step: Experimental Design. At this stage, we can continue to tweak our experiment, or continue onto building models. Before next class, think of a few models we can test using this task. Like we discussed during the lecture, it is unlikely that we are keeping a running average of all of our choices throughout the task. Thus, we might be computing the average in a more “online” way. For example, we could be assigning value and keeping track of this value for each of the slot machines.</p>
 <p>We will specify a few models, simulate some data, and then attempt to recover the parameters.</p>
-</div>
 </div>
 </div>
 
@@ -743,6 +737,7 @@
         <div class='prev-next-bottom'>
             
     <a class='left-prev' id="prev-link" href="module-02-02_Modeling-Exercises.html" title="previous page">Modeling Exercises</a>
+    <a class='right-next' id="next-link" href="module-03-01_Models-of-Learning.html" title="next page">Models of Learning</a>
 
         </div>
         
