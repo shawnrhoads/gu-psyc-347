@@ -20,8 +20,8 @@
     - file: module-02-02_Modeling-Exercises
 - part: Module 03
   chapters:
-    - file: module-03-00_Introduction-to-RL
-#       - file: module-03-01_Two-Armed-Bandit
+    - file: module-03-00_Two-Armed-Bandit
+    - file: module-03-01_Models-of-Learning
 # - part: Module 04
 #   chapters:
 #     - file: module-04-00_Social-Learning
