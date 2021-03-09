@@ -22,6 +22,7 @@
   chapters:
     - file: module-03-00_Two-Armed-Bandit
     - file: module-03-01_Models-of-Learning
+    - file: module-03-02_RL-Exercises
 # - part: Module 04
 #   chapters:
 #     - file: module-04-00_Social-Learning
