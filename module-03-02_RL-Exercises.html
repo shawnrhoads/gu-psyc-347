@@ -1,0 +1,570 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>RL Exercises &#8212; Computational Models of Human Social Behavior (and Neuroscience)</title>
+    
+  <link rel="stylesheet" href="_static/css/index.f658d18f9b420779cfdf24aa0a7e2d77.css">
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+  <link rel="stylesheet"
+    href="_static/vendor/open-sans_all/1.44.1/index.css">
+  <link rel="stylesheet"
+    href="_static/vendor/lato_latin-ext/1.44.1/index.css">
+
+    
+    <link rel="stylesheet" href="_static/sphinx-book-theme.c441f2ba0852f4cabcb80105e3a46ae6.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="_static/js/index.d3f166471bb80abb5163.js">
+
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/language_data.js"></script>
+    <script src="_static/togglebutton.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="_static/sphinx-book-theme.7d483ff0a819d6edff12ce0b1ead3928.js"></script>
+    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.20.0/dist/embed-amd.js"></script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <link rel="canonical" href="https://shawnrhoads.github.io/gu-psyc-347/module-03-02_RL-Exercises.html" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+
+
+<!-- Opengraph tags -->
+<meta property="og:url"         content="https://shawnrhoads.github.io/gu-psyc-347/module-03-02_RL-Exercises.html" />
+<meta property="og:type"        content="article" />
+<meta property="og:title"       content="RL Exercises" />
+<meta property="og:description" content="RL Exercises  These exercises were inspired by and adapted from Models of Learning by Jill O’Reilly and Hanneke den Ouden, NSCS 344 - Modeling the Mind by Rober" />
+<meta property="og:image"       content="https://shawnrhoads.github.io/gu-psyc-347/_static/logo.png" />
+
+<meta name="twitter:card" content="summary" />
+
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+<a class="navbar-brand text-wrap" href="index.html">
+  
+  <img src="_static/logo.png" class="logo" alt="logo">
+  
+  
+  <h1 class="site-logo" id="site-title">Computational Models of Human Social Behavior (and Neuroscience)</h1>
+  
+</a>
+</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form>
+<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+    <p class="caption collapsible-parent">
+ <span class="caption-text">
+  Module 00
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="module-00-00_Syllabus.html">
+   Syllabus
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="module-00-01_Course-Schedule.html">
+   Course Schedule
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="module-00-02_Course-Assignments.html">
+   Course Assignments
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="module-00-03_Reading-List.html">
+   Reading List
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="module-00-04_Getting-Started.html">
+   Getting Started
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="module-00-05_Final-Projects.html">
+   Final Project Guidelines
+  </a>
+ </li>
+</ul>
+<p class="caption collapsible-parent">
+ <span class="caption-text">
+  Module 01
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="module-01-00_Jupyter-Notebooks.html">
+   Jupyter Notebooks
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="module-01-01_Intro-to-Python.html">
+   Intro to Python Basics
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="module-01-02_Working-with-Data.html">
+   Working with Data
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="module-01-03_Python-Exercises.html">
+   Python Exercises
+  </a>
+ </li>
+</ul>
+<p class="caption collapsible-parent">
+ <span class="caption-text">
+  Module 02
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="module-02-00_Linear-Modeling.html">
+   Linear Modeling
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="module-02-01_Nonlinear-Modeling.html">
+   Nonlinear Modeling
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="module-02-02_Modeling-Exercises.html">
+   Modeling Exercises
+  </a>
+ </li>
+</ul>
+<p class="caption collapsible-parent">
+ <span class="caption-text">
+  Module 03
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="module-03-00_Two-Armed-Bandit.html">
+   Two-Armed Bandit
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="module-03-01_Models-of-Learning.html">
+   Models of Learning
+  </a>
+ </li>
+</ul>
+
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="_sources/module-03-02_RL-Exercises.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/shawnrhoads/gu-psyc-347"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://github.com/shawnrhoads/gu-psyc-347/issues/new?title=Issue%20on%20page%20%2Fmodule-03-02_RL-Exercises.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        <a class="edit-button" href="https://github.com/shawnrhoads/gu-psyc-347/edit/master/module-03-02_RL-Exercises.ipynb"><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Edit this page"><i class="fas fa-pencil-alt"></i>suggest edit</button></a>
+    </div>
+</div>
+
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+            <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+                    data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+                    title="Fullscreen mode"><i
+                        class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+        <div class="tocsection onthispage pt-5 pb-3">
+            <i class="fas fa-list"></i>
+            Contents
+        </div>
+        <nav id="bd-toc-nav">
+            <ul class="nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#part-1">
+   Part 1
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#getting-to-know-your-stimuli">
+     1. Getting to know your stimuli
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#exploring-behavior">
+     2. Exploring behavior
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#exploring-outcomes">
+     3. Exploring outcomes
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#part-2">
+   Part 2
+  </a>
+ </li>
+</ul>
+
+        </nav>
+        
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <p><a class="reference external" href="https://colab.research.google.com/github/shawnrhoads/gu-psyc-347/blob/master/docs/module-03-02_RL-Exercises.ipynb"><img alt="Open In Colab" src="https://colab.research.google.com/assets/colab-badge.svg" /></a></p>
+<div class="section" id="rl-exercises">
+<h1>RL Exercises<a class="headerlink" href="#rl-exercises" title="Permalink to this headline">¶</a></h1>
+<p>These exercises were inspired by and adapted from <a class="reference external" href="http://www.hannekedenouden.ruhosting.nl/RLtutorial/Instructions.html">Models of Learning</a> by Jill O’Reilly and Hanneke den Ouden, <a class="reference external" href="http://u.arizona.edu/~bob/web_NSCS344/index.htm">NSCS 344 - Modeling the Mind</a> by Robert C. Wilson, <a class="reference external" href="https://github.com/shawnrhoads/gu-nsci-526">NSCI 526 - Tutorial 2 (Reinforcement Learning)</a> by Shawn Rhoads, the <a class="reference external" href="https://github.com/cloudssty/Gambling-Game">Gambling Game tutorial</a>, and the <a class="reference external" href="https://github.com/NeuromatchAcademy/course-content">Neuromatch Academy tutorials</a> [<a class="reference external" href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>.</p>
+<p>In these exercises, we will fit learning behavior to the Rescorla Wagner model of Reinforcement Learning. The data can be downloaded from <a class="reference external" href="https://github.com/shawnrhoads/gu-psyc-347/raw/editing/docs/static/data/RL-Exercises-Data.zip">GitHub</a>, Canvas, or by using the following code:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">os</span><span class="o">,</span> <span class="nn">requests</span>
+
+<span class="c1"># create list of URLs</span>
+<span class="n">urls</span> <span class="o">=</span> <span class="p">[</span><span class="sa">f</span><span class="s1">&#39;https://raw.githubusercontent.com/shawnrhoads/gu-psyc-347/master/docs/static/data/sub-</span><span class="si">{</span><span class="n">x</span><span class="si">:</span><span class="s1">02</span><span class="si">}</span><span class="s1">_RLdata.csv&#39;</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">15</span><span class="p">)]</span>
+
+<span class="c1"># loop through list and download data</span>
+<span class="k">for</span> <span class="n">url</span> <span class="ow">in</span> <span class="n">urls</span><span class="p">:</span>
+    <span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">allow_redirects</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+    <span class="n">filename</span> <span class="o">=</span> <span class="s1">&#39;static/data/&#39;</span> <span class="o">+</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">basename</span><span class="p">(</span><span class="n">url</span><span class="p">)</span>
+    <span class="nb">open</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="s1">&#39;wb&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">r</span><span class="o">.</span><span class="n">content</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Now, that we’ve downloaded our data, let’s explore it together!</p>
+<hr><div class="section" id="part-1">
+<h2>Part 1<a class="headerlink" href="#part-1" title="Permalink to this headline">¶</a></h2>
+<p>You will break out in groups of 2-3 to discuss the following questions (<font color='red'>highlighted in red font</font>) and implement code to answer them. I have prepared a few functions that will help you along the way.</p>
+<p>Then, we will re-group with the entire class to discuss what we’ve learned. Please remember to save your work. This will count towards your Jupyter Notebook Exercise #3 grade.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># first let&#39;s import our packages</span>
+
+<span class="kn">from</span> <span class="nn">scipy.optimize</span> <span class="kn">import</span> <span class="n">minimize</span> <span class="c1"># finding optimal params in models</span>
+<span class="kn">from</span> <span class="nn">scipy</span> <span class="kn">import</span> <span class="n">stats</span>             <span class="c1"># statistical tools</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>                  <span class="c1"># matrix/array functions</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>                 <span class="c1"># loading and manipulating data</span>
+<span class="kn">import</span> <span class="nn">ipywidgets</span> <span class="k">as</span> <span class="nn">widgets</span>        <span class="c1"># interactive display</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>     <span class="c1"># plotting</span>
+<span class="o">%</span><span class="k">matplotlib</span> inline
+
+<span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">seed</span><span class="p">(</span><span class="mi">2021</span><span class="p">)</span>                <span class="c1"># set seed for reproducibility</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># this function will load the data into memory (assuming that</span>
+<span class="c1"># the data are downloaded)</span>
+<span class="k">def</span> <span class="nf">load_subjects</span><span class="p">(</span><span class="n">how_many</span><span class="o">=</span><span class="mi">15</span><span class="p">):</span>
+    <span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">    input: number of subjects&#39; data to load from 1-14</span>
+<span class="sd">    output: dictionary of DataFrames containing the data</span>
+<span class="sd">    &#39;&#39;&#39;</span>
+    
+    <span class="k">assert</span> <span class="p">(</span><span class="n">how_many</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">)</span> <span class="ow">and</span> <span class="p">(</span><span class="n">how_many</span> <span class="o">&lt;=</span> <span class="mi">15</span><span class="p">),</span> <span class="s2">&quot;0 &lt; how_many &lt; 15&quot;</span>
+    <span class="n">files</span> <span class="o">=</span> <span class="p">[</span><span class="sa">f</span><span class="s1">&#39;static/data/sub-</span><span class="si">{</span><span class="n">x</span><span class="si">:</span><span class="s1">02</span><span class="si">}</span><span class="s1">_RLdata.csv&#39;</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="n">how_many</span><span class="p">)]</span>
+    
+    <span class="n">subject_data</span> <span class="o">=</span> <span class="p">{}</span>
+    <span class="k">for</span> <span class="n">index</span><span class="p">,</span> <span class="n">file</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">files</span><span class="p">):</span>
+        <span class="n">subject_data</span><span class="p">[</span><span class="n">index</span><span class="p">]</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">file</span><span class="p">,</span> <span class="n">index_col</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+    
+    <span class="k">return</span> <span class="n">subject_data</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># let&#39;s load in our data using the function above</span>
+<span class="c1"># feel free to adjust `how_many` (the default is all 15 subjects)</span>
+<span class="n">subject_data</span> <span class="o">=</span> <span class="n">load_subjects</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="getting-to-know-your-stimuli">
+<h3>1. Getting to know your stimuli<a class="headerlink" href="#getting-to-know-your-stimuli" title="Permalink to this headline">¶</a></h3>
+<p>Subjects played a few rounds of the two-armed bandit task, in which they learned the reward probability distribution of two slot machines (<strong>stim_A</strong> and <strong>stim_B</strong>) through trial-and-error.</p>
+<p><font color="red">1a. How many trials did each subject complete?</font> (<em>Hint: explore the Dictionary of DataFrames</em>)</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># insert your code here</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p><strong>ANSWER 1a: <em>insert your answer here</em></strong></p>
+<p>Each slot machine was associated with a different mean probability (i.e., <strong>stim_A</strong> yielded rewards according to a constant probability and <strong>stim_B</strong> yielded rewards according to a different constant probability).</p>
+<p><font color="red">1b. What were the probabilities of each stimulus?<br>
+1c. Did <strong>stim_A</strong> have the same probability for every subject? <strong>stim_B</strong>? Why or why not?</font></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># insert your code here</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p><strong>ANSWER 1b: <em>insert your answer here</em></strong></p>
+<p><strong>ANSWER 1c: <em>insert your answer here</em></strong></p>
+</div>
+<div class="section" id="exploring-behavior">
+<h3>2. Exploring behavior<a class="headerlink" href="#exploring-behavior" title="Permalink to this headline">¶</a></h3>
+<p>People learn (or don’t) in many different ways. Some people are extremely sensitive when outcomes aren’t what they expected. Others aren’t willing to update their behaviors so quickly.</p>
+<p>People also make decisions differently. Some people are more explorative and are event willing to try a riskier action just to see what happens. Others are more “deterministic” with their actions tend to stick with what they know is best.</p>
+<p>While there are plenty more ways people vary in their learning and decision-making behavior, we are going to explore these two aspects.</p>
+<p><em>Hint: please use the <code class="docutils literal notranslate"><span class="pre">plot_behavior()</span></code> function to explore different aspects of subjects’ behavior and outcomes</em></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">plot_behavior</span><span class="p">(</span><span class="n">subject_data</span><span class="p">,</span> <span class="n">subject_id</span><span class="p">,</span> <span class="n">choices</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">outcomes</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">probability</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
+    <span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">    input: </span>
+<span class="sd">        subject_data: dictionary containing</span>
+<span class="sd">        subject_id: integer from 0-14 corresponding to an ID number</span>
+<span class="sd">        choices: boolean indicating whether to plot choices or not</span>
+<span class="sd">        outcomes: boolean indicating whether to plot outcomes or not</span>
+<span class="sd">        probability: boolean indicating whether to plot the mean reward over trials for both stimuli or not</span>
+<span class="sd">    output:</span>
+<span class="sd">        plot of behavior</span>
+<span class="sd">    &#39;&#39;&#39;</span>
+    <span class="k">assert</span> <span class="nb">type</span><span class="p">(</span><span class="n">subject_data</span><span class="p">)</span> <span class="ow">is</span> <span class="nb">dict</span><span class="p">,</span> <span class="s2">&quot;`subject_data` should be a dictionary, run the `load_subjects()` function above to load the data into memory&quot;</span>
+    <span class="k">assert</span> <span class="nb">type</span><span class="p">(</span><span class="n">subject_id</span><span class="p">)</span> <span class="ow">is</span> <span class="nb">int</span> <span class="ow">and</span> <span class="n">subject_id</span> <span class="o">&gt;=</span> <span class="mi">0</span> <span class="ow">and</span> <span class="n">subject_id</span> <span class="o">&lt;</span><span class="mi">14</span><span class="p">,</span> <span class="s2">&quot;`subject_id` should be an integer between 0 and 14&quot;</span>
+    
+    <span class="n">data</span> <span class="o">=</span> <span class="n">subject_data</span><span class="p">[</span><span class="n">subject_id</span><span class="p">]</span>
+    
+    <span class="k">if</span> <span class="n">probability</span><span class="p">:</span>
+        <span class="n">plt</span><span class="o">.</span><span class="n">axhline</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="n">data</span><span class="o">.</span><span class="n">choice</span><span class="o">==</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">outcome</span><span class="p">),</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;orange&quot;</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=.</span><span class="mi">4</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="n">data</span><span class="o">.</span><span class="n">columns</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+        <span class="n">plt</span><span class="o">.</span><span class="n">axhline</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="n">data</span><span class="o">.</span><span class="n">choice</span><span class="o">==</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">outcome</span><span class="p">),</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;purple&quot;</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=.</span><span class="mi">4</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="n">data</span><span class="o">.</span><span class="n">columns</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+        
+    <span class="k">if</span> <span class="n">outcomes</span><span class="p">:</span>
+        <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">data</span><span class="p">)),</span> <span class="n">data</span><span class="o">.</span><span class="n">outcome</span><span class="p">,</span> <span class="s1">&#39;r--&#39;</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=.</span><span class="mi">6</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">choices</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">data</span><span class="o">.</span><span class="n">choice</span><span class="p">)</span> <span class="o">&lt;</span> <span class="o">.</span><span class="mi">5</span><span class="p">:</span>
+            <span class="n">choice_data</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span> <span class="k">if</span> <span class="n">x</span> <span class="o">==</span> <span class="mi">1</span> <span class="k">else</span> <span class="mi">1</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">data</span><span class="o">.</span><span class="n">choice</span><span class="p">]</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">choice_data</span> <span class="o">=</span> <span class="p">[</span><span class="n">x</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">data</span><span class="o">.</span><span class="n">choice</span><span class="p">]</span>
+        <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">data</span><span class="p">)),</span> <span class="n">choice_data</span><span class="p">,</span> <span class="s1">&#39;+&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;choice&#39;</span><span class="p">)</span>
+    
+    <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;trials&#39;</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;outcome&#39;</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;Behavior from subject #</span><span class="si">{</span><span class="n">subject_id</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Plot everyone’s behavior and answer the following questions (*hint: there’s way to plot everyone’s data using only two lines of code).
+<br><br></p>
+<font color="red">
+    2a. Which subjects were most sensitive to previous unexpected outcomes? List the subject ID numbers. Describe which aspect(s) of the data led you to this conclusion. What parameter from the Rescorla-Wagner Model captures this tendency?<br>
+    2c. Which subjects were least explorative in their behavior? List the subject ID numbers. Describe which aspect(s) of the data led you to this conclusion. What parameter from the Rescorla-Wagner Model captures this tendency?</font><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># insert your code here</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p><strong>ANSWER 2a: <em>insert your answer here</em></strong></p>
+<p><strong>ANSWER 2b: <em>insert your answer here</em></strong></p>
+</div>
+<div class="section" id="exploring-outcomes">
+<h3>3. Exploring outcomes<a class="headerlink" href="#exploring-outcomes" title="Permalink to this headline">¶</a></h3>
+<p><font color="red">Earlier, we learned that the reward probabilities of each stimulus were fixed, how do these values compare with the actual mean reward over trials across subjects (according to their choices)? Are they similar? Why or why not?</font> (<em>Hint: see plots above and/or explore different subjects’ “outcome” column</em>)<br></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># insert your code here</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p><strong>ANSWER 3: <em>insert your answer here</em></strong></p>
+<p>Great job! Don’t forget to save any of your work. It will also be useful for <strong>Part 2</strong>!</p>
+<hr></div>
+</div>
+<div class="section" id="part-2">
+<h2>Part 2<a class="headerlink" href="#part-2" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        
+        <div class='prev-next-bottom'>
+            
+
+        </div>
+        
+        </div>
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By Shawn A. Rhoads<br/>
+        
+            &copy; Copyright 2021.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+
+    
+  <script src="_static/js/index.d3f166471bb80abb5163.js"></script>
+
+
+    
+    <!-- Google Analytics -->
+    <script>
+      window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+      ga('create', 'G-KG3N20S55G', 'auto');
+      ga('set', 'anonymizeIp', true);
+      ga('send', 'pageview');
+    </script>
+    <script async src='https://www.google-analytics.com/analytics.js'></script>
+    <!-- End Google Analytics -->
+    
+  </body>
+</html>
