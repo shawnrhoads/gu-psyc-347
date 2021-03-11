@@ -295,6 +295,18 @@
         <nav id="bd-toc-nav">
             <ul class="nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#table-of-contents">
+   Table of Contents
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#key">
+     Key
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#part-1">
    Part 1
   </a>
@@ -320,6 +332,23 @@
   <a class="reference internal nav-link" href="#part-2">
    Part 2
   </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#defining-a-likelihood-function">
+     4. Defining a likelihood function
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#minimizing-the-negative-loglikelihood">
+     5. Minimizing the negative loglikelihood
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#comparing-results-with-your-predictions">
+     6. Comparing results with your predictions
+    </a>
+   </li>
+  </ul>
  </li>
 </ul>
 
@@ -358,7 +387,28 @@
 </div>
 </div>
 <p>Now, that we’ve downloaded our data, let’s explore it together!</p>
-<hr><div class="section" id="part-1">
+<div class="section" id="table-of-contents">
+<h2>Table of Contents<a class="headerlink" href="#table-of-contents" title="Permalink to this headline">¶</a></h2>
+<p><strong>Part 1</strong></p>
+<ol class="simple">
+<li><p><a class="reference external" href="#1.-Getting-to-know-your-stimuli">Getting to know your stimuli</a></p></li>
+<li><p><a class="reference external" href="#2.-Exploring-behavior">Exploring behavior</a></p></li>
+<li><p><a class="reference external" href="#3.-Exploring-outcomes">Exploring outcomes</a></p></li>
+</ol>
+<p><strong>Part 2</strong>
+4. <span class="xref myst">Defining a likelihood function</span>
+5. <span class="xref myst">Minimizing the negative loglikelihood</span>
+6. <span class="xref myst">Comparing results with your predictions</span></p>
+<div class="section" id="key">
+<h3>Key<a class="headerlink" href="#key" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">#</span> <span class="pre">[INSERT</span> <span class="pre">CODE</span> <span class="pre">BELOW]</span></code> : indicates where you should insert your own code, feel free to replace with a comment of your own</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">...</span></code>: indicates a location where you should insert your own code</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">raise</span> <span class="pre">NotImplementedError(&quot;Student</span> <span class="pre">exercise:</span> <span class="pre">*&quot;)</span></code> : delete this line once you have added your code</p></li>
+</ul>
+<hr></div>
+</div>
+<div class="section" id="part-1">
 <h2>Part 1<a class="headerlink" href="#part-1" title="Permalink to this headline">¶</a></h2>
 <p>You will break out in groups of 2-3 to discuss the following questions (<font color='red'>highlighted in red font</font>) and implement code to answer them. I have prepared a few functions that will help you along the way.</p>
 <p>Then, we will re-group with the entire class to discuss what we’ve learned. Please remember to save your work. This will count towards your Jupyter Notebook Exercise #3 grade.</p>
@@ -421,24 +471,27 @@
 <p><font color="red">1a. How many trials did each subject complete?</font> (<em>Hint: explore the Dictionary of DataFrames</em>)</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># insert your code here</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># [INSERT CODE BELOW]</span>
 </pre></div>
 </div>
 </div>
 </div>
 <p><strong>ANSWER 1a: <em>insert your answer here</em></strong></p>
+<p>Each subject completed 50 trials corresponding to 50 rows in each DataFrame.</p>
 <p>Each slot machine was associated with a different mean probability (i.e., <strong>stim_A</strong> yielded rewards according to a constant probability and <strong>stim_B</strong> yielded rewards according to a different constant probability).</p>
 <p><font color="red">1b. What were the probabilities of each stimulus?<br>
 1c. Did <strong>stim_A</strong> have the same probability for every subject? <strong>stim_B</strong>? Why or why not?</font></p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># insert your code here</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># [INSERT CODE BELOW]</span>
 </pre></div>
 </div>
 </div>
 </div>
 <p><strong>ANSWER 1b: <em>insert your answer here</em></strong></p>
+<p>Each stimulus yielded rewards with either a 20% or 80% chance.</p>
 <p><strong>ANSWER 1c: <em>insert your answer here</em></strong></p>
+<p>The stimuli displayed to subject #1 have different probabilities than the stimuli displayed to subject #3. This is important because we want to ensure that subjects are learning the values of the stimuli (we don’t want learning to be confounded with actions).</p>
 </div>
 <div class="section" id="exploring-behavior">
 <h3>2. Exploring behavior<a class="headerlink" href="#exploring-behavior" title="Permalink to this headline">¶</a></h3>
@@ -469,7 +522,7 @@
         <span class="n">plt</span><span class="o">.</span><span class="n">axhline</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="n">data</span><span class="o">.</span><span class="n">choice</span><span class="o">==</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">outcome</span><span class="p">),</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;purple&quot;</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=.</span><span class="mi">4</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="n">data</span><span class="o">.</span><span class="n">columns</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
         
     <span class="k">if</span> <span class="n">outcomes</span><span class="p">:</span>
-        <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">data</span><span class="p">)),</span> <span class="n">data</span><span class="o">.</span><span class="n">outcome</span><span class="p">,</span> <span class="s1">&#39;r--&#39;</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=.</span><span class="mi">6</span><span class="p">)</span>
+        <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">data</span><span class="p">)),</span> <span class="n">data</span><span class="o">.</span><span class="n">outcome</span><span class="p">,</span> <span class="s1">&#39;r--&#39;</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=.</span><span class="mi">6</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;outcome&#39;</span><span class="p">)</span>
     <span class="k">if</span> <span class="n">choices</span><span class="p">:</span>
         <span class="k">if</span> <span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">data</span><span class="o">.</span><span class="n">choice</span><span class="p">)</span> <span class="o">&lt;</span> <span class="o">.</span><span class="mi">5</span><span class="p">:</span>
             <span class="n">choice_data</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span> <span class="k">if</span> <span class="n">x</span> <span class="o">==</span> <span class="mi">1</span> <span class="k">else</span> <span class="mi">1</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">data</span><span class="o">.</span><span class="n">choice</span><span class="p">]</span>
@@ -486,13 +539,13 @@
 </div>
 </div>
 </div>
-<p>Plot everyone’s behavior and answer the following questions (*hint: there’s way to plot everyone’s data using only two lines of code).
+<p>Plot everyone’s behavior and answer the following questions (<em>pro-tip: there’s way to plot everyone’s data using only two lines of code; can you figure it out?</em>).
 <br><br></p>
 <font color="red">
-    2a. Which subjects were most sensitive to previous unexpected outcomes? List the subject ID numbers. Describe which aspect(s) of the data led you to this conclusion. What parameter from the Rescorla-Wagner Model captures this tendency?<br>
+    2a. Which subjects were most sensitive to previous unexpected outcomes? In other words, who changed their decisions most often after a prediction error? List the subject ID numbers. Describe which aspect(s) of the data led you to this conclusion. What parameter from the Rescorla-Wagner Model captures this tendency?<br>
     2c. Which subjects were least explorative in their behavior? List the subject ID numbers. Describe which aspect(s) of the data led you to this conclusion. What parameter from the Rescorla-Wagner Model captures this tendency?</font><div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># insert your code here</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># [INSERT CODE BELOW]</span>
 </pre></div>
 </div>
 </div>
@@ -505,7 +558,7 @@
 <p><font color="red">Earlier, we learned that the reward probabilities of each stimulus were fixed, how do these values compare with the actual mean reward over trials across subjects (according to their choices)? Are they similar? Why or why not?</font> (<em>Hint: see plots above and/or explore different subjects’ “outcome” column</em>)<br></p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># insert your code here</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># [INSERT CODE BELOW]</span>
 </pre></div>
 </div>
 </div>
@@ -516,7 +569,190 @@
 </div>
 <div class="section" id="part-2">
 <h2>Part 2<a class="headerlink" href="#part-2" title="Permalink to this headline">¶</a></h2>
-<p><em>Coming soon!</em></p>
+<p>Now that we have explored the data and gotten a sense about participants’ behaviors during the task, let’s estimate models that explain their learning!</p>
+<p>We will:</p>
+<ul class="simple">
+<li><p>Define a function that computes the negative loglikelihood given the data and Rescorla-Wagner Model</p></li>
+<li><p>Implement an minimization algorithm that loops through possible combinations of <span class="math notranslate nohighlight">\(\alpha\)</span> and <span class="math notranslate nohighlight">\(\theta\)</span> for each subject in order to find the parameters that minimize the negative loglikelihood. Each subject (<span class="math notranslate nohighlight">\(i\)</span>) will have a separate set of parameters <span class="math notranslate nohighlight">\(\alpha_i\)</span> and <span class="math notranslate nohighlight">\(\theta_i\)</span>, which respectively correspond to the learning rate and inverse temperature</p></li>
+<li><p>Compare the estimated parameter values for <span class="math notranslate nohighlight">\(\alpha_i\)</span> and <span class="math notranslate nohighlight">\(\theta_i\)</span> to your initial predictions in Questions <a class="reference external" href="#2.-Exploring-behavior">#2a-b</a>.</p></li>
+</ul>
+<div class="section" id="defining-a-likelihood-function">
+<h3>4. Defining a likelihood function<a class="headerlink" href="#defining-a-likelihood-function" title="Permalink to this headline">¶</a></h3>
+<p>Recall that our goal is to find the parameter values of a model that maximize the likelihood of the data. In the Rescorla-Wagner case, we want to maximize the likelihood (a.k.a. minimize the loglikelihood) of the data given parameter values (<span class="math notranslate nohighlight">\(\alpha\)</span> and <span class="math notranslate nohighlight">\(\theta\)</span>) of the model.</p>
+<p>In the Rescorla-Wagner Model, the likelihood of the data are given by the probability of making a choice on a give trial, <span class="math notranslate nohighlight">\(p(c_t)\)</span>.</p>
+<p>That is, participants use the stimuli values to guide their decisions, choosing the most valuable option most frequently, but occasionally making ‘mistakes’ (or exploring) by choosing a low value option. One choice rule with these properties is known as the <strong>‘softmax’ choice rule</strong>, which chooses option <span class="math notranslate nohighlight">\(k\)</span> with probability:</p>
+<div class="math notranslate nohighlight">
+\[
+p^k_t = \frac{\exp(\theta Q^k_t)}{\sum_{i=1}^K \exp(\theta Q^i_t)}
+\]</div>
+<p>where <span class="math notranslate nohighlight">\(\theta\)</span> is the ‘inverse temperature’ parameter that controls the level of stochasticity in the choice, ranging from <span class="math notranslate nohighlight">\(\theta = 0\)</span> for completely random responding and <span class="math notranslate nohighlight">\(\theta = \infty\)</span> for deterministically choosing the highest value option.</p>
+<p>The value of each stimulus <span class="math notranslate nohighlight">\(k\)</span>, <span class="math notranslate nohighlight">\(Q^k_t\)</span> is updated in response to reward <span class="math notranslate nohighlight">\(r_t\)</span> according to:</p>
+<div class="math notranslate nohighlight">
+\[
+Q^k_{t+1} = Q^k_t + \alpha (r_t - Q^k_t)
+\]</div>
+<p>where <span class="math notranslate nohighlight">\(\alpha\)</span> is the learning rate, which is bounded between 0 and 1 and captures the extent to which the prediction error, <span class="math notranslate nohighlight">\((r_t - Q^k_t)\)</span>, updates the value (i.e., a higher <span class="math notranslate nohighlight">\(\alpha\)</span> value will put greater weight on the prediction error). For simplicity, we assume that the initial value, <span class="math notranslate nohighlight">\(Q^k_0=0\)</span>, although it is possible to treat the <span class="math notranslate nohighlight">\(Q^k_0\)</span> as a free parameter of the model (this is also the intercept).</p>
+<p>Combining the learning and decision rules gives a simple model of decision making in this task with two free parameters: the learning rate, <span class="math notranslate nohighlight">\(\alpha\)</span>, and the inverse temperature <span class="math notranslate nohighlight">\(\theta\)</span>.</p>
+<p>Thus, for any given (<span class="math notranslate nohighlight">\(\alpha\)</span> and <span class="math notranslate nohighlight">\(\theta\)</span>) of the model, the negative loglikelihood <span class="math notranslate nohighlight">\(negative \log \mathcal{L}\)</span> will be computed as:</p>
+<div class="math notranslate nohighlight">
+\[
+negative \log \mathcal{L} = -\sum_{t=1}^T \log p(c_t)
+\]</div>
+<p>Below we will define a function that computes the negative loglikelihood given the data and Rescorla-Wagner Model (see <a class="reference external" href="https://shawnrhoads.github.io/gu-psyc-347/module-01-01_Intro-to-Python.html">Intro to Python</a> for functions, <a class="reference external" href="https://shawnrhoads.github.io/gu-psyc-347/module-02-02_Modeling-Exercises.html">Modeling Exercises</a> and <a class="reference external" href="https://shawnrhoads.github.io/gu-psyc-347/module-03-01_Models-of-Learning.html">Models of Learning</a> for negative loglikelihood, and <a class="reference external" href="https://shawnrhoads.github.io/gu-psyc-347/module-03-01_Models-of-Learning.html">Models of Learning</a> for the Rescorla-Wagner Model).</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># fill in the `...` below to estimate model params for each subject</span>
+
+<span class="c1"># [INSERT CODE BELOW]</span>
+<span class="k">raise</span> <span class="ne">NotImplementedError</span><span class="p">(</span><span class="s2">&quot;Student exercise: complete the code below to define that computes the negative loglikelihood for the Rescorla-Wagner Model of Learning, then delete this line&quot;</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">negll_RescorlaWagner</span><span class="p">(</span><span class="n">params</span><span class="p">,</span> <span class="n">choices</span><span class="p">,</span> <span class="n">outcomes</span><span class="p">):</span>
+    
+    <span class="n">alpha</span><span class="p">,</span> <span class="n">theta</span> <span class="o">=</span> <span class="n">params</span> 
+    <span class="n">c</span><span class="p">,</span> <span class="n">r</span> <span class="o">=</span> <span class="n">choices</span><span class="p">,</span> <span class="n">outcomes</span> 
+    
+    <span class="n">T</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">c</span><span class="p">)</span> 
+    <span class="n">Q</span> <span class="o">=</span> <span class="p">[</span><span class="mf">0.5</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">]</span> <span class="c1"># Q at trial 0</span>
+    <span class="n">Q_stored</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="mi">2</span><span class="p">,</span> <span class="n">T</span><span class="p">),</span> <span class="n">dtype</span> <span class="o">=</span> <span class="nb">float</span><span class="p">)</span> 
+    <span class="n">choiceProb</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="n">T</span><span class="p">),</span> <span class="n">dtype</span> <span class="o">=</span> <span class="nb">float</span><span class="p">)</span> 
+
+    <span class="k">for</span> <span class="n">t</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">T</span><span class="p">):</span> <span class="c1"># add comment</span>
+        
+        <span class="c1"># compute choice probabilities for k=2</span>
+        <span class="c1"># hint: use the softmax rule</span>
+        <span class="n">p0</span> <span class="o">=</span> <span class="o">...</span> <span class="o">/</span> <span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="n">theta</span><span class="o">*</span><span class="n">Q</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">+</span> <span class="n">np</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="n">theta</span><span class="o">*</span><span class="n">Q</span><span class="p">[</span><span class="mi">1</span><span class="p">])))</span>
+        <span class="n">p1</span> <span class="o">=</span>  <span class="o">...</span> <span class="o">/</span> <span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="n">theta</span><span class="o">*</span><span class="n">Q</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">+</span> <span class="n">np</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="n">theta</span><span class="o">*</span><span class="n">Q</span><span class="p">[</span><span class="mi">1</span><span class="p">])))</span>
+        <span class="n">p</span> <span class="o">=</span> <span class="p">[</span><span class="n">p0</span><span class="p">,</span> <span class="n">p1</span><span class="p">]</span> 
+
+        <span class="c1"># compute choice probability for actual choice</span>
+        <span class="n">choiceProb</span><span class="p">[</span><span class="n">t</span><span class="p">]</span> <span class="o">=</span> <span class="n">p</span><span class="p">[</span><span class="n">c</span><span class="p">[</span><span class="n">t</span><span class="p">]]</span> 
+
+        <span class="c1"># update values</span>
+        <span class="n">delta</span> <span class="o">=</span> <span class="n">r</span><span class="p">[</span><span class="n">t</span><span class="p">]</span> <span class="o">-</span> <span class="n">Q</span><span class="p">[</span><span class="n">c</span><span class="p">[</span><span class="n">t</span><span class="p">]]</span>
+        <span class="n">Q</span><span class="p">[</span><span class="n">c</span><span class="p">[</span><span class="n">t</span><span class="p">]]</span> <span class="o">=</span> <span class="n">Q</span><span class="p">[</span><span class="n">c</span><span class="p">[</span><span class="n">t</span><span class="p">]]</span> <span class="o">+</span> <span class="n">alpha</span> <span class="o">*</span> <span class="o">...</span>
+        
+        <span class="c1"># store Q_t+1</span>
+        <span class="n">Q_stored</span><span class="p">[:,</span><span class="n">t</span><span class="p">]</span> <span class="o">=</span> <span class="n">Q</span>
+        
+    <span class="n">negLL</span> <span class="o">=</span> <span class="o">-</span><span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="n">choiceProb</span><span class="p">))</span> 
+    
+    <span class="k">return</span> <span class="n">negLL</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">NotImplementedError</span><span class="g g-Whitespace">                       </span>Traceback (most recent call last)
+<span class="o">&lt;</span><span class="n">ipython</span><span class="o">-</span><span class="nb">input</span><span class="o">-</span><span class="mi">10</span><span class="o">-</span><span class="mi">992</span><span class="n">ecd21e8e8</span><span class="o">&gt;</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="g g-Whitespace">      </span><span class="mi">2</span> 
+<span class="g g-Whitespace">      </span><span class="mi">3</span> <span class="c1"># [INSERT CODE BELOW]</span>
+<span class="ne">----&gt; </span><span class="mi">4</span> <span class="k">raise</span> <span class="ne">NotImplementedError</span><span class="p">(</span><span class="s2">&quot;Student exercise: complete the code below to define that computes the negative loglikelihood for the Rescorla-Wagner Model of Learning, then delete this line&quot;</span><span class="p">)</span>
+<span class="g g-Whitespace">      </span><span class="mi">5</span> 
+<span class="g g-Whitespace">      </span><span class="mi">6</span> <span class="k">def</span> <span class="nf">negll_RescorlaWagner</span><span class="p">(</span><span class="n">params</span><span class="p">,</span> <span class="n">choices</span><span class="p">,</span> <span class="n">outcomes</span><span class="p">):</span>
+
+<span class="ne">NotImplementedError</span>: Student exercise: complete the code below to define that computes the negative loglikelihood for the Rescorla-Wagner Model of Learning, then delete this line
+</pre></div>
+</div>
+</div>
+</div>
+<p>Let’s develop an intuition for how this function works. Make a guess for subejct #3’s <span class="math notranslate nohighlight">\(\alpha\)</span> and <span class="math notranslate nohighlight">\(\theta\)</span> to compute the negative loglikelihood.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># fill in the `...` below to make guess for alpha and theta for subject #3</span>
+<span class="c1"># then, fill in the inputs for the function</span>
+
+<span class="c1"># [INSERT CODE BELOW]</span>
+<span class="k">raise</span> <span class="ne">NotImplementedError</span><span class="p">(</span><span class="s2">&quot;Student exercise: make guess for alpha and theta to compute the negative loglikelihood, then delete this line&quot;</span><span class="p">)</span>
+
+<span class="n">alpha_guess</span> <span class="o">=</span> <span class="o">...</span> <span class="c1">#number between 0-1</span>
+<span class="n">theta_guess</span> <span class="o">=</span> <span class="o">...</span> <span class="c1">#number between 1-8</span>
+<span class="n">subj3_choices</span> <span class="o">=</span> <span class="n">subject_data</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span><span class="o">.</span><span class="n">choice</span>
+<span class="n">subj3_outcomes</span> <span class="o">=</span> <span class="n">subject_data</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span><span class="o">.</span><span class="n">outcomes</span>
+
+<span class="c1"># compute the negative ll</span>
+<span class="n">subj3_negll</span> <span class="o">=</span> <span class="n">negll_RescorlaWagner</span><span class="p">([</span><span class="o">...</span><span class="p">,</span> <span class="o">...</span><span class="p">],</span> <span class="n">subj3_choices</span><span class="p">,</span> <span class="n">subj3_outcomes</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;given alpha=</span><span class="si">{</span><span class="n">alpha_guess</span><span class="si">}</span><span class="s1"> and theta=</span><span class="si">{</span><span class="n">theta_guess</span><span class="si">}</span><span class="s1">, the negative loglikelihood is </span><span class="si">{</span><span class="n">subj3_negll</span><span class="si">:</span><span class="s1">.2f</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="minimizing-the-negative-loglikelihood">
+<h3>5. Minimizing the negative loglikelihood<a class="headerlink" href="#minimizing-the-negative-loglikelihood" title="Permalink to this headline">¶</a></h3>
+<p>Now that we have a function, implement an minimization algorithm that loops through possible combinations of <span class="math notranslate nohighlight">\(\alpha\)</span> and <span class="math notranslate nohighlight">\(\theta\)</span> for each subject in order to find the parameters that minimize the negative loglikelihood. Each subject (<span class="math notranslate nohighlight">\(i\)</span>) will have a separate set of parameters <span class="math notranslate nohighlight">\(\alpha_i\)</span> and <span class="math notranslate nohighlight">\(\theta_i\)</span>, which respectively correspond to the learning rate and inverse temperature (see <a class="reference external" href="https://shawnrhoads.github.io/gu-psyc-347/module-03-01_Models-of-Learning.html">Models of Learning</a>.</p>
+<p>Importantly, we will store these parameters in a Pandas DataFrame with 15 rows corresponding to subjects, and 2 columns corresponding to <span class="math notranslate nohighlight">\(\alpha\)</span> and <span class="math notranslate nohighlight">\(\theta\)</span> (see <a class="reference external" href="https://shawnrhoads.github.io/gu-psyc-347/module-01-02_Working-with-Data.html">Working with Data</a> for more on Pandas DataFrames).</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># fill in the `...` below to estimate model params for each subject</span>
+
+<span class="c1"># [INSERT CODE BELOW]</span>
+<span class="k">raise</span> <span class="ne">NotImplementedError</span><span class="p">(</span><span class="s2">&quot;Student exercise: complete the code below to estimate model parameters for each subject, then delete this line&quot;</span><span class="p">)</span>
+
+<span class="c1">#initialize dataframe to store results</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">index</span><span class="o">=</span><span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="nb">len</span><span class="p">(</span><span class="n">subject_data</span><span class="p">)),</span> <span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;alpha&#39;</span><span class="p">,</span><span class="s1">&#39;theta&#39;</span><span class="p">])</span>
+
+<span class="c1"># loop through subjects</span>
+<span class="k">for</span> <span class="n">index</span><span class="p">,</span> <span class="n">behavior</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">subject_data</span><span class="o">.</span><span class="n">values</span><span class="p">()):</span>
+    <span class="o">...</span><span class="p">,</span> <span class="o">...</span> <span class="o">=</span> <span class="n">behavior</span><span class="o">.</span><span class="n">choice</span><span class="p">,</span> <span class="n">behavior</span><span class="o">.</span><span class="n">outcome</span>
+    
+    <span class="c1"># gradient descent to minimize neg LL</span>
+    <span class="n">res_nll</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">inf</span> <span class="c1"># set initial neg LL to be inf</span>
+
+    <span class="c1"># guess several different starting points for alpha</span>
+    <span class="k">for</span> <span class="n">alpha_guess</span> <span class="ow">in</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">12</span><span class="p">):</span>
+        <span class="k">for</span> <span class="n">theta_guess</span> <span class="ow">in</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">10</span><span class="p">,</span><span class="mi">12</span><span class="p">):</span>
+
+            <span class="c1"># guesses for alpha, theta will change on each loop</span>
+            <span class="n">init_guess</span> <span class="o">=</span> <span class="p">(</span><span class="o">...</span><span class="p">,</span> <span class="o">...</span><span class="p">)</span>
+
+            <span class="c1"># minimize neg LL</span>
+            <span class="n">result</span> <span class="o">=</span> <span class="n">minimize</span><span class="p">(</span><span class="o">...</span><span class="p">,</span> 
+                              <span class="o">...</span><span class="p">,</span> 
+                              <span class="p">(</span><span class="n">c</span><span class="p">,</span> <span class="n">o</span><span class="p">),</span> 
+                              <span class="n">bounds</span><span class="o">=</span><span class="p">((</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">),(</span><span class="mi">0</span><span class="p">,</span><span class="mi">10</span><span class="p">)))</span>
+
+            <span class="c1"># if current negLL is smaller than the last negLL,</span>
+            <span class="c1"># then store current data</span>
+            <span class="k">if</span> <span class="n">result</span><span class="o">.</span><span class="n">fun</span> <span class="o">&lt;</span> <span class="n">res_nll</span><span class="p">:</span>
+                <span class="n">res_nll</span> <span class="o">=</span> <span class="o">...</span>
+                <span class="n">param_fits</span> <span class="o">=</span> <span class="o">...</span>
+
+    <span class="c1"># also, compute BIC</span>
+    <span class="n">BIC</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">init_guess</span><span class="p">)</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">c</span><span class="p">))</span> <span class="o">+</span> <span class="mi">2</span><span class="o">*</span><span class="n">res_nll</span>
+    
+    <span class="c1">#store in dataframe</span>
+    <span class="n">df</span><span class="o">.</span><span class="n">at</span><span class="p">[</span><span class="n">index</span><span class="p">,</span> <span class="s1">&#39;alpha&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">param_fits</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+    <span class="n">df</span><span class="o">.</span><span class="n">at</span><span class="p">[</span><span class="n">index</span><span class="p">,</span> <span class="s1">&#39;theta&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">param_fits</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+    
+    <span class="nb">print</span><span class="p">(</span><span class="sa">fr</span><span class="s1">&#39;subject </span><span class="si">{</span><span class="n">index</span><span class="si">:</span><span class="s1">02</span><span class="si">}</span><span class="s1">: alpha=</span><span class="si">{</span><span class="n">param_fits</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="si">:</span><span class="s1">.2f</span><span class="si">}</span><span class="s1">, theta=</span><span class="si">{</span><span class="n">param_fits</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="si">:</span><span class="s1">.2f</span><span class="si">}</span><span class="s1">; negLL=</span><span class="si">{</span><span class="n">res_nll</span><span class="si">:</span><span class="s1">.2f</span><span class="si">}</span><span class="s1">; BIC=</span><span class="si">{</span><span class="n">BIC</span><span class="si">:</span><span class="s1">.2f</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="comparing-results-with-your-predictions">
+<h3>6. Comparing results with your predictions<a class="headerlink" href="#comparing-results-with-your-predictions" title="Permalink to this headline">¶</a></h3>
+<p>How were your predictions? <font color="red">Do these parameters somewhat map onto what you expected solely based on their behavior?</font> It’s okay if they didn’t!</p>
+<p><strong>ANSWER 6: <em>insert your answer here</em></strong></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Finally, please convert this cell to a Markdown cell.</span>
+
+<span class="c1"># Create a Heading named &quot;Notebook Feedback,&quot; then delete this text </span>
+<span class="c1"># and provide 1-2 sentences about your experience with this </span>
+<span class="c1"># Jupyter Notebook (e.g., Did you enjoy the exercises? Were </span>
+<span class="c1"># they too easy/difficult? Would you have like to see </span>
+<span class="c1"># anything different? Were you able to apply some skills we learned during</span>
+<span class="c1"># class? Anything still confusing?). Finally, please rate your experience</span>
+<span class="c1"># from (0) &quot;did not enjoy at all&quot; to (10) &quot;enjoyed a great deal.&quot; Only your</span>
+<span class="c1"># instructor will see these responses. </span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Please save this file as an .html file by clicking on <strong>‘File &gt; Download As &gt; HTML (.html)’</strong></p>
+<p>Then, save the file as <strong>“Lastname_Exercise03.html”</strong> and submit on Canvas.</p>
+</div>
 </div>
 </div>
 
