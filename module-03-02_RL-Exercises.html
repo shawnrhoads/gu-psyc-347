@@ -477,7 +477,6 @@
 </div>
 </div>
 <p><strong>ANSWER 1a: <em>insert your answer here</em></strong></p>
-<p>Each subject completed 50 trials corresponding to 50 rows in each DataFrame.</p>
 <p>Each slot machine was associated with a different mean probability (i.e., <strong>stim_A</strong> yielded rewards according to a constant probability and <strong>stim_B</strong> yielded rewards according to a different constant probability).</p>
 <p><font color="red">1b. What were the probabilities of each stimulus?<br>
 1c. Did <strong>stim_A</strong> have the same probability for every subject? <strong>stim_B</strong>? Why or why not?</font></p>
@@ -489,9 +488,7 @@
 </div>
 </div>
 <p><strong>ANSWER 1b: <em>insert your answer here</em></strong></p>
-<p>Each stimulus yielded rewards with either a 20% or 80% chance.</p>
 <p><strong>ANSWER 1c: <em>insert your answer here</em></strong></p>
-<p>The stimuli displayed to subject #1 have different probabilities than the stimuli displayed to subject #3. This is important because we want to ensure that subjects are learning the values of the stimuli (we don’t want learning to be confounded with actions).</p>
 </div>
 <div class="section" id="exploring-behavior">
 <h3>2. Exploring behavior<a class="headerlink" href="#exploring-behavior" title="Permalink to this headline">¶</a></h3>
@@ -513,7 +510,7 @@
 <span class="sd">        plot of behavior</span>
 <span class="sd">    &#39;&#39;&#39;</span>
     <span class="k">assert</span> <span class="nb">type</span><span class="p">(</span><span class="n">subject_data</span><span class="p">)</span> <span class="ow">is</span> <span class="nb">dict</span><span class="p">,</span> <span class="s2">&quot;`subject_data` should be a dictionary, run the `load_subjects()` function above to load the data into memory&quot;</span>
-    <span class="k">assert</span> <span class="nb">type</span><span class="p">(</span><span class="n">subject_id</span><span class="p">)</span> <span class="ow">is</span> <span class="nb">int</span> <span class="ow">and</span> <span class="n">subject_id</span> <span class="o">&gt;=</span> <span class="mi">0</span> <span class="ow">and</span> <span class="n">subject_id</span> <span class="o">&lt;=</span><span class="mi">14</span><span class="p">,</span> <span class="s2">&quot;`subject_id` should be an integer between 0 and 14&quot;</span>
+    <span class="k">assert</span> <span class="nb">type</span><span class="p">(</span><span class="n">subject_id</span><span class="p">)</span> <span class="ow">is</span> <span class="nb">int</span> <span class="ow">and</span> <span class="n">subject_id</span> <span class="o">&gt;=</span> <span class="mi">0</span> <span class="ow">and</span> <span class="n">subject_id</span> <span class="o">&lt;=</span> <span class="mi">14</span><span class="p">,</span> <span class="s2">&quot;`subject_id` should be an integer between 0 and 14&quot;</span>
     
     <span class="n">data</span> <span class="o">=</span> <span class="n">subject_data</span><span class="p">[</span><span class="n">subject_id</span><span class="p">]</span>
     
