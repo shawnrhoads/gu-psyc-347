@@ -606,41 +606,46 @@ negative \log \mathcal{L} = -\sum_{t=1}^T \log p(c_t)
 <span class="k">def</span> <span class="nf">negll_RescorlaWagner</span><span class="p">(</span><span class="n">params</span><span class="p">,</span> <span class="n">choices</span><span class="p">,</span> <span class="n">outcomes</span><span class="p">):</span>
     
     <span class="n">alpha</span><span class="p">,</span> <span class="n">theta</span> <span class="o">=</span> <span class="n">params</span> 
-    <span class="n">c</span><span class="p">,</span> <span class="n">r</span> <span class="o">=</span> <span class="n">choices</span><span class="p">,</span> <span class="n">outcomes</span> 
     
-    <span class="n">T</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">c</span><span class="p">)</span> 
-    <span class="n">Q</span> <span class="o">=</span> <span class="p">[</span><span class="mf">0.5</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">]</span> <span class="c1"># Q at trial 0</span>
-    <span class="n">Q_stored</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="mi">2</span><span class="p">,</span> <span class="n">T</span><span class="p">),</span> <span class="n">dtype</span> <span class="o">=</span> <span class="nb">float</span><span class="p">)</span> 
-    <span class="n">choiceProb</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="n">T</span><span class="p">),</span> <span class="n">dtype</span> <span class="o">=</span> <span class="nb">float</span><span class="p">)</span> 
-
-    <span class="k">for</span> <span class="n">t</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">T</span><span class="p">):</span> <span class="c1"># add comment</span>
-        
-        <span class="c1"># compute choice probabilities for k=2</span>
-        <span class="c1"># hint: use the softmax rule</span>
-        <span class="n">p0</span> <span class="o">=</span> <span class="o">...</span> <span class="o">/</span> <span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="n">theta</span><span class="o">*</span><span class="n">Q</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">+</span> <span class="n">np</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="n">theta</span><span class="o">*</span><span class="n">Q</span><span class="p">[</span><span class="mi">1</span><span class="p">])))</span>
-        <span class="n">p1</span> <span class="o">=</span>  <span class="o">...</span> <span class="o">/</span> <span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="n">theta</span><span class="o">*</span><span class="n">Q</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">+</span> <span class="n">np</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="n">theta</span><span class="o">*</span><span class="n">Q</span><span class="p">[</span><span class="mi">1</span><span class="p">])))</span>
-        <span class="n">p</span> <span class="o">=</span> <span class="p">[</span><span class="n">p0</span><span class="p">,</span> <span class="n">p1</span><span class="p">]</span> 
-
-        <span class="c1"># compute choice probability for actual choice</span>
-        <span class="n">choiceProb</span><span class="p">[</span><span class="n">t</span><span class="p">]</span> <span class="o">=</span> <span class="n">p</span><span class="p">[</span><span class="n">c</span><span class="p">[</span><span class="n">t</span><span class="p">]]</span> 
-
-        <span class="c1"># update values</span>
-        <span class="n">delta</span> <span class="o">=</span> <span class="n">r</span><span class="p">[</span><span class="n">t</span><span class="p">]</span> <span class="o">-</span> <span class="n">Q</span><span class="p">[</span><span class="n">c</span><span class="p">[</span><span class="n">t</span><span class="p">]]</span>
-        <span class="n">Q</span><span class="p">[</span><span class="n">c</span><span class="p">[</span><span class="n">t</span><span class="p">]]</span> <span class="o">=</span> <span class="n">Q</span><span class="p">[</span><span class="n">c</span><span class="p">[</span><span class="n">t</span><span class="p">]]</span> <span class="o">+</span> <span class="n">alpha</span> <span class="o">*</span> <span class="o">...</span>
-        
-        <span class="c1"># store Q_t+1</span>
-        <span class="n">Q_stored</span><span class="p">[:,</span><span class="n">t</span><span class="p">]</span> <span class="o">=</span> <span class="n">Q</span>
-        
-    <span class="n">negLL</span> <span class="o">=</span> <span class="o">-</span><span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="n">choiceProb</span><span class="p">))</span> 
+    <span class="k">if</span> <span class="n">np</span><span class="o">.</span><span class="n">isnan</span><span class="p">(</span><span class="n">alpha</span><span class="p">)</span> <span class="ow">or</span> <span class="n">np</span><span class="o">.</span><span class="n">isnan</span><span class="p">(</span><span class="n">theta</span><span class="p">):</span> <span class="c1"># check inputs</span>
+        <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">inf</span>
     
-    <span class="k">return</span> <span class="n">negLL</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">c</span><span class="p">,</span> <span class="n">r</span> <span class="o">=</span> <span class="n">choices</span><span class="p">,</span> <span class="n">outcomes</span> 
+
+        <span class="n">T</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">c</span><span class="p">)</span> 
+        <span class="n">Q</span> <span class="o">=</span> <span class="p">[</span><span class="mf">0.5</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">]</span> <span class="c1"># Q at trial 0</span>
+        <span class="n">Q_stored</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="mi">2</span><span class="p">,</span> <span class="n">T</span><span class="p">),</span> <span class="n">dtype</span> <span class="o">=</span> <span class="nb">float</span><span class="p">)</span> 
+        <span class="n">choiceProb</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="n">T</span><span class="p">),</span> <span class="n">dtype</span> <span class="o">=</span> <span class="nb">float</span><span class="p">)</span> 
+
+        <span class="k">for</span> <span class="n">t</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">T</span><span class="p">):</span> <span class="c1"># add comment</span>
+
+            <span class="c1"># compute choice probabilities for k=2</span>
+            <span class="c1"># use the softmax rule</span>
+            <span class="n">ev</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="n">theta</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">Q</span><span class="p">))</span>
+            <span class="n">sum_ev</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">ev</span><span class="p">)</span>
+            <span class="n">p</span> <span class="o">=</span> <span class="n">ev</span> <span class="o">/</span> <span class="n">sum_ev</span>
+
+            <span class="c1"># compute choice probability for actual choice</span>
+            <span class="n">choiceProb</span><span class="p">[</span><span class="n">t</span><span class="p">]</span> <span class="o">=</span> <span class="n">p</span><span class="p">[</span><span class="n">c</span><span class="p">[</span><span class="n">t</span><span class="p">]]</span> 
+
+            <span class="c1"># update values</span>
+            <span class="n">delta</span> <span class="o">=</span> <span class="n">r</span><span class="p">[</span><span class="n">t</span><span class="p">]</span> <span class="o">-</span> <span class="n">Q</span><span class="p">[</span><span class="n">c</span><span class="p">[</span><span class="n">t</span><span class="p">]]</span>
+            <span class="n">Q</span><span class="p">[</span><span class="n">c</span><span class="p">[</span><span class="n">t</span><span class="p">]]</span> <span class="o">=</span> <span class="n">Q</span><span class="p">[</span><span class="n">c</span><span class="p">[</span><span class="n">t</span><span class="p">]]</span> <span class="o">+</span> <span class="n">alpha</span> <span class="o">*</span> <span class="o">...</span>
+
+            <span class="c1"># store Q_t+1</span>
+            <span class="n">Q_stored</span><span class="p">[:,</span><span class="n">t</span><span class="p">]</span> <span class="o">=</span> <span class="n">Q</span>
+
+        <span class="n">negLL</span> <span class="o">=</span> <span class="o">-</span><span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="n">choiceProb</span><span class="p">))</span> 
+    
+        <span class="k">return</span> <span class="n">negLL</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
 <div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
 <span class="ne">NotImplementedError</span><span class="g g-Whitespace">                       </span>Traceback (most recent call last)
-<span class="o">&lt;</span><span class="n">ipython</span><span class="o">-</span><span class="nb">input</span><span class="o">-</span><span class="mi">10</span><span class="o">-</span><span class="mi">992</span><span class="n">ecd21e8e8</span><span class="o">&gt;</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="o">&lt;</span><span class="n">ipython</span><span class="o">-</span><span class="nb">input</span><span class="o">-</span><span class="mi">10</span><span class="o">-</span><span class="mi">2</span><span class="n">c99d70c9c53</span><span class="o">&gt;</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
 <span class="g g-Whitespace">      </span><span class="mi">2</span> 
 <span class="g g-Whitespace">      </span><span class="mi">3</span> <span class="c1"># [INSERT CODE BELOW]</span>
 <span class="ne">----&gt; </span><span class="mi">4</span> <span class="k">raise</span> <span class="ne">NotImplementedError</span><span class="p">(</span><span class="s2">&quot;Student exercise: complete the code below to define that computes the negative loglikelihood for the Rescorla-Wagner Model of Learning, then delete this line&quot;</span><span class="p">)</span>
@@ -724,7 +729,7 @@ negative \log \mathcal{L} = -\sum_{t=1}^T \log p(c_t)
 
             <span class="c1"># if current negLL is smaller than the last negLL,</span>
             <span class="c1"># then store current data</span>
-            <span class="k">if</span> <span class="n">result</span><span class="o">.</span><span class="n">fun</span> <span class="o">&lt;</span> <span class="n">res_nll</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">result</span><span class="o">.</span><span class="n">fun</span> <span class="o">&lt;</span> <span class="n">res_nll</span> <span class="ow">and</span> <span class="n">result</span><span class="o">.</span><span class="n">success</span><span class="p">:</span>
                 <span class="n">res_nll</span> <span class="o">=</span> <span class="o">...</span>
                 <span class="n">param_fits</span> <span class="o">=</span> <span class="o">...</span>
 
@@ -740,7 +745,7 @@ negative \log \mathcal{L} = -\sum_{t=1}^T \log p(c_t)
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">  File</span><span class="nn"> &quot;&lt;ipython-input-12-07783cd01350&gt;&quot;</span><span class="gt">, line </span><span class="mi">11</span>
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">  File</span><span class="nn"> &quot;&lt;ipython-input-12-18576cb7055e&gt;&quot;</span><span class="gt">, line </span><span class="mi">11</span>
     <span class="o">...</span><span class="p">,</span> <span class="o">...</span> <span class="o">=</span> <span class="n">behavior</span><span class="o">.</span><span class="n">choice</span><span class="p">,</span> <span class="n">behavior</span><span class="o">.</span><span class="n">outcome</span>
     <span class="o">^</span>
 <span class="ne">SyntaxError</span>: can&#39;t assign to Ellipsis
