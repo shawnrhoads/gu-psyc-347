@@ -179,7 +179,7 @@
         <tr>
             <td>4/15</td>
             <td>Lecture</td>
-            <td><b>Submit Jupyter Notebook exercise 4</b></td>
+            <td>-</td>
             <td>Social inference - Learning and updating beliefs about others</td>
         </tr>
         <tr>
@@ -199,7 +199,7 @@
             <td rowspan=2>14</td>
             <td>4/27</td>
             <td>(Break) Canvas Discussion of Siegel et al. (2018)</td>
-            <td>Read Siegel et al. (2018), and <b>submit response</b></td>
+            <td><b>Submit Jupyter Notebook exercise 4</b>; Read Siegel et al. (2018), and <b>submit response</b></td>
             <td>Social inference example (Morality)</td>
         </tr>
         <tr>

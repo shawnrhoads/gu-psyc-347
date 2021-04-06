@@ -9,7 +9,7 @@ The final project will serve as an smaller-scale example of the steps involved i
 4. Project Presentation (80 points)
 
 ### Project Proposal - Round 1
-Students will submit a 250-300 word abstract describing their research question and study idea. They should set up a meeting with the instructor (during office hours) to determine a final project. Upon completion of this assignment, students will receive feedback and suggestions on how to improve their study and should incorporate this feedback into their proposal (Round 2).
+Students will submit a 250-300 word abstract describing their research question, hypotheses, and study idea along with an outline of the relevant content (i.e., summary of points for the following sections: Introduction, Experimental Design, Intellectual Merit, Broader Impacts, and Conclusion). They should set up a meeting with the instructor (during office hours) to determine a final project. Upon completion of this assignment, students will receive feedback and suggestions on how to improve their study and should incorporate this feedback into their proposal (Round 2).
 
 ### Annotated Bibliography
 Students will choose 7-10 research articles and summarize the research questions, methods, and results of each paper (behavior only). Students should also include a 2-3 sentences on each paper's relevance to their final project.
