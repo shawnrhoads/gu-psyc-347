@@ -1,8 +1,11 @@
-name: deploy-book
+name: book
 
 # Only run this when the master branch changes
 on:
   push:
+    branches:
+    - master
+  pull_request:
     branches:
     - master
     # If your git repository has the Jupyter Book within some-subfolder next to
