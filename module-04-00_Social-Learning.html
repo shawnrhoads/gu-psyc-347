@@ -417,10 +417,12 @@
 <li><p>Choose one (or more) of these common themes, how can we manipulate the following model to accomodate behavior? Write down your new model. Does it make sense? Recall previous papers, tutorials, and lectures to come up with your <strong>new model(s)</strong>.</p></li>
 </ol>
 <hr width=50% align=center>
-<p><em><strong>Learning rule:</strong></em>
-$<span class="math notranslate nohighlight">\(Q_{t+1}^{a} = Q_{t}^{a} + \alpha \cdot (r_{t} - Q_{t}^{a})\)</span>$</p>
-<p><em><strong>Decision rule:</strong></em>
-$<span class="math notranslate nohighlight">\(p_{t}(a | Q_{t}^{a}) = \frac{\exp(\theta \cdot Q_{t}^{a})}{\sum_{a} \exp(\theta \cdot Q_{t}^{a})}\)</span>$</p>
+<p><em><strong>Learning rule:</strong></em></p>
+<div class="math notranslate nohighlight">
+\[Q_{t+1}^{a} = Q_{t}^{a} + \alpha \cdot (r_{t} - Q_{t}^{a})\]</div>
+<p><em><strong>Decision rule:</strong></em></p>
+<div class="math notranslate nohighlight">
+\[p_{t}(a | Q_{t}^{a}) = \frac{\exp(\theta \cdot Q_{t}^{a})}{\sum_{a} \exp(\theta \cdot Q_{t}^{a})}\]</div>
 <hr width=50% align=center>
 <p><strong>Hint:</strong> Think about what influenced your behavior. Did you care about anything other than the prediction error or the value associated with each? Did the valence of the outcomes matter (remember Lengersdorff, et al., 2020)? Can additional parameters in your model help explain behavior?</p>
 <hr></div>
