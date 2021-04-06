@@ -313,17 +313,17 @@
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#rescorla-wagner-model-w-six-free-parameters-33">
-     Rescorla-Wagner Model w/ six free parameters (3α3β)
+     Rescorla-Wagner Model w/ six free parameters (3α3θ)
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#simple-rescorla-wagner-model-w-two-free-parameters-11">
-     (Simple) Rescorla-Wagner Model w/ two free parameters (1α1β)
+     (Simple) Rescorla-Wagner Model w/ two free parameters (1α1θ)
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#null-rescorla-wagner-model-1">
-     (Null) Rescorla-Wagner Model (1β)
+     (Null) Rescorla-Wagner Model (1θ)
     </a>
    </li>
   </ul>
@@ -367,39 +367,39 @@
 <p>We will first review the model that best explained human behavior during a prosocial learning study, where individuals learned how their actions affected outcomes for <strong>themselves</strong>, a <strong>stranger</strong>, and <strong>no one</strong> (<a class="reference external" href="https://doi.org/10.1073/pnas.1603198113">Lockwood, et al., 2016</a>).</p>
 <p>They tested the following three models:</p>
 <div class="section" id="rescorla-wagner-model-w-six-free-parameters-33">
-<h3>Rescorla-Wagner Model w/ six free parameters (3α3β)<a class="headerlink" href="#rescorla-wagner-model-w-six-free-parameters-33" title="Permalink to this headline">¶</a></h3>
-<p>Expectations of future reward for action <span class="math notranslate nohighlight">\(a\)</span>, (<span class="math notranslate nohighlight">\(Q_{t+1}^{a}\)</span>), should be a function of current expectations Q_{t}^{a} and a prediction error, which is discrepancy between the actual reward that has just been experienced on this trial <span class="math notranslate nohighlight">\(r_t\)</span> (coded as 1 or 0 for reward or no reward, respectively) and the expected reward for this trial <span class="math notranslate nohighlight">\(t\)</span>, (<span class="math notranslate nohighlight">\(Q_{t}^{a}\)</span>):</p>
+<h3>Rescorla-Wagner Model w/ six free parameters (3α3θ)<a class="headerlink" href="#rescorla-wagner-model-w-six-free-parameters-33" title="Permalink to this headline">¶</a></h3>
+<p>Expectations of future reward for action <span class="math notranslate nohighlight">\(a\)</span>, (<span class="math notranslate nohighlight">\(Q_{t+1}^{a}\)</span>), should be a function of current expectations <span class="math notranslate nohighlight">\(Q_{t}^{a}\)</span> and a prediction error, which is discrepancy between the actual reward that has just been experienced on this trial <span class="math notranslate nohighlight">\(r_t\)</span> (coded as 1 or 0 for reward or no reward, respectively) and the expected reward for this trial <span class="math notranslate nohighlight">\(t\)</span>, (<span class="math notranslate nohighlight">\(Q_{t}^{a}\)</span>):</p>
 <div class="math notranslate nohighlight">
 \[Q_{t+1}^{a} = Q_{t}^{a} + \alpha \cdot (r_{t} - Q_{t}^{a})\]</div>
 <p>where the learning rate <span class="math notranslate nohighlight">\(\alpha\)</span> controls the extent to which the current expected value is updated by new information. A low <span class="math notranslate nohighlight">\(\alpha\)</span> minimizes the influence of the prediction error and the amount that the value is updated. The probability that a subject chooses action <span class="math notranslate nohighlight">\(a\)</span> on trial <span class="math notranslate nohighlight">\(t\)</span>, given the expected values of the available actions <span class="math notranslate nohighlight">\(Q_{t}^{a}\)</span>, is given by the softmax function:</p>
 <div class="math notranslate nohighlight">
-\[p_{t}(a | Q_{t}^{a}) = \frac{\exp(\beta \cdot Q_{t}^{a})}{\sum_{a} \exp(\beta \cdot Q_{t}^{a})}\]</div>
-<p>The inverse temperature parameter <span class="math notranslate nohighlight">\(\beta\)</span> controls extent to which the subject decides to choose the most rewarding option versus exploring potentially more rewarding actions. The softmax function estimates the trial-by-trial probability of each action by weighting the ratio of expected values by <span class="math notranslate nohighlight">\(\beta\)</span>. A low <span class="math notranslate nohighlight">\(\beta\)</span> would lead to similar action probabilities irrespective of the expected value of each action (resulting in random behavior). A high <span class="math notranslate nohighlight">\(\beta\)</span> would lead to consistent behavior, where the action with the higher expected value is invariably selected on each trial.</p>
-<p>In this model, separate <span class="math notranslate nohighlight">\(\alpha\)</span> and <span class="math notranslate nohighlight">\(\beta\)</span> parameters were estimated for each of the self, prosocial, and no one conditions. This resulted in six free parameters: <span class="math notranslate nohighlight">\(\alpha_{Self}\)</span>, <span class="math notranslate nohighlight">\(\alpha_{Social}\)</span>, <span class="math notranslate nohighlight">\(\alpha_{NoOne}\)</span>, <span class="math notranslate nohighlight">\(\beta_{Self}\)</span>, <span class="math notranslate nohighlight">\(\beta_{Social}\)</span>, <span class="math notranslate nohighlight">\(\beta_{NoOne}\)</span>.</p>
+\[p_{t}(a | Q_{t}^{a}) = \frac{\exp(\theta \cdot Q_{t}^{a})}{\sum_{a} \exp(\theta \cdot Q_{t}^{a})}\]</div>
+<p>The inverse temperature parameter <span class="math notranslate nohighlight">\(\theta\)</span> controls extent to which the subject decides to choose the most rewarding option versus exploring potentially more rewarding actions. The softmax function estimates the trial-by-trial probability of each action by weighting the ratio of expected values by <span class="math notranslate nohighlight">\(\theta\)</span>. A low <span class="math notranslate nohighlight">\(\theta\)</span> would lead to similar action probabilities irrespective of the expected value of each action (resulting in random behavior). A high <span class="math notranslate nohighlight">\(\theta\)</span> would lead to consistent behavior, where the action with the higher expected value is invariably selected on each trial.</p>
+<p>In this model, separate <span class="math notranslate nohighlight">\(\alpha\)</span> and <span class="math notranslate nohighlight">\(\theta\)</span> parameters were estimated for each of the self, prosocial, and no one conditions. This resulted in six free parameters: <span class="math notranslate nohighlight">\(\alpha_{Self}\)</span>, <span class="math notranslate nohighlight">\(\alpha_{Social}\)</span>, <span class="math notranslate nohighlight">\(\alpha_{NoOne}\)</span>, <span class="math notranslate nohighlight">\(\theta_{Self}\)</span>, <span class="math notranslate nohighlight">\(\theta_{Social}\)</span>, <span class="math notranslate nohighlight">\(\theta_{NoOne}\)</span>.</p>
 </div>
 <div class="section" id="simple-rescorla-wagner-model-w-two-free-parameters-11">
-<h3>(Simple) Rescorla-Wagner Model w/ two free parameters (1α1β)<a class="headerlink" href="#simple-rescorla-wagner-model-w-two-free-parameters-11" title="Permalink to this headline">¶</a></h3>
+<h3>(Simple) Rescorla-Wagner Model w/ two free parameters (1α1θ)<a class="headerlink" href="#simple-rescorla-wagner-model-w-two-free-parameters-11" title="Permalink to this headline">¶</a></h3>
 <p>Expectations of future rewards followed the same criteria:</p>
 <div class="math notranslate nohighlight">
 \[Q_{t+1}^{a} = Q_{t}^{a} + \alpha \cdot (r_{t} - Q_{t}^{a})\]</div>
 <p>The probability that a subject chooses action <span class="math notranslate nohighlight">\(a\)</span> on trial <span class="math notranslate nohighlight">\(t\)</span>, given the expected values of the available actions Q_{t}^{a}, is given by the softmax function:</p>
 <div class="math notranslate nohighlight">
-\[p_{t}(a | Q_{t}^{a}) = \frac{\exp(\beta \cdot Q_{t}^{a})}{\sum_{a} \exp(\beta \cdot Q_{t}^{a})}\]</div>
-<p>However, this model collapsed the <span class="math notranslate nohighlight">\(\alpha\)</span> and <span class="math notranslate nohighlight">\(\beta\)</span> parameters across each of the self, other, and no one conditions. This resulting in two free parameters: <span class="math notranslate nohighlight">\(\alpha\)</span>, <span class="math notranslate nohighlight">\(\beta\)</span>.</p>
+\[p_{t}(a | Q_{t}^{a}) = \frac{\exp(\theta \cdot Q_{t}^{a})}{\sum_{a} \exp(\theta \cdot Q_{t}^{a})}\]</div>
+<p>However, this model collapsed the <span class="math notranslate nohighlight">\(\alpha\)</span> and <span class="math notranslate nohighlight">\(\theta\)</span> parameters across each of the self, other, and no one conditions. This resulting in two free parameters: <span class="math notranslate nohighlight">\(\alpha\)</span>, <span class="math notranslate nohighlight">\(\theta\)</span>.</p>
 </div>
 <div class="section" id="null-rescorla-wagner-model-1">
-<h3>(Null) Rescorla-Wagner Model (1β)<a class="headerlink" href="#null-rescorla-wagner-model-1" title="Permalink to this headline">¶</a></h3>
-<p>This model assumed random responding across trials, and thus did not assume learning. The value for <span class="math notranslate nohighlight">\(\alpha\)</span> was set to 0 (equivalent to no learning), and the value for <span class="math notranslate nohighlight">\(\beta\)</span> was varied between <span class="math notranslate nohighlight">\(0\)</span> and <span class="math notranslate nohighlight">\(\infty\)</span>.</p>
-<p><strong>What other models are plausible and could have been tested?</strong><br>Let’s think of three additional models.</p>
+<h3>(Null) Rescorla-Wagner Model (1θ)<a class="headerlink" href="#null-rescorla-wagner-model-1" title="Permalink to this headline">¶</a></h3>
+<p>This model assumed random responding across trials, and thus did not assume learning. The value for <span class="math notranslate nohighlight">\(\alpha\)</span> was set to 0 (equivalent to no learning), and the value for <span class="math notranslate nohighlight">\(\theta\)</span> was varied between <span class="math notranslate nohighlight">\(0\)</span> and <span class="math notranslate nohighlight">\(\infty\)</span>.</p>
+<hr width=50% align=center><p><strong>What other models are plausible and could have been tested?</strong><br>Let’s think of three additional models.</p>
 <ol class="simple">
-<li><p>(0α1β): random responding governed by 1 <span class="math notranslate nohighlight">\(\beta\)</span></p></li>
+<li><p>(0α1β): random responding governed by 1 <span class="math notranslate nohighlight">\(\theta\)</span></p></li>
 <li><p>(1α1β): 1 <span class="math notranslate nohighlight">\(\alpha\)</span> for all three recipients, 1 <span class="math notranslate nohighlight">\(\alpha\)</span> for all three recipients</p></li>
 <li><p>(**α**β): ?</p></li>
 <li><p>(**α**β): ?</p></li>
 <li><p>(**α**β): ?</p></li>
-<li><p>(3α3β): <span class="math notranslate nohighlight">\(\alpha_{Self}\)</span>, 1 <span class="math notranslate nohighlight">\(\alpha_{Social}\)</span>, 1 <span class="math notranslate nohighlight">\(\alpha_{NoOne}\)</span>, 1 <span class="math notranslate nohighlight">\(\beta_{Self}\)</span>, 1 <span class="math notranslate nohighlight">\(\beta_{Social}\)</span>, 1 <span class="math notranslate nohighlight">\(\beta_{NoOne}\)</span></p></li>
+<li><p>(3α3β): <span class="math notranslate nohighlight">\(\alpha_{Self}\)</span>, 1 <span class="math notranslate nohighlight">\(\alpha_{Social}\)</span>, 1 <span class="math notranslate nohighlight">\(\alpha_{NoOne}\)</span>, 1 <span class="math notranslate nohighlight">\(\theta_{Self}\)</span>, 1 <span class="math notranslate nohighlight">\(\theta_{Social}\)</span>, 1 <span class="math notranslate nohighlight">\(\theta_{NoOne}\)</span></p></li>
 </ol>
-<p><strong>Why might some of these other models perform better than the 3α3β model?</strong></p>
+<p><strong>Why might some of these other models perform better than the 3α3θ model?</strong></p>
 <hr></div>
 </div>
 <div class="section" id="time-for-an-exercise">
@@ -420,7 +420,7 @@
 <p><em><strong>Learning rule:</strong></em>
 $<span class="math notranslate nohighlight">\(Q_{t+1}^{a} = Q_{t}^{a} + \alpha \cdot (r_{t} - Q_{t}^{a})\)</span>$</p>
 <p><em><strong>Decision rule:</strong></em>
-$<span class="math notranslate nohighlight">\(p_{t}(a | Q_{t}^{a}) = \frac{\exp(\beta \cdot Q_{t}^{a})}{\sum_{a} \exp(\beta \cdot Q_{t}^{a})}\)</span>$</p>
+$<span class="math notranslate nohighlight">\(p_{t}(a | Q_{t}^{a}) = \frac{\exp(\theta \cdot Q_{t}^{a})}{\sum_{a} \exp(\theta \cdot Q_{t}^{a})}\)</span>$</p>
 <hr width=50% align=center>
 <p><strong>Hint:</strong> Think about what influenced your behavior. Did you care about anything other than the prediction error or the value associated with each? Did the valence of the outcomes matter (remember Lengersdorff, et al., 2020)? Can additional parameters in your model help explain behavior?</p>
 <hr></div>
@@ -432,9 +432,10 @@ $<span class="math notranslate nohighlight">\(p_{t}(a | Q_{t}^{a}) = \frac{\exp(
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">New_Model</span><span class="p">(</span><span class="n">params</span><span class="p">,</span> <span class="n">choices</span><span class="p">,</span> <span class="n">outcomes</span><span class="p">):</span>
     
+    
     <span class="k">raise</span> <span class="ne">NotImplementedError</span><span class="p">(</span><span class="s2">&quot;Student exercise: write a function to implement your new learning model based on discussions in your group. This function should assume three inputs: parameters to be estimated, choices across trials during the task, and outcomes related to those choices. It should return the negative loglikelihood determined by the choice probabilities across trials. You may use code from previous tutorials. Once you have completed this function, you may delete this line. Please email your instructor your code.&quot;</span><span class="p">)</span>
     
-
+    
     <span class="k">return</span> <span class="n">negLL</span>
 </pre></div>
 </div>

@@ -155,7 +155,7 @@ Please visit the [Assignments page](module-00-02_Course-Assignments.html) for th
 
 **Jupyter Notebook Execises [105 points, 25 points for #1-3, 30 points for #4]**: Students will complete four coding exercises based on selected course topics throughout the semester
 
-**Project Proposal - Round 1 [25 points]**: Students will submit a 250-300 word abstract describing their research question and study idea. They should set up a meeting with the instructor (during office hours) to determine a final project. Upon completion of this assignment, students will receive feedback and suggestions on how to improve their study and should incorporate this feedback into their proposal (round 2).
+**Project Proposal - Round 1 [25 points]**: Students will submit a 250-300 word abstract describing their research question, hypotheses, and study idea along with an outline of the relevant content (i.e., summary of points for the following sections: Introduction, Experimental Design, Intellectual Merit, Broader Impacts, and Conclusion). They should set up a meeting with the instructor (during office hours) to determine a final project. Upon completion of this assignment, students will receive feedback and suggestions on how to improve their study and should incorporate this feedback into their proposal (Round 2).
 
 **Annotated Bibliography [25 points]**: Students will choose 7-10 research articles and summarize the research questions, methods, and results of each paper (behavior only). Students should also include a 2-3 sentences on each paper’s relevance to their final project.
 
