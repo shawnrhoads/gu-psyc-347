@@ -1,9 +1,10 @@
 
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Working with Data &#8212; Computational Models of Human Social Behavior (and Neuroscience)</title>
     
   <link rel="stylesheet" href="_static/css/index.f658d18f9b420779cfdf24aa0a7e2d77.css">
@@ -24,8 +25,8 @@
     href="_static/vendor/lato_latin-ext/1.44.1/index.css">
 
     
-    <link rel="stylesheet" href="_static/sphinx-book-theme.e7340bb3dbd8dde6db86f25597f54a1b.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/sphinx-book-theme.e7340bb3dbd8dde6db86f25597f54a1b.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
@@ -39,14 +40,11 @@
     <script src="_static/jquery.js"></script>
     <script src="_static/underscore.js"></script>
     <script src="_static/doctools.js"></script>
-    <script src="_static/language_data.js"></script>
     <script src="_static/togglebutton.js"></script>
     <script src="_static/clipboard.min.js"></script>
     <script src="_static/copybutton.js"></script>
     <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="_static/sphinx-book-theme.7d483ff0a819d6edff12ce0b1ead3928.js"></script>
-    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.20.0/dist/embed-amd.js"></script>
     <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
@@ -204,6 +202,18 @@
  <li class="toctree-l1">
   <a class="reference internal" href="module-03-02_RL-Exercises.html">
    RL Exercises
+  </a>
+ </li>
+</ul>
+<p class="caption collapsible-parent">
+ <span class="caption-text">
+  Module 04
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="module-04-00_Social-Learning.html">
+   Social Learning
   </a>
  </li>
 </ul>
@@ -473,26 +483,26 @@
 </div>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>    column A  column B  column C
-0   0.833988  0.424336  0.781040
-1  -0.033994  0.073848 -0.417674
-2  -0.016406  0.289150  1.363901
-3  -1.357358 -1.288960 -1.216613
-4  -0.440160  0.620036  1.476685
-5   0.962967  0.947625  0.935747
-6   0.955054  0.457053  0.838384
-7  -0.484766  1.630929 -0.162363
-8  -1.164105  0.903448  0.654361
-9  -0.796373  0.654697 -1.047660
-10 -0.940115 -2.296299  0.369340
-11  0.142960 -0.718595 -0.122170
-12 -1.180827 -1.082527 -0.670254
-13 -0.205819  1.125661 -0.252981
-14 -0.160327 -2.026418  0.000968
-15 -0.247871  1.413823  0.598648
-16  2.100806  0.536837 -1.046623
-17  1.701009  0.455073  0.433459
-18 -0.758007  0.165965 -1.523134
-19  0.301002 -0.586747 -0.523543
+0   1.534424 -0.477185 -0.851756
+1  -0.031351  0.619362  0.833269
+2   0.935670  0.130086 -0.275237
+3   0.439542 -0.347289 -0.790213
+4   1.727067 -0.058981  0.731393
+5   2.933864  0.272186 -0.790977
+6  -0.138168 -0.903979 -0.086331
+7  -0.077894  0.295161 -0.877279
+8  -1.211788  0.548179 -0.749662
+9  -1.388143 -0.060601  2.034094
+10 -0.464837  0.403629  1.323222
+11 -0.706665  1.170596 -0.124456
+12 -0.483952 -1.638341  0.017310
+13  0.568823  0.124170  0.776650
+14 -0.444008 -1.298212 -0.848070
+15 -1.051774  0.340651  1.177404
+16 -0.577873  0.401000 -0.428635
+17 -1.414671  2.804279 -0.084927
+18  0.587893 -0.497422 -0.409148
+19 -2.452184 -0.018151  0.597166
 </pre></div>
 </div>
 </div>
@@ -508,11 +518,11 @@
 </div>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>   COLUMN A  COLUMN B  COLUMN C
-0  0.833988  0.424336  0.781040
-1 -0.033994  0.073848 -0.417674
-2 -0.016406  0.289150  1.363901
-3 -1.357358 -1.288960 -1.216613
-4 -0.440160  0.620036  1.476685
+0  1.534424 -0.477185 -0.851756
+1 -0.031351  0.619362  0.833269
+2  0.935670  0.130086 -0.275237
+3  0.439542 -0.347289 -0.790213
+4  1.727067 -0.058981  0.731393
 </pre></div>
 </div>
 </div>
@@ -527,11 +537,11 @@
 </div>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>           A         B         C
-15 -0.247871  1.413823  0.598648
-16  2.100806  0.536837 -1.046623
-17  1.701009  0.455073  0.433459
-18 -0.758007  0.165965 -1.523134
-19  0.301002 -0.586747 -0.523543
+15 -1.051774  0.340651  1.177404
+16 -0.577873  0.401000 -0.428635
+17 -1.414671  2.804279 -0.084927
+18  0.587893 -0.497422 -0.409148
+19 -2.452184 -0.018151  0.597166
 </pre></div>
 </div>
 </div>
@@ -591,26 +601,26 @@
 </div>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>           A         B         C
-0   0.833988  0.424336  0.781040
-1  -0.033994  0.073848 -0.417674
-2  -0.016406  0.289150  1.363901
-3  -1.357358 -1.288960 -1.216613
-4  -0.440160  0.620036  1.476685
-5   0.962967  0.947625  0.935747
-6   0.955054  0.457053  0.838384
-7  -0.484766  1.630929 -0.162363
-8  -1.164105  0.903448  0.654361
-9  -0.796373  0.654697 -1.047660
-10 -0.940115 -2.296299  0.369340
-11  0.142960 -0.718595 -0.122170
-12 -1.180827 -1.082527 -0.670254
-13 -0.205819  1.125661 -0.252981
-14 -0.160327 -2.026418  0.000968
-15 -0.247871  1.413823  0.598648
-16  2.100806  0.536837 -1.046623
-17  1.701009  0.455073  0.433459
-18 -0.758007  0.165965 -1.523134
-19  0.301002 -0.586747 -0.523543
+0   1.534424 -0.477185 -0.851756
+1  -0.031351  0.619362  0.833269
+2   0.935670  0.130086 -0.275237
+3   0.439542 -0.347289 -0.790213
+4   1.727067 -0.058981  0.731393
+5   2.933864  0.272186 -0.790977
+6  -0.138168 -0.903979 -0.086331
+7  -0.077894  0.295161 -0.877279
+8  -1.211788  0.548179 -0.749662
+9  -1.388143 -0.060601  2.034094
+10 -0.464837  0.403629  1.323222
+11 -0.706665  1.170596 -0.124456
+12 -0.483952 -1.638341  0.017310
+13  0.568823  0.124170  0.776650
+14 -0.444008 -1.298212 -0.848070
+15 -1.051774  0.340651  1.177404
+16 -0.577873  0.401000 -0.428635
+17 -1.414671  2.804279 -0.084927
+18  0.587893 -0.497422 -0.409148
+19 -2.452184 -0.018151  0.597166
 20  0.000000  0.000000  0.000000
 21  0.000000  0.000000  0.000000
 22  0.000000  0.000000  0.000000
@@ -1392,7 +1402,7 @@ dtype: float64
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0x7fb273dc3890&gt;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0x7ff814a54790&gt;
 </pre></div>
 </div>
 <img alt="_images/module-01-02_Working-with-Data_66_1.png" src="_images/module-01-02_Working-with-Data_66_1.png" />
@@ -1415,7 +1425,7 @@ dtype: float64
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0x7fb26bcec850&gt;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0x7ff8149a0b50&gt;
 </pre></div>
 </div>
 <img alt="_images/module-01-02_Working-with-Data_68_1.png" src="_images/module-01-02_Working-with-Data_68_1.png" />

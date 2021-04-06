@@ -1,0 +1,509 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Social Learning &#8212; Computational Models of Human Social Behavior (and Neuroscience)</title>
+    
+  <link rel="stylesheet" href="_static/css/index.f658d18f9b420779cfdf24aa0a7e2d77.css">
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+  <link rel="stylesheet"
+    href="_static/vendor/open-sans_all/1.44.1/index.css">
+  <link rel="stylesheet"
+    href="_static/vendor/lato_latin-ext/1.44.1/index.css">
+
+    
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/sphinx-book-theme.e7340bb3dbd8dde6db86f25597f54a1b.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="_static/js/index.d3f166471bb80abb5163.js">
+
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/togglebutton.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="_static/sphinx-book-theme.7d483ff0a819d6edff12ce0b1ead3928.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.20.0/dist/embed-amd.js"></script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
+    <link rel="canonical" href="https://shawnrhoads.github.io/gu-psyc-347/module-04-00_Social-Learning.html" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="RL Exercises" href="module-03-02_RL-Exercises.html" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+
+
+<!-- Opengraph tags -->
+<meta property="og:url"         content="https://shawnrhoads.github.io/gu-psyc-347/module-04-00_Social-Learning.html" />
+<meta property="og:type"        content="article" />
+<meta property="og:title"       content="Social Learning" />
+<meta property="og:description" content="Social Learning  These exercises were inspired by and adapted from Models of Learning by Jill O’Reilly and Hanneke den Ouden, NSCS 344 - Modeling the Mind by Ro" />
+<meta property="og:image"       content="https://shawnrhoads.github.io/gu-psyc-347/_static/logo.png" />
+
+<meta name="twitter:card" content="summary" />
+
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+<a class="navbar-brand text-wrap" href="index.html">
+  
+  <img src="_static/logo.png" class="logo" alt="logo">
+  
+  
+  <h1 class="site-logo" id="site-title">Computational Models of Human Social Behavior (and Neuroscience)</h1>
+  
+</a>
+</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form>
+<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+    <p class="caption collapsible-parent">
+ <span class="caption-text">
+  Module 00
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="module-00-00_Syllabus.html">
+   Syllabus
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="module-00-01_Course-Schedule.html">
+   Course Schedule
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="module-00-02_Course-Assignments.html">
+   Course Assignments
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="module-00-03_Reading-List.html">
+   Reading List
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="module-00-04_Getting-Started.html">
+   Getting Started
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="module-00-05_Final-Projects.html">
+   Final Project Guidelines
+  </a>
+ </li>
+</ul>
+<p class="caption collapsible-parent">
+ <span class="caption-text">
+  Module 01
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="module-01-00_Jupyter-Notebooks.html">
+   Jupyter Notebooks
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="module-01-01_Intro-to-Python.html">
+   Intro to Python Basics
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="module-01-02_Working-with-Data.html">
+   Working with Data
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="module-01-03_Python-Exercises.html">
+   Python Exercises
+  </a>
+ </li>
+</ul>
+<p class="caption collapsible-parent">
+ <span class="caption-text">
+  Module 02
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="module-02-00_Linear-Modeling.html">
+   Linear Modeling
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="module-02-01_Nonlinear-Modeling.html">
+   Nonlinear Modeling
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="module-02-02_Modeling-Exercises.html">
+   Modeling Exercises
+  </a>
+ </li>
+</ul>
+<p class="caption collapsible-parent">
+ <span class="caption-text">
+  Module 03
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="module-03-00_Two-Armed-Bandit.html">
+   Two-Armed Bandit
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="module-03-01_Models-of-Learning.html">
+   Models of Learning
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="module-03-02_RL-Exercises.html">
+   RL Exercises
+  </a>
+ </li>
+</ul>
+<p class="caption collapsible-parent">
+ <span class="caption-text">
+  Module 04
+ </span>
+</p>
+<ul class="current nav sidenav_l1">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Social Learning
+  </a>
+ </li>
+</ul>
+
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="_sources/module-04-00_Social-Learning.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/shawnrhoads/gu-psyc-347"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://github.com/shawnrhoads/gu-psyc-347/issues/new?title=Issue%20on%20page%20%2Fmodule-04-00_Social-Learning.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        <a class="edit-button" href="https://github.com/shawnrhoads/gu-psyc-347/edit/master/module-04-00_Social-Learning.ipynb"><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Edit this page"><i class="fas fa-pencil-alt"></i>suggest edit</button></a>
+    </div>
+</div>
+
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+            <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+                    data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+                    title="Fullscreen mode"><i
+                        class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+        <div class="tocsection onthispage pt-5 pb-3">
+            <i class="fas fa-list"></i>
+            Contents
+        </div>
+        <nav id="bd-toc-nav">
+            <ul class="nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#learning-to-win-for-others">
+   Learning to win for others
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#rescorla-wagner-model-w-six-free-parameters-33">
+     Rescorla-Wagner Model w/ six free parameters (3α3β)
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#simple-rescorla-wagner-model-w-two-free-parameters-11">
+     (Simple) Rescorla-Wagner Model w/ two free parameters (1α1β)
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#null-rescorla-wagner-model-1">
+     (Null) Rescorla-Wagner Model (1β)
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#time-for-an-exercise">
+   Time for an exercise!
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#reverse-engineering-the-task">
+   Reverse engineering the task
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#implementation-of-your-model">
+   Implementation of your model
+  </a>
+ </li>
+</ul>
+
+        </nav>
+        
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <p><a class="reference external" href="https://colab.research.google.com/github/shawnrhoads/gu-psyc-347/blob/master/docs/module-04-00_Social-Learning.ipynb"><img alt="Open In Colab" src="https://colab.research.google.com/assets/colab-badge.svg" /></a></p>
+<div class="section" id="social-learning">
+<h1>Social Learning<a class="headerlink" href="#social-learning" title="Permalink to this headline">¶</a></h1>
+<p>These exercises were inspired by and adapted from <a class="reference external" href="http://www.hannekedenouden.ruhosting.nl/RLtutorial/Instructions.html">Models of Learning</a> by Jill O’Reilly and Hanneke den Ouden, <a class="reference external" href="http://u.arizona.edu/~bob/web_NSCS344/">NSCS 344 - Modeling the Mind</a> by Robert C. Wilson, the <a class="reference external" href="https://github.com/NeuromatchAcademy/course-content">Neuromatch Academy tutorials</a> [<a class="reference external" href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>], <a class="reference external" href="https://doi.org/10.1073/pnas.1603198113">Lockwood, et al. (2016)</a>, and <a class="reference external" href="https://www.jneurosci.org/content/40/38/7286">Lengersdorff, et al. (2020)</a></p>
+<p>In this module, we will explore how to apply reinforcement learning and decision-making models to behavior in social contexts. In this framework, individuals rely on <strong>prediction errors</strong> (the difference between the actual outcome and the expected outcome) from sampling different options or actions that yield either positive or negative outcomes. In this way, individuals learn <strong>value associations</strong> between actions/options and their outcomes.</p>
+<p>While the majority of studies examining reinforcement learning examine how individuals learn the association betwwen actions/options and outcomes that affect themselves alone, recent studies have begun to test how the this framework could be applied in social contexts (i.e., when people learn various associations <em><strong>from others</strong></em> (<a class="reference external" href="https://www.pnas.org/content/116/10/4732">Lindström, et al., 2019</a>) and <em><strong>for others</strong></em> (<a class="reference external" href="https://doi.org/10.1073/pnas.1603198113">Lockwood, et al., 2016</a>; <a class="reference external" href="https://www.jneurosci.org/content/40/38/7286">Lengersdorff, et al., 2020</a>); or when people learn and update their beliefs <em><strong>about others</strong></em> (<a class="reference external" href="https://www.sciencedirect.com/science/article/abs/pii/S0010028510000150">Chang, et al., 2010</a>; <a class="reference external" href="https://www.nature.com/articles/s41562-018-0425-1?WT.feed_name=subjects_social-science">Siegel, et al., 2018</a>).</p>
+<p>We have read about these first two types of learning in social contexts for far (and will begin learning about the third soon). Now, we will examine a specific type and unpack how this learning might change across different contexts/situations.</p>
+<div class="section" id="learning-to-win-for-others">
+<h2>Learning to win for others<a class="headerlink" href="#learning-to-win-for-others" title="Permalink to this headline">¶</a></h2>
+<p>We will first review the model that best explained human behavior during a prosocial learning study, where individuals learned how their actions affected outcomes for <strong>themselves</strong>, a <strong>stranger</strong>, and <strong>no one</strong> (<a class="reference external" href="https://doi.org/10.1073/pnas.1603198113">Lockwood, et al., 2016</a>).</p>
+<p>They tested the following three models:</p>
+<div class="section" id="rescorla-wagner-model-w-six-free-parameters-33">
+<h3>Rescorla-Wagner Model w/ six free parameters (3α3β)<a class="headerlink" href="#rescorla-wagner-model-w-six-free-parameters-33" title="Permalink to this headline">¶</a></h3>
+<p>Expectations of future reward for action <span class="math notranslate nohighlight">\(a\)</span>, (<span class="math notranslate nohighlight">\(Q_{t+1}^{a}\)</span>), should be a function of current expectations Q_{t}^{a} and a prediction error, which is discrepancy between the actual reward that has just been experienced on this trial <span class="math notranslate nohighlight">\(r_t\)</span> (coded as 1 or 0 for reward or no reward, respectively) and the expected reward for this trial <span class="math notranslate nohighlight">\(t\)</span>, (<span class="math notranslate nohighlight">\(Q_{t}^{a}\)</span>):</p>
+<div class="math notranslate nohighlight">
+\[Q_{t+1}^{a} = Q_{t}^{a} + \alpha \cdot (r_{t} - Q_{t}^{a})\]</div>
+<p>where the learning rate <span class="math notranslate nohighlight">\(\alpha\)</span> controls the extent to which the current expected value is updated by new information. A low <span class="math notranslate nohighlight">\(\alpha\)</span> minimizes the influence of the prediction error and the amount that the value is updated. The probability that a subject chooses action <span class="math notranslate nohighlight">\(a\)</span> on trial <span class="math notranslate nohighlight">\(t\)</span>, given the expected values of the available actions <span class="math notranslate nohighlight">\(Q_{t}^{a}\)</span>, is given by the softmax function:</p>
+<div class="math notranslate nohighlight">
+\[p_{t}(a | Q_{t}^{a}) = \frac{\exp(\beta \cdot Q_{t}^{a})}{\sum_{a} \exp(\beta \cdot Q_{t}^{a})}\]</div>
+<p>The inverse temperature parameter <span class="math notranslate nohighlight">\(\beta\)</span> controls extent to which the subject decides to choose the most rewarding option versus exploring potentially more rewarding actions. The softmax function estimates the trial-by-trial probability of each action by weighting the ratio of expected values by <span class="math notranslate nohighlight">\(\beta\)</span>. A low <span class="math notranslate nohighlight">\(\beta\)</span> would lead to similar action probabilities irrespective of the expected value of each action (resulting in random behavior). A high <span class="math notranslate nohighlight">\(\beta\)</span> would lead to consistent behavior, where the action with the higher expected value is invariably selected on each trial.</p>
+<p>In this model, separate <span class="math notranslate nohighlight">\(\alpha\)</span> and <span class="math notranslate nohighlight">\(\beta\)</span> parameters were estimated for each of the self, prosocial, and no one conditions. This resulted in six free parameters: <span class="math notranslate nohighlight">\(\alpha_{Self}\)</span>, <span class="math notranslate nohighlight">\(\alpha_{Social}\)</span>, <span class="math notranslate nohighlight">\(\alpha_{NoOne}\)</span>, <span class="math notranslate nohighlight">\(\beta_{Self}\)</span>, <span class="math notranslate nohighlight">\(\beta_{Social}\)</span>, <span class="math notranslate nohighlight">\(\beta_{NoOne}\)</span>.</p>
+</div>
+<div class="section" id="simple-rescorla-wagner-model-w-two-free-parameters-11">
+<h3>(Simple) Rescorla-Wagner Model w/ two free parameters (1α1β)<a class="headerlink" href="#simple-rescorla-wagner-model-w-two-free-parameters-11" title="Permalink to this headline">¶</a></h3>
+<p>Expectations of future rewards followed the same criteria:</p>
+<div class="math notranslate nohighlight">
+\[Q_{t+1}^{a} = Q_{t}^{a} + \alpha \cdot (r_{t} - Q_{t}^{a})\]</div>
+<p>The probability that a subject chooses action <span class="math notranslate nohighlight">\(a\)</span> on trial <span class="math notranslate nohighlight">\(t\)</span>, given the expected values of the available actions Q_{t}^{a}, is given by the softmax function:</p>
+<div class="math notranslate nohighlight">
+\[p_{t}(a | Q_{t}^{a}) = \frac{\exp(\beta \cdot Q_{t}^{a})}{\sum_{a} \exp(\beta \cdot Q_{t}^{a})}\]</div>
+<p>However, this model collapsed the <span class="math notranslate nohighlight">\(\alpha\)</span> and <span class="math notranslate nohighlight">\(\beta\)</span> parameters across each of the self, other, and no one conditions. This resulting in two free parameters: <span class="math notranslate nohighlight">\(\alpha\)</span>, <span class="math notranslate nohighlight">\(\beta\)</span>.</p>
+</div>
+<div class="section" id="null-rescorla-wagner-model-1">
+<h3>(Null) Rescorla-Wagner Model (1β)<a class="headerlink" href="#null-rescorla-wagner-model-1" title="Permalink to this headline">¶</a></h3>
+<p>This model assumed random responding across trials, and thus did not assume learning. The value for <span class="math notranslate nohighlight">\(\alpha\)</span> was set to 0 (equivalent to no learning), and the value for <span class="math notranslate nohighlight">\(\beta\)</span> was varied between <span class="math notranslate nohighlight">\(0\)</span> and <span class="math notranslate nohighlight">\(\infty\)</span>.</p>
+<p><strong>What other models are plausible and could have been tested?</strong><br>Let’s think of three additional models.</p>
+<ol class="simple">
+<li><p>(0α1β): random responding governed by 1 <span class="math notranslate nohighlight">\(\beta\)</span></p></li>
+<li><p>(1α1β): 1 <span class="math notranslate nohighlight">\(\alpha\)</span> for all three recipients, 1 <span class="math notranslate nohighlight">\(\alpha\)</span> for all three recipients</p></li>
+<li><p>(**α**β): ?</p></li>
+<li><p>(**α**β): ?</p></li>
+<li><p>(**α**β): ?</p></li>
+<li><p>(3α3β): <span class="math notranslate nohighlight">\(\alpha_{Self}\)</span>, 1 <span class="math notranslate nohighlight">\(\alpha_{Social}\)</span>, 1 <span class="math notranslate nohighlight">\(\alpha_{NoOne}\)</span>, 1 <span class="math notranslate nohighlight">\(\beta_{Self}\)</span>, 1 <span class="math notranslate nohighlight">\(\beta_{Social}\)</span>, 1 <span class="math notranslate nohighlight">\(\beta_{NoOne}\)</span></p></li>
+</ol>
+<p><strong>Why might some of these other models perform better than the 3α3β model?</strong></p>
+<hr></div>
+</div>
+<div class="section" id="time-for-an-exercise">
+<h2>Time for an exercise!<a class="headerlink" href="#time-for-an-exercise" title="Permalink to this headline">¶</a></h2>
+<p>Now, you will complete a new prosocial learning task (&lt;10 minutes). This task is similar to the task above. However, it varies along a few different dimensions. Your instructor will provide every student with a custom link to try it out. It will consist of one practice round and then four blocks of 24 trials each.</p>
+<p>During the task, you will play to maximize points for <strong>yourself</strong> and <strong>another student</strong> (randomly assigned) in the class. The points you earn be converted to <strong>extra credit</strong>, so be sure to try your best to maximize your earnings.</p>
+<p>Once everyone completes the task, you will be split up into breakout to discuss the following. Then, each group will report their conclusions to the entire class.</p>
+<hr></div>
+<div class="section" id="reverse-engineering-the-task">
+<h2>Reverse engineering the task<a class="headerlink" href="#reverse-engineering-the-task" title="Permalink to this headline">¶</a></h2>
+<p>Please save your answers to the following questions. They will be important for your final Jupyter Notebook exercise.</p>
+<ol class="simple">
+<li><p>What was different about this task? How did this difference affect learning and decision-making?</p></li>
+<li><p>What were the strategies you used when making decisions during this task? Were these strategies different across members of your group? How so? If not, brainstorm some other strategies that people could use. Do any common themes emerge?</p></li>
+<li><p>Choose one (or more) of these common themes, how can we manipulate the following model to accomodate behavior? Write down your new model. Does it make sense? Recall previous papers, tutorials, and lectures to come up with your <strong>new model(s)</strong>.</p></li>
+</ol>
+<hr width=50% align=center>
+<p><em><strong>Learning rule:</strong></em>
+$<span class="math notranslate nohighlight">\(Q_{t+1}^{a} = Q_{t}^{a} + \alpha \cdot (r_{t} - Q_{t}^{a})\)</span>$</p>
+<p><em><strong>Decision rule:</strong></em>
+$<span class="math notranslate nohighlight">\(p_{t}(a | Q_{t}^{a}) = \frac{\exp(\beta \cdot Q_{t}^{a})}{\sum_{a} \exp(\beta \cdot Q_{t}^{a})}\)</span>$</p>
+<hr width=50% align=center>
+<p><strong>Hint:</strong> Think about what influenced your behavior. Did you care about anything other than the prediction error or the value associated with each? Did the valence of the outcomes matter (remember Lengersdorff, et al., 2020)? Can additional parameters in your model help explain behavior?</p>
+<hr></div>
+<div class="section" id="implementation-of-your-model">
+<h2>Implementation of your model<a class="headerlink" href="#implementation-of-your-model" title="Permalink to this headline">¶</a></h2>
+<p>Now that you’ve discussed (1) the task, (2) possible explanations for behavior during the task, and (3) a mathematical explanation for your model(s), let’s now write a function in Python for your model.</p>
+<p><em><strong>DELETE THIS TEXT AND DESCRIBE YOUR MODEL IN THIS MARKDOWN CELL</strong></em></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">New_Model</span><span class="p">(</span><span class="n">params</span><span class="p">,</span> <span class="n">choices</span><span class="p">,</span> <span class="n">outcomes</span><span class="p">):</span>
+    
+    <span class="k">raise</span> <span class="ne">NotImplementedError</span><span class="p">(</span><span class="s2">&quot;Student exercise: write a function to implement your new learning model based on discussions in your group. This function should assume three inputs: parameters to be estimated, choices across trials during the task, and outcomes related to those choices. It should return the negative loglikelihood determined by the choice probabilities across trials. You may use code from previous tutorials. Once you have completed this function, you may delete this line. Please email your instructor your code.&quot;</span><span class="p">)</span>
+    
+
+    <span class="k">return</span> <span class="n">negLL</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        
+        <div class='prev-next-bottom'>
+            
+    <a class='left-prev' id="prev-link" href="module-03-02_RL-Exercises.html" title="previous page">RL Exercises</a>
+
+        </div>
+        
+        </div>
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By Shawn A. Rhoads<br/>
+        
+            &copy; Copyright 2021.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+
+    
+  <script src="_static/js/index.d3f166471bb80abb5163.js"></script>
+
+
+    
+    <!-- Google Analytics -->
+    <script>
+      window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+      ga('create', 'G-KG3N20S55G', 'auto');
+      ga('set', 'anonymizeIp', true);
+      ga('send', 'pageview');
+    </script>
+    <script async src='https://www.google-analytics.com/analytics.js'></script>
+    <!-- End Google Analytics -->
+    
+  </body>
+</html>
