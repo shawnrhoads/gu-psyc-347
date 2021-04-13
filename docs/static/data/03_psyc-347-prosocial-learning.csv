@@ -1,0 +1,305 @@
+key_resp.keys,key_resp.corr,key_resp.rt,chosen_stim_name,chosen_stim_0,chosen_stim_1,true_accuracy,cumulativePts_self,cumulativePts_social,outcomeDescr,practice_round.thisRepN,practice_round.thisTrialN,practice_round.thisN,practice_round.thisIndex,practice_round.ran,index,condition,goal,block,block_num,block_instr_text,trial_num,stim_0,stim_0_value,stim_1,stim_1_value,position_changed,stim_left,stim_right,stim_left_name,stim_right_name,optimal_stim,optimal_choice,participant,date,expName,psychopyVersion,OS,frameRate,outcome,trials.thisRepN,trials.thisTrialN,trials.thisN,trials.thisIndex,trials.ran,subject,order_num,session
+left,0,1.269115,stimuli/tunga_21.bmp,0,1,0,1000,1000,practice,0,0,0,0,1,100,practice,win,practice_win,1,Play to WIN points,0,stimuli/tunga_22.bmp,1,stimuli/tunga_21.bmp,0,1,21,22,stimuli/tunga_21.bmp,stimuli/tunga_22.bmp,stimuli/tunga_22.bmp,right,03,2021-04-06_12h07.59.163,psyc-347-prosocial-learning,2020.2.4post1,Win32,60,,,,,,,,,
+right,1,1.116495,stimuli/tunga_22.bmp,1,0,1,1000,1000,practice,0,1,1,1,1,101,practice,win,practice_win,1,Play to WIN points,1,stimuli/tunga_22.bmp,1,stimuli/tunga_21.bmp,0,1,21,22,stimuli/tunga_21.bmp,stimuli/tunga_22.bmp,stimuli/tunga_22.bmp,right,03,2021-04-06_12h07.59.163,psyc-347-prosocial-learning,2020.2.4post1,Win32,60,,,,,,,,,
+left,0,1.135185,stimuli/tunga_22.bmp,1,0,1,1000,1000,practice,0,2,2,2,1,102,practice,win,practice_win,1,Play to WIN points,2,stimuli/tunga_22.bmp,0,stimuli/tunga_21.bmp,1,0,22,21,stimuli/tunga_22.bmp,stimuli/tunga_21.bmp,stimuli/tunga_21.bmp,right,03,2021-04-06_12h07.59.163,psyc-347-prosocial-learning,2020.2.4post1,Win32,60,,,,,,,,,
+right,0,1.15166,stimuli/tunga_21.bmp,0,1,0,1000,1000,practice,0,3,3,3,1,103,practice,win,practice_win,1,Play to WIN points,3,stimuli/tunga_22.bmp,1,stimuli/tunga_21.bmp,0,0,22,21,stimuli/tunga_22.bmp,stimuli/tunga_21.bmp,stimuli/tunga_22.bmp,left,03,2021-04-06_12h07.59.163,psyc-347-prosocial-learning,2020.2.4post1,Win32,60,,,,,,,,,
+right,0,1.15314,stimuli/tunga_22.bmp,1,0,1,1000,1000,practice,0,4,4,4,1,104,practice,win,practice_win,1,Play to WIN points,4,stimuli/tunga_22.bmp,0,stimuli/tunga_21.bmp,1,1,21,22,stimuli/tunga_21.bmp,stimuli/tunga_22.bmp,stimuli/tunga_21.bmp,left,03,2021-04-06_12h07.59.163,psyc-347-prosocial-learning,2020.2.4post1,Win32,60,,,,,,,,,
+right,0,1.083565,stimuli/tunga_21.bmp,0,1,0,1000,1000,practice,0,5,5,5,1,105,practice,win,practice_win,1,Play to WIN points,5,stimuli/tunga_22.bmp,1,stimuli/tunga_21.bmp,0,0,22,21,stimuli/tunga_22.bmp,stimuli/tunga_21.bmp,stimuli/tunga_22.bmp,left,03,2021-04-06_12h07.59.163,psyc-347-prosocial-learning,2020.2.4post1,Win32,60,,,,,,,,,
+right,1,0.778365,stimuli/tunga_22.bmp,1,0,1,1000,1000,practice,0,6,6,6,1,106,practice,win,practice_win,1,Play to WIN points,6,stimuli/tunga_22.bmp,1,stimuli/tunga_21.bmp,0,1,21,22,stimuli/tunga_21.bmp,stimuli/tunga_22.bmp,stimuli/tunga_22.bmp,right,03,2021-04-06_12h07.59.163,psyc-347-prosocial-learning,2020.2.4post1,Win32,60,,,,,,,,,
+,0,,,,,,1000,1000,practice,0,7,7,7,1,107,practice,win,practice_win,1,Play to WIN points,7,stimuli/tunga_22.bmp,1,stimuli/tunga_21.bmp,0,0,22,21,stimuli/tunga_22.bmp,stimuli/tunga_21.bmp,stimuli/tunga_22.bmp,left,03,2021-04-06_12h07.59.163,psyc-347-prosocial-learning,2020.2.4post1,Win32,60,,,,,,,,,
+left,1,0.89075,stimuli/tunga_23.bmp,1,0,0,1000,1000,practice,0,8,8,8,1,108,practice,avoidloss,practice_avoidloss,3,Play to AVOID LOSING points,0,stimuli/tunga_23.bmp,0,stimuli/tunga_24.bmp,-1,0,23,24,stimuli/tunga_23.bmp,stimuli/tunga_24.bmp,stimuli/tunga_23.bmp,left,03,2021-04-06_12h07.59.163,psyc-347-prosocial-learning,2020.2.4post1,Win32,60,,,,,,,,,
+left,0,0.71975,stimuli/tunga_23.bmp,1,0,0,1000,1000,practice,0,9,9,9,1,109,practice,avoidloss,practice_avoidloss,3,Play to AVOID LOSING points,1,stimuli/tunga_23.bmp,-1,stimuli/tunga_24.bmp,0,0,23,24,stimuli/tunga_23.bmp,stimuli/tunga_24.bmp,stimuli/tunga_24.bmp,right,03,2021-04-06_12h07.59.163,psyc-347-prosocial-learning,2020.2.4post1,Win32,60,,,,,,,,,
+left,1,1.25784,stimuli/tunga_24.bmp,0,1,1,1000,1000,practice,0,10,10,10,1,110,practice,avoidloss,practice_avoidloss,3,Play to AVOID LOSING points,2,stimuli/tunga_23.bmp,-1,stimuli/tunga_24.bmp,0,1,24,23,stimuli/tunga_24.bmp,stimuli/tunga_23.bmp,stimuli/tunga_24.bmp,left,03,2021-04-06_12h07.59.163,psyc-347-prosocial-learning,2020.2.4post1,Win32,60,,,,,,,,,
+left,0,0.817555,stimuli/tunga_24.bmp,0,1,1,1000,1000,practice,0,11,11,11,1,111,practice,avoidloss,practice_avoidloss,3,Play to AVOID LOSING points,3,stimuli/tunga_23.bmp,0,stimuli/tunga_24.bmp,-1,1,24,23,stimuli/tunga_24.bmp,stimuli/tunga_23.bmp,stimuli/tunga_23.bmp,right,03,2021-04-06_12h07.59.163,psyc-347-prosocial-learning,2020.2.4post1,Win32,60,,,,,,,,,
+left,0,1.31849,stimuli/tunga_23.bmp,1,0,0,1000,1000,practice,0,12,12,12,1,112,practice,avoidloss,practice_avoidloss,3,Play to AVOID LOSING points,4,stimuli/tunga_23.bmp,-1,stimuli/tunga_24.bmp,0,0,23,24,stimuli/tunga_23.bmp,stimuli/tunga_24.bmp,stimuli/tunga_24.bmp,right,03,2021-04-06_12h07.59.163,psyc-347-prosocial-learning,2020.2.4post1,Win32,60,,,,,,,,,
+left,0,0.767845,stimuli/tunga_23.bmp,1,0,0,1000,1000,practice,0,13,13,13,1,113,practice,avoidloss,practice_avoidloss,3,Play to AVOID LOSING points,5,stimuli/tunga_23.bmp,-1,stimuli/tunga_24.bmp,0,0,23,24,stimuli/tunga_23.bmp,stimuli/tunga_24.bmp,stimuli/tunga_24.bmp,right,03,2021-04-06_12h07.59.163,psyc-347-prosocial-learning,2020.2.4post1,Win32,60,,,,,,,,,
+left,1,0.918225,stimuli/tunga_24.bmp,0,1,1,1000,1000,practice,0,14,14,14,1,114,practice,avoidloss,practice_avoidloss,3,Play to AVOID LOSING points,6,stimuli/tunga_23.bmp,-1,stimuli/tunga_24.bmp,0,1,24,23,stimuli/tunga_24.bmp,stimuli/tunga_23.bmp,stimuli/tunga_24.bmp,left,03,2021-04-06_12h07.59.163,psyc-347-prosocial-learning,2020.2.4post1,Win32,60,,,,,,,,,
+right,0,0.735,stimuli/tunga_23.bmp,1,0,0,1000,1000,practice,0,15,15,15,1,115,practice,avoidloss,practice_avoidloss,3,Play to AVOID LOSING points,7,stimuli/tunga_23.bmp,-1,stimuli/tunga_24.bmp,0,1,24,23,stimuli/tunga_24.bmp,stimuli/tunga_23.bmp,stimuli/tunga_24.bmp,left,03,2021-04-06_12h07.59.163,psyc-347-prosocial-learning,2020.2.4post1,Win32,60,,,,,,,,,
+left,0,1.4441,stimuli/tunga_13.bmp,1,0,0,1000,900,social lose,,,,,,0,social,avoidloss,social_avoidloss,3,"Play to AVOID LOSING points
+
+for the NEXT STUDENT",0,stimuli/tunga_13.bmp,-1,stimuli/tunga_16.bmp,0,0,13,16,stimuli/tunga_13.bmp,stimuli/tunga_16.bmp,stimuli/tunga_16.bmp,right,03,2021-04-06_12h07.59.163,psyc-347-prosocial-learning,2020.2.4post1,Win32,60,-1,0,0,0,0,1,3,3,0
+right,1,1.10051,stimuli/tunga_16.bmp,0,1,1,1000,900,social avoid loss,,,,,,1,social,avoidloss,social_avoidloss,3,"Play to AVOID LOSING points
+
+for the NEXT STUDENT",1,stimuli/tunga_13.bmp,-1,stimuli/tunga_16.bmp,0,0,13,16,stimuli/tunga_13.bmp,stimuli/tunga_16.bmp,stimuli/tunga_16.bmp,right,03,2021-04-06_12h07.59.163,psyc-347-prosocial-learning,2020.2.4post1,Win32,60,0,0,1,1,1,1,3,3,0
+right,0,0.81059,stimuli/tunga_16.bmp,0,1,1,1000,800,social lose,,,,,,2,social,avoidloss,social_avoidloss,3,"Play to AVOID LOSING points
+
+for the NEXT STUDENT",2,stimuli/tunga_13.bmp,0,stimuli/tunga_16.bmp,-1,0,13,16,stimuli/tunga_13.bmp,stimuli/tunga_16.bmp,stimuli/tunga_13.bmp,left,03,2021-04-06_12h07.59.163,psyc-347-prosocial-learning,2020.2.4post1,Win32,60,-1,0,2,2,2,1,3,3,0
+left,1,1.50079,stimuli/tunga_16.bmp,0,1,1,1000,800,social avoid loss,,,,,,3,social,avoidloss,social_avoidloss,3,"Play to AVOID LOSING points
+
+for the NEXT STUDENT",3,stimuli/tunga_13.bmp,-1,stimuli/tunga_16.bmp,0,1,16,13,stimuli/tunga_16.bmp,stimuli/tunga_13.bmp,stimuli/tunga_16.bmp,left,03,2021-04-06_12h07.59.163,psyc-347-prosocial-learning,2020.2.4post1,Win32,60,0,0,3,3,3,1,3,3,0
+right,1,0.95897,stimuli/tunga_16.bmp,0,1,1,1000,800,social avoid loss,,,,,,4,social,avoidloss,social_avoidloss,3,"Play to AVOID LOSING points
+
+for the NEXT STUDENT",4,stimuli/tunga_13.bmp,-1,stimuli/tunga_16.bmp,0,0,13,16,stimuli/tunga_13.bmp,stimuli/tunga_16.bmp,stimuli/tunga_16.bmp,right,03,2021-04-06_12h07.59.163,psyc-347-prosocial-learning,2020.2.4post1,Win32,60,0,0,4,4,4,1,3,3,0
+left,1,1.08413,stimuli/tunga_16.bmp,0,1,1,1000,800,social avoid loss,,,,,,5,social,avoidloss,social_avoidloss,3,"Play to AVOID LOSING points
+
+for the NEXT STUDENT",5,stimuli/tunga_13.bmp,-1,stimuli/tunga_16.bmp,0,1,16,13,stimuli/tunga_16.bmp,stimuli/tunga_13.bmp,stimuli/tunga_16.bmp,left,03,2021-04-06_12h07.59.163,psyc-347-prosocial-learning,2020.2.4post1,Win32,60,0,0,5,5,5,1,3,3,0
+left,1,0.668605,stimuli/tunga_16.bmp,0,1,1,1000,800,social avoid loss,,,,,,6,social,avoidloss,social_avoidloss,3,"Play to AVOID LOSING points
+
+for the NEXT STUDENT",6,stimuli/tunga_13.bmp,-1,stimuli/tunga_16.bmp,0,1,16,13,stimuli/tunga_16.bmp,stimuli/tunga_13.bmp,stimuli/tunga_16.bmp,left,03,2021-04-06_12h07.59.163,psyc-347-prosocial-learning,2020.2.4post1,Win32,60,0,0,6,6,6,1,3,3,0
+left,1,0.518305,stimuli/tunga_16.bmp,0,1,1,1000,800,social avoid loss,,,,,,7,social,avoidloss,social_avoidloss,3,"Play to AVOID LOSING points
+
+for the NEXT STUDENT",7,stimuli/tunga_13.bmp,-1,stimuli/tunga_16.bmp,0,1,16,13,stimuli/tunga_16.bmp,stimuli/tunga_13.bmp,stimuli/tunga_16.bmp,left,03,2021-04-06_12h07.59.163,psyc-347-prosocial-learning,2020.2.4post1,Win32,60,0,0,7,7,7,1,3,3,0
+left,1,0.51789,stimuli/tunga_16.bmp,0,1,1,1000,800,social avoid loss,,,,,,8,social,avoidloss,social_avoidloss,3,"Play to AVOID LOSING points
+
+for the NEXT STUDENT",8,stimuli/tunga_13.bmp,-1,stimuli/tunga_16.bmp,0,1,16,13,stimuli/tunga_16.bmp,stimuli/tunga_13.bmp,stimuli/tunga_16.bmp,left,03,2021-04-06_12h07.59.163,psyc-347-prosocial-learning,2020.2.4post1,Win32,60,0,0,8,8,8,1,3,3,0
+left,0,0.5006,stimuli/tunga_16.bmp,0,1,1,1000,700,social lose,,,,,,9,social,avoidloss,social_avoidloss,3,"Play to AVOID LOSING points
+
+for the NEXT STUDENT",9,stimuli/tunga_13.bmp,0,stimuli/tunga_16.bmp,-1,1,16,13,stimuli/tunga_16.bmp,stimuli/tunga_13.bmp,stimuli/tunga_13.bmp,right,03,2021-04-06_12h07.59.163,psyc-347-prosocial-learning,2020.2.4post1,Win32,60,-1,0,9,9,9,1,3,3,0
+left,1,0.618185,stimuli/tunga_16.bmp,0,1,1,1000,700,social avoid loss,,,,,,10,social,avoidloss,social_avoidloss,3,"Play to AVOID LOSING points
+
+for the NEXT STUDENT",10,stimuli/tunga_13.bmp,-1,stimuli/tunga_16.bmp,0,1,16,13,stimuli/tunga_16.bmp,stimuli/tunga_13.bmp,stimuli/tunga_16.bmp,left,03,2021-04-06_12h07.59.163,psyc-347-prosocial-learning,2020.2.4post1,Win32,60,0,0,10,10,10,1,3,3,0
+left,0,0.427275,stimuli/tunga_13.bmp,1,0,0,1000,600,social lose,,,,,,11,social,avoidloss,social_avoidloss,3,"Play to AVOID LOSING points
+
+for the NEXT STUDENT",11,stimuli/tunga_13.bmp,-1,stimuli/tunga_16.bmp,0,0,13,16,stimuli/tunga_13.bmp,stimuli/tunga_16.bmp,stimuli/tunga_16.bmp,right,03,2021-04-06_12h07.59.163,psyc-347-prosocial-learning,2020.2.4post1,Win32,60,-1,0,11,11,11,1,3,3,0
+left,1,0.47264,stimuli/tunga_13.bmp,1,0,0,1000,600,social avoid loss,,,,,,12,social,avoidloss,social_avoidloss,3,"Play to AVOID LOSING points
+
+for the NEXT STUDENT",12,stimuli/tunga_13.bmp,0,stimuli/tunga_16.bmp,-1,0,13,16,stimuli/tunga_13.bmp,stimuli/tunga_16.bmp,stimuli/tunga_13.bmp,left,03,2021-04-06_12h07.59.163,psyc-347-prosocial-learning,2020.2.4post1,Win32,60,0,0,12,12,12,1,3,3,0
+left,0,0.467085,stimuli/tunga_13.bmp,1,0,0,1000,500,social lose,,,,,,13,social,avoidloss,social_avoidloss,3,"Play to AVOID LOSING points
+
+for the NEXT STUDENT",13,stimuli/tunga_13.bmp,-1,stimuli/tunga_16.bmp,0,0,13,16,stimuli/tunga_13.bmp,stimuli/tunga_16.bmp,stimuli/tunga_16.bmp,right,03,2021-04-06_12h07.59.163,psyc-347-prosocial-learning,2020.2.4post1,Win32,60,-1,0,13,13,13,1,3,3,0
+left,0,0.49449,stimuli/tunga_13.bmp,1,0,0,1000,400,social lose,,,,,,14,social,avoidloss,social_avoidloss,3,"Play to AVOID LOSING points
+
+for the NEXT STUDENT",14,stimuli/tunga_13.bmp,-1,stimuli/tunga_16.bmp,0,0,13,16,stimuli/tunga_13.bmp,stimuli/tunga_16.bmp,stimuli/tunga_16.bmp,right,03,2021-04-06_12h07.59.163,psyc-347-prosocial-learning,2020.2.4post1,Win32,60,-1,0,14,14,14,1,3,3,0
+left,0,0.35221,stimuli/tunga_16.bmp,0,1,1,1000,300,social lose,,,,,,15,social,avoidloss,social_avoidloss,3,"Play to AVOID LOSING points
+
+for the NEXT STUDENT",15,stimuli/tunga_13.bmp,0,stimuli/tunga_16.bmp,-1,1,16,13,stimuli/tunga_16.bmp,stimuli/tunga_13.bmp,stimuli/tunga_13.bmp,right,03,2021-04-06_12h07.59.163,psyc-347-prosocial-learning,2020.2.4post1,Win32,60,-1,0,15,15,15,1,3,3,0
+right,0,0.571215,stimuli/tunga_16.bmp,0,1,1,1000,200,social lose,,,,,,16,social,avoidloss,social_avoidloss,3,"Play to AVOID LOSING points
+
+for the NEXT STUDENT",16,stimuli/tunga_13.bmp,0,stimuli/tunga_16.bmp,-1,0,13,16,stimuli/tunga_13.bmp,stimuli/tunga_16.bmp,stimuli/tunga_13.bmp,left,03,2021-04-06_12h07.59.163,psyc-347-prosocial-learning,2020.2.4post1,Win32,60,-1,0,16,16,16,1,3,3,0
+right,0,1.03362,stimuli/tunga_13.bmp,1,0,0,1000,100,social lose,,,,,,17,social,avoidloss,social_avoidloss,3,"Play to AVOID LOSING points
+
+for the NEXT STUDENT",17,stimuli/tunga_13.bmp,-1,stimuli/tunga_16.bmp,0,1,16,13,stimuli/tunga_16.bmp,stimuli/tunga_13.bmp,stimuli/tunga_16.bmp,left,03,2021-04-06_12h07.59.163,psyc-347-prosocial-learning,2020.2.4post1,Win32,60,-1,0,17,17,17,1,3,3,0
+left,1,0.48625,stimuli/tunga_16.bmp,0,1,1,1000,100,social avoid loss,,,,,,18,social,avoidloss,social_avoidloss,3,"Play to AVOID LOSING points
+
+for the NEXT STUDENT",18,stimuli/tunga_13.bmp,-1,stimuli/tunga_16.bmp,0,1,16,13,stimuli/tunga_16.bmp,stimuli/tunga_13.bmp,stimuli/tunga_16.bmp,left,03,2021-04-06_12h07.59.163,psyc-347-prosocial-learning,2020.2.4post1,Win32,60,0,0,18,18,18,1,3,3,0
+left,0,0.358695,stimuli/tunga_13.bmp,1,0,0,1000,0,social lose,,,,,,19,social,avoidloss,social_avoidloss,3,"Play to AVOID LOSING points
+
+for the NEXT STUDENT",19,stimuli/tunga_13.bmp,-1,stimuli/tunga_16.bmp,0,0,13,16,stimuli/tunga_13.bmp,stimuli/tunga_16.bmp,stimuli/tunga_16.bmp,right,03,2021-04-06_12h07.59.163,psyc-347-prosocial-learning,2020.2.4post1,Win32,60,-1,0,19,19,19,1,3,3,0
+left,1,0.56358,stimuli/tunga_13.bmp,1,0,0,1000,0,social avoid loss,,,,,,20,social,avoidloss,social_avoidloss,3,"Play to AVOID LOSING points
+
+for the NEXT STUDENT",20,stimuli/tunga_13.bmp,0,stimuli/tunga_16.bmp,-1,0,13,16,stimuli/tunga_13.bmp,stimuli/tunga_16.bmp,stimuli/tunga_13.bmp,left,03,2021-04-06_12h07.59.163,psyc-347-prosocial-learning,2020.2.4post1,Win32,60,0,0,20,20,20,1,3,3,0
+right,1,0.467385,stimuli/tunga_16.bmp,0,1,1,1000,0,social avoid loss,,,,,,21,social,avoidloss,social_avoidloss,3,"Play to AVOID LOSING points
+
+for the NEXT STUDENT",21,stimuli/tunga_13.bmp,-1,stimuli/tunga_16.bmp,0,0,13,16,stimuli/tunga_13.bmp,stimuli/tunga_16.bmp,stimuli/tunga_16.bmp,right,03,2021-04-06_12h07.59.163,psyc-347-prosocial-learning,2020.2.4post1,Win32,60,0,0,21,21,21,1,3,3,0
+left,1,0.62716,stimuli/tunga_16.bmp,0,1,1,1000,0,social avoid loss,,,,,,22,social,avoidloss,social_avoidloss,3,"Play to AVOID LOSING points
+
+for the NEXT STUDENT",22,stimuli/tunga_13.bmp,-1,stimuli/tunga_16.bmp,0,1,16,13,stimuli/tunga_16.bmp,stimuli/tunga_13.bmp,stimuli/tunga_16.bmp,left,03,2021-04-06_12h07.59.163,psyc-347-prosocial-learning,2020.2.4post1,Win32,60,0,0,22,22,22,1,3,3,0
+left,1,0.40094,stimuli/tunga_16.bmp,0,1,1,1000,0,social avoid loss,,,,,,23,social,avoidloss,social_avoidloss,3,"Play to AVOID LOSING points
+
+for the NEXT STUDENT",23,stimuli/tunga_13.bmp,-1,stimuli/tunga_16.bmp,0,1,16,13,stimuli/tunga_16.bmp,stimuli/tunga_13.bmp,stimuli/tunga_16.bmp,left,03,2021-04-06_12h07.59.163,psyc-347-prosocial-learning,2020.2.4post1,Win32,60,0,0,23,23,23,1,3,3,0
+left,0,1.671345,stimuli/tunga_12.bmp,1,0,0,900,0,self lose,,,,,,24,self,avoidloss,self_avoidloss,2,"Play to AVOID LOSING points
+
+for YOURSELF",0,stimuli/tunga_12.bmp,-1,stimuli/tunga_05.bmp,0,0,12,5,stimuli/tunga_12.bmp,stimuli/tunga_05.bmp,stimuli/tunga_05.bmp,right,03,2021-04-06_12h07.59.163,psyc-347-prosocial-learning,2020.2.4post1,Win32,60,-1,0,24,24,24,1,3,3,0
+right,1,0.78733,stimuli/tunga_05.bmp,0,1,1,900,0,self avoid loss,,,,,,25,self,avoidloss,self_avoidloss,2,"Play to AVOID LOSING points
+
+for YOURSELF",1,stimuli/tunga_12.bmp,-1,stimuli/tunga_05.bmp,0,0,12,5,stimuli/tunga_12.bmp,stimuli/tunga_05.bmp,stimuli/tunga_05.bmp,right,03,2021-04-06_12h07.59.163,psyc-347-prosocial-learning,2020.2.4post1,Win32,60,0,0,25,25,25,1,3,3,0
+left,1,0.544375,stimuli/tunga_05.bmp,0,1,1,900,0,self avoid loss,,,,,,26,self,avoidloss,self_avoidloss,2,"Play to AVOID LOSING points
+
+for YOURSELF",2,stimuli/tunga_12.bmp,-1,stimuli/tunga_05.bmp,0,1,5,12,stimuli/tunga_05.bmp,stimuli/tunga_12.bmp,stimuli/tunga_05.bmp,left,03,2021-04-06_12h07.59.163,psyc-347-prosocial-learning,2020.2.4post1,Win32,60,0,0,26,26,26,1,3,3,0
+left,1,0.61746,stimuli/tunga_05.bmp,0,1,1,900,0,self avoid loss,,,,,,27,self,avoidloss,self_avoidloss,2,"Play to AVOID LOSING points
+
+for YOURSELF",3,stimuli/tunga_12.bmp,-1,stimuli/tunga_05.bmp,0,1,5,12,stimuli/tunga_05.bmp,stimuli/tunga_12.bmp,stimuli/tunga_05.bmp,left,03,2021-04-06_12h07.59.163,psyc-347-prosocial-learning,2020.2.4post1,Win32,60,0,0,27,27,27,1,3,3,0
+left,0,0.456015,stimuli/tunga_05.bmp,0,1,1,800,0,self lose,,,,,,28,self,avoidloss,self_avoidloss,2,"Play to AVOID LOSING points
+
+for YOURSELF",4,stimuli/tunga_12.bmp,0,stimuli/tunga_05.bmp,-1,1,5,12,stimuli/tunga_05.bmp,stimuli/tunga_12.bmp,stimuli/tunga_12.bmp,right,03,2021-04-06_12h07.59.163,psyc-347-prosocial-learning,2020.2.4post1,Win32,60,-1,0,28,28,28,1,3,3,0
+left,1,0.491915,stimuli/tunga_05.bmp,0,1,1,800,0,self avoid loss,,,,,,29,self,avoidloss,self_avoidloss,2,"Play to AVOID LOSING points
+
+for YOURSELF",5,stimuli/tunga_12.bmp,-1,stimuli/tunga_05.bmp,0,1,5,12,stimuli/tunga_05.bmp,stimuli/tunga_12.bmp,stimuli/tunga_05.bmp,left,03,2021-04-06_12h07.59.163,psyc-347-prosocial-learning,2020.2.4post1,Win32,60,0,0,29,29,29,1,3,3,0
+left,0,0.96858,stimuli/tunga_12.bmp,1,0,0,700,0,self lose,,,,,,30,self,avoidloss,self_avoidloss,2,"Play to AVOID LOSING points
+
+for YOURSELF",6,stimuli/tunga_12.bmp,-1,stimuli/tunga_05.bmp,0,0,12,5,stimuli/tunga_12.bmp,stimuli/tunga_05.bmp,stimuli/tunga_05.bmp,right,03,2021-04-06_12h07.59.163,psyc-347-prosocial-learning,2020.2.4post1,Win32,60,-1,0,30,30,30,1,3,3,0
+right,1,0.871975,stimuli/tunga_05.bmp,0,1,1,700,0,self avoid loss,,,,,,31,self,avoidloss,self_avoidloss,2,"Play to AVOID LOSING points
+
+for YOURSELF",7,stimuli/tunga_12.bmp,-1,stimuli/tunga_05.bmp,0,0,12,5,stimuli/tunga_12.bmp,stimuli/tunga_05.bmp,stimuli/tunga_05.bmp,right,03,2021-04-06_12h07.59.163,psyc-347-prosocial-learning,2020.2.4post1,Win32,60,0,0,31,31,31,1,3,3,0
+left,1,0.501215,stimuli/tunga_05.bmp,0,1,1,700,0,self avoid loss,,,,,,32,self,avoidloss,self_avoidloss,2,"Play to AVOID LOSING points
+
+for YOURSELF",8,stimuli/tunga_12.bmp,-1,stimuli/tunga_05.bmp,0,1,5,12,stimuli/tunga_05.bmp,stimuli/tunga_12.bmp,stimuli/tunga_05.bmp,left,03,2021-04-06_12h07.59.163,psyc-347-prosocial-learning,2020.2.4post1,Win32,60,0,0,32,32,32,1,3,3,0
+left,0,0.442335,stimuli/tunga_05.bmp,0,1,1,600,0,self lose,,,,,,33,self,avoidloss,self_avoidloss,2,"Play to AVOID LOSING points
+
+for YOURSELF",9,stimuli/tunga_12.bmp,0,stimuli/tunga_05.bmp,-1,1,5,12,stimuli/tunga_05.bmp,stimuli/tunga_12.bmp,stimuli/tunga_12.bmp,right,03,2021-04-06_12h07.59.163,psyc-347-prosocial-learning,2020.2.4post1,Win32,60,-1,0,33,33,33,1,3,3,0
+right,1,0.767975,stimuli/tunga_05.bmp,0,1,1,600,0,self avoid loss,,,,,,34,self,avoidloss,self_avoidloss,2,"Play to AVOID LOSING points
+
+for YOURSELF",10,stimuli/tunga_12.bmp,-1,stimuli/tunga_05.bmp,0,0,12,5,stimuli/tunga_12.bmp,stimuli/tunga_05.bmp,stimuli/tunga_05.bmp,right,03,2021-04-06_12h07.59.163,psyc-347-prosocial-learning,2020.2.4post1,Win32,60,0,0,34,34,34,1,3,3,0
+left,1,0.775795,stimuli/tunga_05.bmp,0,1,1,600,0,self avoid loss,,,,,,35,self,avoidloss,self_avoidloss,2,"Play to AVOID LOSING points
+
+for YOURSELF",11,stimuli/tunga_12.bmp,-1,stimuli/tunga_05.bmp,0,1,5,12,stimuli/tunga_05.bmp,stimuli/tunga_12.bmp,stimuli/tunga_05.bmp,left,03,2021-04-06_12h07.59.163,psyc-347-prosocial-learning,2020.2.4post1,Win32,60,0,0,35,35,35,1,3,3,0
+left,1,0.493715,stimuli/tunga_05.bmp,0,1,1,600,0,self avoid loss,,,,,,36,self,avoidloss,self_avoidloss,2,"Play to AVOID LOSING points
+
+for YOURSELF",12,stimuli/tunga_12.bmp,-1,stimuli/tunga_05.bmp,0,1,5,12,stimuli/tunga_05.bmp,stimuli/tunga_12.bmp,stimuli/tunga_05.bmp,left,03,2021-04-06_12h07.59.163,psyc-347-prosocial-learning,2020.2.4post1,Win32,60,0,0,36,36,36,1,3,3,0
+right,0,0.57975,stimuli/tunga_05.bmp,0,1,1,500,0,self lose,,,,,,37,self,avoidloss,self_avoidloss,2,"Play to AVOID LOSING points
+
+for YOURSELF",13,stimuli/tunga_12.bmp,0,stimuli/tunga_05.bmp,-1,0,12,5,stimuli/tunga_12.bmp,stimuli/tunga_05.bmp,stimuli/tunga_12.bmp,left,03,2021-04-06_12h07.59.163,psyc-347-prosocial-learning,2020.2.4post1,Win32,60,-1,0,37,37,37,1,3,3,0
+left,0,0.73388,stimuli/tunga_05.bmp,0,1,1,400,0,self lose,,,,,,38,self,avoidloss,self_avoidloss,2,"Play to AVOID LOSING points
+
+for YOURSELF",14,stimuli/tunga_12.bmp,0,stimuli/tunga_05.bmp,-1,1,5,12,stimuli/tunga_05.bmp,stimuli/tunga_12.bmp,stimuli/tunga_12.bmp,right,03,2021-04-06_12h07.59.163,psyc-347-prosocial-learning,2020.2.4post1,Win32,60,-1,0,38,38,38,1,3,3,0
+right,0,0.66775,stimuli/tunga_05.bmp,0,1,1,300,0,self lose,,,,,,39,self,avoidloss,self_avoidloss,2,"Play to AVOID LOSING points
+
+for YOURSELF",15,stimuli/tunga_12.bmp,0,stimuli/tunga_05.bmp,-1,0,12,5,stimuli/tunga_12.bmp,stimuli/tunga_05.bmp,stimuli/tunga_12.bmp,left,03,2021-04-06_12h07.59.163,psyc-347-prosocial-learning,2020.2.4post1,Win32,60,-1,0,39,39,39,1,3,3,0
+left,1,0.55375,stimuli/tunga_05.bmp,0,1,1,300,0,self avoid loss,,,,,,40,self,avoidloss,self_avoidloss,2,"Play to AVOID LOSING points
+
+for YOURSELF",16,stimuli/tunga_12.bmp,-1,stimuli/tunga_05.bmp,0,1,5,12,stimuli/tunga_05.bmp,stimuli/tunga_12.bmp,stimuli/tunga_05.bmp,left,03,2021-04-06_12h07.59.163,psyc-347-prosocial-learning,2020.2.4post1,Win32,60,0,0,40,40,40,1,3,3,0
+left,1,0.579475,stimuli/tunga_05.bmp,0,1,1,300,0,self avoid loss,,,,,,41,self,avoidloss,self_avoidloss,2,"Play to AVOID LOSING points
+
+for YOURSELF",17,stimuli/tunga_12.bmp,-1,stimuli/tunga_05.bmp,0,1,5,12,stimuli/tunga_05.bmp,stimuli/tunga_12.bmp,stimuli/tunga_05.bmp,left,03,2021-04-06_12h07.59.163,psyc-347-prosocial-learning,2020.2.4post1,Win32,60,0,0,41,41,41,1,3,3,0
+right,1,1.70515,stimuli/tunga_05.bmp,0,1,1,300,0,self avoid loss,,,,,,42,self,avoidloss,self_avoidloss,2,"Play to AVOID LOSING points
+
+for YOURSELF",18,stimuli/tunga_12.bmp,-1,stimuli/tunga_05.bmp,0,0,12,5,stimuli/tunga_12.bmp,stimuli/tunga_05.bmp,stimuli/tunga_05.bmp,right,03,2021-04-06_12h07.59.163,psyc-347-prosocial-learning,2020.2.4post1,Win32,60,0,0,42,42,42,1,3,3,0
+right,1,1.42816,stimuli/tunga_05.bmp,0,1,1,300,0,self avoid loss,,,,,,43,self,avoidloss,self_avoidloss,2,"Play to AVOID LOSING points
+
+for YOURSELF",19,stimuli/tunga_12.bmp,-1,stimuli/tunga_05.bmp,0,0,12,5,stimuli/tunga_12.bmp,stimuli/tunga_05.bmp,stimuli/tunga_05.bmp,right,03,2021-04-06_12h07.59.163,psyc-347-prosocial-learning,2020.2.4post1,Win32,60,0,0,43,43,43,1,3,3,0
+right,0,0.51721,stimuli/tunga_12.bmp,1,0,0,200,0,self lose,,,,,,44,self,avoidloss,self_avoidloss,2,"Play to AVOID LOSING points
+
+for YOURSELF",20,stimuli/tunga_12.bmp,-1,stimuli/tunga_05.bmp,0,1,5,12,stimuli/tunga_05.bmp,stimuli/tunga_12.bmp,stimuli/tunga_05.bmp,left,03,2021-04-06_12h07.59.163,psyc-347-prosocial-learning,2020.2.4post1,Win32,60,-1,0,44,44,44,1,3,3,0
+right,1,0.55175,stimuli/tunga_05.bmp,0,1,1,200,0,self avoid loss,,,,,,45,self,avoidloss,self_avoidloss,2,"Play to AVOID LOSING points
+
+for YOURSELF",21,stimuli/tunga_12.bmp,-1,stimuli/tunga_05.bmp,0,0,12,5,stimuli/tunga_12.bmp,stimuli/tunga_05.bmp,stimuli/tunga_05.bmp,right,03,2021-04-06_12h07.59.163,psyc-347-prosocial-learning,2020.2.4post1,Win32,60,0,0,45,45,45,1,3,3,0
+right,0,0.688255,stimuli/tunga_05.bmp,0,1,1,100,0,self lose,,,,,,46,self,avoidloss,self_avoidloss,2,"Play to AVOID LOSING points
+
+for YOURSELF",22,stimuli/tunga_12.bmp,0,stimuli/tunga_05.bmp,-1,0,12,5,stimuli/tunga_12.bmp,stimuli/tunga_05.bmp,stimuli/tunga_12.bmp,left,03,2021-04-06_12h07.59.163,psyc-347-prosocial-learning,2020.2.4post1,Win32,60,-1,0,46,46,46,1,3,3,0
+right,1,0.627145,stimuli/tunga_05.bmp,0,1,1,100,0,self avoid loss,,,,,,47,self,avoidloss,self_avoidloss,2,"Play to AVOID LOSING points
+
+for YOURSELF",23,stimuli/tunga_12.bmp,-1,stimuli/tunga_05.bmp,0,0,12,5,stimuli/tunga_12.bmp,stimuli/tunga_05.bmp,stimuli/tunga_05.bmp,right,03,2021-04-06_12h07.59.163,psyc-347-prosocial-learning,2020.2.4post1,Win32,60,0,0,47,47,47,1,3,3,0
+left,1,1.750225,stimuli/tunga_11.bmp,1,0,1,100,100,social win,,,,,,48,social,win,social_win,1,"Play to WIN points
+
+for the NEXT STUDENT",0,stimuli/tunga_11.bmp,1,stimuli/tunga_01.bmp,0,0,11,1,stimuli/tunga_11.bmp,stimuli/tunga_01.bmp,stimuli/tunga_11.bmp,left,03,2021-04-06_12h07.59.163,psyc-347-prosocial-learning,2020.2.4post1,Win32,60,1,0,48,48,48,1,3,3,0
+left,1,0.594225,stimuli/tunga_11.bmp,1,0,1,100,200,social win,,,,,,49,social,win,social_win,1,"Play to WIN points
+
+for the NEXT STUDENT",1,stimuli/tunga_11.bmp,1,stimuli/tunga_01.bmp,0,0,11,1,stimuli/tunga_11.bmp,stimuli/tunga_01.bmp,stimuli/tunga_11.bmp,left,03,2021-04-06_12h07.59.163,psyc-347-prosocial-learning,2020.2.4post1,Win32,60,1,0,49,49,49,1,3,3,0
+left,1,0.383875,stimuli/tunga_11.bmp,1,0,1,100,300,social win,,,,,,50,social,win,social_win,1,"Play to WIN points
+
+for the NEXT STUDENT",2,stimuli/tunga_11.bmp,1,stimuli/tunga_01.bmp,0,0,11,1,stimuli/tunga_11.bmp,stimuli/tunga_01.bmp,stimuli/tunga_11.bmp,left,03,2021-04-06_12h07.59.163,psyc-347-prosocial-learning,2020.2.4post1,Win32,60,1,0,50,50,50,1,3,3,0
+left,0,0.365185,stimuli/tunga_01.bmp,0,1,0,100,300,social avoid win,,,,,,51,social,win,social_win,1,"Play to WIN points
+
+for the NEXT STUDENT",3,stimuli/tunga_11.bmp,1,stimuli/tunga_01.bmp,0,1,1,11,stimuli/tunga_01.bmp,stimuli/tunga_11.bmp,stimuli/tunga_11.bmp,right,03,2021-04-06_12h07.59.163,psyc-347-prosocial-learning,2020.2.4post1,Win32,60,0,0,51,51,51,1,3,3,0
+left,0,0.55123,stimuli/tunga_11.bmp,1,0,1,100,300,social avoid win,,,,,,52,social,win,social_win,1,"Play to WIN points
+
+for the NEXT STUDENT",4,stimuli/tunga_11.bmp,0,stimuli/tunga_01.bmp,1,0,11,1,stimuli/tunga_11.bmp,stimuli/tunga_01.bmp,stimuli/tunga_01.bmp,right,03,2021-04-06_12h07.59.163,psyc-347-prosocial-learning,2020.2.4post1,Win32,60,0,0,52,52,52,1,3,3,0
+right,1,0.637055,stimuli/tunga_11.bmp,1,0,1,100,400,social win,,,,,,53,social,win,social_win,1,"Play to WIN points
+
+for the NEXT STUDENT",5,stimuli/tunga_11.bmp,1,stimuli/tunga_01.bmp,0,1,1,11,stimuli/tunga_01.bmp,stimuli/tunga_11.bmp,stimuli/tunga_11.bmp,right,03,2021-04-06_12h07.59.163,psyc-347-prosocial-learning,2020.2.4post1,Win32,60,1,0,53,53,53,1,3,3,0
+left,0,0.602135,stimuli/tunga_11.bmp,1,0,1,100,400,social avoid win,,,,,,54,social,win,social_win,1,"Play to WIN points
+
+for the NEXT STUDENT",6,stimuli/tunga_11.bmp,0,stimuli/tunga_01.bmp,1,0,11,1,stimuli/tunga_11.bmp,stimuli/tunga_01.bmp,stimuli/tunga_01.bmp,right,03,2021-04-06_12h07.59.163,psyc-347-prosocial-learning,2020.2.4post1,Win32,60,0,0,54,54,54,1,3,3,0
+right,1,0.75118,stimuli/tunga_11.bmp,1,0,1,100,500,social win,,,,,,55,social,win,social_win,1,"Play to WIN points
+
+for the NEXT STUDENT",7,stimuli/tunga_11.bmp,1,stimuli/tunga_01.bmp,0,1,1,11,stimuli/tunga_01.bmp,stimuli/tunga_11.bmp,stimuli/tunga_11.bmp,right,03,2021-04-06_12h07.59.163,psyc-347-prosocial-learning,2020.2.4post1,Win32,60,1,0,55,55,55,1,3,3,0
+left,0,0.618965,stimuli/tunga_11.bmp,1,0,1,100,500,social avoid win,,,,,,56,social,win,social_win,1,"Play to WIN points
+
+for the NEXT STUDENT",8,stimuli/tunga_11.bmp,0,stimuli/tunga_01.bmp,1,0,11,1,stimuli/tunga_11.bmp,stimuli/tunga_01.bmp,stimuli/tunga_01.bmp,right,03,2021-04-06_12h07.59.163,psyc-347-prosocial-learning,2020.2.4post1,Win32,60,0,0,56,56,56,1,3,3,0
+right,1,0.666645,stimuli/tunga_11.bmp,1,0,1,100,600,social win,,,,,,57,social,win,social_win,1,"Play to WIN points
+
+for the NEXT STUDENT",9,stimuli/tunga_11.bmp,1,stimuli/tunga_01.bmp,0,1,1,11,stimuli/tunga_01.bmp,stimuli/tunga_11.bmp,stimuli/tunga_11.bmp,right,03,2021-04-06_12h07.59.163,psyc-347-prosocial-learning,2020.2.4post1,Win32,60,1,0,57,57,57,1,3,3,0
+left,1,0.88239,stimuli/tunga_11.bmp,1,0,1,100,700,social win,,,,,,58,social,win,social_win,1,"Play to WIN points
+
+for the NEXT STUDENT",10,stimuli/tunga_11.bmp,1,stimuli/tunga_01.bmp,0,0,11,1,stimuli/tunga_11.bmp,stimuli/tunga_01.bmp,stimuli/tunga_11.bmp,left,03,2021-04-06_12h07.59.163,psyc-347-prosocial-learning,2020.2.4post1,Win32,60,1,0,58,58,58,1,3,3,0
+right,1,0.99026,stimuli/tunga_11.bmp,1,0,1,100,800,social win,,,,,,59,social,win,social_win,1,"Play to WIN points
+
+for the NEXT STUDENT",11,stimuli/tunga_11.bmp,1,stimuli/tunga_01.bmp,0,1,1,11,stimuli/tunga_01.bmp,stimuli/tunga_11.bmp,stimuli/tunga_11.bmp,right,03,2021-04-06_12h07.59.163,psyc-347-prosocial-learning,2020.2.4post1,Win32,60,1,0,59,59,59,1,3,3,0
+left,1,1.084965,stimuli/tunga_11.bmp,1,0,1,100,900,social win,,,,,,60,social,win,social_win,1,"Play to WIN points
+
+for the NEXT STUDENT",12,stimuli/tunga_11.bmp,1,stimuli/tunga_01.bmp,0,0,11,1,stimuli/tunga_11.bmp,stimuli/tunga_01.bmp,stimuli/tunga_11.bmp,left,03,2021-04-06_12h07.59.163,psyc-347-prosocial-learning,2020.2.4post1,Win32,60,1,0,60,60,60,1,3,3,0
+right,1,0.54998,stimuli/tunga_11.bmp,1,0,1,100,1000,social win,,,,,,61,social,win,social_win,1,"Play to WIN points
+
+for the NEXT STUDENT",13,stimuli/tunga_11.bmp,1,stimuli/tunga_01.bmp,0,1,1,11,stimuli/tunga_01.bmp,stimuli/tunga_11.bmp,stimuli/tunga_11.bmp,right,03,2021-04-06_12h07.59.163,psyc-347-prosocial-learning,2020.2.4post1,Win32,60,1,0,61,61,61,1,3,3,0
+right,1,0.63505,stimuli/tunga_11.bmp,1,0,1,100,1100,social win,,,,,,62,social,win,social_win,1,"Play to WIN points
+
+for the NEXT STUDENT",14,stimuli/tunga_11.bmp,1,stimuli/tunga_01.bmp,0,1,1,11,stimuli/tunga_01.bmp,stimuli/tunga_11.bmp,stimuli/tunga_11.bmp,right,03,2021-04-06_12h07.59.163,psyc-347-prosocial-learning,2020.2.4post1,Win32,60,1,0,62,62,62,1,3,3,0
+left,0,0.58663,stimuli/tunga_11.bmp,1,0,1,100,1100,social avoid win,,,,,,63,social,win,social_win,1,"Play to WIN points
+
+for the NEXT STUDENT",15,stimuli/tunga_11.bmp,0,stimuli/tunga_01.bmp,1,0,11,1,stimuli/tunga_11.bmp,stimuli/tunga_01.bmp,stimuli/tunga_01.bmp,right,03,2021-04-06_12h07.59.163,psyc-347-prosocial-learning,2020.2.4post1,Win32,60,0,0,63,63,63,1,3,3,0
+right,0,0.717735,stimuli/tunga_11.bmp,1,0,1,100,1100,social avoid win,,,,,,64,social,win,social_win,1,"Play to WIN points
+
+for the NEXT STUDENT",16,stimuli/tunga_11.bmp,0,stimuli/tunga_01.bmp,1,1,1,11,stimuli/tunga_01.bmp,stimuli/tunga_11.bmp,stimuli/tunga_01.bmp,left,03,2021-04-06_12h07.59.163,psyc-347-prosocial-learning,2020.2.4post1,Win32,60,0,0,64,64,64,1,3,3,0
+right,1,0.444005,stimuli/tunga_11.bmp,1,0,1,100,1200,social win,,,,,,65,social,win,social_win,1,"Play to WIN points
+
+for the NEXT STUDENT",17,stimuli/tunga_11.bmp,1,stimuli/tunga_01.bmp,0,1,1,11,stimuli/tunga_01.bmp,stimuli/tunga_11.bmp,stimuli/tunga_11.bmp,right,03,2021-04-06_12h07.59.163,psyc-347-prosocial-learning,2020.2.4post1,Win32,60,1,0,65,65,65,1,3,3,0
+right,0,0.45211,stimuli/tunga_11.bmp,1,0,1,100,1200,social avoid win,,,,,,66,social,win,social_win,1,"Play to WIN points
+
+for the NEXT STUDENT",18,stimuli/tunga_11.bmp,0,stimuli/tunga_01.bmp,1,1,1,11,stimuli/tunga_01.bmp,stimuli/tunga_11.bmp,stimuli/tunga_01.bmp,left,03,2021-04-06_12h07.59.163,psyc-347-prosocial-learning,2020.2.4post1,Win32,60,0,0,66,66,66,1,3,3,0
+right,1,0.5546,stimuli/tunga_11.bmp,1,0,1,100,1300,social win,,,,,,67,social,win,social_win,1,"Play to WIN points
+
+for the NEXT STUDENT",19,stimuli/tunga_11.bmp,1,stimuli/tunga_01.bmp,0,1,1,11,stimuli/tunga_01.bmp,stimuli/tunga_11.bmp,stimuli/tunga_11.bmp,right,03,2021-04-06_12h07.59.163,psyc-347-prosocial-learning,2020.2.4post1,Win32,60,1,0,67,67,67,1,3,3,0
+left,1,0.549515,stimuli/tunga_11.bmp,1,0,1,100,1400,social win,,,,,,68,social,win,social_win,1,"Play to WIN points
+
+for the NEXT STUDENT",20,stimuli/tunga_11.bmp,1,stimuli/tunga_01.bmp,0,0,11,1,stimuli/tunga_11.bmp,stimuli/tunga_01.bmp,stimuli/tunga_11.bmp,left,03,2021-04-06_12h07.59.163,psyc-347-prosocial-learning,2020.2.4post1,Win32,60,1,0,68,68,68,1,3,3,0
+right,1,0.38437,stimuli/tunga_11.bmp,1,0,1,100,1500,social win,,,,,,69,social,win,social_win,1,"Play to WIN points
+
+for the NEXT STUDENT",21,stimuli/tunga_11.bmp,1,stimuli/tunga_01.bmp,0,1,1,11,stimuli/tunga_01.bmp,stimuli/tunga_11.bmp,stimuli/tunga_11.bmp,right,03,2021-04-06_12h07.59.163,psyc-347-prosocial-learning,2020.2.4post1,Win32,60,1,0,69,69,69,1,3,3,0
+left,1,0.49132,stimuli/tunga_11.bmp,1,0,1,100,1600,social win,,,,,,70,social,win,social_win,1,"Play to WIN points
+
+for the NEXT STUDENT",22,stimuli/tunga_11.bmp,1,stimuli/tunga_01.bmp,0,0,11,1,stimuli/tunga_11.bmp,stimuli/tunga_01.bmp,stimuli/tunga_11.bmp,left,03,2021-04-06_12h07.59.163,psyc-347-prosocial-learning,2020.2.4post1,Win32,60,1,0,70,70,70,1,3,3,0
+left,1,0.45442,stimuli/tunga_11.bmp,1,0,1,100,1700,social win,,,,,,71,social,win,social_win,1,"Play to WIN points
+
+for the NEXT STUDENT",23,stimuli/tunga_11.bmp,1,stimuli/tunga_01.bmp,0,0,11,1,stimuli/tunga_11.bmp,stimuli/tunga_01.bmp,stimuli/tunga_11.bmp,left,03,2021-04-06_12h07.59.163,psyc-347-prosocial-learning,2020.2.4post1,Win32,60,1,0,71,71,71,1,3,3,0
+right,1,1.79295,stimuli/tunga_07.bmp,1,0,1,200,1700,self win,,,,,,72,self,win,self_win,0,"Play to WIN points
+
+for YOURSELF",0,stimuli/tunga_07.bmp,1,stimuli/tunga_15.bmp,0,1,15,7,stimuli/tunga_15.bmp,stimuli/tunga_07.bmp,stimuli/tunga_07.bmp,right,03,2021-04-06_12h07.59.163,psyc-347-prosocial-learning,2020.2.4post1,Win32,60,1,0,72,72,72,1,3,3,0
+right,1,0.716765,stimuli/tunga_07.bmp,1,0,1,300,1700,self win,,,,,,73,self,win,self_win,0,"Play to WIN points
+
+for YOURSELF",1,stimuli/tunga_07.bmp,1,stimuli/tunga_15.bmp,0,1,15,7,stimuli/tunga_15.bmp,stimuli/tunga_07.bmp,stimuli/tunga_07.bmp,right,03,2021-04-06_12h07.59.163,psyc-347-prosocial-learning,2020.2.4post1,Win32,60,1,0,73,73,73,1,3,3,0
+left,1,0.400235,stimuli/tunga_07.bmp,1,0,1,400,1700,self win,,,,,,74,self,win,self_win,0,"Play to WIN points
+
+for YOURSELF",2,stimuli/tunga_07.bmp,1,stimuli/tunga_15.bmp,0,0,7,15,stimuli/tunga_07.bmp,stimuli/tunga_15.bmp,stimuli/tunga_07.bmp,left,03,2021-04-06_12h07.59.163,psyc-347-prosocial-learning,2020.2.4post1,Win32,60,1,0,74,74,74,1,3,3,0
+right,1,0.50073,stimuli/tunga_07.bmp,1,0,1,500,1700,self win,,,,,,75,self,win,self_win,0,"Play to WIN points
+
+for YOURSELF",3,stimuli/tunga_07.bmp,1,stimuli/tunga_15.bmp,0,1,15,7,stimuli/tunga_15.bmp,stimuli/tunga_07.bmp,stimuli/tunga_07.bmp,right,03,2021-04-06_12h07.59.163,psyc-347-prosocial-learning,2020.2.4post1,Win32,60,1,0,75,75,75,1,3,3,0
+left,1,0.584115,stimuli/tunga_07.bmp,1,0,1,600,1700,self win,,,,,,76,self,win,self_win,0,"Play to WIN points
+
+for YOURSELF",4,stimuli/tunga_07.bmp,1,stimuli/tunga_15.bmp,0,0,7,15,stimuli/tunga_07.bmp,stimuli/tunga_15.bmp,stimuli/tunga_07.bmp,left,03,2021-04-06_12h07.59.163,psyc-347-prosocial-learning,2020.2.4post1,Win32,60,1,0,76,76,76,1,3,3,0
+right,0,0.650555,stimuli/tunga_07.bmp,1,0,1,600,1700,self avoid win,,,,,,77,self,win,self_win,0,"Play to WIN points
+
+for YOURSELF",5,stimuli/tunga_07.bmp,0,stimuli/tunga_15.bmp,1,1,15,7,stimuli/tunga_15.bmp,stimuli/tunga_07.bmp,stimuli/tunga_15.bmp,left,03,2021-04-06_12h07.59.163,psyc-347-prosocial-learning,2020.2.4post1,Win32,60,0,0,77,77,77,1,3,3,0
+left,0,0.708345,stimuli/tunga_07.bmp,1,0,1,600,1700,self avoid win,,,,,,78,self,win,self_win,0,"Play to WIN points
+
+for YOURSELF",6,stimuli/tunga_07.bmp,0,stimuli/tunga_15.bmp,1,0,7,15,stimuli/tunga_07.bmp,stimuli/tunga_15.bmp,stimuli/tunga_15.bmp,right,03,2021-04-06_12h07.59.163,psyc-347-prosocial-learning,2020.2.4post1,Win32,60,0,0,78,78,78,1,3,3,0
+right,1,0.85097,stimuli/tunga_07.bmp,1,0,1,700,1700,self win,,,,,,79,self,win,self_win,0,"Play to WIN points
+
+for YOURSELF",7,stimuli/tunga_07.bmp,1,stimuli/tunga_15.bmp,0,1,15,7,stimuli/tunga_15.bmp,stimuli/tunga_07.bmp,stimuli/tunga_07.bmp,right,03,2021-04-06_12h07.59.163,psyc-347-prosocial-learning,2020.2.4post1,Win32,60,1,0,79,79,79,1,3,3,0
+left,1,0.817705,stimuli/tunga_07.bmp,1,0,1,800,1700,self win,,,,,,80,self,win,self_win,0,"Play to WIN points
+
+for YOURSELF",8,stimuli/tunga_07.bmp,1,stimuli/tunga_15.bmp,0,0,7,15,stimuli/tunga_07.bmp,stimuli/tunga_15.bmp,stimuli/tunga_07.bmp,left,03,2021-04-06_12h07.59.163,psyc-347-prosocial-learning,2020.2.4post1,Win32,60,1,0,80,80,80,1,3,3,0
+left,1,0.933375,stimuli/tunga_07.bmp,1,0,1,900,1700,self win,,,,,,81,self,win,self_win,0,"Play to WIN points
+
+for YOURSELF",9,stimuli/tunga_07.bmp,1,stimuli/tunga_15.bmp,0,0,7,15,stimuli/tunga_07.bmp,stimuli/tunga_15.bmp,stimuli/tunga_07.bmp,left,03,2021-04-06_12h07.59.163,psyc-347-prosocial-learning,2020.2.4post1,Win32,60,1,0,81,81,81,1,3,3,0
+right,1,0.709575,stimuli/tunga_07.bmp,1,0,1,1000,1700,self win,,,,,,82,self,win,self_win,0,"Play to WIN points
+
+for YOURSELF",10,stimuli/tunga_07.bmp,1,stimuli/tunga_15.bmp,0,1,15,7,stimuli/tunga_15.bmp,stimuli/tunga_07.bmp,stimuli/tunga_07.bmp,right,03,2021-04-06_12h07.59.163,psyc-347-prosocial-learning,2020.2.4post1,Win32,60,1,0,82,82,82,1,3,3,0
+right,1,0.606505,stimuli/tunga_07.bmp,1,0,1,1100,1700,self win,,,,,,83,self,win,self_win,0,"Play to WIN points
+
+for YOURSELF",11,stimuli/tunga_07.bmp,1,stimuli/tunga_15.bmp,0,1,15,7,stimuli/tunga_15.bmp,stimuli/tunga_07.bmp,stimuli/tunga_07.bmp,right,03,2021-04-06_12h07.59.163,psyc-347-prosocial-learning,2020.2.4post1,Win32,60,1,0,83,83,83,1,3,3,0
+right,1,0.76736,stimuli/tunga_07.bmp,1,0,1,1200,1700,self win,,,,,,84,self,win,self_win,0,"Play to WIN points
+
+for YOURSELF",12,stimuli/tunga_07.bmp,1,stimuli/tunga_15.bmp,0,1,15,7,stimuli/tunga_15.bmp,stimuli/tunga_07.bmp,stimuli/tunga_07.bmp,right,03,2021-04-06_12h07.59.163,psyc-347-prosocial-learning,2020.2.4post1,Win32,60,1,0,84,84,84,1,3,3,0
+left,1,0.78634,stimuli/tunga_07.bmp,1,0,1,1300,1700,self win,,,,,,85,self,win,self_win,0,"Play to WIN points
+
+for YOURSELF",13,stimuli/tunga_07.bmp,1,stimuli/tunga_15.bmp,0,0,7,15,stimuli/tunga_07.bmp,stimuli/tunga_15.bmp,stimuli/tunga_07.bmp,left,03,2021-04-06_12h07.59.163,psyc-347-prosocial-learning,2020.2.4post1,Win32,60,1,0,85,85,85,1,3,3,0
+left,1,0.560035,stimuli/tunga_07.bmp,1,0,1,1400,1700,self win,,,,,,86,self,win,self_win,0,"Play to WIN points
+
+for YOURSELF",14,stimuli/tunga_07.bmp,1,stimuli/tunga_15.bmp,0,0,7,15,stimuli/tunga_07.bmp,stimuli/tunga_15.bmp,stimuli/tunga_07.bmp,left,03,2021-04-06_12h07.59.163,psyc-347-prosocial-learning,2020.2.4post1,Win32,60,1,0,86,86,86,1,3,3,0
+left,0,0.662425,stimuli/tunga_07.bmp,1,0,1,1400,1700,self avoid win,,,,,,87,self,win,self_win,0,"Play to WIN points
+
+for YOURSELF",15,stimuli/tunga_07.bmp,0,stimuli/tunga_15.bmp,1,0,7,15,stimuli/tunga_07.bmp,stimuli/tunga_15.bmp,stimuli/tunga_15.bmp,right,03,2021-04-06_12h07.59.163,psyc-347-prosocial-learning,2020.2.4post1,Win32,60,0,0,87,87,87,1,3,3,0
+left,0,0.72346,stimuli/tunga_07.bmp,1,0,1,1400,1700,self avoid win,,,,,,88,self,win,self_win,0,"Play to WIN points
+
+for YOURSELF",16,stimuli/tunga_07.bmp,0,stimuli/tunga_15.bmp,1,0,7,15,stimuli/tunga_07.bmp,stimuli/tunga_15.bmp,stimuli/tunga_15.bmp,right,03,2021-04-06_12h07.59.163,psyc-347-prosocial-learning,2020.2.4post1,Win32,60,0,0,88,88,88,1,3,3,0
+right,1,0.433935,stimuli/tunga_07.bmp,1,0,1,1500,1700,self win,,,,,,89,self,win,self_win,0,"Play to WIN points
+
+for YOURSELF",17,stimuli/tunga_07.bmp,1,stimuli/tunga_15.bmp,0,1,15,7,stimuli/tunga_15.bmp,stimuli/tunga_07.bmp,stimuli/tunga_07.bmp,right,03,2021-04-06_12h07.59.163,psyc-347-prosocial-learning,2020.2.4post1,Win32,60,1,0,89,89,89,1,3,3,0
+left,1,1.055485,stimuli/tunga_07.bmp,1,0,1,1600,1700,self win,,,,,,90,self,win,self_win,0,"Play to WIN points
+
+for YOURSELF",18,stimuli/tunga_07.bmp,1,stimuli/tunga_15.bmp,0,0,7,15,stimuli/tunga_07.bmp,stimuli/tunga_15.bmp,stimuli/tunga_07.bmp,left,03,2021-04-06_12h07.59.163,psyc-347-prosocial-learning,2020.2.4post1,Win32,60,1,0,90,90,90,1,3,3,0
+right,0,1.68382,stimuli/tunga_07.bmp,1,0,1,1600,1700,self avoid win,,,,,,91,self,win,self_win,0,"Play to WIN points
+
+for YOURSELF",19,stimuli/tunga_07.bmp,0,stimuli/tunga_15.bmp,1,1,15,7,stimuli/tunga_15.bmp,stimuli/tunga_07.bmp,stimuli/tunga_15.bmp,left,03,2021-04-06_12h07.59.163,psyc-347-prosocial-learning,2020.2.4post1,Win32,60,0,0,91,91,91,1,3,3,0
+right,0,0.600905,stimuli/tunga_07.bmp,1,0,1,1600,1700,self avoid win,,,,,,92,self,win,self_win,0,"Play to WIN points
+
+for YOURSELF",20,stimuli/tunga_07.bmp,0,stimuli/tunga_15.bmp,1,1,15,7,stimuli/tunga_15.bmp,stimuli/tunga_07.bmp,stimuli/tunga_15.bmp,left,03,2021-04-06_12h07.59.163,psyc-347-prosocial-learning,2020.2.4post1,Win32,60,0,0,92,92,92,1,3,3,0
+right,1,0.67747,stimuli/tunga_07.bmp,1,0,1,1700,1700,self win,,,,,,93,self,win,self_win,0,"Play to WIN points
+
+for YOURSELF",21,stimuli/tunga_07.bmp,1,stimuli/tunga_15.bmp,0,1,15,7,stimuli/tunga_15.bmp,stimuli/tunga_07.bmp,stimuli/tunga_07.bmp,right,03,2021-04-06_12h07.59.163,psyc-347-prosocial-learning,2020.2.4post1,Win32,60,1,0,93,93,93,1,3,3,0
+left,1,0.455045,stimuli/tunga_07.bmp,1,0,1,1800,1700,self win,,,,,,94,self,win,self_win,0,"Play to WIN points
+
+for YOURSELF",22,stimuli/tunga_07.bmp,1,stimuli/tunga_15.bmp,0,0,7,15,stimuli/tunga_07.bmp,stimuli/tunga_15.bmp,stimuli/tunga_07.bmp,left,03,2021-04-06_12h07.59.163,psyc-347-prosocial-learning,2020.2.4post1,Win32,60,1,0,94,94,94,1,3,3,0
+left,1,0.63455,stimuli/tunga_07.bmp,1,0,1,1900,1700,self win,,,,,,95,self,win,self_win,0,"Play to WIN points
+
+for YOURSELF",23,stimuli/tunga_07.bmp,1,stimuli/tunga_15.bmp,0,0,7,15,stimuli/tunga_07.bmp,stimuli/tunga_15.bmp,stimuli/tunga_07.bmp,left,03,2021-04-06_12h07.59.163,psyc-347-prosocial-learning,2020.2.4post1,Win32,60,1,0,95,95,95,1,3,3,0
