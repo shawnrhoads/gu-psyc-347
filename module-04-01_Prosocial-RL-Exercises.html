@@ -1,0 +1,1391 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prosocial RL Exercises &#8212; Computational Models of Human Social Behavior (and Neuroscience)</title>
+    
+  <link rel="stylesheet" href="_static/css/index.f658d18f9b420779cfdf24aa0a7e2d77.css">
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+  <link rel="stylesheet"
+    href="_static/vendor/open-sans_all/1.44.1/index.css">
+  <link rel="stylesheet"
+    href="_static/vendor/lato_latin-ext/1.44.1/index.css">
+
+    
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/sphinx-book-theme.e7340bb3dbd8dde6db86f25597f54a1b.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="_static/js/index.d3f166471bb80abb5163.js">
+
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/togglebutton.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="_static/sphinx-book-theme.7d483ff0a819d6edff12ce0b1ead3928.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.20.0/dist/embed-amd.js"></script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <link rel="canonical" href="https://shawnrhoads.github.io/gu-psyc-347/module-04-01_Prosocial-RL-Exercises.html" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+
+
+<!-- Opengraph tags -->
+<meta property="og:url"         content="https://shawnrhoads.github.io/gu-psyc-347/module-04-01_Prosocial-RL-Exercises.html" />
+<meta property="og:type"        content="article" />
+<meta property="og:title"       content="Prosocial RL Exercises" />
+<meta property="og:description" content="Prosocial RL Exercises  We will now fit your behavioral data to the models developed during class (as well as a few others) and then compare the models to asses" />
+<meta property="og:image"       content="https://shawnrhoads.github.io/gu-psyc-347/_static/logo.png" />
+
+<meta name="twitter:card" content="summary" />
+
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+<a class="navbar-brand text-wrap" href="index.html">
+  
+  <img src="_static/logo.png" class="logo" alt="logo">
+  
+  
+  <h1 class="site-logo" id="site-title">Computational Models of Human Social Behavior (and Neuroscience)</h1>
+  
+</a>
+</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form>
+<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+    <p class="caption collapsible-parent">
+ <span class="caption-text">
+  Module 00
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="module-00-00_Syllabus.html">
+   Syllabus
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="module-00-01_Course-Schedule.html">
+   Course Schedule
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="module-00-02_Course-Assignments.html">
+   Course Assignments
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="module-00-03_Reading-List.html">
+   Reading List
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="module-00-04_Getting-Started.html">
+   Getting Started
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="module-00-05_Final-Projects.html">
+   Final Project Guidelines
+  </a>
+ </li>
+</ul>
+<p class="caption collapsible-parent">
+ <span class="caption-text">
+  Module 01
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="module-01-00_Jupyter-Notebooks.html">
+   Jupyter Notebooks
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="module-01-01_Intro-to-Python.html">
+   Intro to Python Basics
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="module-01-02_Working-with-Data.html">
+   Working with Data
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="module-01-03_Python-Exercises.html">
+   Python Exercises
+  </a>
+ </li>
+</ul>
+<p class="caption collapsible-parent">
+ <span class="caption-text">
+  Module 02
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="module-02-00_Linear-Modeling.html">
+   Linear Modeling
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="module-02-01_Nonlinear-Modeling.html">
+   Nonlinear Modeling
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="module-02-02_Modeling-Exercises.html">
+   Modeling Exercises
+  </a>
+ </li>
+</ul>
+<p class="caption collapsible-parent">
+ <span class="caption-text">
+  Module 03
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="module-03-00_Two-Armed-Bandit.html">
+   Two-Armed Bandit
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="module-03-01_Models-of-Learning.html">
+   Models of Learning
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="module-03-02_RL-Exercises.html">
+   RL Exercises
+  </a>
+ </li>
+</ul>
+<p class="caption collapsible-parent">
+ <span class="caption-text">
+  Module 04
+ </span>
+</p>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="module-04-00_Social-Learning.html">
+   Social Learning
+  </a>
+ </li>
+</ul>
+
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="_sources/module-04-01_Prosocial-RL-Exercises.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/shawnrhoads/gu-psyc-347"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://github.com/shawnrhoads/gu-psyc-347/issues/new?title=Issue%20on%20page%20%2Fmodule-04-01_Prosocial-RL-Exercises.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        <a class="edit-button" href="https://github.com/shawnrhoads/gu-psyc-347/edit/master/module-04-01_Prosocial-RL-Exercises.ipynb"><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Edit this page"><i class="fas fa-pencil-alt"></i>suggest edit</button></a>
+    </div>
+</div>
+
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+            <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+                    data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+                    title="Fullscreen mode"><i
+                        class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+        <div class="tocsection onthispage pt-5 pb-3">
+            <i class="fas fa-list"></i>
+            Contents
+        </div>
+        <nav id="bd-toc-nav">
+            <ul class="nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#data">
+   Data
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#conditions-blocks">
+     4 conditions/blocks
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#each-block-contains-24-trials">
+     Each block contains 24 trials
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#data-output-key">
+     Data output key
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#define-models">
+   Define models
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#fitting-your-own-models">
+   Fitting your own models!
+  </a>
+ </li>
+</ul>
+
+        </nav>
+        
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <p><a class="reference external" href="https://colab.research.google.com/github/shawnrhoads/gu-psyc-347/blob/master/docs/module-04-01_Prosocial-RL-Exercises.ipynb"><img alt="Open In Colab" src="https://colab.research.google.com/assets/colab-badge.svg" /></a></p>
+<div class="section" id="prosocial-rl-exercises">
+<h1>Prosocial RL Exercises<a class="headerlink" href="#prosocial-rl-exercises" title="Permalink to this headline">¶</a></h1>
+<p>We will now fit your behavioral data to the models developed during class (as well as a few others) and then compare the models to assess which model best explains the data. This exercise is a bit different from previous exercises. I will only provide you with minimal code/text to guide you through, but you should be able to complete it all on your own using the course resources, previous tutorials/exercises, previous papers, and previous lectures!</p>
+<p><strong>Once you complete this exercise, you will be well on your way to becoming a pro computational modeler!</strong></p>
+<hr width=50%><p>Please download the data from <span class="xref myst">GitHub</span>, Canvas, or by using the following code</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">os</span><span class="o">,</span> <span class="nn">requests</span>
+
+<span class="c1"># create list of URLs</span>
+<span class="n">urls</span> <span class="o">=</span> <span class="p">[</span><span class="sa">f</span><span class="s1">&#39;https://raw.githubusercontent.com/shawnrhoads/gu-psyc-347/master/docs/static/data/</span><span class="si">{</span><span class="n">x</span><span class="si">:</span><span class="s1">02</span><span class="si">}</span><span class="s1">_psyc-347-prosocial-learning.csv&#39;</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">12</span><span class="p">)]</span>
+
+<span class="c1"># loop through list and download data</span>
+<span class="k">for</span> <span class="n">url</span> <span class="ow">in</span> <span class="n">urls</span><span class="p">:</span>
+    <span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">allow_redirects</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">isdir</span><span class="p">(</span><span class="s1">&#39;static/data&#39;</span><span class="p">):</span>
+        <span class="n">filename</span> <span class="o">=</span> <span class="s1">&#39;static/data/&#39;</span> <span class="o">+</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">basename</span><span class="p">(</span><span class="n">url</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">filename</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">basename</span><span class="p">(</span><span class="n">url</span><span class="p">)</span>
+    <span class="nb">open</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="s1">&#39;wb&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">r</span><span class="o">.</span><span class="n">content</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Import relevant modules</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">scipy.optimize</span> <span class="kn">import</span> <span class="n">minimize</span> <span class="c1"># finding optimal params in models</span>
+<span class="kn">from</span> <span class="nn">scipy</span> <span class="kn">import</span> <span class="n">stats</span>             <span class="c1"># statistical tools</span>
+<span class="kn">import</span> <span class="nn">os</span>                           <span class="c1"># operating system tools</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>                  <span class="c1"># matrix/array functions</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>                 <span class="c1"># loading and manipulating data</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>     <span class="c1"># plotting</span>
+<span class="o">%</span><span class="k">matplotlib</span> inline
+
+<span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">seed</span><span class="p">(</span><span class="mi">2021</span><span class="p">)</span>                <span class="c1"># set seed for reproducibility</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># this function will load the data into memory (assuming that</span>
+<span class="c1"># the data are downloaded)</span>
+<span class="k">def</span> <span class="nf">load_subjects</span><span class="p">():</span>
+    <span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">    input: n/a</span>
+<span class="sd">    output: dictionary of DataFrames containing the data</span>
+<span class="sd">    &#39;&#39;&#39;</span>
+        
+    <span class="k">if</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">isdir</span><span class="p">(</span><span class="s1">&#39;static/data&#39;</span><span class="p">):</span>
+        <span class="n">files</span> <span class="o">=</span> <span class="p">[</span><span class="sa">f</span><span class="s1">&#39;static/data/</span><span class="si">{</span><span class="n">x</span><span class="si">:</span><span class="s1">02</span><span class="si">}</span><span class="s1">_psyc-347-prosocial-learning.csv&#39;</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">12</span><span class="p">)]</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">files</span> <span class="o">=</span> <span class="p">[</span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="n">x</span><span class="si">:</span><span class="s1">02</span><span class="si">}</span><span class="s1">_psyc-347-prosocial-learning.csv&#39;</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">12</span><span class="p">)]</span>
+    
+    <span class="n">subject_data</span> <span class="o">=</span> <span class="p">{}</span>
+    <span class="k">for</span> <span class="n">index</span><span class="p">,</span> <span class="n">file</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">files</span><span class="p">):</span>
+        <span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">file</span><span class="p">,</span> <span class="n">index_col</span><span class="o">=</span><span class="s1">&#39;subject&#39;</span><span class="p">)</span>
+        <span class="n">subject_data</span><span class="p">[</span><span class="n">index</span><span class="p">]</span> <span class="o">=</span> <span class="n">df_filtered</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;outcomeDescr&#39;</span><span class="p">]</span> <span class="o">!=</span> <span class="s1">&#39;practice&#39;</span><span class="p">][[</span><span class="s1">&#39;block&#39;</span><span class="p">,</span>
+                                                                                  <span class="s1">&#39;trial_num&#39;</span><span class="p">,</span>
+                                                                                  <span class="s1">&#39;true_accuracy&#39;</span><span class="p">,</span>
+                                                                                  <span class="s1">&#39;outcome&#39;</span><span class="p">,</span>
+                                                                                  <span class="s1">&#39;outcomeDescr&#39;</span><span class="p">,</span>
+                                                                                  <span class="s1">&#39;cumulativePts_self&#39;</span><span class="p">,</span>
+                                                                                  <span class="s1">&#39;cumulativePts_social&#39;</span><span class="p">]]</span>
+        
+    <span class="k">return</span> <span class="n">subject_data</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># let&#39;s load in our data using the function above</span>
+<span class="c1"># feel free to adjust `how_many` (the default is all 11 subjects)</span>
+<span class="n">subject_data</span> <span class="o">=</span> <span class="n">load_subjects</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="data">
+<h2>Data<a class="headerlink" href="#data" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="conditions-blocks">
+<h3>4 conditions/blocks<a class="headerlink" href="#conditions-blocks" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>self, win</p></li>
+<li><p>self, avoid loss</p></li>
+<li><p>social, win</p></li>
+<li><p>social, avoid loss</p></li>
+</ul>
+</div>
+<div class="section" id="each-block-contains-24-trials">
+<h3>Each block contains 24 trials<a class="headerlink" href="#each-block-contains-24-trials" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>2 stimuli per trial (counterbalanced wrt side)</p></li>
+<li><p>outcomes associated with each stimulus is probabilistic (75%, 25%)</p></li>
+</ul>
+</div>
+<div class="section" id="data-output-key">
+<h3>Data output key<a class="headerlink" href="#data-output-key" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">condition</span></code>: (play for self); (play for next participant)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">goal</span></code>: (win) or (avoid loss)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">trial_num</span></code>: order in which trials are displayed within a block (0-23)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">true_accuracy</span></code>: 1 if selected stimulus with highest probability of winning or avoid losing</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">outcome</span></code>: outcome for trial (<code class="docutils literal notranslate"><span class="pre">+1</span></code>, <code class="docutils literal notranslate"><span class="pre">0</span></code>, <code class="docutils literal notranslate"><span class="pre">-1</span></code>); blank if missed</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">outcomeDescr</span></code>: text description of outcome (practice, social win, social avoid win, social loss, social avoidloss, self win, self avoid win, self loss, self avoidloss)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">cumulativePts_self</span></code>: running total of points for self</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">cumulativePts_social</span></code>: running total of points for social</p></li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># view data from first subject</span>
+<span class="n">display</span><span class="p">(</span><span class="n">subject_data</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>block</th>
+      <th>trial_num</th>
+      <th>true_accuracy</th>
+      <th>outcome</th>
+      <th>outcomeDescr</th>
+      <th>cumulativePts_self</th>
+      <th>cumulativePts_social</th>
+    </tr>
+    <tr>
+      <th>subject</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>1.0</th>
+      <td>social_win</td>
+      <td>0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>social avoid win</td>
+      <td>1000</td>
+      <td>1000</td>
+    </tr>
+    <tr>
+      <th>1.0</th>
+      <td>social_win</td>
+      <td>1</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>social win</td>
+      <td>1000</td>
+      <td>1100</td>
+    </tr>
+    <tr>
+      <th>1.0</th>
+      <td>social_win</td>
+      <td>2</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>social win</td>
+      <td>1000</td>
+      <td>1200</td>
+    </tr>
+    <tr>
+      <th>1.0</th>
+      <td>social_win</td>
+      <td>3</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>social win</td>
+      <td>1000</td>
+      <td>1300</td>
+    </tr>
+    <tr>
+      <th>1.0</th>
+      <td>social_win</td>
+      <td>4</td>
+      <td>1.0</td>
+      <td>0.0</td>
+      <td>social avoid win</td>
+      <td>1000</td>
+      <td>1300</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>1.0</th>
+      <td>self_avoidloss</td>
+      <td>19</td>
+      <td>1.0</td>
+      <td>0.0</td>
+      <td>self avoid loss</td>
+      <td>2100</td>
+      <td>1300</td>
+    </tr>
+    <tr>
+      <th>1.0</th>
+      <td>self_avoidloss</td>
+      <td>20</td>
+      <td>1.0</td>
+      <td>0.0</td>
+      <td>self avoid loss</td>
+      <td>2100</td>
+      <td>1300</td>
+    </tr>
+    <tr>
+      <th>1.0</th>
+      <td>self_avoidloss</td>
+      <td>21</td>
+      <td>1.0</td>
+      <td>0.0</td>
+      <td>self avoid loss</td>
+      <td>2100</td>
+      <td>1300</td>
+    </tr>
+    <tr>
+      <th>1.0</th>
+      <td>self_avoidloss</td>
+      <td>22</td>
+      <td>1.0</td>
+      <td>-1.0</td>
+      <td>self lose</td>
+      <td>2000</td>
+      <td>1300</td>
+    </tr>
+    <tr>
+      <th>1.0</th>
+      <td>self_avoidloss</td>
+      <td>23</td>
+      <td>0.0</td>
+      <td>-1.0</td>
+      <td>self lose</td>
+      <td>1900</td>
+      <td>1300</td>
+    </tr>
+  </tbody>
+</table>
+<p>96 rows × 7 columns</p>
+</div></div></div>
+</div>
+<hr width=50%><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">get_index_positions</span><span class="p">(</span><span class="n">list_of_elems</span><span class="p">,</span> <span class="n">element</span><span class="p">):</span>
+    <span class="sd">&#39;&#39;&#39; Returns the indexes of all occurrences of give element in</span>
+<span class="sd">    the list- listOfElements &#39;&#39;&#39;</span>
+    <span class="n">index_pos_list</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="n">index_pos</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="c1"># Search for item in list from indexPos to the end of list</span>
+            <span class="n">index_pos</span> <span class="o">=</span> <span class="n">list_of_elems</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="n">element</span><span class="p">,</span> <span class="n">index_pos</span><span class="p">)</span>
+            <span class="c1"># Add the index position in list</span>
+            <span class="n">index_pos_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">index_pos</span><span class="p">)</span>
+            <span class="n">index_pos</span> <span class="o">+=</span> <span class="mi">1</span>
+        <span class="k">except</span> <span class="ne">ValueError</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+            <span class="k">break</span>
+            
+    <span class="k">return</span> <span class="n">index_pos_list</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="define-models">
+<h2>Define models<a class="headerlink" href="#define-models" title="Permalink to this headline">¶</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">Simple_1a1t</span><span class="p">(</span><span class="n">params</span><span class="p">,</span> <span class="n">choices</span><span class="p">,</span> <span class="n">outcomes</span><span class="p">,</span> <span class="n">block</span><span class="p">,</span> <span class="n">plot</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
+    <span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">    Inputs:</span>
+<span class="sd">        - params: list of 2 guesses (float) for each parameter (alpha, theta)</span>
+<span class="sd">        - choices: list of 96 choices (int) on each trial (0, 1)</span>
+<span class="sd">        - outcomes: list of 96 outcomes (int) on each trial (-1, 0, 1)</span>
+<span class="sd">        - block: list of 96 conditions (string) on each trial (self_win, self_avoidloss, social_win, social_avoidloss)</span>
+<span class="sd">    Outputs:</span>
+<span class="sd">        - negLL: negative loglikelihood computed</span>
+<span class="sd">                 from the choice probabilities (float)</span>
+<span class="sd">    &#39;&#39;&#39;</span>
+    <span class="n">alpha</span><span class="p">,</span> <span class="n">theta</span> <span class="o">=</span> <span class="n">params</span> 
+    
+    <span class="k">if</span> <span class="n">np</span><span class="o">.</span><span class="n">isnan</span><span class="p">(</span><span class="n">alpha</span><span class="p">)</span> <span class="ow">or</span> <span class="n">np</span><span class="o">.</span><span class="n">isnan</span><span class="p">(</span><span class="n">theta</span><span class="p">):</span> <span class="c1"># check inputs</span>
+        <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">inf</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">blocks</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">block</span><span class="p">)</span>
+
+        <span class="c1"># extracts list of four strings corresponding to conditions</span>
+        <span class="n">unique_conditions</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">set</span><span class="p">(</span><span class="n">block</span><span class="p">))</span>
+
+        <span class="c1"># init choice probs</span>
+        <span class="n">choiceProb</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="nb">len</span><span class="p">(</span><span class="n">blocks</span><span class="p">)),</span> <span class="n">dtype</span> <span class="o">=</span> <span class="nb">float</span><span class="p">)</span> 
+        <span class="n">Q_out</span> <span class="o">=</span> <span class="p">{}</span>
+
+        <span class="n">count</span> <span class="o">=</span> <span class="mi">0</span>
+        <span class="k">for</span> <span class="n">condition</span> <span class="ow">in</span> <span class="n">unique_conditions</span><span class="p">:</span>
+
+            <span class="n">T_temp</span> <span class="o">=</span> <span class="n">blocks</span><span class="o">.</span><span class="n">count</span><span class="p">(</span><span class="n">condition</span><span class="p">)</span>    
+            <span class="n">Q</span> <span class="o">=</span> <span class="p">[</span><span class="mf">0.5</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">]</span> <span class="c1"># Q at trial 0</span>
+            <span class="n">Q_stored</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="mi">2</span><span class="p">,</span> <span class="n">T_temp</span><span class="p">),</span> <span class="n">dtype</span> <span class="o">=</span> <span class="nb">float</span><span class="p">)</span> 
+
+            <span class="n">cur_indices</span> <span class="o">=</span> <span class="n">get_index_positions</span><span class="p">(</span><span class="n">blocks</span><span class="p">,</span> <span class="n">condition</span><span class="p">)</span>
+            <span class="n">c</span><span class="p">,</span> <span class="n">r</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">choices</span><span class="p">)[</span><span class="n">cur_indices</span><span class="p">],</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">outcomes</span><span class="p">)[</span><span class="n">cur_indices</span><span class="p">]</span>
+
+            <span class="c1"># check if self vs social</span>
+            <span class="k">if</span> <span class="s1">&#39;self&#39;</span> <span class="ow">in</span> <span class="n">condition</span><span class="p">:</span>
+                <span class="c1"># check if win vs avoid loss</span>
+                <span class="k">if</span> <span class="s1">&#39;win&#39;</span> <span class="ow">in</span> <span class="n">condition</span><span class="p">:</span>
+                    <span class="n">r</span> <span class="o">=</span> <span class="n">r</span>
+                <span class="k">elif</span> <span class="s1">&#39;avoidloss&#39;</span> <span class="ow">in</span> <span class="n">condition</span><span class="p">:</span>
+                    <span class="n">r</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="n">x</span><span class="o">+</span><span class="mi">1</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">r</span><span class="p">])</span>                
+            <span class="k">elif</span> <span class="s1">&#39;social&#39;</span> <span class="ow">in</span> <span class="n">condition</span><span class="p">:</span>
+                <span class="c1"># check if win vs avoid loss</span>
+                <span class="k">if</span> <span class="s1">&#39;win&#39;</span> <span class="ow">in</span> <span class="n">condition</span><span class="p">:</span>
+                    <span class="n">r</span> <span class="o">=</span> <span class="n">r</span>
+                <span class="k">elif</span> <span class="s1">&#39;avoidloss&#39;</span> <span class="ow">in</span> <span class="n">condition</span><span class="p">:</span>
+                    <span class="n">r</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="n">x</span><span class="o">+</span><span class="mi">1</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">r</span><span class="p">])</span>
+            
+            <span class="c1"># loop through trials within condition</span>
+            <span class="k">for</span> <span class="n">t</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">T_temp</span><span class="p">):</span>       
+
+                <span class="k">if</span> <span class="n">np</span><span class="o">.</span><span class="n">isnan</span><span class="p">(</span><span class="n">c</span><span class="p">[</span><span class="n">t</span><span class="p">]):</span>
+                    <span class="c1">#don&#39;t update</span>
+                    <span class="n">choiceProb</span><span class="p">[</span><span class="n">count</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">nan</span>
+                    <span class="n">Q_stored</span><span class="p">[:,</span><span class="n">t</span><span class="p">]</span> <span class="o">=</span> <span class="n">Q</span>
+
+                <span class="k">else</span><span class="p">:</span>
+                    <span class="c1"># compute choice probabilities for k=2</span>
+                    <span class="c1"># use the softmax rule</span>
+                    <span class="n">ev</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="n">theta</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">Q</span><span class="p">))</span>
+                    <span class="n">sum_ev</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">ev</span><span class="p">)</span>
+                    <span class="n">p</span> <span class="o">=</span> <span class="n">ev</span> <span class="o">/</span> <span class="n">sum_ev</span>
+
+                    <span class="c1"># compute choice probability for actual choice</span>
+                    <span class="n">choiceProb</span><span class="p">[</span><span class="n">count</span><span class="p">]</span> <span class="o">=</span> <span class="n">p</span><span class="p">[</span><span class="nb">int</span><span class="p">(</span><span class="n">c</span><span class="p">[</span><span class="n">t</span><span class="p">])]</span>
+
+                    <span class="c1"># update values</span>
+                    <span class="n">delta</span> <span class="o">=</span> <span class="n">r</span><span class="p">[</span><span class="n">t</span><span class="p">]</span> <span class="o">-</span> <span class="n">Q</span><span class="p">[</span><span class="nb">int</span><span class="p">(</span><span class="n">c</span><span class="p">[</span><span class="n">t</span><span class="p">])]</span>
+                    <span class="n">Q</span><span class="p">[</span><span class="nb">int</span><span class="p">(</span><span class="n">c</span><span class="p">[</span><span class="n">t</span><span class="p">])]</span> <span class="o">=</span> <span class="n">Q</span><span class="p">[</span><span class="nb">int</span><span class="p">(</span><span class="n">c</span><span class="p">[</span><span class="n">t</span><span class="p">])]</span> <span class="o">+</span> <span class="n">alpha</span> <span class="o">*</span> <span class="n">delta</span>
+
+                    <span class="c1"># store Q_t+1</span>
+                    <span class="n">Q_stored</span><span class="p">[:,</span><span class="n">t</span><span class="p">]</span> <span class="o">=</span> <span class="n">Q</span>
+
+                <span class="n">count</span> <span class="o">+=</span> <span class="mi">1</span>
+
+            <span class="c1">#plt.plot(range(T_temp),Q_stored[0,:])</span>
+            <span class="c1">#plt.plot(range(T_temp),Q_stored[1,:])</span>
+            <span class="c1">#plt.show()</span>
+            <span class="n">Q_out</span><span class="p">[</span><span class="n">condition</span><span class="p">]</span> <span class="o">=</span> <span class="n">Q_stored</span>
+            
+        <span class="n">negLL</span> <span class="o">=</span> <span class="o">-</span><span class="n">np</span><span class="o">.</span><span class="n">nansum</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="n">choiceProb</span><span class="p">))</span>
+        
+        <span class="k">if</span> <span class="n">plot</span><span class="p">:</span> <span class="c1">#plot mean across 4 blocks</span>
+            <span class="n">Q0</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">stack</span><span class="p">((</span><span class="n">Q_out</span><span class="p">[</span><span class="s1">&#39;self_win&#39;</span><span class="p">][</span><span class="mi">0</span><span class="p">],</span> <span class="n">Q_out</span><span class="p">[</span><span class="s1">&#39;social_win&#39;</span><span class="p">][</span><span class="mi">0</span><span class="p">],</span> <span class="n">Q_out</span><span class="p">[</span><span class="s1">&#39;self_avoidloss&#39;</span><span class="p">][</span><span class="mi">0</span><span class="p">],</span> <span class="n">Q_out</span><span class="p">[</span><span class="s1">&#39;social_avoidloss&#39;</span><span class="p">][</span><span class="mi">0</span><span class="p">]),</span><span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">),</span><span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+            <span class="n">Q1</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">stack</span><span class="p">((</span><span class="n">Q_out</span><span class="p">[</span><span class="s1">&#39;self_win&#39;</span><span class="p">][</span><span class="mi">1</span><span class="p">],</span> <span class="n">Q_out</span><span class="p">[</span><span class="s1">&#39;social_win&#39;</span><span class="p">][</span><span class="mi">1</span><span class="p">],</span> <span class="n">Q_out</span><span class="p">[</span><span class="s1">&#39;self_avoidloss&#39;</span><span class="p">][</span><span class="mi">1</span><span class="p">],</span> <span class="n">Q_out</span><span class="p">[</span><span class="s1">&#39;social_avoidloss&#39;</span><span class="p">][</span><span class="mi">1</span><span class="p">]),</span><span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">),</span><span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+
+            <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="n">T_temp</span><span class="p">),</span><span class="n">Q0</span><span class="p">)</span>
+            <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="n">T_temp</span><span class="p">),</span><span class="n">Q1</span><span class="p">)</span>
+            <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Mean Q across conditions&#39;</span><span class="p">)</span>
+            <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;trial&#39;</span><span class="p">)</span>
+            <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Q&#39;</span><span class="p">)</span>
+            <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+        
+        <span class="k">return</span> <span class="n">negLL</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># example for testing function</span>
+<span class="n">behavior</span> <span class="o">=</span> <span class="n">subject_data</span><span class="p">[</span><span class="mi">9</span><span class="p">]</span>
+<span class="n">params</span> <span class="o">=</span> <span class="p">[</span><span class="o">.</span><span class="mi">12</span><span class="p">,</span><span class="mf">2.11</span><span class="p">]</span>
+<span class="n">choices</span><span class="p">,</span> <span class="n">outcomes</span><span class="p">,</span> <span class="n">block</span> <span class="o">=</span> <span class="n">behavior</span><span class="o">.</span><span class="n">true_accuracy</span><span class="p">,</span> <span class="n">behavior</span><span class="o">.</span><span class="n">outcome</span><span class="p">,</span> <span class="n">behavior</span><span class="o">.</span><span class="n">block</span>
+<span class="n">subj_negll</span> <span class="o">=</span> <span class="n">Simple_1a1t</span><span class="p">(</span><span class="n">params</span><span class="p">,</span> <span class="n">choices</span><span class="p">,</span> <span class="n">outcomes</span><span class="p">,</span> <span class="n">block</span><span class="p">,</span> <span class="n">plot</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/module-04-01_Prosocial-RL-Exercises_15_0.png" src="_images/module-04-01_Prosocial-RL-Exercises_15_0.png" />
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">fitModel0</span><span class="p">(</span><span class="n">model</span><span class="o">=</span><span class="n">Simple_1a1t</span><span class="p">):</span>
+    
+    <span class="c1">#initialize dataframe to store results</span>
+    <span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">index</span><span class="o">=</span><span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">12</span><span class="p">),</span> <span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;alpha&#39;</span><span class="p">,</span><span class="s1">&#39;theta&#39;</span><span class="p">])</span>
+
+    <span class="c1"># initialize list of algorithms </span>
+    <span class="c1"># (use one during class, but try a few others on your own)</span>
+    <span class="n">algorithms</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;L-BFGS-B&#39;</span><span class="p">]</span> <span class="c1">#[&#39;Powell&#39;,&#39;TNC&#39;,&#39;SLSQP&#39;,&#39;trust-constr&#39;]</span>
+
+    <span class="c1"># loop through subjects</span>
+    <span class="k">for</span> <span class="n">index</span><span class="p">,</span> <span class="n">behavior</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">subject_data</span><span class="o">.</span><span class="n">values</span><span class="p">()):</span>
+        <span class="n">c</span><span class="p">,</span> <span class="n">o</span><span class="p">,</span> <span class="n">block</span> <span class="o">=</span> <span class="n">behavior</span><span class="o">.</span><span class="n">true_accuracy</span><span class="p">,</span> <span class="n">behavior</span><span class="o">.</span><span class="n">outcome</span><span class="p">,</span> <span class="n">behavior</span><span class="o">.</span><span class="n">block</span>
+        <span class="n">bounds</span> <span class="o">=</span> <span class="p">((</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">),(</span><span class="mi">0</span><span class="p">,</span><span class="mi">10</span><span class="p">))</span>
+
+        <span class="c1"># gradient descent to minimize neg LL</span>
+        <span class="n">res_nll</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">inf</span> <span class="c1"># set initial neg LL to be inf</span>
+
+        <span class="c1"># guess several different starting points for alpha</span>
+        <span class="k">for</span> <span class="n">alpha_guess</span> <span class="ow">in</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">12</span><span class="p">):</span>
+            <span class="k">for</span> <span class="n">theta_guess</span> <span class="ow">in</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">10</span><span class="p">,</span><span class="mi">12</span><span class="p">):</span>
+
+                <span class="c1"># guesses for alpha, theta will change on each loop</span>
+                <span class="n">init_guess</span> <span class="o">=</span> <span class="p">(</span><span class="n">alpha_guess</span><span class="p">,</span> <span class="n">theta_guess</span><span class="p">)</span>
+
+                <span class="k">for</span> <span class="n">algorithm</span> <span class="ow">in</span> <span class="n">algorithms</span><span class="p">:</span>
+
+                    <span class="c1"># minimize neg LL</span>
+                    <span class="n">result</span> <span class="o">=</span> <span class="n">minimize</span><span class="p">(</span><span class="n">model</span><span class="p">,</span>
+                                      <span class="n">init_guess</span><span class="p">,</span>
+                                      <span class="p">(</span><span class="n">c</span><span class="p">,</span> <span class="n">o</span><span class="p">,</span> <span class="n">block</span><span class="p">),</span>
+                                      <span class="n">bounds</span><span class="o">=</span><span class="n">bounds</span><span class="p">,</span>
+                                      <span class="n">method</span><span class="o">=</span><span class="n">algorithm</span><span class="p">)</span>
+
+                    <span class="c1"># if current negLL is smaller than the last negLL,</span>
+                    <span class="c1"># then store current data</span>
+                    <span class="k">if</span> <span class="n">result</span><span class="o">.</span><span class="n">fun</span> <span class="o">&lt;</span> <span class="n">res_nll</span> <span class="ow">and</span> <span class="n">result</span><span class="o">.</span><span class="n">success</span><span class="p">:</span>
+                        <span class="n">res_nll</span> <span class="o">=</span> <span class="n">result</span><span class="o">.</span><span class="n">fun</span>
+                        <span class="n">param_fits</span> <span class="o">=</span> <span class="n">result</span><span class="o">.</span><span class="n">x</span>
+
+        <span class="c1"># also, compute BIC</span>
+        <span class="n">BIC</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">init_guess</span><span class="p">)</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">c</span><span class="p">))</span> <span class="o">+</span> <span class="mi">2</span><span class="o">*</span><span class="n">res_nll</span>
+
+        <span class="c1">#store in dataframe</span>
+        <span class="n">df</span><span class="o">.</span><span class="n">at</span><span class="p">[</span><span class="n">index</span><span class="p">,</span> <span class="s1">&#39;alpha&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">param_fits</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+        <span class="n">df</span><span class="o">.</span><span class="n">at</span><span class="p">[</span><span class="n">index</span><span class="p">,</span> <span class="s1">&#39;theta&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">param_fits</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+
+        <span class="c1"># print/plot Q values for subject   </span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">fr</span><span class="s1">&#39;subject </span><span class="si">{</span><span class="n">index</span><span class="o">+</span><span class="mi">1</span><span class="si">:</span><span class="s1">02</span><span class="si">}</span><span class="s1">: alpha=</span><span class="si">{</span><span class="n">param_fits</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="si">:</span><span class="s1">.2f</span><span class="si">}</span><span class="s1">, theta=</span><span class="si">{</span><span class="n">param_fits</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="si">:</span><span class="s1">.2f</span><span class="si">}</span><span class="s1">; negLL=</span><span class="si">{</span><span class="n">res_nll</span><span class="si">:</span><span class="s1">.2f</span><span class="si">}</span><span class="s1">; BIC=</span><span class="si">{</span><span class="n">BIC</span><span class="si">:</span><span class="s1">.2f</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+        <span class="n">nll</span> <span class="o">=</span> <span class="n">Simple_1a1t</span><span class="p">(</span><span class="n">param_fits</span><span class="p">,</span> <span class="n">c</span><span class="p">,</span> <span class="n">o</span><span class="p">,</span> <span class="n">block</span><span class="p">,</span> <span class="n">plot</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+    
+    <span class="k">return</span> <span class="n">df</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df0a</span> <span class="o">=</span> <span class="n">fitModel0</span><span class="p">(</span><span class="n">model</span><span class="o">=</span><span class="n">Simple_1a1t</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>subject 01: alpha=0.91, theta=3.13; negLL=41.24; BIC=91.60
+</pre></div>
+</div>
+<img alt="_images/module-04-01_Prosocial-RL-Exercises_17_1.png" src="_images/module-04-01_Prosocial-RL-Exercises_17_1.png" />
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>subject 02: alpha=0.04, theta=10.00; negLL=51.70; BIC=112.52
+</pre></div>
+</div>
+<img alt="_images/module-04-01_Prosocial-RL-Exercises_17_3.png" src="_images/module-04-01_Prosocial-RL-Exercises_17_3.png" />
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">KeyboardInterrupt</span><span class="g g-Whitespace">                         </span>Traceback (most recent call last)
+<span class="o">&lt;</span><span class="n">ipython</span><span class="o">-</span><span class="nb">input</span><span class="o">-</span><span class="mi">10</span><span class="o">-</span><span class="n">c836036ac352</span><span class="o">&gt;</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="ne">----&gt; </span><span class="mi">1</span> <span class="n">df0a</span> <span class="o">=</span> <span class="n">fitModel0</span><span class="p">(</span><span class="n">model</span><span class="o">=</span><span class="n">Simple_1a1t</span><span class="p">)</span>
+
+<span class="nn">&lt;ipython-input-9-ec2db33ac908&gt;</span> in <span class="ni">fitModel0</span><span class="nt">(model)</span>
+<span class="g g-Whitespace">     </span><span class="mi">30</span>                                       <span class="p">(</span><span class="n">c</span><span class="p">,</span> <span class="n">o</span><span class="p">,</span> <span class="n">block</span><span class="p">),</span>
+<span class="g g-Whitespace">     </span><span class="mi">31</span>                                       <span class="n">bounds</span><span class="o">=</span><span class="n">bounds</span><span class="p">,</span>
+<span class="ne">---&gt; </span><span class="mi">32</span>                                       <span class="n">method</span><span class="o">=</span><span class="n">algorithm</span><span class="p">)</span>
+<span class="g g-Whitespace">     </span><span class="mi">33</span> 
+<span class="g g-Whitespace">     </span><span class="mi">34</span>                     <span class="c1"># if current negLL is smaller than the last negLL,</span>
+
+<span class="nn">/usr/share/miniconda3/envs/gu-psyc-347-jb/lib/python3.7/site-packages/scipy/optimize/_minimize.py</span> in <span class="ni">minimize</span><span class="nt">(fun, x0, args, method, jac, hess, hessp, bounds, constraints, tol, callback, options)</span>
+<span class="g g-Whitespace">    </span><span class="mi">618</span>     <span class="k">elif</span> <span class="n">meth</span> <span class="o">==</span> <span class="s1">&#39;l-bfgs-b&#39;</span><span class="p">:</span>
+<span class="g g-Whitespace">    </span><span class="mi">619</span>         <span class="k">return</span> <span class="n">_minimize_lbfgsb</span><span class="p">(</span><span class="n">fun</span><span class="p">,</span> <span class="n">x0</span><span class="p">,</span> <span class="n">args</span><span class="p">,</span> <span class="n">jac</span><span class="p">,</span> <span class="n">bounds</span><span class="p">,</span>
+<span class="ne">--&gt; </span><span class="mi">620</span>                                 <span class="n">callback</span><span class="o">=</span><span class="n">callback</span><span class="p">,</span> <span class="o">**</span><span class="n">options</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">621</span>     <span class="k">elif</span> <span class="n">meth</span> <span class="o">==</span> <span class="s1">&#39;tnc&#39;</span><span class="p">:</span>
+<span class="g g-Whitespace">    </span><span class="mi">622</span>         <span class="k">return</span> <span class="n">_minimize_tnc</span><span class="p">(</span><span class="n">fun</span><span class="p">,</span> <span class="n">x0</span><span class="p">,</span> <span class="n">args</span><span class="p">,</span> <span class="n">jac</span><span class="p">,</span> <span class="n">bounds</span><span class="p">,</span> <span class="n">callback</span><span class="o">=</span><span class="n">callback</span><span class="p">,</span>
+
+<span class="nn">/usr/share/miniconda3/envs/gu-psyc-347-jb/lib/python3.7/site-packages/scipy/optimize/lbfgsb.py</span> in <span class="ni">_minimize_lbfgsb</span><span class="nt">(fun, x0, args, jac, bounds, disp, maxcor, ftol, gtol, eps, maxfun, maxiter, iprint, callback, maxls, finite_diff_rel_step, **unknown_options)</span>
+<span class="g g-Whitespace">    </span><span class="mi">358</span>             <span class="c1"># until the completion of the current minimization iteration.</span>
+<span class="g g-Whitespace">    </span><span class="mi">359</span>             <span class="c1"># Overwrite f and g:</span>
+<span class="ne">--&gt; </span><span class="mi">360</span>             <span class="n">f</span><span class="p">,</span> <span class="n">g</span> <span class="o">=</span> <span class="n">func_and_grad</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">361</span>         <span class="k">elif</span> <span class="n">task_str</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="sa">b</span><span class="s1">&#39;NEW_X&#39;</span><span class="p">):</span>
+<span class="g g-Whitespace">    </span><span class="mi">362</span>             <span class="c1"># new iteration</span>
+
+<span class="nn">/usr/share/miniconda3/envs/gu-psyc-347-jb/lib/python3.7/site-packages/scipy/optimize/_differentiable_functions.py</span> in <span class="ni">fun_and_grad</span><span class="nt">(self, x)</span>
+<span class="g g-Whitespace">    </span><span class="mi">258</span>         <span class="k">if</span> <span class="ow">not</span> <span class="n">np</span><span class="o">.</span><span class="n">array_equal</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">x</span><span class="p">):</span>
+<span class="g g-Whitespace">    </span><span class="mi">259</span>             <span class="bp">self</span><span class="o">.</span><span class="n">_update_x_impl</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+<span class="ne">--&gt; </span><span class="mi">260</span>         <span class="bp">self</span><span class="o">.</span><span class="n">_update_fun</span><span class="p">()</span>
+<span class="g g-Whitespace">    </span><span class="mi">261</span>         <span class="bp">self</span><span class="o">.</span><span class="n">_update_grad</span><span class="p">()</span>
+<span class="g g-Whitespace">    </span><span class="mi">262</span>         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">f</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">g</span>
+
+<span class="nn">/usr/share/miniconda3/envs/gu-psyc-347-jb/lib/python3.7/site-packages/scipy/optimize/_differentiable_functions.py</span> in <span class="ni">_update_fun</span><span class="nt">(self)</span>
+<span class="g g-Whitespace">    </span><span class="mi">224</span>     <span class="k">def</span> <span class="nf">_update_fun</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="g g-Whitespace">    </span><span class="mi">225</span>         <span class="k">if</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">f_updated</span><span class="p">:</span>
+<span class="ne">--&gt; </span><span class="mi">226</span>             <span class="bp">self</span><span class="o">.</span><span class="n">_update_fun_impl</span><span class="p">()</span>
+<span class="g g-Whitespace">    </span><span class="mi">227</span>             <span class="bp">self</span><span class="o">.</span><span class="n">f_updated</span> <span class="o">=</span> <span class="kc">True</span>
+<span class="g g-Whitespace">    </span><span class="mi">228</span> 
+
+<span class="nn">/usr/share/miniconda3/envs/gu-psyc-347-jb/lib/python3.7/site-packages/scipy/optimize/_differentiable_functions.py</span> in <span class="ni">update_fun</span><span class="nt">()</span>
+<span class="g g-Whitespace">    </span><span class="mi">131</span> 
+<span class="g g-Whitespace">    </span><span class="mi">132</span>         <span class="k">def</span> <span class="nf">update_fun</span><span class="p">():</span>
+<span class="ne">--&gt; </span><span class="mi">133</span>             <span class="bp">self</span><span class="o">.</span><span class="n">f</span> <span class="o">=</span> <span class="n">fun_wrapped</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">x</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">134</span> 
+<span class="g g-Whitespace">    </span><span class="mi">135</span>         <span class="bp">self</span><span class="o">.</span><span class="n">_update_fun_impl</span> <span class="o">=</span> <span class="n">update_fun</span>
+
+<span class="nn">/usr/share/miniconda3/envs/gu-psyc-347-jb/lib/python3.7/site-packages/scipy/optimize/_differentiable_functions.py</span> in <span class="ni">fun_wrapped</span><span class="nt">(x)</span>
+<span class="g g-Whitespace">    </span><span class="mi">128</span>         <span class="k">def</span> <span class="nf">fun_wrapped</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+<span class="g g-Whitespace">    </span><span class="mi">129</span>             <span class="bp">self</span><span class="o">.</span><span class="n">nfev</span> <span class="o">+=</span> <span class="mi">1</span>
+<span class="ne">--&gt; </span><span class="mi">130</span>             <span class="k">return</span> <span class="n">fun</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">131</span> 
+<span class="g g-Whitespace">    </span><span class="mi">132</span>         <span class="k">def</span> <span class="nf">update_fun</span><span class="p">():</span>
+
+<span class="nn">&lt;ipython-input-7-8cc4f067346b&gt;</span> in <span class="ni">Simple_1a1t</span><span class="nt">(params, choices, outcomes, block, plot)</span>
+<span class="g g-Whitespace">     </span><span class="mi">60</span>                     <span class="c1"># use the softmax rule</span>
+<span class="g g-Whitespace">     </span><span class="mi">61</span>                     <span class="n">ev</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="n">theta</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">Q</span><span class="p">))</span>
+<span class="ne">---&gt; </span><span class="mi">62</span>                     <span class="n">sum_ev</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">ev</span><span class="p">)</span>
+<span class="g g-Whitespace">     </span><span class="mi">63</span>                     <span class="n">p</span> <span class="o">=</span> <span class="n">ev</span> <span class="o">/</span> <span class="n">sum_ev</span>
+<span class="g g-Whitespace">     </span><span class="mi">64</span> 
+
+<span class="nn">&lt;__array_function__ internals&gt;</span> in <span class="ni">sum</span><span class="nt">(*args, **kwargs)</span>
+
+<span class="nn">/usr/share/miniconda3/envs/gu-psyc-347-jb/lib/python3.7/site-packages/numpy/core/fromnumeric.py</span> in <span class="ni">sum</span><span class="nt">(a, axis, dtype, out, keepdims, initial, where)</span>
+<span class="g g-Whitespace">   </span><span class="mi">2246</span> 
+<span class="g g-Whitespace">   </span><span class="mi">2247</span>     <span class="k">return</span> <span class="n">_wrapreduction</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">add</span><span class="p">,</span> <span class="s1">&#39;sum&#39;</span><span class="p">,</span> <span class="n">axis</span><span class="p">,</span> <span class="n">dtype</span><span class="p">,</span> <span class="n">out</span><span class="p">,</span> <span class="n">keepdims</span><span class="o">=</span><span class="n">keepdims</span><span class="p">,</span>
+<span class="ne">-&gt; </span><span class="mi">2248</span>                           <span class="n">initial</span><span class="o">=</span><span class="n">initial</span><span class="p">,</span> <span class="n">where</span><span class="o">=</span><span class="n">where</span><span class="p">)</span>
+<span class="g g-Whitespace">   </span><span class="mi">2249</span> 
+<span class="g g-Whitespace">   </span><span class="mi">2250</span> 
+
+<span class="nn">/usr/share/miniconda3/envs/gu-psyc-347-jb/lib/python3.7/site-packages/numpy/core/fromnumeric.py</span> in <span class="ni">_wrapreduction</span><span class="nt">(obj, ufunc, method, axis, dtype, out, **kwargs)</span>
+<span class="g g-Whitespace">     </span><span class="mi">85</span>                 <span class="k">return</span> <span class="n">reduction</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="n">axis</span><span class="p">,</span> <span class="n">out</span><span class="o">=</span><span class="n">out</span><span class="p">,</span> <span class="o">**</span><span class="n">passkwargs</span><span class="p">)</span>
+<span class="g g-Whitespace">     </span><span class="mi">86</span> 
+<span class="ne">---&gt; </span><span class="mi">87</span>     <span class="k">return</span> <span class="n">ufunc</span><span class="o">.</span><span class="n">reduce</span><span class="p">(</span><span class="n">obj</span><span class="p">,</span> <span class="n">axis</span><span class="p">,</span> <span class="n">dtype</span><span class="p">,</span> <span class="n">out</span><span class="p">,</span> <span class="o">**</span><span class="n">passkwargs</span><span class="p">)</span>
+<span class="g g-Whitespace">     </span><span class="mi">88</span> 
+<span class="g g-Whitespace">     </span><span class="mi">89</span> 
+
+<span class="ne">KeyboardInterrupt</span>: 
+</pre></div>
+</div>
+</div>
+</div>
+<hr width="50%"><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Exercise 3 (2 out of 30 points)</span>
+<span class="k">def</span> <span class="nf">Social_1a1t</span><span class="p">(</span><span class="n">params</span><span class="p">,</span> <span class="n">choices</span><span class="p">,</span> <span class="n">outcomes</span><span class="p">,</span> <span class="n">block</span><span class="p">,</span> <span class="n">plot</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
+    <span class="c1"># 1 alpha_self (where alpha_other = 1 - alpha_self) + 1 theta</span>
+    <span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">    Inputs:</span>
+<span class="sd">        - params: list of 2 guesses (float) for each parameter (alpha, theta)</span>
+<span class="sd">        - choices: list of 96 choices (int) on each trial (0, 1)</span>
+<span class="sd">        - outcomes: list of 96 outcomes (int) on each trial (-1, 0, 1)</span>
+<span class="sd">        - block: list of 96 conditions (string) on each trial (self_win, self_avoidloss, social_win, social_avoidloss)</span>
+<span class="sd">    Outputs:</span>
+<span class="sd">        - negLL: negative loglikelihood computed</span>
+<span class="sd">                 from the choice probabilities (float)</span>
+<span class="sd">    &#39;&#39;&#39;</span>
+    <span class="n">alpha_self</span><span class="p">,</span> <span class="n">theta</span> <span class="o">=</span> <span class="n">params</span> 
+    <span class="n">alpha_other</span> <span class="o">=</span> <span class="mi">1</span> <span class="o">-</span> <span class="n">alpha_self</span>
+    
+    <span class="k">if</span> <span class="n">np</span><span class="o">.</span><span class="n">isnan</span><span class="p">(</span><span class="n">alpha_self</span><span class="p">)</span> <span class="ow">or</span> <span class="n">np</span><span class="o">.</span><span class="n">isnan</span><span class="p">(</span><span class="n">theta</span><span class="p">):</span> <span class="c1"># check inputs</span>
+        <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">inf</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">blocks</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">block</span><span class="p">)</span>
+
+        <span class="c1"># extracts list of four strings corresponding to conditions</span>
+        <span class="n">unique_conditions</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">set</span><span class="p">(</span><span class="n">block</span><span class="p">))</span>
+
+        <span class="c1"># init choice probs</span>
+        <span class="n">choiceProb</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="nb">len</span><span class="p">(</span><span class="n">blocks</span><span class="p">)),</span> <span class="n">dtype</span> <span class="o">=</span> <span class="nb">float</span><span class="p">)</span> 
+        <span class="n">Q_out</span> <span class="o">=</span> <span class="p">{}</span>
+
+        <span class="n">count</span> <span class="o">=</span> <span class="mi">0</span>
+        <span class="k">for</span> <span class="n">condition</span> <span class="ow">in</span> <span class="n">unique_conditions</span><span class="p">:</span>
+
+            <span class="n">T_temp</span> <span class="o">=</span> <span class="n">blocks</span><span class="o">.</span><span class="n">count</span><span class="p">(</span><span class="n">condition</span><span class="p">)</span>    
+            <span class="n">Q</span> <span class="o">=</span> <span class="p">[</span><span class="mf">0.5</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">]</span> <span class="c1"># Q at trial 0</span>
+            <span class="n">Q_stored</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="mi">2</span><span class="p">,</span> <span class="n">T_temp</span><span class="p">),</span> <span class="n">dtype</span> <span class="o">=</span> <span class="nb">float</span><span class="p">)</span> 
+
+            <span class="n">cur_indices</span> <span class="o">=</span> <span class="n">get_index_positions</span><span class="p">(</span><span class="n">blocks</span><span class="p">,</span> <span class="n">condition</span><span class="p">)</span>
+            <span class="n">c</span><span class="p">,</span> <span class="n">r</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">choices</span><span class="p">)[</span><span class="n">cur_indices</span><span class="p">],</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">outcomes</span><span class="p">)[</span><span class="n">cur_indices</span><span class="p">]</span>
+
+            <span class="c1"># check if self vs social</span>
+            <span class="k">if</span> <span class="s1">&#39;self&#39;</span> <span class="ow">in</span> <span class="n">condition</span><span class="p">:</span>
+                <span class="c1"># check if win vs avoid loss</span>
+                <span class="k">if</span> <span class="s1">&#39;win&#39;</span> <span class="ow">in</span> <span class="n">condition</span><span class="p">:</span>
+                    <span class="n">r</span> <span class="o">=</span> <span class="n">r</span>
+                <span class="k">elif</span> <span class="s1">&#39;avoidloss&#39;</span> <span class="ow">in</span> <span class="n">condition</span><span class="p">:</span>
+                    <span class="n">r</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="n">x</span><span class="o">+</span><span class="mi">1</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">r</span><span class="p">])</span> 
+                
+                
+            <span class="k">elif</span> <span class="s1">&#39;social&#39;</span> <span class="ow">in</span> <span class="n">condition</span><span class="p">:</span>
+                <span class="c1"># check if win vs avoid loss</span>
+                <span class="k">if</span> <span class="s1">&#39;win&#39;</span> <span class="ow">in</span> <span class="n">condition</span><span class="p">:</span>
+                    <span class="n">r</span> <span class="o">=</span> <span class="n">r</span>
+                <span class="k">elif</span> <span class="s1">&#39;avoidloss&#39;</span> <span class="ow">in</span> <span class="n">condition</span><span class="p">:</span>
+                    <span class="n">r</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="n">x</span><span class="o">+</span><span class="mi">1</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">r</span><span class="p">])</span>
+            
+            <span class="c1"># loop through trials within condition</span>
+            <span class="k">for</span> <span class="n">t</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">T_temp</span><span class="p">):</span>       
+
+                <span class="k">if</span> <span class="n">np</span><span class="o">.</span><span class="n">isnan</span><span class="p">(</span><span class="n">c</span><span class="p">[</span><span class="n">t</span><span class="p">]):</span>
+                    <span class="c1">#don&#39;t update</span>
+                    <span class="n">choiceProb</span><span class="p">[</span><span class="n">count</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">nan</span>
+                    <span class="n">Q_stored</span><span class="p">[:,</span><span class="n">t</span><span class="p">]</span> <span class="o">=</span> <span class="n">Q</span>
+
+                <span class="k">else</span><span class="p">:</span>
+                    <span class="c1"># compute choice probabilities for k=2</span>
+                    <span class="c1"># use the softmax rule</span>
+                    <span class="n">ev</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="n">theta</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">Q</span><span class="p">))</span>
+                    <span class="n">sum_ev</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">ev</span><span class="p">)</span>
+                    <span class="n">p</span> <span class="o">=</span> <span class="n">ev</span> <span class="o">/</span> <span class="n">sum_ev</span>
+
+                    <span class="c1"># compute choice probability for actual choice</span>
+                    <span class="n">choiceProb</span><span class="p">[</span><span class="n">count</span><span class="p">]</span> <span class="o">=</span> <span class="n">p</span><span class="p">[</span><span class="nb">int</span><span class="p">(</span><span class="n">c</span><span class="p">[</span><span class="n">t</span><span class="p">])]</span>
+
+                    <span class="c1"># update values</span>
+                    <span class="n">delta</span> <span class="o">=</span> <span class="n">r</span><span class="p">[</span><span class="n">t</span><span class="p">]</span> <span class="o">-</span> <span class="n">Q</span><span class="p">[</span><span class="nb">int</span><span class="p">(</span><span class="n">c</span><span class="p">[</span><span class="n">t</span><span class="p">])]</span>
+                    
+                    <span class="k">if</span> <span class="s1">&#39;self&#39;</span> <span class="ow">in</span> <span class="n">condition</span><span class="p">:</span>
+                        <span class="n">Q</span><span class="p">[</span><span class="nb">int</span><span class="p">(</span><span class="n">c</span><span class="p">[</span><span class="n">t</span><span class="p">])]</span> <span class="o">=</span> <span class="n">Q</span><span class="p">[</span><span class="nb">int</span><span class="p">(</span><span class="n">c</span><span class="p">[</span><span class="n">t</span><span class="p">])]</span> <span class="o">+</span> <span class="n">alpha_self</span> <span class="o">*</span> <span class="n">delta</span>
+                    <span class="k">elif</span> <span class="s1">&#39;other&#39;</span> <span class="ow">in</span> <span class="n">condition</span><span class="p">:</span>
+                        <span class="n">Q</span><span class="p">[</span><span class="nb">int</span><span class="p">(</span><span class="n">c</span><span class="p">[</span><span class="n">t</span><span class="p">])]</span> <span class="o">=</span> <span class="n">Q</span><span class="p">[</span><span class="nb">int</span><span class="p">(</span><span class="n">c</span><span class="p">[</span><span class="n">t</span><span class="p">])]</span> <span class="o">+</span> <span class="n">alpha_other</span> <span class="o">*</span> <span class="n">delta</span>
+
+                    <span class="c1"># store Q_t+1</span>
+                    <span class="n">Q_stored</span><span class="p">[:,</span><span class="n">t</span><span class="p">]</span> <span class="o">=</span> <span class="n">Q</span>
+
+                <span class="n">count</span> <span class="o">+=</span> <span class="mi">1</span>
+
+            <span class="c1">#plt.plot(range(T_temp),Q_stored[0,:])</span>
+            <span class="c1">#plt.plot(range(T_temp),Q_stored[1,:])</span>
+            <span class="c1">#plt.show()</span>
+            <span class="n">Q_out</span><span class="p">[</span><span class="n">condition</span><span class="p">]</span> <span class="o">=</span> <span class="n">Q_stored</span>
+            
+        <span class="n">negLL</span> <span class="o">=</span> <span class="o">-</span><span class="n">np</span><span class="o">.</span><span class="n">nansum</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="n">choiceProb</span><span class="p">))</span>
+        
+        <span class="k">if</span> <span class="n">plot</span><span class="p">:</span> <span class="c1">#plot mean across 4 blocks</span>
+            <span class="n">Q0</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">stack</span><span class="p">((</span><span class="n">Q_out</span><span class="p">[</span><span class="s1">&#39;self_win&#39;</span><span class="p">][</span><span class="mi">0</span><span class="p">],</span> <span class="n">Q_out</span><span class="p">[</span><span class="s1">&#39;social_win&#39;</span><span class="p">][</span><span class="mi">0</span><span class="p">],</span> <span class="n">Q_out</span><span class="p">[</span><span class="s1">&#39;self_avoidloss&#39;</span><span class="p">][</span><span class="mi">0</span><span class="p">],</span> <span class="n">Q_out</span><span class="p">[</span><span class="s1">&#39;social_avoidloss&#39;</span><span class="p">][</span><span class="mi">0</span><span class="p">]),</span><span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">),</span><span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+            <span class="n">Q1</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">stack</span><span class="p">((</span><span class="n">Q_out</span><span class="p">[</span><span class="s1">&#39;self_win&#39;</span><span class="p">][</span><span class="mi">1</span><span class="p">],</span> <span class="n">Q_out</span><span class="p">[</span><span class="s1">&#39;social_win&#39;</span><span class="p">][</span><span class="mi">1</span><span class="p">],</span> <span class="n">Q_out</span><span class="p">[</span><span class="s1">&#39;self_avoidloss&#39;</span><span class="p">][</span><span class="mi">1</span><span class="p">],</span> <span class="n">Q_out</span><span class="p">[</span><span class="s1">&#39;social_avoidloss&#39;</span><span class="p">][</span><span class="mi">1</span><span class="p">]),</span><span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">),</span><span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+
+            <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="n">T_temp</span><span class="p">),</span><span class="n">Q0</span><span class="p">)</span>
+            <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="n">T_temp</span><span class="p">),</span><span class="n">Q1</span><span class="p">)</span>
+            <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Mean Q across conditions&#39;</span><span class="p">)</span>
+            <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;trial&#39;</span><span class="p">)</span>
+            <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Q&#39;</span><span class="p">)</span>
+            <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+        
+        <span class="k">return</span> <span class="n">negLL</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df0b</span> <span class="o">=</span> <span class="n">fitModel0</span><span class="p">(</span><span class="n">model</span><span class="o">=</span><span class="n">Social_1a1t</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<hr></div>
+<div class="section" id="fitting-your-own-models">
+<h2>Fitting your own models!<a class="headerlink" href="#fitting-your-own-models" title="Permalink to this headline">¶</a></h2>
+<p>Each group will write code for custom models!</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#Group 1 (6 out of 30 points)</span>
+<span class="k">def</span> <span class="nf">Social_2a1b1t</span><span class="p">(</span><span class="n">params</span><span class="p">,</span> <span class="n">choices</span><span class="p">,</span> <span class="n">outcomes</span><span class="p">,</span> <span class="n">block</span><span class="p">,</span> <span class="n">plot</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
+    <span class="c1"># 1 alpha_self + 1 alpha_other + 1 beta + 1 theta</span>
+    
+    <span class="k">return</span> <span class="n">negLL</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">fitModel1</span><span class="p">(</span><span class="n">model</span><span class="o">=</span><span class="n">Social_2a1b1t</span><span class="p">):</span>
+    
+    <span class="c1">#initialize dataframe to store results</span>
+    <span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">index</span><span class="o">=</span><span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">12</span><span class="p">),</span> <span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;alpha_self&#39;</span><span class="p">,</span><span class="s1">&#39;alpha_other&#39;</span><span class="p">,</span><span class="s1">&#39;theta&#39;</span><span class="p">])</span>
+
+    <span class="c1"># initialize list of algorithms </span>
+    <span class="c1"># (use one during class, but try a few others on your own)</span>
+    <span class="n">algorithms</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;L-BFGS-B&#39;</span><span class="p">]</span> <span class="c1">#[&#39;Powell&#39;,&#39;TNC&#39;,&#39;SLSQP&#39;,&#39;trust-constr&#39;]</span>
+
+    <span class="c1"># loop through subjects</span>
+    <span class="k">for</span> <span class="n">index</span><span class="p">,</span> <span class="n">behavior</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">subject_data</span><span class="o">.</span><span class="n">values</span><span class="p">()):</span>
+        <span class="n">c</span><span class="p">,</span> <span class="n">o</span><span class="p">,</span> <span class="n">block</span> <span class="o">=</span> <span class="n">behavior</span><span class="o">.</span><span class="n">true_accuracy</span><span class="p">,</span> <span class="n">behavior</span><span class="o">.</span><span class="n">outcome</span><span class="p">,</span> <span class="n">behavior</span><span class="o">.</span><span class="n">block</span>
+        <span class="n">bounds</span> <span class="o">=</span> <span class="p">((</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">),(</span><span class="mi">0</span><span class="p">,</span><span class="mi">10</span><span class="p">))</span>
+
+        <span class="c1"># gradient descent to minimize neg LL</span>
+        <span class="n">res_nll</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">inf</span> <span class="c1"># set initial neg LL to be inf</span>
+
+        <span class="c1"># guess several different starting points for alpha</span>
+        <span class="k">for</span> <span class="n">alpha_self_guess</span> <span class="ow">in</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">12</span><span class="p">):</span>
+            <span class="k">for</span> <span class="n">alpha_other_guess</span> <span class="ow">in</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">12</span><span class="p">):</span>
+                <span class="k">for</span> <span class="n">theta_guess</span> <span class="ow">in</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">10</span><span class="p">,</span><span class="mi">12</span><span class="p">):</span>
+
+                    <span class="c1"># guesses for alpha, theta will change on each loop</span>
+                    <span class="n">init_guess</span> <span class="o">=</span> <span class="p">(</span><span class="n">alpha_self_guess</span><span class="p">,</span> <span class="n">alpha_other_guess</span><span class="p">,</span> <span class="n">theta_guess</span><span class="p">)</span>
+
+                    <span class="k">for</span> <span class="n">algorithm</span> <span class="ow">in</span> <span class="n">algorithms</span><span class="p">:</span>
+
+                        <span class="c1"># minimize neg LL</span>
+                        <span class="n">result</span> <span class="o">=</span> <span class="n">minimize</span><span class="p">(</span><span class="n">model</span><span class="p">,</span>
+                                          <span class="n">init_guess</span><span class="p">,</span>
+                                          <span class="p">(</span><span class="n">c</span><span class="p">,</span> <span class="n">o</span><span class="p">,</span> <span class="n">block</span><span class="p">),</span>
+                                          <span class="n">bounds</span><span class="o">=</span><span class="n">bounds</span><span class="p">,</span>
+                                          <span class="n">method</span><span class="o">=</span><span class="n">algorithm</span><span class="p">)</span>
+
+                        <span class="c1"># if current negLL is smaller than the last negLL,</span>
+                        <span class="c1"># then store current data</span>
+                        <span class="k">if</span> <span class="n">result</span><span class="o">.</span><span class="n">fun</span> <span class="o">&lt;</span> <span class="n">res_nll</span> <span class="ow">and</span> <span class="n">result</span><span class="o">.</span><span class="n">success</span><span class="p">:</span>
+                            <span class="n">res_nll</span> <span class="o">=</span> <span class="n">result</span><span class="o">.</span><span class="n">fun</span>
+                            <span class="n">param_fits</span> <span class="o">=</span> <span class="n">result</span><span class="o">.</span><span class="n">x</span>
+
+        <span class="c1"># also, compute BIC</span>
+        <span class="n">BIC</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">init_guess</span><span class="p">)</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">c</span><span class="p">))</span> <span class="o">+</span> <span class="mi">2</span><span class="o">*</span><span class="n">res_nll</span>
+
+        <span class="c1">#store in dataframe</span>
+        <span class="n">df</span><span class="o">.</span><span class="n">at</span><span class="p">[</span><span class="n">index</span><span class="p">,</span> <span class="s1">&#39;alpha_self&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">param_fits</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+        <span class="n">df</span><span class="o">.</span><span class="n">at</span><span class="p">[</span><span class="n">index</span><span class="p">,</span> <span class="s1">&#39;alpha_other&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">param_fits</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+        <span class="n">df</span><span class="o">.</span><span class="n">at</span><span class="p">[</span><span class="n">index</span><span class="p">,</span> <span class="s1">&#39;theta&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">param_fits</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span>
+
+        <span class="c1"># print/plot Q values for subject   </span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">fr</span><span class="s1">&#39;subject </span><span class="si">{</span><span class="n">index</span><span class="o">+</span><span class="mi">1</span><span class="si">:</span><span class="s1">02</span><span class="si">}</span><span class="s1">: alpha=</span><span class="si">{</span><span class="n">param_fits</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="si">:</span><span class="s1">.2f</span><span class="si">}</span><span class="s1">, theta=</span><span class="si">{</span><span class="n">param_fits</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="si">:</span><span class="s1">.2f</span><span class="si">}</span><span class="s1">; negLL=</span><span class="si">{</span><span class="n">res_nll</span><span class="si">:</span><span class="s1">.2f</span><span class="si">}</span><span class="s1">; BIC=</span><span class="si">{</span><span class="n">BIC</span><span class="si">:</span><span class="s1">.2f</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+        <span class="n">nll</span> <span class="o">=</span> <span class="n">Simple_1a1t</span><span class="p">(</span><span class="n">param_fits</span><span class="p">,</span> <span class="n">c</span><span class="p">,</span> <span class="n">o</span><span class="p">,</span> <span class="n">block</span><span class="p">,</span> <span class="n">plot</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+    
+    <span class="k">return</span> <span class="n">df</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df1</span> <span class="o">=</span> <span class="n">fitModel1</span><span class="p">(</span><span class="n">model</span><span class="o">=</span><span class="n">Simple_1a1t</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<hr width="50%"><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#Group 2 (6 out of 30 points)</span>
+<span class="k">def</span> <span class="nf">Valence_2a1t</span><span class="p">(</span><span class="n">params</span><span class="p">,</span> <span class="n">choices</span><span class="p">,</span> <span class="n">outcomes</span><span class="p">,</span> <span class="n">block</span><span class="p">):</span>
+    <span class="c1"># 1 alpha_positive + 1 alpha_negative + 1 theta</span>
+    
+    <span class="k">return</span> <span class="n">negLL</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">fitModel2</span><span class="p">(</span><span class="n">model</span><span class="o">=</span><span class="n">Valence_2a1t</span><span class="p">):</span>
+    
+    <span class="c1">#initialize dataframe to store results</span>
+    <span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">index</span><span class="o">=</span><span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">12</span><span class="p">),</span> <span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;alpha_pos&#39;</span><span class="p">,</span><span class="s1">&#39;alpha_neg&#39;</span><span class="p">,</span><span class="s1">&#39;theta&#39;</span><span class="p">])</span>
+
+    <span class="c1"># initialize list of algorithms </span>
+    <span class="c1"># (use one during class, but try a few others on your own)</span>
+    <span class="n">algorithms</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;L-BFGS-B&#39;</span><span class="p">]</span> <span class="c1">#[&#39;Powell&#39;,&#39;TNC&#39;,&#39;SLSQP&#39;,&#39;trust-constr&#39;]</span>
+
+    <span class="c1"># loop through subjects</span>
+    <span class="k">for</span> <span class="n">index</span><span class="p">,</span> <span class="n">behavior</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">subject_data</span><span class="o">.</span><span class="n">values</span><span class="p">()):</span>
+        <span class="n">c</span><span class="p">,</span> <span class="n">o</span><span class="p">,</span> <span class="n">block</span> <span class="o">=</span> <span class="n">behavior</span><span class="o">.</span><span class="n">true_accuracy</span><span class="p">,</span> <span class="n">behavior</span><span class="o">.</span><span class="n">outcome</span><span class="p">,</span> <span class="n">behavior</span><span class="o">.</span><span class="n">block</span>
+        <span class="n">bounds</span> <span class="o">=</span> <span class="p">((</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">),(</span><span class="mi">0</span><span class="p">,</span><span class="mi">10</span><span class="p">))</span>
+
+        <span class="c1"># gradient descent to minimize neg LL</span>
+        <span class="n">res_nll</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">inf</span> <span class="c1"># set initial neg LL to be inf</span>
+
+        <span class="c1"># guess several different starting points for alpha</span>
+        <span class="k">for</span> <span class="n">alpha_pos_guess</span> <span class="ow">in</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">12</span><span class="p">):</span>
+            <span class="k">for</span> <span class="n">alpha_neg_guess</span> <span class="ow">in</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">12</span><span class="p">):</span>
+                <span class="k">for</span> <span class="n">theta_guess</span> <span class="ow">in</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">10</span><span class="p">,</span><span class="mi">12</span><span class="p">):</span>
+
+                    <span class="c1"># guesses for alpha, theta will change on each loop</span>
+                    <span class="n">init_guess</span> <span class="o">=</span> <span class="p">(</span><span class="n">alpha_pos_guess</span><span class="p">,</span> <span class="n">alpha_neg_guess</span><span class="p">,</span> <span class="n">theta_guess</span><span class="p">)</span>
+
+                    <span class="k">for</span> <span class="n">algorithm</span> <span class="ow">in</span> <span class="n">algorithms</span><span class="p">:</span>
+
+                        <span class="c1"># minimize neg LL</span>
+                        <span class="n">result</span> <span class="o">=</span> <span class="n">minimize</span><span class="p">(</span><span class="n">model</span><span class="p">,</span>
+                                          <span class="n">init_guess</span><span class="p">,</span>
+                                          <span class="p">(</span><span class="n">c</span><span class="p">,</span> <span class="n">o</span><span class="p">,</span> <span class="n">block</span><span class="p">),</span>
+                                          <span class="n">bounds</span><span class="o">=</span><span class="n">bounds</span><span class="p">,</span>
+                                          <span class="n">method</span><span class="o">=</span><span class="n">algorithm</span><span class="p">)</span>
+
+                        <span class="c1"># if current negLL is smaller than the last negLL,</span>
+                        <span class="c1"># then store current data</span>
+                        <span class="k">if</span> <span class="n">result</span><span class="o">.</span><span class="n">fun</span> <span class="o">&lt;</span> <span class="n">res_nll</span> <span class="ow">and</span> <span class="n">result</span><span class="o">.</span><span class="n">success</span><span class="p">:</span>
+                            <span class="n">res_nll</span> <span class="o">=</span> <span class="n">result</span><span class="o">.</span><span class="n">fun</span>
+                            <span class="n">param_fits</span> <span class="o">=</span> <span class="n">result</span><span class="o">.</span><span class="n">x</span>
+
+        <span class="c1"># also, compute BIC</span>
+        <span class="n">BIC</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">init_guess</span><span class="p">)</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">c</span><span class="p">))</span> <span class="o">+</span> <span class="mi">2</span><span class="o">*</span><span class="n">res_nll</span>
+
+        <span class="c1">#store in dataframe</span>
+        <span class="n">df</span><span class="o">.</span><span class="n">at</span><span class="p">[</span><span class="n">index</span><span class="p">,</span> <span class="s1">&#39;alpha_pos&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">param_fits</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+        <span class="n">df</span><span class="o">.</span><span class="n">at</span><span class="p">[</span><span class="n">index</span><span class="p">,</span> <span class="s1">&#39;alpha_neg&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">param_fits</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+        <span class="n">df</span><span class="o">.</span><span class="n">at</span><span class="p">[</span><span class="n">index</span><span class="p">,</span> <span class="s1">&#39;theta&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">param_fits</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span>
+
+        <span class="c1"># print/plot Q values for subject   </span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">fr</span><span class="s1">&#39;subject </span><span class="si">{</span><span class="n">index</span><span class="o">+</span><span class="mi">1</span><span class="si">:</span><span class="s1">02</span><span class="si">}</span><span class="s1">: alpha=</span><span class="si">{</span><span class="n">param_fits</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="si">:</span><span class="s1">.2f</span><span class="si">}</span><span class="s1">, theta=</span><span class="si">{</span><span class="n">param_fits</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="si">:</span><span class="s1">.2f</span><span class="si">}</span><span class="s1">; negLL=</span><span class="si">{</span><span class="n">res_nll</span><span class="si">:</span><span class="s1">.2f</span><span class="si">}</span><span class="s1">; BIC=</span><span class="si">{</span><span class="n">BIC</span><span class="si">:</span><span class="s1">.2f</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+        <span class="n">nll</span> <span class="o">=</span> <span class="n">Simple_1a1t</span><span class="p">(</span><span class="n">param_fits</span><span class="p">,</span> <span class="n">c</span><span class="p">,</span> <span class="n">o</span><span class="p">,</span> <span class="n">block</span><span class="p">,</span> <span class="n">plot</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+    
+    <span class="k">return</span> <span class="n">df</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df2</span> <span class="o">=</span> <span class="n">fitModel2</span><span class="p">(</span><span class="n">model</span><span class="o">=</span><span class="n">Valence_2a1t</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<hr width="50%"><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#Group 3 (6 out of 30 points)</span>
+<span class="k">def</span> <span class="nf">Social_1a2b1t</span><span class="p">(</span><span class="n">params</span><span class="p">,</span> <span class="n">choices</span><span class="p">,</span> <span class="n">outcomes</span><span class="p">,</span> <span class="n">block</span><span class="p">,</span> <span class="n">plot</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
+    <span class="c1"># 1 alpha + 1 beta_self + 1 beta_other + 1 theta</span>
+    
+    <span class="k">return</span> <span class="n">negLL</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">fitModel3</span><span class="p">(</span><span class="n">model</span><span class="o">=</span><span class="n">Social_1a2b1t</span><span class="p">):</span>
+    
+    <span class="c1">#initialize dataframe to store results</span>
+    <span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">index</span><span class="o">=</span><span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">12</span><span class="p">),</span> <span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;alpha&#39;</span><span class="p">,</span><span class="s1">&#39;beta_self&#39;</span><span class="p">,</span><span class="s1">&#39;beta_other&#39;</span><span class="p">,</span><span class="s1">&#39;theta&#39;</span><span class="p">])</span>
+
+    <span class="c1"># initialize list of algorithms </span>
+    <span class="c1"># (use one during class, but try a few others on your own)</span>
+    <span class="n">algorithms</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;L-BFGS-B&#39;</span><span class="p">]</span> <span class="c1">#[&#39;Powell&#39;,&#39;TNC&#39;,&#39;SLSQP&#39;,&#39;trust-constr&#39;]</span>
+
+    <span class="c1"># loop through subjects</span>
+    <span class="k">for</span> <span class="n">index</span><span class="p">,</span> <span class="n">behavior</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">subject_data</span><span class="o">.</span><span class="n">values</span><span class="p">()):</span>
+        <span class="n">c</span><span class="p">,</span> <span class="n">o</span><span class="p">,</span> <span class="n">block</span> <span class="o">=</span> <span class="n">behavior</span><span class="o">.</span><span class="n">true_accuracy</span><span class="p">,</span> <span class="n">behavior</span><span class="o">.</span><span class="n">outcome</span><span class="p">,</span> <span class="n">behavior</span><span class="o">.</span><span class="n">block</span>
+        <span class="n">bounds</span> <span class="o">=</span> <span class="p">((</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">),(</span><span class="mi">0</span><span class="p">,</span><span class="mi">10</span><span class="p">))</span>
+
+        <span class="c1"># gradient descent to minimize neg LL</span>
+        <span class="n">res_nll</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">inf</span> <span class="c1"># set initial neg LL to be inf</span>
+
+        <span class="c1"># guess several different starting points for alpha</span>
+        <span class="k">for</span> <span class="n">alpha_guess</span> <span class="ow">in</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">12</span><span class="p">):</span>
+            <span class="k">for</span> <span class="n">beta_self_guess</span> <span class="ow">in</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">12</span><span class="p">):</span>
+                <span class="k">for</span> <span class="n">beta_other_guess</span> <span class="ow">in</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">12</span><span class="p">):</span>
+                    <span class="k">for</span> <span class="n">theta_guess</span> <span class="ow">in</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">10</span><span class="p">,</span><span class="mi">12</span><span class="p">):</span>
+
+                        <span class="c1"># guesses for alpha, theta will change on each loop</span>
+                        <span class="n">init_guess</span> <span class="o">=</span> <span class="p">(</span><span class="n">alpha_guess</span><span class="p">,</span> <span class="n">beta_self_guess</span><span class="p">,</span> <span class="n">beta_other_guess</span><span class="p">,</span> <span class="n">theta_guess</span><span class="p">)</span>
+
+                        <span class="k">for</span> <span class="n">algorithm</span> <span class="ow">in</span> <span class="n">algorithms</span><span class="p">:</span>
+
+                            <span class="c1"># minimize neg LL</span>
+                            <span class="n">result</span> <span class="o">=</span> <span class="n">minimize</span><span class="p">(</span><span class="n">model</span><span class="p">,</span>
+                                              <span class="n">init_guess</span><span class="p">,</span>
+                                              <span class="p">(</span><span class="n">c</span><span class="p">,</span> <span class="n">o</span><span class="p">,</span> <span class="n">block</span><span class="p">),</span>
+                                              <span class="n">bounds</span><span class="o">=</span><span class="n">bounds</span><span class="p">,</span>
+                                              <span class="n">method</span><span class="o">=</span><span class="n">algorithm</span><span class="p">)</span>
+
+                            <span class="c1"># if current negLL is smaller than the last negLL,</span>
+                            <span class="c1"># then store current data</span>
+                            <span class="k">if</span> <span class="n">result</span><span class="o">.</span><span class="n">fun</span> <span class="o">&lt;</span> <span class="n">res_nll</span> <span class="ow">and</span> <span class="n">result</span><span class="o">.</span><span class="n">success</span><span class="p">:</span>
+                                <span class="n">res_nll</span> <span class="o">=</span> <span class="n">result</span><span class="o">.</span><span class="n">fun</span>
+                                <span class="n">param_fits</span> <span class="o">=</span> <span class="n">result</span><span class="o">.</span><span class="n">x</span>
+
+        <span class="c1"># also, compute BIC</span>
+        <span class="n">BIC</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">init_guess</span><span class="p">)</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">c</span><span class="p">))</span> <span class="o">+</span> <span class="mi">2</span><span class="o">*</span><span class="n">res_nll</span>
+
+        <span class="c1">#store in dataframe</span>
+        <span class="n">df</span><span class="o">.</span><span class="n">at</span><span class="p">[</span><span class="n">index</span><span class="p">,</span> <span class="s1">&#39;alpha&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">param_fits</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+        <span class="n">df</span><span class="o">.</span><span class="n">at</span><span class="p">[</span><span class="n">index</span><span class="p">,</span> <span class="s1">&#39;beta_self&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">param_fits</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+        <span class="n">df</span><span class="o">.</span><span class="n">at</span><span class="p">[</span><span class="n">index</span><span class="p">,</span> <span class="s1">&#39;beta_other&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">param_fits</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span>
+        <span class="n">df</span><span class="o">.</span><span class="n">at</span><span class="p">[</span><span class="n">index</span><span class="p">,</span> <span class="s1">&#39;theta&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">param_fits</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span>
+
+        <span class="c1"># print/plot Q values for subject   </span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">fr</span><span class="s1">&#39;subject </span><span class="si">{</span><span class="n">index</span><span class="o">+</span><span class="mi">1</span><span class="si">:</span><span class="s1">02</span><span class="si">}</span><span class="s1">: alpha=</span><span class="si">{</span><span class="n">param_fits</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="si">:</span><span class="s1">.2f</span><span class="si">}</span><span class="s1">, theta=</span><span class="si">{</span><span class="n">param_fits</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="si">:</span><span class="s1">.2f</span><span class="si">}</span><span class="s1">; negLL=</span><span class="si">{</span><span class="n">res_nll</span><span class="si">:</span><span class="s1">.2f</span><span class="si">}</span><span class="s1">; BIC=</span><span class="si">{</span><span class="n">BIC</span><span class="si">:</span><span class="s1">.2f</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+        <span class="n">nll</span> <span class="o">=</span> <span class="n">Simple_1a1t</span><span class="p">(</span><span class="n">param_fits</span><span class="p">,</span> <span class="n">c</span><span class="p">,</span> <span class="n">o</span><span class="p">,</span> <span class="n">block</span><span class="p">,</span> <span class="n">plot</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+    
+    <span class="k">return</span> <span class="n">df</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df3</span> <span class="o">=</span> <span class="n">fitModel3</span><span class="p">(</span><span class="n">model</span><span class="o">=</span><span class="n">Social_1a2b1t</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<hr width="50%"><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Exercise 3 (6 out of 30 points)</span>
+<span class="k">def</span> <span class="nf">SocialValence_4a1t</span><span class="p">(</span><span class="n">params</span><span class="p">,</span> <span class="n">choices</span><span class="p">,</span> <span class="n">outcomes</span><span class="p">,</span> <span class="n">block</span><span class="p">,</span> <span class="n">plot</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
+    <span class="c1"># 1 alpha_self_pos + 1 alpha_self_neg +</span>
+    <span class="c1"># 1 alpha_other_pos + 1 alpha_other_neg + 1 theta</span>
+    
+    <span class="k">return</span> <span class="n">negLL</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Exercise 3 (4 out of 30 points)</span>
+<span class="k">def</span> <span class="nf">fitModel4</span><span class="p">(</span><span class="n">model</span><span class="o">=</span><span class="n">SocialValence_4a1t</span><span class="p">):</span>
+    
+    <span class="k">return</span> <span class="n">df</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df4</span> <span class="o">=</span> <span class="n">fitModel4</span><span class="p">(</span><span class="n">model</span><span class="o">=</span><span class="n">Social_1a2b1t</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<hr width="50%"><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Exercise 3 (2 out of 30 points)</span>
+<span class="c1"># plot model fits (mean BIC for each model)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<hr width="50%"><div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Finally, please convert this cell to a Markdown cell.</span>
+
+<span class="c1"># Create a Heading named &quot;Notebook Feedback,&quot; then delete this text </span>
+<span class="c1"># and provide 1-2 sentences about your experience with this </span>
+<span class="c1"># Jupyter Notebook (e.g., Did you enjoy the exercises? Were </span>
+<span class="c1"># they too easy/difficult? Would you have like to see </span>
+<span class="c1"># anything different? Were you able to apply some skills we learned during</span>
+<span class="c1"># class? Anything still confusing?). Finally, please rate your experience</span>
+<span class="c1"># from (0) &quot;did not enjoy at all&quot; to (10) &quot;enjoyed a great deal.&quot; Only your</span>
+<span class="c1"># instructor will see these responses. </span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>Please save this file as an .html file by clicking on <strong>‘File &gt; Download As &gt; HTML (.html)’</strong></p>
+<p>Then, save the file as <strong>“Lastname_Exercise04.html”</strong> and submit on Canvas.</p>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        
+        <div class='prev-next-bottom'>
+            
+
+        </div>
+        
+        </div>
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By Shawn A. Rhoads<br/>
+        
+            &copy; Copyright 2021.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+
+    
+  <script src="_static/js/index.d3f166471bb80abb5163.js"></script>
+
+
+    
+    <!-- Google Analytics -->
+    <script>
+      window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+      ga('create', 'G-KG3N20S55G', 'auto');
+      ga('set', 'anonymizeIp', true);
+      ga('send', 'pageview');
+    </script>
+    <script async src='https://www.google-analytics.com/analytics.js'></script>
+    <!-- End Google Analytics -->
+    
+  </body>
+</html>
