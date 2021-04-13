@@ -223,7 +223,7 @@
         </tr>
         <tr>
             <td>-</td>
-            <td>TBD</td>
+            <td>5/12</td>
             <td>Final</td>
             <td><b>Submit Final Presentations</b> and <b>Project Proposal (Round 2)</b> by end of day</td>
             <td>-</td>
