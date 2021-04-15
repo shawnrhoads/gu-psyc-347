@@ -7,6 +7,7 @@
     - file: module-00-03_Reading-List
     - file: module-00-04_Getting-Started
     - file: module-00-05_Final-Projects
+    - file: module-00-06_Contributing
 - part: Module 01
   chapters:
     - file: module-01-00_Jupyter-Notebooks
@@ -26,15 +27,3 @@
 - part: Module 04
   chapters:
     - file: module-04-00_Social-Learning
-- file: contributing
-#     - file: module-04-01_Threat-Learning
-#     - file: module-04-02_Prosocial-Learning
-# - part: Module 05
-#   chapters:
-#     - file: module-05-00_Social-Inference
-#     - file: module-05-01_ToM
-#     - file: module-05-02_Trust
-#     - file: module-05-03_Morality
-# - part: Module 06
-#   chapters:
-#     - file: module-06-00_Current-Future-Directions
