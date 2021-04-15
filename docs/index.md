@@ -1,5 +1,5 @@
 # Course Homepage
-Last updated: January 2021</br>
+Last updated: April 2021</br>
 The content in this Jupyter Book is subject to change.
 
 ## Course information
@@ -20,6 +20,9 @@ The content in this Jupyter Book is subject to change.
 
 ## Acknowledgments
 I am grateful to [Dr. Deborah Sterns](https://deborahstearns.blogspot.com/), [Joscelin Rocha-Hidalgo](https://www.joscelinrocha.com/), and the [Georgetown Center for New Designs in Learning & Scholarship (CNDLS)](https://cndls.georgetown.edu/) for allowing me to use their teaching resources throughout the development of this syllabus. The format of this course was largely inspired by the [MIND Computational Summer School](https://mindsummerschool.org/), [Neuromatch Academy](https://neuromatch.io/academy/), Dr. Maximilian Risenhuber's Computational Neuroscience course, Dr. Robert C. Wilson's [Modeling the Mind course](http://u.arizona.edu/~bob/web_NSCS344/), Dr. Luke J. Chang's [DartBrains Jupyter Book](https://dartbrains.org/content/intro.html), the research conducted in the [Laboratory on Social and Affective Neuroscience](https://abigailmarsh.com/lab), and the countless conversations with my colleagues about the selected topics.
+
+## Contributing
+Please visit [this page](ttps://shawnrhoads.github.io/gu-psyc-347/contributing.html) if you would like to help me improve and/or expand the content in this Jupyter Book!
 
 ## License for this book
 <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />
