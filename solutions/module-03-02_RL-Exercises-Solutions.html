@@ -221,6 +221,11 @@
    Social Learning
   </a>
  </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../module-04-01_Prosocial-RL-Exercises.html">
+   Prosocial RL Exercises
+  </a>
+ </li>
 </ul>
 
 </nav> <!-- To handle the deprecated key -->
@@ -1143,7 +1148,9 @@ negative \log \mathcal{L} = -\sum_{t=1}^T \log p(c_t)
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>subject 02: alpha=0.31, theta=1.55; negLL=32.05; BIC=71.92
-subject 03: alpha=0.16, theta=5.41; negLL=16.37; BIC=40.57
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>subject 03: alpha=0.16, theta=5.41; negLL=16.37; BIC=40.57
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>subject 04: alpha=0.79, theta=0.64; negLL=33.92; BIC=75.67
@@ -1156,10 +1163,9 @@ subject 03: alpha=0.16, theta=5.41; negLL=16.37; BIC=40.57
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>subject 07: alpha=0.18, theta=6.61; negLL=14.13; BIC=36.08
-subject 08: alpha=0.44, theta=3.33; negLL=16.04; BIC=39.90
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>subject 09: alpha=0.76, theta=4.02; negLL=12.24; BIC=32.29
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>subject 08: alpha=0.44, theta=3.33; negLL=16.04; BIC=39.90
 </pre></div>
 </div>
 <div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
@@ -1235,18 +1241,27 @@ subject 08: alpha=0.44, theta=3.33; negLL=16.04; BIC=39.90
 <span class="g g-Whitespace">    </span><span class="mi">132</span>         <span class="k">def</span> <span class="nf">update_fun</span><span class="p">():</span>
 
 <span class="nn">&lt;ipython-input-12-954b57ff3c86&gt;</span> in <span class="ni">negll_RescorlaWagner</span><span class="nt">(params, choices, outcomes)</span>
-<span class="g g-Whitespace">     </span><span class="mi">28</span> 
-<span class="g g-Whitespace">     </span><span class="mi">29</span>             <span class="c1"># update values</span>
-<span class="ne">---&gt; </span><span class="mi">30</span>             <span class="n">delta</span> <span class="o">=</span> <span class="n">r</span><span class="p">[</span><span class="n">t</span><span class="p">]</span> <span class="o">-</span> <span class="n">Q</span><span class="p">[</span><span class="n">c</span><span class="p">[</span><span class="n">t</span><span class="p">]]</span>
-<span class="g g-Whitespace">     </span><span class="mi">31</span>             <span class="n">Q</span><span class="p">[</span><span class="n">c</span><span class="p">[</span><span class="n">t</span><span class="p">]]</span> <span class="o">=</span> <span class="n">Q</span><span class="p">[</span><span class="n">c</span><span class="p">[</span><span class="n">t</span><span class="p">]]</span> <span class="o">+</span> <span class="n">alpha</span> <span class="o">*</span> <span class="n">delta</span>
-<span class="g g-Whitespace">     </span><span class="mi">32</span> 
+<span class="g g-Whitespace">     </span><span class="mi">21</span>             <span class="c1"># use the softmax rule</span>
+<span class="g g-Whitespace">     </span><span class="mi">22</span>             <span class="n">ev</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="n">theta</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">Q</span><span class="p">))</span>
+<span class="ne">---&gt; </span><span class="mi">23</span>             <span class="n">sum_ev</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">ev</span><span class="p">)</span>
+<span class="g g-Whitespace">     </span><span class="mi">24</span>             <span class="n">p</span> <span class="o">=</span> <span class="n">ev</span> <span class="o">/</span> <span class="n">sum_ev</span>
+<span class="g g-Whitespace">     </span><span class="mi">25</span> 
 
-<span class="nn">/usr/share/miniconda3/envs/gu-psyc-347-jb/lib/python3.7/site-packages/pandas/core/series.py</span> in <span class="ni">__getitem__</span><span class="nt">(self, key)</span>
-<span class="g g-Whitespace">    </span><span class="mi">847</span>             <span class="n">key</span> <span class="o">=</span> <span class="n">unpack_1tuple</span><span class="p">(</span><span class="n">key</span><span class="p">)</span>
-<span class="g g-Whitespace">    </span><span class="mi">848</span> 
-<span class="ne">--&gt; </span><span class="mi">849</span>         <span class="k">if</span> <span class="n">is_integer</span><span class="p">(</span><span class="n">key</span><span class="p">)</span> <span class="ow">and</span> <span class="bp">self</span><span class="o">.</span><span class="n">index</span><span class="o">.</span><span class="n">_should_fallback_to_positional</span><span class="p">():</span>
-<span class="g g-Whitespace">    </span><span class="mi">850</span>             <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_values</span><span class="p">[</span><span class="n">key</span><span class="p">]</span>
-<span class="g g-Whitespace">    </span><span class="mi">851</span> 
+<span class="nn">&lt;__array_function__ internals&gt;</span> in <span class="ni">sum</span><span class="nt">(*args, **kwargs)</span>
+
+<span class="nn">/usr/share/miniconda3/envs/gu-psyc-347-jb/lib/python3.7/site-packages/numpy/core/fromnumeric.py</span> in <span class="ni">sum</span><span class="nt">(a, axis, dtype, out, keepdims, initial, where)</span>
+<span class="g g-Whitespace">   </span><span class="mi">2246</span> 
+<span class="g g-Whitespace">   </span><span class="mi">2247</span>     <span class="k">return</span> <span class="n">_wrapreduction</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">add</span><span class="p">,</span> <span class="s1">&#39;sum&#39;</span><span class="p">,</span> <span class="n">axis</span><span class="p">,</span> <span class="n">dtype</span><span class="p">,</span> <span class="n">out</span><span class="p">,</span> <span class="n">keepdims</span><span class="o">=</span><span class="n">keepdims</span><span class="p">,</span>
+<span class="ne">-&gt; </span><span class="mi">2248</span>                           <span class="n">initial</span><span class="o">=</span><span class="n">initial</span><span class="p">,</span> <span class="n">where</span><span class="o">=</span><span class="n">where</span><span class="p">)</span>
+<span class="g g-Whitespace">   </span><span class="mi">2249</span> 
+<span class="g g-Whitespace">   </span><span class="mi">2250</span> 
+
+<span class="nn">/usr/share/miniconda3/envs/gu-psyc-347-jb/lib/python3.7/site-packages/numpy/core/fromnumeric.py</span> in <span class="ni">_wrapreduction</span><span class="nt">(obj, ufunc, method, axis, dtype, out, **kwargs)</span>
+<span class="g g-Whitespace">     </span><span class="mi">85</span>                 <span class="k">return</span> <span class="n">reduction</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="n">axis</span><span class="p">,</span> <span class="n">out</span><span class="o">=</span><span class="n">out</span><span class="p">,</span> <span class="o">**</span><span class="n">passkwargs</span><span class="p">)</span>
+<span class="g g-Whitespace">     </span><span class="mi">86</span> 
+<span class="ne">---&gt; </span><span class="mi">87</span>     <span class="k">return</span> <span class="n">ufunc</span><span class="o">.</span><span class="n">reduce</span><span class="p">(</span><span class="n">obj</span><span class="p">,</span> <span class="n">axis</span><span class="p">,</span> <span class="n">dtype</span><span class="p">,</span> <span class="n">out</span><span class="p">,</span> <span class="o">**</span><span class="n">passkwargs</span><span class="p">)</span>
+<span class="g g-Whitespace">     </span><span class="mi">88</span> 
+<span class="g g-Whitespace">     </span><span class="mi">89</span> 
 
 <span class="ne">KeyboardInterrupt</span>: 
 </pre></div>
