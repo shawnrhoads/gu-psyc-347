@@ -45,10 +45,12 @@ Cushman, F., & Gershman, S. (2019). Editors’ Introduction: Computational Appro
 
 #### Bonus
 - Aquino, T. G., Minxha, J., Dunne, S., Ross, I. B., Mamelak, A. N., Rutishauser, U., & Doherty, J. P. O. (2020). Value-related neuronal responses in the human amygdala during observational learning. The Journal of Neuroscience, 40(24), 4761–4772.
+- Burke, C. J., Tobler, P. N., Baddeley, M., & Schultz, W. (2010). Neural mechanisms of observational learning. Proceedings of the National Academy of Sciences.
 - Crockett, M. J., Kurth-Nelson, Z., Siegel, J. Z., Dayan, P., & Dolan, R. J. (2014). Harm to others outweighs harm to self in moral decision making. Proceedings of the National Academy of Sciences, 111(48), 17320–17325. 
 - Hill, M. R., Boorman, E. D., & Fried, I. (2016). Observational learning computations in neurons of the human anterior cingulate cortex. Nature Communications, 7.
 - Lockwood, P. L., Hamonet, M., Zhang, S. H., Ratnavel, A., Salmony, F. U., Husain, M., & Apps, M. A. J. (2017). Prosocial apathy for helping others when effort is required. Nature Human Behaviour, 1(7), 1–10.
 - Lockwood, P., Klein-Flügge, M., Abdurahman, A., & Crockett, M. (2020). Neural signatures of model-free learning when avoiding harm to self and other. Proceedings of the National Academy of Sciences.
+- Olsson, A., McMahon, K., Papenberg, G., Zaki, J., Bolger, N., & Ochsner, K. N. (2016). Vicarious Fear Learning Depends on Empathic Appraisals and Trait Empathy. Psychological Science, 27(1), 25–33.
 
 ### Learning and updating beliefs about others
 

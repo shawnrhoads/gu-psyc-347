@@ -15,6 +15,7 @@ The content in this Jupyter Book is subject to change.
 **Instructor**: Shawn A Rhoads<br>
 **Pronouns**: he/him/his<br>
 **Email**: sr1209(at)georgetown(dot)edu<br>
+**Twitter**: <a href="https://twitter.com/ShawnRhoads56" target="_blank">@ShawnRhoads56</a><br>
 **Website**: [shawnrhoads.github.io](https://shawnrhoads.github.io)</br>
 **Office hours**: Mondays from 2:30-4pm
 
