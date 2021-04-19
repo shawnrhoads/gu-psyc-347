@@ -1,5 +1,5 @@
 # Syllabus
-Last updated: January 2021</br>
+Last updated: April 2021</br>
 The content in this Jupyter Book is subject to change.
 
 ## PSYC 347: Computational Models of Human Social Behavior (and Neuroscience)
