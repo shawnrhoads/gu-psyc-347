@@ -46,9 +46,9 @@ Examples of unacceptable behaviour include:
 
 - Offensive comments related to gender, gender identity and expression, sexual orientation, disability, mental illness, neuro(a)typicality, physical appearance, pregnancy status, veteran status, political affiliation, marital status, body size, age, race, national origin, ethnic origin, nationality, immigration status, language, religion or lack thereof, or other identity marker. This includes anti-Indigenous/Nativeness and anti-Blackness.
 - Unwelcome comments regarding a person's lifestyle choices and practices, including those related to food, health, parenting, relationships, drugs, and employment.
-- Deliberate misgendering, using inappropriate pronouns, or use of "dead" or rejected names.
-- Gratuitous or off-topic sexual images or behaviour in spaces where they're not appropriate.
-- Physical contact and simulated physical contact (eg, textual descriptions like "hug" or "backrub") without consent or after a request to stop.
+- Deliberate misgendering, using inappropriate pronouns, or use of rejected names.
+- Gratuitous or off-topic sexual images or behavior in spaces where they're not appropriate.
+- Physical contact and simulated physical contact without consent or after a request to stop.
 - Threats of violence.
 - Incitement of violence towards any individual or group, including encouraging a person to commit suicide or to engage in self-harm.
 - Deliberate intimidation.
@@ -60,7 +60,7 @@ Examples of unacceptable behaviour include:
 - Continued one-on-one communication after requests to cease.
 - Deliberate "outing" of any aspect of a person's identity without their consent except as necessary to protect vulnerable people from intentional abuse.
 - Publication of non-harassing private communication, such as a physical or email address, without their explicit permission
-- Jokes that resemble the above, such as "hipster racism", still count as harassment even if meant satirically or ironically.
+- Jokes that resemble the above still count as harassment even if meant satirically or ironically.
 - Trolling, insulting or derogatory comments, and personal or political attacks
 
 If you have questions or concerns about these issues please contact [Shawn Rhoads](https://github.com/shawnrhoads) and share your opinions and suggestions.
