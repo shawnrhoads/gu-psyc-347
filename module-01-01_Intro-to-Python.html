@@ -7,7 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Intro to Python Basics &#8212; Computational Models of Human Social Behavior (and Neuroscience)</title>
     
-  <link rel="stylesheet" href="_static/css/index.f658d18f9b420779cfdf24aa0a7e2d77.css">
+  <link href="_static/css/theme.css" rel="stylesheet" />
+  <link href="_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
 
     
   <link rel="stylesheet"
@@ -19,14 +20,10 @@
 
     
       
-  <link rel="stylesheet"
-    href="_static/vendor/open-sans_all/1.44.1/index.css">
-  <link rel="stylesheet"
-    href="_static/vendor/lato_latin-ext/1.44.1/index.css">
 
     
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" href="_static/sphinx-book-theme.e7340bb3dbd8dde6db86f25597f54a1b.css" type="text/css" />
+    <link rel="stylesheet" href="_static/sphinx-book-theme.acff12b8f9c144ce68a297486a2fa670.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
@@ -34,7 +31,7 @@
     <link rel="stylesheet" type="text/css" href="_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
     <link rel="stylesheet" type="text/css" href="_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
     
-  <link rel="preload" as="script" href="_static/js/index.d3f166471bb80abb5163.js">
+  <link rel="preload" as="script" href="_static/js/index.1c5a1a01449ed65a7b51.js">
 
     <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
     <script src="_static/jquery.js"></script>
@@ -44,7 +41,7 @@
     <script src="_static/clipboard.min.js"></script>
     <script src="_static/copybutton.js"></script>
     <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
-    <script src="_static/sphinx-book-theme.7d483ff0a819d6edff12ce0b1ead3928.js"></script>
+    <script src="_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.20.0/dist/embed-amd.js"></script>
     <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
@@ -61,23 +58,14 @@
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="Working with Data" href="module-01-02_Working-with-Data.html" />
     <link rel="prev" title="Jupyter Notebooks" href="module-01-00_Jupyter-Notebooks.html" />
-
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
-
-
-<!-- Opengraph tags -->
-<meta property="og:url"         content="https://shawnrhoads.github.io/gu-psyc-347/module-01-01_Intro-to-Python.html" />
-<meta property="og:type"        content="article" />
-<meta property="og:title"       content="Intro to Python Basics" />
-<meta property="og:description" content="Intro to Python Basics  This tutorial was inspired by and adapted from Whirlwind Tour of Python (CC0 1.0 License), DartBrains (CC BY-SA 4.0 License) and the Num" />
-<meta property="og:image"       content="https://shawnrhoads.github.io/gu-psyc-347/_static/logo.png" />
-
-<meta name="twitter:card" content="summary" />
-
-
+    
   </head>
   <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
     
 
     <div class="container-xl">
@@ -86,25 +74,25 @@
 <div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
     
         <div class="navbar-brand-box">
-<a class="navbar-brand text-wrap" href="index.html">
-  
-  <img src="_static/logo.png" class="logo" alt="logo">
-  
-  
-  <h1 class="site-logo" id="site-title">Computational Models of Human Social Behavior (and Neuroscience)</h1>
-  
-</a>
+    <a class="navbar-brand text-wrap" href="index.html">
+      
+      <img src="_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Computational Models of Human Social Behavior (and Neuroscience)</h1>
+      
+    </a>
 </div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
   <i class="icon fas fa-search"></i>
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
-</form>
-<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
-    <p class="caption collapsible-parent">
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+    <div class="bd-toc-item active">
+        <p class="caption">
  <span class="caption-text">
   Module 00
  </span>
 </p>
-<ul class="nav sidenav_l1">
+<ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="module-00-00_Syllabus.html">
    Syllabus
@@ -141,12 +129,12 @@
   </a>
  </li>
 </ul>
-<p class="caption collapsible-parent">
+<p class="caption">
  <span class="caption-text">
   Module 01
  </span>
 </p>
-<ul class="current nav sidenav_l1">
+<ul class="current nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="module-01-00_Jupyter-Notebooks.html">
    Jupyter Notebooks
@@ -168,12 +156,12 @@
   </a>
  </li>
 </ul>
-<p class="caption collapsible-parent">
+<p class="caption">
  <span class="caption-text">
   Module 02
  </span>
 </p>
-<ul class="nav sidenav_l1">
+<ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="module-02-00_Linear-Modeling.html">
    Linear Modeling
@@ -190,12 +178,12 @@
   </a>
  </li>
 </ul>
-<p class="caption collapsible-parent">
+<p class="caption">
  <span class="caption-text">
   Module 03
  </span>
 </p>
-<ul class="nav sidenav_l1">
+<ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="module-03-00_Two-Armed-Bandit.html">
    Two-Armed Bandit
@@ -212,12 +200,12 @@
   </a>
  </li>
 </ul>
-<p class="caption collapsible-parent">
+<p class="caption">
  <span class="caption-text">
   Module 04
  </span>
 </p>
-<ul class="nav sidenav_l1">
+<ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="module-04-00_Social-Learning.html">
    Social Learning
@@ -230,6 +218,7 @@
  </li>
 </ul>
 
+    </div>
 </nav> <!-- To handle the deprecated key -->
 
 <div class="navbar_extra_footer">
@@ -297,12 +286,12 @@
     </div>
 </div>
 
-
             <!-- Full screen (wrap in <a> to have style consistency -->
-            <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
-                    data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
-                    title="Fullscreen mode"><i
-                        class="fas fa-expand"></i></button></a>
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
 
             <!-- Launch buttons -->
 
@@ -311,12 +300,11 @@
         <!-- Table of contents -->
         <div class="d-none d-md-block col-md-2 bd-toc show">
             
-        <div class="tocsection onthispage pt-5 pb-3">
-            <i class="fas fa-list"></i>
-            Contents
-        </div>
-        <nav id="bd-toc-nav">
-            <ul class="nav section-nav flex-column">
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav">
+                <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#types-of-variables">
    Types of Variables
@@ -412,8 +400,7 @@
  </li>
 </ul>
 
-        </nav>
-        
+            </nav>
         </div>
     </div>
 </div>
@@ -1091,9 +1078,7 @@ PSYC 347 - COMPUTATIONAL MODELS OF HUMAN SOCIAL BEHAVIOR AND NEUROSCIENCE
 </div>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1
+1
 2
 3
 4
@@ -1168,7 +1153,9 @@ PSYC 347 - COMPUTATIONAL MODELS OF HUMAN SOCIAL BEHAVIOR AND NEUROSCIENCE
 y
 t
 h
-o
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>o
 n
  
 i
@@ -1256,9 +1243,7 @@ S
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>m
 O
 d
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>E
+E
 l
 S
 </pre></div>
@@ -1566,7 +1551,7 @@ Fat Cat says Meow! Meow!
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&#39;./module-04-01_Prosocial-RL-Exercises.ipynb&#39;, &#39;./module-02-00_Linear-Modeling.ipynb&#39;, &#39;./module-03-02_RL-Exercises.ipynb&#39;, &#39;./module-02-02_Modeling-Exercises.ipynb&#39;, &#39;./module-01-03_Python-Exercises.ipynb&#39;, &#39;./module-01-01_Intro-to-Python.ipynb&#39;, &#39;./module-01-00_Jupyter-Notebooks.ipynb&#39;, &#39;./module-03-01_Models-of-Learning.ipynb&#39;, &#39;./module-04-00_Social-Learning.ipynb&#39;, &#39;./module-03-00_Two-Armed-Bandit.ipynb&#39;, &#39;./module-01-02_Working-with-Data.ipynb&#39;, &#39;./module-02-01_Nonlinear-Modeling.ipynb&#39;]
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&#39;./module-01-01_Intro-to-Python.ipynb&#39;, &#39;./module-01-00_Jupyter-Notebooks.ipynb&#39;, &#39;./module-01-02_Working-with-Data.ipynb&#39;, &#39;./module-01-03_Python-Exercises.ipynb&#39;, &#39;./module-03-00_Two-Armed-Bandit.ipynb&#39;, &#39;./module-04-00_Social-Learning.ipynb&#39;, &#39;./module-02-01_Nonlinear-Modeling.ipynb&#39;, &#39;./module-03-01_Models-of-Learning.ipynb&#39;, &#39;./module-02-00_Linear-Modeling.ipynb&#39;, &#39;./module-02-02_Modeling-Exercises.ipynb&#39;, &#39;./module-04-01_Prosocial-RL-Exercises.ipynb&#39;, &#39;./module-03-02_RL-Exercises.ipynb&#39;]
 </pre></div>
 </div>
 </div>
@@ -1583,7 +1568,10 @@ Fat Cat says Meow! Meow!
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&#39;module-04-01_Prosocial-RL-Exercises.ipynb&#39;, &#39;module-02-00_Linear-Modeling.ipynb&#39;, &#39;module-03-02_RL-Exercises.ipynb&#39;, &#39;module-02-02_Modeling-Exercises.ipynb&#39;, &#39;module-01-03_Python-Exercises.ipynb&#39;, &#39;module-01-01_Intro-to-Python.ipynb&#39;, &#39;module-01-00_Jupyter-Notebooks.ipynb&#39;, &#39;module-03-01_Models-of-Learning.ipynb&#39;, &#39;module-04-00_Social-Learning.ipynb&#39;, &#39;module-03-00_Two-Armed-Bandit.ipynb&#39;, &#39;module-01-02_Working-with-Data.ipynb&#39;, &#39;module-02-01_Nonlinear-Modeling.ipynb&#39;]
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&#39;module-01-01_Intro-to-Python.ipynb&#39;, &#39;module-01-00_Jupyter-Notebooks.ipynb&#39;, &#39;module-01-02_Working-with-Data.ipynb&#39;, &#39;module-01-03_Python-Exercises.ipynb&#39;, &#39;module-03-00_Two-Armed-Bandit.ipynb&#39;, &#39;module-04-00_Social-Learning.ipynb&#39;, &#39;module-02-01_Nonlinear-Modeling.ipynb&#39;, &#39;module-03-01_Models-of-Learning.ipynb&#39;, &#39;module-02-00_Linear-Modeling.ipynb&#39;, &#39;module-02-02_Modeling-Exercises.ipynb&#39;, &#39;module-04-01_Prosocial-RL-Exercises.ipynb&#39;, &#39;module-03-02_RL-Exercises.ipynb&#39;]
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
 </pre></div>
 </div>
 </div>
@@ -1596,18 +1584,18 @@ Fat Cat says Meow! Meow!
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&#39;module-04-01_Prosocial-RL-Exercises.ipynb&#39;,
- &#39;module-02-00_Linear-Modeling.ipynb&#39;,
- &#39;module-03-02_RL-Exercises.ipynb&#39;,
- &#39;module-02-02_Modeling-Exercises.ipynb&#39;,
- &#39;module-01-03_Python-Exercises.ipynb&#39;,
- &#39;module-01-01_Intro-to-Python.ipynb&#39;,
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&#39;module-01-01_Intro-to-Python.ipynb&#39;,
  &#39;module-01-00_Jupyter-Notebooks.ipynb&#39;,
- &#39;module-03-01_Models-of-Learning.ipynb&#39;,
- &#39;module-04-00_Social-Learning.ipynb&#39;,
- &#39;module-03-00_Two-Armed-Bandit.ipynb&#39;,
  &#39;module-01-02_Working-with-Data.ipynb&#39;,
- &#39;module-02-01_Nonlinear-Modeling.ipynb&#39;]
+ &#39;module-01-03_Python-Exercises.ipynb&#39;,
+ &#39;module-03-00_Two-Armed-Bandit.ipynb&#39;,
+ &#39;module-04-00_Social-Learning.ipynb&#39;,
+ &#39;module-02-01_Nonlinear-Modeling.ipynb&#39;,
+ &#39;module-03-01_Models-of-Learning.ipynb&#39;,
+ &#39;module-02-00_Linear-Modeling.ipynb&#39;,
+ &#39;module-02-02_Modeling-Exercises.ipynb&#39;,
+ &#39;module-04-01_Prosocial-RL-Exercises.ipynb&#39;,
+ &#39;module-03-02_RL-Exercises.ipynb&#39;]
 </pre></div>
 </div>
 </div>
@@ -1843,9 +1831,9 @@ Fat Cat says Meow! Meow!
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([[0.59242673, 0.18319952],
-       [0.91648927, 0.42884617],
-       [0.23837277, 0.37598431]])
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([[0.43125733, 0.48637485],
+       [0.16093254, 0.67310303],
+       [0.06563315, 0.64026345]])
 </pre></div>
 </div>
 </div>
@@ -1857,8 +1845,8 @@ Fat Cat says Meow! Meow!
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([[0.59242673, 0.18319952, 0.91648927],
-       [0.42884617, 0.23837277, 0.37598431]])
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([[0.43125733, 0.48637485, 0.16093254],
+       [0.67310303, 0.06563315, 0.64026345]])
 </pre></div>
 </div>
 </div>
@@ -1893,10 +1881,10 @@ Fat Cat says Meow! Meow!
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[[0.83018435 0.44698217 0.44150491 0.52349427]
- [0.49084989 0.41984745 0.16314525 0.38187134]
- [0.60231616 0.61713971 0.40908113 0.11667914]
- [0.6116799  0.09364005 0.10798237 0.18824043]]
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[[0.29013063 0.08014614 0.09985793 0.1395717 ]
+ [0.2962338  0.57053327 0.0281579  0.75763073]
+ [0.22835433 0.21689682 0.64151668 0.03813844]
+ [0.63812402 0.03696502 0.05792058 0.58795539]]
 </pre></div>
 </div>
 </div>
@@ -1908,10 +1896,10 @@ Fat Cat says Meow! Meow!
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([[8.30184347, 4.4698217 , 4.41504908, 5.2349427 ],
-       [4.90849887, 4.1984745 , 1.63145253, 3.81871343],
-       [6.02316155, 6.17139713, 4.09081132, 1.16679141],
-       [6.11679904, 0.93640046, 1.07982371, 1.88240434]])
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([[2.90130628, 0.80146139, 0.99857926, 1.39571705],
+       [2.96233802, 5.70533265, 0.28157904, 7.57630732],
+       [2.28354331, 2.16896817, 6.4151668 , 0.38138437],
+       [6.3812402 , 0.36965019, 0.57920582, 5.87955393]])
 </pre></div>
 </div>
 </div>
@@ -1924,9 +1912,9 @@ Fat Cat says Meow! Meow!
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[0.83018435 0.44698217 0.44150491 0.52349427 0.49084989 0.41984745
- 0.16314525 0.38187134 0.60231616 0.61713971 0.40908113 0.11667914
- 0.6116799  0.09364005 0.10798237 0.18824043]
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[0.29013063 0.08014614 0.09985793 0.1395717  0.2962338  0.57053327
+ 0.0281579  0.75763073 0.22835433 0.21689682 0.64151668 0.03813844
+ 0.63812402 0.03696502 0.05792058 0.58795539]
 </pre></div>
 </div>
 </div>
@@ -1938,10 +1926,10 @@ Fat Cat says Meow! Meow!
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([[0.83018435, 0.44698217, 0.44150491, 0.52349427, 0.49084989,
-        0.41984745, 0.16314525, 0.38187134],
-       [0.60231616, 0.61713971, 0.40908113, 0.11667914, 0.6116799 ,
-        0.09364005, 0.10798237, 0.18824043]])
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([[0.29013063, 0.08014614, 0.09985793, 0.1395717 , 0.2962338 ,
+        0.57053327, 0.0281579 , 0.75763073],
+       [0.22835433, 0.21689682, 0.64151668, 0.03813844, 0.63812402,
+        0.03696502, 0.05792058, 0.58795539]])
 </pre></div>
 </div>
 </div>
@@ -1953,10 +1941,10 @@ Fat Cat says Meow! Meow!
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([[0.83018435, 0.44698217, 0.44150491, 0.52349427],
-       [0.49084989, 0.41984745, 0.16314525, 0.38187134],
-       [0.60231616, 0.61713971, 0.40908113, 0.11667914],
-       [0.6116799 , 0.09364005, 0.10798237, 0.18824043]])
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([[0.29013063, 0.08014614, 0.09985793, 0.1395717 ],
+       [0.2962338 , 0.57053327, 0.0281579 , 0.75763073],
+       [0.22835433, 0.21689682, 0.64151668, 0.03813844],
+       [0.63812402, 0.03696502, 0.05792058, 0.58795539]])
 </pre></div>
 </div>
 </div>
@@ -1969,13 +1957,13 @@ Fat Cat says Meow! Meow!
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[[[0.91420088 0.83803994 0.19929774 0.03019219 0.97107823 0.40510455]
-  [0.52978781 0.03938617 0.139541   0.86287862 0.32965184 0.65420319]
-  [0.62839766 0.40123649 0.78601931 0.06496821 0.9215533  0.24509083]]
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[[[0.67978218 0.78968001 0.34901049 0.39852885 0.38180357 0.80293934]
+  [0.78316614 0.08035367 0.11788846 0.92205949 0.30360074 0.56007103]
+  [0.65856643 0.64056319 0.37650155 0.59169433 0.83241046 0.88507369]]
 
- [[0.08333652 0.55781634 0.10745746 0.01006748 0.20848075 0.29289841]
-  [0.77995759 0.71976734 0.00834742 0.56726209 0.50322078 0.10027559]
-  [0.47016235 0.55353549 0.21390786 0.69714124 0.84755839 0.07504704]]]
+ [[0.6269156  0.86205045 0.35636397 0.71973683 0.88206749 0.21227635]
+  [0.00743154 0.30182406 0.06263188 0.95380466 0.97870791 0.17994514]
+  [0.76292019 0.60084975 0.81770854 0.71164336 0.01714883 0.59118001]]]
 </pre></div>
 </div>
 </div>
@@ -1987,12 +1975,12 @@ Fat Cat says Meow! Meow!
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[0.91420088 0.83803994 0.19929774 0.03019219 0.97107823 0.40510455
- 0.52978781 0.03938617 0.139541   0.86287862 0.32965184 0.65420319
- 0.62839766 0.40123649 0.78601931 0.06496821 0.9215533  0.24509083
- 0.08333652 0.55781634 0.10745746 0.01006748 0.20848075 0.29289841
- 0.77995759 0.71976734 0.00834742 0.56726209 0.50322078 0.10027559
- 0.47016235 0.55353549 0.21390786 0.69714124 0.84755839 0.07504704]
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[0.67978218 0.78968001 0.34901049 0.39852885 0.38180357 0.80293934
+ 0.78316614 0.08035367 0.11788846 0.92205949 0.30360074 0.56007103
+ 0.65856643 0.64056319 0.37650155 0.59169433 0.83241046 0.88507369
+ 0.6269156  0.86205045 0.35636397 0.71973683 0.88206749 0.21227635
+ 0.00743154 0.30182406 0.06263188 0.95380466 0.97870791 0.17994514
+ 0.76292019 0.60084975 0.81770854 0.71164336 0.01714883 0.59118001]
 </pre></div>
 </div>
 </div>
@@ -2004,10 +1992,10 @@ Fat Cat says Meow! Meow!
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[[0.83018435 0.49084989 0.60231616 0.6116799 ]
- [0.44698217 0.41984745 0.61713971 0.09364005]
- [0.44150491 0.16314525 0.40908113 0.10798237]
- [0.52349427 0.38187134 0.11667914 0.18824043]]
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[[0.29013063 0.2962338  0.22835433 0.63812402]
+ [0.08014614 0.57053327 0.21689682 0.03696502]
+ [0.09985793 0.0281579  0.64151668 0.05792058]
+ [0.1395717  0.75763073 0.03813844 0.58795539]]
 </pre></div>
 </div>
 </div>
@@ -2110,21 +2098,16 @@ Namespaces are one honking great idea -- let&#39;s do more of those!
 
       </div>
     </div>
+  
+  <script src="_static/js/index.1c5a1a01449ed65a7b51.js"></script>
 
-    
-  <script src="_static/js/index.d3f166471bb80abb5163.js"></script>
+  
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-KG3N20S55G"></script>
+<script>
+                    window.dataLayer = window.dataLayer || [];
+                    function gtag(){ dataLayer.push(arguments); }
+                    gtag('config', 'G-KG3N20S55G');
+                </script>
 
-
-    
-    <!-- Google Analytics -->
-    <script>
-      window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-      ga('create', 'G-KG3N20S55G', 'auto');
-      ga('set', 'anonymizeIp', true);
-      ga('send', 'pageview');
-    </script>
-    <script async src='https://www.google-analytics.com/analytics.js'></script>
-    <!-- End Google Analytics -->
-    
   </body>
 </html>
