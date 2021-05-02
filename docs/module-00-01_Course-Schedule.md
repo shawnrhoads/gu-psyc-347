@@ -211,8 +211,8 @@
         <tr>
             <td rowspan=2>15</td>
             <td>5/4</td>
-            <td>Discussion of Tump et al. (2020) and Geert-Jan et al. (2017)</td>
-            <td>Read Tump, et al. (2020) and Geert-Jan et al. (2017), and <b>submit response</b></td>
+            <td>Discussion of Tump et al. (2020) and Will et al. (2017)</td>
+            <td>Read Tump, et al. (2020) and Will et al. (2017), and <b>submit response</b></td>
             <td>Social influence with examples (Integrating Personal and Social Information; Self-Esteem)</td>
         </tr>
         <tr>
