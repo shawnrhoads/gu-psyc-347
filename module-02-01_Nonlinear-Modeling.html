@@ -389,9 +389,9 @@ $<span class="math notranslate nohighlight">\(y=\frac{\beta_0}{1 + \beta_1x_1}\)
 <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">seed</span><span class="p">(</span><span class="mi">2021</span><span class="p">)</span>
 
 <span class="n">b0</span> <span class="o">=</span> <span class="mi">1</span>
-<span class="n">b1</span> <span class="o">=</span> <span class="o">.</span><span class="mi">04</span>
+<span class="n">b1</span> <span class="o">=</span> <span class="mf">.04</span>
 <span class="n">b2</span> <span class="o">=</span> <span class="mf">1.5</span>
-<span class="n">b3</span> <span class="o">=</span> <span class="o">.</span><span class="mi">0125</span>
+<span class="n">b3</span> <span class="o">=</span> <span class="mf">.0125</span>
 <span class="n">b4</span> <span class="o">=</span> <span class="mf">2.67</span>
 
 <span class="n">x1</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">normal</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span>
@@ -446,7 +446,7 @@ $<span class="math notranslate nohighlight">\(y=\frac{\beta_0}{1 + \beta_1x_1}\)
 <span class="n">v0</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">normal</span><span class="p">(</span><span class="mi">85</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span>
                       <span class="n">size</span><span class="o">=</span><span class="p">(</span><span class="mi">100</span><span class="p">,))</span>
 
-<span class="n">k</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">normal</span><span class="p">(</span><span class="o">.</span><span class="mi">03</span><span class="p">,</span> <span class="o">.</span><span class="mi">005</span><span class="p">,</span>
+<span class="n">k</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">normal</span><span class="p">(</span><span class="mf">.03</span><span class="p">,</span> <span class="mf">.005</span><span class="p">,</span>
                       <span class="n">size</span><span class="o">=</span><span class="p">(</span><span class="mi">100</span><span class="p">,))</span>
 
 <span class="n">N</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">10</span><span class="p">,</span><span class="mi">20</span><span class="p">,</span><span class="mi">50</span><span class="p">,</span><span class="mi">100</span><span class="p">])</span>
@@ -454,7 +454,7 @@ $<span class="math notranslate nohighlight">\(y=\frac{\beta_0}{1 + \beta_1x_1}\)
 <span class="n">v</span> <span class="o">=</span> <span class="p">[]</span>
 <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">100</span><span class="p">):</span>
     <span class="n">v</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="n">v0</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">/</span> <span class="p">(</span><span class="mi">1</span> <span class="o">+</span> <span class="n">k</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">*</span><span class="n">N</span><span class="p">))</span> <span class="o">+</span> <span class="n">noise</span><span class="p">[</span><span class="n">i</span><span class="p">])</span> 
-    <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">N</span><span class="p">,</span> <span class="n">v</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">alpha</span><span class="o">=.</span><span class="mi">5</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">N</span><span class="p">,</span> <span class="n">v</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">.5</span><span class="p">)</span>
 
 <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Social Discounting&#39;</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Amount Willing to Forgo (v)&#39;</span><span class="p">)</span>
@@ -520,21 +520,21 @@ $<span class="math notranslate nohighlight">\(y=\frac{\beta_0}{1 + \beta_1x_1}\)
 
 <span class="c1"># minimize MSE for linear function using scipy.optimize.minimize</span>
 <span class="n">results</span><span class="p">[</span><span class="s2">&quot;lin&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">minimize</span><span class="p">(</span><span class="n">mse_linear</span><span class="p">,</span> <span class="c1"># objective function</span>
-                          <span class="p">(</span><span class="mi">85</span><span class="p">,</span> <span class="o">-.</span><span class="mi">3</span><span class="p">),</span> <span class="c1"># estimated starting points</span>
+                          <span class="p">(</span><span class="mi">85</span><span class="p">,</span> <span class="o">-</span><span class="mf">.3</span><span class="p">),</span> <span class="c1"># estimated starting points</span>
                           <span class="n">args</span><span class="o">=</span><span class="p">(</span><span class="n">N</span><span class="p">,</span> <span class="n">v</span><span class="p">),</span> <span class="c1"># arguments</span>
                           <span class="n">bounds</span><span class="o">=</span><span class="p">((</span><span class="mi">50</span><span class="p">,</span><span class="mi">100</span><span class="p">),(</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">)),</span>
                           <span class="n">tol</span><span class="o">=</span><span class="mf">1e-3</span><span class="p">)</span>
 
 <span class="c1"># minimize MSE for hyperbolic function using scipy.optimize.minimize</span>
 <span class="n">results</span><span class="p">[</span><span class="s2">&quot;exp&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">minimize</span><span class="p">(</span><span class="n">mse_exponential</span><span class="p">,</span> <span class="c1"># objective function</span>
-                          <span class="p">(</span><span class="mi">92</span><span class="p">,</span> <span class="o">.</span><span class="mi">6</span><span class="p">),</span> <span class="c1"># estimated starting points</span>
+                          <span class="p">(</span><span class="mi">92</span><span class="p">,</span> <span class="mf">.6</span><span class="p">),</span> <span class="c1"># estimated starting points</span>
                           <span class="n">args</span><span class="o">=</span><span class="p">(</span><span class="n">N</span><span class="p">,</span> <span class="n">v</span><span class="p">),</span> <span class="c1"># arguments</span>
                           <span class="n">bounds</span><span class="o">=</span><span class="p">((</span><span class="mi">50</span><span class="p">,</span><span class="mi">100</span><span class="p">),(</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">)),</span>
                           <span class="n">tol</span><span class="o">=</span><span class="mf">1e-3</span><span class="p">)</span>
 
 <span class="c1"># minimize MSE for hyperbolic function using scipy.optimize.minimize</span>
 <span class="n">results</span><span class="p">[</span><span class="s2">&quot;hyp&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">minimize</span><span class="p">(</span><span class="n">mse_hyperbolic</span><span class="p">,</span> <span class="c1"># objective function</span>
-                          <span class="p">(</span><span class="mi">70</span><span class="p">,</span> <span class="o">.</span><span class="mi">05</span><span class="p">),</span> <span class="c1"># estimated starting points</span>
+                          <span class="p">(</span><span class="mi">70</span><span class="p">,</span> <span class="mf">.05</span><span class="p">),</span> <span class="c1"># estimated starting points</span>
                           <span class="n">args</span><span class="o">=</span><span class="p">(</span><span class="n">N</span><span class="p">,</span> <span class="n">v</span><span class="p">),</span> <span class="c1"># arguments</span>
                           <span class="n">bounds</span><span class="o">=</span><span class="p">((</span><span class="mi">50</span><span class="p">,</span><span class="mi">100</span><span class="p">),(</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">)),</span>
                           <span class="n">tol</span><span class="o">=</span><span class="mf">1e-3</span><span class="p">)</span>
@@ -561,7 +561,7 @@ Hyperbolic: v0 = 85.20, k = 0.030, MSE = 4.86
     <span class="c1"># True data</span>
     <span class="n">v_mean</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">v</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
     <span class="n">ax</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">N</span><span class="p">,</span> <span class="n">v_mean</span><span class="p">,</span> 
-               <span class="n">alpha</span> <span class="o">=</span> <span class="o">.</span><span class="mi">75</span><span class="p">,</span>
+               <span class="n">alpha</span> <span class="o">=</span> <span class="mf">.75</span><span class="p">,</span>
                <span class="n">label</span> <span class="o">=</span> <span class="s1">&#39;Observed (mean)&#39;</span><span class="p">)</span>  <span class="c1"># our data scatter plot</span>
     
     <span class="n">v0</span><span class="p">,</span> <span class="n">k</span> <span class="o">=</span> <span class="n">fits</span><span class="o">.</span><span class="n">x</span>
@@ -605,7 +605,7 @@ Hyperbolic: v0 = 85.20, k = 0.030, MSE = 4.86
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># plot all individual subjects</span>
 <span class="k">for</span> <span class="n">v_subj</span> <span class="ow">in</span> <span class="n">v</span><span class="p">:</span>
-    <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">N</span><span class="p">,</span> <span class="n">v_subj</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=.</span><span class="mi">5</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">N</span><span class="p">,</span> <span class="n">v_subj</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">.5</span><span class="p">)</span>
 
 <span class="c1"># plot mean model fit</span>
 <span class="n">v_hat</span> <span class="o">=</span> <span class="n">results</span><span class="p">[</span><span class="s2">&quot;hyp&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">x</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">/</span> <span class="p">(</span><span class="mi">1</span> <span class="o">+</span> <span class="n">results</span><span class="p">[</span><span class="s2">&quot;hyp&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">x</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">*</span><span class="n">N</span><span class="p">)</span>        
@@ -652,7 +652,7 @@ Hyperbolic: v0 = 85.20, k = 0.030, MSE = 4.86
     
     <span class="c1"># minimize MSE for hyperbolic function using scipy.optimize.minimize</span>
     <span class="n">fit</span> <span class="o">=</span> <span class="n">minimize</span><span class="p">(</span><span class="n">mse_hyperbolic</span><span class="p">,</span> <span class="c1"># objective function</span>
-                   <span class="p">(</span><span class="mi">85</span><span class="p">,</span> <span class="o">.</span><span class="mi">05</span><span class="p">),</span> <span class="c1"># estimated starting points</span>
+                   <span class="p">(</span><span class="mi">85</span><span class="p">,</span> <span class="mf">.05</span><span class="p">),</span> <span class="c1"># estimated starting points</span>
                    <span class="n">args</span><span class="o">=</span><span class="p">(</span><span class="n">N</span><span class="p">,</span> <span class="n">subj_v</span><span class="p">),</span> <span class="c1"># arguments</span>
                    <span class="n">bounds</span><span class="o">=</span><span class="p">((</span><span class="mi">50</span><span class="p">,</span><span class="mi">100</span><span class="p">),(</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">)),</span>
                    <span class="n">tol</span><span class="o">=</span><span class="mf">1e-3</span><span class="p">)</span>
@@ -704,14 +704,12 @@ subject 34: v0 = 85.88, k = 0.032, MSE = 0.00
 subject 35: v0 = 85.53, k = 0.032, MSE = 0.01
 subject 36: v0 = 83.40, k = 0.032, MSE = 0.01
 subject 37: v0 = 86.35, k = 0.037, MSE = 0.11
+subject 38: v0 = 79.91, k = 0.032, MSE = 0.01
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>subject 38: v0 = 79.91, k = 0.032, MSE = 0.01
-subject 39: v0 = 85.62, k = 0.029, MSE = 0.00
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>subject 39: v0 = 85.62, k = 0.029, MSE = 0.00
 subject 40: v0 = 85.60, k = 0.031, MSE = 0.00
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>subject 41: v0 = 86.42, k = 0.032, MSE = 0.01
+subject 41: v0 = 86.42, k = 0.032, MSE = 0.01
 subject 42: v0 = 84.90, k = 0.027, MSE = 0.01
 subject 43: v0 = 87.15, k = 0.032, MSE = 0.00
 subject 44: v0 = 81.64, k = 0.027, MSE = 0.01
@@ -719,7 +717,9 @@ subject 45: v0 = 87.58, k = 0.031, MSE = 0.00
 subject 46: v0 = 82.66, k = 0.024, MSE = 0.02
 subject 47: v0 = 88.35, k = 0.037, MSE = 0.11
 subject 48: v0 = 83.87, k = 0.034, MSE = 0.03
-subject 49: v0 = 83.54, k = 0.029, MSE = 0.00
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>subject 49: v0 = 83.54, k = 0.029, MSE = 0.00
 subject 50: v0 = 87.04, k = 0.032, MSE = 0.00
 subject 51: v0 = 82.67, k = 0.031, MSE = 0.00
 subject 52: v0 = 83.27, k = 0.025, MSE = 0.02
@@ -753,22 +753,22 @@ subject 79: v0 = 84.61, k = 0.024, MSE = 0.02
 subject 80: v0 = 85.92, k = 0.033, MSE = 0.01
 subject 81: v0 = 84.83, k = 0.030, MSE = 0.00
 subject 82: v0 = 83.61, k = 0.028, MSE = 0.00
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>subject 83: v0 = 87.29, k = 0.032, MSE = 0.01
+subject 83: v0 = 87.29, k = 0.032, MSE = 0.01
 subject 84: v0 = 84.32, k = 0.024, MSE = 0.02
 subject 85: v0 = 88.26, k = 0.033, MSE = 0.02
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>subject 86: v0 = 86.83, k = 0.033, MSE = 0.01
+subject 86: v0 = 86.83, k = 0.033, MSE = 0.01
 subject 87: v0 = 84.54, k = 0.024, MSE = 0.02
 subject 88: v0 = 91.47, k = 0.026, MSE = 0.01
-subject 89: v0 = 81.25, k = 0.023, MSE = 0.03
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>subject 89: v0 = 81.25, k = 0.023, MSE = 0.03
 subject 90: v0 = 81.40, k = 0.025, MSE = 0.02
 subject 91: v0 = 87.81, k = 0.031, MSE = 0.00
 subject 92: v0 = 82.99, k = 0.027, MSE = 0.01
 subject 93: v0 = 88.16, k = 0.023, MSE = 0.03
-subject 94: v0 = 81.63, k = 0.023, MSE = 0.03
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>subject 94: v0 = 81.63, k = 0.023, MSE = 0.03
 subject 95: v0 = 83.84, k = 0.026, MSE = 0.02
 subject 96: v0 = 84.69, k = 0.033, MSE = 0.01
 subject 97: v0 = 85.31, k = 0.027, MSE = 0.01
@@ -883,14 +883,14 @@ subject
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">fit1</span> <span class="o">=</span> <span class="n">minimize</span><span class="p">(</span><span class="n">mse_hyperbolic</span><span class="p">,</span> <span class="c1"># objective function</span>
-               <span class="p">(</span><span class="mi">85</span><span class="p">,</span> <span class="o">.</span><span class="mi">05</span><span class="p">),</span> <span class="c1"># estimated starting points</span>
+               <span class="p">(</span><span class="mi">85</span><span class="p">,</span> <span class="mf">.05</span><span class="p">),</span> <span class="c1"># estimated starting points</span>
                <span class="n">args</span><span class="o">=</span><span class="p">(</span><span class="n">N</span><span class="p">,</span> <span class="n">df</span><span class="o">.</span><span class="n">iloc</span><span class="p">[:,</span><span class="mi">0</span><span class="p">:</span><span class="mi">7</span><span class="p">]</span><span class="o">.</span><span class="n">values</span><span class="p">),</span> <span class="c1"># arguments</span>
                <span class="n">bounds</span><span class="o">=</span><span class="p">((</span><span class="mi">0</span><span class="p">,</span><span class="mi">80</span><span class="p">),(</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">)),</span>
                <span class="n">tol</span><span class="o">=</span><span class="mf">1e-3</span><span class="p">)</span>
 
 <span class="c1"># minimize MSE for exponential function using scipy.optimize.minimize</span>
 <span class="n">fit2</span> <span class="o">=</span> <span class="n">minimize</span><span class="p">(</span><span class="n">mse_exponential</span><span class="p">,</span> <span class="c1"># objective function</span>
-               <span class="p">(</span><span class="mi">85</span><span class="p">,</span> <span class="o">.</span><span class="mi">05</span><span class="p">),</span> <span class="c1"># estimated starting points</span>
+               <span class="p">(</span><span class="mi">85</span><span class="p">,</span> <span class="mf">.05</span><span class="p">),</span> <span class="c1"># estimated starting points</span>
                <span class="n">args</span><span class="o">=</span><span class="p">(</span><span class="n">N</span><span class="p">,</span> <span class="n">df</span><span class="o">.</span><span class="n">iloc</span><span class="p">[:,</span><span class="mi">0</span><span class="p">:</span><span class="mi">7</span><span class="p">]</span><span class="o">.</span><span class="n">values</span><span class="p">),</span> <span class="c1"># arguments</span>
                <span class="n">bounds</span><span class="o">=</span><span class="p">((</span><span class="mi">0</span><span class="p">,</span><span class="mi">80</span><span class="p">),(</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">)),</span>
                <span class="n">tol</span><span class="o">=</span><span class="mf">1e-3</span><span class="p">)</span>
@@ -942,7 +942,7 @@ exponential (BIC): 170.261
     
     <span class="c1"># minimize MSE for hyperbolic function using scipy.optimize.minimize</span>
     <span class="n">fit</span> <span class="o">=</span> <span class="n">minimize</span><span class="p">(</span><span class="n">mse_hyperbolic</span><span class="p">,</span> <span class="c1"># objective function</span>
-                   <span class="p">(</span><span class="mi">85</span><span class="p">,</span> <span class="o">.</span><span class="mi">05</span><span class="p">),</span> <span class="c1"># estimated starting points</span>
+                   <span class="p">(</span><span class="mi">85</span><span class="p">,</span> <span class="mf">.05</span><span class="p">),</span> <span class="c1"># estimated starting points</span>
                    <span class="n">args</span><span class="o">=</span><span class="p">(</span><span class="n">N</span><span class="p">,</span> <span class="n">subj_v</span><span class="p">),</span> <span class="c1"># arguments</span>
                    <span class="n">bounds</span><span class="o">=</span><span class="p">((</span><span class="mi">0</span><span class="p">,</span><span class="mi">80</span><span class="p">),(</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">)),</span>
                    <span class="n">tol</span><span class="o">=</span><span class="mf">1e-3</span><span class="p">)</span>
@@ -1025,7 +1025,7 @@ no variation for subject #128, [85 85 85 85 85 85 85]
     
         <span class="c1"># minimize MSE for hyperbolic function using scipy.optimize.minimize</span>
         <span class="n">fit</span> <span class="o">=</span> <span class="n">minimize</span><span class="p">(</span><span class="n">mse_hyperbolic</span><span class="p">,</span> <span class="c1"># objective function</span>
-                       <span class="p">(</span><span class="mi">85</span><span class="p">,</span> <span class="o">.</span><span class="mi">05</span><span class="p">),</span> <span class="c1"># estimated starting points</span>
+                       <span class="p">(</span><span class="mi">85</span><span class="p">,</span> <span class="mf">.05</span><span class="p">),</span> <span class="c1"># estimated starting points</span>
                        <span class="n">args</span><span class="o">=</span><span class="p">(</span><span class="n">N</span><span class="p">,</span> <span class="n">subj_v</span><span class="p">),</span> <span class="c1"># arguments</span>
                        <span class="n">bounds</span><span class="o">=</span><span class="p">((</span><span class="mi">0</span><span class="p">,</span><span class="mi">80</span><span class="p">),(</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">)),</span>
                        <span class="n">tol</span><span class="o">=</span><span class="mf">1e-3</span><span class="p">)</span>
