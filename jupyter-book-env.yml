@@ -16,4 +16,4 @@ dependencies:
   - widgetsnbextension
   - ipywidgets
   - pip:
-    - jupyter-book>=0.7.0b
+    - jupyter-book=0.10.2
