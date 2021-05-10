@@ -26,4 +26,4 @@ Students will expand their 250-300 word abstract based on feedback from the inst
 8. References
 
 ### Project Presentation
-This presentation will be the "final exam" of this course. Students will present their project proposal to the class (10 minutes each) and determine 2-3 questions for a quick class discussion (5-10 minutes).
+This presentation will be the "final exam" of this course. Students will present their project proposal to the class (5-8 minutes each) and determine 2-3 questions for a quick class discussion (3 minutes).

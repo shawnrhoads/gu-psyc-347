@@ -1152,12 +1152,6 @@ negative \log \mathcal{L} = -\sum_{t=1}^T \log p(c_t)
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>subject 07: alpha=0.18, theta=6.61; negLL=14.13; BIC=36.08
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>subject 08: alpha=0.44, theta=3.33; negLL=16.04; BIC=39.90
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>subject 09: alpha=0.76, theta=4.02; negLL=12.24; BIC=32.29
-</pre></div>
-</div>
 <div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
 <span class="ne">KeyboardInterrupt</span><span class="g g-Whitespace">                         </span>Traceback (most recent call last)
 <span class="o">&lt;</span><span class="n">ipython</span><span class="o">-</span><span class="nb">input</span><span class="o">-</span><span class="mi">16</span><span class="o">-</span><span class="n">b4a3c35a85fa</span><span class="o">&gt;</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
@@ -1215,13 +1209,6 @@ negative \log \mathcal{L} = -\sum_{t=1}^T \log p(c_t)
 <span class="ne">---&gt; </span><span class="mi">30</span>             <span class="n">delta</span> <span class="o">=</span> <span class="n">r</span><span class="p">[</span><span class="n">t</span><span class="p">]</span> <span class="o">-</span> <span class="n">Q</span><span class="p">[</span><span class="n">c</span><span class="p">[</span><span class="n">t</span><span class="p">]]</span>
 <span class="g g-Whitespace">     </span><span class="mi">31</span>             <span class="n">Q</span><span class="p">[</span><span class="n">c</span><span class="p">[</span><span class="n">t</span><span class="p">]]</span> <span class="o">=</span> <span class="n">Q</span><span class="p">[</span><span class="n">c</span><span class="p">[</span><span class="n">t</span><span class="p">]]</span> <span class="o">+</span> <span class="n">alpha</span> <span class="o">*</span> <span class="n">delta</span>
 <span class="g g-Whitespace">     </span><span class="mi">32</span> 
-
-<span class="nn">/usr/share/miniconda3/envs/gu-psyc-347-jb/lib/python3.7/site-packages/pandas/core/series.py</span> in <span class="ni">__getitem__</span><span class="nt">(self, key)</span>
-<span class="g g-Whitespace">    </span><span class="mi">847</span>             <span class="n">key</span> <span class="o">=</span> <span class="n">unpack_1tuple</span><span class="p">(</span><span class="n">key</span><span class="p">)</span>
-<span class="g g-Whitespace">    </span><span class="mi">848</span> 
-<span class="ne">--&gt; </span><span class="mi">849</span>         <span class="k">if</span> <span class="n">is_integer</span><span class="p">(</span><span class="n">key</span><span class="p">)</span> <span class="ow">and</span> <span class="bp">self</span><span class="o">.</span><span class="n">index</span><span class="o">.</span><span class="n">_should_fallback_to_positional</span><span class="p">():</span>
-<span class="g g-Whitespace">    </span><span class="mi">850</span>             <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_values</span><span class="p">[</span><span class="n">key</span><span class="p">]</span>
-<span class="g g-Whitespace">    </span><span class="mi">851</span> 
 
 <span class="ne">KeyboardInterrupt</span>: 
 </pre></div>
