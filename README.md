@@ -14,7 +14,7 @@ The content in this Jupyter Book is subject to change.
 **Syllabus**: [Found here](https://shawnrhoads.github.io/gu-psyc-347/module-00-00_Syllabus.html)</br>
 **Schedule**: [Found here](https://shawnrhoads.github.io/gu-psyc-347/module-00-01_Course-Schedule.html)
 
-## Instructor information 👤
+## Instructor information 👨‍🏫
 **Instructor**: Shawn A Rhoads<br>
 **Pronouns**: he/him/his<br>
 **Email**: sr1209(at)georgetown(dot)edu<br>
