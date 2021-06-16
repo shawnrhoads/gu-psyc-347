@@ -21,7 +21,7 @@ The content in this Jupyter Book is subject to change.
 **Twitter**: <a href="https://twitter.com/ShawnRhoads56" target="_blank">@ShawnRhoads56</a><br>
 **Website**: [shawnrhoads.github.io](https://shawnrhoads.github.io)</br>
 
-## Tutorial and Exercise Navigation
+## Tutorial and Exercise Navigation 🏋️
 
 [Module 01](#Module-01---Scientific-Python) | [Module 02](#Module-02---Introduction-to-Modeling) | [Module 03](#Module-03---Reinforcement-Learning)
 
@@ -57,6 +57,6 @@ I am grateful to [Dr. Deborah Sterns](https://deborahstearns.blogspot.com/), [Jo
 ## Contributing 🙋‍♀️
 Please visit [this page](https://shawnrhoads.github.io/gu-psyc-347/module-00-06_Contributing.html) if you would like to help me improve and/or expand the content in this Jupyter Book!
 
-## License for this book
+## License for this book 🎫
 <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />
 Content in this book (i.e., any .md or .ipynb files in the content/ folder) is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
