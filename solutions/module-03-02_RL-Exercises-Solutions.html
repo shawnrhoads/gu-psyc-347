@@ -1129,7 +1129,9 @@ negative \log \mathcal{L} = -\sum_{t=1}^T \log p(c_t)
 </div>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>subject 00: alpha=0.47, theta=0.74; negLL=33.17; BIC=74.16
-subject 01: alpha=0.06, theta=3.77; negLL=26.89; BIC=61.61
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>subject 01: alpha=0.06, theta=3.77; negLL=26.89; BIC=61.61
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>subject 02: alpha=0.31, theta=1.55; negLL=32.05; BIC=71.92
@@ -1142,18 +1144,18 @@ subject 01: alpha=0.06, theta=3.77; negLL=26.89; BIC=61.61
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>subject 05: alpha=0.38, theta=3.38; negLL=25.08; BIC=57.98
-subject 06: alpha=0.07, theta=1.66; negLL=32.01; BIC=71.84
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>subject 06: alpha=0.07, theta=1.66; negLL=32.01; BIC=71.84
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>subject 07: alpha=0.18, theta=6.61; negLL=14.13; BIC=36.08
-subject 08: alpha=0.44, theta=3.33; negLL=16.04; BIC=39.90
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>subject 08: alpha=0.44, theta=3.33; negLL=16.04; BIC=39.90
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>subject 09: alpha=0.76, theta=4.02; negLL=12.24; BIC=32.29
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>subject 10: alpha=0.02, theta=10.00; negLL=21.33; BIC=50.48
-subject 11: alpha=0.62, theta=4.22; negLL=13.96; BIC=35.75
 </pre></div>
 </div>
 <div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
@@ -1229,11 +1231,32 @@ subject 11: alpha=0.62, theta=4.22; negLL=13.96; BIC=35.75
 <span class="g g-Whitespace">    </span><span class="mi">132</span>         <span class="k">def</span> <span class="nf">update_fun</span><span class="p">():</span>
 
 <span class="nn">&lt;ipython-input-12-954b57ff3c86&gt;</span> in <span class="ni">negll_RescorlaWagner</span><span class="nt">(params, choices, outcomes)</span>
-<span class="g g-Whitespace">     </span><span class="mi">20</span>             <span class="c1"># compute choice probabilities for k=2</span>
-<span class="g g-Whitespace">     </span><span class="mi">21</span>             <span class="c1"># use the softmax rule</span>
-<span class="ne">---&gt; </span><span class="mi">22</span>             <span class="n">ev</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="n">theta</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">Q</span><span class="p">))</span>
-<span class="g g-Whitespace">     </span><span class="mi">23</span>             <span class="n">sum_ev</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">ev</span><span class="p">)</span>
-<span class="g g-Whitespace">     </span><span class="mi">24</span>             <span class="n">p</span> <span class="o">=</span> <span class="n">ev</span> <span class="o">/</span> <span class="n">sum_ev</span>
+<span class="g g-Whitespace">     </span><span class="mi">29</span>             <span class="c1"># update values</span>
+<span class="g g-Whitespace">     </span><span class="mi">30</span>             <span class="n">delta</span> <span class="o">=</span> <span class="n">r</span><span class="p">[</span><span class="n">t</span><span class="p">]</span> <span class="o">-</span> <span class="n">Q</span><span class="p">[</span><span class="n">c</span><span class="p">[</span><span class="n">t</span><span class="p">]]</span>
+<span class="ne">---&gt; </span><span class="mi">31</span>             <span class="n">Q</span><span class="p">[</span><span class="n">c</span><span class="p">[</span><span class="n">t</span><span class="p">]]</span> <span class="o">=</span> <span class="n">Q</span><span class="p">[</span><span class="n">c</span><span class="p">[</span><span class="n">t</span><span class="p">]]</span> <span class="o">+</span> <span class="n">alpha</span> <span class="o">*</span> <span class="n">delta</span>
+<span class="g g-Whitespace">     </span><span class="mi">32</span> 
+<span class="g g-Whitespace">     </span><span class="mi">33</span>             <span class="c1"># store Q_t+1</span>
+
+<span class="nn">/usr/share/miniconda3/envs/gu-psyc-347-jb/lib/python3.7/site-packages/pandas/core/series.py</span> in <span class="ni">__getitem__</span><span class="nt">(self, key)</span>
+<span class="g g-Whitespace">    </span><span class="mi">851</span> 
+<span class="g g-Whitespace">    </span><span class="mi">852</span>         <span class="k">elif</span> <span class="n">key_is_scalar</span><span class="p">:</span>
+<span class="ne">--&gt; </span><span class="mi">853</span>             <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_get_value</span><span class="p">(</span><span class="n">key</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">854</span> 
+<span class="g g-Whitespace">    </span><span class="mi">855</span>         <span class="k">if</span> <span class="n">is_hashable</span><span class="p">(</span><span class="n">key</span><span class="p">):</span>
+
+<span class="nn">/usr/share/miniconda3/envs/gu-psyc-347-jb/lib/python3.7/site-packages/pandas/core/series.py</span> in <span class="ni">_get_value</span><span class="nt">(self, label, takeable)</span>
+<span class="g g-Whitespace">    </span><span class="mi">960</span>         <span class="c1"># Similar to Index.get_value, but we do not fall back to positional</span>
+<span class="g g-Whitespace">    </span><span class="mi">961</span>         <span class="n">loc</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">index</span><span class="o">.</span><span class="n">get_loc</span><span class="p">(</span><span class="n">label</span><span class="p">)</span>
+<span class="ne">--&gt; </span><span class="mi">962</span>         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">index</span><span class="o">.</span><span class="n">_get_values_for_loc</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">loc</span><span class="p">,</span> <span class="n">label</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">963</span> 
+<span class="g g-Whitespace">    </span><span class="mi">964</span>     <span class="k">def</span> <span class="fm">__setitem__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">key</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+
+<span class="nn">/usr/share/miniconda3/envs/gu-psyc-347-jb/lib/python3.7/site-packages/pandas/core/indexes/base.py</span> in <span class="ni">_get_values_for_loc</span><span class="nt">(self, series, loc, key)</span>
+<span class="g g-Whitespace">   </span><span class="mi">4853</span>         <span class="s2">&quot;&quot;&quot;</span>
+<span class="g g-Whitespace">   </span><span class="mi">4854</span><span class="s2">         if is_integer(loc):</span>
+<span class="ne">-&gt; </span><span class="mi">4855</span><span class="s2">             return series._values[loc]</span>
+<span class="g g-Whitespace">   </span><span class="mi">4856</span><span class="s2"> </span>
+<span class="g g-Whitespace">   </span><span class="mi">4857</span><span class="s2">         return series.iloc[loc]</span>
 
 <span class="ne">KeyboardInterrupt</span>: 
 </pre></div>
