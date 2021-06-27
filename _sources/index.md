@@ -19,7 +19,7 @@ The content in this Jupyter Book is subject to change.
 **Twitter**: <a href="https://twitter.com/ShawnRhoads56" target="_blank">@ShawnRhoads56</a><br>
 **Website**: [shawnrhoads.github.io](https://shawnrhoads.github.io)</br>
 
-## Tutorial and Exercise Navigation 🏋️
+## Tutorials & Exercises 🏋️
 
 [Module 01](#Module-01---Scientific-Python) | [Module 02](#Module-02---Introduction-to-Modeling) | [Module 03](#Module-03---Reinforcement-Learning)
 
