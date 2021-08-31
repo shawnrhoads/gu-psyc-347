@@ -23,7 +23,7 @@
 
     
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" href="_static/sphinx-book-theme.acff12b8f9c144ce68a297486a2fa670.css" type="text/css" />
+    <link rel="stylesheet" href="_static/sphinx-book-theme.e8f53015daec13862f6db5e763c41738.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
@@ -44,7 +44,7 @@
     <script src="_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.20.0/dist/embed-amd.js"></script>
-    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
     <script >
         const thebe_selector = ".thebe"
         const thebe_selector_input = "pre"
@@ -83,7 +83,7 @@
 </div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
   <i class="icon fas fa-search"></i>
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
-</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item active">
         <p class="caption">
  <span class="caption-text">
@@ -301,7 +301,7 @@
             <div class="tocsection onthispage pt-5 pb-3">
                 <i class="fas fa-list"></i> Contents
             </div>
-            <nav id="bd-toc-nav">
+            <nav id="bd-toc-nav" aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#table-of-contents">
@@ -383,7 +383,7 @@
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">  File</span><span class="nn"> &quot;&lt;ipython-input-1-9159ec5af80e&gt;&quot;</span><span class="gt">, line </span><span class="mi">9</span>
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">  File</span><span class="nn"> &quot;/tmp/ipykernel_3785/3778601622.py&quot;</span><span class="gt">, line </span><span class="mi">9</span>
     <span class="kn">import</span> <span class="nn">...</span> <span class="k">as</span> <span class="nn">...</span>
              <span class="o">^</span>
 <span class="ne">SyntaxError</span>: invalid syntax
@@ -410,7 +410,7 @@
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">  File</span><span class="nn"> &quot;&lt;ipython-input-2-a8c427c88a96&gt;&quot;</span><span class="gt">, line </span><span class="mi">13</span>
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">  File</span><span class="nn"> &quot;/tmp/ipykernel_3785/2920368484.py&quot;</span><span class="gt">, line </span><span class="mi">13</span>
     <span class="nb">print</span><span class="p">(</span><span class="o">..</span><span class="p">)</span>
           <span class="o">^</span>
 <span class="ne">SyntaxError</span>: invalid syntax
@@ -434,7 +434,7 @@
 <div class="cell_output docutils container">
 <div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
 <span class="ne">NameError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
-<span class="o">&lt;</span><span class="n">ipython</span><span class="o">-</span><span class="nb">input</span><span class="o">-</span><span class="mi">3</span><span class="o">-</span><span class="mi">3</span><span class="n">f61b9b91d83</span><span class="o">&gt;</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="o">/</span><span class="n">tmp</span><span class="o">/</span><span class="n">ipykernel_3785</span><span class="o">/</span><span class="mf">2511731208.</span><span class="n">py</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
 <span class="g g-Whitespace">      </span><span class="mi">5</span> <span class="c1"># No need to add any code here. Just execute this cell!</span>
 <span class="g g-Whitespace">      </span><span class="mi">6</span> 
 <span class="ne">----&gt; </span><span class="mi">7</span> <span class="n">distance</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;silhouette_dist_X_min81&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">values</span><span class="p">)</span>
@@ -460,7 +460,7 @@
 <div class="cell_output docutils container">
 <div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
 <span class="ne">NotImplementedError</span><span class="g g-Whitespace">                       </span>Traceback (most recent call last)
-<span class="o">&lt;</span><span class="n">ipython</span><span class="o">-</span><span class="nb">input</span><span class="o">-</span><span class="mi">4</span><span class="o">-</span><span class="mi">8768</span><span class="n">fa22a354</span><span class="o">&gt;</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="o">/</span><span class="n">tmp</span><span class="o">/</span><span class="n">ipykernel_3785</span><span class="o">/</span><span class="mf">1009367072.</span><span class="n">py</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
 <span class="g g-Whitespace">      </span><span class="mi">2</span> 
 <span class="g g-Whitespace">      </span><span class="mi">3</span> <span class="c1"># [INSERT CODE BELOW]</span>
 <span class="ne">----&gt; </span><span class="mi">4</span> <span class="k">raise</span> <span class="ne">NotImplementedError</span><span class="p">(</span><span class="s2">&quot;Student exercise: print the type of each variable, then delete this line&quot;</span><span class="p">)</span>
@@ -490,7 +490,7 @@
 <div class="cell_output docutils container">
 <div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
 <span class="ne">NotImplementedError</span><span class="g g-Whitespace">                       </span>Traceback (most recent call last)
-<span class="o">&lt;</span><span class="n">ipython</span><span class="o">-</span><span class="nb">input</span><span class="o">-</span><span class="mi">5</span><span class="o">-</span><span class="mi">874</span><span class="n">ea39bbb70</span><span class="o">&gt;</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="o">/</span><span class="n">tmp</span><span class="o">/</span><span class="n">ipykernel_3785</span><span class="o">/</span><span class="mf">3043110299.</span><span class="n">py</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
 <span class="g g-Whitespace">      </span><span class="mi">2</span> 
 <span class="g g-Whitespace">      </span><span class="mi">3</span> <span class="c1"># [INSERT CODE BELOW]</span>
 <span class="ne">----&gt; </span><span class="mi">4</span> <span class="k">raise</span> <span class="ne">NotImplementedError</span><span class="p">(</span><span class="s2">&quot;Student exercise: store number of elements of each list, then delete this line&quot;</span><span class="p">)</span>
@@ -524,7 +524,7 @@
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">  File</span><span class="nn"> &quot;&lt;ipython-input-6-e3921571c368&gt;&quot;</span><span class="gt">, line </span><span class="mi">9</span>
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">  File</span><span class="nn"> &quot;/tmp/ipykernel_3785/1519205885.py&quot;</span><span class="gt">, line </span><span class="mi">9</span>
     <span class="k">if</span> <span class="o">...</span>
           <span class="o">^</span>
 <span class="ne">SyntaxError</span>: invalid syntax
@@ -548,7 +548,7 @@
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">  File</span><span class="nn"> &quot;&lt;ipython-input-7-b1d9ba2a3fb6&gt;&quot;</span><span class="gt">, line </span><span class="mi">9</span>
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">  File</span><span class="nn"> &quot;/tmp/ipykernel_3785/1891114687.py&quot;</span><span class="gt">, line </span><span class="mi">9</span>
     <span class="k">if</span> <span class="o">...</span>
           <span class="o">^</span>
 <span class="ne">SyntaxError</span>: invalid syntax
@@ -575,7 +575,7 @@
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">  File</span><span class="nn"> &quot;&lt;ipython-input-8-4c30807b288d&gt;&quot;</span><span class="gt">, line </span><span class="mi">8</span>
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">  File</span><span class="nn"> &quot;/tmp/ipykernel_3785/1762777097.py&quot;</span><span class="gt">, line </span><span class="mi">8</span>
     <span class="k">if</span> <span class="o">...</span>
           <span class="o">^</span>
 <span class="ne">SyntaxError</span>: invalid syntax
@@ -631,7 +631,7 @@
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">  File</span><span class="nn"> &quot;&lt;ipython-input-9-fe881f302c10&gt;&quot;</span><span class="gt">, line </span><span class="mi">27</span>
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">  File</span><span class="nn"> &quot;/tmp/ipykernel_3785/631573339.py&quot;</span><span class="gt">, line </span><span class="mi">27</span>
     <span class="k">if</span> <span class="o">...</span>
           <span class="o">^</span>
 <span class="ne">SyntaxError</span>: invalid syntax
@@ -667,7 +667,7 @@
 <div class="cell_output docutils container">
 <div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
 <span class="ne">NameError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
-<span class="o">&lt;</span><span class="n">ipython</span><span class="o">-</span><span class="nb">input</span><span class="o">-</span><span class="mi">10</span><span class="o">-</span><span class="mi">5001</span><span class="n">d88d7a70</span><span class="o">&gt;</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="o">/</span><span class="n">tmp</span><span class="o">/</span><span class="n">ipykernel_3785</span><span class="o">/</span><span class="mf">1884265663.</span><span class="n">py</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
 <span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="c1"># Run this cell to check your work. No need to edit, just execute cell!</span>
 <span class="ne">----&gt; </span><span class="mi">2</span> <span class="n">antisociality_contains_nans</span><span class="p">,</span> <span class="n">antisociality_nan_count</span> <span class="o">=</span> <span class="n">check_for_nans</span><span class="p">(</span><span class="n">antisociality</span><span class="p">,</span> <span class="n">list_name</span><span class="o">=</span><span class="s1">&#39;antisociality&#39;</span><span class="p">)</span>
 <span class="g g-Whitespace">      </span><span class="mi">3</span> <span class="n">distance_contains_nans</span><span class="p">,</span> <span class="n">distance_nan_count</span> <span class="o">=</span> <span class="n">check_for_nans</span><span class="p">(</span><span class="n">distance</span><span class="p">,</span> <span class="n">list_name</span><span class="o">=</span><span class="s1">&#39;distance&#39;</span><span class="p">)</span>
@@ -715,12 +715,32 @@
               </div>
               
         
-        <div class='prev-next-bottom'>
             
-    <a class='left-prev' id="prev-link" href="module-01-02_Working-with-Data.html" title="previous page">Working with Data</a>
-    <a class='right-next' id="next-link" href="module-02-00_Linear-Modeling.html" title="next page">Linear Modeling</a>
 
-        </div>
+
+
+<div class='prev-next-bottom'>
+    
+    <div id="prev">
+        <a class="left-prev" href="module-01-02_Working-with-Data.html" title="previous page">
+            <i class="prevnext-label fas fa-angle-left"></i>
+            <div class="prevnext-info">
+                <p class="prevnext-label">previous</p>
+                <p class="prevnext-title">Working with Data</p>
+            </div>
+        </a>
+    </div>
+     <div id="next">
+        <a class="right-next" href="module-02-00_Linear-Modeling.html" title="next page">
+            <div class="prevnext-info">
+                <p class="prevnext-label">next</p>
+                <p class="prevnext-title">Linear Modeling</p>
+            </div>
+            <i class="prevnext-label fas fa-angle-right"></i>
+        </a>
+     </div>
+
+</div>
         
         </div>
     </div>

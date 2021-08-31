@@ -23,7 +23,7 @@
 
     
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" href="_static/sphinx-book-theme.acff12b8f9c144ce68a297486a2fa670.css" type="text/css" />
+    <link rel="stylesheet" href="_static/sphinx-book-theme.e8f53015daec13862f6db5e763c41738.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
@@ -44,15 +44,15 @@
     <script src="_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.20.0/dist/embed-amd.js"></script>
-    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
     <script >
         const thebe_selector = ".thebe"
         const thebe_selector_input = "pre"
         const thebe_selector_output = ".output"
     </script>
     <script async="async" src="_static/sphinx-thebe.js"></script>
-    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
     <link rel="canonical" href="https://shawnrhoads.github.io/gu-psyc-347/module-02-01_Nonlinear-Modeling.html" />
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
@@ -85,7 +85,7 @@
 </div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
   <i class="icon fas fa-search"></i>
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
-</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item active">
         <p class="caption">
  <span class="caption-text">
@@ -303,7 +303,7 @@
             <div class="tocsection onthispage pt-5 pb-3">
                 <i class="fas fa-list"></i> Contents
             </div>
-            <nav id="bd-toc-nav">
+            <nav id="bd-toc-nav" aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#goals-of-this-tutorial">
@@ -708,15 +708,11 @@ subject 38: v0 = 79.91, k = 0.032, MSE = 0.01
 subject 39: v0 = 85.62, k = 0.029, MSE = 0.00
 subject 40: v0 = 85.60, k = 0.031, MSE = 0.00
 subject 41: v0 = 86.42, k = 0.032, MSE = 0.01
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>subject 42: v0 = 84.90, k = 0.027, MSE = 0.01
+subject 42: v0 = 84.90, k = 0.027, MSE = 0.01
 subject 43: v0 = 87.15, k = 0.032, MSE = 0.00
 subject 44: v0 = 81.64, k = 0.027, MSE = 0.01
 subject 45: v0 = 87.58, k = 0.031, MSE = 0.00
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>subject 46: v0 = 82.66, k = 0.024, MSE = 0.02
+subject 46: v0 = 82.66, k = 0.024, MSE = 0.02
 subject 47: v0 = 88.35, k = 0.037, MSE = 0.11
 subject 48: v0 = 83.87, k = 0.034, MSE = 0.03
 subject 49: v0 = 83.54, k = 0.029, MSE = 0.00
@@ -725,10 +721,14 @@ subject 51: v0 = 82.67, k = 0.031, MSE = 0.00
 subject 52: v0 = 83.27, k = 0.025, MSE = 0.02
 subject 53: v0 = 84.08, k = 0.036, MSE = 0.07
 subject 54: v0 = 87.91, k = 0.035, MSE = 0.04
-subject 55: v0 = 83.63, k = 0.019, MSE = 0.04
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>subject 55: v0 = 83.63, k = 0.019, MSE = 0.04
 subject 56: v0 = 83.40, k = 0.023, MSE = 0.03
 subject 57: v0 = 84.98, k = 0.036, MSE = 0.08
-subject 58: v0 = 88.32, k = 0.034, MSE = 0.03
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>subject 58: v0 = 88.32, k = 0.034, MSE = 0.03
 subject 59: v0 = 82.08, k = 0.025, MSE = 0.02
 subject 60: v0 = 86.55, k = 0.024, MSE = 0.03
 subject 61: v0 = 85.16, k = 0.032, MSE = 0.01
@@ -757,16 +757,12 @@ subject 83: v0 = 87.29, k = 0.032, MSE = 0.01
 subject 84: v0 = 84.32, k = 0.024, MSE = 0.02
 subject 85: v0 = 88.26, k = 0.033, MSE = 0.02
 subject 86: v0 = 86.83, k = 0.033, MSE = 0.01
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>subject 87: v0 = 84.54, k = 0.024, MSE = 0.02
+subject 87: v0 = 84.54, k = 0.024, MSE = 0.02
 subject 88: v0 = 91.47, k = 0.026, MSE = 0.01
 subject 89: v0 = 81.25, k = 0.023, MSE = 0.03
 subject 90: v0 = 81.40, k = 0.025, MSE = 0.02
 subject 91: v0 = 87.81, k = 0.031, MSE = 0.00
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>subject 92: v0 = 82.99, k = 0.027, MSE = 0.01
+subject 92: v0 = 82.99, k = 0.027, MSE = 0.01
 subject 93: v0 = 88.16, k = 0.023, MSE = 0.03
 subject 94: v0 = 81.63, k = 0.023, MSE = 0.03
 subject 95: v0 = 83.84, k = 0.026, MSE = 0.02
@@ -957,9 +953,7 @@ exponential (BIC): 170.261
 </div>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>subject 102: v0 = 80.00, k = 0.000, MSE = 53.53
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>subject 106: v0 = 80.00, k = 0.301, MSE = 488.09
+subject 106: v0 = 80.00, k = 0.301, MSE = 488.09
 subject 107: v0 = 80.00, k = 0.024, MSE = 430.10
 subject 113: v0 = 79.88, k = 0.074, MSE = 75.61
 subject 114: v0 = 62.64, k = 0.033, MSE = 42.86
@@ -970,9 +964,13 @@ subject 121: v0 = 80.00, k = 0.000, MSE = 25.00
 subject 122: v0 = 80.00, k = 0.003, MSE = 62.99
 subject 123: v0 = 79.62, k = 0.110, MSE = 358.13
 subject 124: v0 = 79.97, k = 0.062, MSE = 55.33
-subject 125: v0 = 80.00, k = 0.019, MSE = 294.43
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>subject 125: v0 = 80.00, k = 0.019, MSE = 294.43
 subject 126: v0 = 80.00, k = 0.006, MSE = 820.72
-subject 127: v0 = 80.00, k = 0.030, MSE = 138.29
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>subject 127: v0 = 80.00, k = 0.030, MSE = 138.29
 subject 128: v0 = 80.00, k = 0.000, MSE = 25.00
 subject 132: v0 = 80.00, k = 0.024, MSE = 196.97
 subject 135: v0 = 80.00, k = 0.056, MSE = 503.05
@@ -1091,12 +1089,32 @@ assigning k=0 for subject #128, [85 85 85 85 85 85 85]
               </div>
               
         
-        <div class='prev-next-bottom'>
             
-    <a class='left-prev' id="prev-link" href="module-02-00_Linear-Modeling.html" title="previous page">Linear Modeling</a>
-    <a class='right-next' id="next-link" href="module-02-02_Modeling-Exercises.html" title="next page">Modeling Exercises</a>
 
-        </div>
+
+
+<div class='prev-next-bottom'>
+    
+    <div id="prev">
+        <a class="left-prev" href="module-02-00_Linear-Modeling.html" title="previous page">
+            <i class="prevnext-label fas fa-angle-left"></i>
+            <div class="prevnext-info">
+                <p class="prevnext-label">previous</p>
+                <p class="prevnext-title">Linear Modeling</p>
+            </div>
+        </a>
+    </div>
+     <div id="next">
+        <a class="right-next" href="module-02-02_Modeling-Exercises.html" title="next page">
+            <div class="prevnext-info">
+                <p class="prevnext-label">next</p>
+                <p class="prevnext-title">Modeling Exercises</p>
+            </div>
+            <i class="prevnext-label fas fa-angle-right"></i>
+        </a>
+     </div>
+
+</div>
         
         </div>
     </div>

@@ -23,7 +23,7 @@
 
     
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" href="_static/sphinx-book-theme.acff12b8f9c144ce68a297486a2fa670.css" type="text/css" />
+    <link rel="stylesheet" href="_static/sphinx-book-theme.e8f53015daec13862f6db5e763c41738.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
@@ -44,7 +44,7 @@
     <script src="_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.20.0/dist/embed-amd.js"></script>
-    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
     <script >
         const thebe_selector = ".thebe"
         const thebe_selector_input = "pre"
@@ -83,7 +83,7 @@
 </div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
   <i class="icon fas fa-search"></i>
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
-</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item active">
         <p class="caption">
  <span class="caption-text">
@@ -301,7 +301,7 @@
             <div class="tocsection onthispage pt-5 pb-3">
                 <i class="fas fa-list"></i> Contents
             </div>
-            <nav id="bd-toc-nav">
+            <nav id="bd-toc-nav" aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#describing-data-using-pandas">
@@ -480,26 +480,26 @@
 </div>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>    column A  column B  column C
-0  -0.519776  1.941707  1.603258
-1  -1.290145 -0.826836 -0.184301
-2   0.288606  0.681217 -1.336057
-3  -0.835902  0.048601  0.578415
-4   0.415212  1.538959 -0.196064
-5   1.365937 -0.583775  0.530520
-6  -0.743579  0.543779 -0.258691
-7   1.133554  1.033366 -0.862548
-8  -1.566499  1.606721 -1.147431
-9  -0.545438 -1.931083 -0.655881
-10  0.697933  1.819964 -2.689643
-11 -0.985207  0.029578 -0.491701
-12  0.793987  1.304212 -0.798447
-13 -0.558827  0.459004 -0.467030
-14  1.013014  2.301200 -0.411176
-15  0.522292 -0.695460  2.502338
-16 -0.780837 -0.889235 -0.281837
-17 -0.202196 -0.176952 -1.713302
-18 -1.266251 -1.752720 -0.873220
-19  1.582928  1.226611 -0.611564
+0  -0.836130  0.879633 -0.589624
+1   0.566936 -1.150337 -0.378743
+2  -0.734467  0.259645 -1.443601
+3  -0.182542  0.439811 -0.690113
+4  -0.409921 -0.578590 -0.641793
+5   1.387450  0.838989  1.050029
+6  -1.020470 -0.728892  0.643635
+7  -0.672571 -1.347862  1.449945
+8  -1.145138  0.284168 -0.189371
+9  -1.019242  0.480676  1.516343
+10  1.693758  1.002140 -1.986696
+11 -0.149482 -0.070987  0.216176
+12 -0.380180  1.899155  0.817876
+13 -0.029932 -2.430225 -0.257257
+14  1.250474  0.504065  0.476014
+15  0.432513  1.263070  0.615001
+16  2.067786 -1.355488  0.794748
+17 -0.731668  0.963286 -0.643623
+18 -0.921348  1.726236  2.118288
+19  0.830071 -1.861903 -0.320706
 </pre></div>
 </div>
 </div>
@@ -515,11 +515,11 @@
 </div>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>   COLUMN A  COLUMN B  COLUMN C
-0 -0.519776  1.941707  1.603258
-1 -1.290145 -0.826836 -0.184301
-2  0.288606  0.681217 -1.336057
-3 -0.835902  0.048601  0.578415
-4  0.415212  1.538959 -0.196064
+0 -0.836130  0.879633 -0.589624
+1  0.566936 -1.150337 -0.378743
+2 -0.734467  0.259645 -1.443601
+3 -0.182542  0.439811 -0.690113
+4 -0.409921 -0.578590 -0.641793
 </pre></div>
 </div>
 </div>
@@ -534,11 +534,11 @@
 </div>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>           A         B         C
-15  0.522292 -0.695460  2.502338
-16 -0.780837 -0.889235 -0.281837
-17 -0.202196 -0.176952 -1.713302
-18 -1.266251 -1.752720 -0.873220
-19  1.582928  1.226611 -0.611564
+15  0.432513  1.263070  0.615001
+16  2.067786 -1.355488  0.794748
+17 -0.731668  0.963286 -0.643623
+18 -0.921348  1.726236  2.118288
+19  0.830071 -1.861903 -0.320706
 </pre></div>
 </div>
 </div>
@@ -598,26 +598,26 @@
 </div>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>           A         B         C
-0  -0.519776  1.941707  1.603258
-1  -1.290145 -0.826836 -0.184301
-2   0.288606  0.681217 -1.336057
-3  -0.835902  0.048601  0.578415
-4   0.415212  1.538959 -0.196064
-5   1.365937 -0.583775  0.530520
-6  -0.743579  0.543779 -0.258691
-7   1.133554  1.033366 -0.862548
-8  -1.566499  1.606721 -1.147431
-9  -0.545438 -1.931083 -0.655881
-10  0.697933  1.819964 -2.689643
-11 -0.985207  0.029578 -0.491701
-12  0.793987  1.304212 -0.798447
-13 -0.558827  0.459004 -0.467030
-14  1.013014  2.301200 -0.411176
-15  0.522292 -0.695460  2.502338
-16 -0.780837 -0.889235 -0.281837
-17 -0.202196 -0.176952 -1.713302
-18 -1.266251 -1.752720 -0.873220
-19  1.582928  1.226611 -0.611564
+0  -0.836130  0.879633 -0.589624
+1   0.566936 -1.150337 -0.378743
+2  -0.734467  0.259645 -1.443601
+3  -0.182542  0.439811 -0.690113
+4  -0.409921 -0.578590 -0.641793
+5   1.387450  0.838989  1.050029
+6  -1.020470 -0.728892  0.643635
+7  -0.672571 -1.347862  1.449945
+8  -1.145138  0.284168 -0.189371
+9  -1.019242  0.480676  1.516343
+10  1.693758  1.002140 -1.986696
+11 -0.149482 -0.070987  0.216176
+12 -0.380180  1.899155  0.817876
+13 -0.029932 -2.430225 -0.257257
+14  1.250474  0.504065  0.476014
+15  0.432513  1.263070  0.615001
+16  2.067786 -1.355488  0.794748
+17 -0.731668  0.963286 -0.643623
+18 -0.921348  1.726236  2.118288
+19  0.830071 -1.861903 -0.320706
 20  0.000000  0.000000  0.000000
 21  0.000000  0.000000  0.000000
 22  0.000000  0.000000  0.000000
@@ -1399,7 +1399,7 @@ dtype: float64
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0x7ffb4ea24290&gt;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0x7f34d4344b50&gt;
 </pre></div>
 </div>
 <img alt="_images/module-01-02_Working-with-Data_66_1.png" src="_images/module-01-02_Working-with-Data_66_1.png" />
@@ -1422,7 +1422,7 @@ dtype: float64
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0x7ffb4ee05850&gt;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0x7f34d4210e50&gt;
 </pre></div>
 </div>
 <img alt="_images/module-01-02_Working-with-Data_68_1.png" src="_images/module-01-02_Working-with-Data_68_1.png" />
@@ -1454,12 +1454,32 @@ dtype: float64
               </div>
               
         
-        <div class='prev-next-bottom'>
             
-    <a class='left-prev' id="prev-link" href="module-01-01_Intro-to-Python.html" title="previous page">Intro to Python Basics</a>
-    <a class='right-next' id="next-link" href="module-01-03_Python-Exercises.html" title="next page">Python Exercises</a>
 
-        </div>
+
+
+<div class='prev-next-bottom'>
+    
+    <div id="prev">
+        <a class="left-prev" href="module-01-01_Intro-to-Python.html" title="previous page">
+            <i class="prevnext-label fas fa-angle-left"></i>
+            <div class="prevnext-info">
+                <p class="prevnext-label">previous</p>
+                <p class="prevnext-title">Intro to Python Basics</p>
+            </div>
+        </a>
+    </div>
+     <div id="next">
+        <a class="right-next" href="module-01-03_Python-Exercises.html" title="next page">
+            <div class="prevnext-info">
+                <p class="prevnext-label">next</p>
+                <p class="prevnext-title">Python Exercises</p>
+            </div>
+            <i class="prevnext-label fas fa-angle-right"></i>
+        </a>
+     </div>
+
+</div>
         
         </div>
     </div>
