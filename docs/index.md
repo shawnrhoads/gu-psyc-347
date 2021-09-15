@@ -4,10 +4,10 @@ The content in this Jupyter Book is subject to change.
 
 ## Course information 📝
 **Section**: PSYC 347-01</br>
-**Prerequisites**: PSYC 002 (or equivalent); No prior programming experience necessary</br>
-**Required materials**: Only a working laptop/computer is needed! Book chapters, journal articles, and software are openly available to all students (no purchase required).</br>
+**Prerequisites**: PSYC 002 - Research Methods and Statistics (or equivalent); No prior programming experience necessary</br>
+**Required materials**: Only a working laptop/computer is needed! Book chapters, journal articles, and software are openly available to all students (no purchase required)</br>
 **Dates**: January 28 - May 6, 2021</br>
-**Meetings**: Tuesdays/Thursdays from 11am-12:15pm</br>
+**Meetings**: Tuesdays and Thursdays from 11am-12:15pm</br>
 **Location**: Online</br>
 **Syllabus**: [Found here](https://shawnrhoads.github.io/gu-psyc-347/module-00-00_Syllabus.html)</br>
 **Schedule**: [Found here](https://shawnrhoads.github.io/gu-psyc-347/module-00-01_Course-Schedule.html)
@@ -20,8 +20,6 @@ The content in this Jupyter Book is subject to change.
 **Website**: [shawnrhoads.github.io](https://shawnrhoads.github.io)</br>
 
 ## Tutorials & Exercises 🏋️
-
-[Module 01](#Module-01---Scientific-Python) | [Module 02](#Module-02---Introduction-to-Modeling) | [Module 03](#Module-03---Reinforcement-Learning)
 
 ### Module 01 - Scientific Python
 
@@ -50,7 +48,7 @@ The content in this Jupyter Book is subject to change.
 | Exercise | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/shawnrhoads/gu-psyc-347/blob/master/docs/module-03-02_RL-Exercises.ipynb) | [![view](https://github.com/shawnrhoads/gu-psyc-347/actions/workflows/deploy-book.yml/badge.svg)](https://shawnrhoads.github.io/gu-psyc-347/module-03-02_RL-Exercises.html) |
 
 ## Acknowledgments 🙏
-I am grateful to [Dr. Deborah Sterns](https://deborahstearns.blogspot.com/), [Joscelin Rocha-Hidalgo](https://www.joscelinrocha.com/), and the [Georgetown Center for New Designs in Learning & Scholarship (CNDLS)](https://cndls.georgetown.edu/) for allowing me to use their teaching resources throughout the development of this syllabus. The format of this course was largely inspired by the [MIND Computational Summer School](https://mindsummerschool.org/), [Neuromatch Academy](https://neuromatch.io/academy/), Dr. Maximilian Risenhuber's Computational Neuroscience course, Dr. Robert C. Wilson's [Modeling the Mind course](http://u.arizona.edu/~bob/web_NSCS344/), Dr. Luke J. Chang's [DartBrains Jupyter Book](https://dartbrains.org/content/intro.html), the research conducted in the [Laboratory on Social and Affective Neuroscience](https://abigailmarsh.com/lab), and the countless conversations with my colleagues about the selected topics.
+I am grateful to [Dr. Deborah Sterns](https://deborahstearns.blogspot.com/), [Joscelin Rocha-Hidalgo](https://www.joscelinrocha.com/), and the [Georgetown Center for New Designs in Learning & Scholarship (CNDLS)](https://cndls.georgetown.edu/) for allowing me to use their teaching resources throughout the development of this syllabus. I am also grateful to the [Project Jupyter](https://jupyter.org/) for making it possible to create and share these materials in a Jupyter Book. I am also grateful to [Lin Gan](https://github.com/gllg4009) for her contributions and feedback in making enhancements to these materials. The format of this course was largely inspired by the [MIND Computational Summer School](https://mindsummerschool.org/), [Neuromatch Academy](https://academy.neuromatch.io/), Dr. Maximilian Risenhuber's Computational Neuroscience course, Dr. Robert C. Wilson's [Modeling the Mind course](http://u.arizona.edu/~bob/web_NSCS344/), Dr. Luke J. Chang's [DartBrains Jupyter Book](https://dartbrains.org/content/intro.html), the research conducted in the [Laboratory on Social and Affective Neuroscience](https://aamarsh.wordpress.com/lab/), and the countless conversations with my colleagues about the selected topics.
 
 ## Contributing 🙋‍♀️
 Please visit [this page](https://shawnrhoads.github.io/gu-psyc-347/module-00-06_Contributing.html) if you would like to help me improve and/or expand the content in this Jupyter Book!
