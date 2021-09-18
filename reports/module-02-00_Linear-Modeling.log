@@ -1,0 +1,152 @@
+Traceback (most recent call last):
+  File "/usr/share/miniconda3/envs/gu-psyc-347-jb/lib/python3.7/site-packages/jupyter_cache/executors/utils.py", line 56, in single_nb_execution
+    record_timing=False,
+  File "/usr/share/miniconda3/envs/gu-psyc-347-jb/lib/python3.7/site-packages/nbclient/client.py", line 1117, in execute
+    return NotebookClient(nb=nb, resources=resources, km=km, **kwargs).execute()
+  File "/usr/share/miniconda3/envs/gu-psyc-347-jb/lib/python3.7/site-packages/nbclient/util.py", line 78, in wrapped
+    return just_run(coro(*args, **kwargs))
+  File "/usr/share/miniconda3/envs/gu-psyc-347-jb/lib/python3.7/site-packages/nbclient/util.py", line 57, in just_run
+    return loop.run_until_complete(coro)
+  File "/usr/share/miniconda3/envs/gu-psyc-347-jb/lib/python3.7/asyncio/base_events.py", line 587, in run_until_complete
+    return future.result()
+  File "/usr/share/miniconda3/envs/gu-psyc-347-jb/lib/python3.7/site-packages/nbclient/client.py", line 559, in async_execute
+    cell, index, execution_count=self.code_cells_executed + 1
+  File "/usr/share/miniconda3/envs/gu-psyc-347-jb/lib/python3.7/site-packages/nbclient/client.py", line 862, in async_execute_cell
+    self._check_raise_for_error(cell, exec_reply)
+  File "/usr/share/miniconda3/envs/gu-psyc-347-jb/lib/python3.7/site-packages/nbclient/client.py", line 765, in _check_raise_for_error
+    raise CellExecutionError.from_cell_and_msg(cell, exec_reply_content)
+nbclient.exceptions.CellExecutionError: An error occurred while executing the following cell:
+------------------
+# interactive display
+%matplotlib widget
+import ipywidgets as widgets
+import matplotlib.pyplot as plt
+import numpy as np
+
+def plot_observed_vs_predicted(beta_hats, X, y):
+    """ Plot observed vs predicted data
+
+    Args:
+    x (ndarray): observed x values
+    y (ndarray): observed y values
+    y_hat (ndarray): predicted y values
+    beta_hats (ndarray): An array of shape (betas,) that contains the estimate of the slope parameter(s)
+
+    """
+    y_hat, MSE_val = mse(beta_hats, X, y)
+    
+    fig, ax = plt.subplots()
+    ax.scatter(X[:,1], y, label='Observed')  # our data scatter plot
+    ax.plot(X[:,1], y_hat, color='r', label='Fit')  # our estimated model
+
+    # plot residuals
+    ymin = np.minimum(y, y_hat)
+    ymax = np.maximum(y, y_hat)
+    ax.vlines(X[:,1], ymin, ymax, 'g', alpha=0.5, label='Residuals')
+
+    ax.set(
+        title=fr"$intercept={beta_hats[0]:0.2f}, \hat{{\beta}}$ = {beta_hats[1]:0.2f}, MSE = {MSE_val:.2f}",
+        xlabel='x',
+        ylabel='y')
+    
+    ax.legend()
+    plt.show()
+
+# %config InlineBackend.figure_format = 'retina'
+
+@widgets.interact(beta_hat=widgets.FloatSlider(-1.75, min=-3, max=0),
+                  intercept=widgets.FloatSlider(intercept, min=100, max=400))
+
+def plot_data_estimate(intercept, beta_hat):
+    plot_observed_vs_predicted([intercept, beta_hat], X, y)
+------------------
+
+[0;31m---------------------------------------------------------------------------[0m
+[0;31mModuleNotFoundError[0m                       Traceback (most recent call last)
+[0;32m/tmp/ipykernel_3897/2654321213.py[0m in [0;36m<module>[0;34m[0m
+[1;32m      1[0m [0;31m# interactive display[0m[0;34m[0m[0;34m[0m[0;34m[0m[0m
+[0;32m----> 2[0;31m [0mget_ipython[0m[0;34m([0m[0;34m)[0m[0;34m.[0m[0mrun_line_magic[0m[0;34m([0m[0;34m'matplotlib'[0m[0;34m,[0m [0;34m'widget'[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[0m[1;32m      3[0m [0;32mimport[0m [0mipywidgets[0m [0;32mas[0m [0mwidgets[0m[0;34m[0m[0;34m[0m[0m
+[1;32m      4[0m [0;32mimport[0m [0mmatplotlib[0m[0;34m.[0m[0mpyplot[0m [0;32mas[0m [0mplt[0m[0;34m[0m[0;34m[0m[0m
+[1;32m      5[0m [0;32mimport[0m [0mnumpy[0m [0;32mas[0m [0mnp[0m[0;34m[0m[0;34m[0m[0m
+
+[0;32m/usr/share/miniconda3/envs/gu-psyc-347-jb/lib/python3.7/site-packages/IPython/core/interactiveshell.py[0m in [0;36mrun_line_magic[0;34m(self, magic_name, line, _stack_depth)[0m
+[1;32m   2346[0m                 [0mkwargs[0m[0;34m[[0m[0;34m'local_ns'[0m[0;34m][0m [0;34m=[0m [0mself[0m[0;34m.[0m[0mget_local_scope[0m[0;34m([0m[0mstack_depth[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[1;32m   2347[0m             [0;32mwith[0m [0mself[0m[0;34m.[0m[0mbuiltin_trap[0m[0;34m:[0m[0;34m[0m[0;34m[0m[0m
+[0;32m-> 2348[0;31m                 [0mresult[0m [0;34m=[0m [0mfn[0m[0;34m([0m[0;34m*[0m[0margs[0m[0;34m,[0m [0;34m**[0m[0mkwargs[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[0m[1;32m   2349[0m             [0;32mreturn[0m [0mresult[0m[0;34m[0m[0;34m[0m[0m
+[1;32m   2350[0m [0;34m[0m[0m
+
+[0;32m/usr/share/miniconda3/envs/gu-psyc-347-jb/lib/python3.7/site-packages/decorator.py[0m in [0;36mfun[0;34m(*args, **kw)[0m
+[1;32m    230[0m             [0;32mif[0m [0;32mnot[0m [0mkwsyntax[0m[0;34m:[0m[0;34m[0m[0;34m[0m[0m
+[1;32m    231[0m                 [0margs[0m[0;34m,[0m [0mkw[0m [0;34m=[0m [0mfix[0m[0;34m([0m[0margs[0m[0;34m,[0m [0mkw[0m[0;34m,[0m [0msig[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[0;32m--> 232[0;31m             [0;32mreturn[0m [0mcaller[0m[0;34m([0m[0mfunc[0m[0;34m,[0m [0;34m*[0m[0;34m([0m[0mextras[0m [0;34m+[0m [0margs[0m[0;34m)[0m[0;34m,[0m [0;34m**[0m[0mkw[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[0m[1;32m    233[0m     [0mfun[0m[0;34m.[0m[0m__name__[0m [0;34m=[0m [0mfunc[0m[0;34m.[0m[0m__name__[0m[0;34m[0m[0;34m[0m[0m
+[1;32m    234[0m     [0mfun[0m[0;34m.[0m[0m__doc__[0m [0;34m=[0m [0mfunc[0m[0;34m.[0m[0m__doc__[0m[0;34m[0m[0;34m[0m[0m
+
+[0;32m/usr/share/miniconda3/envs/gu-psyc-347-jb/lib/python3.7/site-packages/IPython/core/magic.py[0m in [0;36m<lambda>[0;34m(f, *a, **k)[0m
+[1;32m    185[0m     [0;31m# but it's overkill for just that one bit of state.[0m[0;34m[0m[0;34m[0m[0;34m[0m[0m
+[1;32m    186[0m     [0;32mdef[0m [0mmagic_deco[0m[0;34m([0m[0marg[0m[0;34m)[0m[0;34m:[0m[0;34m[0m[0;34m[0m[0m
+[0;32m--> 187[0;31m         [0mcall[0m [0;34m=[0m [0;32mlambda[0m [0mf[0m[0;34m,[0m [0;34m*[0m[0ma[0m[0;34m,[0m [0;34m**[0m[0mk[0m[0;34m:[0m [0mf[0m[0;34m([0m[0;34m*[0m[0ma[0m[0;34m,[0m [0;34m**[0m[0mk[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[0m[1;32m    188[0m [0;34m[0m[0m
+[1;32m    189[0m         [0;32mif[0m [0mcallable[0m[0;34m([0m[0marg[0m[0;34m)[0m[0;34m:[0m[0;34m[0m[0;34m[0m[0m
+
+[0;32m/usr/share/miniconda3/envs/gu-psyc-347-jb/lib/python3.7/site-packages/IPython/core/magics/pylab.py[0m in [0;36mmatplotlib[0;34m(self, line)[0m
+[1;32m     97[0m             [0mprint[0m[0;34m([0m[0;34m"Available matplotlib backends: %s"[0m [0;34m%[0m [0mbackends_list[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[1;32m     98[0m         [0;32melse[0m[0;34m:[0m[0;34m[0m[0;34m[0m[0m
+[0;32m---> 99[0;31m             [0mgui[0m[0;34m,[0m [0mbackend[0m [0;34m=[0m [0mself[0m[0;34m.[0m[0mshell[0m[0;34m.[0m[0menable_matplotlib[0m[0;34m([0m[0margs[0m[0;34m.[0m[0mgui[0m[0;34m.[0m[0mlower[0m[0;34m([0m[0;34m)[0m [0;32mif[0m [0misinstance[0m[0;34m([0m[0margs[0m[0;34m.[0m[0mgui[0m[0;34m,[0m [0mstr[0m[0;34m)[0m [0;32melse[0m [0margs[0m[0;34m.[0m[0mgui[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[0m[1;32m    100[0m             [0mself[0m[0;34m.[0m[0m_show_matplotlib_backend[0m[0;34m([0m[0margs[0m[0;34m.[0m[0mgui[0m[0;34m,[0m [0mbackend[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[1;32m    101[0m [0;34m[0m[0m
+
+[0;32m/usr/share/miniconda3/envs/gu-psyc-347-jb/lib/python3.7/site-packages/IPython/core/interactiveshell.py[0m in [0;36menable_matplotlib[0;34m(self, gui)[0m
+[1;32m   3528[0m                 [0mgui[0m[0;34m,[0m [0mbackend[0m [0;34m=[0m [0mpt[0m[0;34m.[0m[0mfind_gui_and_backend[0m[0;34m([0m[0mself[0m[0;34m.[0m[0mpylab_gui_select[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[1;32m   3529[0m [0;34m[0m[0m
+[0;32m-> 3530[0;31m         [0mpt[0m[0;34m.[0m[0mactivate_matplotlib[0m[0;34m([0m[0mbackend[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[0m[1;32m   3531[0m         [0mconfigure_inline_support[0m[0;34m([0m[0mself[0m[0;34m,[0m [0mbackend[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[1;32m   3532[0m [0;34m[0m[0m
+
+[0;32m/usr/share/miniconda3/envs/gu-psyc-347-jb/lib/python3.7/site-packages/IPython/core/pylabtools.py[0m in [0;36mactivate_matplotlib[0;34m(backend)[0m
+[1;32m    325[0m     [0;32mfrom[0m [0mmatplotlib[0m [0;32mimport[0m [0mpyplot[0m [0;32mas[0m [0mplt[0m[0;34m[0m[0;34m[0m[0m
+[1;32m    326[0m [0;34m[0m[0m
+[0;32m--> 327[0;31m     [0mplt[0m[0;34m.[0m[0mswitch_backend[0m[0;34m([0m[0mbackend[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[0m[1;32m    328[0m [0;34m[0m[0m
+[1;32m    329[0m     [0mplt[0m[0;34m.[0m[0mshow[0m[0;34m.[0m[0m_needmain[0m [0;34m=[0m [0;32mFalse[0m[0;34m[0m[0;34m[0m[0m
+
+[0;32m/usr/share/miniconda3/envs/gu-psyc-347-jb/lib/python3.7/site-packages/matplotlib/pyplot.py[0m in [0;36mswitch_backend[0;34m(newbackend)[0m
+[1;32m    275[0m     [0mbackend_name[0m [0;34m=[0m [0mcbook[0m[0;34m.[0m[0m_backend_module_name[0m[0;34m([0m[0mnewbackend[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[1;32m    276[0m [0;34m[0m[0m
+[0;32m--> 277[0;31m     [0;32mclass[0m [0mbackend_mod[0m[0;34m([0m[0mmatplotlib[0m[0;34m.[0m[0mbackend_bases[0m[0;34m.[0m[0m_Backend[0m[0;34m)[0m[0;34m:[0m[0;34m[0m[0;34m[0m[0m
+[0m[1;32m    278[0m         [0mlocals[0m[0;34m([0m[0;34m)[0m[0;34m.[0m[0mupdate[0m[0;34m([0m[0mvars[0m[0;34m([0m[0mimportlib[0m[0;34m.[0m[0mimport_module[0m[0;34m([0m[0mbackend_name[0m[0;34m)[0m[0;34m)[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[1;32m    279[0m [0;34m[0m[0m
+
+[0;32m/usr/share/miniconda3/envs/gu-psyc-347-jb/lib/python3.7/site-packages/matplotlib/pyplot.py[0m in [0;36mbackend_mod[0;34m()[0m
+[1;32m    276[0m [0;34m[0m[0m
+[1;32m    277[0m     [0;32mclass[0m [0mbackend_mod[0m[0;34m([0m[0mmatplotlib[0m[0;34m.[0m[0mbackend_bases[0m[0;34m.[0m[0m_Backend[0m[0;34m)[0m[0;34m:[0m[0;34m[0m[0;34m[0m[0m
+[0;32m--> 278[0;31m         [0mlocals[0m[0;34m([0m[0;34m)[0m[0;34m.[0m[0mupdate[0m[0;34m([0m[0mvars[0m[0;34m([0m[0mimportlib[0m[0;34m.[0m[0mimport_module[0m[0;34m([0m[0mbackend_name[0m[0;34m)[0m[0;34m)[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[0m[1;32m    279[0m [0;34m[0m[0m
+[1;32m    280[0m     [0mrequired_framework[0m [0;34m=[0m [0m_get_required_interactive_framework[0m[0;34m([0m[0mbackend_mod[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+
+[0;32m/usr/share/miniconda3/envs/gu-psyc-347-jb/lib/python3.7/importlib/__init__.py[0m in [0;36mimport_module[0;34m(name, package)[0m
+[1;32m    125[0m                 [0;32mbreak[0m[0;34m[0m[0;34m[0m[0m
+[1;32m    126[0m             [0mlevel[0m [0;34m+=[0m [0;36m1[0m[0;34m[0m[0;34m[0m[0m
+[0;32m--> 127[0;31m     [0;32mreturn[0m [0m_bootstrap[0m[0;34m.[0m[0m_gcd_import[0m[0;34m([0m[0mname[0m[0;34m[[0m[0mlevel[0m[0;34m:[0m[0;34m][0m[0;34m,[0m [0mpackage[0m[0;34m,[0m [0mlevel[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
+[0m[1;32m    128[0m [0;34m[0m[0m
+[1;32m    129[0m [0;34m[0m[0m
+
+[0;32m/usr/share/miniconda3/envs/gu-psyc-347-jb/lib/python3.7/importlib/_bootstrap.py[0m in [0;36m_gcd_import[0;34m(name, package, level)[0m
+
+[0;32m/usr/share/miniconda3/envs/gu-psyc-347-jb/lib/python3.7/importlib/_bootstrap.py[0m in [0;36m_find_and_load[0;34m(name, import_)[0m
+
+[0;32m/usr/share/miniconda3/envs/gu-psyc-347-jb/lib/python3.7/importlib/_bootstrap.py[0m in [0;36m_find_and_load_unlocked[0;34m(name, import_)[0m
+
+[0;32m/usr/share/miniconda3/envs/gu-psyc-347-jb/lib/python3.7/importlib/_bootstrap.py[0m in [0;36m_call_with_frames_removed[0;34m(f, *args, **kwds)[0m
+
+[0;32m/usr/share/miniconda3/envs/gu-psyc-347-jb/lib/python3.7/importlib/_bootstrap.py[0m in [0;36m_gcd_import[0;34m(name, package, level)[0m
+
+[0;32m/usr/share/miniconda3/envs/gu-psyc-347-jb/lib/python3.7/importlib/_bootstrap.py[0m in [0;36m_find_and_load[0;34m(name, import_)[0m
+
+[0;32m/usr/share/miniconda3/envs/gu-psyc-347-jb/lib/python3.7/importlib/_bootstrap.py[0m in [0;36m_find_and_load_unlocked[0;34m(name, import_)[0m
+
+[0;31mModuleNotFoundError[0m: No module named 'ipympl'
+ModuleNotFoundError: No module named 'ipympl'
+
