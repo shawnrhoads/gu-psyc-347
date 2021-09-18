@@ -28,7 +28,7 @@ plot_observed_vs_predicted([res.x[0], res.x[1]], X, y)
 
 [0;31m---------------------------------------------------------------------------[0m
 [0;31mNameError[0m                                 Traceback (most recent call last)
-[0;32m/tmp/ipykernel_4621/2049133039.py[0m in [0;36m<module>[0;34m[0m
+[0;32m/tmp/ipykernel_4629/2049133039.py[0m in [0;36m<module>[0;34m[0m
 [1;32m      5[0m [0;34m[0m[0m
 [1;32m      6[0m [0mprint[0m[0;34m([0m[0;34mf'b0, b1 = {(res.x)}, MSE = {res.fun}'[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
 [0;32m----> 7[0;31m [0mplot_observed_vs_predicted[0m[0;34m([0m[0;34m[[0m[0mres[0m[0;34m.[0m[0mx[0m[0;34m[[0m[0;36m0[0m[0;34m][0m[0;34m,[0m [0mres[0m[0;34m.[0m[0mx[0m[0;34m[[0m[0;36m1[0m[0;34m][0m[0;34m][0m[0;34m,[0m [0mX[0m[0;34m,[0m [0my[0m[0;34m)[0m[0;34m[0m[0;34m[0m[0m
