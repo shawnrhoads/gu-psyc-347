@@ -1,5 +1,5 @@
-# Course Homepage
-Last updated: June 2021</br>
+# Computational Models of Human Social Behavior and Neuroscience
+Last updated: September 2021</br>
 The content in this Jupyter Book is subject to change.
 
 ## Course information 📝
