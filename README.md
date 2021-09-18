@@ -1,7 +1,7 @@
-[![book](https://github.com/shawnrhoads/gu-psyc-347/actions/workflows/deploy-book.yml/badge.svg)](https://github.com/shawnrhoads/gu-psyc-347/actions/workflows/deploy-book.yml)
+[![Jupyter Book Badge](https://jupyterbook.org/badge.svg)](https://shawnrhoads.github.io/gu-psyc-347) [![book](https://github.com/shawnrhoads/gu-psyc-347/actions/workflows/deploy-book.yml/badge.svg)](https://github.com/shawnrhoads/gu-psyc-347/actions/workflows/deploy-book.yml)
 
 # PSYC 347 - Computational Models of Human Social Behavior (and Neuroscience)
-Last updated: June 2021</br>
+Last updated: September 2021</br>
 The content in this Jupyter Book is subject to change.
 
 ## Course information 📝
