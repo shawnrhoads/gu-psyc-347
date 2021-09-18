@@ -4,7 +4,7 @@
 # This is also the "master list" of all allowed keys and values.
 
 #######################################################################################
-title: Computational Models of Human Social Behavior (and Neuroscience) # The title of the book. Will be placed in the left navbar.
+title: "" # The title of the book. Will be placed in the left navbar.
 author: Shawn A. Rhoads # The author of the book
 copyright: '2021' # Copyright year to be placed in the footer
 logo: 'static/images/logo.png' # A path to the book logo
