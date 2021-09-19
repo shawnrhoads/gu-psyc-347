@@ -303,12 +303,12 @@
   <a class="reference internal nav-link" href="#describing-data-using-pandas">
    Describing Data using Pandas
   </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#loading-data">
+   Loading data
+  </a>
   <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#loading-data">
-     Loading data
-    </a>
-   </li>
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#creating-custom-dataframes">
      Creating custom DataFrames
@@ -347,7 +347,7 @@
         
               <div>
                 
-  <p><a class="reference external" href="https://colab.research.google.com/github/shawnrhoads/gu-psyc-347/blob/master/docs/module-01-02_Working-with-Data.ipynb"><img alt="Open In Colab" src="https://colab.research.google.com/assets/colab-badge.svg" /></a></p>
+  <p><a href="https://colab.research.google.com/github/shawnrhoads/gu-psyc-347/blob/master/docs/module-01-02_Working-with-Data.ipynb" target="_blank"><img alt="Open In Colab" src="https://colab.research.google.com/assets/colab-badge.svg" /></a></p>
 <div class="section" id="working-with-data">
 <h1>Working with Data<a class="headerlink" href="#working-with-data" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="describing-data-using-pandas">
@@ -364,8 +364,9 @@
 </div>
 </div>
 <p>Here, we will load a dataset as a <code class="docutils literal notranslate"><span class="pre">pandas.DataFrame</span></code>, and investigate its attributes. We will see <code class="docutils literal notranslate"><span class="pre">N</span></code> rows for each subject, and <code class="docutils literal notranslate"><span class="pre">M</span></code> columns for each variable.</p>
+</div>
 <div class="section" id="loading-data">
-<h3>Loading data<a class="headerlink" href="#loading-data" title="Permalink to this headline">¶</a></h3>
+<h2>Loading data<a class="headerlink" href="#loading-data" title="Permalink to this headline">¶</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># here, we are just going to download data from the web</span>
@@ -410,7 +411,7 @@
 <p>Looks like we will have 131 rows (usually subjects, but can be multiple observations per subject) and 126 columns (usually variables)</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Let&#39;s output the first 5 rows of the df</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># let&#39;s output the first 5 rows of the df</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">())</span>
 </pre></div>
 </div>
@@ -463,8 +464,7 @@
 </div>
 </div>
 </div>
-<hr></div>
-<div class="section" id="creating-custom-dataframes">
+<hr><div class="section" id="creating-custom-dataframes">
 <h3>Creating custom DataFrames<a class="headerlink" href="#creating-custom-dataframes" title="Permalink to this headline">¶</a></h3>
 <p>We can also create our own dataframe. For example, here’s a dataframe containing 20 rows and 3 columns of random numbers.</p>
 <div class="cell docutils container">
@@ -476,26 +476,26 @@
 </div>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>    column A  column B  column C
-0   0.325245  0.145217  1.017905
-1  -0.024322  1.407126 -0.454090
-2   0.206608  0.527034 -0.653687
-3   0.750253  0.305438 -1.465287
-4  -1.938347  0.367954  0.251343
-5   1.652730 -0.431614 -0.885678
-6   1.390552 -0.567872  2.237235
-7  -0.284737  0.675511  0.165165
-8  -0.513907  0.154964 -0.242385
-9  -1.275638 -0.308827  0.698095
-10  0.303483 -0.039010  0.158911
-11  1.978197 -0.421820 -1.667330
-12 -0.271494 -0.620538 -0.450450
-13 -1.178461  0.815081  1.079369
-14  1.082056 -0.456829  0.802843
-15 -0.488135  1.104923 -0.797361
-16  0.352726 -0.270482 -0.235772
-17  1.155893  0.643025 -0.829226
-18  0.456236  0.311264 -0.892635
-19  0.855561  0.621584 -2.183380
+0   1.041286 -0.913587 -0.384832
+1   0.702426  0.680539  0.773079
+2  -1.479445 -0.331574 -0.818792
+3  -0.065261 -1.112442  1.469333
+4   1.510133  0.050790 -1.471957
+5   0.618693 -0.228030  2.894623
+6   0.705529 -0.727407  0.390066
+7  -0.165599 -0.800631 -1.155212
+8  -0.454490  0.828434 -0.285601
+9  -0.325243  0.994232 -0.420535
+10 -0.011758 -0.322312  1.409693
+11 -1.390821  0.438102  0.348902
+12  0.163261 -1.699138  0.921469
+13  0.100372  0.468730 -0.146230
+14  2.072836 -0.158440 -0.983241
+15  1.083445 -2.144377  0.803745
+16 -0.555992 -0.267039  1.668642
+17 -1.527320  1.154129 -0.126889
+18  0.334408 -0.467155  0.451926
+19 -0.598657 -0.697366  0.497258
 </pre></div>
 </div>
 </div>
@@ -511,11 +511,11 @@
 </div>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>   COLUMN A  COLUMN B  COLUMN C
-0  0.325245  0.145217  1.017905
-1 -0.024322  1.407126 -0.454090
-2  0.206608  0.527034 -0.653687
-3  0.750253  0.305438 -1.465287
-4 -1.938347  0.367954  0.251343
+0  1.041286 -0.913587 -0.384832
+1  0.702426  0.680539  0.773079
+2 -1.479445 -0.331574 -0.818792
+3 -0.065261 -1.112442  1.469333
+4  1.510133  0.050790 -1.471957
 </pre></div>
 </div>
 </div>
@@ -530,11 +530,11 @@
 </div>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>           A         B         C
-15 -0.488135  1.104923 -0.797361
-16  0.352726 -0.270482 -0.235772
-17  1.155893  0.643025 -0.829226
-18  0.456236  0.311264 -0.892635
-19  0.855561  0.621584 -2.183380
+15  1.083445 -2.144377  0.803745
+16 -0.555992 -0.267039  1.668642
+17 -1.527320  1.154129 -0.126889
+18  0.334408 -0.467155  0.451926
+19 -0.598657 -0.697366  0.497258
 </pre></div>
 </div>
 </div>
@@ -594,26 +594,26 @@
 </div>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>           A         B         C
-0   0.325245  0.145217  1.017905
-1  -0.024322  1.407126 -0.454090
-2   0.206608  0.527034 -0.653687
-3   0.750253  0.305438 -1.465287
-4  -1.938347  0.367954  0.251343
-5   1.652730 -0.431614 -0.885678
-6   1.390552 -0.567872  2.237235
-7  -0.284737  0.675511  0.165165
-8  -0.513907  0.154964 -0.242385
-9  -1.275638 -0.308827  0.698095
-10  0.303483 -0.039010  0.158911
-11  1.978197 -0.421820 -1.667330
-12 -0.271494 -0.620538 -0.450450
-13 -1.178461  0.815081  1.079369
-14  1.082056 -0.456829  0.802843
-15 -0.488135  1.104923 -0.797361
-16  0.352726 -0.270482 -0.235772
-17  1.155893  0.643025 -0.829226
-18  0.456236  0.311264 -0.892635
-19  0.855561  0.621584 -2.183380
+0   1.041286 -0.913587 -0.384832
+1   0.702426  0.680539  0.773079
+2  -1.479445 -0.331574 -0.818792
+3  -0.065261 -1.112442  1.469333
+4   1.510133  0.050790 -1.471957
+5   0.618693 -0.228030  2.894623
+6   0.705529 -0.727407  0.390066
+7  -0.165599 -0.800631 -1.155212
+8  -0.454490  0.828434 -0.285601
+9  -0.325243  0.994232 -0.420535
+10 -0.011758 -0.322312  1.409693
+11 -1.390821  0.438102  0.348902
+12  0.163261 -1.699138  0.921469
+13  0.100372  0.468730 -0.146230
+14  2.072836 -0.158440 -0.983241
+15  1.083445 -2.144377  0.803745
+16 -0.555992 -0.267039  1.668642
+17 -1.527320  1.154129 -0.126889
+18  0.334408 -0.467155  0.451926
+19 -0.598657 -0.697366  0.497258
 20  0.000000  0.000000  0.000000
 21  0.000000  0.000000  0.000000
 22  0.000000  0.000000  0.000000
@@ -1395,7 +1395,7 @@ dtype: float64
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0x7f56ee5d84d0&gt;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0x7f66380b0710&gt;
 </pre></div>
 </div>
 <img alt="_images/module-01-02_Working-with-Data_66_1.png" src="_images/module-01-02_Working-with-Data_66_1.png" />
@@ -1418,7 +1418,7 @@ dtype: float64
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0x7f56ee5743d0&gt;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0x7f661ffcfb50&gt;
 </pre></div>
 </div>
 <img alt="_images/module-01-02_Working-with-Data_68_1.png" src="_images/module-01-02_Working-with-Data_68_1.png" />

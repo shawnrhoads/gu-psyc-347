@@ -76,6 +76,9 @@ Crockett, M. J. (2016). How Formal Models Can Illuminate Mechanisms of Moral Jud
 - Jara-Ettinger, J. (2019). Theory of mind as inverse reinforcement learning. Current Opinion in Behavioral Sciences, 29, 105–110.
 - Kim, M., Park, B. K., & Young, L. (2020). The Psychology of Motivated versus Rational Impression Updating. Trends in Cognitive Sciences, 24(2), 101–111. 
 - Lockwood, P. L., Wittmann, M. K., Apps, M. A. J., Klein-Flügge, M. C., Crockett, M. J., Humphreys, G. W., & Rushworth, M. F. S. (2018). Neural mechanisms for learning self and other ownership. Nature Communications, 9(1), 4747.
+- Rosenblau, G., Korn, C. W. & Pelphrey, K. A. (2018). A computational account of optimizing social predictions reveals that adolescents are conservative learners in social contexts. Journal of Neuroscience, 38, 974–988.
+- Rosenblau, G., Korn, C. W., Dutton, A., Lee, D., & Pelphrey, K. A. (2021). Neurocognitive Mechanisms of Social Inferences in Typical and Autistic Adolescents. Biological Psychiatry: Cognitive Neuroscience and Neuroimaging, 6(8), 782–791.
+- Rosenthal, I. A., Hutcherson, C. A., Adolphs, R., & Stanley, D. A. (2019). Deconstructing Theory-of-Mind Impairment in High-Functioning Adults with Autism. Current Biology, 29(3), 513-519. 
 - Todorov, A. (2018). Flexible updating of beliefs in order to forgive. Nature Human Behaviour, 2(10), 722–723.
 
 ### Social influence
