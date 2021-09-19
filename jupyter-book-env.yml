@@ -13,6 +13,7 @@ dependencies:
   - scipy
   - numpy
   - matplotlib
+  - seaborn
   - widgetsnbextension
   - ipywidgets
   - pip:
