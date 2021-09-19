@@ -5,7 +5,7 @@ The content in this Jupyter Book is subject to change.
 ## PSYC 347: Computational Models of Human Social Behavior (and Neuroscience)
 TR: 11:00am-12:15pm, Online/Remote
 
-The goal of <u>computational modeling</u> in behavioral and psychological science is using precise mathematical models to make better sense of behavioral (or neural) data. Over the past decade, this practice has revolutionized social psychological science (and neuroscience) by allowing researchers to test specific theories and hypotheses and/or explain unobservable aspects of complex social cognitive processes and behaviors.
+The goal of <u>computational modeling</u> in behavioral and psychological science is using mathematical models to characterize behavioral (or neural) data. Over the past decade, this practice has revolutionized social psychological science (and neuroscience) by allowing researchers to formalize theories as constrained mathematical models and test specific hypotheses to explain unobservable aspects of complex social cognitive processes and behaviors.
 
 This course comprises lecture-based, discussion-based, and lab-based instruction. At least one-third of class sessions will be "hands-on." We will discuss relevant book chapters and journal articles, and work with simulated and real data using the [Python programming language](https://www.python.org/) (no prior programming experience necessary) as we survey some selected areas of research at the intersection of computational modeling and social behavior. These selected topics will span a broad set of social psychological abilities including (1) learning from and for others, (2) learning about others, and (3) social influence on decision-making and mental states.
 
@@ -44,12 +44,12 @@ Here is a good tutorial on how to email your professor: http://www.wikihow.com/E
 
 ## Course goals
 
-1.	Understand the following: what are computational models, why use computational models, when to use computational models, and how data are fit to models.
-2.	Survey selected topics on social behavior through lectures, readings, discussions, and hands-on tutorials
-3.	Learn how to write code for data science using the [Python programming language](https://www.python.org/) and [Jupyter Notebooks](https://jupyter.org/)
-4.	Work collaboratively to “fit” data to models and evaluate their performance
-5.	Interpret the results of a social behavioral experiment
-6.	Gain a richer understanding of how computational modeling advances psychological science
+1. Understand the following: what are computational models, why use computational models, when to use computational models, and how models are fit to data
+2. Survey selected topics on social behavior through lectures, readings, discussions, and hands-on tutorials
+3. Learn how to write code for data science using the Python programming language and Jupyter Notebooks
+4. Fit models to data and evaluate their performance
+5. Interpret the results of a social behavioral experiment
+6. Gain a richer understanding of how computational modeling advances psychological science and neuroscience
 
 ## Meeting these goals
 
