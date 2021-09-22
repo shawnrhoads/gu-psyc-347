@@ -353,7 +353,7 @@
         
               <div>
                 
-  <p><a href="https://colab.research.google.com/github/shawnrhoads/gu-psyc-347/blob/master/docs/module-04-00_Social-Learning.ipynb" target="_blank"><img alt="Open In Colab" src="https://colab.research.google.com/assets/colab-badge.svg" /></a></p>
+  <p><a target="_blank" rel="noopener noreferrer" href="https://colab.research.google.com/github/shawnrhoads/gu-psyc-347/blob/master/docs/module-04-00_Social-Learning.ipynb"><img alt="Open In Colab" src="https://colab.research.google.com/assets/colab-badge.svg" /></a></p>
 <div class="section" id="social-learning">
 <h1>Social Learning<a class="headerlink" href="#social-learning" title="Permalink to this headline">¶</a></h1>
 <p>These exercises were inspired by and adapted from <a class="reference external" href="http://www.hannekedenouden.ruhosting.nl/RLtutorial/Instructions.html">Models of Learning</a> by Jill O’Reilly and Hanneke den Ouden, <a class="reference external" href="http://u.arizona.edu/~bob/web_NSCS344/">NSCS 344 - Modeling the Mind</a> by Robert C. Wilson, the <a class="reference external" href="https://github.com/NeuromatchAcademy/course-content">Neuromatch Academy tutorials</a> [<a class="reference external" href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>], <a class="reference external" href="https://doi.org/10.1073/pnas.1603198113">Lockwood, et al. (2016)</a>, and <a class="reference external" href="https://www.jneurosci.org/content/40/38/7286">Lengersdorff, et al. (2020)</a></p>
@@ -390,12 +390,12 @@
 <p>This model assumed random responding across trials, and thus did not assume learning. The value for <span class="math notranslate nohighlight">\(\alpha\)</span> was set to 0 (equivalent to no learning), and the value for <span class="math notranslate nohighlight">\(\theta\)</span> was varied between <span class="math notranslate nohighlight">\(0\)</span> and <span class="math notranslate nohighlight">\(\infty\)</span>.</p>
 <hr width=50% align=center><p><strong>What other models are plausible and could have been tested?</strong><br>Let’s think of three additional models.</p>
 <ol class="simple">
-<li><p>(0α1β): random responding governed by 1 <span class="math notranslate nohighlight">\(\theta\)</span></p></li>
-<li><p>(1α1β): 1 <span class="math notranslate nohighlight">\(\alpha\)</span> for all three recipients, 1 <span class="math notranslate nohighlight">\(\alpha\)</span> for all three recipients</p></li>
-<li><p>(**α**β): ?</p></li>
-<li><p>(**α**β): ?</p></li>
-<li><p>(**α**β): ?</p></li>
-<li><p>(3α3β): <span class="math notranslate nohighlight">\(\alpha_{Self}\)</span>, 1 <span class="math notranslate nohighlight">\(\alpha_{Social}\)</span>, 1 <span class="math notranslate nohighlight">\(\alpha_{NoOne}\)</span>, 1 <span class="math notranslate nohighlight">\(\theta_{Self}\)</span>, 1 <span class="math notranslate nohighlight">\(\theta_{Social}\)</span>, 1 <span class="math notranslate nohighlight">\(\theta_{NoOne}\)</span></p></li>
+<li><p>(0α1θ): random responding governed by 1 <span class="math notranslate nohighlight">\(\theta\)</span></p></li>
+<li><p>(1α1θ): 1 <span class="math notranslate nohighlight">\(\alpha\)</span> for all three recipients, 1 <span class="math notranslate nohighlight">\(\alpha\)</span> for all three recipients</p></li>
+<li><p>(**α**): ?</p></li>
+<li><p>(**α**θ): ?</p></li>
+<li><p>(**α**θ): ?</p></li>
+<li><p>(3α3θ): <span class="math notranslate nohighlight">\(\alpha_{Self}\)</span>, 1 <span class="math notranslate nohighlight">\(\alpha_{Social}\)</span>, 1 <span class="math notranslate nohighlight">\(\alpha_{NoOne}\)</span>, 1 <span class="math notranslate nohighlight">\(\theta_{Self}\)</span>, 1 <span class="math notranslate nohighlight">\(\theta_{Social}\)</span>, 1 <span class="math notranslate nohighlight">\(\theta_{NoOne}\)</span></p></li>
 </ol>
 <p><strong>Why might some of these other models perform better than the 3α3θ model?</strong></p>
 <hr></div>
@@ -422,15 +422,13 @@
 <div class="math notranslate nohighlight">
 \[p_{t}(a | Q_{t}^{a}) = \frac{\exp(\theta \cdot Q_{t}^{a})}{\sum_{a} \exp(\theta \cdot Q_{t}^{a})}\]</div>
 <hr width=50% align=center>
-<p><strong>Hint:</strong> Think about what influenced your behavior. Did you care about anything other than the prediction error or the value associated with each? Did the valence of the outcomes matter (remember Lengersdorff, et al., 2020)? Can additional parameters in your model help explain behavior?</p>
+<p><strong>Hint:</strong> Think about what influenced your behavior. Did you care about anything other than the prediction error or the value associated with each? Did the valence of the outcomes matter (remember <a class="reference external" href="https://www.jneurosci.org/content/40/38/7286">Lengersdorff, et al. (2020)</a>)? Can additional parameters in your model help explain behavior?</p>
 <hr></div>
 <div class="section" id="implementation-of-your-model">
 <h2>Implementation of your model<a class="headerlink" href="#implementation-of-your-model" title="Permalink to this headline">¶</a></h2>
 <p>Now that you’ve discussed (1) the task, (2) possible explanations for behavior during the task, and (3) a mathematical explanation for your model(s), let’s now write a function in Python for your model.</p>
 <p><em><strong>DELETE THIS TEXT AND DESCRIBE YOUR MODEL IN THIS MARKDOWN CELL</strong></em></p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">New_Model</span><span class="p">(</span><span class="n">params</span><span class="p">,</span> <span class="n">choices</span><span class="p">,</span> <span class="n">outcomes</span><span class="p">):</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">New_Model</span><span class="p">(</span><span class="n">params</span><span class="p">,</span> <span class="n">choices</span><span class="p">,</span> <span class="n">outcomes</span><span class="p">):</span>
     
     
     <span class="k">raise</span> <span class="ne">NotImplementedError</span><span class="p">(</span><span class="s2">&quot;Student exercise: write a function to implement your new learning model based on discussions in your group. This function should assume three inputs: parameters to be estimated, choices across trials during the task, and outcomes related to those choices. It should return the negative loglikelihood determined by the choice probabilities across trials. You may use code from previous tutorials. Once you have completed this function, you may delete this line. Please email your instructor your code.&quot;</span><span class="p">)</span>
@@ -438,8 +436,6 @@
     
     <span class="k">return</span> <span class="n">negLL</span>
 </pre></div>
-</div>
-</div>
 </div>
 </div>
 </div>
