@@ -44,8 +44,6 @@
     <script src="_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.20.0/dist/embed-amd.js"></script>
-    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
     <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
     <script >
         const thebe_selector = ".thebe"
@@ -1232,12 +1230,12 @@
 </div>
 </div>
 <hr width="50%"><p>Now, we should have run 5-6 models that we can compare to assess which model might explain the data best. Remember we store the parameter fits in Pandas DataFrames: <code class="docutils literal notranslate"><span class="pre">df0a</span></code>, <code class="docutils literal notranslate"><span class="pre">df0b</span></code>, <code class="docutils literal notranslate"><span class="pre">df1</span></code>, <code class="docutils literal notranslate"><span class="pre">df2</span></code>, <code class="docutils literal notranslate"><span class="pre">d3</span></code>, and maybe <code class="docutils literal notranslate"><span class="pre">df4</span></code> (if you completed the bonus).</p>
-<p>Let’s use this information to compute Bayesian Information Criterion (<span class="math notranslate nohighlight">\(BIC\)</span>) across subjects for each model. One way in which we can do so is by summing the negative loglikelihoods across subjects for each model and using that value to compute a <span class="math notranslate nohighlight">\(BIC\)</span> score. Then, we can plot each <span class="math notranslate nohighlight">\(BIC\)</span> to assess model fits. Please do this below.</p>
+<p>Let’s use this information to compute Bayesian Information Criterion ($BIC$) across subjects for each model. One way in which we can do so is by summing the negative loglikelihoods across subjects for each model and using that value to compute a $BIC$ score. Then, we can plot each $BIC$ to assess model fits. Please do this below.</p>
 <p><em><strong>Hints</strong></em></p>
 <ul class="simple">
 <li><p>to compute the sum of the negative likelihoods for the first model, you would use the command: <code class="docutils literal notranslate"><span class="pre">np.nansum(df0a['NLL'].values)</span></code>.</p></li>
-<li><p>You can refer to <a class="reference external" href="https://shawnrhoads.github.io/gu-psyc-347/module-02-01_Nonlinear-Modeling.html#model-comparison">this page</a> to review Bayesian Information Criterion (<span class="math notranslate nohighlight">\(BIC\)</span>), but note that tutorial used <span class="math notranslate nohighlight">\(MSE\)</span> to compute the <span class="math notranslate nohighlight">\(BIC\)</span>. Here, we will use the negative loglikelihood (like <a class="reference external" href="https://shawnrhoads.github.io/gu-psyc-347/module-03-01_Models-of-Learning.html#gradient-descent">in this tutorial</a>). Remember to factor in the number of free parameters in each of your models!</p></li>
-<li><p>Remember we will have 5-6 <span class="math notranslate nohighlight">\(BIC\)</span> values by the end of this tutorial.</p></li>
+<li><p>You can refer to <a class="reference external" href="https://shawnrhoads.github.io/gu-psyc-347/module-02-01_Nonlinear-Modeling.html#model-comparison">this page</a> to review Bayesian Information Criterion ($BIC$), but note that tutorial used $MSE$ to compute the $BIC$. Here, we will use the negative loglikelihood (like <a class="reference external" href="https://shawnrhoads.github.io/gu-psyc-347/module-03-01_Models-of-Learning.html#gradient-descent">in this tutorial</a>). Remember to factor in the number of free parameters in each of your models!</p></li>
+<li><p>Remember we will have 5-6 $BIC$ values by the end of this tutorial.</p></li>
 </ul>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
