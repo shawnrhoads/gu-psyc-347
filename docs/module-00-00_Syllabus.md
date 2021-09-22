@@ -161,7 +161,7 @@ Please visit the [Assignments page](module-00-02_Course-Assignments.html) for th
 
 **Project Proposal - Round 2 [75 points]**: Students will expand their 250-300 word abstract based on feedback from the instructor. Their project proposal should be 2-3 pages (in [NSF GRFP format](https://nsfgrfp.org)) on a hypothetical research study.
 
-**Project Presentation [80 points]**: This presentation will be the “final exam” of this course. Students will present their project proposal to the class (10 minutes each) and determine 2-3 questions for a quick class discussion (5-10 minutes).
+**Project Presentation [80 points]**: This presentation will be the “final exam” of this course. Students will present their project proposal to the class (5-8 minutes each) and determine 2-3 questions for a quick class discussion (3 minutes).
 
 ## Academic integrity
 
