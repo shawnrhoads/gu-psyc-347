@@ -44,6 +44,8 @@
     <script src="_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.20.0/dist/embed-amd.js"></script>
+    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
     <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
     <script >
         const thebe_selector = ".thebe"
@@ -364,32 +366,36 @@
 <p>They tested the following three models:</p>
 <div class="section" id="rescorla-wagner-model-w-six-free-parameters-33">
 <h3>Rescorla-Wagner Model w/ six free parameters (3α3θ)<a class="headerlink" href="#rescorla-wagner-model-w-six-free-parameters-33" title="Permalink to this headline">¶</a></h3>
-<p>Expectations of future reward for action $a$, ($Q_{t+1}^{a}$), should be a function of current expectations $Q_{t}^{a}$ and a prediction error, which is discrepancy between the actual reward that has just been experienced on this trial $r_t$ (coded as 1 or 0 for reward or no reward, respectively) and the expected reward for this trial $t$, ($Q_{t}^{a}$):</p>
-<p>$$Q_{t+1}^{a} = Q_{t}^{a} + \alpha \cdot (r_{t} - Q_{t}^{a})$$</p>
-<p>where the learning rate $\alpha$ controls the extent to which the current expected value is updated by new information. A low $\alpha$ minimizes the influence of the prediction error and the amount that the value is updated. The probability that a subject chooses action $a$ on trial $t$, given the expected values of the available actions $Q_{t}^{a}$, is given by the softmax function:</p>
-<p>$$p_{t}(a | Q_{t}^{a}) = \frac{\exp(\theta \cdot Q_{t}^{a})}{\sum_{a} \exp(\theta \cdot Q_{t}^{a})}$$</p>
-<p>The inverse temperature parameter $\theta$ controls extent to which the subject decides to choose the most rewarding option versus exploring potentially more rewarding actions. The softmax function estimates the trial-by-trial probability of each action by weighting the ratio of expected values by $\theta$. A low $\theta$ would lead to similar action probabilities irrespective of the expected value of each action (resulting in random behavior). A high $\theta$ would lead to consistent behavior, where the action with the higher expected value is invariably selected on each trial.</p>
-<p>In this model, separate $\alpha$ and $\theta$ parameters were estimated for each of the self, prosocial, and no one conditions. This resulted in six free parameters: $\alpha_{Self}$, $\alpha_{Social}$, $\alpha_{NoOne}$, $\theta_{Self}$, $\theta_{Social}$, $\theta_{NoOne}$.</p>
+<p>Expectations of future reward for action <span class="math notranslate nohighlight">\(a\)</span>, (<span class="math notranslate nohighlight">\(Q_{t+1}^{a}\)</span>), should be a function of current expectations <span class="math notranslate nohighlight">\(Q_{t}^{a}\)</span> and a prediction error, which is discrepancy between the actual reward that has just been experienced on this trial <span class="math notranslate nohighlight">\(r_t\)</span> (coded as 1 or 0 for reward or no reward, respectively) and the expected reward for this trial <span class="math notranslate nohighlight">\(t\)</span>, (<span class="math notranslate nohighlight">\(Q_{t}^{a}\)</span>):</p>
+<div class="math notranslate nohighlight">
+\[Q_{t+1}^{a} = Q_{t}^{a} + \alpha \cdot (r_{t} - Q_{t}^{a})\]</div>
+<p>where the learning rate <span class="math notranslate nohighlight">\(\alpha\)</span> controls the extent to which the current expected value is updated by new information. A low <span class="math notranslate nohighlight">\(\alpha\)</span> minimizes the influence of the prediction error and the amount that the value is updated. The probability that a subject chooses action <span class="math notranslate nohighlight">\(a\)</span> on trial <span class="math notranslate nohighlight">\(t\)</span>, given the expected values of the available actions <span class="math notranslate nohighlight">\(Q_{t}^{a}\)</span>, is given by the softmax function:</p>
+<div class="math notranslate nohighlight">
+\[p_{t}(a | Q_{t}^{a}) = \frac{\exp(\theta \cdot Q_{t}^{a})}{\sum_{a} \exp(\theta \cdot Q_{t}^{a})}\]</div>
+<p>The inverse temperature parameter <span class="math notranslate nohighlight">\(\theta\)</span> controls extent to which the subject decides to choose the most rewarding option versus exploring potentially more rewarding actions. The softmax function estimates the trial-by-trial probability of each action by weighting the ratio of expected values by <span class="math notranslate nohighlight">\(\theta\)</span>. A low <span class="math notranslate nohighlight">\(\theta\)</span> would lead to similar action probabilities irrespective of the expected value of each action (resulting in random behavior). A high <span class="math notranslate nohighlight">\(\theta\)</span> would lead to consistent behavior, where the action with the higher expected value is invariably selected on each trial.</p>
+<p>In this model, separate <span class="math notranslate nohighlight">\(\alpha\)</span> and <span class="math notranslate nohighlight">\(\theta\)</span> parameters were estimated for each of the self, prosocial, and no one conditions. This resulted in six free parameters: <span class="math notranslate nohighlight">\(\alpha_{Self}\)</span>, <span class="math notranslate nohighlight">\(\alpha_{Social}\)</span>, <span class="math notranslate nohighlight">\(\alpha_{NoOne}\)</span>, <span class="math notranslate nohighlight">\(\theta_{Self}\)</span>, <span class="math notranslate nohighlight">\(\theta_{Social}\)</span>, <span class="math notranslate nohighlight">\(\theta_{NoOne}\)</span>.</p>
 </div>
 <div class="section" id="simple-rescorla-wagner-model-w-two-free-parameters-11">
 <h3>(Simple) Rescorla-Wagner Model w/ two free parameters (1α1θ)<a class="headerlink" href="#simple-rescorla-wagner-model-w-two-free-parameters-11" title="Permalink to this headline">¶</a></h3>
 <p>Expectations of future rewards followed the same criteria:</p>
-<p>$$Q_{t+1}^{a} = Q_{t}^{a} + \alpha \cdot (r_{t} - Q_{t}^{a})$$</p>
-<p>The probability that a subject chooses action $a$ on trial $t$, given the expected values of the available actions Q_{t}^{a}, is given by the softmax function:</p>
-<p>$$p_{t}(a | Q_{t}^{a}) = \frac{\exp(\theta \cdot Q_{t}^{a})}{\sum_{a} \exp(\theta \cdot Q_{t}^{a})}$$</p>
-<p>However, this model collapsed the $\alpha$ and $\theta$ parameters across each of the self, other, and no one conditions. This resulting in two free parameters: $\alpha$, $\theta$.</p>
+<div class="math notranslate nohighlight">
+\[Q_{t+1}^{a} = Q_{t}^{a} + \alpha \cdot (r_{t} - Q_{t}^{a})\]</div>
+<p>The probability that a subject chooses action <span class="math notranslate nohighlight">\(a\)</span> on trial <span class="math notranslate nohighlight">\(t\)</span>, given the expected values of the available actions Q_{t}^{a}, is given by the softmax function:</p>
+<div class="math notranslate nohighlight">
+\[p_{t}(a | Q_{t}^{a}) = \frac{\exp(\theta \cdot Q_{t}^{a})}{\sum_{a} \exp(\theta \cdot Q_{t}^{a})}\]</div>
+<p>However, this model collapsed the <span class="math notranslate nohighlight">\(\alpha\)</span> and <span class="math notranslate nohighlight">\(\theta\)</span> parameters across each of the self, other, and no one conditions. This resulting in two free parameters: <span class="math notranslate nohighlight">\(\alpha\)</span>, <span class="math notranslate nohighlight">\(\theta\)</span>.</p>
 </div>
 <div class="section" id="null-rescorla-wagner-model-1">
 <h3>(Null) Rescorla-Wagner Model (1θ)<a class="headerlink" href="#null-rescorla-wagner-model-1" title="Permalink to this headline">¶</a></h3>
-<p>This model assumed random responding across trials, and thus did not assume learning. The value for $\alpha$ was set to 0 (equivalent to no learning), and the value for $\theta$ was varied between $0$ and $\infty$.</p>
+<p>This model assumed random responding across trials, and thus did not assume learning. The value for <span class="math notranslate nohighlight">\(\alpha\)</span> was set to 0 (equivalent to no learning), and the value for <span class="math notranslate nohighlight">\(\theta\)</span> was varied between <span class="math notranslate nohighlight">\(0\)</span> and <span class="math notranslate nohighlight">\(\infty\)</span>.</p>
 <hr width=50% align=center><p><strong>What other models are plausible and could have been tested?</strong><br>Let’s think of three additional models.</p>
 <ol class="simple">
-<li><p>(0α1β): random responding governed by 1 $\theta$</p></li>
-<li><p>(1α1β): 1 $\alpha$ for all three recipients, 1 $\alpha$ for all three recipients</p></li>
+<li><p>(0α1β): random responding governed by 1 <span class="math notranslate nohighlight">\(\theta\)</span></p></li>
+<li><p>(1α1β): 1 <span class="math notranslate nohighlight">\(\alpha\)</span> for all three recipients, 1 <span class="math notranslate nohighlight">\(\alpha\)</span> for all three recipients</p></li>
 <li><p>(**α**β): ?</p></li>
 <li><p>(**α**β): ?</p></li>
 <li><p>(**α**β): ?</p></li>
-<li><p>(3α3β): $\alpha_{Self}$, 1 $\alpha_{Social}$, 1 $\alpha_{NoOne}$, 1 $\theta_{Self}$, 1 $\theta_{Social}$, 1 $\theta_{NoOne}$</p></li>
+<li><p>(3α3β): <span class="math notranslate nohighlight">\(\alpha_{Self}\)</span>, 1 <span class="math notranslate nohighlight">\(\alpha_{Social}\)</span>, 1 <span class="math notranslate nohighlight">\(\alpha_{NoOne}\)</span>, 1 <span class="math notranslate nohighlight">\(\theta_{Self}\)</span>, 1 <span class="math notranslate nohighlight">\(\theta_{Social}\)</span>, 1 <span class="math notranslate nohighlight">\(\theta_{NoOne}\)</span></p></li>
 </ol>
 <p><strong>Why might some of these other models perform better than the 3α3θ model?</strong></p>
 <hr></div>
@@ -410,9 +416,11 @@
 </ol>
 <hr width=50% align=center>
 <p><em><strong>Learning rule:</strong></em></p>
-<p>$$Q_{t+1}^{a} = Q_{t}^{a} + \alpha \cdot (r_{t} - Q_{t}^{a})$$</p>
+<div class="math notranslate nohighlight">
+\[Q_{t+1}^{a} = Q_{t}^{a} + \alpha \cdot (r_{t} - Q_{t}^{a})\]</div>
 <p><em><strong>Decision rule:</strong></em></p>
-<p>$$p_{t}(a | Q_{t}^{a}) = \frac{\exp(\theta \cdot Q_{t}^{a})}{\sum_{a} \exp(\theta \cdot Q_{t}^{a})}$$</p>
+<div class="math notranslate nohighlight">
+\[p_{t}(a | Q_{t}^{a}) = \frac{\exp(\theta \cdot Q_{t}^{a})}{\sum_{a} \exp(\theta \cdot Q_{t}^{a})}\]</div>
 <hr width=50% align=center>
 <p><strong>Hint:</strong> Think about what influenced your behavior. Did you care about anything other than the prediction error or the value associated with each? Did the valence of the outcomes matter (remember Lengersdorff, et al., 2020)? Can additional parameters in your model help explain behavior?</p>
 <hr></div>

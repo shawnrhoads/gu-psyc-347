@@ -44,6 +44,8 @@
     <script src="_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.20.0/dist/embed-amd.js"></script>
+    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
     <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
     <script >
         const thebe_selector = ".thebe"
@@ -578,28 +580,31 @@
 <p>We will:</p>
 <ul class="simple">
 <li><p>Define a function that computes the negative loglikelihood given the data and Rescorla-Wagner Model</p></li>
-<li><p>Implement an minimization algorithm that loops through possible combinations of $\alpha$ and $\theta$ for each subject in order to find the parameters that minimize the negative loglikelihood. Each subject ($i$) will have a separate set of parameters $\alpha_i$ and $\theta_i$, which respectively correspond to the learning rate and inverse temperature</p></li>
-<li><p>Compare the estimated parameter values for $\alpha_i$ and $\theta_i$ to your initial predictions in Questions <a class="reference external" href="#2.-Exploring-behavior">#2a-b</a>.</p></li>
+<li><p>Implement an minimization algorithm that loops through possible combinations of <span class="math notranslate nohighlight">\(\alpha\)</span> and <span class="math notranslate nohighlight">\(\theta\)</span> for each subject in order to find the parameters that minimize the negative loglikelihood. Each subject (<span class="math notranslate nohighlight">\(i\)</span>) will have a separate set of parameters <span class="math notranslate nohighlight">\(\alpha_i\)</span> and <span class="math notranslate nohighlight">\(\theta_i\)</span>, which respectively correspond to the learning rate and inverse temperature</p></li>
+<li><p>Compare the estimated parameter values for <span class="math notranslate nohighlight">\(\alpha_i\)</span> and <span class="math notranslate nohighlight">\(\theta_i\)</span> to your initial predictions in Questions <a class="reference external" href="#2.-Exploring-behavior">#2a-b</a>.</p></li>
 </ul>
 <div class="section" id="defining-a-likelihood-function">
 <h3>4. Defining a likelihood function<a class="headerlink" href="#defining-a-likelihood-function" title="Permalink to this headline">¶</a></h3>
-<p>Recall that our goal is to find the parameter values of a model that maximize the likelihood of the data. In the Rescorla-Wagner case, we want to maximize the likelihood (a.k.a. minimize the loglikelihood) of the data given parameter values ($\alpha$ and $\theta$) of the model.</p>
-<p>In the Rescorla-Wagner Model, the likelihood of the data are given by the probability of making a choice on a give trial, $p(c_t)$.</p>
-<p>That is, participants use the stimuli values to guide their decisions, choosing the most valuable option most frequently, but occasionally making ‘mistakes’ (or exploring) by choosing a low value option. One choice rule with these properties is known as the <strong>‘softmax’ choice rule</strong>, which chooses option $k$ with probability:</p>
-<p>$$
+<p>Recall that our goal is to find the parameter values of a model that maximize the likelihood of the data. In the Rescorla-Wagner case, we want to maximize the likelihood (a.k.a. minimize the loglikelihood) of the data given parameter values (<span class="math notranslate nohighlight">\(\alpha\)</span> and <span class="math notranslate nohighlight">\(\theta\)</span>) of the model.</p>
+<p>In the Rescorla-Wagner Model, the likelihood of the data are given by the probability of making a choice on a give trial, <span class="math notranslate nohighlight">\(p(c_t)\)</span>.</p>
+<p>That is, participants use the stimuli values to guide their decisions, choosing the most valuable option most frequently, but occasionally making ‘mistakes’ (or exploring) by choosing a low value option. One choice rule with these properties is known as the <strong>‘softmax’ choice rule</strong>, which chooses option <span class="math notranslate nohighlight">\(k\)</span> with probability:</p>
+<div class="math notranslate nohighlight">
+\[
 p^k_t = \frac{\exp(\theta Q^k_t)}{\sum_{i=1}^K \exp(\theta Q^i_t)}
-$$</p>
-<p>where $\theta$ is the ‘inverse temperature’ parameter that controls the level of stochasticity in the choice, ranging from $\theta = 0$ for completely random responding and $\theta = \infty$ for deterministically choosing the highest value option.</p>
-<p>The value of each stimulus $k$, $Q^k_t$ is updated in response to reward $r_t$ according to:</p>
-<p>$$
+\]</div>
+<p>where <span class="math notranslate nohighlight">\(\theta\)</span> is the ‘inverse temperature’ parameter that controls the level of stochasticity in the choice, ranging from <span class="math notranslate nohighlight">\(\theta = 0\)</span> for completely random responding and <span class="math notranslate nohighlight">\(\theta = \infty\)</span> for deterministically choosing the highest value option.</p>
+<p>The value of each stimulus <span class="math notranslate nohighlight">\(k\)</span>, <span class="math notranslate nohighlight">\(Q^k_t\)</span> is updated in response to reward <span class="math notranslate nohighlight">\(r_t\)</span> according to:</p>
+<div class="math notranslate nohighlight">
+\[
 Q^k_{t+1} = Q^k_t + \alpha (r_t - Q^k_t)
-$$</p>
-<p>where $\alpha$ is the learning rate, which is bounded between 0 and 1 and captures the extent to which the prediction error, $(r_t - Q^k_t)$, updates the value (i.e., a higher $\alpha$ value will put greater weight on the prediction error). For simplicity, we assume that the initial value, $Q^k_0=0$, although it is possible to treat the $Q^k_0$ as a free parameter of the model (this is also the intercept).</p>
-<p>Combining the learning and decision rules gives a simple model of decision making in this task with two free parameters: the learning rate, $\alpha$, and the inverse temperature $\theta$.</p>
-<p>Thus, for any given ($\alpha$ and $\theta$) of the model, the negative loglikelihood $negative \log \mathcal{L}$ will be computed as:</p>
-<p>$$
+\]</div>
+<p>where <span class="math notranslate nohighlight">\(\alpha\)</span> is the learning rate, which is bounded between 0 and 1 and captures the extent to which the prediction error, <span class="math notranslate nohighlight">\((r_t - Q^k_t)\)</span>, updates the value (i.e., a higher <span class="math notranslate nohighlight">\(\alpha\)</span> value will put greater weight on the prediction error). For simplicity, we assume that the initial value, <span class="math notranslate nohighlight">\(Q^k_0=0\)</span>, although it is possible to treat the <span class="math notranslate nohighlight">\(Q^k_0\)</span> as a free parameter of the model (this is also the intercept).</p>
+<p>Combining the learning and decision rules gives a simple model of decision making in this task with two free parameters: the learning rate, <span class="math notranslate nohighlight">\(\alpha\)</span>, and the inverse temperature <span class="math notranslate nohighlight">\(\theta\)</span>.</p>
+<p>Thus, for any given (<span class="math notranslate nohighlight">\(\alpha\)</span> and <span class="math notranslate nohighlight">\(\theta\)</span>) of the model, the negative loglikelihood <span class="math notranslate nohighlight">\(negative \log \mathcal{L}\)</span> will be computed as:</p>
+<div class="math notranslate nohighlight">
+\[
 negative \log \mathcal{L} = -\sum_{t=1}^T \log p(c_t)
-$$</p>
+\]</div>
 <p>Below we will define a function that computes the negative loglikelihood given the data and Rescorla-Wagner Model (see <a class="reference external" href="https://shawnrhoads.github.io/gu-psyc-347/module-01-01_Intro-to-Python.html">Intro to Python</a> for functions, <a class="reference external" href="https://shawnrhoads.github.io/gu-psyc-347/module-02-02_Modeling-Exercises.html">Modeling Exercises</a> and <a class="reference external" href="https://shawnrhoads.github.io/gu-psyc-347/module-03-01_Models-of-Learning.html">Models of Learning</a> for negative loglikelihood, and <a class="reference external" href="https://shawnrhoads.github.io/gu-psyc-347/module-03-01_Models-of-Learning.html">Models of Learning</a> for the Rescorla-Wagner Model).</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -650,7 +655,7 @@ $$</p>
 <div class="cell_output docutils container">
 <div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
 <span class="ne">NotImplementedError</span><span class="g g-Whitespace">                       </span>Traceback (most recent call last)
-<span class="o">/</span><span class="n">tmp</span><span class="o">/</span><span class="n">ipykernel_4064</span><span class="o">/</span><span class="mf">1483513205.</span><span class="n">py</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="o">/</span><span class="n">tmp</span><span class="o">/</span><span class="n">ipykernel_4034</span><span class="o">/</span><span class="mf">1483513205.</span><span class="n">py</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
 <span class="g g-Whitespace">      </span><span class="mi">2</span> 
 <span class="g g-Whitespace">      </span><span class="mi">3</span> <span class="c1"># [INSERT CODE BELOW]</span>
 <span class="ne">----&gt; </span><span class="mi">4</span> <span class="k">raise</span> <span class="ne">NotImplementedError</span><span class="p">(</span><span class="s2">&quot;Student exercise: complete the code below to define that computes the negative loglikelihood for the Rescorla-Wagner Model of Learning, then delete this line&quot;</span><span class="p">)</span>
@@ -662,7 +667,7 @@ $$</p>
 </div>
 </div>
 </div>
-<p>Let’s develop an intuition for how this function works. Make a guess for subejct #3’s $\alpha$ and $\theta$ to compute the negative loglikelihood.</p>
+<p>Let’s develop an intuition for how this function works. Make a guess for subejct #3’s <span class="math notranslate nohighlight">\(\alpha\)</span> and <span class="math notranslate nohighlight">\(\theta\)</span> to compute the negative loglikelihood.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># fill in the `...` below to make guess for alpha and theta for subject #3</span>
@@ -685,7 +690,7 @@ $$</p>
 <div class="cell_output docutils container">
 <div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
 <span class="ne">NotImplementedError</span><span class="g g-Whitespace">                       </span>Traceback (most recent call last)
-<span class="o">/</span><span class="n">tmp</span><span class="o">/</span><span class="n">ipykernel_4064</span><span class="o">/</span><span class="mf">1250918315.</span><span class="n">py</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="o">/</span><span class="n">tmp</span><span class="o">/</span><span class="n">ipykernel_4034</span><span class="o">/</span><span class="mf">1250918315.</span><span class="n">py</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
 <span class="g g-Whitespace">      </span><span class="mi">3</span> 
 <span class="g g-Whitespace">      </span><span class="mi">4</span> <span class="c1"># [INSERT CODE BELOW]</span>
 <span class="ne">----&gt; </span><span class="mi">5</span> <span class="k">raise</span> <span class="ne">NotImplementedError</span><span class="p">(</span><span class="s2">&quot;Student exercise: make guess for alpha and theta to compute the negative loglikelihood, then delete this line&quot;</span><span class="p">)</span>
@@ -700,8 +705,8 @@ $$</p>
 </div>
 <div class="section" id="minimizing-the-negative-loglikelihood">
 <h3>5. Minimizing the negative loglikelihood<a class="headerlink" href="#minimizing-the-negative-loglikelihood" title="Permalink to this headline">¶</a></h3>
-<p>Now that we have a function, implement an minimization algorithm that loops through possible combinations of $\alpha$ and $\theta$ for each subject in order to find the parameters that minimize the negative loglikelihood. Each subject ($i$) will have a separate set of parameters $\alpha_i$ and $\theta_i$, which respectively correspond to the learning rate and inverse temperature (see <a class="reference external" href="https://shawnrhoads.github.io/gu-psyc-347/module-03-01_Models-of-Learning.html">Models of Learning</a>.</p>
-<p>Importantly, we will store these parameters in a Pandas DataFrame with 15 rows corresponding to subjects, and 2 columns corresponding to $\alpha$ and $\theta$ (see <a class="reference external" href="https://shawnrhoads.github.io/gu-psyc-347/module-01-02_Working-with-Data.html">Working with Data</a> for more on Pandas DataFrames).</p>
+<p>Now that we have a function, implement an minimization algorithm that loops through possible combinations of <span class="math notranslate nohighlight">\(\alpha\)</span> and <span class="math notranslate nohighlight">\(\theta\)</span> for each subject in order to find the parameters that minimize the negative loglikelihood. Each subject (<span class="math notranslate nohighlight">\(i\)</span>) will have a separate set of parameters <span class="math notranslate nohighlight">\(\alpha_i\)</span> and <span class="math notranslate nohighlight">\(\theta_i\)</span>, which respectively correspond to the learning rate and inverse temperature (see <a class="reference external" href="https://shawnrhoads.github.io/gu-psyc-347/module-03-01_Models-of-Learning.html">Models of Learning</a>.</p>
+<p>Importantly, we will store these parameters in a Pandas DataFrame with 15 rows corresponding to subjects, and 2 columns corresponding to <span class="math notranslate nohighlight">\(\alpha\)</span> and <span class="math notranslate nohighlight">\(\theta\)</span> (see <a class="reference external" href="https://shawnrhoads.github.io/gu-psyc-347/module-01-02_Working-with-Data.html">Working with Data</a> for more on Pandas DataFrames).</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># fill in the `...` below to estimate model params for each subject</span>
@@ -750,7 +755,7 @@ $$</p>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">  File</span><span class="nn"> &quot;/tmp/ipykernel_4064/3335811938.py&quot;</span><span class="gt">, line </span><span class="mi">11</span>
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">  File</span><span class="nn"> &quot;/tmp/ipykernel_4034/3335811938.py&quot;</span><span class="gt">, line </span><span class="mi">11</span>
     <span class="o">...</span><span class="p">,</span> <span class="o">...</span> <span class="o">=</span> <span class="n">behavior</span><span class="o">.</span><span class="n">choice</span><span class="p">,</span> <span class="n">behavior</span><span class="o">.</span><span class="n">outcome</span>
     <span class="o">^</span>
 <span class="ne">SyntaxError</span>: can&#39;t assign to Ellipsis

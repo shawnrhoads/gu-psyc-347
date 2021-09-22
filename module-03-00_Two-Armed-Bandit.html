@@ -44,6 +44,8 @@
     <script src="_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.20.0/dist/embed-amd.js"></script>
+    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
     <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
     <script >
         const thebe_selector = ".thebe"
@@ -410,7 +412,7 @@
 <li><p>Why do you think the position of the machines were randomized on each trial? In other words, why wasn’t the orange slot machine always on the same side?</p></li>
 <li><p>How many trials did it take you to learn which slot machine was better (if at all)? If there were less trials (&lt;72 trials) or more trials (&gt;72 trials), do you think you would be better or worse at learning?</p></li>
 <li><p>Were there times when you expected to receive a rewarding outcome but didn’t? How did that change your behavior on the next trial?</p></li>
-<li><p>When you didn’t get the outcome you expected, how often did you switch your choice on the next trial? What parameter in the Rescorla-Wagner model might correspond to this phenomenon?</p></li>
+<li><p>When you didn’t get the outcome you expected, how often did you switch your choice on the next trial? What parameter in the Rescorla-Wagner model might correspond to this phenomenon? (Recall the equation from class: <span class="math notranslate nohighlight">\( Q^k_{t+1} = Q^k_t + \alpha (r_t - Q^k_t) \)</span>)</p></li>
 <li><p>How “explorative” was your behavior when you were completing the task? In other words, even if you learned which slot machine had the greater payout probability, how often did you sample the other one just to see what would happen? Do you think we can model this as well?</p></li>
 </ul>
 <hr></div>
@@ -438,8 +440,7 @@
 <p>After completing the task, your data was saved to <code class="docutils literal notranslate"><span class="pre">tasks/two-armed-bandit/data/</span></code>. Let’s load our behavioral data in.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">datafile</span> <span class="o">=</span> <span class="sa">f</span><span class="s1">&#39;tasks/two-armed-bandit/data/sub-</span><span class="si">{</span><span class="n">id_num</span><span class="si">}</span><span class="s1">_task-two-armed-bandit.csv&#39;</span>
-
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">datafile</span> <span class="o">=</span> <span class="sa">f</span><span class="s1">&#39;https://raw.githubusercontent.com/shawnrhoads/gu-psyc-347/master/docs/tasks/two-armed-bandit/data/sub-</span><span class="si">{</span><span class="n">id_num</span><span class="si">}</span><span class="s1">_task-two-armed-bandit.csv&#39;</span>
 <span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">datafile</span><span class="p">)</span>
 <span class="n">display</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">())</span>
 </pre></div>
@@ -652,7 +653,7 @@
 <span class="c1"># plot choices for this machine</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;trial_num&#39;</span><span class="p">],</span> <span class="n">df</span><span class="p">[</span><span class="n">better_machine_choice</span><span class="p">],</span> <span class="s1">&#39;+&#39;</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;trials&#39;</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;choice&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;choice (1=better choice)&#39;</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;Chose better machine </span><span class="si">{</span><span class="n">df</span><span class="p">[</span><span class="n">better_machine_choice</span><span class="p">]</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span><span class="si">}</span><span class="s1"> times out of </span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="n">better_machine_choice</span><span class="p">])</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
@@ -718,7 +719,7 @@
 <img alt="_images/module-03-00_Two-Armed-Bandit_24_0.png" src="_images/module-03-00_Two-Armed-Bandit_24_0.png" />
 </div>
 </div>
-<p>Great! Recall the ten simple rules for computational modeling of behavioral data (Wilson &amp; Collins, 2019). We will be going through these steps throughout this module.</p>
+<p>Great! Recall the ten simple rules for computational modeling of behavioral data (<a class="reference external" href="https://elifesciences.org/articles/49547">Wilson &amp; Collins, 2019</a>). We will be going through these steps throughout this module.</p>
 <p>We finished our first step: Experimental Design. At this stage, we can continue to tweak our experiment, or continue onto building models. Before next class, think of a few models we can test using this task. Like we discussed during the lecture, it is unlikely that we are keeping a running average of all of our choices throughout the task. Thus, we might be computing the average in a more “online” way. For example, we could be assigning value and keeping track of this value for each of the slot machines.</p>
 <p>We will specify a few models, simulate some data, and then attempt to recover the parameters.</p>
 </div>
