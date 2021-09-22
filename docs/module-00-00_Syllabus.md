@@ -1,5 +1,5 @@
 # Syllabus
-Last updated: April 2021</br>
+Last updated: September 2021</br>
 The content in this Jupyter Book is subject to change.
 
 ## PSYC 347: Computational Models of Human Social Behavior (and Neuroscience)
@@ -7,7 +7,7 @@ TR: 11:00am-12:15pm, Online/Remote
 
 The goal of <u>computational modeling</u> in behavioral and psychological science is using mathematical models to characterize behavioral (or neural) data. Over the past decade, this practice has revolutionized social psychological science (and neuroscience) by allowing researchers to formalize theories as constrained mathematical models and test specific hypotheses to explain unobservable aspects of complex social cognitive processes and behaviors.
 
-This course comprises lecture-based, discussion-based, and lab-based instruction. At least one-third of class sessions will be "hands-on." We will discuss relevant book chapters and journal articles, and work with simulated and real data using the [Python programming language](https://www.python.org/) (no prior programming experience necessary) as we survey some selected areas of research at the intersection of computational modeling and social behavior. These selected topics will span a broad set of social psychological abilities including (1) learning from and for others, (2) learning about others, and (3) social influence on decision-making and mental states.
+This course comprises lecture-based, discussion-based, and lab-based instruction. At least one-third of class sessions will be hands-on. We will discuss relevant book chapters and journal articles, and work with simulated and real data using the [Python programming language](https://www.python.org/) (no prior programming experience necessary) as we survey some selected areas of research at the intersection of computational modeling and social behavior. These selected topics will span a broad set of social psychological abilities including (1) learning from and for others, (2) learning about others, and (3) social influence on decision-making and mental states.
 
 Together, we will expand your skillset for conducting research in psychological science, cognitive science, neuroscience, and/or data science. Although some background in psychology, research methods, and/or programming will be helpful, students with all levels of experience are welcome to enroll.
 
@@ -26,13 +26,13 @@ We will use the following technological tools/applications on a regular basis. P
 
 ## Important course information
 
-Course assignments will be posted on Canvas, which include the course readings, videos, and links to the assignments you will need to complete each week. You'll need to be able to upload and download files, view streaming video, and use applications such as Google Docs, Google Python, Jupyter Notebook, Collaboratory, Slack, etc. 
+Course assignments will be posted on Canvas, which include the course readings, videos, and links to the assignments you will need to complete each week. You'll need to be able to upload and download files, view streaming video, and use applications such as Google Docs, Google Python, Jupyter Notebook, Google Colaboratory, Slack, etc. 
 
-Be sure you have set your notifications in Canvas so that you receive announcements, Canvas mail, Discussion Board posts, etc. I will post announcements regularly to communicate with the class. The minimum requirements to use Canvas can be found in this [Canvas guide](https://guides.instructure.com/m/67952/l/720328).
+Be sure you have set your notifications in Canvas so that you receive announcements, Canvas mail, discussion board posts, etc. I will post announcements regularly to communicate with the class. The minimum requirements to use Canvas can be found in this [Canvas guide](https://guides.instructure.com/m/67952/l/720328).
 
 Class meetings and office hours will be held on Zoom. You will need a microphone and webcam (you need not always have your webcam on, but you will want to be able to be visible at times). These sessions will be recorded and recordings will be posted on Canvas (including video, audio, and chat). By participating in class, you are giving permission for your participation to be recorded and posted online for other students to view. If that is a concern for you, please let me know.
 
-Students located in certain countries may face challenges participating in some academic enterprises due to fear of censorship, retaliation, or sanction. Some individuals have reported that following best security practices related to Zoom, NetID accounts, and device hygiene are sufficient to assuage those fears. Other individuals have reported that the use of Virtual Private Networks (VPNs) may better address some of these challenges. I cannot provide or recommend specific VPNs for student use; students are encouraged to research available options and determine whether they can lawfully and reasonably make use of such a technological solution in their jurisdiction. If this is a concern for you, please feel free to let me know so we can strategize how best to address this issue.
+Students located in certain countries may face challenges participating in some academic enterprises due to fear of censorship, retaliation, or sanction. Some individuals have reported that following best security practices related to Zoom, NetID accounts, and device hygiene are sufficient to assuage those fears. Other individuals have reported that the use of Virtual Private Networks (VPNs) may better address some of these challenges. I cannot provide or recommend specific VPNs for student use; students are encouraged to research available options and determine whether they can lawfully and reasonably make use of such a technological solution in their jurisdiction. If this is a concern for you, please feel free to let me know so we can strategize how to best address this issue.
 
 ## Who am I?
 
@@ -59,9 +59,9 @@ Here are some tips and tricks to help you succeed:
 
 - First, <u>identify what you need to learn</u>. Identify the main points and key ideas in the readings, as well as the relevant evidence and methodologies.
 
-- You'll need to <u>complete the assigned readings before class</u>. This is important, because we'll be doing activities in class that involve applying material from the reading. If you haven't done the assigned reading, you won't be prepared to do the class activities. You will also need to write responses to the readings for each class which will require completing the assigned reading.
+- You'll need to <u>complete the assigned readings before class</u>. This is important, because we'll be doing activities in class that involve applying material from the readings. If you haven't done the assigned readings, you won't be prepared to do the class activities. You will also need to write responses to the readings for each class which will require completing the assigned readings.
 
-- Effective reading is more than just flipping pages and having the words move past your eyes, though. You need to actively engage in the process of reading. The key to learning is actively processing and organizing the material. As you read, <u>identify the main points and key questions</u> in each section. <u>Take notes in your own words</u>. Highlighting is not as effective as note-taking, particularly when you take notes in your own words, summarizing and restating the concepts and ideas in the reading (rather than just re-writing what is in the text). Think about what you are reading and relate it to what you already know. Try applying the ideas to your own life, which will make the material more interesting as well as help you learn and remember.
+- Effective reading is more than just flipping pages and having the words move past your eyes, though. You need to actively engage in the process of reading. The key to learning is actively processing and organizing the material. As you read, <u>identify the main points and key questions</u> in each section. <u>Take notes in your own words</u>. Highlighting is not as effective as note-taking, particularly when you take notes in your own words, summarizing and restating the concepts and ideas in the readings (rather than just re-writing what is in the text). Think about what you are reading and relate it to what you already know. Try applying the ideas to your own life, which will make the material more interesting as well as help you learn and remember.
 
 - <u>Space out your learning and studying</u>. Set up a schedule that involves doing some reading, learning, reviewing, and writing for this class every day or so (being sure that you have allocated about 6-9 hours total per week) and stick to your schedule.
 
@@ -69,15 +69,15 @@ Here are some tips and tricks to help you succeed:
 
 - <u>Come to every class on time and ready to participate</u>. Participating in class activities will help you learn the material, so it is best that you attend every class, if possible. We'll discuss and apply the material. You'll get to ask questions about any material that you found confusing. Studies find that students who attend class regularly tend to get better grades. There will also be points given for class participation, so missing class will mean that you miss the opportunity to earn those points.
 
-- <u>Identify trouble spots and get help</u>. When you don't understand something, ask for help. If something is unclear to you, ask a question; most likely, there are other students who have the same question. If you don't understand something in the reading, come see me and ask me about it. It is not a good strategy to just wait and hope that enlightenment will come to you—often, it doesn't. This is another good reason to keep up with the reading and to learn actively—both of these will allow you to identify trouble spots early and fix them. It is also important to get help early and not to wait until the last minute.
+- <u>Identify trouble spots and get help</u>. When you don't understand something, ask for help. If something is unclear to you, ask a question; most likely, there are other students who have the same question. If you don't understand something in the readings, come see me and ask me about it. It is not a good strategy to just wait and hope that enlightenment will come to you—often, it doesn't. This is another good reason to keep up with the readings and to learn actively—both of these will allow you to identify trouble spots early and fix them. It is also important to get help early and not to wait until the last minute.
 
 - <u>Learn by doing</u>. About one-third of this class involves hands-on exercises (e.g., writing and executing code in Python). These exercises were developed to supplement and augment your learning experience. If something discussed in class wasn't clear, it's possible that implementing something yourself will be helpful. 
 
-- <u>Help each other</u>. This is a class about social behavior. I don't expect you to work alone, especially on the coding exercises. As you help one another, think about some of the psychological and computational processes as play (which we will learn about throughout the semester).
+- <u>Help each other</u>. This is a class about social behavior. I don't expect you to work alone, especially on the coding exercises. As you help one another, think about some of the psychological and computational processes at play (which we will learn about throughout the semester).
 
 ## Creating an online space that fosters learning
 
-To create a classroom space where we can all effectively learn, each of us needs to commit to focusing on the learning activities and minimizing distractions. Anyone who isn't focused on the class activity is not only depriving themselves of the opportunity to learn, but is also distracting other students and creating a climate that hinders other students' learning. In other words, when you are doing something that is not related to the class activity, you are not learning and you are making it harder for other students to learn. So each of us needs to make an ongoing commitment to creating a distraction-free classroom where we can all focus on learning. That means:
+To create a classroom space where we can all effectively learn, each of us needs to commit to focusing on the learning activities and minimizing distractions. Anyone who isn't focused on the class activities is not only depriving themselves of the opportunity to learn, but is also distracting other students and creating a climate that hinders other students' learning. In other words, when you are doing something that is not related to the class activity, you are not learning and you are making it harder for other students to learn. So each of us needs to make an ongoing commitment to creating a distraction-free classroom where we can all focus on learning. That means:
 
 - <u>Mute your sound when you aren’t speaking</u>. Having random background noise is distracting, so when you aren’t speaking, stay muted.
 - <u>Pay attention to the class activities</u>. This will maximize your learning and foster a positive learning environment for others. I know that it is very easy to zone out or do other activities while participating in online classes, but it will hinder your learning and your enjoyment of our class activities. It also means that you won’t contribute as meaningfully to class discussions, so you will be depriving other students of their opportunity to learn from you. I will do my best to make our class sessions engaging. Please do your best to stay focused on class activities. If I can help in keeping you focused during class, let me know.
@@ -101,7 +101,7 @@ I value our diverse student body and am committed to fostering an equitable clas
 
 ## Grading
 
-I will assess your learning primarily through written assignments and class participation. Your written work should of course be logical, well-written, thoughtful, and free from mechanical spelling and grammatical errors (I strongly recommend that you proofread and spell-check your assignments!). Grades will be based on meeting the criteria of the assignment, quality of ideas, originality, accuracy, and quality of writing.
+I will assess your learning primarily through written assignments and class participation. Your written work should of course be logical, well-written, thoughtful, and free from mechanical spelling and grammatical errors (I strongly recommend that you proofread and spell-check your assignments!). Grades will be based on meeting the criteria of the assignments, quality of ideas, originality, accuracy, and quality of writing.
 
 You will earn points based on your assignments. Final grades will be assigned according to the following scale:
 
@@ -125,7 +125,7 @@ For assignments that are submitted late, the maximum obtainable grade will be re
 
 ## Extra Credit
 
-You may earn extra credit up to 3% to your total grade. There are three ways to obtain extra credit: (1) participate in a research study through the [Georgetown Research Volunteer Program](https://georgetown.sona-systems.com/all_exp.aspx), (2) refer someone to participate in a research study through the [Georgetown Research Volunteer Program](https://georgetown.sona-systems.com/all_exp.aspx) and submit a one-page reflection after interviewing them about their experience, and/or (3) submit a one-page reflection from the optional reading list. Completing each earns one extra credit point. For example, you may obtain 2 research participation credits and complete 1 article reflection for a total of 3 extra credit points. You may also obtain a total of 3 research participation credits.
+You may earn extra credit up to 3% to your total grade. There are three ways to obtain extra credit: (1) participate in a research study through the [Georgetown Research Volunteer Program](https://georgetown.sona-systems.com/all_exp.aspx), (2) refer someone to participate in a research study through the [Georgetown Research Volunteer Program](https://georgetown.sona-systems.com/all_exp.aspx) and submit a one-page reflection after interviewing them about their experience, and/or (3) submit a one-page reflection from the [optional reading list](https://shawnrhoads.github.io/gu-psyc-347/module-00-03_Reading-List.html). Completing each earns one extra credit point. For example, you may obtain 2 research participation credits and complete 1 article reflection for a total of 3 extra credit points. You may also obtain a total of 3 research participation credits.
 
 ## Assignments 
 
@@ -135,31 +135,31 @@ Please visit the [Assignments page](module-00-02_Course-Assignments.html) for th
 
 **Class Contributions (Participation) [70 points]**: Students can contribute to class sessions by: asking questions, answering questions, adding comments, thoughts, or opinions to the discussion, helping classmates, offering ideas or suggestions, etc. I expect students to take advantage of online forums (e.g., Canvas, Slack) to ask questions related to course readings, mathematical models, general Python programming, Jupyter Notebook, course exercises, assignments, Canvas, Zoom, or accessing materials. I also expect student to help each other by responding to these questions.
 
-**Reading Responses [65 points]**: For each reading assignment, students will submit a brief response (1 page, single-spaced). This is not an article summary; you have to explore your own idea(s) about the readings. These must be submitted by 5:00pm on the day before class on Canvas. To receive full credit, these must show close reading and thoughtful engagement with the assigned reading for that day. A high-quality Reading Response provides in-depth, thoughtful exploration of one or more ideas, clearly relates these ideas to the readings in a way that indicates close and careful reading, and is well-written (strong paragraph structure, clear and cogent use of language, free from spelling and grammar errors). Some ideas for reading responses: 
+**Reading Responses [65 points]**: For each reading assignment, students will submit a brief response (1 page, single-spaced). This is not an article summary; you have to explore your own idea(s) about the readings. These must be submitted by 5:00pm on the day before class on Canvas. To receive full credit, these must show close reading and thoughtful engagement with the assigned readings for that day. A high-quality Reading Response provides in-depth, thoughtful exploration of one or more ideas, clearly relates these ideas to the readings in a way that indicates close and careful reading, and is well-written (strong paragraph structure, clear and cogent use of language, free from spelling and grammar errors). Some ideas for reading responses: 
 -	Identify aspects of the reading with which you disagree and discuss why they are problematic. 
--	Discuss what most surprised you about the material in the reading and why you found it surprising. 
--	Discuss potential applications of the material in the reading – ways in which it applies to your own life or ideas for how to use the material in the reading to improve the quality of life more broadly. 
+-	Discuss what most surprised you about the material in the readings and why you found it surprising. 
+-	Discuss potential applications of the material in the readings – ways in which it applies to your own life or ideas for how to use the material in the readings to improve the quality of life more broadly. 
 -	Limitations of the theories or research discussed in the readings and how these should qualify our conclusions. 
 -	Ideas for new studies or theories in the field. 
--	The implications of the research with regard to current social or political issues. 
+-	Implications of the research with regard to current social or political issues. 
 -	Was their evidence enough for their claims? What else would you have liked to see?
 
 **Article Presentations [50 points]**: Students will sign up to present one research article (15-25 minutes) and lead the class discussion (30 minutes). These should include:
 - A brief overview of the paper (i.e., a powerpoint presentation)
 - Discussion/Interpretation of figures when possible/relevant (e.g., no need to interpret figures of brain images)
 - Discussion points or questions (similar to the ones for your reading responses). These points should include a discussion of the "computational model" (or models), including: 
-    - what model was used? 
-    - has it been used in previous papers before? 
-    - why this model? 
-    - what are the parameters in the model? what are the correlates of these parameters?
+    - What model was used? 
+    - Has it been used in previous papers before? 
+    - Why this model? 
+    - What are the parameters in the model? what are the correlates of these parameters?
 
-**Jupyter Notebook Execises [105 points, 25 points for #1-3, 30 points for #4]**: Students will complete four coding exercises based on selected course topics throughout the semester
+**Jupyter Notebook Execises [105 points, 25 points for #1-3, 30 points for #4]**: Students will complete four coding exercises based on selected course topics throughout the semester.
 
 **Project Proposal - Round 1 [25 points]**: Students will submit a 250-300 word abstract describing their research question, hypotheses, and study idea along with an outline of the relevant content (i.e., summary of points for the following sections: Introduction, Experimental Design, Intellectual Merit, Broader Impacts, and Conclusion). They should set up a meeting with the instructor (during office hours) to determine a final project. Upon completion of this assignment, students will receive feedback and suggestions on how to improve their study and should incorporate this feedback into their proposal (Round 2).
 
-**Annotated Bibliography [25 points]**: Students will choose 7-10 research articles and summarize the research questions, methods, and results of each paper (behavior only). Students should also include a 2-3 sentences on each paper’s relevance to their final project.
+**Annotated Bibliography [25 points]**: Students will choose 7-10 research articles and summarize the research questions, methods, and results of each paper (behavior only). Students should also include 2-3 sentences on each paper’s relevance to their final project.
 
-**Project Proposal - Round 2 [75 points]**: Students will expand their 250-300 word abstract based on feedback from the instructor. Their project proposal should be 2-3 pages (in NSF GRFP format) on a hypothetical research study.
+**Project Proposal - Round 2 [75 points]**: Students will expand their 250-300 word abstract based on feedback from the instructor. Their project proposal should be 2-3 pages (in [NSF GRFP format](https://nsfgrfp.org)) on a hypothetical research study.
 
 **Project Presentation [80 points]**: This presentation will be the “final exam” of this course. Students will present their project proposal to the class (10 minutes each) and determine 2-3 questions for a quick class discussion (5-10 minutes).
 
@@ -169,7 +169,7 @@ I take academic integrity very seriously. Each student is responsible for perfor
 
 All students are expected to maintain the highest standards of academic and personal integrity in pursuit of their education at Georgetown. Cheating harms the University community in many ways. For example, honest students are frustrated by the unfairness of cheating that goes undetected and students who cheat can skew the grading curve in a class, resulting in lower grades for students who worked hard and did their own work.
 
-Academic dishonesty, including plagiarism, in any form is a serious offense, and students found in violation are subject to academic penalties that include, but are not limited to, failure of the course, termination from the program, and revocation of degrees already conferred. All students are expected to fully adhere to the policies and procedures of Georgetown’s Honor System and to take the Honor Code Pledge:
+Academic dishonesty, including plagiarism, in any form is a serious offense, and students found in violation are subject to academic penalties that include, but are not limited to, failure of the course, termination from the program, and revocation of degrees already conferred. All students are expected to fully adhere to the policies and procedures of Georgetown’s Honor System and to take the [Honor Code Pledge](https://honorcouncil.georgetown.edu):
 
 <blockquote>
 In pursuit of the high ideals and rigorous standards of academic life I commit myself to respect and to uphold the Georgetown University honor system: To be honest in every academic endeavor, and to conduct myself honorably, as a responsible member of the Georgetown community as we live and work together.
@@ -194,7 +194,7 @@ All submissions must be your original work. Any submission suspected of plagiari
 
 If you experience sexual violence, identity-based harm, or any other personal crisis at any point during the course, please do not hesitate to reach out to (1) help you catch up with course material or (2) put you in contact with the appropriate resources and services. Here are some resources that you can also refer to:
 - [The Academic Resource Center](https://academicsupport.georgetown.edu/)
-- [CAPS: Counseling and Psychiatric Services](https://studenthealth.georgetown.edu/mental-health); 202-687-6985 or (after hours, 202-444-7243) and ask for the on-call CAPS clinician
+- [CAPS: Counseling and Psychiatric Services](https://studenthealth.georgetown.edu/mental-health); 202-687-6985 and ask for the on-call CAPS clinician
 - [Center for Multicultural Equity and Access (CMEA)](https://cmea.georgetown.edu/#_ga=2.2156146.338741907.1597604147-463980031.1582147522)
 - [Georgetown Emergency Response Medical Service (GERMS)](http://www.georgetownems.org/calling-germs/); For emergency medical care call 202-687-4357
 - [Georgetown Wellness Wheel](https://studenthealth.georgetown.edu/Hoya-Wellness-wheel)
@@ -204,9 +204,9 @@ If you experience sexual violence, identity-based harm, or any other personal cr
 - [Title IX](https://titleix.georgetown.edu/#_ga=2.69845330.338741907.1597604147-463980031.1582147522)
 - [Women’s Center](https://womenscenter.georgetown.edu/#_ga=2.103393858.338741907.1597604147-463980031.1582147522)
 - [Hoya Hub Food Pantry](https://studentaffairs.georgetown.edu/foodpantry)
-- [La Casa Latina](https://cmea.georgetown.edu/casalatina/)
+- [La Casa Latina](https://cmea.georgetown.edu/diversity-education/casalatina/)
 - [LGBTQ Resource Center](https://lgbtq.georgetown.edu/#_ga=2.69845330.338741907.1597604147-463980031.1582147522)
-- [The Black House](https://cmea.georgetown.edu/blackhouse/)
+- [The Black House](https://cmea.georgetown.edu/diversity-education/blackhouse/)
 - [Student Health Center (SHC)](http://studenthealth.georgetown.edu/medical-care#_ga=2.103393858.338741907.1597604147-463980031.1582147522)
 
 I am committed to supporting survivors of sexual misconduct, including relationship violence and sexual assault. Due to federal law, I must report any disclosures of sexual misconduct to the Title IX Office. I want to be able to protect you as best as I can, and in this case, it would be to report the survivor’s story to the appropriate authorities.
