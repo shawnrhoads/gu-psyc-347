@@ -370,55 +370,25 @@
         
               <div>
                 
-  <p><a class="reference external" href="https://colab.research.google.com/github/shawnrhoads/gu-psyc-347/blob/master/docs/module-03-02_RL-Exercises.ipynb"><img alt="Open In Colab" src="https://colab.research.google.com/assets/colab-badge.svg" /></a></p>
+  <p><a href="https://colab.research.google.com/github/shawnrhoads/gu-psyc-347/blob/master/docs/solutions/module-03-02_RL-Exercises-Solutions.ipynb" target="_blank"><img alt="Open In Colab" src="https://colab.research.google.com/assets/colab-badge.svg" /></a></p>
 <div class="section" id="rl-exercises">
 <h1>RL Exercises<a class="headerlink" href="#rl-exercises" title="Permalink to this headline">¶</a></h1>
-<p>These exercises were inspired by and adapted from <a class="reference external" href="http://www.hannekedenouden.ruhosting.nl/RLtutorial/Instructions.html">Models of Learning</a> by Jill O’Reilly and Hanneke den Ouden, <a class="reference external" href="http://u.arizona.edu/~bob/web_NSCS344/index.htm">NSCS 344 - Modeling the Mind</a> by Robert C. Wilson, <a class="reference external" href="https://github.com/shawnrhoads/gu-nsci-526">NSCI 526 - Tutorial 2 (Reinforcement Learning)</a> by Shawn Rhoads, the <a class="reference external" href="https://github.com/cloudssty/Gambling-Game">Gambling Game tutorial</a>, and the <a class="reference external" href="https://github.com/NeuromatchAcademy/course-content">Neuromatch Academy tutorials</a> [<a class="reference external" href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>.</p>
-<p>In these exercises, we will fit learning behavior to the Rescorla Wagner model of Reinforcement Learning. The data can be downloaded from <a class="reference external" href="https://github.com/shawnrhoads/gu-psyc-347/raw/editing/docs/static/data/RL-Exercises-Data.zip">GitHub</a>, Canvas, or by using the following code:</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">os</span><span class="o">,</span> <span class="nn">requests</span>
-
-<span class="c1"># create list of URLs</span>
-<span class="n">urls</span> <span class="o">=</span> <span class="p">[</span><span class="sa">f</span><span class="s1">&#39;https://raw.githubusercontent.com/shawnrhoads/gu-psyc-347/master/docs/static/data/sub-</span><span class="si">{</span><span class="n">x</span><span class="si">:</span><span class="s1">02</span><span class="si">}</span><span class="s1">_RLdata.csv&#39;</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">15</span><span class="p">)]</span>
-
-<span class="c1"># loop through list and download data</span>
-<span class="k">for</span> <span class="n">url</span> <span class="ow">in</span> <span class="n">urls</span><span class="p">:</span>
-    <span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">allow_redirects</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-    <span class="k">if</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">isdir</span><span class="p">(</span><span class="s1">&#39;../static/data&#39;</span><span class="p">):</span>
-        <span class="n">filename</span> <span class="o">=</span> <span class="s1">&#39;static/data/&#39;</span> <span class="o">+</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">basename</span><span class="p">(</span><span class="n">url</span><span class="p">)</span>
-    <span class="k">else</span><span class="p">:</span>
-        <span class="n">filename</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">basename</span><span class="p">(</span><span class="n">url</span><span class="p">)</span>
-    <span class="nb">open</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="s1">&#39;wb&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">r</span><span class="o">.</span><span class="n">content</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
-<span class="ne">FileNotFoundError</span><span class="g g-Whitespace">                         </span>Traceback (most recent call last)
-<span class="o">/</span><span class="n">tmp</span><span class="o">/</span><span class="n">ipykernel_4447</span><span class="o">/</span><span class="mf">2567928728.</span><span class="n">py</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
-<span class="g g-Whitespace">     </span><span class="mi">11</span>     <span class="k">else</span><span class="p">:</span>
-<span class="g g-Whitespace">     </span><span class="mi">12</span>         <span class="n">filename</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">basename</span><span class="p">(</span><span class="n">url</span><span class="p">)</span>
-<span class="ne">---&gt; </span><span class="mi">13</span>     <span class="nb">open</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="s1">&#39;wb&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">r</span><span class="o">.</span><span class="n">content</span><span class="p">)</span>
-
-<span class="ne">FileNotFoundError</span>: [Errno 2] No such file or directory: &#39;static/data/sub-00_RLdata.csv&#39;
-</pre></div>
-</div>
-</div>
-</div>
-<p>Now, that we’ve downloaded our data, let’s explore it together!</p>
+<p>These exercises were inspired by and adapted from <a class="reference external" href="http://www.hannekedenouden.ruhosting.nl/RLtutorial/Instructions.html">Models of Learning</a> by Jill O’Reilly and Hanneke den Ouden, <a class="reference external" href="http://u.arizona.edu/~bob/web_NSCS344">NSCS 344 - Modeling the Mind</a> by Robert C. Wilson, <a class="reference external" href="https://github.com/shawnrhoads/gu-nsci-526">NSCI 526 - Tutorial 2 (Reinforcement Learning)</a> by Shawn Rhoads, the <a class="reference external" href="https://github.com/cloudssty">Gambling Game tutorial</a>, and the <a class="reference external" href="https://github.com/NeuromatchAcademy/course-content">Neuromatch Academy tutorials</a> [<a class="reference external" href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>].</p>
+<p>In these exercises, we will fit learning behavior to the Rescorla Wagner model of Reinforcement Learning. The data can be downloaded from <a class="reference external" href="https://github.com/shawnrhoads/gu-psyc-347/raw/editing/docs/static/data/RL-Exercises-Data.zip">GitHub</a> or by simply running the code below.</p>
 <div class="section" id="table-of-contents">
 <h2>Table of Contents<a class="headerlink" href="#table-of-contents" title="Permalink to this headline">¶</a></h2>
 <p><strong>Part 1</strong></p>
 <ol class="simple">
-<li><p><a class="reference external" href="#1.-Getting-to-know-your-stimuli">Getting to know your stimuli</a></p></li>
-<li><p><a class="reference external" href="#2.-Exploring-behavior">Exploring behavior</a></p></li>
-<li><p><a class="reference external" href="#3.-Exploring-outcomes">Exploring outcomes</a></p></li>
+<li><p><a class="reference external" href="#getting-to-know-your-stimuli">Getting to know your stimuli</a></p></li>
+<li><p><a class="reference external" href="#exploring-behavior">Exploring behavior</a></p></li>
+<li><p><a class="reference external" href="#exploring-outcomes">Exploring outcomes</a></p></li>
 </ol>
-<p><strong>Part 2</strong>
-4. <span class="xref myst">Defining a likelihood function</span>
-5. <span class="xref myst">Minimizing the negative loglikelihood</span>
-6. <span class="xref myst">Comparing results with your predictions</span></p>
+<p><strong>Part 2</strong></p>
+<ol class="simple">
+<li><p><a class="reference external" href="#defining-a-likelihood-function">Defining a likelihood function</a></p></li>
+<li><p><a class="reference external" href="#minimizing-the-negative-loglikelihood">Minimizing the negative loglikelihood</a></p></li>
+<li><p><a class="reference external" href="#comparing-results-with-your-predictions">Comparing results with your predictions</a></p></li>
+</ol>
 <div class="section" id="key">
 <h3>Key<a class="headerlink" href="#key" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
@@ -704,7 +674,7 @@
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/module-03-02_RL-Exercises-Solutions_19_0.png" src="../_images/module-03-02_RL-Exercises-Solutions_19_0.png" />
+<img alt="../_images/module-03-02_RL-Exercises-Solutions_17_0.png" src="../_images/module-03-02_RL-Exercises-Solutions_17_0.png" />
 </div>
 </div>
 <div class="cell docutils container">
@@ -718,21 +688,21 @@
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/module-03-02_RL-Exercises-Solutions_20_0.png" src="../_images/module-03-02_RL-Exercises-Solutions_20_0.png" />
-<img alt="../_images/module-03-02_RL-Exercises-Solutions_20_1.png" src="../_images/module-03-02_RL-Exercises-Solutions_20_1.png" />
-<img alt="../_images/module-03-02_RL-Exercises-Solutions_20_2.png" src="../_images/module-03-02_RL-Exercises-Solutions_20_2.png" />
-<img alt="../_images/module-03-02_RL-Exercises-Solutions_20_3.png" src="../_images/module-03-02_RL-Exercises-Solutions_20_3.png" />
-<img alt="../_images/module-03-02_RL-Exercises-Solutions_20_4.png" src="../_images/module-03-02_RL-Exercises-Solutions_20_4.png" />
-<img alt="../_images/module-03-02_RL-Exercises-Solutions_20_5.png" src="../_images/module-03-02_RL-Exercises-Solutions_20_5.png" />
-<img alt="../_images/module-03-02_RL-Exercises-Solutions_20_6.png" src="../_images/module-03-02_RL-Exercises-Solutions_20_6.png" />
-<img alt="../_images/module-03-02_RL-Exercises-Solutions_20_7.png" src="../_images/module-03-02_RL-Exercises-Solutions_20_7.png" />
-<img alt="../_images/module-03-02_RL-Exercises-Solutions_20_8.png" src="../_images/module-03-02_RL-Exercises-Solutions_20_8.png" />
-<img alt="../_images/module-03-02_RL-Exercises-Solutions_20_9.png" src="../_images/module-03-02_RL-Exercises-Solutions_20_9.png" />
-<img alt="../_images/module-03-02_RL-Exercises-Solutions_20_10.png" src="../_images/module-03-02_RL-Exercises-Solutions_20_10.png" />
-<img alt="../_images/module-03-02_RL-Exercises-Solutions_20_11.png" src="../_images/module-03-02_RL-Exercises-Solutions_20_11.png" />
-<img alt="../_images/module-03-02_RL-Exercises-Solutions_20_12.png" src="../_images/module-03-02_RL-Exercises-Solutions_20_12.png" />
-<img alt="../_images/module-03-02_RL-Exercises-Solutions_20_13.png" src="../_images/module-03-02_RL-Exercises-Solutions_20_13.png" />
-<img alt="../_images/module-03-02_RL-Exercises-Solutions_20_14.png" src="../_images/module-03-02_RL-Exercises-Solutions_20_14.png" />
+<img alt="../_images/module-03-02_RL-Exercises-Solutions_18_0.png" src="../_images/module-03-02_RL-Exercises-Solutions_18_0.png" />
+<img alt="../_images/module-03-02_RL-Exercises-Solutions_18_1.png" src="../_images/module-03-02_RL-Exercises-Solutions_18_1.png" />
+<img alt="../_images/module-03-02_RL-Exercises-Solutions_18_2.png" src="../_images/module-03-02_RL-Exercises-Solutions_18_2.png" />
+<img alt="../_images/module-03-02_RL-Exercises-Solutions_18_3.png" src="../_images/module-03-02_RL-Exercises-Solutions_18_3.png" />
+<img alt="../_images/module-03-02_RL-Exercises-Solutions_18_4.png" src="../_images/module-03-02_RL-Exercises-Solutions_18_4.png" />
+<img alt="../_images/module-03-02_RL-Exercises-Solutions_18_5.png" src="../_images/module-03-02_RL-Exercises-Solutions_18_5.png" />
+<img alt="../_images/module-03-02_RL-Exercises-Solutions_18_6.png" src="../_images/module-03-02_RL-Exercises-Solutions_18_6.png" />
+<img alt="../_images/module-03-02_RL-Exercises-Solutions_18_7.png" src="../_images/module-03-02_RL-Exercises-Solutions_18_7.png" />
+<img alt="../_images/module-03-02_RL-Exercises-Solutions_18_8.png" src="../_images/module-03-02_RL-Exercises-Solutions_18_8.png" />
+<img alt="../_images/module-03-02_RL-Exercises-Solutions_18_9.png" src="../_images/module-03-02_RL-Exercises-Solutions_18_9.png" />
+<img alt="../_images/module-03-02_RL-Exercises-Solutions_18_10.png" src="../_images/module-03-02_RL-Exercises-Solutions_18_10.png" />
+<img alt="../_images/module-03-02_RL-Exercises-Solutions_18_11.png" src="../_images/module-03-02_RL-Exercises-Solutions_18_11.png" />
+<img alt="../_images/module-03-02_RL-Exercises-Solutions_18_12.png" src="../_images/module-03-02_RL-Exercises-Solutions_18_12.png" />
+<img alt="../_images/module-03-02_RL-Exercises-Solutions_18_13.png" src="../_images/module-03-02_RL-Exercises-Solutions_18_13.png" />
+<img alt="../_images/module-03-02_RL-Exercises-Solutions_18_14.png" src="../_images/module-03-02_RL-Exercises-Solutions_18_14.png" />
 </div>
 </div>
 <p><strong>ANSWER 2a:</strong></p>
@@ -876,9 +846,7 @@ Q^k_{t+1} = Q^k_t + \alpha (r_t - Q^k_t)
 negative \log \mathcal{L} = -\sum_{t=1}^T \log p(c_t)
 \]</div>
 <p>Below we will define a function that computes the negative loglikelihood given the data and Rescorla-Wagner Model (see <a class="reference external" href="https://shawnrhoads.github.io/gu-psyc-347/module-01-01_Intro-to-Python.html">Intro to Python</a> for functions, <a class="reference external" href="https://shawnrhoads.github.io/gu-psyc-347/module-02-02_Modeling-Exercises.html">Modeling Exercises</a> and <a class="reference external" href="https://shawnrhoads.github.io/gu-psyc-347/module-03-01_Models-of-Learning.html">Models of Learning</a> for negative loglikelihood, and <a class="reference external" href="https://shawnrhoads.github.io/gu-psyc-347/module-03-01_Models-of-Learning.html">Models of Learning</a> for the Rescorla-Wagner Model).</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># fill in the `...` below to estimate model params for each subject</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># fill in the `...` below to estimate model params for each subject</span>
 
 <span class="k">def</span> <span class="nf">negll_RescorlaWagner</span><span class="p">(</span><span class="n">params</span><span class="p">,</span> <span class="n">choices</span><span class="p">,</span> <span class="n">outcomes</span><span class="p">):</span>
 
@@ -920,8 +888,6 @@ negative \log \mathcal{L} = -\sum_{t=1}^T \log p(c_t)
     
         <span class="k">return</span> <span class="n">negLL</span>
 </pre></div>
-</div>
-</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -968,9 +934,7 @@ negative \log \mathcal{L} = -\sum_{t=1}^T \log p(c_t)
 </div>
 </div>
 <p>Let’s develop an intuition for how this function works. Make a guess for subejct #3’s <span class="math notranslate nohighlight">\(\alpha\)</span> and <span class="math notranslate nohighlight">\(\theta\)</span> to compute the negative loglikelihood.</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># fill in the `...` below to make guess for alpha and theta for subject #3</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># fill in the `...` below to make guess for alpha and theta for subject #3</span>
 <span class="c1"># then, fill in the inputs for the function</span>
 
 <span class="c1"># [INSERT CODE BELOW]</span>
@@ -979,28 +943,12 @@ negative \log \mathcal{L} = -\sum_{t=1}^T \log p(c_t)
 <span class="n">alpha_guess</span> <span class="o">=</span> <span class="o">...</span> <span class="c1">#number between 0-1</span>
 <span class="n">theta_guess</span> <span class="o">=</span> <span class="o">...</span> <span class="c1">#number between 1-8</span>
 <span class="n">subj3_choices</span> <span class="o">=</span> <span class="n">subject_data</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span><span class="o">.</span><span class="n">choice</span>
-<span class="n">subj3_outcomes</span> <span class="o">=</span> <span class="n">subject_data</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span><span class="o">.</span><span class="n">outcomes</span>
+<span class="n">subj3_outcomes</span> <span class="o">=</span> <span class="n">subject_data</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span><span class="o">.</span><span class="n">outcome</span>
 
 <span class="c1"># compute the negative ll</span>
 <span class="n">subj3_negll</span> <span class="o">=</span> <span class="n">negll_RescorlaWagner</span><span class="p">([</span><span class="o">...</span><span class="p">,</span> <span class="o">...</span><span class="p">],</span> <span class="n">subj3_choices</span><span class="p">,</span> <span class="n">subj3_outcomes</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;given alpha=</span><span class="si">{</span><span class="n">alpha_guess</span><span class="si">}</span><span class="s1"> and theta=</span><span class="si">{</span><span class="n">theta_guess</span><span class="si">}</span><span class="s1">, the negative loglikelihood is </span><span class="si">{</span><span class="n">subj3_negll</span><span class="si">:</span><span class="s1">.2f</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
 </pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
-<span class="ne">NotImplementedError</span><span class="g g-Whitespace">                       </span>Traceback (most recent call last)
-<span class="o">/</span><span class="n">tmp</span><span class="o">/</span><span class="n">ipykernel_4447</span><span class="o">/</span><span class="mf">1250918315.</span><span class="n">py</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
-<span class="g g-Whitespace">      </span><span class="mi">3</span> 
-<span class="g g-Whitespace">      </span><span class="mi">4</span> <span class="c1"># [INSERT CODE BELOW]</span>
-<span class="ne">----&gt; </span><span class="mi">5</span> <span class="k">raise</span> <span class="ne">NotImplementedError</span><span class="p">(</span><span class="s2">&quot;Student exercise: make guess for alpha and theta to compute the negative loglikelihood, then delete this line&quot;</span><span class="p">)</span>
-<span class="g g-Whitespace">      </span><span class="mi">6</span> 
-<span class="g g-Whitespace">      </span><span class="mi">7</span> <span class="n">alpha_guess</span> <span class="o">=</span> <span class="o">...</span> <span class="c1">#number between 0-1</span>
-
-<span class="ne">NotImplementedError</span>: Student exercise: make guess for alpha and theta to compute the negative loglikelihood, then delete this line
-</pre></div>
-</div>
-</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1026,11 +974,9 @@ negative \log \mathcal{L} = -\sum_{t=1}^T \log p(c_t)
 </div>
 <div class="section" id="minimizing-the-negative-loglikelihood">
 <h3>5. Minimizing the negative loglikelihood<a class="headerlink" href="#minimizing-the-negative-loglikelihood" title="Permalink to this headline">¶</a></h3>
-<p>Now that we have a function, implement an minimization algorithm that loops through possible combinations of <span class="math notranslate nohighlight">\(\alpha\)</span> and <span class="math notranslate nohighlight">\(\theta\)</span> for each subject in order to find the parameters that minimize the negative loglikelihood. Each subject (<span class="math notranslate nohighlight">\(i\)</span>) will have a separate set of parameters <span class="math notranslate nohighlight">\(\alpha_i\)</span> and <span class="math notranslate nohighlight">\(\theta_i\)</span>, which respectively correspond to the learning rate and inverse temperature (see <a class="reference external" href="https://shawnrhoads.github.io/gu-psyc-347/module-03-01_Models-of-Learning.html">Models of Learning</a>.</p>
+<p>Now that we have a function, implement an minimization algorithm that loops through possible combinations of <span class="math notranslate nohighlight">\(\alpha\)</span> and <span class="math notranslate nohighlight">\(\theta\)</span> for each subject in order to find the parameters that minimize the negative loglikelihood. Each subject (<span class="math notranslate nohighlight">\(i\)</span>) will have a separate set of parameters <span class="math notranslate nohighlight">\(\alpha_i\)</span> and <span class="math notranslate nohighlight">\(\theta_i\)</span>, which respectively correspond to the learning rate and inverse temperature (see <a class="reference external" href="https://shawnrhoads.github.io/gu-psyc-347/module-03-01_Models-of-Learning.html">Models of Learning</a>).</p>
 <p>Importantly, we will store these parameters in a Pandas DataFrame with 15 rows corresponding to subjects, and 2 columns corresponding to <span class="math notranslate nohighlight">\(\alpha\)</span> and <span class="math notranslate nohighlight">\(\theta\)</span> (see <a class="reference external" href="https://shawnrhoads.github.io/gu-psyc-347/module-01-02_Working-with-Data.html">Working with Data</a> for more on Pandas DataFrames).</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># fill in the `...` below to estimate model params for each subject</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># fill in the `...` below to estimate model params for each subject</span>
 
 <span class="c1"># [INSERT CODE BELOW]</span>
 <span class="k">raise</span> <span class="ne">NotImplementedError</span><span class="p">(</span><span class="s2">&quot;Student exercise: complete the code below to estimate model parameters for each subject, then delete this line&quot;</span><span class="p">)</span>
@@ -1045,9 +991,9 @@ negative \log \mathcal{L} = -\sum_{t=1}^T \log p(c_t)
     <span class="c1"># gradient descent to minimize neg LL</span>
     <span class="n">res_nll</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">inf</span> <span class="c1"># set initial neg LL to be inf</span>
 
-    <span class="c1"># guess several different starting points for alpha</span>
-    <span class="k">for</span> <span class="n">alpha_guess</span> <span class="ow">in</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">12</span><span class="p">):</span>
-        <span class="k">for</span> <span class="n">theta_guess</span> <span class="ow">in</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">10</span><span class="p">,</span><span class="mi">12</span><span class="p">):</span>
+    <span class="c1"># guess several different starting points for alpha, theta</span>
+    <span class="k">for</span> <span class="n">alpha_guess</span> <span class="ow">in</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">3</span><span class="p">):</span>
+        <span class="k">for</span> <span class="n">theta_guess</span> <span class="ow">in</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">10</span><span class="p">,</span><span class="mi">3</span><span class="p">):</span>
 
             <span class="c1"># guesses for alpha, theta will change on each loop</span>
             <span class="n">init_guess</span> <span class="o">=</span> <span class="p">(</span><span class="o">...</span><span class="p">,</span> <span class="o">...</span><span class="p">)</span>
@@ -1074,16 +1020,6 @@ negative \log \mathcal{L} = -\sum_{t=1}^T \log p(c_t)
     <span class="nb">print</span><span class="p">(</span><span class="sa">fr</span><span class="s1">&#39;subject </span><span class="si">{</span><span class="n">index</span><span class="si">:</span><span class="s1">02</span><span class="si">}</span><span class="s1">: $\alpha$=</span><span class="si">{</span><span class="n">param_fits</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="si">:</span><span class="s1">.2f</span><span class="si">}</span><span class="s1">, $\theta$=</span><span class="si">{</span><span class="n">param_fits</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="si">:</span><span class="s1">.2f</span><span class="si">}</span><span class="s1">; negLL=</span><span class="si">{</span><span class="n">res_nll</span><span class="si">:</span><span class="s1">.2f</span><span class="si">}</span><span class="s1">; BIC=</span><span class="si">{</span><span class="n">BIC</span><span class="si">:</span><span class="s1">.2f</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
-</div>
-<div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">  File</span><span class="nn"> &quot;/tmp/ipykernel_4447/3296750088.py&quot;</span><span class="gt">, line </span><span class="mi">11</span>
-    <span class="o">...</span><span class="p">,</span> <span class="o">...</span> <span class="o">=</span> <span class="n">behavior</span><span class="o">.</span><span class="n">choice</span><span class="p">,</span> <span class="n">behavior</span><span class="o">.</span><span class="n">outcome</span>
-    <span class="o">^</span>
-<span class="ne">SyntaxError</span>: can&#39;t assign to Ellipsis
-</pre></div>
-</div>
-</div>
-</div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># solution</span>
@@ -1098,8 +1034,8 @@ negative \log \mathcal{L} = -\sum_{t=1}^T \log p(c_t)
     <span class="n">res_nll</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">inf</span> <span class="c1"># set initial neg LL to be inf</span>
 
     <span class="c1"># guess several different starting points for alpha</span>
-    <span class="k">for</span> <span class="n">alpha_guess</span> <span class="ow">in</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">6</span><span class="p">):</span>
-        <span class="k">for</span> <span class="n">theta_guess</span> <span class="ow">in</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">10</span><span class="p">,</span><span class="mi">6</span><span class="p">):</span>
+    <span class="k">for</span> <span class="n">alpha_guess</span> <span class="ow">in</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">3</span><span class="p">):</span>
+        <span class="k">for</span> <span class="n">theta_guess</span> <span class="ow">in</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">10</span><span class="p">,</span><span class="mi">3</span><span class="p">):</span>
 
             <span class="c1"># guesses for alpha, theta will change on each loop</span>
             <span class="n">init_guess</span> <span class="o">=</span> <span class="p">(</span><span class="n">alpha_guess</span><span class="p">,</span> <span class="n">theta_guess</span><span class="p">)</span>
@@ -1167,86 +1103,10 @@ negative \log \mathcal{L} = -\sum_{t=1}^T \log p(c_t)
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>subject 12: alpha=0.85, theta=1.76; negLL=27.51; BIC=62.84
 </pre></div>
 </div>
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
-<span class="ne">KeyboardInterrupt</span><span class="g g-Whitespace">                         </span>Traceback (most recent call last)
-<span class="o">/</span><span class="n">tmp</span><span class="o">/</span><span class="n">ipykernel_4447</span><span class="o">/</span><span class="mf">844010008.</span><span class="n">py</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
-<span class="g g-Whitespace">     </span><span class="mi">21</span>                               <span class="n">init_guess</span><span class="p">,</span>
-<span class="g g-Whitespace">     </span><span class="mi">22</span>                               <span class="p">(</span><span class="n">c</span><span class="p">,</span> <span class="n">r</span><span class="p">),</span>
-<span class="ne">---&gt; </span><span class="mi">23</span>                               <span class="n">bounds</span><span class="o">=</span><span class="p">((</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">),(</span><span class="mi">0</span><span class="p">,</span><span class="mi">10</span><span class="p">)))</span>
-<span class="g g-Whitespace">     </span><span class="mi">24</span> 
-<span class="g g-Whitespace">     </span><span class="mi">25</span>             <span class="c1"># if current negLL is smaller than the last negLL,</span>
-
-<span class="nn">/usr/share/miniconda3/envs/gu-psyc-347-jb/lib/python3.7/site-packages/scipy/optimize/_minimize.py</span> in <span class="ni">minimize</span><span class="nt">(fun, x0, args, method, jac, hess, hessp, bounds, constraints, tol, callback, options)</span>
-<span class="g g-Whitespace">    </span><span class="mi">622</span>     <span class="k">elif</span> <span class="n">meth</span> <span class="o">==</span> <span class="s1">&#39;l-bfgs-b&#39;</span><span class="p">:</span>
-<span class="g g-Whitespace">    </span><span class="mi">623</span>         <span class="k">return</span> <span class="n">_minimize_lbfgsb</span><span class="p">(</span><span class="n">fun</span><span class="p">,</span> <span class="n">x0</span><span class="p">,</span> <span class="n">args</span><span class="p">,</span> <span class="n">jac</span><span class="p">,</span> <span class="n">bounds</span><span class="p">,</span>
-<span class="ne">--&gt; </span><span class="mi">624</span>                                 <span class="n">callback</span><span class="o">=</span><span class="n">callback</span><span class="p">,</span> <span class="o">**</span><span class="n">options</span><span class="p">)</span>
-<span class="g g-Whitespace">    </span><span class="mi">625</span>     <span class="k">elif</span> <span class="n">meth</span> <span class="o">==</span> <span class="s1">&#39;tnc&#39;</span><span class="p">:</span>
-<span class="g g-Whitespace">    </span><span class="mi">626</span>         <span class="k">return</span> <span class="n">_minimize_tnc</span><span class="p">(</span><span class="n">fun</span><span class="p">,</span> <span class="n">x0</span><span class="p">,</span> <span class="n">args</span><span class="p">,</span> <span class="n">jac</span><span class="p">,</span> <span class="n">bounds</span><span class="p">,</span> <span class="n">callback</span><span class="o">=</span><span class="n">callback</span><span class="p">,</span>
-
-<span class="nn">/usr/share/miniconda3/envs/gu-psyc-347-jb/lib/python3.7/site-packages/scipy/optimize/lbfgsb.py</span> in <span class="ni">_minimize_lbfgsb</span><span class="nt">(fun, x0, args, jac, bounds, disp, maxcor, ftol, gtol, eps, maxfun, maxiter, iprint, callback, maxls, finite_diff_rel_step, **unknown_options)</span>
-<span class="g g-Whitespace">    </span><span class="mi">358</span>             <span class="c1"># until the completion of the current minimization iteration.</span>
-<span class="g g-Whitespace">    </span><span class="mi">359</span>             <span class="c1"># Overwrite f and g:</span>
-<span class="ne">--&gt; </span><span class="mi">360</span>             <span class="n">f</span><span class="p">,</span> <span class="n">g</span> <span class="o">=</span> <span class="n">func_and_grad</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
-<span class="g g-Whitespace">    </span><span class="mi">361</span>         <span class="k">elif</span> <span class="n">task_str</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="sa">b</span><span class="s1">&#39;NEW_X&#39;</span><span class="p">):</span>
-<span class="g g-Whitespace">    </span><span class="mi">362</span>             <span class="c1"># new iteration</span>
-
-<span class="nn">/usr/share/miniconda3/envs/gu-psyc-347-jb/lib/python3.7/site-packages/scipy/optimize/_differentiable_functions.py</span> in <span class="ni">fun_and_grad</span><span class="nt">(self, x)</span>
-<span class="g g-Whitespace">    </span><span class="mi">265</span>         <span class="k">if</span> <span class="ow">not</span> <span class="n">np</span><span class="o">.</span><span class="n">array_equal</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">x</span><span class="p">):</span>
-<span class="g g-Whitespace">    </span><span class="mi">266</span>             <span class="bp">self</span><span class="o">.</span><span class="n">_update_x_impl</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
-<span class="ne">--&gt; </span><span class="mi">267</span>         <span class="bp">self</span><span class="o">.</span><span class="n">_update_fun</span><span class="p">()</span>
-<span class="g g-Whitespace">    </span><span class="mi">268</span>         <span class="bp">self</span><span class="o">.</span><span class="n">_update_grad</span><span class="p">()</span>
-<span class="g g-Whitespace">    </span><span class="mi">269</span>         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">f</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">g</span>
-
-<span class="nn">/usr/share/miniconda3/envs/gu-psyc-347-jb/lib/python3.7/site-packages/scipy/optimize/_differentiable_functions.py</span> in <span class="ni">_update_fun</span><span class="nt">(self)</span>
-<span class="g g-Whitespace">    </span><span class="mi">231</span>     <span class="k">def</span> <span class="nf">_update_fun</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-<span class="g g-Whitespace">    </span><span class="mi">232</span>         <span class="k">if</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">f_updated</span><span class="p">:</span>
-<span class="ne">--&gt; </span><span class="mi">233</span>             <span class="bp">self</span><span class="o">.</span><span class="n">_update_fun_impl</span><span class="p">()</span>
-<span class="g g-Whitespace">    </span><span class="mi">234</span>             <span class="bp">self</span><span class="o">.</span><span class="n">f_updated</span> <span class="o">=</span> <span class="kc">True</span>
-<span class="g g-Whitespace">    </span><span class="mi">235</span> 
-
-<span class="nn">/usr/share/miniconda3/envs/gu-psyc-347-jb/lib/python3.7/site-packages/scipy/optimize/_differentiable_functions.py</span> in <span class="ni">update_fun</span><span class="nt">()</span>
-<span class="g g-Whitespace">    </span><span class="mi">135</span> 
-<span class="g g-Whitespace">    </span><span class="mi">136</span>         <span class="k">def</span> <span class="nf">update_fun</span><span class="p">():</span>
-<span class="ne">--&gt; </span><span class="mi">137</span>             <span class="bp">self</span><span class="o">.</span><span class="n">f</span> <span class="o">=</span> <span class="n">fun_wrapped</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">x</span><span class="p">)</span>
-<span class="g g-Whitespace">    </span><span class="mi">138</span> 
-<span class="g g-Whitespace">    </span><span class="mi">139</span>         <span class="bp">self</span><span class="o">.</span><span class="n">_update_fun_impl</span> <span class="o">=</span> <span class="n">update_fun</span>
-
-<span class="nn">/usr/share/miniconda3/envs/gu-psyc-347-jb/lib/python3.7/site-packages/scipy/optimize/_differentiable_functions.py</span> in <span class="ni">fun_wrapped</span><span class="nt">(x)</span>
-<span class="g g-Whitespace">    </span><span class="mi">132</span>             <span class="c1"># Overwriting results in undefined behaviour because</span>
-<span class="g g-Whitespace">    </span><span class="mi">133</span>             <span class="c1"># fun(self.x) will change self.x, with the two no longer linked.</span>
-<span class="ne">--&gt; </span><span class="mi">134</span>             <span class="k">return</span> <span class="n">fun</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">copy</span><span class="p">(</span><span class="n">x</span><span class="p">),</span> <span class="o">*</span><span class="n">args</span><span class="p">)</span>
-<span class="g g-Whitespace">    </span><span class="mi">135</span> 
-<span class="g g-Whitespace">    </span><span class="mi">136</span>         <span class="k">def</span> <span class="nf">update_fun</span><span class="p">():</span>
-
-<span class="nn">/tmp/ipykernel_4447/1053038448.py</span> in <span class="ni">negll_RescorlaWagner</span><span class="nt">(params, choices, outcomes)</span>
-<span class="g g-Whitespace">     </span><span class="mi">29</span>             <span class="c1"># update values</span>
-<span class="g g-Whitespace">     </span><span class="mi">30</span>             <span class="n">delta</span> <span class="o">=</span> <span class="n">r</span><span class="p">[</span><span class="n">t</span><span class="p">]</span> <span class="o">-</span> <span class="n">Q</span><span class="p">[</span><span class="n">c</span><span class="p">[</span><span class="n">t</span><span class="p">]]</span>
-<span class="ne">---&gt; </span><span class="mi">31</span>             <span class="n">Q</span><span class="p">[</span><span class="n">c</span><span class="p">[</span><span class="n">t</span><span class="p">]]</span> <span class="o">=</span> <span class="n">Q</span><span class="p">[</span><span class="n">c</span><span class="p">[</span><span class="n">t</span><span class="p">]]</span> <span class="o">+</span> <span class="n">alpha</span> <span class="o">*</span> <span class="n">delta</span>
-<span class="g g-Whitespace">     </span><span class="mi">32</span> 
-<span class="g g-Whitespace">     </span><span class="mi">33</span>             <span class="c1"># store Q_t+1</span>
-
-<span class="nn">/usr/share/miniconda3/envs/gu-psyc-347-jb/lib/python3.7/site-packages/pandas/core/series.py</span> in <span class="ni">__getitem__</span><span class="nt">(self, key)</span>
-<span class="g g-Whitespace">    </span><span class="mi">940</span> 
-<span class="g g-Whitespace">    </span><span class="mi">941</span>         <span class="k">elif</span> <span class="n">key_is_scalar</span><span class="p">:</span>
-<span class="ne">--&gt; </span><span class="mi">942</span>             <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_get_value</span><span class="p">(</span><span class="n">key</span><span class="p">)</span>
-<span class="g g-Whitespace">    </span><span class="mi">943</span> 
-<span class="g g-Whitespace">    </span><span class="mi">944</span>         <span class="k">if</span> <span class="n">is_hashable</span><span class="p">(</span><span class="n">key</span><span class="p">):</span>
-
-<span class="nn">/usr/share/miniconda3/envs/gu-psyc-347-jb/lib/python3.7/site-packages/pandas/core/series.py</span> in <span class="ni">_get_value</span><span class="nt">(self, label, takeable)</span>
-<span class="g g-Whitespace">   </span><span class="mi">1050</span>         <span class="c1"># Similar to Index.get_value, but we do not fall back to positional</span>
-<span class="g g-Whitespace">   </span><span class="mi">1051</span>         <span class="n">loc</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">index</span><span class="o">.</span><span class="n">get_loc</span><span class="p">(</span><span class="n">label</span><span class="p">)</span>
-<span class="ne">-&gt; </span><span class="mi">1052</span>         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">index</span><span class="o">.</span><span class="n">_get_values_for_loc</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">loc</span><span class="p">,</span> <span class="n">label</span><span class="p">)</span>
-<span class="g g-Whitespace">   </span><span class="mi">1053</span> 
-<span class="g g-Whitespace">   </span><span class="mi">1054</span>     <span class="k">def</span> <span class="fm">__setitem__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">key</span><span class="p">,</span> <span class="n">value</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
-
-<span class="nn">/usr/share/miniconda3/envs/gu-psyc-347-jb/lib/python3.7/site-packages/pandas/core/indexes/base.py</span> in <span class="ni">_get_values_for_loc</span><span class="nt">(self, series, loc, key)</span>
-<span class="g g-Whitespace">   </span><span class="mi">5182</span>         <span class="s2">&quot;&quot;&quot;</span>
-<span class="g g-Whitespace">   </span><span class="mi">5183</span><span class="s2">         if is_integer(loc):</span>
-<span class="ne">-&gt; </span><span class="mi">5184</span><span class="s2">             return series._values[loc]</span>
-<span class="g g-Whitespace">   </span><span class="mi">5185</span><span class="s2"> </span>
-<span class="g g-Whitespace">   </span><span class="mi">5186</span><span class="s2">         return series.iloc[loc]</span>
-
-<span class="ne">KeyboardInterrupt</span>: 
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>subject 13: alpha=0.63, theta=5.20; negLL=10.80; BIC=29.43
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>subject 14: alpha=1.00, theta=1.30; negLL=29.02; BIC=65.86
 </pre></div>
 </div>
 </div>
