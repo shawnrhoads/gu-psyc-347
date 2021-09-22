@@ -144,7 +144,7 @@ Please visit the [Assignments page](module-00-02_Course-Assignments.html) for th
 -	Implications of the research with regard to current social or political issues. 
 -	Was their evidence enough for their claims? What else would you have liked to see?
 
-**Article Presentations [50 points]**: Students will sign up to present one research article (15-25 minutes) and lead the class discussion (30 minutes). These should include:
+**Article Presentation [50 points]**: Students will sign up to present one research article (15-25 minutes) and lead the class discussion (30 minutes). These should include:
 - A brief overview of the paper (i.e., a powerpoint presentation)
 - Discussion/Interpretation of figures when possible/relevant (e.g., no need to interpret figures of brain images)
 - Discussion points or questions (similar to the ones for your reading responses). These points should include a discussion of the "computational model" (or models), including: 
@@ -153,7 +153,7 @@ Please visit the [Assignments page](module-00-02_Course-Assignments.html) for th
     - Why this model? 
     - What are the parameters in the model? what are the correlates of these parameters?
 
-**Jupyter Notebook Execises [105 points, 25 points for #1-3, 30 points for #4]**: Students will complete four coding exercises based on selected course topics throughout the semester.
+**Jupyter Notebook Exercises [105 points, 25 points for #1-3, 30 points for #4]**: Students will complete four coding exercises based on selected course topics throughout the semester.
 
 **Project Proposal - Round 1 [25 points]**: Students will submit a 250-300 word abstract describing their research question, hypotheses, and study idea along with an outline of the relevant content (i.e., summary of points for the following sections: Introduction, Experimental Design, Intellectual Merit, Broader Impacts, and Conclusion). They should set up a meeting with the instructor (during office hours) to determine a final project. Upon completion of this assignment, students will receive feedback and suggestions on how to improve their study and should incorporate this feedback into their proposal (Round 2).
 
