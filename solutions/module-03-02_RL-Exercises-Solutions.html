@@ -23,7 +23,7 @@
 
     
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/sphinx-book-theme.e8f53015daec13862f6db5e763c41738.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/sphinx-book-theme.e2363ea40746bee74734a24ffefccd78.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
@@ -73,6 +73,10 @@
     
         <div class="navbar-brand-box">
     <a class="navbar-brand text-wrap" href="../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
       
       <img src="../_static/logo.png" class="logo" alt="logo">
       
@@ -392,7 +396,7 @@
 <div class="cell_output docutils container">
 <div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
 <span class="ne">FileNotFoundError</span><span class="g g-Whitespace">                         </span>Traceback (most recent call last)
-<span class="o">/</span><span class="n">tmp</span><span class="o">/</span><span class="n">ipykernel_4864</span><span class="o">/</span><span class="mf">2567928728.</span><span class="n">py</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="o">/</span><span class="n">tmp</span><span class="o">/</span><span class="n">ipykernel_4093</span><span class="o">/</span><span class="mf">2567928728.</span><span class="n">py</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
 <span class="g g-Whitespace">     </span><span class="mi">11</span>     <span class="k">else</span><span class="p">:</span>
 <span class="g g-Whitespace">     </span><span class="mi">12</span>         <span class="n">filename</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">basename</span><span class="p">(</span><span class="n">url</span><span class="p">)</span>
 <span class="ne">---&gt; </span><span class="mi">13</span>     <span class="nb">open</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="s1">&#39;wb&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">r</span><span class="o">.</span><span class="n">content</span><span class="p">)</span>
@@ -986,7 +990,7 @@ negative \log \mathcal{L} = -\sum_{t=1}^T \log p(c_t)
 <div class="cell_output docutils container">
 <div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
 <span class="ne">NotImplementedError</span><span class="g g-Whitespace">                       </span>Traceback (most recent call last)
-<span class="o">/</span><span class="n">tmp</span><span class="o">/</span><span class="n">ipykernel_4864</span><span class="o">/</span><span class="mf">1250918315.</span><span class="n">py</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="o">/</span><span class="n">tmp</span><span class="o">/</span><span class="n">ipykernel_4093</span><span class="o">/</span><span class="mf">1250918315.</span><span class="n">py</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
 <span class="g g-Whitespace">      </span><span class="mi">3</span> 
 <span class="g g-Whitespace">      </span><span class="mi">4</span> <span class="c1"># [INSERT CODE BELOW]</span>
 <span class="ne">----&gt; </span><span class="mi">5</span> <span class="k">raise</span> <span class="ne">NotImplementedError</span><span class="p">(</span><span class="s2">&quot;Student exercise: make guess for alpha and theta to compute the negative loglikelihood, then delete this line&quot;</span><span class="p">)</span>
@@ -1072,7 +1076,7 @@ negative \log \mathcal{L} = -\sum_{t=1}^T \log p(c_t)
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">  File</span><span class="nn"> &quot;/tmp/ipykernel_4864/3296750088.py&quot;</span><span class="gt">, line </span><span class="mi">11</span>
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">  File</span><span class="nn"> &quot;/tmp/ipykernel_4093/3296750088.py&quot;</span><span class="gt">, line </span><span class="mi">11</span>
     <span class="o">...</span><span class="p">,</span> <span class="o">...</span> <span class="o">=</span> <span class="n">behavior</span><span class="o">.</span><span class="n">choice</span><span class="p">,</span> <span class="n">behavior</span><span class="o">.</span><span class="n">outcome</span>
     <span class="o">^</span>
 <span class="ne">SyntaxError</span>: can&#39;t assign to Ellipsis
@@ -1157,9 +1161,15 @@ negative \log \mathcal{L} = -\sum_{t=1}^T \log p(c_t)
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>subject 10: alpha=0.02, theta=10.00; negLL=21.33; BIC=50.48
 </pre></div>
 </div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>subject 11: alpha=0.62, theta=4.22; negLL=13.96; BIC=35.75
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>subject 12: alpha=0.85, theta=1.76; negLL=27.51; BIC=62.84
+</pre></div>
+</div>
 <div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
 <span class="ne">KeyboardInterrupt</span><span class="g g-Whitespace">                         </span>Traceback (most recent call last)
-<span class="o">/</span><span class="n">tmp</span><span class="o">/</span><span class="n">ipykernel_4864</span><span class="o">/</span><span class="mf">844010008.</span><span class="n">py</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="o">/</span><span class="n">tmp</span><span class="o">/</span><span class="n">ipykernel_4093</span><span class="o">/</span><span class="mf">844010008.</span><span class="n">py</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
 <span class="g g-Whitespace">     </span><span class="mi">21</span>                               <span class="n">init_guess</span><span class="p">,</span>
 <span class="g g-Whitespace">     </span><span class="mi">22</span>                               <span class="p">(</span><span class="n">c</span><span class="p">,</span> <span class="n">r</span><span class="p">),</span>
 <span class="ne">---&gt; </span><span class="mi">23</span>                               <span class="n">bounds</span><span class="o">=</span><span class="p">((</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">),(</span><span class="mi">0</span><span class="p">,</span><span class="mi">10</span><span class="p">)))</span>
@@ -1174,18 +1184,25 @@ negative \log \mathcal{L} = -\sum_{t=1}^T \log p(c_t)
 <span class="g g-Whitespace">    </span><span class="mi">626</span>         <span class="k">return</span> <span class="n">_minimize_tnc</span><span class="p">(</span><span class="n">fun</span><span class="p">,</span> <span class="n">x0</span><span class="p">,</span> <span class="n">args</span><span class="p">,</span> <span class="n">jac</span><span class="p">,</span> <span class="n">bounds</span><span class="p">,</span> <span class="n">callback</span><span class="o">=</span><span class="n">callback</span><span class="p">,</span>
 
 <span class="nn">/usr/share/miniconda3/envs/gu-psyc-347-jb/lib/python3.7/site-packages/scipy/optimize/lbfgsb.py</span> in <span class="ni">_minimize_lbfgsb</span><span class="nt">(fun, x0, args, jac, bounds, disp, maxcor, ftol, gtol, eps, maxfun, maxiter, iprint, callback, maxls, finite_diff_rel_step, **unknown_options)</span>
-<span class="g g-Whitespace">    </span><span class="mi">358</span>             <span class="c1"># until the completion of the current minimization iteration.</span>
-<span class="g g-Whitespace">    </span><span class="mi">359</span>             <span class="c1"># Overwrite f and g:</span>
-<span class="ne">--&gt; </span><span class="mi">360</span>             <span class="n">f</span><span class="p">,</span> <span class="n">g</span> <span class="o">=</span> <span class="n">func_and_grad</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
-<span class="g g-Whitespace">    </span><span class="mi">361</span>         <span class="k">elif</span> <span class="n">task_str</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="sa">b</span><span class="s1">&#39;NEW_X&#39;</span><span class="p">):</span>
-<span class="g g-Whitespace">    </span><span class="mi">362</span>             <span class="c1"># new iteration</span>
+<span class="g g-Whitespace">    </span><span class="mi">306</span>     <span class="n">sf</span> <span class="o">=</span> <span class="n">_prepare_scalar_function</span><span class="p">(</span><span class="n">fun</span><span class="p">,</span> <span class="n">x0</span><span class="p">,</span> <span class="n">jac</span><span class="o">=</span><span class="n">jac</span><span class="p">,</span> <span class="n">args</span><span class="o">=</span><span class="n">args</span><span class="p">,</span> <span class="n">epsilon</span><span class="o">=</span><span class="n">eps</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">307</span>                                   <span class="n">bounds</span><span class="o">=</span><span class="n">new_bounds</span><span class="p">,</span>
+<span class="ne">--&gt; </span><span class="mi">308</span>                                   <span class="n">finite_diff_rel_step</span><span class="o">=</span><span class="n">finite_diff_rel_step</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">309</span> 
+<span class="g g-Whitespace">    </span><span class="mi">310</span>     <span class="n">func_and_grad</span> <span class="o">=</span> <span class="n">sf</span><span class="o">.</span><span class="n">fun_and_grad</span>
 
-<span class="nn">/usr/share/miniconda3/envs/gu-psyc-347-jb/lib/python3.7/site-packages/scipy/optimize/_differentiable_functions.py</span> in <span class="ni">fun_and_grad</span><span class="nt">(self, x)</span>
-<span class="g g-Whitespace">    </span><span class="mi">266</span>             <span class="bp">self</span><span class="o">.</span><span class="n">_update_x_impl</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
-<span class="g g-Whitespace">    </span><span class="mi">267</span>         <span class="bp">self</span><span class="o">.</span><span class="n">_update_fun</span><span class="p">()</span>
-<span class="ne">--&gt; </span><span class="mi">268</span>         <span class="bp">self</span><span class="o">.</span><span class="n">_update_grad</span><span class="p">()</span>
-<span class="g g-Whitespace">    </span><span class="mi">269</span>         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">f</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">g</span>
-<span class="g g-Whitespace">    </span><span class="mi">270</span> 
+<span class="nn">/usr/share/miniconda3/envs/gu-psyc-347-jb/lib/python3.7/site-packages/scipy/optimize/optimize.py</span> in <span class="ni">_prepare_scalar_function</span><span class="nt">(fun, x0, jac, args, bounds, epsilon, finite_diff_rel_step, hess)</span>
+<span class="g g-Whitespace">    </span><span class="mi">260</span>     <span class="c1"># calculation reduces overall function evaluations.</span>
+<span class="g g-Whitespace">    </span><span class="mi">261</span>     <span class="n">sf</span> <span class="o">=</span> <span class="n">ScalarFunction</span><span class="p">(</span><span class="n">fun</span><span class="p">,</span> <span class="n">x0</span><span class="p">,</span> <span class="n">args</span><span class="p">,</span> <span class="n">grad</span><span class="p">,</span> <span class="n">hess</span><span class="p">,</span>
+<span class="ne">--&gt; </span><span class="mi">262</span>                         <span class="n">finite_diff_rel_step</span><span class="p">,</span> <span class="n">bounds</span><span class="p">,</span> <span class="n">epsilon</span><span class="o">=</span><span class="n">epsilon</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">263</span> 
+<span class="g g-Whitespace">    </span><span class="mi">264</span>     <span class="k">return</span> <span class="n">sf</span>
+
+<span class="nn">/usr/share/miniconda3/envs/gu-psyc-347-jb/lib/python3.7/site-packages/scipy/optimize/_differentiable_functions.py</span> in <span class="ni">__init__</span><span class="nt">(self, fun, x0, args, grad, hess, finite_diff_rel_step, finite_diff_bounds, epsilon)</span>
+<span class="g g-Whitespace">    </span><span class="mi">157</span> 
+<span class="g g-Whitespace">    </span><span class="mi">158</span>         <span class="bp">self</span><span class="o">.</span><span class="n">_update_grad_impl</span> <span class="o">=</span> <span class="n">update_grad</span>
+<span class="ne">--&gt; </span><span class="mi">159</span>         <span class="bp">self</span><span class="o">.</span><span class="n">_update_grad</span><span class="p">()</span>
+<span class="g g-Whitespace">    </span><span class="mi">160</span> 
+<span class="g g-Whitespace">    </span><span class="mi">161</span>         <span class="c1"># Hessian Evaluation</span>
 
 <span class="nn">/usr/share/miniconda3/envs/gu-psyc-347-jb/lib/python3.7/site-packages/scipy/optimize/_differentiable_functions.py</span> in <span class="ni">_update_grad</span><span class="nt">(self)</span>
 <span class="g g-Whitespace">    </span><span class="mi">236</span>     <span class="k">def</span> <span class="nf">_update_grad</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
@@ -1229,12 +1246,33 @@ negative \log \mathcal{L} = -\sum_{t=1}^T \log p(c_t)
 <span class="g g-Whitespace">    </span><span class="mi">135</span> 
 <span class="g g-Whitespace">    </span><span class="mi">136</span>         <span class="k">def</span> <span class="nf">update_fun</span><span class="p">():</span>
 
-<span class="nn">/tmp/ipykernel_4864/1053038448.py</span> in <span class="ni">negll_RescorlaWagner</span><span class="nt">(params, choices, outcomes)</span>
-<span class="g g-Whitespace">     </span><span class="mi">22</span>             <span class="n">ev</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="n">theta</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">Q</span><span class="p">))</span>
-<span class="g g-Whitespace">     </span><span class="mi">23</span>             <span class="n">sum_ev</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">ev</span><span class="p">)</span>
-<span class="ne">---&gt; </span><span class="mi">24</span>             <span class="n">p</span> <span class="o">=</span> <span class="n">ev</span> <span class="o">/</span> <span class="n">sum_ev</span>
-<span class="g g-Whitespace">     </span><span class="mi">25</span> 
-<span class="g g-Whitespace">     </span><span class="mi">26</span>             <span class="c1"># compute choice probability for actual choice</span>
+<span class="nn">/tmp/ipykernel_4093/1053038448.py</span> in <span class="ni">negll_RescorlaWagner</span><span class="nt">(params, choices, outcomes)</span>
+<span class="g g-Whitespace">     </span><span class="mi">28</span> 
+<span class="g g-Whitespace">     </span><span class="mi">29</span>             <span class="c1"># update values</span>
+<span class="ne">---&gt; </span><span class="mi">30</span>             <span class="n">delta</span> <span class="o">=</span> <span class="n">r</span><span class="p">[</span><span class="n">t</span><span class="p">]</span> <span class="o">-</span> <span class="n">Q</span><span class="p">[</span><span class="n">c</span><span class="p">[</span><span class="n">t</span><span class="p">]]</span>
+<span class="g g-Whitespace">     </span><span class="mi">31</span>             <span class="n">Q</span><span class="p">[</span><span class="n">c</span><span class="p">[</span><span class="n">t</span><span class="p">]]</span> <span class="o">=</span> <span class="n">Q</span><span class="p">[</span><span class="n">c</span><span class="p">[</span><span class="n">t</span><span class="p">]]</span> <span class="o">+</span> <span class="n">alpha</span> <span class="o">*</span> <span class="n">delta</span>
+<span class="g g-Whitespace">     </span><span class="mi">32</span> 
+
+<span class="nn">/usr/share/miniconda3/envs/gu-psyc-347-jb/lib/python3.7/site-packages/pandas/core/series.py</span> in <span class="ni">__getitem__</span><span class="nt">(self, key)</span>
+<span class="g g-Whitespace">    </span><span class="mi">940</span> 
+<span class="g g-Whitespace">    </span><span class="mi">941</span>         <span class="k">elif</span> <span class="n">key_is_scalar</span><span class="p">:</span>
+<span class="ne">--&gt; </span><span class="mi">942</span>             <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_get_value</span><span class="p">(</span><span class="n">key</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">943</span> 
+<span class="g g-Whitespace">    </span><span class="mi">944</span>         <span class="k">if</span> <span class="n">is_hashable</span><span class="p">(</span><span class="n">key</span><span class="p">):</span>
+
+<span class="nn">/usr/share/miniconda3/envs/gu-psyc-347-jb/lib/python3.7/site-packages/pandas/core/series.py</span> in <span class="ni">_get_value</span><span class="nt">(self, label, takeable)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1049</span> 
+<span class="g g-Whitespace">   </span><span class="mi">1050</span>         <span class="c1"># Similar to Index.get_value, but we do not fall back to positional</span>
+<span class="ne">-&gt; </span><span class="mi">1051</span>         <span class="n">loc</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">index</span><span class="o">.</span><span class="n">get_loc</span><span class="p">(</span><span class="n">label</span><span class="p">)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1052</span>         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">index</span><span class="o">.</span><span class="n">_get_values_for_loc</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">loc</span><span class="p">,</span> <span class="n">label</span><span class="p">)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1053</span> 
+
+<span class="nn">/usr/share/miniconda3/envs/gu-psyc-347-jb/lib/python3.7/site-packages/pandas/core/indexes/base.py</span> in <span class="ni">get_loc</span><span class="nt">(self, key, method, tolerance)</span>
+<span class="g g-Whitespace">   </span><span class="mi">3359</span>             <span class="n">casted_key</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_maybe_cast_indexer</span><span class="p">(</span><span class="n">key</span><span class="p">)</span>
+<span class="g g-Whitespace">   </span><span class="mi">3360</span>             <span class="k">try</span><span class="p">:</span>
+<span class="ne">-&gt; </span><span class="mi">3361</span>                 <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_engine</span><span class="o">.</span><span class="n">get_loc</span><span class="p">(</span><span class="n">casted_key</span><span class="p">)</span>
+<span class="g g-Whitespace">   </span><span class="mi">3362</span>             <span class="k">except</span> <span class="ne">KeyError</span> <span class="k">as</span> <span class="n">err</span><span class="p">:</span>
+<span class="g g-Whitespace">   </span><span class="mi">3363</span>                 <span class="k">raise</span> <span class="ne">KeyError</span><span class="p">(</span><span class="n">key</span><span class="p">)</span> <span class="kn">from</span> <span class="nn">err</span>
 
 <span class="ne">KeyboardInterrupt</span>: 
 </pre></div>
@@ -1285,7 +1323,7 @@ negative \log \mathcal{L} = -\sum_{t=1}^T \log p(c_t)
         
         </div>
     </div>
-    <footer class="footer mt-5 mt-md-0">
+    <footer class="footer">
     <div class="container">
       <p>
         
