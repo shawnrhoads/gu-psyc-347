@@ -26,7 +26,7 @@ We will use the following technological tools/applications on a regular basis. P
 
 ## Important course information
 
-Course assignments will be posted on Canvas, which include the course readings, videos, and links to the assignments you will need to complete each week. You'll need to be able to upload and download files, view streaming video, and use applications such as Google Docs, Google Python, Jupyter Notebook, Google Colaboratory, Slack, etc. 
+Course assignments will be posted on Canvas, which include the course readings, videos, and links to the assignments you will need to complete each week. You'll need to be able to upload and download files, view streaming video, and use applications such as Google Docs, Jupyter Notebook, Google Colaboratory, Slack, etc.
 
 Be sure you have set your notifications in Canvas so that you receive announcements, Canvas mail, discussion board posts, etc. I will post announcements regularly to communicate with the class. The minimum requirements to use Canvas can be found in this [Canvas guide](https://guides.instructure.com/m/67952/l/720328).
 
