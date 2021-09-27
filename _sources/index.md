@@ -1,6 +1,8 @@
+[![Jupyter Book Badge](https://jupyterbook.org/badge.svg)](https://shawnrhoads.github.io/gu-psyc-347) [![book](https://github.com/shawnrhoads/gu-psyc-347/actions/workflows/deploy-book.yml/badge.svg)](https://github.com/shawnrhoads/gu-psyc-347/actions/workflows/deploy-book.yml)
+
 # Computational Models of Human Social Behavior and Neuroscience
 Last updated: September 2021</br>
-The content in this Jupyter Book is subject to change.
+The content in this Jupyter Book is subject to change. 
 
 ## Course information 📝
 **Section**: PSYC 347-01</br>
@@ -25,17 +27,17 @@ The content in this Jupyter Book is subject to change.
 
 |   |  Run  |  View  |
 | - | :---: | :----: |
-| Tutorial 0: Jupyter Notebooks | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/shawnrhoads/gu-psyc-347/blob/master/docs/module-01-00_Jupyter-Notebooks.ipynb) | [![view](https://github.com/shawnrhoads/gu-psyc-347/actions/workflows/deploy-book.yml/badge.svg)](https://shawnrhoads.github.io/gu-psyc-347/module-01-00_Jupyter-Notebooks.html) |
-| Tutorial 1: Python Basics | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/shawnrhoads/gu-psyc-347/blob/master/docs/module-01-01_Intro-to-Python.ipynb) | [![view](https://github.com/shawnrhoads/gu-psyc-347/actions/workflows/deploy-book.yml/badge.svg)](https://shawnrhoads.github.io/gu-psyc-347/module-01-01_Intro-to-Python.html) |
-| Tutorial 2: Working with Data | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/shawnrhoads/gu-psyc-347/blob/master/docs/module-01-02_Working-with-Data.ipynb) | [![view](https://github.com/shawnrhoads/gu-psyc-347/actions/workflows/deploy-book.yml/badge.svg)](https://shawnrhoads.github.io/gu-psyc-347/module-01-02_Working-with-Data.html) |
+| Tutorial: Jupyter Notebooks | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/shawnrhoads/gu-psyc-347/blob/master/docs/module-01-00_Jupyter-Notebooks.ipynb) | [![view](https://github.com/shawnrhoads/gu-psyc-347/actions/workflows/deploy-book.yml/badge.svg)](https://shawnrhoads.github.io/gu-psyc-347/module-01-00_Jupyter-Notebooks.html) |
+| Tutorial: Python Basics | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/shawnrhoads/gu-psyc-347/blob/master/docs/module-01-01_Intro-to-Python.ipynb) | [![view](https://github.com/shawnrhoads/gu-psyc-347/actions/workflows/deploy-book.yml/badge.svg)](https://shawnrhoads.github.io/gu-psyc-347/module-01-01_Intro-to-Python.html) |
+| Tutorial: Working with Data | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/shawnrhoads/gu-psyc-347/blob/master/docs/module-01-02_Working-with-Data.ipynb) | [![view](https://github.com/shawnrhoads/gu-psyc-347/actions/workflows/deploy-book.yml/badge.svg)](https://shawnrhoads.github.io/gu-psyc-347/module-01-02_Working-with-Data.html) |
 | Exercise | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/shawnrhoads/gu-psyc-347/blob/master/docs/module-01-03_Python-Exercises.ipynb) | [![view](https://github.com/shawnrhoads/gu-psyc-347/actions/workflows/deploy-book.yml/badge.svg)](https://shawnrhoads.github.io/gu-psyc-347/module-01-03_Python-Exercises.html) |
 
 ### Module 02 - Introduction to Modeling
 
 |   |  Run  |  View  |
 | - | :---: | :----: |
-| Tutorial 0: Linear Modeling | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/shawnrhoads/gu-psyc-347/blob/master/docs/module-02-00_Linear-Modeling.ipynb) | [![view](https://github.com/shawnrhoads/gu-psyc-347/actions/workflows/deploy-book.yml/badge.svg)](https://shawnrhoads.github.io/gu-psyc-347/module-02-00_Linear-Modeling.html) |
-| Tutorial 1: Nonlinear Modeling | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/shawnrhoads/gu-psyc-347/blob/master/docs/module-02-01_Nonlinear-Modeling.ipynb) | [![view](https://github.com/shawnrhoads/gu-psyc-347/actions/workflows/deploy-book.yml/badge.svg)](https://shawnrhoads.github.io/gu-psyc-347/module-02-01_Nonlinear-Modeling.html) |
+| Tutorial: Linear Modeling | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/shawnrhoads/gu-psyc-347/blob/master/docs/module-02-00_Linear-Modeling.ipynb) | [![view](https://github.com/shawnrhoads/gu-psyc-347/actions/workflows/deploy-book.yml/badge.svg)](https://shawnrhoads.github.io/gu-psyc-347/module-02-00_Linear-Modeling.html) |
+| Tutorial: Nonlinear Modeling | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/shawnrhoads/gu-psyc-347/blob/master/docs/module-02-01_Nonlinear-Modeling.ipynb) | [![view](https://github.com/shawnrhoads/gu-psyc-347/actions/workflows/deploy-book.yml/badge.svg)](https://shawnrhoads.github.io/gu-psyc-347/module-02-01_Nonlinear-Modeling.html) |
 | Exercise | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/shawnrhoads/gu-psyc-347/blob/master/docs/module-02-02_Modeling-Exercises.ipynb) | [![view](https://github.com/shawnrhoads/gu-psyc-347/actions/workflows/deploy-book.yml/badge.svg)](https://shawnrhoads.github.io/gu-psyc-347/module-02-02_Modeling-Exercises.html) |
 
 
@@ -43,9 +45,16 @@ The content in this Jupyter Book is subject to change.
 
 |   |  Run  |  View  |
 | - | :---: | :----: |
-| Tutorial 0: Two-Armed Bandits | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/shawnrhoads/gu-psyc-347/blob/master/docs/module-03-00_Two-Armed-Bandit.ipynb) | [![view](https://github.com/shawnrhoads/gu-psyc-347/actions/workflows/deploy-book.yml/badge.svg)](https://shawnrhoads.github.io/gu-psyc-347/module-03-00_Two-Armed-Bandit.html) |
-| Tutorial 1: Models of Learning | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/shawnrhoads/gu-psyc-347/blob/master/docs/module-03-01_Models-of-Learning.ipynb) | [![view](https://github.com/shawnrhoads/gu-psyc-347/actions/workflows/deploy-book.yml/badge.svg)](https://shawnrhoads.github.io/gu-psyc-347/module-03-01_Models-of-Learning.html) |
+| Tutorial: Two-Armed Bandits | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/shawnrhoads/gu-psyc-347/blob/master/docs/module-03-00_Two-Armed-Bandit.ipynb) | [![view](https://github.com/shawnrhoads/gu-psyc-347/actions/workflows/deploy-book.yml/badge.svg)](https://shawnrhoads.github.io/gu-psyc-347/module-03-00_Two-Armed-Bandit.html) |
+| Tutorial: Models of Learning | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/shawnrhoads/gu-psyc-347/blob/master/docs/module-03-01_Models-of-Learning.ipynb) | [![view](https://github.com/shawnrhoads/gu-psyc-347/actions/workflows/deploy-book.yml/badge.svg)](https://shawnrhoads.github.io/gu-psyc-347/module-03-01_Models-of-Learning.html) |
 | Exercise | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/shawnrhoads/gu-psyc-347/blob/master/docs/module-03-02_RL-Exercises.ipynb) | [![view](https://github.com/shawnrhoads/gu-psyc-347/actions/workflows/deploy-book.yml/badge.svg)](https://shawnrhoads.github.io/gu-psyc-347/module-03-02_RL-Exercises.html) |
+
+### Module 04 - Social Learning
+
+|   |  Run  |  View  |
+| - | :---: | :----: |
+| Tutorial: Prosocial Learning | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/shawnrhoads/gu-psyc-347/blob/master/docs/module-04-00_Social-Learning.ipynb) | [![view](https://github.com/shawnrhoads/gu-psyc-347/actions/workflows/deploy-book.yml/badge.svg)](https://shawnrhoads.github.io/gu-psyc-347/module-04-00_Social-Learning.html) |
+| Exercise | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/shawnrhoads/gu-psyc-347/blob/master/docs/module-04-01_Prosocial-RL-Exercises.ipynb) | [![view](https://github.com/shawnrhoads/gu-psyc-347/actions/workflows/deploy-book.yml/badge.svg)](https://shawnrhoads.github.io/gu-psyc-347/module-04-01_Prosocial-RL-Exercises.html) |
 
 ## Acknowledgments 🙏
 I am grateful to [Dr. Deborah Sterns](https://deborahstearns.blogspot.com/), [Joscelin Rocha-Hidalgo](https://www.joscelinrocha.com/), and the [Georgetown Center for New Designs in Learning & Scholarship (CNDLS)](https://cndls.georgetown.edu/) for allowing me to use their teaching resources throughout the development of this course. I am also grateful to [Project Jupyter](https://jupyter.org/) for making it possible to create and share these materials in a Jupyter Book. I am also grateful to [Lin Gan](https://github.com/gllg4009) for her contributions and feedback in making enhancements to these materials. The format of this course was largely inspired by the [MIND Computational Summer School](https://mindsummerschool.org/), [Neuromatch Academy](https://academy.neuromatch.io/), Dr. Maximilian Risenhuber's Computational Neuroscience course, Dr. Robert C. Wilson's [Modeling the Mind course](http://u.arizona.edu/~bob/web_NSCS344/), Dr. Luke J. Chang's [DartBrains Jupyter Book](https://dartbrains.org/content/intro.html), the research conducted in the [Laboratory on Social and Affective Neuroscience](https://aamarsh.wordpress.com/lab/), and the countless conversations with my colleagues about the selected topics.
