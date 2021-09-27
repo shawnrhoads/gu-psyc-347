@@ -28,6 +28,7 @@
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/tabs.css" />
     <link rel="stylesheet" type="text/css" href="_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
     <link rel="stylesheet" type="text/css" href="_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
     
@@ -40,6 +41,7 @@
     <script src="_static/togglebutton.js"></script>
     <script src="_static/clipboard.min.js"></script>
     <script src="_static/copybutton.js"></script>
+    <script src="_static/tabs.js"></script>
     <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
@@ -1133,10 +1135,7 @@ PSYC 347 - COMPUTATIONAL MODELS OF HUMAN SOCIAL BEHAVIOR AND NEUROSCIENCE
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0 P
 1 S
-2
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> Y
+2 Y
 3 C
 4 H
 </pre></div>
@@ -1204,9 +1203,8 @@ r
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&#39;list&#39;, &#39;of&#39;, &#39;python&#39;, &#39;things&#39;, &#39;.&#39;]
 
 ...running for loop
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&#39;list&#39;, &#39;of&#39;, &#39;python&#39;, &#39;things&#39;, &#39;.&#39;, &#39;a&#39;, &#39;b&#39;, &#39;c&#39;]
+
+[&#39;list&#39;, &#39;of&#39;, &#39;python&#39;, &#39;things&#39;, &#39;.&#39;, &#39;a&#39;, &#39;b&#39;, &#39;c&#39;]
 </pre></div>
 </div>
 </div>
@@ -1830,9 +1828,9 @@ Fat Cat says Meow! Meow!
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([[0.05059725, 0.55237614],
-       [0.55756582, 0.21584793],
-       [0.78786502, 0.01366486]])
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([[0.93077548, 0.12235833],
+       [0.59652333, 0.08514305],
+       [0.74406514, 0.95577006]])
 </pre></div>
 </div>
 </div>
@@ -1844,8 +1842,8 @@ Fat Cat says Meow! Meow!
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([[0.05059725, 0.55237614, 0.55756582],
-       [0.21584793, 0.78786502, 0.01366486]])
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([[0.93077548, 0.12235833, 0.59652333],
+       [0.08514305, 0.74406514, 0.95577006]])
 </pre></div>
 </div>
 </div>
@@ -1880,10 +1878,10 @@ Fat Cat says Meow! Meow!
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[[0.4374123  0.62432764 0.66201028 0.36274471]
- [0.49952682 0.47230416 0.15926276 0.90279313]
- [0.38267988 0.50261353 0.55643325 0.68872956]
- [0.6756386  0.78242199 0.40884209 0.28056465]]
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[[0.35279162 0.57782085 0.51793505 0.67750938]
+ [0.86016783 0.13284194 0.18547223 0.39224991]
+ [0.10065531 0.96466195 0.98509723 0.90002622]
+ [0.5349083  0.11438217 0.14350882 0.87832837]]
 </pre></div>
 </div>
 </div>
@@ -1895,10 +1893,10 @@ Fat Cat says Meow! Meow!
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([[4.37412298, 6.24327643, 6.62010282, 3.6274471 ],
-       [4.99526825, 4.72304163, 1.59262758, 9.02793133],
-       [3.82679884, 5.02613526, 5.56433245, 6.88729563],
-       [6.75638604, 7.82421993, 4.08842091, 2.80564651]])
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([[3.52791622, 5.77820849, 5.17935055, 6.77509384],
+       [8.6016783 , 1.32841945, 1.85472229, 3.92249911],
+       [1.00655312, 9.64661954, 9.85097228, 9.00026221],
+       [5.34908297, 1.14382166, 1.43508821, 8.78328367]])
 </pre></div>
 </div>
 </div>
@@ -1911,9 +1909,9 @@ Fat Cat says Meow! Meow!
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[0.4374123  0.62432764 0.66201028 0.36274471 0.49952682 0.47230416
- 0.15926276 0.90279313 0.38267988 0.50261353 0.55643325 0.68872956
- 0.6756386  0.78242199 0.40884209 0.28056465]
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[0.35279162 0.57782085 0.51793505 0.67750938 0.86016783 0.13284194
+ 0.18547223 0.39224991 0.10065531 0.96466195 0.98509723 0.90002622
+ 0.5349083  0.11438217 0.14350882 0.87832837]
 </pre></div>
 </div>
 </div>
@@ -1925,10 +1923,10 @@ Fat Cat says Meow! Meow!
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([[0.4374123 , 0.62432764, 0.66201028, 0.36274471, 0.49952682,
-        0.47230416, 0.15926276, 0.90279313],
-       [0.38267988, 0.50261353, 0.55643325, 0.68872956, 0.6756386 ,
-        0.78242199, 0.40884209, 0.28056465]])
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([[0.35279162, 0.57782085, 0.51793505, 0.67750938, 0.86016783,
+        0.13284194, 0.18547223, 0.39224991],
+       [0.10065531, 0.96466195, 0.98509723, 0.90002622, 0.5349083 ,
+        0.11438217, 0.14350882, 0.87832837]])
 </pre></div>
 </div>
 </div>
@@ -1940,10 +1938,10 @@ Fat Cat says Meow! Meow!
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([[0.4374123 , 0.62432764, 0.66201028, 0.36274471],
-       [0.49952682, 0.47230416, 0.15926276, 0.90279313],
-       [0.38267988, 0.50261353, 0.55643325, 0.68872956],
-       [0.6756386 , 0.78242199, 0.40884209, 0.28056465]])
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([[0.35279162, 0.57782085, 0.51793505, 0.67750938],
+       [0.86016783, 0.13284194, 0.18547223, 0.39224991],
+       [0.10065531, 0.96466195, 0.98509723, 0.90002622],
+       [0.5349083 , 0.11438217, 0.14350882, 0.87832837]])
 </pre></div>
 </div>
 </div>
@@ -1956,13 +1954,13 @@ Fat Cat says Meow! Meow!
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[[[0.64726801 0.82657313 0.361525   0.41489342 0.8586988  0.45950336]
-  [0.54338033 0.76920883 0.09197857 0.67887011 0.63502423 0.12895204]
-  [0.68863131 0.52199892 0.36703588 0.27132747 0.379469   0.43239411]]
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[[[0.37920199 0.88970007 0.50896617 0.47988526 0.0298557  0.71092215]
+  [0.1955352  0.74639324 0.23310894 0.16269456 0.24752445 0.39156173]
+  [0.89025811 0.51444871 0.51841241 0.15887072 0.17347994 0.04195102]]
 
- [[0.67990918 0.0792661  0.0108966  0.68935273 0.7734187  0.672004  ]
-  [0.04892795 0.89327933 0.80640313 0.33016573 0.58064974 0.14277247]
-  [0.15076819 0.22512846 0.43713844 0.96972812 0.27029001 0.02224847]]]
+ [[0.49357322 0.82307096 0.08144649 0.16389226 0.35454438 0.56408401]
+  [0.87580621 0.17171755 0.4333865  0.77712269 0.46877492 0.49654001]
+  [0.02905709 0.77729075 0.81562807 0.79619632 0.52257355 0.3964322 ]]]
 </pre></div>
 </div>
 </div>
@@ -1974,12 +1972,12 @@ Fat Cat says Meow! Meow!
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[0.64726801 0.82657313 0.361525   0.41489342 0.8586988  0.45950336
- 0.54338033 0.76920883 0.09197857 0.67887011 0.63502423 0.12895204
- 0.68863131 0.52199892 0.36703588 0.27132747 0.379469   0.43239411
- 0.67990918 0.0792661  0.0108966  0.68935273 0.7734187  0.672004
- 0.04892795 0.89327933 0.80640313 0.33016573 0.58064974 0.14277247
- 0.15076819 0.22512846 0.43713844 0.96972812 0.27029001 0.02224847]
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[0.37920199 0.88970007 0.50896617 0.47988526 0.0298557  0.71092215
+ 0.1955352  0.74639324 0.23310894 0.16269456 0.24752445 0.39156173
+ 0.89025811 0.51444871 0.51841241 0.15887072 0.17347994 0.04195102
+ 0.49357322 0.82307096 0.08144649 0.16389226 0.35454438 0.56408401
+ 0.87580621 0.17171755 0.4333865  0.77712269 0.46877492 0.49654001
+ 0.02905709 0.77729075 0.81562807 0.79619632 0.52257355 0.3964322 ]
 </pre></div>
 </div>
 </div>
@@ -1991,10 +1989,10 @@ Fat Cat says Meow! Meow!
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[[0.4374123  0.49952682 0.38267988 0.6756386 ]
- [0.62432764 0.47230416 0.50261353 0.78242199]
- [0.66201028 0.15926276 0.55643325 0.40884209]
- [0.36274471 0.90279313 0.68872956 0.28056465]]
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[[0.35279162 0.86016783 0.10065531 0.5349083 ]
+ [0.57782085 0.13284194 0.96466195 0.11438217]
+ [0.51793505 0.18547223 0.98509723 0.14350882]
+ [0.67750938 0.39224991 0.90002622 0.87832837]]
 </pre></div>
 </div>
 </div>

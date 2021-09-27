@@ -28,6 +28,7 @@
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/tabs.css" />
     <link rel="stylesheet" type="text/css" href="_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
     <link rel="stylesheet" type="text/css" href="_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
     
@@ -40,6 +41,7 @@
     <script src="_static/togglebutton.js"></script>
     <script src="_static/clipboard.min.js"></script>
     <script src="_static/copybutton.js"></script>
+    <script src="_static/tabs.js"></script>
     <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
@@ -480,26 +482,26 @@
 </div>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>    column A  column B  column C
-0  -0.018068 -0.036438  1.121594
-1  -1.235848  1.023752  0.060926
-2   0.768325 -2.137173 -0.353321
-3   0.401166  0.939843 -0.065543
-4  -1.044474 -0.760205 -0.662097
-5  -0.833693  0.263004 -0.332785
-6  -0.579462  0.352346 -1.360483
-7  -0.400750  1.590286 -0.617032
-8   0.313868 -0.227244 -0.816984
-9   0.537134  0.881798  0.126907
-10 -0.764689  0.448420 -1.396999
-11 -1.847869 -0.200950 -0.519148
-12  0.117811  1.109072  0.114601
-13 -0.380181  0.549895 -1.146724
-14  0.972546  0.702150 -0.189340
-15  1.846092  0.559428  0.420987
-16  1.779128 -0.559122  1.247915
-17 -0.261929 -0.955585  0.662588
-18 -1.248863  0.834428 -0.697973
-19 -0.544118 -0.355167  0.572764
+0  -0.492263  0.880098 -0.034656
+1  -0.322254 -1.290545 -0.479916
+2   1.698976  0.680376  0.435543
+3   0.524944 -0.889072  0.288966
+4  -1.535841 -0.801302  0.223806
+5   1.272839  1.852507 -0.063986
+6   0.009681  0.356367 -0.126741
+7   0.920864 -0.054612  1.425285
+8  -0.847753  0.944924 -0.567206
+9  -2.442801 -0.147956 -1.359285
+10 -0.426523  0.592053 -0.673422
+11  0.378026 -0.331354  0.809131
+12  0.109961  1.450352 -0.054333
+13 -0.244984  1.331447 -1.993388
+14  0.337496 -0.676206 -0.145955
+15  1.464875  0.186761  0.154166
+16  0.394100 -0.693361  0.075963
+17 -0.187046  1.297135  0.775603
+18  0.316066 -0.294762 -0.378616
+19 -1.761907 -1.018113 -0.988421
 </pre></div>
 </div>
 </div>
@@ -515,11 +517,11 @@
 </div>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>   COLUMN A  COLUMN B  COLUMN C
-0 -0.018068 -0.036438  1.121594
-1 -1.235848  1.023752  0.060926
-2  0.768325 -2.137173 -0.353321
-3  0.401166  0.939843 -0.065543
-4 -1.044474 -0.760205 -0.662097
+0 -0.492263  0.880098 -0.034656
+1 -0.322254 -1.290545 -0.479916
+2  1.698976  0.680376  0.435543
+3  0.524944 -0.889072  0.288966
+4 -1.535841 -0.801302  0.223806
 </pre></div>
 </div>
 </div>
@@ -534,11 +536,11 @@
 </div>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>           A         B         C
-15  1.846092  0.559428  0.420987
-16  1.779128 -0.559122  1.247915
-17 -0.261929 -0.955585  0.662588
-18 -1.248863  0.834428 -0.697973
-19 -0.544118 -0.355167  0.572764
+15  1.464875  0.186761  0.154166
+16  0.394100 -0.693361  0.075963
+17 -0.187046  1.297135  0.775603
+18  0.316066 -0.294762 -0.378616
+19 -1.761907 -1.018113 -0.988421
 </pre></div>
 </div>
 </div>
@@ -598,26 +600,26 @@
 </div>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>           A         B         C
-0  -0.018068 -0.036438  1.121594
-1  -1.235848  1.023752  0.060926
-2   0.768325 -2.137173 -0.353321
-3   0.401166  0.939843 -0.065543
-4  -1.044474 -0.760205 -0.662097
-5  -0.833693  0.263004 -0.332785
-6  -0.579462  0.352346 -1.360483
-7  -0.400750  1.590286 -0.617032
-8   0.313868 -0.227244 -0.816984
-9   0.537134  0.881798  0.126907
-10 -0.764689  0.448420 -1.396999
-11 -1.847869 -0.200950 -0.519148
-12  0.117811  1.109072  0.114601
-13 -0.380181  0.549895 -1.146724
-14  0.972546  0.702150 -0.189340
-15  1.846092  0.559428  0.420987
-16  1.779128 -0.559122  1.247915
-17 -0.261929 -0.955585  0.662588
-18 -1.248863  0.834428 -0.697973
-19 -0.544118 -0.355167  0.572764
+0  -0.492263  0.880098 -0.034656
+1  -0.322254 -1.290545 -0.479916
+2   1.698976  0.680376  0.435543
+3   0.524944 -0.889072  0.288966
+4  -1.535841 -0.801302  0.223806
+5   1.272839  1.852507 -0.063986
+6   0.009681  0.356367 -0.126741
+7   0.920864 -0.054612  1.425285
+8  -0.847753  0.944924 -0.567206
+9  -2.442801 -0.147956 -1.359285
+10 -0.426523  0.592053 -0.673422
+11  0.378026 -0.331354  0.809131
+12  0.109961  1.450352 -0.054333
+13 -0.244984  1.331447 -1.993388
+14  0.337496 -0.676206 -0.145955
+15  1.464875  0.186761  0.154166
+16  0.394100 -0.693361  0.075963
+17 -0.187046  1.297135  0.775603
+18  0.316066 -0.294762 -0.378616
+19 -1.761907 -1.018113 -0.988421
 20  0.000000  0.000000  0.000000
 21  0.000000  0.000000  0.000000
 22  0.000000  0.000000  0.000000
@@ -1399,7 +1401,7 @@ dtype: float64
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0x7ff1c89c8b10&gt;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0x7fa25c08f4d0&gt;
 </pre></div>
 </div>
 <img alt="_images/module-01-02_Working-with-Data_66_1.png" src="_images/module-01-02_Working-with-Data_66_1.png" />
@@ -1422,7 +1424,7 @@ dtype: float64
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0x7ff1c863b590&gt;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0x7fa243fd1590&gt;
 </pre></div>
 </div>
 <img alt="_images/module-01-02_Working-with-Data_68_1.png" src="_images/module-01-02_Working-with-Data_68_1.png" />

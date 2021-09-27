@@ -28,6 +28,7 @@
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/tabs.css" />
     <link rel="stylesheet" type="text/css" href="_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
     <link rel="stylesheet" type="text/css" href="_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
     
@@ -40,6 +41,7 @@
     <script src="_static/togglebutton.js"></script>
     <script src="_static/clipboard.min.js"></script>
     <script src="_static/copybutton.js"></script>
+    <script src="_static/tabs.js"></script>
     <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
@@ -355,13 +357,14 @@
 </div>
 <div class="section" id="creating-the-anaconda-environment">
 <h2>2. Creating the Anaconda environment<a class="headerlink" href="#creating-the-anaconda-environment" title="Permalink to this headline">¶</a></h2>
-<p><strong>Downloading YAML file (Option A)</strong>
-If you would like to download files in a piecewise fashion (i.e., one at a time), then follow these instructions. If you would like to download the entire GitHub repository with all of the files, then follow the instructions for Option B.</p>
+<div class="tab-set docutils">
+<input checked="True" class="tab-input" id="tab-set--0-input--1" name="tab-set--0" type="radio"><label class="tab-label" for="tab-set--0-input--1"><strong>Downloading YAML file (Option A)</strong></label><div class="tab-content docutils">
+<p>If you would like to download files in a piecewise fashion (i.e., one at a time), then follow these instructions. If you would like to download the entire GitHub repository with all of the files, then follow the instructions for Option B.</p>
 <p><strong>Using the course-env.yml file</strong></br>
 Download this <a class="reference external" href="https://raw.githubusercontent.com/shawnrhoads/gu-psyc-347/master/course-env.yml">course-env.yml</a> file into any directory on your local computer (i.e., ~/Desktop/gu-psyc-347/course-env.yml).</p>
 <p>Once the download completes, change your directory to ‘gu-psyc-347’ (for example, using the command <code class="docutils literal notranslate"><span class="pre">cd</span> <span class="pre">gu-psyc-347</span></code>).</p>
-<div class="sidebar">
-<p class="sidebar-title"><strong>Cloning GitHub repository (Option B)</strong></p>
+</div>
+<input class="tab-input" id="tab-set--0-input--2" name="tab-set--0" type="radio"><label class="tab-label" for="tab-set--0-input--2"><strong>Cloning GitHub repository (Option B)</strong></label><div class="tab-content docutils">
 <p>If you would like to download the entire GitHub repository with all of the files, then follow these instructions. If you would like to download files in a piecewise fashion (i.e., one at a time), then follow the instructions for Option A.</p>
 <p><strong>Using Git</strong></br>
 In your terminal, use command: <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">clone</span> <span class="pre">https://github.com/shawnrhoads/gu-psyc-347</span></code></p>
@@ -372,6 +375,7 @@ Alternatively, you can download this <a class="reference external" href="https:/
 <li><p>MacOS: cd ~/Desktop/gu-psyc-347-master</p></li>
 <li><p>Windows: cd “C:\Users\USERNAME\Desktop\gu-psyc-347-master”</p></li>
 </ul>
+</div>
 </div>
 <div class="section" id="creating-the-gu-psyc-347-environment">
 <h3>Creating the gu-psyc-347 environment<a class="headerlink" href="#creating-the-gu-psyc-347-environment" title="Permalink to this headline">¶</a></h3>
