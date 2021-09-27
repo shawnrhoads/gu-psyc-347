@@ -44,12 +44,12 @@ Here is a good tutorial on how to email your professor: http://www.wikihow.com/E
 
 ## Course goals
 
-1. Understand the following: what are computational models, why use computational models, when to use computational models, and how models are fit to data
-2. Survey selected topics on social behavior through lectures, readings, discussions, and hands-on tutorials
-3. Learn how to write code for data science using the Python programming language and Jupyter Notebooks
-4. Fit models to data and evaluate their performance
-5. Interpret the results of a social behavioral experiment
-6. Gain a richer understanding of how computational modeling advances psychological science and neuroscience
+* Understand the following: what are computational models, why use computational models, when to use computational models, and how models are fit to data
+* Survey selected topics on social behavior through readings, discussions, and labs (e.g., Jupyter Notebook tutorials using Python)
+* Learn how to write code for data science using the Python programming language and Jupyter Notebooks
+* Fit mathematical models to data and evaluate their performance
+* Interpret the results of social behavioral experiments
+* Gain a richer understanding of how computational modeling advances psychological science and neuroscience
 
 ## Meeting these goals
 
