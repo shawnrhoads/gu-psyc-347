@@ -56,7 +56,7 @@
         <tr>
             <td rowspan=2>2</td>
             <td>2/2</td>
-            <td>Discussion on Guest & Martin (2021) and Jolly & Chang (2017)</td>
+            <td>Discussion of Guest & Martin (2021) and Jolly & Chang (2017)</td>
             <td>Read Guest & Martin (2021) and Jolly & Chang (2017), and <b>submit response</b></td>
         </tr>
         <tr>
@@ -68,8 +68,8 @@
         <tr>
             <td rowspan=2>3</td>
             <td>2/9</td>
-            <td>Discussion on Wilson & Collins (2018)</td>
-            <td><b>Submit Jupyter Notebook exercise 1</b>; Read Wilson & Collins (2018), and <b>submit response</b></td>
+            <td>Discussion of Wilson & Collins (2018)</td>
+            <td><b>Submit Jupyter Notebook exercise 1</b>; Read Wilson & Collins (2019), and <b>submit response</b></td>
             <td rowspan=4>Best practices in modeling (linear models, nonlinear models)</td>
         </tr>
         <tr>
@@ -97,8 +97,8 @@
         </tr>
         <tr>
             <td>2/25</td>
-            <td>Discussion on Sutton & Barto (2018)</td>
-            <td>Read Sutton & Barto (2018) Chapter 1 (pages 1-13) and Chapter 14 (341-349, 349-361), and <b>submit response</b></td>
+            <td>Discussion of Sutton & Barto (2018)</td>
+            <td>Read Sutton & Barto (2018) Chapter 1 (pages 1-13) and Chapter 14 (341-361), and <b>submit response</b></td>
         </tr>
         <tr>
             <td rowspan=2>6</td>
@@ -121,18 +121,18 @@
         <tr>
             <td>3/11</td>
             <td>Lecture</td>
-            <td>Read Lockwood, et al. (2020)</td>
+            <td>Read Lockwood et al. (2020)</td>
             <td rowspan=2>Applications to social behavior</td>
         </tr>
         <tr>
             <td rowspan=2>8</td>
             <td>3/16</td>
-            <td>Discussion of Zhang, Lengersdorff, et al. (2020); Final Project Discussion</td>
+            <td>Discussion of Zhang et al. (2020); Final Project Discussion</td>
             <td>Read Zhang, Lengersdorff, et al. (2020), and <b>submit response</b></td>
         </tr>
         <tr>
             <td>3/18</td>
-            <td>(Break) Canvas Discussion of Suzuki & O'Doherty, (2020)</td>
+            <td>(Break) Canvas Discussion of Suzuki & O'Doherty (2020)</td>
             <td>Read Suzuki & O'Doherty (2020), and <b>submit response</b></td>
             <td>Learning from and for others</td>
         </tr>
@@ -140,13 +140,13 @@
             <td rowspan=2>9</td>
             <td>3/23</td>
             <td>Discussion of Lindström et al. (2019)</td>
-            <td>Read, and Lindström et al. (2020) and <b>submit response</b></td>
+            <td>Read Lindström et al. (2019) and <b>submit response</b></td>
             <td>Social learning example (Threat)</td>
         </tr>
         <tr>
             <td>3/25</td>
-            <td>Discussion of Lockwood et al. (2016) and Lengersdorff, et al (2020)</td>
-            <td><b>Submit Jupyter Notebook exercise 3</b>; Read Lockwood et al., (2016)  and Lengersdorff, et al (2020), and <b>submit response</b></td>
+            <td>Discussion of Lockwood et al. (2016) and Lengersdorff et al. (2020)</td>
+            <td><b>Submit Jupyter Notebook exercise 3</b>; Read Lockwood et al. (2016)  and Lengersdorff et al. (2020), and <b>submit response</b></td>
             <td rowspan=6>Social learning example (Prosociality)</td>
         </tr>
         <tr>
@@ -212,20 +212,20 @@
             <td rowspan=2>15</td>
             <td>5/4</td>
             <td>Discussion of Tump et al. (2020) and Will et al. (2017)</td>
-            <td>Read Tump, et al. (2020) and Will et al. (2017), and <b>submit response</b></td>
+            <td>Read Tump et al. (2020) and Will et al. (2017), and <b>submit response</b></td>
             <td>Social influence with examples (Integrating Personal and Social Information; Self-Esteem)</td>
         </tr>
         <tr>
             <td>5/6</td>
-            <td>Lecture; Discussion of Patzelt, et al. (2018)</td>
-            <td><b>Submit Annotated Bibliography</b>; Read Patzelt, et al. (2018) and <b>submit response</b></td>
+            <td>Lecture; Discussion of Patzelt et al. (2018)</td>
+            <td><b>Submit Annotated Bibliography</b>; Read Patzelt et al. (2018) and <b>submit response</b></td>
             <td>Individual differences, other topics, and future directions</td>
         </tr>
         <tr>
             <td>-</td>
             <td>5/12</td>
             <td>Final</td>
-            <td><b>Submit Final Presentations</b> and <b>Project Proposal (Round 2)</b> by end of day</td>
+            <td><b>Submit Final Presentation</b> and <b>Project Proposal (Round 2)</b> by end of day</td>
             <td>-</td>
         </tr>
     </tbody>
