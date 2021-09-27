@@ -347,7 +347,7 @@
 <div class="section" id="python-exercises">
 <h1>Python Exercises<a class="headerlink" href="#python-exercises" title="Permalink to this headline">¶</a></h1>
 <p>For our first exercise, we will apply some of the skills we learned in Python. Please use all of the resources available to you, including Google, StackOverflow, and the Canvas Discussion Board.</p>
-<p>For these exercises, we will be using data from <a class="reference external" href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0244974">O’Connell, et al. (2021)</a></p>
+<p>For these exercises, we will be using data from <a class="reference external" href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0244974">O’Connell, et al. (2021)</a>. Reduced social distancing during the COVID-19 pandemic is associated with antisocial behaviors in an online United States sample. PLoS ONE.</p>
 <p>This study assessed whether social distancing behaviors (early in the COVID-19 pandemic) was associated with self-reported antisocial behavior. To measure one index of social distancing behavior, participants were presented with an image of an adult silhouette surrounded by a rectangular border. They were asked to click a point in the image that represents how far away they typically stood from other individuals.</p>
 <p>Here is a heatmap showing how far participants reported standing from other individuals in the past week, with dark maroon indicating a higher density of responses obtained from a kernel density estimation. The mean response coordinate, +, represents a distance of approximately 98 inches (8.2 feet; 2.5 m).</p>
 <p><img alt="Figure 1" src="https://journals.plos.org/plosone/article/figure/image?download&amp;size=medium&amp;id=info:doi/10.1371/journal.pone.0244974.g001" /></p>
@@ -372,21 +372,24 @@
 <h2>Basics<a class="headerlink" href="#basics" title="Permalink to this headline">¶</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># We usually, start a notebook with a brief overview in the first cell using Markdown (see above)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># We usually, start a notebook with a brief overview </span>
+<span class="c1"># in the first cell using Markdown (see above)</span>
 
-<span class="c1"># Then, it is common practice to load all the packages/modules that we will use in our first code cell. Please import pandas and numpy below so we can load our data:</span>
+<span class="c1"># Then, it is common practice to load all the </span>
+<span class="c1"># packages/modules that we will use in our first </span>
+<span class="c1"># code cell. Please import pandas and numpy </span>
+<span class="c1"># below so we can load our data:</span>
 
 <span class="c1"># [INSERT CODE BELOW]</span>
 <span class="k">raise</span> <span class="ne">NotImplementedError</span><span class="p">(</span><span class="s2">&quot;Student exercise: import pandas and numpy, then delete this line&quot;</span><span class="p">)</span>
 
-<span class="kn">import</span> <span class="nn">requests</span>
 <span class="kn">import</span> <span class="nn">...</span> <span class="k">as</span> <span class="nn">...</span>
 <span class="kn">import</span> <span class="nn">...</span> <span class="k">as</span> <span class="nn">...</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">  File</span><span class="nn"> &quot;/tmp/ipykernel_3941/3778601622.py&quot;</span><span class="gt">, line </span><span class="mi">9</span>
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">  File</span><span class="nn"> &quot;/tmp/ipykernel_3915/2401966255.py&quot;</span><span class="gt">, line </span><span class="mi">12</span>
     <span class="kn">import</span> <span class="nn">...</span> <span class="k">as</span> <span class="nn">...</span>
              <span class="o">^</span>
 <span class="ne">SyntaxError</span>: invalid syntax
@@ -396,36 +399,46 @@
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Now, we will load in our dataframe into a variable called `df` and view the first few rows:</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Now, we will load in our dataframe into</span>
+<span class="c1"># a variable called `df` and view the first few rows:</span>
 
-<span class="c1"># here, we are just going to download data from the web (no need to edit these lines, but try to figure out what they are doing)</span>
+<span class="c1"># here, we are just going to read data from the web </span>
+<span class="c1"># as a Pandas DataFrame</span>
 <span class="n">url</span> <span class="o">=</span> <span class="s1">&#39;https://raw.githubusercontent.com/shawnrhoads/gu-psyc-347/master/docs/static/data/OConnell_COVID_MTurk_noPII_post_peerreview.csv&#39;</span>
-<span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">allow_redirects</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-<span class="n">filename</span> <span class="o">=</span> <span class="s1">&#39;OConnell_COVID_MTurk_noPII_post_peerreview.csv&#39;</span>
-<span class="nb">open</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="s1">&#39;wb&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">r</span><span class="o">.</span><span class="n">content</span><span class="p">)</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">url</span><span class="p">)</span>
 
 <span class="c1"># [INSERT CODE BELOW]</span>
-<span class="k">raise</span> <span class="ne">NotImplementedError</span><span class="p">(</span><span class="s2">&quot;Student exercise: load data from csv into Pandas dataframe, then delete this line&quot;</span><span class="p">)</span>
+<span class="k">raise</span> <span class="ne">NotImplementedError</span><span class="p">(</span><span class="s2">&quot;Student exercise: display the contents of the DataFrame&quot;</span><span class="p">)</span>
 
-<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="o">...</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="o">..</span><span class="p">)</span>
+<span class="n">display</span><span class="p">(</span><span class="o">...</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">  File</span><span class="nn"> &quot;/tmp/ipykernel_3941/2920368484.py&quot;</span><span class="gt">, line </span><span class="mi">13</span>
-    <span class="nb">print</span><span class="p">(</span><span class="o">..</span><span class="p">)</span>
-          <span class="o">^</span>
-<span class="ne">SyntaxError</span>: invalid syntax
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">NameError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
+<span class="o">/</span><span class="n">tmp</span><span class="o">/</span><span class="n">ipykernel_3915</span><span class="o">/</span><span class="mf">2794955659.</span><span class="n">py</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="g g-Whitespace">      </span><span class="mi">5</span> <span class="c1"># as a Pandas DataFrame</span>
+<span class="g g-Whitespace">      </span><span class="mi">6</span> <span class="n">url</span> <span class="o">=</span> <span class="s1">&#39;https://raw.githubusercontent.com/shawnrhoads/gu-psyc-347/master/docs/static/data/OConnell_COVID_MTurk_noPII_post_peerreview.csv&#39;</span>
+<span class="ne">----&gt; </span><span class="mi">7</span> <span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">url</span><span class="p">)</span>
+<span class="g g-Whitespace">      </span><span class="mi">8</span> 
+<span class="g g-Whitespace">      </span><span class="mi">9</span> <span class="c1"># [INSERT CODE BELOW]</span>
+
+<span class="ne">NameError</span>: name &#39;pd&#39; is not defined
 </pre></div>
 </div>
 </div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Great, now that we have our data. Let&#39;s store data into two variables of interest into lists:</span>
-    <span class="c1"># - silhouette_dist_X_min81 : distance from others in pixels (x-axis)</span>
-    <span class="c1"># - STAB_total_min32 : antisocial behavior measured using the Subtypes of Antisocial Behavior Questionnaire (STAB)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Great, now that we have our data. Let&#39;s store </span>
+<span class="c1"># data into two variables of interest into lists:</span>
+    <span class="c1"># - silhouette_dist_X_min81 : </span>
+    <span class="c1">#      distance from others in pixels (x-axis)</span>
+    <span class="c1"># - STAB_total_min32 : </span>
+    <span class="c1">#      antisocial behavior measured using </span>
+    <span class="c1">#      the Subtypes of Antisocial </span>
+    <span class="c1">#      Behavior Questionnaire (STAB)</span>
 
 <span class="c1"># No need to add any code here. Just execute this cell!</span>
 
@@ -437,11 +450,11 @@
 <div class="cell_output docutils container">
 <div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
 <span class="ne">NameError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
-<span class="o">/</span><span class="n">tmp</span><span class="o">/</span><span class="n">ipykernel_3941</span><span class="o">/</span><span class="mf">2511731208.</span><span class="n">py</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
-<span class="g g-Whitespace">      </span><span class="mi">5</span> <span class="c1"># No need to add any code here. Just execute this cell!</span>
-<span class="g g-Whitespace">      </span><span class="mi">6</span> 
-<span class="ne">----&gt; </span><span class="mi">7</span> <span class="n">distance</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;silhouette_dist_X_min81&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">values</span><span class="p">)</span>
-<span class="g g-Whitespace">      </span><span class="mi">8</span> <span class="n">antisociality</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;STAB_total_min32&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">values</span><span class="p">)</span>
+<span class="o">/</span><span class="n">tmp</span><span class="o">/</span><span class="n">ipykernel_3915</span><span class="o">/</span><span class="mf">402758015.</span><span class="n">py</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="g g-Whitespace">     </span><span class="mi">10</span> <span class="c1"># No need to add any code here. Just execute this cell!</span>
+<span class="g g-Whitespace">     </span><span class="mi">11</span> 
+<span class="ne">---&gt; </span><span class="mi">12</span> <span class="n">distance</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;silhouette_dist_X_min81&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">values</span><span class="p">)</span>
+<span class="g g-Whitespace">     </span><span class="mi">13</span> <span class="n">antisociality</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;STAB_total_min32&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">values</span><span class="p">)</span>
 
 <span class="ne">NameError</span>: name &#39;df&#39; is not defined
 </pre></div>
@@ -450,7 +463,9 @@
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Let&#39;s verify that both of these variables are indeed stored in memory as lists using the `print()` and `type()` functions</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Let&#39;s verify that both of these variables are </span>
+<span class="c1"># indeed stored in memory as lists using the </span>
+<span class="c1"># `print()` and `type()` functions</span>
 
 <span class="c1"># [INSERT CODE BELOW]</span>
 <span class="k">raise</span> <span class="ne">NotImplementedError</span><span class="p">(</span><span class="s2">&quot;Student exercise: print the type of each variable, then delete this line&quot;</span><span class="p">)</span>
@@ -463,12 +478,12 @@
 <div class="cell_output docutils container">
 <div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
 <span class="ne">NotImplementedError</span><span class="g g-Whitespace">                       </span>Traceback (most recent call last)
-<span class="o">/</span><span class="n">tmp</span><span class="o">/</span><span class="n">ipykernel_3941</span><span class="o">/</span><span class="mf">1009367072.</span><span class="n">py</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
-<span class="g g-Whitespace">      </span><span class="mi">2</span> 
-<span class="g g-Whitespace">      </span><span class="mi">3</span> <span class="c1"># [INSERT CODE BELOW]</span>
-<span class="ne">----&gt; </span><span class="mi">4</span> <span class="k">raise</span> <span class="ne">NotImplementedError</span><span class="p">(</span><span class="s2">&quot;Student exercise: print the type of each variable, then delete this line&quot;</span><span class="p">)</span>
-<span class="g g-Whitespace">      </span><span class="mi">5</span> 
-<span class="g g-Whitespace">      </span><span class="mi">6</span> <span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="o">...</span><span class="p">))</span>
+<span class="o">/</span><span class="n">tmp</span><span class="o">/</span><span class="n">ipykernel_3915</span><span class="o">/</span><span class="mf">3929904286.</span><span class="n">py</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="g g-Whitespace">      </span><span class="mi">4</span> 
+<span class="g g-Whitespace">      </span><span class="mi">5</span> <span class="c1"># [INSERT CODE BELOW]</span>
+<span class="ne">----&gt; </span><span class="mi">6</span> <span class="k">raise</span> <span class="ne">NotImplementedError</span><span class="p">(</span><span class="s2">&quot;Student exercise: print the type of each variable, then delete this line&quot;</span><span class="p">)</span>
+<span class="g g-Whitespace">      </span><span class="mi">7</span> 
+<span class="g g-Whitespace">      </span><span class="mi">8</span> <span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="o">...</span><span class="p">))</span>
 
 <span class="ne">NotImplementedError</span>: Student exercise: print the type of each variable, then delete this line
 </pre></div>
@@ -477,7 +492,11 @@
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Let&#39;s also explore the data a bit more. Remember, both of these lists should contain the same number of observations. Let&#39;s store number of elements of each list and print them out. </span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Let&#39;s also explore the data a bit more. </span>
+<span class="c1"># Remember, both of these lists should </span>
+<span class="c1"># contain the same number of observations. </span>
+<span class="c1"># Let&#39;s store number of elements of each </span>
+<span class="c1"># list and print them out. </span>
 
 <span class="c1"># [INSERT CODE BELOW]</span>
 <span class="k">raise</span> <span class="ne">NotImplementedError</span><span class="p">(</span><span class="s2">&quot;Student exercise: store number of elements of each list, then delete this line&quot;</span><span class="p">)</span>
@@ -493,12 +512,12 @@
 <div class="cell_output docutils container">
 <div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
 <span class="ne">NotImplementedError</span><span class="g g-Whitespace">                       </span>Traceback (most recent call last)
-<span class="o">/</span><span class="n">tmp</span><span class="o">/</span><span class="n">ipykernel_3941</span><span class="o">/</span><span class="mf">3043110299.</span><span class="n">py</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
-<span class="g g-Whitespace">      </span><span class="mi">2</span> 
-<span class="g g-Whitespace">      </span><span class="mi">3</span> <span class="c1"># [INSERT CODE BELOW]</span>
-<span class="ne">----&gt; </span><span class="mi">4</span> <span class="k">raise</span> <span class="ne">NotImplementedError</span><span class="p">(</span><span class="s2">&quot;Student exercise: store number of elements of each list, then delete this line&quot;</span><span class="p">)</span>
-<span class="g g-Whitespace">      </span><span class="mi">5</span> 
-<span class="g g-Whitespace">      </span><span class="mi">6</span> <span class="n">length_of_dist_data</span> <span class="o">=</span> <span class="o">...</span>
+<span class="o">/</span><span class="n">tmp</span><span class="o">/</span><span class="n">ipykernel_3915</span><span class="o">/</span><span class="mf">1878024175.</span><span class="n">py</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="g g-Whitespace">      </span><span class="mi">6</span> 
+<span class="g g-Whitespace">      </span><span class="mi">7</span> <span class="c1"># [INSERT CODE BELOW]</span>
+<span class="ne">----&gt; </span><span class="mi">8</span> <span class="k">raise</span> <span class="ne">NotImplementedError</span><span class="p">(</span><span class="s2">&quot;Student exercise: store number of elements of each list, then delete this line&quot;</span><span class="p">)</span>
+<span class="g g-Whitespace">      </span><span class="mi">9</span> 
+<span class="g g-Whitespace">     </span><span class="mi">10</span> <span class="n">length_of_dist_data</span> <span class="o">=</span> <span class="o">...</span>
 
 <span class="ne">NotImplementedError</span>: Student exercise: store number of elements of each list, then delete this line
 </pre></div>
@@ -511,7 +530,14 @@
 <h2>If statements, For loops<a class="headerlink" href="#if-statements-for-loops" title="Permalink to this headline">¶</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Rather than printing out the lengths of each list above and qualitatively assessing whether they contain the same number of observations, we could have just used an if-statement. Let&#39;s do that now. If they are the same length, then print one line with the number of observations; if they are not, then print two lines with the number of observations for each list.</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Rather than printing out the lengths of each </span>
+<span class="c1"># list above and qualitatively assessing whether </span>
+<span class="c1"># they contain the same number of observations, </span>
+<span class="c1"># we could have just used an if-statement. </span>
+<span class="c1"># Let&#39;s do that now. If they are the same length, </span>
+<span class="c1"># then print one line with the number of observations; </span>
+<span class="c1"># if they are not, then print two lines with the </span>
+<span class="c1"># number of observations for each list.</span>
 
 <span class="c1"># [INSERT CODE BELOW]</span>
 <span class="k">raise</span> <span class="ne">NotImplementedError</span><span class="p">(</span><span class="s2">&quot;Student exercise: use if-statement to check if lists contain the same number of elements, then delete this line&quot;</span><span class="p">)</span>
@@ -528,7 +554,7 @@
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">  File</span><span class="nn"> &quot;/tmp/ipykernel_3941/1519205885.py&quot;</span><span class="gt">, line </span><span class="mi">9</span>
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">  File</span><span class="nn"> &quot;/tmp/ipykernel_3915/3450765365.py&quot;</span><span class="gt">, line </span><span class="mi">16</span>
     <span class="k">if</span> <span class="o">...</span>
           <span class="o">^</span>
 <span class="ne">SyntaxError</span>: invalid syntax
@@ -538,9 +564,18 @@
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># We might be missing data for some of the observations in these lists (i.e., a participant did not complete this question, so the element in the list is a `nan` or not a number). Let&#39;s write a for-loop to loop through the observations in `distance` and then check whether each observation is a nan. If the observation is a nan, then print out the location of that observation in the list</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># We might be missing data for some of the </span>
+<span class="c1"># observations in these lists (i.e., a </span>
+<span class="c1"># participant did not complete this question, </span>
+<span class="c1"># so the element in the list is a `nan` </span>
+<span class="c1"># or not a number). Let&#39;s write a for-loop </span>
+<span class="c1"># to loop through the observations in `distance` </span>
+<span class="c1"># and then check whether each observation is a nan. </span>
+<span class="c1"># If the observation is a nan, then print </span>
+<span class="c1"># out the location of that observation in the list</span>
 
-<span class="c1"># Hint: this will require you to put an if-statement within the for-loop</span>
+<span class="c1"># Hint: this will require you to put an </span>
+<span class="c1"># if-statement within the for-loop</span>
 
 <span class="c1"># [INSERT CODE BELOW]</span>
 <span class="k">raise</span> <span class="ne">NotImplementedError</span><span class="p">(</span><span class="s2">&quot;Student exercise: loop through elements in list and check if any are nans, then delete this line&quot;</span><span class="p">)</span>
@@ -552,7 +587,7 @@
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">  File</span><span class="nn"> &quot;/tmp/ipykernel_3941/1891114687.py&quot;</span><span class="gt">, line </span><span class="mi">9</span>
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">  File</span><span class="nn"> &quot;/tmp/ipykernel_3915/2815082703.py&quot;</span><span class="gt">, line </span><span class="mi">18</span>
     <span class="k">if</span> <span class="o">...</span>
           <span class="o">^</span>
 <span class="ne">SyntaxError</span>: invalid syntax
@@ -562,7 +597,10 @@
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Okay (spoiler alert), `distance` contains nans. Let&#39;s take the same for-loop code from above and add a &quot;counter&quot; to count how many nans we actually have</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Okay (spoiler alert), `distance` contains nans.</span>
+<span class="c1"># Let&#39;s take the same for-loop code from above </span>
+<span class="c1"># and add a &quot;counter&quot; to count how </span>
+<span class="c1"># many nans we actually have</span>
 
 <span class="c1"># [INSERT CODE BELOW]</span>
 <span class="k">raise</span> <span class="ne">NotImplementedError</span><span class="p">(</span><span class="s2">&quot;Student exercise: loop through elements in list, check if any are nans, and update counter for each nan, then delete this line&quot;</span><span class="p">)</span>
@@ -579,7 +617,7 @@
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">  File</span><span class="nn"> &quot;/tmp/ipykernel_3941/1762777097.py&quot;</span><span class="gt">, line </span><span class="mi">8</span>
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">  File</span><span class="nn"> &quot;/tmp/ipykernel_3915/1042918599.py&quot;</span><span class="gt">, line </span><span class="mi">11</span>
     <span class="k">if</span> <span class="o">...</span>
           <span class="o">^</span>
 <span class="ne">SyntaxError</span>: invalid syntax
@@ -593,11 +631,21 @@
 <h2>Functions<a class="headerlink" href="#functions" title="Permalink to this headline">¶</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># We can also make our code above &quot;general-purpose&quot;, so we can apply it to any list. In this cell, write a function called `check_for_nans()` that takes two inputs [a list and a string (&quot;the list name&quot;)] and two outputs [a boolean whether the list contains any nans (i.e., if the counter is greater than 0) and the number of nans in list (zero if no nans)]. </span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># We can also make our code above &quot;general-purpose&quot;,</span>
+<span class="c1">#  so we can apply it to any list. In this cell,</span>
+<span class="c1">#  write a function called `check_for_nans()`</span>
+<span class="c1">#  that takes two inputs [a list and a string </span>
+<span class="c1"># (&quot;the list name&quot;)] and two outputs [a boolean</span>
+<span class="c1">#  whether the list contains any nans (i.e., if</span>
+<span class="c1">#  the counter is greater than 0) and the</span>
+<span class="c1">#  number of nans in list (zero if no nans)]. </span>
 
-<span class="c1"># Note that there are many ways to accomplish this task, feel free to experiment around with different approaches</span>
+<span class="c1"># Note that there are many ways to accomplish</span>
+<span class="c1">#  this task, feel free to experiment </span>
+<span class="c1"># around with different approaches</span>
 
-<span class="c1"># Fill out this function, then try to excecute the next cell to see if it works</span>
+<span class="c1"># Fill out this function, then try to </span>
+<span class="c1"># excecute the next cell to see if it works</span>
 
 <span class="k">def</span> <span class="nf">check_for_nans</span><span class="p">(</span><span class="n">list_input</span><span class="p">,</span> <span class="n">list_name</span><span class="o">=</span><span class="s1">&#39;list&#39;</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Check whether a list contains any nans</span>
@@ -611,10 +659,10 @@
 <span class="sd">        int: number of nans found in list, zero if no nans</span>
 <span class="sd">    &quot;&quot;&quot;</span>
 
-    <span class="c1">################################################################################</span>
+    <span class="c1">############################</span>
     <span class="c1"># [INSERT CODE BELOW]</span>
     <span class="k">raise</span> <span class="ne">NotImplementedError</span><span class="p">(</span><span class="s2">&quot;Student exercise: check if any inputted list contains nans, then delete this line&quot;</span><span class="p">)</span>
-    <span class="c1">################################################################################</span>
+    <span class="c1">############################</span>
 
     <span class="c1"># loop through elements/observations in list</span>
     <span class="n">counter</span> <span class="o">=</span> <span class="mi">0</span> <span class="c1">#initialize counter with 0</span>
@@ -636,7 +684,7 @@
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">  File</span><span class="nn"> &quot;/tmp/ipykernel_3941/631573339.py&quot;</span><span class="gt">, line </span><span class="mi">27</span>
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">  File</span><span class="nn"> &quot;/tmp/ipykernel_3915/2808151122.py&quot;</span><span class="gt">, line </span><span class="mi">37</span>
     <span class="k">if</span> <span class="o">...</span>
           <span class="o">^</span>
 <span class="ne">SyntaxError</span>: invalid syntax
@@ -646,12 +694,19 @@
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Run this cell to check your work. No need to edit, just execute cell!</span>
-<span class="n">antisociality_contains_nans</span><span class="p">,</span> <span class="n">antisociality_nan_count</span> <span class="o">=</span> <span class="n">check_for_nans</span><span class="p">(</span><span class="n">antisociality</span><span class="p">,</span> <span class="n">list_name</span><span class="o">=</span><span class="s1">&#39;antisociality&#39;</span><span class="p">)</span>
-<span class="n">distance_contains_nans</span><span class="p">,</span> <span class="n">distance_nan_count</span> <span class="o">=</span> <span class="n">check_for_nans</span><span class="p">(</span><span class="n">distance</span><span class="p">,</span> <span class="n">list_name</span><span class="o">=</span><span class="s1">&#39;distance&#39;</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Run this cell to check your work. </span>
+<span class="c1"># This cell should output the line:</span>
+<span class="c1"># &quot;CONGRATS! LOOKS LIKE YOU DID IT!&quot;</span>
+<span class="c1"># No need to edit, just execute cell!</span>
 
-<span class="c1">####################################</span>
-<span class="c1"># This is a check to see if it works; bonus point if you can summarize what we do here!</span>
+<span class="n">antisociality_contains_nans</span><span class="p">,</span> <span class="n">antisociality_nan_count</span> <span class="o">=</span> <span class="n">check_for_nans</span><span class="p">(</span><span class="n">antisociality</span><span class="p">,</span> 
+                                                                      <span class="n">list_name</span><span class="o">=</span><span class="s1">&#39;antisociality&#39;</span><span class="p">)</span>
+<span class="n">distance_contains_nans</span><span class="p">,</span> <span class="n">distance_nan_count</span> <span class="o">=</span> <span class="n">check_for_nans</span><span class="p">(</span><span class="n">distance</span><span class="p">,</span> 
+                                                            <span class="n">list_name</span><span class="o">=</span><span class="s1">&#39;distance&#39;</span><span class="p">)</span>
+
+<span class="c1"># This is a check to see if it works; </span>
+<span class="c1"># bonus point if you can summarize what we do here!</span>
+<span class="c1">##############</span>
 <span class="n">new_list</span> <span class="o">=</span> <span class="p">[[</span><span class="mi">1</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">nan</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">nan</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">nan</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">nan</span><span class="p">],</span>           <span class="c1"># 4 </span>
             <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">10</span><span class="p">],</span>                                      <span class="c1"># 0 </span>
             <span class="p">[</span><span class="n">np</span><span class="o">.</span><span class="n">nan</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">nan</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">nan</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">nan</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">nan</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">nan</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">nan</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">nan</span><span class="p">,</span> <span class="mi">10</span><span class="p">]]</span> <span class="c1"># 8</span>
@@ -665,19 +720,19 @@
 
 <span class="k">if</span> <span class="p">(</span><span class="n">list_of_booleans</span><span class="o">==</span><span class="p">[</span><span class="kc">True</span><span class="p">,</span><span class="kc">False</span><span class="p">,</span><span class="kc">True</span><span class="p">])</span> <span class="ow">and</span> <span class="p">(</span><span class="n">list_of_counts</span><span class="o">==</span><span class="p">[</span><span class="mi">4</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">8</span><span class="p">]):</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;CONGRATS! LOOKS LIKE YOU DID IT!&quot;</span><span class="p">)</span>
-<span class="c1">####################################</span>
+<span class="c1">##############</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
 <div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
 <span class="ne">NameError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
-<span class="o">/</span><span class="n">tmp</span><span class="o">/</span><span class="n">ipykernel_3941</span><span class="o">/</span><span class="mf">1884265663.</span><span class="n">py</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
-<span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="c1"># Run this cell to check your work. No need to edit, just execute cell!</span>
-<span class="ne">----&gt; </span><span class="mi">2</span> <span class="n">antisociality_contains_nans</span><span class="p">,</span> <span class="n">antisociality_nan_count</span> <span class="o">=</span> <span class="n">check_for_nans</span><span class="p">(</span><span class="n">antisociality</span><span class="p">,</span> <span class="n">list_name</span><span class="o">=</span><span class="s1">&#39;antisociality&#39;</span><span class="p">)</span>
-<span class="g g-Whitespace">      </span><span class="mi">3</span> <span class="n">distance_contains_nans</span><span class="p">,</span> <span class="n">distance_nan_count</span> <span class="o">=</span> <span class="n">check_for_nans</span><span class="p">(</span><span class="n">distance</span><span class="p">,</span> <span class="n">list_name</span><span class="o">=</span><span class="s1">&#39;distance&#39;</span><span class="p">)</span>
-<span class="g g-Whitespace">      </span><span class="mi">4</span> 
-<span class="g g-Whitespace">      </span><span class="mi">5</span> <span class="c1">####################################</span>
+<span class="o">/</span><span class="n">tmp</span><span class="o">/</span><span class="n">ipykernel_3915</span><span class="o">/</span><span class="mf">153651912.</span><span class="n">py</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="g g-Whitespace">      </span><span class="mi">4</span> <span class="c1"># No need to edit, just execute cell!</span>
+<span class="g g-Whitespace">      </span><span class="mi">5</span> 
+<span class="ne">----&gt; </span><span class="mi">6</span> <span class="n">antisociality_contains_nans</span><span class="p">,</span> <span class="n">antisociality_nan_count</span> <span class="o">=</span> <span class="n">check_for_nans</span><span class="p">(</span><span class="n">antisociality</span><span class="p">,</span> 
+<span class="g g-Whitespace">      </span><span class="mi">7</span>                                                                       <span class="n">list_name</span><span class="o">=</span><span class="s1">&#39;antisociality&#39;</span><span class="p">)</span>
+<span class="g g-Whitespace">      </span><span class="mi">8</span> <span class="n">distance_contains_nans</span><span class="p">,</span> <span class="n">distance_nan_count</span> <span class="o">=</span> <span class="n">check_for_nans</span><span class="p">(</span><span class="n">distance</span><span class="p">,</span> 
 
 <span class="ne">NameError</span>: name &#39;check_for_nans&#39; is not defined
 </pre></div>
@@ -692,8 +747,8 @@
 </div>
 </div>
 </div>
-<p>Woohoo! You finished your first Jupyter Notebook exercise! Please save this file as an .html file by clicking on <strong>‘File &gt; Download As &gt; HTML (.html)’</strong></p>
-<p>Then, save the file as <strong>“Lastname_Exercise01.html”</strong> and submit on Canvas.</p>
+<p>Woohoo! You finished your first Jupyter Notebook exercise!</p>
+<p>In you are working on Google Colab, go to <strong>File &gt; Download &gt; Download .ipynb</strong> to download your work. Then, save the file as <strong>“Lastname_Exercise01.ipynb”</strong> and submit on Canvas.</p>
 </div>
 </div>
 
