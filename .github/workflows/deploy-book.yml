@@ -44,6 +44,8 @@ jobs:
         conda list
         conda activate gu-psyc-347-jb
         jupyter nbextension enable --py widgetsnbextension
+        cp README.md docs/index.md
+        cp CONTRIBUTING.md docs/module-00-06_Contributing.md
         jupyter-book build docs
 
     # Push the book's HTML to github-pages
