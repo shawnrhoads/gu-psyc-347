@@ -8,15 +8,16 @@ You can follow [these instructions](https://docs.anaconda.com/anaconda/install/)
 
 ## 2. Creating the Anaconda environment
 
-**Downloading YAML file (Option A)**
+```{tab} **Downloading YAML file (Option A)**
 If you would like to download files in a piecewise fashion (i.e., one at a time), then follow these instructions. If you would like to download the entire GitHub repository with all of the files, then follow the instructions for Option B.
 
 **Using the course-env.yml file**</br>
 Download this [course-env.yml](https://raw.githubusercontent.com/shawnrhoads/gu-psyc-347/master/course-env.yml) file into any directory on your local computer (i.e., ~/Desktop/gu-psyc-347/course-env.yml).
 
 Once the download completes, change your directory to 'gu-psyc-347' (for example, using the command `cd gu-psyc-347`).
+```
 
-```{sidebar} **Cloning GitHub repository (Option B)**
+```{tab} **Cloning GitHub repository (Option B)**
 
 If you would like to download the entire GitHub repository with all of the files, then follow these instructions. If you would like to download files in a piecewise fashion (i.e., one at a time), then follow the instructions for Option A.
 
