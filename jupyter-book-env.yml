@@ -8,7 +8,6 @@ dependencies:
   - sphinx=2.4.4
   - pip
   - runjb
-  - git
   - pandas
   - scipy
   - numpy
@@ -18,3 +17,4 @@ dependencies:
   - ipywidgets
   - pip:
     - jupyter-book==0.10.2
+    - sphinx-inline-tabs
