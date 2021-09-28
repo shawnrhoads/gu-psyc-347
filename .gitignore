@@ -11,5 +11,3 @@ __pycache__/
 .vscode
 docs/_build/
 docs/_work
-!docs/_build/module-04-01_Prosocial-RL-Exercises*
-!docs/_build/solutions/*
