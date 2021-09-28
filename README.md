@@ -63,7 +63,7 @@ Please visit <a target="_blank" rel="noopener noreferrer" href="https://shawnrho
 
 ## Contributors ✨
 
-<table role="table">
+<table role="table" style="margin: 0px auto;">
     <thead role="rowgroup">
         <tr role="row">
             <td align="center" role="columnheader"><a target="_blank" rel="noopener noreferrer" href="https://shawnrhoads.github.io/"><img src="https://avatars3.githubusercontent.com/u/24925845" width="100px;" alt=""/></a><br /><sub><a target="_blank" rel="noopener noreferrer" href="https://github.com/shawnrhoads/gu-psyc-347/commits?author=shawnrhoads"><b>Shawn A Rhoads</b></a><br/><b title="Design">🎨</a> <b title="Data">🔣</a> <b title="Documentation">📖</a> <b title="Content">🖋</a> <b title="Code">💻</a><br><b title="Ideas">🤔</a> <b title="Infrastructure">🚇</a> <b title="Maintenance">🚧</a> <b title="Reviewer">👀</a> <b title="Tutorials">✅</a></sub></td>
