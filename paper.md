@@ -1,5 +1,5 @@
 ---
-title: 'Computational models of human social behavior and neuroscience: An educational course and Jupyter Book to advance computational training'
+title: 'Computational models of human social behavior and neuroscience: An open educational course and Jupyter Book to advance computational training'
 tags:
   - Computational Modeling
   - Cognitive Modeling
