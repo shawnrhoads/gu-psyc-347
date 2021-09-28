@@ -220,6 +220,11 @@
    Prosocial RL Exercises
   </a>
  </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="module-04-XX_Future-Directions.html">
+   Future Directions
+  </a>
+ </li>
 </ul>
 
     </div>
@@ -691,6 +696,8 @@ negative \log \mathcal{L} = -\sum_{t=1}^T \log p(c_t)
                 <span class="n">param_fits</span> <span class="o">=</span> <span class="o">...</span>
 
     <span class="c1"># also, compute BIC</span>
+    <span class="c1"># note: we don&#39;t need the -1 because </span>
+    <span class="c1"># we already have the negative log likelihood!</span>
     <span class="n">BIC</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">init_guess</span><span class="p">)</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">c</span><span class="p">))</span> <span class="o">+</span> <span class="mi">2</span><span class="o">*</span><span class="n">res_nll</span>
     
     <span class="c1">#store in dataframe</span>

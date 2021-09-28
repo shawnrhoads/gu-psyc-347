@@ -218,6 +218,11 @@
    Prosocial RL Exercises
   </a>
  </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="module-04-XX_Future-Directions.html">
+   Future Directions
+  </a>
+ </li>
 </ul>
 
     </div>
@@ -358,13 +363,12 @@
 <h1>Working with Data<a class="headerlink" href="#working-with-data" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="describing-data-using-pandas">
 <h2>Describing Data using Pandas<a class="headerlink" href="#describing-data-using-pandas" title="Permalink to this headline">¶</a></h2>
-<p>In this first section, we will use the Pandas package to explore and describe data from <a class="reference external" href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0244974">O’Connell, K., Berluti, K., Rhoads, S. A., &amp; Marsh, A. A. (2021). Reduced social distancing during the COVID-19 pandemic is associated with antisocial behaviors in an online United States sample. PLoS ONE.</a></p>
+<p>In this first section, we will use the Pandas package to explore and describe data from <a class="reference external" href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0244974">O’Connell, K., Berluti, K., Rhoads, S. A., &amp; Marsh, A. A. (2021)</a>. Reduced social distancing during the COVID-19 pandemic is associated with antisocial behaviors in an online United States sample. PLoS ONE.</p>
 <p>This study assessed whether social distancing behaviors (early in the COVID-19 pandemic) was associated with self-reported antisocial behavior.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Remember: Python requires you to explictly &quot;import&quot; libraries before their functions are available to use. We will always specify our imports at the beginning of each notebook.</span>
 <span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span><span class="o">,</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-<span class="kn">import</span> <span class="nn">requests</span> <span class="c1"># to download data from web</span>
 </pre></div>
 </div>
 </div>
@@ -377,13 +381,9 @@
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># here, we are just going to download data from the web</span>
 <span class="n">url</span> <span class="o">=</span> <span class="s1">&#39;https://raw.githubusercontent.com/shawnrhoads/gu-psyc-347/master/docs/static/data/OConnell_COVID_MTurk_noPII_post_peerreview.csv&#39;</span>
-<span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">allow_redirects</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-<span class="n">filename</span> <span class="o">=</span> <span class="s1">&#39;OConnell_COVID_MTurk_noPII_post_peerreview.csv&#39;</span> <span class="c1"># string with location of file</span>
-
-<span class="nb">open</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="s1">&#39;wb&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">r</span><span class="o">.</span><span class="n">content</span><span class="p">)</span>
 
 <span class="c1"># load data specified in `filename` into dataframe `df`</span>
-<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">filename</span><span class="p">)</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">url</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -482,26 +482,26 @@
 </div>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>    column A  column B  column C
-0  -0.357378  0.362876  0.970478
-1  -0.707933 -0.458981  0.384793
-2   0.386071 -0.082357  0.278547
-3  -0.543445  0.630275  0.637633
-4   0.186986 -0.601993  0.780572
-5   1.037550 -0.421980  3.133733
-6  -0.425088  0.568492 -1.566659
-7  -1.168737 -1.511162 -0.004773
-8  -0.839657 -1.410604 -2.287193
-9   0.289680  0.052476 -0.294624
-10  0.348524 -0.325380 -0.654190
-11  0.292366 -0.582383  2.231521
-12 -0.407708 -0.203769 -0.156984
-13 -1.400928  0.555184 -1.199845
-14  1.021948  0.023952 -0.047938
-15 -0.394068 -0.524157  0.062401
-16 -0.241850  1.505716 -1.027093
-17  0.435864  0.318986  0.510066
-18 -0.609112 -0.949336  1.027795
-19  0.371926  0.363481 -1.783102
+0  -1.523546  1.244712  1.281714
+1   0.142749  0.326279 -1.028342
+2  -0.356448  1.236416 -0.024497
+3  -0.390965 -1.167132  1.169662
+4   0.254325 -0.379238 -0.476311
+5   0.717509 -0.204266 -0.484025
+6  -0.637719 -0.336181  1.184558
+7  -0.178774  1.829720 -1.561026
+8  -0.400764  0.091366  1.227388
+9  -1.894427 -1.312888  1.123745
+10  1.013734  2.124048 -2.320404
+11  1.797838  0.686147 -0.904062
+12  0.041463 -0.680991  0.149429
+13 -0.620775 -0.453663 -0.519136
+14 -0.964090 -0.754053  0.260249
+15  1.204661 -0.372964  0.257379
+16 -0.102147 -1.428105  0.160668
+17  1.527854 -1.262324  1.034834
+18  1.003885 -1.704753 -0.415267
+19  0.017227  0.114630 -0.494371
 </pre></div>
 </div>
 </div>
@@ -517,11 +517,11 @@
 </div>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>   COLUMN A  COLUMN B  COLUMN C
-0 -0.357378  0.362876  0.970478
-1 -0.707933 -0.458981  0.384793
-2  0.386071 -0.082357  0.278547
-3 -0.543445  0.630275  0.637633
-4  0.186986 -0.601993  0.780572
+0 -1.523546  1.244712  1.281714
+1  0.142749  0.326279 -1.028342
+2 -0.356448  1.236416 -0.024497
+3 -0.390965 -1.167132  1.169662
+4  0.254325 -0.379238 -0.476311
 </pre></div>
 </div>
 </div>
@@ -536,11 +536,11 @@
 </div>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>           A         B         C
-15 -0.394068 -0.524157  0.062401
-16 -0.241850  1.505716 -1.027093
-17  0.435864  0.318986  0.510066
-18 -0.609112 -0.949336  1.027795
-19  0.371926  0.363481 -1.783102
+15  1.204661 -0.372964  0.257379
+16 -0.102147 -1.428105  0.160668
+17  1.527854 -1.262324  1.034834
+18  1.003885 -1.704753 -0.415267
+19  0.017227  0.114630 -0.494371
 </pre></div>
 </div>
 </div>
@@ -600,26 +600,26 @@
 </div>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>           A         B         C
-0  -0.357378  0.362876  0.970478
-1  -0.707933 -0.458981  0.384793
-2   0.386071 -0.082357  0.278547
-3  -0.543445  0.630275  0.637633
-4   0.186986 -0.601993  0.780572
-5   1.037550 -0.421980  3.133733
-6  -0.425088  0.568492 -1.566659
-7  -1.168737 -1.511162 -0.004773
-8  -0.839657 -1.410604 -2.287193
-9   0.289680  0.052476 -0.294624
-10  0.348524 -0.325380 -0.654190
-11  0.292366 -0.582383  2.231521
-12 -0.407708 -0.203769 -0.156984
-13 -1.400928  0.555184 -1.199845
-14  1.021948  0.023952 -0.047938
-15 -0.394068 -0.524157  0.062401
-16 -0.241850  1.505716 -1.027093
-17  0.435864  0.318986  0.510066
-18 -0.609112 -0.949336  1.027795
-19  0.371926  0.363481 -1.783102
+0  -1.523546  1.244712  1.281714
+1   0.142749  0.326279 -1.028342
+2  -0.356448  1.236416 -0.024497
+3  -0.390965 -1.167132  1.169662
+4   0.254325 -0.379238 -0.476311
+5   0.717509 -0.204266 -0.484025
+6  -0.637719 -0.336181  1.184558
+7  -0.178774  1.829720 -1.561026
+8  -0.400764  0.091366  1.227388
+9  -1.894427 -1.312888  1.123745
+10  1.013734  2.124048 -2.320404
+11  1.797838  0.686147 -0.904062
+12  0.041463 -0.680991  0.149429
+13 -0.620775 -0.453663 -0.519136
+14 -0.964090 -0.754053  0.260249
+15  1.204661 -0.372964  0.257379
+16 -0.102147 -1.428105  0.160668
+17  1.527854 -1.262324  1.034834
+18  1.003885 -1.704753 -0.415267
+19  0.017227  0.114630 -0.494371
 20  0.000000  0.000000  0.000000
 21  0.000000  0.000000  0.000000
 22  0.000000  0.000000  0.000000
@@ -1401,7 +1401,7 @@ dtype: float64
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0x7f09fe1a8550&gt;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0x174e572d908&gt;
 </pre></div>
 </div>
 <img alt="_images/module-01-02_Working-with-Data_66_1.png" src="_images/module-01-02_Working-with-Data_66_1.png" />
@@ -1424,7 +1424,7 @@ dtype: float64
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0x7f09fe0f2890&gt;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0x174e5828b08&gt;
 </pre></div>
 </div>
 <img alt="_images/module-01-02_Working-with-Data_68_1.png" src="_images/module-01-02_Working-with-Data_68_1.png" />
