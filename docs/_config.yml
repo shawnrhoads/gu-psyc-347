@@ -8,8 +8,8 @@ title: "" # The title of the book. Will be placed in the left navbar.
 author: Shawn A. Rhoads # The author of the book
 copyright: '2021' # Copyright year to be placed in the footer
 logo: 'static/images/logo.png' # A path to the book logo
-exclude_patterns: []  # Patterns to skip when building the book. Can be glob-style (e.g. "*skip.ipynb")
-only_build_toc_files: true
+exclude_patterns: ['*tasks/*'] # Patterns to skip when building the book. Can be glob-style (e.g. "*skip.ipynb")
+only_build_toc_files: false
 #######################################################################################
 
 #######################################################################################
