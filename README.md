@@ -62,20 +62,8 @@ I am grateful to <a target="_blank" rel="noopener noreferrer" href="https://debo
 Please visit <a target="_blank" rel="noopener noreferrer" href="https://shawnrhoads.github.io/gu-psyc-347/module-00-06_Contributing.html">this page</a> if you would like to help improve and/or expand the content in this Jupyter Book!
 
 ## Contributors ✨
-<style type="text/css">
-    .tableizer-table td {
-        padding: 4px;
-        margin: 3px;
-    }
-    .tableizer-table thead {
-        text-align: center;
-    }
-    .tableizer-table tr {
-        text-align: center;
-    }
-</style>
 
-<table class="tableizer-table" role="table">
+<table role="table">
     <thead role="rowgroup">
         <tr role="row">
             <td align="center" role="columnheader"><a target="_blank" rel="noopener noreferrer" href="https://shawnrhoads.github.io/"><img src="https://avatars3.githubusercontent.com/u/24925845" width="100px;" alt=""/></a><br /><sub><a target="_blank" rel="noopener noreferrer" href="https://github.com/shawnrhoads/gu-psyc-347/commits?author=shawnrhoads"><b>Shawn A Rhoads</b></a><br/><b title="Design">🎨</a> <b title="Data">🔣</a> <b title="Documentation">📖</a> <b title="Content">🖋</a> <b title="Code">💻</a><br><b title="Ideas">🤔</a> <b title="Infrastructure">🚇</a> <b title="Maintenance">🚧</a> <b title="Reviewer">👀</a> <b title="Tutorials">✅</a></sub></td>
@@ -83,8 +71,8 @@ Please visit <a target="_blank" rel="noopener noreferrer" href="https://shawnrho
         </tr>
         </thead>
 </table>
-The above follows the <a target="blank" rel="noopener noreferrer" href="https://github.com/all-contributors/all-contributors">all-contributors</a> specification (see <a target="_blank" rel="noopener noreferrer" href="https://allcontributors.org/docs/en/emoji-key">emoji key</a>).
 
+The above follows the <a target="blank" rel="noopener noreferrer" href="https://github.com/all-contributors/all-contributors">all-contributors</a> specification (see <a target="_blank" rel="noopener noreferrer" href="https://allcontributors.org/docs/en/emoji-key">emoji key</a>).
 
 ## License for this book 🎫
 <a rel="license" target="_blank" rel="noopener noreferrer" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />
