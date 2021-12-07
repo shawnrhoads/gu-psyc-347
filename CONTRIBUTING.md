@@ -39,6 +39,24 @@ This website is hosted on [GitHub](https://github.com/shawnrhoads/gu-psyc-347) a
 
 Refer to [this page](https://docs.github.com/en/get-started/quickstart/contributing-to-projects) for comprehensive tips on contributing to projects on GitHub.
 
+## Building the Jupyter Book Locally
+
+Developers can build the book locally for testing. This can be accomplished by creating the Anaconda environment `gu-psyc-347-jb` from this [YAML file](https://raw.githubusercontent.com/shawnrhoads/gu-psyc-347/master/jupyter-book-env.yml) locally, and then running the following commands if using MacOS or Linux (assuming that you have forked/cloned the repository):
+
+```
+cd gu-psyc-347
+conda activate gu-psyc-347-jb
+jupyter nbextension enable --py widgetsnbextension
+jupyter-book build docs
+```
+
+Note that if you are using Windows, then you might need to run a slightly different set of of commands:
+```
+cd gu-psyc-347
+conda activate gu-psyc-347-jb
+jupyter nbextension enable --py widgetsnbextension
+runjb docs
+```
 
 ## Contributor Code of Conduct
 
