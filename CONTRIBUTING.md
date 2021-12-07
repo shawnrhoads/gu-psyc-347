@@ -50,7 +50,7 @@ jupyter nbextension enable --py widgetsnbextension
 jupyter-book build docs
 ```
 
-Note that if you are using Windows, then you might need to run a slightly different set of of commands:
+Note that if you are using Windows, then you might need to run a slightly different set of commands:
 ```
 cd gu-psyc-347
 conda activate gu-psyc-347-jb
