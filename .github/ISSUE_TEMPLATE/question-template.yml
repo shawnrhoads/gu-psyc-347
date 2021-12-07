@@ -1,0 +1,25 @@
+name: Question
+title: "[Question]: "
+labels: ["question"]
+assignees:
+  - shawnrhoads
+description:
+  Use this template to ask content related questions.
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: Please describe your question and any relevant efforts made searching for your answer (e.g., Google search, relevant readings or resources listed at the beginning of each module)
+      placeholder: ""
+      value: ""
+    validations:
+      required: true
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Code of Conduct
+      description: By submitting this issue, you agree to follow our [Code of Conduct](https://shawnrhoads.github.io/gu-psyc-347/module-00-06_Contributing.html#contributor-code-of-conduct)
+      options:
+        - label: I agree to follow this project's Code of Conduct
+          required: true
