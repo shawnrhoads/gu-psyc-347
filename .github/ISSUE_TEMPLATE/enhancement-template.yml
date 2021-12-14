@@ -4,7 +4,7 @@ labels: ["enhancement"]
 assignees:
   - shawnrhoads
 description:
-  Use this template to new content or features in the Jupyter Book or other course materials
+  Use this template to request new content or features in the Jupyter Book or other course materials
 body:
   - type: markdown
     attributes:

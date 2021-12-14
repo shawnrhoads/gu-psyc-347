@@ -4,7 +4,7 @@ labels: ["bug"]
 assignees:
   - shawnrhoads
 description:
-  Use this template to open issues regarding design/function of the Jupyter Book or other course materials
+  Use this template to report issues regarding design/function of the Jupyter Book or other course materials
 body:
   - type: markdown
     attributes:
