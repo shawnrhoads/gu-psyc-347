@@ -9,6 +9,7 @@ body:
   - type: markdown
     attributes:
       value: Thanks for taking the time to fill out this issue report! Please describe the issue in simple words.
+
   - type: input
     id: webpage
     attributes:
@@ -17,15 +18,16 @@ body:
       placeholder: ex. https://shawnrhoads.github.io/gu-psyc-347/
     validations:
       required: false
+
   - type: textarea
     id: description
     attributes:
       label: Description
       description: What is the issue (e.g., typo, bug, inaccurate descriptions, etc.)? Please tell us what you see. What did you expect?
       placeholder: Tell us what you see!
-      value: ""
     validations:
       required: true
+
   - type: checkboxes
     attributes:
       label: Please check any relevant labels
@@ -35,11 +37,13 @@ body:
         - label: documentation
         - label: jupyter book
         - label: notebook code
+
   - type: textarea
     attributes:
       label: Other information
       description:
         Anything else that might be helpful? E.g., related issues, suggestions how to fix, links/references for further context
+
   - type: dropdown
     id: browsers
     attributes:
@@ -50,6 +54,7 @@ body:
         - Chrome
         - Safari
         - Microsoft Edge
+
   - type: checkboxes
     id: terms
     attributes:
