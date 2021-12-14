@@ -33,11 +33,11 @@ body:
       label: Please select any relevant labels.
       multiple: true
       options:
-        - label: content
-        - label: data viz
-        - label: documentation
-        - label: jupyter book
-        - label: notebook code
+        - content
+        - data viz
+        - documentation
+        - jupyter book
+        - notebook code
 
   - type: textarea
     attributes:
