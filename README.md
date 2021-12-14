@@ -2,11 +2,11 @@
 
 # Computational Models of Human Social Behavior and Neuroscience
 
-## For Students 👩‍🎓👨‍🎓
+## For Students 🎓
 
 All course information relevant for students can be found on the <a target="_blank" rel="noopener noreferrer" href="https://shawnrhoads.github.io/gu-psyc-347">course homepage</a> and <a target="_blank" rel="noopener noreferrer" href="https://shawnrhoads.github.io/gu-psyc-347/module-00-00_Syllabus.html">syllabus</a>. Students are free to follow along on their own or with an instructor (see below).
 
-## For Instructors 👩‍🏫👨‍🏫
+## For Instructors 🍎
 
 This repository contains materials for a semester-long educational course (see 14-week <a target="_blank" rel="noopener noreferrer" href="https://shawnrhoads.github.io/gu-psyc-347/module-00-01_Course-Schedule.html">schedule</a>) and <a target="_blank" rel="noopener noreferrer" href="https://shawnrhoads.github.io/gu-psyc-347">Jupyter Book</a> that provides introductory training in specifying, implementing, and interpreting computational models that characterize human social behavior and neuroscience. This course was designed and taught by <a target="_blank" rel="noopener noreferrer" href="https://shawnrhoads.github.io">Shawn A Rhoads</a> in the spring of 2021 (reach him via <a target="_blank" rel="noopener noreferrer" href="mailto:sr1209(at)georgetown(dot)edu">email</a>, <a target="_blank" rel="noopener noreferrer" href="https://github.com/shawnrhoads">GitHub</a>, or <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/ShawnRhoads56">Twitter</a> with any questions).
 
@@ -50,7 +50,7 @@ All course materials are also designed to be modular. For example, if students a
 
 For additional background on the content covered in each tutorial (technical or theoretical), instructors are encouraged to review the references and/or resources listed at the beginning of each tutorial. In addition, instructors should familarize themselves with the <a target="_blank" rel="noopener noreferrer" href="https://shawnrhoads.github.io/gu-psyc-347/module-00-03_Reading-List.html">recommended readings</a> associated with each module and use them to introduce students to each topic, generate discussions and ideas among students, and provide relevant background for each tutorial. 
 
-## For Contributors 🙋‍♀️
+## For Contributors 🤝
 
 While the course aims to incorporate a diverse curriculum to introduce students to the basics of modeling in the context of social behavior, there is still so much still left out (and still much unknown in this growing field). That being said, other researchers and educators are invited to help improve and expand the content included in this Jupyter Book!
 
@@ -61,7 +61,7 @@ Here are some ways you can help accomplish this goal!
 
 Please visit <a target="_blank" rel="noopener noreferrer" href="https://shawnrhoads.github.io/gu-psyc-347/module-00-06_Contributing.html">this page</a> for additional information on helping improve and/or expand the content in this Jupyter Book!
 
-## Seeking Help 🤝
+## Seeking Help 🔎
 
 Content-related questions from students, teachers, and contributors related to the course can be submitted <a rel="license" target="_blank" rel="noopener noreferrer" href="https://github.com/shawnrhoads/gu-psyc-347/issues/new?labels=question&template=question-template.yml">here</a>. The maintainers will try their best to answer any questions in a timely manner, but please be mindful of their time. We request that individuals make a good faith effort searching for their answer in the relevant readings or resources listed at the beginning of each tutorial before submitting questions.
 
