@@ -1,4 +1,4 @@
-<a target="_blank" rel="noopener noreferrer" href="https://shawnrhoads.github.io/gu-psyc-347">![Jupyter Book Badge](https://jupyterbook.org/badge.svg)</a> <a target="_blank" rel="noopener noreferrer" href="https://github.com/shawnrhoads/gu-psyc-347/actions/workflows/deploy-book.yml">![book](https://github.com/shawnrhoads/gu-psyc-347/actions/workflows/deploy-book.yml/badge.svg)</a> ![GitHub last update](https://img.shields.io/github/last-commit/shawnrhoads/gu-psyc-347?color=blue&label=last%20update)
+<a target="_blank" rel="noopener noreferrer" href="https://shawnrhoads.github.io/gu-psyc-347">![Jupyter Book Badge](https://jupyterbook.org/badge.svg)</a> <a target="_blank" rel="noopener noreferrer" href="https://github.com/shawnrhoads/gu-psyc-347/actions/workflows/deploy-book.yml">![book](https://github.com/shawnrhoads/gu-psyc-347/actions/workflows/deploy-book.yml/badge.svg)</a> <a target="_blank" rel="noopener noreferrer" href="https://github.com/shawnrhoads/gu-psyc-347">![GitHub last update](https://img.shields.io/github/last-commit/shawnrhoads/gu-psyc-347?color=blue&label=last%20update)</a>
 
 # Computational Models of Human Social Behavior and Neuroscience
 
