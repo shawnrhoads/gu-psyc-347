@@ -28,9 +28,10 @@ body:
     validations:
       required: true
 
-  - type: checkboxes
+  - type: dropdown
     attributes:
-      label: Please check any relevant labels
+      label: Please select any relevant labels.
+      multiple: true
       options:
         - label: content
         - label: data viz
