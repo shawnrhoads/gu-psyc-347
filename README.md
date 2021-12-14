@@ -50,10 +50,6 @@ All course materials are also designed to be modular. For example, if students a
 
 For additional background on the content covered in each tutorial (technical or theoretical), instructors are encouraged to review the references and/or resources listed at the beginning of each tutorial. In addition, instructors should familarize themselves with the <a target="_blank" rel="noopener noreferrer" href="https://shawnrhoads.github.io/gu-psyc-347/module-00-03_Reading-List.html">recommended readings</a> associated with each module and use them to introduce students to each topic, generate discussions and ideas among students, and provide relevant background for each tutorial. 
 
-## Seeking Help 🤝
-
-Content-related questions from students, teachers, and contributors related to the course can be submitted <a rel="license" target="_blank" rel="noopener noreferrer" href="https://github.com/shawnrhoads/gu-psyc-347/issues/new?labels=question&template=question-template.yml">here</a>. The maintainers will try their best to answer any questions in a timely manner, but please be mindful of their time. We request that individuals make a good faith effort searching for their answer in the relevant readings or resources listed at the beginning of each tutorial before submitting questions.
-
 ## For Contributors 🙋‍♀️
 
 While the course aims to incorporate a diverse curriculum to introduce students to the basics of modeling in the context of social behavior, there is still so much still left out (and still much unknown in this growing field). That being said, other researchers and educators are invited to help improve and expand the content included in this Jupyter Book!
@@ -64,6 +60,10 @@ Here are some ways you can help accomplish this goal!
 - If you have an idea for a tutorial or a new module to include (especially related to the <a target="_blank" rel="noopener noreferrer" href="https://shawnrhoads.github.io/gu-psyc-347/module-00-03_Reading-List.html">growing list of readings</a>, please either <a target="_blank" rel="noopener noreferrer" href="https://github.com/shawnrhoads/gu-psyc-347/issues/new?labels=enhancement&template=enhancement-template.yml">open a new issue</a> and/or submit a pull request directly to the repository on GitHub.
 
 Please visit <a target="_blank" rel="noopener noreferrer" href="https://shawnrhoads.github.io/gu-psyc-347/module-00-06_Contributing.html">this page</a> for additional information on helping improve and/or expand the content in this Jupyter Book!
+
+## Seeking Help 🤝
+
+Content-related questions from students, teachers, and contributors related to the course can be submitted <a rel="license" target="_blank" rel="noopener noreferrer" href="https://github.com/shawnrhoads/gu-psyc-347/issues/new?labels=question&template=question-template.yml">here</a>. The maintainers will try their best to answer any questions in a timely manner, but please be mindful of their time. We request that individuals make a good faith effort searching for their answer in the relevant readings or resources listed at the beginning of each tutorial before submitting questions.
 
 <hr>
 
