@@ -11,8 +11,7 @@ body:
     attributes:
       label: Description
       description: Please describe your question and any relevant efforts made searching for your answer (e.g., Google search, relevant readings or resources listed at the beginning of each module)
-      placeholder: ""
-      value: ""
+      placeholder: State your question here.
     validations:
       required: true
   - type: checkboxes
