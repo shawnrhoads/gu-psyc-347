@@ -43,7 +43,7 @@ body:
     attributes:
       label: Other information
       description:
-        Anything else that might be helpful? E.g., related issues/enhancement, suggestions how to improve, links/references with relevant examples
+        Anything else that might be helpful? E.g., related issues/enhancements, suggestions on how to improve, links/references with relevant examples
 
   - type: checkboxes
     id: terms
