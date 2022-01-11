@@ -1,0 +1,66 @@
+name: Issue Report
+title: "[Issue]: "
+labels: ["bug"]
+assignees:
+  - shawnrhoads
+description:
+  Use this template to report issues regarding design/function of the Jupyter Book or other course materials
+body:
+  - type: markdown
+    attributes:
+      value: Thanks for taking the time to fill out this issue report! Please describe the issue in simple words.
+
+  - type: input
+    id: webpage
+    attributes:
+      label: Webpage
+      description: Please paste the URL of the webpage (i.e., links to Jupyter Book, Google Colab, or GitHub repository) on which you are experiencing the issue.
+      placeholder: ex. https://shawnrhoads.github.io/gu-psyc-347/
+    validations:
+      required: false
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: What is the issue (e.g., typos, bugs, inaccurate descriptions, etc.)? Please tell us what you see. What did you expect?
+      placeholder: Tell us what you see!
+    validations:
+      required: true
+
+  - type: dropdown
+    attributes:
+      label: Please select any relevant labels.
+      multiple: true
+      options:
+        - content
+        - data viz
+        - documentation
+        - jupyter book
+        - notebook code
+
+  - type: textarea
+    attributes:
+      label: Other information
+      description:
+        Anything else that might be helpful? E.g., related issues, suggestions how to fix, links/references for further context
+
+  - type: dropdown
+    id: browsers
+    attributes:
+      label: If applicable, what browser(s) are you seeing the problem on?
+      multiple: true
+      options:
+        - Firefox
+        - Chrome
+        - Safari
+        - Microsoft Edge
+
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Code of Conduct
+      description: By submitting this issue, you agree to follow our [Code of Conduct](https://shawnrhoads.github.io/gu-psyc-347/module-00-06_Contributing.html#contributor-code-of-conduct)
+      options:
+        - label: I agree to follow this project's Code of Conduct
+          required: true

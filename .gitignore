@@ -9,7 +9,6 @@ __pycache__/
 .ipynb_checkpoints
 .DS_Store
 .vscode
-docs/index.md
 docs/module-00-06_Contributing.md
 docs/_build/
 docs/_work/
