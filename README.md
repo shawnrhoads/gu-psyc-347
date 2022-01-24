@@ -2,11 +2,11 @@
 
 # Computational Models of Human Social Behavior and Neuroscience
 
-## For Students 🎓
+## 🎓 For Students
 
 All course information relevant for students can be found on the <a target="_blank" rel="noopener noreferrer" href="https://shawnrhoads.github.io/gu-psyc-347">course homepage</a> and <a target="_blank" rel="noopener noreferrer" href="https://shawnrhoads.github.io/gu-psyc-347/module-00-00_Syllabus.html">syllabus</a>. Students are free to follow along on their own or with an instructor (see below).
 
-## For Instructors 🍎
+## 🍎 For Instructors
 
 This repository contains materials for a semester-long educational course (see 14-week <a target="_blank" rel="noopener noreferrer" href="https://shawnrhoads.github.io/gu-psyc-347/module-00-01_Course-Schedule.html">schedule</a>) and <a target="_blank" rel="noopener noreferrer" href="https://shawnrhoads.github.io/gu-psyc-347">Jupyter Book</a> that provides introductory training in specifying, implementing, and interpreting computational models that characterize human social behavior and neuroscience. This course was designed and taught by <a target="_blank" rel="noopener noreferrer" href="https://shawnrhoads.github.io">Shawn A Rhoads</a> in the spring of 2021 (reach him via <a target="_blank" rel="noopener noreferrer" href="mailto:sr1209(at)georgetown(dot)edu">email</a>, <a target="_blank" rel="noopener noreferrer" href="https://github.com/shawnrhoads">GitHub</a>, or <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/intent/user?user_id=380634496">Twitter</a> with any questions).
 
@@ -56,7 +56,7 @@ Once students are able to run notebooks (locally or on the cloud), they can inte
 
 For additional background on the content covered in each tutorial (technical or theoretical), instructors (and students) are encouraged to review the references and/or resources listed at the beginning of each tutorial or the non-exhaustive list of resources on the <a target="_blank" rel="noopener noreferrer" href="https://github.com/shawnrhoads/gu-psyc-347/blob/master/RESOURCES.md">Resources page</a>. In addition, instructors should familarize themselves with the <a target="_blank" rel="noopener noreferrer" href="https://shawnrhoads.github.io/gu-psyc-347/module-00-03_Reading-List.html">recommended readings</a> associated with each module and use them to introduce students to each topic, generate discussions and ideas among students, and provide relevant background for each tutorial.
 
-## For Contributors 🤝
+## 🤝 For Contributors
 
 While the course aims to incorporate a diverse curriculum to introduce students to the basics of modeling in the context of social behavior, there is still so much left out (and still much unknown in this growing field). That being said, other researchers and educators are invited to help improve and expand the content included in this Jupyter Book!
 
@@ -67,13 +67,13 @@ Here are some ways you can help accomplish this goal!
 
 Please visit <a target="_blank" rel="noopener noreferrer" href="https://shawnrhoads.github.io/gu-psyc-347/module-00-06_Contributing.html">this page</a> for additional information on helping improve and/or expand the content in this Jupyter Book!
 
-## Seeking Help 🔎
+## 🔎 Seeking Help
 
 Content-related questions from students, teachers, and contributors related to the course can be submitted <a rel="license" target="_blank" rel="noopener noreferrer" href="https://github.com/shawnrhoads/gu-psyc-347/issues/new?labels=question&template=question-template.yml">here</a>. The maintainers will try their best to answer any questions in a timely manner, but please be mindful of their time. We request that individuals make a good faith effort searching for their answer in the relevant readings or resources listed at the beginning of each tutorial before submitting questions.
 
 <hr>
 
-## Contributors ✨
+## ✨ Contributors
 
 <table role="table" style="margin: 0px auto;">
     <thead role="rowgroup">
@@ -86,9 +86,9 @@ Content-related questions from students, teachers, and contributors related to t
 
 The above follows the <a target="blank" rel="noopener noreferrer" href="https://github.com/all-contributors/all-contributors">all-contributors</a> specification (see <a target="_blank" rel="noopener noreferrer" href="https://allcontributors.org/docs/en/emoji-key">emoji key</a>).
 
-## Acknowledgments 🙏
+## 🙏 Acknowledgments
 I am grateful to <a target="_blank" rel="noopener noreferrer" href="https://deborahstearns.blogspot.com/">Dr. Deborah Sterns</a>, <a target="_blank" rel="noopener noreferrer" href="https://www.joscelinrocha.com/">Joscelin Rocha-Hidalgo</a>, and the <a target="_blank" rel="noopener noreferrer" href="https://cndls.georgetown.edu/">Georgetown Center for New Designs in Learning & Scholarship</a> (CNDLS) for allowing me to use their teaching resources throughout the development of this course. I am also grateful to <a target="_blank" rel="noopener noreferrer" href="https://jupyter.org/">Project Jupyter</a> for making it possible to create and share these materials in a Jupyter Book. I am also grateful to <a target="_blank" rel="noopener noreferrer" href="https://github.com/gllg4009">Lin Gan</a> for her contributions and feedback in making enhancements to these materials. The format of this course was largely inspired by the <a target="_blank" rel="noopener noreferrer" href="https://mindsummerschool.org/">MIND Computational Summer School</a>, <a target="_blank" rel="noopener noreferrer" href="https://academy.neuromatch.io/">Neuromatch Academy</a>, Dr. Maximilian Risenhuber's Computational Neuroscience course, Dr. Robert C. Wilson's <a target="_blank" rel="noopener noreferrer" href="http://u.arizona.edu/~bob/web_NSCS344/">Modeling the Mind course</a>, Dr. Luke J. Chang's <a target="_blank" rel="noopener noreferrer" href="https://dartbrains.org">DartBrains Jupyter Book</a>, the research conducted in Dr. Abigail A. Marsh's <a target="_blank" rel="noopener noreferrer" href="https://aamarsh.wordpress.com/lab/">Laboratory on Social and Affective Neuroscience</a>, and the countless conversations with my colleagues about the selected topics.
 
-## License for this book 🎫
+## 🎫 License for this book
 <a rel="license" target="_blank" rel="noopener noreferrer" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />
 Content in this book (i.e., any .md or .ipynb files in the content/ folder) is licensed under a <a rel="license" target="_blank" rel="noopener noreferrer" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
