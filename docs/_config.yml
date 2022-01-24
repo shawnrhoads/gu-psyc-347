@@ -6,7 +6,7 @@
 #######################################################################################
 title: "" # The title of the book. Will be placed in the left navbar.
 author: Shawn A. Rhoads # The author of the book
-copyright: '2021' # Copyright year to be placed in the footer
+copyright: '2022' # Copyright year to be placed in the footer
 logo: 'static/images/logo.png' # A path to the book logo
 exclude_patterns: ['*tasks/*'] # Patterns to skip when building the book. Can be glob-style (e.g. "*skip.ipynb")
 only_build_toc_files: false
@@ -16,8 +16,8 @@ only_build_toc_files: false
 # Execution settings
 execute:
   timeout: 5000
-  execute_notebooks: cache  # Whether to execute notebooks at build time. Must be one of ("auto", "force", "cache", "off")
-  cache: "docs/.jupyter_cache/"  # A path to the jupyter cache that will be used to store execution artifacs. Defaults to `_build/.jupyter_cache/`
+  execute_notebooks: auto  # Whether to execute notebooks at build time. Must be one of ("auto", "force", "cache", "off")
+  cache: ""  # A path to the jupyter cache that will be used to store execution artifacs. Defaults to `_build/.jupyter_cache/` docs/.jupyter_cache/
   exclude_patterns: []  # A list of patterns to *skip* in execution (e.g. a notebook that takes a really long time)
   stderr_output: remove
 #######################################################################################
@@ -29,7 +29,7 @@ html:
   use_edit_page_button: false  # Whether to add an "edit this page" button to pages. If `true`, repository information in repository: must be filled in
   use_repository_button: true  # Whether to add a link to your repository button
   use_issues_button: true  # Whether to add an "open an issue" button
-  extra_navbar: Powered by <a href="https://jupyterbook.org">Jupyter Book</a>  # Will be displayed underneath the left navbar.
+  extra_navbar: <b>If you use these materials for teaching or research, please use the following citation:</b> Rhoads, S. A. & Gan, L. (2022). Computational models of human social behavior and neuroscience - An open educational course and Jupyter Book to advance computational training. <i>The Journal of Open Source Education</i>. [<a href="https://jose.theoj.org/papers/62fca31989cb19be1eb93970ac7554be">link</a>]<br><br><br>Powered by <a href="https://jupyterbook.org">Jupyter Book</a>  # Will be displayed underneath the left navbar.
   extra_footer: ""  # Will be displayed underneath the footer.
   google_analytics_id: G-KG3N20S55G  # A GA id that can be used to track book views.
   home_page_in_navbar: false  # Whether to include your home page in the left Navigation Bar

@@ -1,4 +1,4 @@
-<a target="_blank" rel="noopener noreferrer" href="https://shawnrhoads.github.io/gu-psyc-347">![Jupyter Book Badge](https://jupyterbook.org/badge.svg)</a> <a target="_blank" rel="noopener noreferrer" href="https://github.com/shawnrhoads/gu-psyc-347/actions/workflows/deploy-book.yml">![book](https://github.com/shawnrhoads/gu-psyc-347/actions/workflows/deploy-book.yml/badge.svg)</a> <a target="_blank" rel="noopener noreferrer" href="https://github.com/shawnrhoads/gu-psyc-347">![GitHub last update](https://img.shields.io/github/last-commit/shawnrhoads/gu-psyc-347?color=blue&label=last%20update)</a>
+<a target="_blank" rel="noopener noreferrer" href="https://jose.theoj.org/papers/62fca31989cb19be1eb93970ac7554be">![DOI](https://jose.theoj.org/papers/62fca31989cb19be1eb93970ac7554be/status.svg)</a> <a target="_blank" rel="noopener noreferrer" href="https://shawnrhoads.github.io/gu-psyc-347">![Jupyter Book Badge](https://jupyterbook.org/badge.svg)</a> <a target="_blank" rel="noopener noreferrer" href="https://github.com/shawnrhoads/gu-psyc-347/actions/workflows/deploy-book.yml">![book](https://github.com/shawnrhoads/gu-psyc-347/actions/workflows/deploy-book.yml/badge.svg)</a> <a target="_blank" rel="noopener noreferrer" href="https://github.com/shawnrhoads/gu-psyc-347">![GitHub last update](https://img.shields.io/github/last-commit/shawnrhoads/gu-psyc-347?color=blue&label=last%20update)</a> 
 
 # Computational Models of Human Social Behavior and Neuroscience
 The content in this Jupyter Book is subject to change. 
@@ -17,7 +17,7 @@ The content in this Jupyter Book is subject to change.
 **Instructor**: Shawn A Rhoads<br>
 **Pronouns**: he/him/his<br>
 **Email**: sr1209(at)georgetown(dot)edu<br>
-**Twitter**: <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/ShawnRhoads56">@ShawnRhoads56</a><br>
+**Twitter**: <a target="_blank" rel="noopener noreferrer" href="https://twitter.com/intent/user?user_id=380634496">@ShawnRhoads56</a><br>
 **Website**: <a target="_blank" rel="noopener noreferrer" href="https://shawnrhoads.github.io">shawnrhoads.github.io</a></br>
 
 Other instructors are encouraged to adopt, remix, transform, and/or build upon the following materials for educational purposes under a <a rel="license" target="_blank" rel="noopener noreferrer" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>. Information for instructors can be found in the <a target="_blank" rel="noopener noreferrer" href="https://github.com/shawnrhoads/gu-psyc-347">README documentation</a>.
