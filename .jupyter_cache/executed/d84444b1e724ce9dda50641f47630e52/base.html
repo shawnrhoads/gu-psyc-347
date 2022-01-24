@@ -23,7 +23,7 @@
 
     
     <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" href="../../../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/sphinx-book-theme.css?digest=84ace793992934648b4de8eed757e5a2" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/mystnb.css" />
@@ -43,7 +43,7 @@
     <script src="../../../_static/copybutton.js"></script>
     <script src="../../../_static/tabs.js"></script>
     <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
-    <script src="../../../_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+    <script src="../../../_static/sphinx-book-theme.9d8b4a8b9bb19db25eeaddc40d639ba2.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.20.0/dist/embed-amd.js"></script>
     <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
@@ -80,7 +80,12 @@
     <div class="container-xl">
       <div class="row">
           
-<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<div class="col-12 col-md-3 bd-sidebar site-navigation " id="site-navigation">
     
         <div class="navbar-brand-box">
     <a class="navbar-brand text-wrap" href="../../../index.html">
@@ -149,16 +154,6 @@
  <li class="toctree-l1">
   <a class="reference internal" href="../../../module-01-00_Jupyter-Notebooks.html">
    Jupyter Notebooks
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../../../module-01-01_Intro-to-Python.html">
-   Intro to Python Basics
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../../../module-01-02_Working-with-Data.html">
-   Working with Data
   </a>
  </li>
  <li class="toctree-l1">
@@ -238,7 +233,7 @@
 </nav> <!-- To handle the deprecated key -->
 
 <div class="navbar_extra_footer">
-  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+  If you use these materials for teaching or research, please use the following citation:<br><br>Rhoads, S. A. & Gan, L. (2022). Computational models of human social behavior and neuroscience - An open educational course and Jupyter Book to advance computational training. <i>The Journal of Open Source Education</i>. [<a href="https://jose.theoj.org/papers/62fca31989cb19be1eb93970ac7554be">link</a>]<br><br><br>Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
 </div>
 
 </div>
@@ -248,22 +243,22 @@
 
 
           
+<!-- This is an invisible pixel that we watch to see if we've scrolled. -->
+<div class="sbt-scroll-pixel-helper"></div>
 <main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
     
     <div class="topbar container-xl fixed-top">
     <div class="topbar-contents row">
         <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
         <div class="col pl-md-4 topbar-main">
-            
-            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
-                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
-                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
-                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
-                <i class="fas fa-bars"></i>
-                <i class="fas fa-arrow-left"></i>
-                <i class="fas fa-arrow-up"></i>
-            </button>
-            
+            <div class="topbar-left">
+                
+                <label class="nav-toggle-button" for="__navigation">
+                    <div class="visually-hidden">Toggle navigation</div>
+                    <i class="fas fa-bars"></i>
+                </label>
+                
+            </div>
             
 <div class="dropdown-buttons-trigger">
     <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
@@ -702,7 +697,7 @@
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../../../_images/base_6_02.png" src="../../../_images/base_6_02.png" />
+<img alt="../../../_images/base_6_01.png" src="../../../_images/base_6_01.png" />
 </div>
 </div>
 <div class="cell tag_output_scroll docutils container">
@@ -763,35 +758,35 @@
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>subject 01: alpha=0.91, theta=3.13; negLL=41.24; BIC=91.60
 </pre></div>
 </div>
-<img alt="../../../_images/base_7_16.png" src="../../../_images/base_7_16.png" />
+<img alt="../../../_images/base_7_12.png" src="../../../_images/base_7_12.png" />
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>subject 02: alpha=0.03, theta=12.00; negLL=51.42; BIC=111.97
 </pre></div>
 </div>
-<img alt="../../../_images/base_7_32.png" src="../../../_images/base_7_32.png" />
+<img alt="../../../_images/base_7_31.png" src="../../../_images/base_7_31.png" />
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>subject 03: alpha=0.06, theta=12.00; negLL=41.13; BIC=91.39
 </pre></div>
 </div>
-<img alt="../../../_images/base_7_52.png" src="../../../_images/base_7_52.png" />
+<img alt="../../../_images/base_7_51.png" src="../../../_images/base_7_51.png" />
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>subject 04: alpha=0.00, theta=1.00; negLL=66.54; BIC=142.21
 </pre></div>
 </div>
-<img alt="../../../_images/base_7_72.png" src="../../../_images/base_7_72.png" />
+<img alt="../../../_images/base_7_71.png" src="../../../_images/base_7_71.png" />
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>subject 05: alpha=0.23, theta=7.15; negLL=35.25; BIC=79.63
 </pre></div>
 </div>
-<img alt="../../../_images/base_7_92.png" src="../../../_images/base_7_92.png" />
+<img alt="../../../_images/base_7_91.png" src="../../../_images/base_7_91.png" />
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>subject 06: alpha=0.44, theta=5.81; negLL=28.37; BIC=65.87
 </pre></div>
 </div>
-<img alt="../../../_images/base_7_112.png" src="../../../_images/base_7_112.png" />
+<img alt="../../../_images/base_7_111.png" src="../../../_images/base_7_111.png" />
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>subject 07: alpha=0.13, theta=12.00; negLL=19.16; BIC=47.44
 </pre></div>
 </div>
-<img alt="../../../_images/base_7_132.png" src="../../../_images/base_7_132.png" />
+<img alt="../../../_images/base_7_131.png" src="../../../_images/base_7_131.png" />
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>subject 08: alpha=0.16, theta=5.38; negLL=48.77; BIC=106.68
 </pre></div>
 </div>
-<img alt="../../../_images/base_7_152.png" src="../../../_images/base_7_152.png" />
+<img alt="../../../_images/base_7_151.png" src="../../../_images/base_7_151.png" />
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>subject 09: alpha=0.31, theta=7.58; negLL=28.84; BIC=66.80
 </pre></div>
 </div>
@@ -876,7 +871,7 @@
     <tr>
       <th>5</th>
       <td>0.438106</td>
-      <td>5.812433</td>
+      <td>5.812434</td>
       <td>28.370059</td>
       <td>65.868814</td>
     </tr>
@@ -890,21 +885,21 @@
     <tr>
       <th>7</th>
       <td>0.163722</td>
-      <td>5.379728</td>
+      <td>5.379729</td>
       <td>48.774263</td>
       <td>106.677222</td>
     </tr>
     <tr>
       <th>8</th>
       <td>0.30879</td>
-      <td>7.577299</td>
+      <td>7.577298</td>
       <td>28.83555</td>
       <td>66.799797</td>
     </tr>
     <tr>
       <th>9</th>
       <td>0.305454</td>
-      <td>11.001907</td>
+      <td>11.001908</td>
       <td>18.063611</td>
       <td>45.255917</td>
     </tr>
@@ -1556,7 +1551,7 @@
       <th>8</th>
       <td>0.185241</td>
       <td>0.430937</td>
-      <td>8.112291</td>
+      <td>8.112292</td>
       <td>27.755787</td>
       <td>69.204618</td>
     </tr>
@@ -1564,7 +1559,7 @@
       <th>9</th>
       <td>0.240672</td>
       <td>0.533452</td>
-      <td>11.220255</td>
+      <td>11.220256</td>
       <td>17.326881</td>
       <td>48.346807</td>
     </tr>
@@ -1766,7 +1761,7 @@
 </pre></div>
 </div>
 <img alt="../../../_images/base_16_5.png" src="../../../_images/base_16_5.png" />
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>subject 04: alpha_self=0.00, alpha_other=0.00, theta_self=12.00, theta_other=12.00; negLL=66.41; BIC=151.07
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>subject 04: alpha_self=0.00, alpha_other=0.00, theta_self=0.00, theta_other=12.00; negLL=66.41; BIC=151.07
 </pre></div>
 </div>
 <img alt="../../../_images/base_16_7.png" src="../../../_images/base_16_7.png" />
@@ -1838,7 +1833,7 @@
       <th>0</th>
       <td>0.64041</td>
       <td>1.0</td>
-      <td>4.719064</td>
+      <td>4.719063</td>
       <td>2.606712</td>
       <td>39.75991</td>
       <td>97.777213</td>
@@ -1865,7 +1860,7 @@
       <th>3</th>
       <td>0.0</td>
       <td>0.003832</td>
-      <td>12.0</td>
+      <td>0.0</td>
       <td>12.0</td>
       <td>66.406572</td>
       <td>151.070536</td>
@@ -1874,8 +1869,8 @@
       <th>4</th>
       <td>0.256449</td>
       <td>0.204543</td>
-      <td>8.127817</td>
-      <td>6.870225</td>
+      <td>8.127818</td>
+      <td>6.870224</td>
       <td>34.964606</td>
       <td>88.186605</td>
     </tr>
@@ -1884,7 +1879,7 @@
       <td>0.310434</td>
       <td>0.651042</td>
       <td>5.983929</td>
-      <td>6.46816</td>
+      <td>6.468159</td>
       <td>27.334393</td>
       <td>72.926178</td>
     </tr>
@@ -1920,7 +1915,7 @@
       <td>0.285959</td>
       <td>0.559895</td>
       <td>12.0</td>
-      <td>8.336169</td>
+      <td>8.33617</td>
       <td>17.489508</td>
       <td>53.236408</td>
     </tr>
@@ -2204,7 +2199,7 @@
       <td>0.978904</td>
       <td>0.023847</td>
       <td>1.0</td>
-      <td>9.437493</td>
+      <td>9.437477</td>
       <td>38.016359</td>
       <td>98.854458</td>
     </tr>
@@ -2241,8 +2236,8 @@
     <tr>
       <th>4</th>
       <td>0.2519</td>
-      <td>0.318756</td>
-      <td>0.116209</td>
+      <td>0.318757</td>
+      <td>0.11621</td>
       <td>0.342456</td>
       <td>7.985729</td>
       <td>34.10134</td>
@@ -2254,7 +2249,7 @@
       <td>0.634377</td>
       <td>0.385897</td>
       <td>0.849267</td>
-      <td>8.011112</td>
+      <td>8.011114</td>
       <td>25.116216</td>
       <td>73.054172</td>
     </tr>
@@ -2274,7 +2269,7 @@
       <td>0.139475</td>
       <td>0.480044</td>
       <td>0.038782</td>
-      <td>9.780298</td>
+      <td>9.780299</td>
       <td>44.018283</td>
       <td>110.858306</td>
     </tr>
@@ -2284,7 +2279,7 @@
       <td>0.381941</td>
       <td>0.184442</td>
       <td>0.616257</td>
-      <td>8.130312</td>
+      <td>8.130313</td>
       <td>26.986115</td>
       <td>76.793971</td>
     </tr>
@@ -2389,7 +2384,7 @@
     
       By Shawn A. Rhoads<br/>
     
-        &copy; Copyright 2021.<br/>
+        &copy; Copyright 2022.<br/>
   </p>
 </footer>
 </main>

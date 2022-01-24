@@ -23,7 +23,7 @@
 
     
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" href="_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" type="text/css" />
+    <link rel="stylesheet" href="_static/sphinx-book-theme.css?digest=84ace793992934648b4de8eed757e5a2" type="text/css" />
     <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
@@ -43,7 +43,7 @@
     <script src="_static/copybutton.js"></script>
     <script src="_static/tabs.js"></script>
     <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
-    <script src="_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+    <script src="_static/sphinx-book-theme.9d8b4a8b9bb19db25eeaddc40d639ba2.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.20.0/dist/embed-amd.js"></script>
     <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
@@ -84,7 +84,12 @@
     <div class="container-xl">
       <div class="row">
           
-<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<div class="col-12 col-md-3 bd-sidebar site-navigation " id="site-navigation">
     
         <div class="navbar-brand-box">
     <a class="navbar-brand text-wrap" href="index.html">
@@ -153,16 +158,6 @@
  <li class="toctree-l1">
   <a class="reference internal" href="module-01-00_Jupyter-Notebooks.html">
    Jupyter Notebooks
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="module-01-01_Intro-to-Python.html">
-   Intro to Python Basics
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="module-01-02_Working-with-Data.html">
-   Working with Data
   </a>
  </li>
  <li class="toctree-l1">
@@ -242,7 +237,7 @@
 </nav> <!-- To handle the deprecated key -->
 
 <div class="navbar_extra_footer">
-  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+  If you use these materials for teaching or research, please use the following citation:<br><br>Rhoads, S. A. & Gan, L. (2022). Computational models of human social behavior and neuroscience - An open educational course and Jupyter Book to advance computational training. <i>The Journal of Open Source Education</i>. [<a href="https://jose.theoj.org/papers/62fca31989cb19be1eb93970ac7554be">link</a>]<br><br><br>Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
 </div>
 
 </div>
@@ -252,22 +247,22 @@
 
 
           
+<!-- This is an invisible pixel that we watch to see if we've scrolled. -->
+<div class="sbt-scroll-pixel-helper"></div>
 <main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
     
     <div class="topbar container-xl fixed-top">
     <div class="topbar-contents row">
         <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
         <div class="col pl-md-4 topbar-main">
-            
-            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
-                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
-                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
-                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
-                <i class="fas fa-bars"></i>
-                <i class="fas fa-arrow-left"></i>
-                <i class="fas fa-arrow-up"></i>
-            </button>
-            
+            <div class="topbar-left">
+                
+                <label class="nav-toggle-button" for="__navigation">
+                    <div class="visually-hidden">Toggle navigation</div>
+                    <i class="fas fa-bars"></i>
+                </label>
+                
+            </div>
             
 <div class="dropdown-buttons-trigger">
     <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
@@ -500,6 +495,9 @@ y = \beta_0 + \beta_1 x_1 + \beta_2 x_2 + ... +\beta_d x_d + \epsilon
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<img alt="_images/module-02-01_Nonlinear-Modeling_5_0.png" src="_images/module-02-01_Nonlinear-Modeling_5_0.png" />
+</div>
 </div>
 <hr></div>
 <div class="section" id="a-case-for-nonlinear-modeling-social-discounting">
@@ -531,6 +529,9 @@ y = \beta_0 + \beta_1 x_1 + \beta_2 x_2 + ... +\beta_d x_d + \epsilon
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
 </div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/module-02-01_Nonlinear-Modeling_8_0.png" src="_images/module-02-01_Nonlinear-Modeling_8_0.png" />
 </div>
 </div>
 <div class="section" id="model-parameters">
@@ -614,6 +615,13 @@ y = \beta_0 + \beta_1 x_1 + \beta_2 x_2 + ... +\beta_d x_d + \epsilon
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Linear: v0 = 75.27, k = -0.609, MSE = 59.00
+Exponential: v0 = 80.75, k = 0.016, MSE = 16.90
+Hyperbolic: v0 = 85.20, k = 0.030, MSE = 4.86
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -657,6 +665,9 @@ y = \beta_0 + \beta_1 x_1 + \beta_2 x_2 + ... +\beta_d x_d + \epsilon
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<img alt="_images/module-02-01_Nonlinear-Modeling_15_0.png" src="_images/module-02-01_Nonlinear-Modeling_15_0.png" />
+</div>
 </div>
 <p>Note that all of these model fits assume a <strong>fixed</strong> intercept (<span class="math notranslate nohighlight">\(v_o\)</span>) and <strong>fixed</strong> slope (<span class="math notranslate nohighlight">\(k\)</span>) across participants—in other words, these are the <strong>average values</strong> across the entire sample.</p>
 <p>In reality, we know that intercepts and slopes vary across participants, and can plot the differences below.</p>
@@ -680,12 +691,23 @@ y = \beta_0 + \beta_1 x_1 + \beta_2 x_2 + ... +\beta_d x_d + \epsilon
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<img alt="_images/module-02-01_Nonlinear-Modeling_17_0.png" src="_images/module-02-01_Nonlinear-Modeling_17_0.png" />
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># See small differences between fitted and observed values</span>
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="n">v_hat</span><span class="si">}</span><span class="s1"> -- Fits&#39;</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="n">v_mean</span><span class="si">}</span><span class="s1"> -- Observed&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[82.74082908 80.42375602 74.19083832 65.70397109 53.47069093 34.30767544
+ 21.47846286] -- Fits
+[82.80278641 80.45272539 74.15481504 65.62721642 53.40723605 34.34937097
+ 21.58152985] -- Observed
 </pre></div>
 </div>
 </div>
@@ -713,6 +735,114 @@ y = \beta_0 + \beta_1 x_1 + \beta_2 x_2 + ... +\beta_d x_d + \epsilon
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>subject 0: v0 = 87.34, k = 0.027, MSE = 0.01
+subject 1: v0 = 86.74, k = 0.032, MSE = 0.00
+subject 2: v0 = 85.18, k = 0.035, MSE = 0.04
+subject 3: v0 = 83.00, k = 0.028, MSE = 0.00
+subject 4: v0 = 86.56, k = 0.032, MSE = 0.01
+subject 5: v0 = 84.06, k = 0.032, MSE = 0.01
+subject 6: v0 = 86.89, k = 0.028, MSE = 0.00
+subject 7: v0 = 86.93, k = 0.033, MSE = 0.01
+subject 8: v0 = 85.61, k = 0.032, MSE = 0.01
+subject 9: v0 = 85.08, k = 0.026, MSE = 0.01
+subject 10: v0 = 84.65, k = 0.027, MSE = 0.01
+subject 11: v0 = 83.70, k = 0.032, MSE = 0.00
+subject 12: v0 = 85.19, k = 0.027, MSE = 0.01
+subject 13: v0 = 83.93, k = 0.024, MSE = 0.03
+subject 14: v0 = 82.90, k = 0.038, MSE = 0.14
+subject 15: v0 = 87.24, k = 0.030, MSE = 0.00
+subject 16: v0 = 82.73, k = 0.033, MSE = 0.01
+subject 17: v0 = 83.61, k = 0.025, MSE = 0.02
+subject 18: v0 = 82.53, k = 0.031, MSE = 0.00
+subject 19: v0 = 85.92, k = 0.031, MSE = 0.00
+subject 20: v0 = 83.91, k = 0.032, MSE = 0.00
+subject 21: v0 = 91.07, k = 0.035, MSE = 0.04
+subject 22: v0 = 88.52, k = 0.034, MSE = 0.03
+subject 23: v0 = 85.38, k = 0.031, MSE = 0.00
+subject 24: v0 = 85.26, k = 0.034, MSE = 0.02
+subject 25: v0 = 85.56, k = 0.031, MSE = 0.00
+subject 26: v0 = 88.74, k = 0.037, MSE = 0.09
+subject 27: v0 = 86.92, k = 0.026, MSE = 0.01
+subject 28: v0 = 83.56, k = 0.028, MSE = 0.01
+subject 29: v0 = 86.26, k = 0.031, MSE = 0.00
+subject 30: v0 = 88.35, k = 0.032, MSE = 0.01
+subject 31: v0 = 87.59, k = 0.028, MSE = 0.00
+subject 32: v0 = 87.90, k = 0.037, MSE = 0.09
+subject 33: v0 = 84.37, k = 0.031, MSE = 0.00
+subject 34: v0 = 85.88, k = 0.032, MSE = 0.00
+subject 35: v0 = 85.53, k = 0.032, MSE = 0.01
+subject 36: v0 = 83.40, k = 0.032, MSE = 0.01
+subject 37: v0 = 86.35, k = 0.037, MSE = 0.11
+subject 38: v0 = 79.91, k = 0.032, MSE = 0.01
+subject 39: v0 = 85.62, k = 0.029, MSE = 0.00
+subject 40: v0 = 85.60, k = 0.031, MSE = 0.00
+subject 41: v0 = 86.42, k = 0.032, MSE = 0.01
+subject 42: v0 = 84.90, k = 0.027, MSE = 0.01
+subject 43: v0 = 87.15, k = 0.032, MSE = 0.00
+subject 44: v0 = 81.64, k = 0.027, MSE = 0.01
+subject 45: v0 = 87.58, k = 0.031, MSE = 0.00
+subject 46: v0 = 82.66, k = 0.024, MSE = 0.02
+subject 47: v0 = 88.35, k = 0.037, MSE = 0.11
+subject 48: v0 = 83.87, k = 0.034, MSE = 0.03
+subject 49: v0 = 83.54, k = 0.029, MSE = 0.00
+subject 50: v0 = 87.04, k = 0.032, MSE = 0.00
+subject 51: v0 = 82.67, k = 0.031, MSE = 0.00
+subject 52: v0 = 83.27, k = 0.025, MSE = 0.02
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>subject 53: v0 = 84.08, k = 0.036, MSE = 0.07
+subject 54: v0 = 87.91, k = 0.035, MSE = 0.04
+subject 55: v0 = 83.63, k = 0.019, MSE = 0.04
+subject 56: v0 = 83.40, k = 0.023, MSE = 0.03
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>subject 57: v0 = 84.98, k = 0.036, MSE = 0.08
+subject 58: v0 = 88.32, k = 0.034, MSE = 0.03
+subject 59: v0 = 82.08, k = 0.025, MSE = 0.02
+subject 60: v0 = 86.55, k = 0.024, MSE = 0.03
+subject 61: v0 = 85.16, k = 0.032, MSE = 0.01
+subject 62: v0 = 85.18, k = 0.024, MSE = 0.02
+subject 63: v0 = 86.37, k = 0.030, MSE = 0.00
+subject 64: v0 = 85.07, k = 0.029, MSE = 0.00
+subject 65: v0 = 84.85, k = 0.035, MSE = 0.06
+subject 66: v0 = 84.30, k = 0.033, MSE = 0.01
+subject 67: v0 = 88.06, k = 0.036, MSE = 0.08
+subject 68: v0 = 87.70, k = 0.033, MSE = 0.02
+subject 69: v0 = 84.96, k = 0.033, MSE = 0.02
+subject 70: v0 = 86.41, k = 0.026, MSE = 0.01
+subject 71: v0 = 85.45, k = 0.024, MSE = 0.02
+subject 72: v0 = 81.49, k = 0.030, MSE = 0.00
+subject 73: v0 = 83.34, k = 0.030, MSE = 0.00
+subject 74: v0 = 82.40, k = 0.031, MSE = 0.00
+subject 75: v0 = 83.74, k = 0.032, MSE = 0.00
+subject 76: v0 = 86.06, k = 0.027, MSE = 0.01
+subject 77: v0 = 88.30, k = 0.029, MSE = 0.00
+subject 78: v0 = 85.50, k = 0.033, MSE = 0.02
+subject 79: v0 = 84.61, k = 0.024, MSE = 0.02
+subject 80: v0 = 85.92, k = 0.033, MSE = 0.01
+subject 81: v0 = 84.83, k = 0.030, MSE = 0.00
+subject 82: v0 = 83.61, k = 0.028, MSE = 0.00
+subject 83: v0 = 87.29, k = 0.032, MSE = 0.01
+subject 84: v0 = 84.32, k = 0.024, MSE = 0.02
+subject 85: v0 = 88.26, k = 0.033, MSE = 0.02
+subject 86: v0 = 86.83, k = 0.033, MSE = 0.01
+subject 87: v0 = 84.54, k = 0.024, MSE = 0.02
+subject 88: v0 = 91.47, k = 0.026, MSE = 0.01
+subject 89: v0 = 81.25, k = 0.023, MSE = 0.03
+subject 90: v0 = 81.40, k = 0.025, MSE = 0.02
+subject 91: v0 = 87.81, k = 0.031, MSE = 0.00
+subject 92: v0 = 82.99, k = 0.027, MSE = 0.01
+subject 93: v0 = 88.16, k = 0.023, MSE = 0.03
+subject 94: v0 = 81.63, k = 0.023, MSE = 0.03
+subject 95: v0 = 83.84, k = 0.026, MSE = 0.02
+subject 96: v0 = 84.69, k = 0.033, MSE = 0.01
+subject 97: v0 = 85.31, k = 0.027, MSE = 0.01
+subject 98: v0 = 85.96, k = 0.027, MSE = 0.01
+subject 99: v0 = 82.42, k = 0.027, MSE = 0.01
+</pre></div>
+</div>
+</div>
 </div>
 <p>We can plot the distributions of <span class="math notranslate nohighlight">\(v_0\)</span> and <span class="math notranslate nohighlight">\(k\)</span> across participants</p>
 <div class="cell docutils container">
@@ -728,6 +858,9 @@ y = \beta_0 + \beta_1 x_1 + \beta_2 x_2 + ... +\beta_d x_d + \epsilon
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
 </div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/module-02-01_Nonlinear-Modeling_22_0.png" src="_images/module-02-01_Nonlinear-Modeling_22_0.png" />
 </div>
 </div>
 <hr></div>
@@ -757,6 +890,13 @@ y = \beta_0 + \beta_1 x_1 + \beta_2 x_2 + ... +\beta_d x_d + \epsilon
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>lin (BIC): -4.263
+exp (BIC): -1.763
+hyp (BIC): 0.730
+</pre></div>
+</div>
+</div>
 </div>
 <p>We can now show that the hyperbolic model is the model with the lowest <span class="math notranslate nohighlight">\(BIC\)</span> value (out of the models tested above).</p>
 <hr></div>
@@ -775,6 +915,17 @@ y = \beta_0 + \beta_1 x_1 + \beta_2 x_2 + ... +\beta_d x_d + \epsilon
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>          1   2   5  10  20  50  100
+subject                             
+102      85  85  85  85  85  65   85
+106      85  85  -5   5   5   5    5
+107      85  85  85  85  85   5    5
+113      85  55  65  55  25  15    5
+114      65  55  45  55  45  15   15
+</pre></div>
+</div>
+</div>
 </div>
 <p>We can see that our data are formatted with participants as rows and amounts willing to forgo at each social distance as columns. To use our functions above, we will need to make sure our <span class="math notranslate nohighlight">\(v\)</span> data have shape <code class="docutils literal notranslate"><span class="pre">(n_subjects,</span> <span class="pre">7)</span></code>.</p>
 <p>Let’s convert the pd.DataFrame to a np.array:</p>
@@ -783,6 +934,11 @@ y = \beta_0 + \beta_1 x_1 + \beta_2 x_2 + ... +\beta_d x_d + \epsilon
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">vekaria_data</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">values</span>
 
 <span class="nb">print</span><span class="p">(</span><span class="n">vekaria_data</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(25, 7)
 </pre></div>
 </div>
 </div>
@@ -820,6 +976,9 @@ y = \beta_0 + \beta_1 x_1 + \beta_2 x_2 + ... +\beta_d x_d + \epsilon
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<img alt="_images/module-02-01_Nonlinear-Modeling_35_0.png" src="_images/module-02-01_Nonlinear-Modeling_35_0.png" />
+</div>
 </div>
 <p>Based on this plot, we can clearly see how much better the hyperbolic model is at explaining the variance in the data. We can confirm this again using the <span class="math notranslate nohighlight">\(BIC\)</span>.</p>
 <div class="cell docutils container">
@@ -828,6 +987,12 @@ y = \beta_0 + \beta_1 x_1 + \beta_2 x_2 + ... +\beta_d x_d + \epsilon
 <span class="k">for</span> <span class="n">label</span><span class="p">,</span> <span class="n">output</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">([</span><span class="s1">&#39;hyperbolic&#39;</span><span class="p">,</span> <span class="s1">&#39;exponential&#39;</span><span class="p">],</span> <span class="p">[</span><span class="n">fit1</span><span class="p">,</span> <span class="n">fit2</span><span class="p">]):</span>
     <span class="n">bic</span> <span class="o">=</span> <span class="n">calculate_bic</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">vekaria_data</span><span class="p">),</span> <span class="n">output</span><span class="o">.</span><span class="n">fun</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
     <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="n">label</span><span class="si">}</span><span class="s1"> (BIC): </span><span class="si">{</span><span class="n">bic</span><span class="si">:</span><span class="s1">.3f</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>hyperbolic (BIC): -6.567
+exponential (BIC): -6.668
 </pre></div>
 </div>
 </div>
@@ -854,6 +1019,39 @@ y = \beta_0 + \beta_1 x_1 + \beta_2 x_2 + ... +\beta_d x_d + \epsilon
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>subject 102: v0 = 80.00, k = 0.000, MSE = 53.53
+subject 106: v0 = 80.00, k = 0.301, MSE = 488.09
+subject 107: v0 = 80.00, k = 0.024, MSE = 430.10
+subject 113: v0 = 79.88, k = 0.074, MSE = 75.61
+subject 114: v0 = 62.64, k = 0.033, MSE = 42.86
+subject 116: v0 = 80.00, k = 0.000, MSE = 25.00
+subject 119: v0 = 80.00, k = 0.021, MSE = 370.64
+subject 120: v0 = 79.94, k = 0.087, MSE = 224.61
+subject 121: v0 = 80.00, k = 0.000, MSE = 25.00
+subject 122: v0 = 80.00, k = 0.003, MSE = 62.99
+subject 123: v0 = 79.62, k = 0.110, MSE = 358.13
+subject 124: v0 = 79.97, k = 0.062, MSE = 55.33
+subject 125: v0 = 80.00, k = 0.019, MSE = 294.43
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>subject 126: v0 = 80.00, k = 0.006, MSE = 820.72
+subject 127: v0 = 80.00, k = 0.030, MSE = 138.29
+subject 128: v0 = 80.00, k = 0.000, MSE = 25.00
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>subject 132: v0 = 80.00, k = 0.024, MSE = 196.97
+subject 135: v0 = 80.00, k = 0.056, MSE = 503.05
+subject 136: v0 = 79.98, k = 0.089, MSE = 271.09
+subject 137: v0 = 80.00, k = 0.021, MSE = 351.20
+subject 138: v0 = 80.00, k = 0.024, MSE = 149.32
+subject 139: v0 = 80.00, k = 0.220, MSE = 273.89
+subject 141: v0 = 79.93, k = 0.083, MSE = 135.05
+subject 143: v0 = 56.54, k = 0.036, MSE = 16.84
+subject 147: v0 = 80.00, k = 0.361, MSE = 178.55
+</pre></div>
+</div>
+</div>
 </div>
 <p>We can see that some participants did not do very well with model fitting. For most, this is because their “amounts willing to forgo” do not vary across social distances.</p>
 <p>To account for this, let’s check which subjects these are.</p>
@@ -862,6 +1060,13 @@ y = \beta_0 + \beta_1 x_1 + \beta_2 x_2 + ... +\beta_d x_d + \epsilon
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">subj_id</span><span class="p">,</span> <span class="n">subj_v</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">index</span><span class="p">,</span> <span class="n">vekaria_data</span><span class="p">):</span>
     <span class="k">if</span> <span class="nb">all</span><span class="p">(</span><span class="n">x</span><span class="o">==</span><span class="n">subj_v</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">subj_v</span><span class="p">):</span>
         <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;no variation for subject #</span><span class="si">{</span><span class="n">subj_id</span><span class="si">}</span><span class="s1">, </span><span class="si">{</span><span class="n">subj_v</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>no variation for subject #116, [85 85 85 85 85 85 85]
+no variation for subject #121, [85 85 85 85 85 85 85]
+no variation for subject #128, [85 85 85 85 85 85 85]
 </pre></div>
 </div>
 </div>
@@ -899,6 +1104,13 @@ y = \beta_0 + \beta_1 x_1 + \beta_2 x_2 + ... +\beta_d x_d + \epsilon
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>assigning k=0 for subject #116, [85 85 85 85 85 85 85]
+assigning k=0 for subject #121, [85 85 85 85 85 85 85]
+assigning k=0 for subject #128, [85 85 85 85 85 85 85]
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -913,6 +1125,9 @@ y = \beta_0 + \beta_1 x_1 + \beta_2 x_2 + ... +\beta_d x_d + \epsilon
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
 </div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/module-02-01_Nonlinear-Modeling_43_0.png" src="_images/module-02-01_Nonlinear-Modeling_43_0.png" />
 </div>
 </div>
 <p>Yay! Now, we can use these data for subsequent analyses! Note the little variation in <span class="math notranslate nohighlight">\(v_0\)</span>. Also note that <span class="math notranslate nohighlight">\(k\)</span> is not parametric (e.g., not normally distributed), so we would need to conduct subsequent analyses using non-parametric approaches.</p>
@@ -967,7 +1182,7 @@ y = \beta_0 + \beta_1 x_1 + \beta_2 x_2 + ... +\beta_d x_d + \epsilon
     
       By Shawn A. Rhoads<br/>
     
-        &copy; Copyright 2021.<br/>
+        &copy; Copyright 2022.<br/>
   </p>
 </footer>
 </main>

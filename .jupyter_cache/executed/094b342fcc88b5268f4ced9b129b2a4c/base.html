@@ -23,7 +23,7 @@
 
     
     <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" href="../../../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/sphinx-book-theme.css?digest=84ace793992934648b4de8eed757e5a2" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../../../_static/mystnb.css" />
@@ -43,7 +43,7 @@
     <script src="../../../_static/copybutton.js"></script>
     <script src="../../../_static/tabs.js"></script>
     <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
-    <script src="../../../_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+    <script src="../../../_static/sphinx-book-theme.9d8b4a8b9bb19db25eeaddc40d639ba2.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.20.0/dist/embed-amd.js"></script>
     <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
@@ -80,7 +80,12 @@
     <div class="container-xl">
       <div class="row">
           
-<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<div class="col-12 col-md-3 bd-sidebar site-navigation " id="site-navigation">
     
         <div class="navbar-brand-box">
     <a class="navbar-brand text-wrap" href="../../../index.html">
@@ -149,16 +154,6 @@
  <li class="toctree-l1">
   <a class="reference internal" href="../../../module-01-00_Jupyter-Notebooks.html">
    Jupyter Notebooks
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../../../module-01-01_Intro-to-Python.html">
-   Intro to Python Basics
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../../../module-01-02_Working-with-Data.html">
-   Working with Data
   </a>
  </li>
  <li class="toctree-l1">
@@ -238,7 +233,7 @@
 </nav> <!-- To handle the deprecated key -->
 
 <div class="navbar_extra_footer">
-  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+  If you use these materials for teaching or research, please use the following citation:<br><br>Rhoads, S. A. & Gan, L. (2022). Computational models of human social behavior and neuroscience - An open educational course and Jupyter Book to advance computational training. <i>The Journal of Open Source Education</i>. [<a href="https://jose.theoj.org/papers/62fca31989cb19be1eb93970ac7554be">link</a>]<br><br><br>Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
 </div>
 
 </div>
@@ -248,22 +243,22 @@
 
 
           
+<!-- This is an invisible pixel that we watch to see if we've scrolled. -->
+<div class="sbt-scroll-pixel-helper"></div>
 <main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
     
     <div class="topbar container-xl fixed-top">
     <div class="topbar-contents row">
         <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
         <div class="col pl-md-4 topbar-main">
-            
-            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
-                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
-                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
-                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
-                <i class="fas fa-bars"></i>
-                <i class="fas fa-arrow-left"></i>
-                <i class="fas fa-arrow-up"></i>
-            </button>
-            
+            <div class="topbar-left">
+                
+                <label class="nav-toggle-button" for="__navigation">
+                    <div class="visually-hidden">Toggle navigation</div>
+                    <i class="fas fa-bars"></i>
+                </label>
+                
+            </div>
             
 <div class="dropdown-buttons-trigger">
     <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
@@ -457,26 +452,26 @@
 </div>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>    column A  column B  column C
-0  -1.523546  1.244712  1.281714
-1   0.142749  0.326279 -1.028342
-2  -0.356448  1.236416 -0.024497
-3  -0.390965 -1.167132  1.169662
-4   0.254325 -0.379238 -0.476311
-5   0.717509 -0.204266 -0.484025
-6  -0.637719 -0.336181  1.184558
-7  -0.178774  1.829720 -1.561026
-8  -0.400764  0.091366  1.227388
-9  -1.894427 -1.312888  1.123745
-10  1.013734  2.124048 -2.320404
-11  1.797838  0.686147 -0.904062
-12  0.041463 -0.680991  0.149429
-13 -0.620775 -0.453663 -0.519136
-14 -0.964090 -0.754053  0.260249
-15  1.204661 -0.372964  0.257379
-16 -0.102147 -1.428105  0.160668
-17  1.527854 -1.262324  1.034834
-18  1.003885 -1.704753 -0.415267
-19  0.017227  0.114630 -0.494371
+0  -0.385560 -1.522140 -0.703754
+1  -3.472113 -1.324020  1.417227
+2  -1.127815  0.117695  0.559858
+3  -0.910859  0.005105  0.552259
+4  -0.365198 -0.463973 -1.269049
+5   0.435639  1.101729 -0.829679
+6   0.344114  1.221418  0.245501
+7   0.157430 -0.334568 -0.247294
+8   0.230824 -0.924483 -0.054010
+9   0.385457 -0.067147 -0.577258
+10  1.747429  0.599327 -0.065776
+11 -0.083123 -1.240928 -0.994034
+12 -1.089339 -0.624019  0.267875
+13  0.664523 -1.123617  0.604363
+14 -1.026253  0.822754 -1.607878
+15  0.788141 -0.181125 -0.301630
+16  1.171814  0.133270 -1.041299
+17 -0.489349 -1.119909  0.823705
+18  0.145707 -0.254832 -0.480168
+19  1.670414 -1.274785  1.315690
 </pre></div>
 </div>
 </div>
@@ -491,11 +486,11 @@
 </div>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>   COLUMN A  COLUMN B  COLUMN C
-0 -1.523546  1.244712  1.281714
-1  0.142749  0.326279 -1.028342
-2 -0.356448  1.236416 -0.024497
-3 -0.390965 -1.167132  1.169662
-4  0.254325 -0.379238 -0.476311
+0 -0.385560 -1.522140 -0.703754
+1 -3.472113 -1.324020  1.417227
+2 -1.127815  0.117695  0.559858
+3 -0.910859  0.005105  0.552259
+4 -0.365198 -0.463973 -1.269049
 </pre></div>
 </div>
 </div>
@@ -510,11 +505,11 @@
 </div>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>           A         B         C
-15  1.204661 -0.372964  0.257379
-16 -0.102147 -1.428105  0.160668
-17  1.527854 -1.262324  1.034834
-18  1.003885 -1.704753 -0.415267
-19  0.017227  0.114630 -0.494371
+15  0.788141 -0.181125 -0.301630
+16  1.171814  0.133270 -1.041299
+17 -0.489349 -1.119909  0.823705
+18  0.145707 -0.254832 -0.480168
+19  1.670414 -1.274785  1.315690
 </pre></div>
 </div>
 </div>
@@ -556,26 +551,26 @@
 </div>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>           A         B         C
-0  -1.523546  1.244712  1.281714
-1   0.142749  0.326279 -1.028342
-2  -0.356448  1.236416 -0.024497
-3  -0.390965 -1.167132  1.169662
-4   0.254325 -0.379238 -0.476311
-5   0.717509 -0.204266 -0.484025
-6  -0.637719 -0.336181  1.184558
-7  -0.178774  1.829720 -1.561026
-8  -0.400764  0.091366  1.227388
-9  -1.894427 -1.312888  1.123745
-10  1.013734  2.124048 -2.320404
-11  1.797838  0.686147 -0.904062
-12  0.041463 -0.680991  0.149429
-13 -0.620775 -0.453663 -0.519136
-14 -0.964090 -0.754053  0.260249
-15  1.204661 -0.372964  0.257379
-16 -0.102147 -1.428105  0.160668
-17  1.527854 -1.262324  1.034834
-18  1.003885 -1.704753 -0.415267
-19  0.017227  0.114630 -0.494371
+0  -0.385560 -1.522140 -0.703754
+1  -3.472113 -1.324020  1.417227
+2  -1.127815  0.117695  0.559858
+3  -0.910859  0.005105  0.552259
+4  -0.365198 -0.463973 -1.269049
+5   0.435639  1.101729 -0.829679
+6   0.344114  1.221418  0.245501
+7   0.157430 -0.334568 -0.247294
+8   0.230824 -0.924483 -0.054010
+9   0.385457 -0.067147 -0.577258
+10  1.747429  0.599327 -0.065776
+11 -0.083123 -1.240928 -0.994034
+12 -1.089339 -0.624019  0.267875
+13  0.664523 -1.123617  0.604363
+14 -1.026253  0.822754 -1.607878
+15  0.788141 -0.181125 -0.301630
+16  1.171814  0.133270 -1.041299
+17 -0.489349 -1.119909  0.823705
+18  0.145707 -0.254832 -0.480168
+19  1.670414 -1.274785  1.315690
 20  0.000000  0.000000  0.000000
 21  0.000000  0.000000  0.000000
 22  0.000000  0.000000  0.000000
@@ -1315,7 +1310,7 @@ dtype: float64
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0x174e572d908&gt;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0x7f6554e9dbd0&gt;
 </pre></div>
 </div>
 <img alt="../../../_images/base_36_1.png" src="../../../_images/base_36_1.png" />
@@ -1337,7 +1332,7 @@ dtype: float64
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0x174e5828b08&gt;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0x7f6554b36d90&gt;
 </pre></div>
 </div>
 <img alt="../../../_images/base_37_1.png" src="../../../_images/base_37_1.png" />
@@ -1378,7 +1373,7 @@ dtype: float64
     
       By Shawn A. Rhoads<br/>
     
-        &copy; Copyright 2021.<br/>
+        &copy; Copyright 2022.<br/>
   </p>
 </footer>
 </main>
