@@ -157,6 +157,16 @@
   </a>
  </li>
  <li class="toctree-l1">
+  <a class="reference internal" href="../../../module-01-01_Intro-to-Python.html">
+   Intro to Python Basics
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../../module-01-02_Working-with-Data.html">
+   Working with Data
+  </a>
+ </li>
+ <li class="toctree-l1">
   <a class="reference internal" href="../../../module-01-03_Python-Exercises.html">
    Python Exercises
   </a>
@@ -233,7 +243,7 @@
 </nav> <!-- To handle the deprecated key -->
 
 <div class="navbar_extra_footer">
-  If you use these materials for teaching or research, please use the following citation:<br><br>Rhoads, S. A. & Gan, L. (2022). Computational models of human social behavior and neuroscience - An open educational course and Jupyter Book to advance computational training. <i>The Journal of Open Source Education</i>. [<a href="https://jose.theoj.org/papers/62fca31989cb19be1eb93970ac7554be">link</a>]<br><br><br>Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+  <b>If you use these materials for teaching or research, please use the following citation:</b> Rhoads, S. A. & Gan, L. (2022). Computational models of human social behavior and neuroscience - An open educational course and Jupyter Book to advance computational training. <i>The Journal of Open Source Education</i>. [<a href="https://jose.theoj.org/papers/62fca31989cb19be1eb93970ac7554be">link</a>]<br><br><br>Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
 </div>
 
 </div>
@@ -395,81 +405,6 @@
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
-<span class="ne">FileNotFoundError</span><span class="g g-Whitespace">                         </span>Traceback (most recent call last)
-<span class="o">/</span><span class="n">tmp</span><span class="o">/</span><span class="n">ipykernel_4047</span><span class="o">/</span><span class="mf">3153882546.</span><span class="n">py</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
-<span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="c1"># let&#39;s load in our data using the function above</span>
-<span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="c1"># feel free to adjust `how_many` (the default is all 15 subjects)</span>
-<span class="ne">----&gt; </span><span class="mi">3</span> <span class="n">subject_data</span> <span class="o">=</span> <span class="n">load_subjects</span><span class="p">()</span>
-
-<span class="nn">/tmp/ipykernel_4047/3083484922.py</span> in <span class="ni">load_subjects</span><span class="nt">(how_many)</span>
-<span class="g g-Whitespace">     </span><span class="mi">16</span>     <span class="n">subject_data</span> <span class="o">=</span> <span class="p">{}</span>
-<span class="g g-Whitespace">     </span><span class="mi">17</span>     <span class="k">for</span> <span class="n">index</span><span class="p">,</span> <span class="n">file</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">files</span><span class="p">):</span>
-<span class="ne">---&gt; </span><span class="mi">18</span>         <span class="n">subject_data</span><span class="p">[</span><span class="n">index</span><span class="p">]</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">file</span><span class="p">,</span> <span class="n">index_col</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
-<span class="g g-Whitespace">     </span><span class="mi">19</span> 
-<span class="g g-Whitespace">     </span><span class="mi">20</span>     <span class="k">return</span> <span class="n">subject_data</span>
-
-<span class="nn">/usr/share/miniconda3/envs/gu-psyc-347-jb/lib/python3.7/site-packages/pandas/util/_decorators.py</span> in <span class="ni">wrapper</span><span class="nt">(*args, **kwargs)</span>
-<span class="g g-Whitespace">    </span><span class="mi">309</span>                     <span class="n">stacklevel</span><span class="o">=</span><span class="n">stacklevel</span><span class="p">,</span>
-<span class="g g-Whitespace">    </span><span class="mi">310</span>                 <span class="p">)</span>
-<span class="ne">--&gt; </span><span class="mi">311</span>             <span class="k">return</span> <span class="n">func</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
-<span class="g g-Whitespace">    </span><span class="mi">312</span> 
-<span class="g g-Whitespace">    </span><span class="mi">313</span>         <span class="k">return</span> <span class="n">wrapper</span>
-
-<span class="nn">/usr/share/miniconda3/envs/gu-psyc-347-jb/lib/python3.7/site-packages/pandas/io/parsers/readers.py</span> in <span class="ni">read_csv</span><span class="nt">(filepath_or_buffer, sep, delimiter, header, names, index_col, usecols, squeeze, prefix, mangle_dupe_cols, dtype, engine, converters, true_values, false_values, skipinitialspace, skiprows, skipfooter, nrows, na_values, keep_default_na, na_filter, verbose, skip_blank_lines, parse_dates, infer_datetime_format, keep_date_col, date_parser, dayfirst, cache_dates, iterator, chunksize, compression, thousands, decimal, lineterminator, quotechar, quoting, doublequote, escapechar, comment, encoding, encoding_errors, dialect, error_bad_lines, warn_bad_lines, on_bad_lines, delim_whitespace, low_memory, memory_map, float_precision, storage_options)</span>
-<span class="g g-Whitespace">    </span><span class="mi">584</span>     <span class="n">kwds</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">kwds_defaults</span><span class="p">)</span>
-<span class="g g-Whitespace">    </span><span class="mi">585</span> 
-<span class="ne">--&gt; </span><span class="mi">586</span>     <span class="k">return</span> <span class="n">_read</span><span class="p">(</span><span class="n">filepath_or_buffer</span><span class="p">,</span> <span class="n">kwds</span><span class="p">)</span>
-<span class="g g-Whitespace">    </span><span class="mi">587</span> 
-<span class="g g-Whitespace">    </span><span class="mi">588</span> 
-
-<span class="nn">/usr/share/miniconda3/envs/gu-psyc-347-jb/lib/python3.7/site-packages/pandas/io/parsers/readers.py</span> in <span class="ni">_read</span><span class="nt">(filepath_or_buffer, kwds)</span>
-<span class="g g-Whitespace">    </span><span class="mi">480</span> 
-<span class="g g-Whitespace">    </span><span class="mi">481</span>     <span class="c1"># Create the parser.</span>
-<span class="ne">--&gt; </span><span class="mi">482</span>     <span class="n">parser</span> <span class="o">=</span> <span class="n">TextFileReader</span><span class="p">(</span><span class="n">filepath_or_buffer</span><span class="p">,</span> <span class="o">**</span><span class="n">kwds</span><span class="p">)</span>
-<span class="g g-Whitespace">    </span><span class="mi">483</span> 
-<span class="g g-Whitespace">    </span><span class="mi">484</span>     <span class="k">if</span> <span class="n">chunksize</span> <span class="ow">or</span> <span class="n">iterator</span><span class="p">:</span>
-
-<span class="nn">/usr/share/miniconda3/envs/gu-psyc-347-jb/lib/python3.7/site-packages/pandas/io/parsers/readers.py</span> in <span class="ni">__init__</span><span class="nt">(self, f, engine, **kwds)</span>
-<span class="g g-Whitespace">    </span><span class="mi">809</span>             <span class="bp">self</span><span class="o">.</span><span class="n">options</span><span class="p">[</span><span class="s2">&quot;has_index_names&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">kwds</span><span class="p">[</span><span class="s2">&quot;has_index_names&quot;</span><span class="p">]</span>
-<span class="g g-Whitespace">    </span><span class="mi">810</span> 
-<span class="ne">--&gt; </span><span class="mi">811</span>         <span class="bp">self</span><span class="o">.</span><span class="n">_engine</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_make_engine</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">engine</span><span class="p">)</span>
-<span class="g g-Whitespace">    </span><span class="mi">812</span> 
-<span class="g g-Whitespace">    </span><span class="mi">813</span>     <span class="k">def</span> <span class="nf">close</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-
-<span class="nn">/usr/share/miniconda3/envs/gu-psyc-347-jb/lib/python3.7/site-packages/pandas/io/parsers/readers.py</span> in <span class="ni">_make_engine</span><span class="nt">(self, engine)</span>
-<span class="g g-Whitespace">   </span><span class="mi">1038</span>             <span class="p">)</span>
-<span class="g g-Whitespace">   </span><span class="mi">1039</span>         <span class="c1"># error: Too many arguments for &quot;ParserBase&quot;</span>
-<span class="ne">-&gt; </span><span class="mi">1040</span>         <span class="k">return</span> <span class="n">mapping</span><span class="p">[</span><span class="n">engine</span><span class="p">](</span><span class="bp">self</span><span class="o">.</span><span class="n">f</span><span class="p">,</span> <span class="o">**</span><span class="bp">self</span><span class="o">.</span><span class="n">options</span><span class="p">)</span>  <span class="c1"># type: ignore[call-arg]</span>
-<span class="g g-Whitespace">   </span><span class="mi">1041</span> 
-<span class="g g-Whitespace">   </span><span class="mi">1042</span>     <span class="k">def</span> <span class="nf">_failover_to_python</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-
-<span class="nn">/usr/share/miniconda3/envs/gu-psyc-347-jb/lib/python3.7/site-packages/pandas/io/parsers/c_parser_wrapper.py</span> in <span class="ni">__init__</span><span class="nt">(self, src, **kwds)</span>
-<span class="g g-Whitespace">     </span><span class="mi">49</span> 
-<span class="g g-Whitespace">     </span><span class="mi">50</span>         <span class="c1"># open handles</span>
-<span class="ne">---&gt; </span><span class="mi">51</span>         <span class="bp">self</span><span class="o">.</span><span class="n">_open_handles</span><span class="p">(</span><span class="n">src</span><span class="p">,</span> <span class="n">kwds</span><span class="p">)</span>
-<span class="g g-Whitespace">     </span><span class="mi">52</span>         <span class="k">assert</span> <span class="bp">self</span><span class="o">.</span><span class="n">handles</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span>
-<span class="g g-Whitespace">     </span><span class="mi">53</span> 
-
-<span class="nn">/usr/share/miniconda3/envs/gu-psyc-347-jb/lib/python3.7/site-packages/pandas/io/parsers/base_parser.py</span> in <span class="ni">_open_handles</span><span class="nt">(self, src, kwds)</span>
-<span class="g g-Whitespace">    </span><span class="mi">227</span>             <span class="n">memory_map</span><span class="o">=</span><span class="n">kwds</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;memory_map&quot;</span><span class="p">,</span> <span class="kc">False</span><span class="p">),</span>
-<span class="g g-Whitespace">    </span><span class="mi">228</span>             <span class="n">storage_options</span><span class="o">=</span><span class="n">kwds</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;storage_options&quot;</span><span class="p">,</span> <span class="kc">None</span><span class="p">),</span>
-<span class="ne">--&gt; </span><span class="mi">229</span>             <span class="n">errors</span><span class="o">=</span><span class="n">kwds</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;encoding_errors&quot;</span><span class="p">,</span> <span class="s2">&quot;strict&quot;</span><span class="p">),</span>
-<span class="g g-Whitespace">    </span><span class="mi">230</span>         <span class="p">)</span>
-<span class="g g-Whitespace">    </span><span class="mi">231</span> 
-
-<span class="nn">/usr/share/miniconda3/envs/gu-psyc-347-jb/lib/python3.7/site-packages/pandas/io/common.py</span> in <span class="ni">get_handle</span><span class="nt">(path_or_buf, mode, encoding, compression, memory_map, is_text, errors, storage_options)</span>
-<span class="g g-Whitespace">    </span><span class="mi">705</span>                 <span class="n">encoding</span><span class="o">=</span><span class="n">ioargs</span><span class="o">.</span><span class="n">encoding</span><span class="p">,</span>
-<span class="g g-Whitespace">    </span><span class="mi">706</span>                 <span class="n">errors</span><span class="o">=</span><span class="n">errors</span><span class="p">,</span>
-<span class="ne">--&gt; </span><span class="mi">707</span>                 <span class="n">newline</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">,</span>
-<span class="g g-Whitespace">    </span><span class="mi">708</span>             <span class="p">)</span>
-<span class="g g-Whitespace">    </span><span class="mi">709</span>         <span class="k">else</span><span class="p">:</span>
-
-<span class="ne">FileNotFoundError</span>: [Errno 2] No such file or directory: &#39;sub-00_RLdata.csv&#39;
-</pre></div>
-</div>
-</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -479,13 +414,7 @@
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
-<span class="ne">NameError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
-<span class="o">/</span><span class="n">tmp</span><span class="o">/</span><span class="n">ipykernel_4047</span><span class="o">/</span><span class="mf">2368480394.</span><span class="n">py</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
-<span class="ne">----&gt; </span><span class="mi">1</span> <span class="k">for</span> <span class="n">subject_behavior</span> <span class="ow">in</span> <span class="n">subject_data</span><span class="o">.</span><span class="n">values</span><span class="p">():</span>
-<span class="g g-Whitespace">      </span><span class="mi">2</span>     <span class="nb">print</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">subject_behavior</span><span class="p">),</span> <span class="n">end</span><span class="o">=</span><span class="s2">&quot; trials, &quot;</span><span class="p">)</span>
-
-<span class="ne">NameError</span>: name &#39;subject_data&#39; is not defined
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>50 trials, 50 trials, 50 trials, 50 trials, 50 trials, 50 trials, 50 trials, 50 trials, 50 trials, 50 trials, 50 trials, 50 trials, 50 trials, 50 trials, 50 trials, 
 </pre></div>
 </div>
 </div>
@@ -498,16 +427,131 @@
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
-<span class="ne">NameError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
-<span class="o">/</span><span class="n">tmp</span><span class="o">/</span><span class="n">ipykernel_4047</span><span class="o">/</span><span class="mf">782710010.</span><span class="n">py</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
-<span class="ne">----&gt; </span><span class="mi">1</span> <span class="n">display</span><span class="p">(</span><span class="n">subject_data</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">head</span><span class="p">())</span> <span class="c1"># first subject head</span>
-<span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="n">display</span><span class="p">(</span><span class="n">subject_data</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span><span class="o">.</span><span class="n">head</span><span class="p">())</span> <span class="c1"># third subject head</span>
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
 
-<span class="ne">NameError</span>: name &#39;subject_data&#39; is not defined
-</pre></div>
-</div>
-</div>
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>stim_A</th>
+      <th>stim_B</th>
+      <th>choice</th>
+      <th>outcome</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>0.2</td>
+      <td>0.8</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>0.2</td>
+      <td>0.8</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>0.2</td>
+      <td>0.8</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>0.2</td>
+      <td>0.8</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>0.2</td>
+      <td>0.8</td>
+      <td>1</td>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table>
+</div></div><div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>stim_A</th>
+      <th>stim_B</th>
+      <th>choice</th>
+      <th>outcome</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>0.8</td>
+      <td>0.2</td>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>0.8</td>
+      <td>0.2</td>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>0.8</td>
+      <td>0.2</td>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>0.8</td>
+      <td>0.2</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>0.8</td>
+      <td>0.2</td>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -557,15 +601,7 @@
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
-<span class="ne">NameError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
-<span class="o">/</span><span class="n">tmp</span><span class="o">/</span><span class="n">ipykernel_4047</span><span class="o">/</span><span class="mf">2676449485.</span><span class="n">py</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
-<span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="c1"># one subject</span>
-<span class="ne">----&gt; </span><span class="mi">2</span> <span class="n">plot_behavior</span><span class="p">(</span><span class="n">subject_data</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="n">choices</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">outcomes</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">probability</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-
-<span class="ne">NameError</span>: name &#39;subject_data&#39; is not defined
-</pre></div>
-</div>
+<img alt="../../../_images/base_6_0.png" src="../../../_images/base_6_0.png" />
 </div>
 </div>
 <div class="cell docutils container">
@@ -579,18 +615,21 @@
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
-<span class="ne">NameError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
-<span class="o">/</span><span class="n">tmp</span><span class="o">/</span><span class="n">ipykernel_4047</span><span class="o">/</span><span class="mf">3396941744.</span><span class="n">py</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
-<span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="c1"># all subjects</span>
-<span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">15</span><span class="p">):</span>
-<span class="ne">----&gt; </span><span class="mi">3</span>     <span class="n">plot_behavior</span><span class="p">(</span><span class="n">subject_data</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">choices</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">outcomes</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">probability</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-<span class="g g-Whitespace">      </span><span class="mi">4</span> 
-<span class="g g-Whitespace">      </span><span class="mi">5</span> <span class="c1"># all subjects using in one line of code [plot_behavior(subject_data, x, choices=True, outcomes=True, probability=True) for x in range(15)]</span>
-
-<span class="ne">NameError</span>: name &#39;subject_data&#39; is not defined
-</pre></div>
-</div>
+<img alt="../../../_images/base_7_01.png" src="../../../_images/base_7_01.png" />
+<img alt="../../../_images/base_7_1.png" src="../../../_images/base_7_1.png" />
+<img alt="../../../_images/base_7_2.png" src="../../../_images/base_7_2.png" />
+<img alt="../../../_images/base_7_3.png" src="../../../_images/base_7_3.png" />
+<img alt="../../../_images/base_7_4.png" src="../../../_images/base_7_4.png" />
+<img alt="../../../_images/base_7_5.png" src="../../../_images/base_7_5.png" />
+<img alt="../../../_images/base_7_6.png" src="../../../_images/base_7_6.png" />
+<img alt="../../../_images/base_7_7.png" src="../../../_images/base_7_7.png" />
+<img alt="../../../_images/base_7_8.png" src="../../../_images/base_7_8.png" />
+<img alt="../../../_images/base_7_9.png" src="../../../_images/base_7_9.png" />
+<img alt="../../../_images/base_7_10.png" src="../../../_images/base_7_10.png" />
+<img alt="../../../_images/base_7_11.png" src="../../../_images/base_7_11.png" />
+<img alt="../../../_images/base_7_12.png" src="../../../_images/base_7_12.png" />
+<img alt="../../../_images/base_7_13.png" src="../../../_images/base_7_13.png" />
+<img alt="../../../_images/base_7_14.png" src="../../../_images/base_7_14.png" />
 </div>
 </div>
 <div class="cell docutils container">
@@ -611,16 +650,80 @@
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
-<span class="ne">NameError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
-<span class="o">/</span><span class="n">tmp</span><span class="o">/</span><span class="n">ipykernel_4047</span><span class="o">/</span><span class="mf">530406907.</span><span class="n">py</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
-<span class="ne">----&gt; </span><span class="mi">1</span> <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">s</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">subject_data</span><span class="o">.</span><span class="n">values</span><span class="p">()):</span>
-<span class="g g-Whitespace">      </span><span class="mi">2</span>     <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;subject </span><span class="si">{</span><span class="n">i</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
-<span class="g g-Whitespace">      </span><span class="mi">3</span>     <span class="k">if</span> <span class="n">s</span><span class="o">.</span><span class="n">stim_A</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span> <span class="o">&gt;</span> <span class="mf">.5</span><span class="p">:</span> <span class="c1"># only print high probability stimulus</span>
-<span class="g g-Whitespace">      </span><span class="mi">4</span>         <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;probability that stim A yielded reward: </span><span class="si">{</span><span class="n">s</span><span class="o">.</span><span class="n">stim_A</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span><span class="si">:</span><span class="s1">.2f</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
-<span class="g g-Whitespace">      </span><span class="mi">5</span>         <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;actual frequency of choosing stim A: </span><span class="si">{</span><span class="mi">1</span> <span class="o">-</span> <span class="n">s</span><span class="o">.</span><span class="n">choice</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span><span class="si">:</span><span class="s1">.2f</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>subject 0
+probability that stim B yielded reward: 0.80
+actual frequency of choosing stim B: 0.60
+actual mean reward: 0.52
 
-<span class="ne">NameError</span>: name &#39;subject_data&#39; is not defined
+subject 1
+probability that stim B yielded reward: 0.80
+actual frequency of choosing stim B: 0.70
+actual mean reward: 0.62
+
+subject 2
+probability that stim A yielded reward: 0.80
+actual frequency of choosing stim A: 0.68
+actual mean reward: 0.58
+
+subject 3
+probability that stim A yielded reward: 0.80
+actual frequency of choosing stim A: 0.86
+actual mean reward: 0.70
+
+subject 4
+probability that stim B yielded reward: 0.80
+actual frequency of choosing stim B: 0.54
+actual mean reward: 0.54
+
+subject 5
+probability that stim A yielded reward: 0.80
+actual frequency of choosing stim A: 0.74
+actual mean reward: 0.50
+
+subject 6
+probability that stim A yielded reward: 0.80
+actual frequency of choosing stim A: 0.66
+actual mean reward: 0.68
+
+subject 7
+probability that stim A yielded reward: 0.80
+actual frequency of choosing stim A: 0.88
+actual mean reward: 0.68
+
+subject 8
+probability that stim A yielded reward: 0.80
+actual frequency of choosing stim A: 0.88
+actual mean reward: 0.70
+
+subject 9
+probability that stim B yielded reward: 0.80
+actual frequency of choosing stim B: 0.90
+actual mean reward: 0.74
+
+subject 10
+probability that stim B yielded reward: 0.80
+actual frequency of choosing stim B: 0.80
+actual mean reward: 0.74
+
+subject 11
+probability that stim B yielded reward: 0.80
+actual frequency of choosing stim B: 0.88
+actual mean reward: 0.66
+
+subject 12
+probability that stim B yielded reward: 0.80
+actual frequency of choosing stim B: 0.68
+actual mean reward: 0.54
+
+subject 13
+probability that stim A yielded reward: 0.80
+actual frequency of choosing stim A: 0.86
+actual mean reward: 0.76
+
+subject 14
+probability that stim A yielded reward: 0.80
+actual frequency of choosing stim A: 0.60
+actual mean reward: 0.56
 </pre></div>
 </div>
 </div>
@@ -685,16 +788,7 @@
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
-<span class="ne">NameError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
-<span class="o">/</span><span class="n">tmp</span><span class="o">/</span><span class="n">ipykernel_4047</span><span class="o">/</span><span class="mf">2983235561.</span><span class="n">py</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
-<span class="g g-Whitespace">      </span><span class="mi">3</span> <span class="n">alpha_guess</span> <span class="o">=</span> <span class="mf">.1</span>
-<span class="g g-Whitespace">      </span><span class="mi">4</span> <span class="n">theta_guess</span> <span class="o">=</span> <span class="mf">1.5</span>
-<span class="ne">----&gt; </span><span class="mi">5</span> <span class="n">subj3_choices</span> <span class="o">=</span> <span class="n">subject_data</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span><span class="o">.</span><span class="n">choice</span>
-<span class="g g-Whitespace">      </span><span class="mi">6</span> <span class="n">subj3_outcomes</span> <span class="o">=</span> <span class="n">subject_data</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span><span class="o">.</span><span class="n">outcome</span>
-<span class="g g-Whitespace">      </span><span class="mi">7</span> 
-
-<span class="ne">NameError</span>: name &#39;subject_data&#39; is not defined
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>given alpha=0.1 and theta=1.5, the negative loglikelihood is 25.91
 </pre></div>
 </div>
 </div>
@@ -745,16 +839,31 @@
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
-<span class="ne">NameError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
-<span class="o">/</span><span class="n">tmp</span><span class="o">/</span><span class="n">ipykernel_4047</span><span class="o">/</span><span class="mf">1511095426.</span><span class="n">py</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
-<span class="g g-Whitespace">      </span><span class="mi">2</span> 
-<span class="g g-Whitespace">      </span><span class="mi">3</span> <span class="c1">#initialize dataframe</span>
-<span class="ne">----&gt; </span><span class="mi">4</span> <span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">index</span><span class="o">=</span><span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="nb">len</span><span class="p">(</span><span class="n">subject_data</span><span class="p">)),</span> <span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;alpha&#39;</span><span class="p">,</span><span class="s1">&#39;theta&#39;</span><span class="p">])</span>
-<span class="g g-Whitespace">      </span><span class="mi">5</span> <span class="c1"># loop through subjects</span>
-<span class="g g-Whitespace">      </span><span class="mi">6</span> <span class="k">for</span> <span class="n">index</span><span class="p">,</span> <span class="n">behavior</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">subject_data</span><span class="o">.</span><span class="n">values</span><span class="p">()):</span>
-
-<span class="ne">NameError</span>: name &#39;subject_data&#39; is not defined
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>subject 00: alpha=0.47, theta=0.74; negLL=33.17; BIC=74.16
+subject 01: alpha=0.06, theta=3.77; negLL=26.89; BIC=61.61
+subject 02: alpha=0.31, theta=1.55; negLL=32.05; BIC=71.92
+subject 03: alpha=0.16, theta=5.41; negLL=16.37; BIC=40.57
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>subject 04: alpha=0.79, theta=0.64; negLL=33.92; BIC=75.67
+subject 05: alpha=0.38, theta=3.38; negLL=25.08; BIC=57.98
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>subject 06: alpha=0.07, theta=1.66; negLL=32.01; BIC=71.84
+subject 07: alpha=0.18, theta=6.61; negLL=14.13; BIC=36.08
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>subject 08: alpha=0.44, theta=3.33; negLL=16.04; BIC=39.90
+subject 09: alpha=0.76, theta=4.02; negLL=12.24; BIC=32.29
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>subject 10: alpha=0.02, theta=10.00; negLL=21.33; BIC=50.48
+subject 11: alpha=0.62, theta=4.22; negLL=13.96; BIC=35.75
+subject 12: alpha=0.85, theta=1.76; negLL=27.51; BIC=62.84
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>subject 13: alpha=0.63, theta=5.20; negLL=10.80; BIC=29.43
+subject 14: alpha=1.00, theta=1.30; negLL=29.02; BIC=65.86
 </pre></div>
 </div>
 </div>

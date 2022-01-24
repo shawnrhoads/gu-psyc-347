@@ -161,6 +161,16 @@
   </a>
  </li>
  <li class="toctree-l1">
+  <a class="reference internal" href="module-01-01_Intro-to-Python.html">
+   Intro to Python Basics
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="module-01-02_Working-with-Data.html">
+   Working with Data
+  </a>
+ </li>
+ <li class="toctree-l1">
   <a class="reference internal" href="module-01-03_Python-Exercises.html">
    Python Exercises
   </a>
@@ -237,7 +247,7 @@
 </nav> <!-- To handle the deprecated key -->
 
 <div class="navbar_extra_footer">
-  If you use these materials for teaching or research, please use the following citation:<br><br>Rhoads, S. A. & Gan, L. (2022). Computational models of human social behavior and neuroscience - An open educational course and Jupyter Book to advance computational training. <i>The Journal of Open Source Education</i>. [<a href="https://jose.theoj.org/papers/62fca31989cb19be1eb93970ac7554be">link</a>]<br><br><br>Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+  <b>If you use these materials for teaching or research, please use the following citation:</b> Rhoads, S. A. & Gan, L. (2022). Computational models of human social behavior and neuroscience - An open educational course and Jupyter Book to advance computational training. <i>The Journal of Open Source Education</i>. [<a href="https://jose.theoj.org/papers/62fca31989cb19be1eb93970ac7554be">link</a>]<br><br><br>Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
 </div>
 
 </div>
@@ -606,9 +616,6 @@ y_n = \hat{y_n} + \epsilon_n
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<img alt="_images/module-02-00_Linear-Modeling_7_0.png" src="_images/module-02-00_Linear-Modeling_7_0.png" />
-</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -621,9 +628,6 @@ y_n = \hat{y_n} + \epsilon_n
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<img alt="_images/module-02-00_Linear-Modeling_8_0.png" src="_images/module-02-00_Linear-Modeling_8_0.png" />
-</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -634,9 +638,6 @@ y_n = \hat{y_n} + \epsilon_n
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
 </div>
-</div>
-<div class="cell_output docutils container">
-<img alt="_images/module-02-00_Linear-Modeling_9_0.png" src="_images/module-02-00_Linear-Modeling_9_0.png" />
 </div>
 </div>
 <p>Now that we have our noisy dataset, we can try to estimate the underlying model that produced it. We use MSE to evaluate how successful a particular slope estimate <span class="math notranslate nohighlight">\(\hat{\beta}\)</span> is for explaining the data, with the closer to 0 the MSE is, the better our estimate fits the data.</p>
@@ -701,13 +702,6 @@ y_n = \hat{y_n} + \epsilon_n
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>beta_hat of -0.75 has an MSE of 4827.76
-beta_hat of -1.75 has an MSE of 111.37
-beta_hat of -2.75 has an MSE of 5438.72
-</pre></div>
-</div>
-</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -732,9 +726,6 @@ beta_hat of -2.75 has an MSE of 5438.72
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
 </div>
-</div>
-<div class="cell_output docutils container">
-<img alt="_images/module-02-00_Linear-Modeling_17_0.png" src="_images/module-02-00_Linear-Modeling_17_0.png" />
 </div>
 </div>
 <hr></div>
@@ -870,11 +861,6 @@ def plot_data_estimate(intercept, beta_hat):
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>b0, b1 = [349.    -1.75], MSE = 105.48
-</pre></div>
-</div>
-</div>
 </div>
 <p>We see that our fit is <span class="math notranslate nohighlight">\(b_0 = 349\)</span> and <span class="math notranslate nohighlight">\(b_1 = -1.75\)</span>, which is quite close to our original!</p>
 <p><strong>We can also plot our search onto a heatmap!</strong></p>
@@ -896,9 +882,6 @@ def plot_data_estimate(intercept, beta_hat):
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
 </div>
-</div>
-<div class="cell_output docutils container">
-<img alt="_images/module-02-00_Linear-Modeling_28_0.png" src="_images/module-02-00_Linear-Modeling_28_0.png" />
 </div>
 </div>
 <hr></div>
@@ -990,12 +973,6 @@ def plot_data_estimate(intercept, beta_hat):
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>b0, b1 = [352.01054797  -1.78736471], MSE = 104.68617090696347
-</pre></div>
-</div>
-<img alt="_images/module-02-00_Linear-Modeling_33_1.png" src="_images/module-02-00_Linear-Modeling_33_1.png" />
-</div>
 </div>
 <p>We see that we can get a better fit: <span class="math notranslate nohighlight">\(b_0 = 352.01\)</span> and <span class="math notranslate nohighlight">\(b_1 = -1.79\)</span>, which fairly accurate! Note that our <strong>MSE</strong> value is also smaller than last time!</p>
 <hr></div>
@@ -1042,12 +1019,6 @@ def plot_data_estimate(intercept, beta_hat):
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>b0=[352.0105366], b1=[-1.78736455]
-MSE = 104.69
-</pre></div>
-</div>
-</div>
 </div>
 </div>
 <div class="section" id="actual-data-versus-fitted-data">
@@ -1067,9 +1038,6 @@ MSE = 104.69
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<img alt="_images/module-02-00_Linear-Modeling_40_0.png" src="_images/module-02-00_Linear-Modeling_40_0.png" />
-</div>
 </div>
 <p>Awesome! Looks pretty nice!</p>
 <hr></div>
@@ -1085,11 +1053,6 @@ MSE = 104.69
 <span class="n">y_hat_new</span> <span class="o">=</span> <span class="p">(</span><span class="n">stat_res</span><span class="o">.</span><span class="n">intercept</span> <span class="o">+</span> <span class="n">stat_res</span><span class="o">.</span><span class="n">slope</span><span class="o">*</span><span class="n">X</span><span class="p">[:,</span><span class="mi">1</span><span class="p">])</span><span class="o">.</span><span class="n">reshape</span><span class="p">((</span><span class="nb">len</span><span class="p">(</span><span class="n">y</span><span class="p">),</span><span class="mi">1</span><span class="p">))</span>
 
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;b1 = </span><span class="si">{</span><span class="n">stat_res</span><span class="o">.</span><span class="n">slope</span><span class="si">:</span><span class="s1">.2f</span><span class="si">}</span><span class="s1"> , b0 = </span><span class="si">{</span><span class="n">stat_res</span><span class="o">.</span><span class="n">intercept</span><span class="si">:</span><span class="s1">.2f</span><span class="si">}</span><span class="s1">, MSE = </span><span class="si">{</span><span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">((</span><span class="n">y</span> <span class="o">-</span> <span class="n">y_hat_new</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span><span class="si">:</span><span class="s1">.2f</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>b1 = -1.79 , b0 = 352.01, MSE = 104.69
 </pre></div>
 </div>
 </div>
@@ -1147,12 +1110,6 @@ y = \beta_0 + \beta_1 x_1 + \beta_2 x_2 + \epsilon
 <span class="c1"># Compute MSE</span>
 <span class="n">y_hat3</span> <span class="o">=</span> <span class="p">(</span><span class="n">X_a</span> <span class="o">@</span> <span class="n">beta_hat3</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;MSE = </span><span class="si">{</span><span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">((</span><span class="n">y_a</span> <span class="o">-</span> <span class="n">y_hat3</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>b0=[374.49097358], b1=[-1.81811949], b2=[-0.6804654]
-MSE = 101.97
 </pre></div>
 </div>
 </div>
