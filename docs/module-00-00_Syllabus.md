@@ -1,6 +1,4 @@
 # Syllabus
-Last updated: September 2021</br>
-The content in this Jupyter Book is subject to change.
 
 ## PSYC 347: Computational Models of Human Social Behavior and Neuroscience
 TR: 11:00am-12:15pm, Online/Remote
@@ -36,7 +34,7 @@ Students located in certain countries may face challenges participating in some 
 
 ## Who am I?
 
-My name is Shawn Rhoads (call me Shawn). I use the following pronouns: he/him/his. I am a PhD candidate conducting psychological and neuroscience research on interpersonal perception, shared or vicarious experience, and prosocial decision-making. I love learning about the human brain and social behavior. I also enjoy listening to electronic music, drinking dark-roast coffee, and writing code in Python (both in and out of the lab). You can find me on Twitter: <a href="https://twitter.com/ShawnRhoads56" target="_blank">@ShawnRhoads56</a>
+My name is Shawn Rhoads (call me Shawn). I use the following pronouns: he/him/his. I am a PhD candidate conducting psychological and neuroscience research on interpersonal perception, shared or vicarious experience, and prosocial decision-making. I love learning about the human brain and social behavior. I also enjoy listening to electronic music, drinking dark-roast coffee, and writing code in Python (both in and out of the lab). You can find me on Twitter: <a href="https://twitter.com/intent/user?user_id=380634496" target="_blank">@ShawnRhoads56</a>
 
 This is the course I wish I had as an undergraduate student. I am committed to helping you learn, and succeed! If you have any questions about the course or about psychology, please don't hesitate to ask via email. I will try to answer email promptly (within a day or two), but I get a lot of email and sometimes forget that I haven't answered yet, so if you need an answer and haven't heard back from me, feel free to email again. My office hours will be held on Zoom on Mondays from 2:30-4pm, please email me if you plan to show up. My email is sr1209(at)georgetown(dot)edu. 
 
