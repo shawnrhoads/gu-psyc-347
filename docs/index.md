@@ -1,7 +1,14 @@
-<a target="_blank" rel="noopener noreferrer" href="https://jose.theoj.org/papers/62fca31989cb19be1eb93970ac7554be">![DOI](https://jose.theoj.org/papers/62fca31989cb19be1eb93970ac7554be/status.svg)</a> <a target="_blank" rel="noopener noreferrer" href="https://shawnrhoads.github.io/gu-psyc-347">![Jupyter Book Badge](https://jupyterbook.org/badge.svg)</a> <a target="_blank" rel="noopener noreferrer" href="https://github.com/shawnrhoads/gu-psyc-347/actions/workflows/deploy-book.yml">![book](https://github.com/shawnrhoads/gu-psyc-347/actions/workflows/deploy-book.yml/badge.svg)</a> <a target="_blank" rel="noopener noreferrer" href="https://www.buymeacoffee.com/shawnrhoads">![BuyMeACoffee](https://img.shields.io/static/v1?message=contribute%20caffeine&label=%20&style=square&logo=Buy%20Me%20A%20Coffee&labelColor=5c5c5c&color=lightgrey)</a> <a target="_blank" rel="noopener noreferrer" href="https://github.com/shawnrhoads/gu-psyc-347">![GitHub last update](https://img.shields.io/github/last-commit/shawnrhoads/gu-psyc-347?color=blue&label=last%20update)</a>
+<div align="center">
+
+<a target="_blank" rel="noopener noreferrer" href="https://doi.org/10.21105/jose.00146">![DOI:10.21105/jose.00146](https://img.shields.io/badge/DOI-10.21105/jose.00146-D9534F.svg)</a> <a target="_blank" rel="noopener noreferrer" href="https://shawnrhoads.github.io/gu-psyc-347">![Jupyter Book Badge](https://jupyterbook.org/badge.svg)</a> <a target="_blank" rel="noopener noreferrer" href="https://github.com/shawnrhoads/gu-psyc-347/actions/workflows/deploy-book.yml">![book](https://github.com/shawnrhoads/gu-psyc-347/actions/workflows/deploy-book.yml/badge.svg)</a> <a target="_blank" rel="noopener noreferrer" href="https://github.com/shawnrhoads/gu-psyc-347">![GitHub last update](https://img.shields.io/github/last-commit/shawnrhoads/gu-psyc-347?color=blue&label=last%20update)</a> <a target="_blank" rel="noopener noreferrer" href="https://www.buymeacoffee.com/shawnrhoads">![BuyMeACoffee](https://img.shields.io/static/v1?message=contribute%20caffeine&label=%20&style=square&logo=Buy%20Me%20A%20Coffee&labelColor=5c5c5c&color=lightgrey)</a>
 
 # Computational Models of Human Social Behavior and Neuroscience
-The content in this Jupyter Book is subject to change. 
+
+</div>
+
+.. admonition:: Citation
+
+   **If you use these materials for teaching or research, please use the following citation:** Rhoads, S. A. & Gan, L. (2022). Computational models of human social behavior and neuroscience: An open educational course and Jupyter Book to advance computational training. *Journal of Open Source Education*, *5*(47), 146. [https://doi.org/10.21105/jose.00146](https://doi.org/10.21105/jose.00146)
 
 ## 📝 Course information
 **Section**: PSYC 347-01</br>
