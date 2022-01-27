@@ -29,7 +29,7 @@ html:
   use_edit_page_button: false  # Whether to add an "edit this page" button to pages. If `true`, repository information in repository: must be filled in
   use_repository_button: true  # Whether to add a link to your repository button
   use_issues_button: true  # Whether to add an "open an issue" button
-  extra_navbar: <b>If you use these materials for teaching or research, please use the following citation:</b> Rhoads, S. A. & Gan, L. (2022). Computational models of human social behavior and neuroscience - An open educational course and Jupyter Book to advance computational training. <i>Journal of Open Source Education</i>, 5(47), 146. [<a href="https://doi.org/10.21105/jose.00146">10.21105/jose.00146</a>]<br><br><br>Powered by <a href="https://jupyterbook.org">Jupyter Book</a>  # Will be displayed underneath the left navbar.
+  extra_navbar: <b>If you use these materials for teaching or research, please use the following citation:</b> Rhoads, S. A. & Gan, L. (2022). Computational models of human social behavior and neuroscience - An open educational course and Jupyter Book to advance computational training. <i>Journal of Open Source Education</i>, <i>5</i>(47), 146. <a href="https://doi.org/10.21105/jose.00146">https://doi.org/10.21105/jose.00146</a><br><br><br>Powered by <a href="https://jupyterbook.org">Jupyter Book</a>  # Will be displayed underneath the left navbar.
   extra_footer: ""  # Will be displayed underneath the footer.
   google_analytics_id: G-KG3N20S55G  # A GA id that can be used to track book views.
   home_page_in_navbar: false  # Whether to include your home page in the left Navigation Bar
